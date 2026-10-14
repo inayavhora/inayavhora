@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI News Wire — Inaya Vhora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --ink: #161616;
+    --muted: #8a8780;
+    --rule: #e6e3dc;
+    --live: #c2410c;
+    --serif: "Newsreader", Georgia, serif;
+    --sans: "Inter", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121211; --ink:#ecebe7; --muted:#8b8983; --rule:#2a2927; --live:#fb923c; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 13px; line-height: 1.5; }
+  a { color: inherit; text-decoration: none; }
+
+  /* Site shell: small left-hand nav */
+  .site { display: grid; grid-template-columns: 160px 1fr; min-height: 100vh; }
+  nav { padding: 32px 24px; position: sticky; top: 0; height: 100vh; }
+  nav .name { font-weight: 500; margin-bottom: 24px; display: block; }
+  nav a.link { display: block; color: var(--muted); padding: 2px 0; }
+  nav a.link:hover, nav a.link.on { color: var(--ink); }
+  main { padding: 32px 32px 96px 0; max-width: 760px; }
+
+  /* The work */
+  header { margin-bottom: 40px; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 28px; letter-spacing: -0.01em; margin-bottom: 8px; }
+  .meta { color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; }
+  .pulse { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--live); margin-right: 6px; vertical-align: 1px; animation: pulse 2.4s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: .2; } }
+  .statement { font-family: var(--serif); font-size: 15px; color: var(--muted); max-width: 520px; margin-top: 16px; }
+
+  .day { color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: 10.5px; padding: 28px 0 8px; border-bottom: 1px solid var(--rule); }
+  .row { display: grid; grid-template-columns: 52px 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .row time { color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 3px; }
+  .row h2 { font-family: var(--serif); font-weight: 400; font-size: 18px; line-height: 1.3; }
+  .row a:hover h2 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .row .src { color: var(--muted); margin-top: 3px; }
+  .row.fresh { animation: arrive 1.6s ease-out; }
+  @keyframes arrive { from { background: color-mix(in srgb, var(--live) 12%, transparent); } }
+  .note { color: var(--muted); padding: 24px 0; }
+
+  @media (max-width: 640px) {
+    .site { grid-template-columns: 1fr; }
+    nav { position: static; height: auto; padding: 20px 16px 0; display: flex; gap: 16px; align-items: baseline; }
+    nav .name { margin: 0 auto 0 0; }
+    main { padding: 28px 16px 64px; }
+    .row { grid-template-columns: 1fr; gap: 2px; }
+    .row h2 { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<div class="site">
+  <nav>
+    <a class="name" href="/">Inaya Vhora</a>
+    <a class="link" href="/about.html">About</a>
+    <a class="link on" href="/speculation.html">Speculation</a>
+  </nav>
+
+  <main>
+    <header>
+      <h1>AI News Wire</h1>
+      <div class="meta">
+        <span><span class="pulse"></span><span id="status">connecting…</span></span>
+        <span id="count"></span>
+      </div>
+      <p class="statement">A continuously gathered record of how the world's newsrooms are writing about artificial intelligence. Headlines are collected every hour from international sources and left unedited.</p>
+    </header>
+
+    <section id="wire"><p class="note">Loading the wire…</p></section>
+  </main>
+</div>
+
+<script>
+  const DATA_URL = "news.json";      // same folder as this page
+  const REFRESH_MS = 5 * 60 * 1000;  // check for new headlines every 5 minutes
+  const SHOW = 120;                  // how many headlines to display
+
+  const wire = document.getElementById("wire");
+  const status = document.getElementById("status");
+  const count = document.getElementById("count");
+  let known = new Set();
+
+  const timeFmt = new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit", hour12: false });
+  const dayFmt = new Intl.DateTimeFormat(undefined, { weekday: "long", day: "numeric", month: "long" });
+
+  function dayLabel(d) {
+    const today = new Date(); today.setHours(0,0,0,0);
+    const that = new Date(d); that.setHours(0,0,0,0);
+    const diff = Math.round((today - that) / 864e5);
+    return diff === 0 ? "Today" : diff === 1 ? "Yesterday" : dayFmt.format(d);
+  }
+
+  function ago(d) {
+    const m = Math.round((Date.now() - d) / 6e4);
+    if (m < 2) return "just now";
+    if (m < 60) return m + " min ago";
+    const h = Math.round(m / 60);
+    return h < 24 ? h + (h === 1 ? " hour ago" : " hours ago") : dayFmt.format(d);
+  }
+
+  function esc(s) {
+    return s.replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+  }
+
+  function render(data) {
+    const items = data.items.slice(0, SHOW);
+    const firstLoad = known.size === 0;
+    let html = "", lastDay = "";
+
+    for (const it of items) {
+      const d = new Date(it.published);
+      const label = dayLabel(d);
+      if (label !== lastDay) { html += `<div class="day">${label}</div>`; lastDay = label; }
+      const fresh = !firstLoad && !known.has(it.url) ? " fresh" : "";
+      html += `
+        <article class="row${fresh}">
+          <time datetime="${it.published}">${timeFmt.format(d)}</time>
+          <a href="${esc(it.url)}" target="_blank" rel="noopener">
+            <h2>${esc(it.title)}</h2>
+            <div class="src">${esc(it.source)} · ${esc(it.region)}</div>
+          </a>
+        </article>`;
+    }
+    wire.innerHTML = html || `<p class="note">The wire is quiet.</p>`;
+    known = new Set(data.items.map(i => i.url));
+
+    const sources = new Set(data.items.map(i => i.source)).size;
+    status.textContent = "Last gathered " + ago(new Date(data.updated));
+    count.textContent = `${data.items.length} headlines · ${sources} outlets`;
+  }
+
+  async function load() {
+    try {
+      const res = await fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) throw new Error(res.status);
+      render(await res.json());
+    } catch (e) {
+      status.textContent = "Wire offline";
+      if (!known.size) wire.innerHTML = `<p class="note">The wire couldn't be reached. If you're opening this file directly from your computer, view it through a web server instead (see README).</p>`;
+    }
+  }
+
+  load();
+  setInterval(load, REFRESH_MS);
+</script>
+</body>
+</html>
