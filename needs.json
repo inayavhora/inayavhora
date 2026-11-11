@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T12:06:55+00:00",
+ "updated": "2026-11-11T13:26:10+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -18,7 +18,7 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 1
   },
   {
    "name": "DW",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 102
+   "ai_stories": 100
   },
   {
    "name": "The New Humanitarian",
@@ -84,13 +84,13 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 65
+   "ai_stories": 66
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 60
+   "ai_stories": 61
   },
   {
    "name": "Google News: famine",
@@ -108,13 +108,13 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 27
+   "ai_stories": 28
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 25
   },
   {
    "name": "Google News: education",
@@ -721,6 +721,18 @@
      "lat": 8.6
     }
    ],
+   "stage": "reported"
+  },
+  {
+   "title": "Anthropic and Gates Foundation commit $200 million to AI tools for health, education, and agriculture",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5wTXlMSHg5bWI4MmNGVWhRRW5HeXQ2djFPWnM1Y0c1alFfR0JYd212Tld0Ynk5ZERaM29QN1h2ejZtMlR6ZDJRVVJyakVYbmctcGlLaGxMdHZUdUQ0ZVBleFl3c2NhZ3MwY3JRRm5VdkpsZGNl?oc=5",
+   "source": "TechHQ",
+   "region": "International",
+   "published": "2026-05-15T09:04:43+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
    "stage": "reported"
   },
   {
