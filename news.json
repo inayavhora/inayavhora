@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T17:10:18+00:00",
+ "updated": "2026-11-11T18:04:42+00:00",
  "sources_reached": 12,
  "sources": [
   {
@@ -30,7 +30,7 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 2
   },
   {
    "name": "South China Morning Post",
@@ -54,7 +54,7 @@
    "name": "MIT Technology Review",
    "set": "General",
    "ok": true,
-   "ai_stories": 9
+   "ai_stories": 8
   },
   {
    "name": "TechCrunch",
@@ -120,7 +120,7 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 35
+   "ai_stories": 36
   },
   {
    "name": "Google News: Gates",
@@ -131,6 +131,55 @@
  ],
  "items": [
   {
+   "title": "The PM wants to show action on AI, even if the answers aren't there yet",
+   "url": "https://www.abc.net.au/news/2026-11-12/anthony-albanese-ai-control/107373474",
+   "source": "ABC News",
+   "region": "Australia",
+   "published": "2026-11-11T18:00:00+00:00"
+  },
+  {
+   "title": "Artificial Intelligence And Benefits Administration",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaWFRLTllVmlsNy1QTUtTTDVDckpFVmtxLUl4YnprS04zbDQ4T3N4M0tSeGFNRS14MEhhdGI2aU02aWs3b0x3LVNya09lbjhmUDQ5T1M0LTZuNWszQkF1RHppWFlScjQ1QlNrejczV2JXU1VQTGNzRXcycXkzRzI5MnpZVzRDZw?oc=5",
+   "source": "JD Supra",
+   "region": "International",
+   "published": "2026-11-11T17:54:54+00:00"
+  },
+  {
+   "title": "VerticalScope Turns 2 Billion Forum Posts Into AI Shopping Revenue",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWk1GcjhPMGFJX2UzNjY0R0dlZjNqSmNBOEczMmJhdV9Qdi15Y3UzdWpJbXlha0c5MnZxdTBweS1SMjNmTkxTVFNqTkN3NUYtczVEdXVkYjFhakUwY0ZZM1FrSllkWmRWdjJXQnBKLVZNOGMybkRLNENfSlVIV1Y4RDJGMnZkQnprTmtoZlZuVkotOXRNMlJCUU1sakNpTWxfRWdCeS1Od2JzUWFkemNESEVwX1M2MTdoMzdNd1BBWTZDdw?oc=5",
+   "source": "PYMNTS.com",
+   "region": "International",
+   "published": "2026-11-11T17:44:45+00:00"
+  },
+  {
+   "title": "The job market is tough for young people. Older workers are thriving.",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY2Z4TUZGNm56WTRDc1hGLWdqbHc0ZDlYN1U5Z2VXdkM2R1Yyb0pvTzdUUklQNzJMOTZSVnViSTlzdE56WjAzRm84eEZvclAzZ2RnSjBmRWRnYUZuVzRNejViWTZZV1Q4eTdZZjV3eGc3U3ZoSGI1Y1FrWW5RX3pwdzN1dzBHWEJRd3FkSXNUREtaNklVQXFYY3VrSmNEX0hzcTlaenpDU3pwdE03Zk94SUExQ2lkTk13Rlgw?oc=5",
+   "source": "The Washington Post",
+   "region": "International",
+   "published": "2026-11-11T17:32:51+00:00"
+  },
+  {
+   "title": "Hacked fridges and other dangers lurking in the ‘internet of shit’ | Letters",
+   "url": "https://www.theguardian.com/technology/2026/nov/11/hacked-fridges-and-other-dangers-lurking-in-the-internet-of-shit",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-11T17:26:27+00:00"
+  },
+  {
+   "title": "Best Artificial Intelligence Stocks To Keep An Eye On - November 11th",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZmpsWjdMUVUzUTNQM3d4d2p3NUhGek5wUDBxT3F4aFdYSmRZWGliei1RdzVyM2tsZ2ZwQ1FYRkRIQTJkRF9iajV6Z0xCWmFydk41M2dMZzZmUGtycEc5M0syeFYzY2tXMlozdmgwdUs2R3F3WTFaN3BoLTJKRlBWWDE5RkFvWklKbXBGY25fYnIzLUlYOW1JekxOZXQ2emlMNEF1M244dzN2NXJqeVY1Z3dGcmpLMWJVU1l3LWhOTVhqX0Nz?oc=5",
+   "source": "MarketBeat",
+   "region": "International",
+   "published": "2026-11-11T17:17:10+00:00"
+  },
+  {
+   "title": "AI Adoption Grows in Manufacturing, but Worker Concerns Persist",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOFZsUkdjZG9SWEJwODN1dkNialUtZVcyTG5mVEI0Ym5WZXRla2V2dWpZem5jdTdrbElSaFJVcmhXaFVTaEhzUVd2VHZIRHJEN2lqTVF5NXlLWUZ3N1h4dmxsbU4taGxTdm1WN09TaDhMU1BzOG5QbFd3NW45OG1HS0FPbGhzYnM1c3lqMmljQmhoNGk1ZWxiUzdtd2loMThVeGxlS2xTTQ?oc=5",
+   "source": "WWD",
+   "region": "International",
+   "published": "2026-11-11T17:01:56+00:00"
+  },
+  {
    "title": "Drug ads can influence AI treatment recommendations, study finds",
    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5aajNnSHZBTnFZaVB0d3BTZ2QxbWNQUTBrRm5MMmY1OFFJTE9mN1p2MG9LYXVvSFRVVTdyN2t4QTBQcm1NTzV6R0xCVEZIUncwMmJQcTR3YzhRUHREaHBQckZrc0xDR1hrTEt3SC1QMFRJTVU?oc=5",
    "source": "Medical Xpress",
@@ -138,16 +187,9 @@
    "published": "2026-11-11T17:00:11+00:00"
   },
   {
-   "title": "The job market is tough for young people. Older workers are thriving.",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY2Z4TUZGNm56WTRDc1hGLWdqbHc0ZDlYN1U5Z2VXdkM2R1Yyb0pvTzdUUklQNzJMOTZSVnViSTlzdE56WjAzRm84eEZvclAzZ2RnSjBmRWRnYUZuVzRNejViWTZZV1Q4eTdZZjV3eGc3U3ZoSGI1Y1FrWW5RX3pwdzN1dzBHWEJRd3FkSXNUREtaNklVQXFYY3VrSmNEX0hzcTlaenpDU3pwdE03Zk94SUExQ2lkTk13Rlgw?oc=5",
-   "source": "The Washington Post",
-   "region": "International",
-   "published": "2026-11-11T16:49:48+00:00"
-  },
-  {
    "title": "Democrats Have Big Plans for Artificial Intelligence",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTFBWUGZVb1l0VS1uazhEZ014eHlfUmNsaUhfZDllMW90NlUwZUx3UkRtaVNlNlA4OXRqSkdYUUhnaEk0YmRnR0NLMk9SeWNaeTRvTUVBdE9UNVdaSFBwOFR0NUxtb3dKaDJsWEZYZ2Q4NkdXQUdhTWgyc0NwNEVzaHhBVzliMGJhaTNMY0N1Sk9RM0tvOV96M2xJcVRwMlJTZWprcjlB?oc=5",
-   "source": "Yahoo",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdDNRSEtTNm9NR2dNZWRjTEszazMyVzZueWp1b3VudkZwbFEzTzZXR0NoLWQtNnk5ZXFrWXFRYWJ6X09UbENLYlJhWkgtVWpFSzVreXNBXzlsSnNWOV9fbzBuX0VlbzRVNjQzdXFKZ0I1c3dMcjRZc1RVVW5KUjQxcXNtaXRxeGtvVzVr?oc=5",
+   "source": "Reason Magazine",
    "region": "International",
    "published": "2026-11-11T16:45:42+00:00"
   },
@@ -237,7 +279,7 @@
   },
   {
    "title": "European stocks near record highs, buoyed by growing confidence in artificial intelligence",
-   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5Wb0RFbUtRd19JVkVKZlNIU05Lb05MZU52MWNXcUhCN0w3T1hoeFl2ajFiakdOZ0ZwOGVZVTNYdk5UenJDNkRHSDRR?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5nZm55clRqcHFzOWo3SXVVMExwSTB2X2l3Zjg0NDdoTDZDU3hzbjZaLUdXdzdQVWQ4NEdGc25qSXc3RHU1ZWtqZlpXOA?oc=5",
    "source": "صحيفة مال",
    "region": "International",
    "published": "2026-11-11T14:43:17+00:00"
@@ -2887,48 +2929,6 @@
    "source": "Amazon Web Services (AWS)",
    "region": "International",
    "published": "2026-11-09T18:43:30+00:00"
-  },
-  {
-   "title": "How parents can help teens use AI safely & thoughtfully",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSkVWRmtfUmlTdHdvOGxCNEU1Q0JuSXpvSjdyV1ZwNi1FNGNKU0x0RXV6WklUamxNV2YwclNfQkdqdnZsSVJ3Y1l2TXpDWWhvdWszaU8yR2ZOQzFsbXFpQUdTcTNhOEtKb2xmNmQtYkRYY2RKZEtHZmY3QUlrMUV6cFI2RE1zcTZ1b18tOXdaRXVzQi13Y0tFNmFLOA?oc=5",
-   "source": "News4JAX",
-   "region": "International",
-   "published": "2026-11-09T18:39:09+00:00"
-  },
-  {
-   "title": "Google unveils 2 specialized AI chip systems in growing Nvidia challenge: Report",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYzdycGNxZW85TndKUUYwdGF1bzZUMnhLX0prenlYeDBxakdYd0hhSXB4V1lwbVdleFZKcmYwYUN4M2RyaklTUnZySVdZQlByd2NRZzJaNnBCcnhqTFlPUnVtak5UWFM3MG5kTWxLTzFEYmxaMXNGcnV1dHRtSS1CQVRXZEVYQVdpcGxZR1ExUUkxUlNqLUs5R1czUHRmX1ZGUHlYTm9pVVdYVXpQUE50MTNoU1ZjRFY3eWtmaXAzYmhSbC1HUHIwUkc5Tnk?oc=5",
-   "source": "Anadolu Ajansı",
-   "region": "International",
-   "published": "2026-11-09T18:34:39+00:00"
-  },
-  {
-   "title": "Kicking the tires | EDITORIAL CARTOON",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE13ay16a1BNZm9BQ3RWVG4wTXowX0pyQXd1eGV5UUE0VVZMTGVMR0Vfc0tFSXVrbklNMjVhRTl3Q3ZaWHhVUDJGaGROdTIxSlVkOFZsbWhVdEl2QWJHY3RtbVNUeDEyRnJ0Z2FvTW5Sa3ZBTnFpYWUwUQ?oc=5",
-   "source": "Baltimore Sun",
-   "region": "International",
-   "published": "2026-11-09T18:30:10+00:00"
-  },
-  {
-   "title": "Patient Feedback Informs New Framework for Clinical Artificial Intelligence Transparency",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZkwzbHRKN2ZBZV9fLUZ6WUxiV3o4Zlh6ZHUtM1laRF9BdFc0VUdoVTRRZkZDNUVtazB4VWQ2RzJDcnRxYjhIanZaU3BHa0JidzZ6cXMxZldQSEhsMTJMY1FkSVRyeUJydHUxODhjaW1LWUxiZnBMWFVoY1p1RU9BWUZJTERtdmRzakowNGZaSUlGUndsVDZkUHFOQk0tc1dJeUM2MmxBckpuVUxVS3JXN1hUUQ?oc=5",
-   "source": "Bioengineer.org",
-   "region": "International",
-   "published": "2026-11-09T18:29:32+00:00"
-  },
-  {
-   "title": "Wall Street rallies on falling oil prices despite Nvidia and artificial intelligence fears",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE00ZUxiRUZzSTFHa0M3Y0tGUENQTHN5bmgtRF9UcEFpQjN6NkxqLXZ4NUhvU04tYXBBY2tmUFJXRDhYUWQ3N1JHRnFTX3dZVi1BaEJwWGV6SEFqaWFmNE02blk1X0p2cmZRcVIzWGlDWVN0d0NMZ00zbnpna28?oc=5",
-   "source": "Yahoo News UK",
-   "region": "International",
-   "published": "2026-11-09T18:17:18+00:00"
-  },
-  {
-   "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
-   "url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-09T18:09:52+00:00"
   }
  ]
 }
