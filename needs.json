@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T13:26:10+00:00",
+ "updated": "2026-11-11T15:04:03+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 100
+   "ai_stories": 102
   },
   {
    "name": "The New Humanitarian",
@@ -102,7 +102,7 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 28
+   "ai_stories": 29
   },
   {
    "name": "Google News: health",
@@ -120,7 +120,7 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 35
+   "ai_stories": 36
   },
   {
    "name": "Google News: Gates",
@@ -1428,6 +1428,24 @@
    "published": "2025-03-12T07:00:00+00:00",
    "needs": [
     "food"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "AI is coming for doctors, teachers, creatives. Can India protect these jobs?",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQ1JQS1BhQmFXSkl1UW0zYlFTS1IxazEwbUREVmwzcHUzNUFZWkpqSkNJcVpSdkxfOFFKWXBHTmtpYkZ0Qnd5QmhYbE8yWXJKcVBwUi14UXRmbGdIaVhrRkRneE4xRXN2R2oxS1lEbnpwcWMwLVdmaWlJNTFNR3hhOWltb01SdnQ5TExCTm02VUFNX1dWbk9GblpES1BtZHpvRjVXaG5oN1R6UkEwcHfSAbMBQVVfeXFMUGVxYS1zYm1yalREZWcwa3dOYy16eU9jOEtmSzJfUFBzNDlCdDRrYU5hMFN1UWk1TENLaG1FQmpDVDdCbW9rMDcxQkpOVl90RlFVUWpJcFA5SkMtUGxubWdFbmV6aXlvM1pPT1RVTkJ0S0gyNWtVN0dVUHBYVHQwdXdaR0NmVV91UUVkRi1tZlZibDRfNFNMM2Vuc3R4TFFfTzRrQVdXVWRSRllrWWViYnF6NFE?oc=5",
+   "source": "ThePrint",
+   "region": "International",
+   "published": "2025-02-03T08:00:00+00:00",
+   "needs": [
+    "education"
    ],
    "places": [
     {
