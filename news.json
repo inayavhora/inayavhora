@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T11:39:57+00:00",
+ "updated": "2026-11-11T11:40:34+00:00",
  "sources_reached": 12,
  "sources": [
   {
@@ -75,64 +75,40 @@
    "ai_stories": 102
   },
   {
-   "name": "ReliefWeb",
-   "set": "Basic needs",
-   "ok": false,
-   "error": "ParseError: no element found: line 1, column 0"
-  },
-  {
    "name": "The New Humanitarian",
    "set": "Basic needs",
    "ok": true,
    "ai_stories": 0
   },
   {
-   "name": "SciDev.Net",
-   "set": "Basic needs",
-   "ok": false,
-   "error": "ParseError: undefined entity: line 28, column 0"
-  },
-  {
-   "name": "Rest of World",
-   "set": "Basic needs",
-   "ok": false,
-   "error": "ParseError: not well-formed (invalid token): line 26, column 124"
-  },
-  {
-   "name": "Devex",
-   "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
-  },
-  {
-   "name": "CGIAR",
-   "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 410: Gone"
-  },
-  {
-   "name": "Gates Foundation",
-   "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 404: Not Found"
-  },
-  {
-   "name": "World Food Programme",
-   "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 404: Not Found"
-  },
-  {
-   "name": "Google News: food",
+   "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 6
+   "ai_stories": 66
+  },
+  {
+   "name": "Specialist sites (2)",
+   "set": "Basic needs",
+   "ok": true,
+   "ai_stories": 60
+  },
+  {
+   "name": "Google News: famine",
+   "set": "Basic needs",
+   "ok": true,
+   "ai_stories": 42
+  },
+  {
+   "name": "Google News: farmers",
+   "set": "Basic needs",
+   "ok": true,
+   "ai_stories": 28
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 23
+   "ai_stories": 28
   },
   {
    "name": "Google News: water",
@@ -144,13 +120,13 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 44
+   "ai_stories": 35
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 38
+   "ai_stories": 29
   }
  ],
  "items": [
