@@ -1,6 +1,158 @@
 {
- "updated": "2026-11-11T11:38:38+00:00",
+ "updated": "2026-11-11T11:39:57+00:00",
  "sources_reached": 12,
+ "sources": [
+  {
+   "name": "The Guardian",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 20
+  },
+  {
+   "name": "BBC News",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 4
+  },
+  {
+   "name": "Al Jazeera",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 2
+  },
+  {
+   "name": "DW",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 10
+  },
+  {
+   "name": "ABC News",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 1
+  },
+  {
+   "name": "South China Morning Post",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 30
+  },
+  {
+   "name": "The New York Times",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 8
+  },
+  {
+   "name": "NPR",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 3
+  },
+  {
+   "name": "MIT Technology Review",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 9
+  },
+  {
+   "name": "TechCrunch",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 20
+  },
+  {
+   "name": "The Verge",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 10
+  },
+  {
+   "name": "Google News (world)",
+   "set": "General",
+   "ok": true,
+   "ai_stories": 102
+  },
+  {
+   "name": "ReliefWeb",
+   "set": "Basic needs",
+   "ok": false,
+   "error": "ParseError: no element found: line 1, column 0"
+  },
+  {
+   "name": "The New Humanitarian",
+   "set": "Basic needs",
+   "ok": true,
+   "ai_stories": 0
+  },
+  {
+   "name": "SciDev.Net",
+   "set": "Basic needs",
+   "ok": false,
+   "error": "ParseError: undefined entity: line 28, column 0"
+  },
+  {
+   "name": "Rest of World",
+   "set": "Basic needs",
+   "ok": false,
+   "error": "ParseError: not well-formed (invalid token): line 26, column 124"
+  },
+  {
+   "name": "Devex",
+   "set": "Basic needs",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "CGIAR",
+   "set": "Basic needs",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 410: Gone"
+  },
+  {
+   "name": "Gates Foundation",
+   "set": "Basic needs",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+   "name": "World Food Programme",
+   "set": "Basic needs",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Google News: food",
+   "set": "Basic needs",
+   "ok": true,
+   "ai_stories": 6
+  },
+  {
+   "name": "Google News: health",
+   "set": "Basic needs",
+   "ok": true,
+   "ai_stories": 23
+  },
+  {
+   "name": "Google News: water",
+   "set": "Basic needs",
+   "ok": true,
+   "ai_stories": 26
+  },
+  {
+   "name": "Google News: education",
+   "set": "Basic needs",
+   "ok": true,
+   "ai_stories": 44
+  },
+  {
+   "name": "Google News: Gates",
+   "set": "Basic needs",
+   "ok": true,
+   "ai_stories": 38
+  }
+ ],
  "items": [
   {
    "title": "New Indian mega library rocked by scandal over 'AI-generated books'",
