@@ -62,20 +62,20 @@ def gnews(q):
 
 AI_Q = '("artificial intelligence" OR AI OR "machine learning")'
 # Specialist sources: development, humanitarian and science newsrooms.
+SPECIALIST_SITES = ["reliefweb.int", "thenewhumanitarian.org", "scidev.net", "restofworld.org", "devex.com",
+                    "cgiar.org", "gatesfoundation.org", "wfp.org", "fao.org", "unicef.org", "who.int", "ifpri.org"]
 NEEDS_FEEDS = [
-    ("ReliefWeb",              "International", "https://reliefweb.int/updates/rss.xml",                 False),
-    ("The New Humanitarian",   "International", "https://www.thenewhumanitarian.org/rss/all.xml",        False),
-    ("SciDev.Net",             "International", "https://www.scidev.net/global/feed/",                   False),
-    ("Rest of World",          "International", "https://restofworld.org/feed/latest/",                  False),
-    ("Devex",                  "International", "https://www.devex.com/news/rss",                        False),
-    ("CGIAR",                  "International", "https://www.cgiar.org/feed/",                           False),
-    ("Gates Foundation",       "International", "https://www.gatesfoundation.org/ideas/rss",             False),
-    ("World Food Programme",   "International", "https://www.wfp.org/rss.xml",                           False),
-    ("Google News: food",      "International", gnews(AI_Q + ' (famine OR hunger OR "food insecurity" OR smallholder OR farmers OR crop) (Africa OR India OR Sudan OR Yemen OR Haiti OR Gaza OR Sahel OR "South Sudan" OR Somalia OR Ethiopia OR Afghanistan)'), False),
-    ("Google News: health",    "International", gnews(AI_Q + ' (malnutrition OR clinic OR diagnosis OR "health workers" OR cholera OR malaria) (Africa OR India OR Sudan OR Yemen OR Haiti OR Gaza OR refugee OR humanitarian)'), False),
+    # Most specialist sites block or break their own RSS, so they are reached through
+    # Google News searches restricted to those sites. The New Humanitarian's feed works directly.
+    ("The New Humanitarian",   "International", "https://www.thenewhumanitarian.org/rss/all.xml", False),
+    ("Specialist sites (1)",   "International", gnews(AI_Q + " (" + " OR ".join("site:" + d for d in SPECIALIST_SITES[:6]) + ")"), False),
+    ("Specialist sites (2)",   "International", gnews(AI_Q + " (" + " OR ".join("site:" + d for d in SPECIALIST_SITES[6:]) + ")"), False),
+    ("Google News: famine",    "International", gnews(AI_Q + ' (famine OR "food insecurity" OR hunger OR malnutrition)'), False),
+    ("Google News: farmers",   "International", gnews(AI_Q + ' (farmers OR smallholder OR crops OR agriculture) (Africa OR India OR Kenya OR Nigeria OR Ethiopia OR Malawi OR Bangladesh OR Pakistan OR Uganda OR Tanzania)'), False),
+    ("Google News: health",    "International", gnews(AI_Q + ' (malnutrition OR clinic OR diagnosis OR "health workers" OR cholera OR malaria OR tuberculosis OR maternal) (Africa OR India OR Sudan OR Yemen OR Haiti OR Gaza OR refugee OR humanitarian)'), False),
     ("Google News: water",     "International", gnews(AI_Q + ' (water OR drought OR flood OR shelter OR sanitation OR "early warning") (Africa OR India OR Pakistan OR Bangladesh OR Somalia OR Sahel OR humanitarian)'), False),
-    ("Google News: education", "International", gnews(AI_Q + ' (school OR education OR literacy OR learning) (Africa OR India OR refugee OR "low-income" OR Afghanistan OR Sudan OR Yemen)'), False),
-    ("Google News: Gates",     "International", gnews(AI_Q + ' "Gates Foundation" (agriculture OR health OR farmers OR nutrition)'), False),
+    ("Google News: education", "International", gnews(AI_Q + ' (school OR literacy OR teachers OR classroom) (Africa OR India OR refugee OR "low-income" OR Afghanistan OR Sudan OR Yemen)'), False),
+    ("Google News: Gates",     "International", gnews(AI_Q + ' "Gates Foundation" (agriculture OR health OR farmers OR nutrition OR education)'), False),
 ]
 
 # Specific basic-needs terms only (generic words like "health", "education" or
