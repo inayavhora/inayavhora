@@ -78,14 +78,16 @@ NEEDS_FEEDS = [
     ("Google News: Gates",     "International", gnews(AI_Q + ' "Gates Foundation" (agriculture OR health OR farmers OR nutrition)'), False),
 ]
 
+# Specific basic-needs terms only (generic words like "health", "education" or
+# "learning" let in startup and gadget news, and "learning" matches "machine learning").
 NEEDS = {
-    "food":   r"\b(famine|hunger|hungry|food (in)?security|food systems?|nutrition|malnutrition|malnourish\w*|farm\w*|agricultur\w*|crops?|harvest\w*|yields?|livestock|pests?|locusts?|seeds?|irrigation|smallholder\w*|soil)\b",
-    "health": r"\b(health\w*|clinic\w*|hospital\w*|disease\w*|diagnos\w*|malaria|cholera|tuberculosis|TB|HIV|maternal|vaccin\w*|medic\w*|epidemic\w*|outbreak\w*|nurses?|doctors?|patients?|malnutrition|screening)\b",
-    "water":  r"\b(water|drought\w*|floods?|flooding|sanitation|hygiene|shelter\w*|housing|homes?|displac\w*|refugee camps?|climate shocks?|early warning|cyclones?|heatwaves?)\b",
-    "education": r"\b(education\w*|schools?|schooling|students?|teachers?|teaching|literacy|learning|classrooms?|tutor\w*|universit\w*)\b",
+    "food":   r"\b(famine|hunger|hungry|food (in)?security|malnutrition|malnourish\w*|farmers?|farming|agricultur\w*|crops?|harvests?|yields?|livestock|pests?|locusts?|seeds?|irrigation|smallholder\w*|soil health|food prices?)\b",
+    "health": r"\b(malaria|cholera|tuberculosis|TB|HIV|maternal|newborns?|child mortality|malnutrition|vaccin\w*|outbreaks?|epidemics?|community health|health workers?|frontline workers?|primary (health )?care|clinics?|rural hospitals?|screening|diagnos\w*)\b",
+    "water":  r"\b(drinking water|clean water|water (access|supply|scarcity|shortages?)|groundwater|drought\w*|floods?|flooding|sanitation|shelters?|housing|displac\w*|refugee camps?|early warning|cyclones?|heatwaves?|monsoon)\b",
+    "education": r"\b(literacy|schools?|schooling|school ?children|out-of-school|classrooms?|teachers?|pupils?|tutoring|students? in (rural|refugee))\b",
 }
 NEEDS_RE = {k: re.compile(v, re.I) for k, v in NEEDS.items()}
-HUMANITARIAN = re.compile(r"\b(famine|hunger|food insecurity|humanitarian|refugees?|aid|crisis|smallholder\w*|low-income|global south|developing countries|poverty|poor|rural|NGOs?|UN|WFP|UNICEF|FAO|WHO|USAID|Gates)\b", re.I)
+HUMANITARIAN = re.compile(r"\b(famine|hunger|food insecurity|humanitarian|refugees?|aid agenc\w*|crisis|smallholder\w*|low-income|global south|developing countries|poverty|poor|rural|villages?|NGOs?|WFP|UNICEF|FAO|WHO|USAID|Gates Foundation|public health)\b")
 
 # Places facing hunger / food insecurity, with a map point (lon, lat).
 COUNTRIES = {
@@ -107,15 +109,16 @@ COUNTRIES = {
 REGION_OF = {"Gaza": "Palestine", "DRC": "Congo", "Rwanda ": "Rwanda", "Bihar": "India", "Odisha": "India",
              "Maharashtra": "India", "Telangana": "India", "Andhra Pradesh": "India", "Punjab": "India",
              "Tigray": "Ethiopia", "Darfur": "Sudan", "Rohingya": "Bangladesh"}
-COUNTRY_RE = [(re.compile(r"\b" + re.escape(k.strip()) + r"\b"), k) for k in sorted(COUNTRIES, key=len, reverse=True)]
+COUNTRY_RE = [(re.compile(r"\b" + re.escape(k.strip()) + r"(?:n|ns|ese|ian|ians|i|is)?\b"), k) for k in sorted(COUNTRIES, key=len, reverse=True)]
 
 STAGE_PILOT = re.compile(r"\b(pilot\w*|trials?|trialled|tests?|testing|launch\w*|rolls? out|rolling out|deploy\w*)\b", re.I)
 STAGE_PROPOSED = re.compile(r"\b(could|may|might|would|plans?|planned|proposal|proposes?|aims? to|seeks? to|promise\w*|potential|future|vision|call\w* for|should)\b", re.I)
-CRITICAL = re.compile(r"\b(fail\w*|harm\w*|risks?|bias\w*|warn\w*|concerns?|criticis\w*|surveillance|hype|exclusion|privacy|backlash|doubts?)\b", re.I)
+CRITICAL = re.compile(r"\b(fail\w*|harm\w*|risks?|bias\w*|warn\w*|concerns?|criticis\w*|surveillance|hype|exclusion|privacy|backlash|doubts?|threats?|dangers?|terrible|worse|blow|attacks?|hacks?|misinformation)\b", re.I)
 
 
 def classify(item, summary=""):
     """Tag a story with needs, places and stage. Returns None if it is not a basic-needs story."""
+    summary = (summary or "").replace(item.get("source", ""), " ")
     text = f"{item['title']} {summary}"
     if not is_ai(text):
         return None
@@ -123,13 +126,17 @@ def classify(item, summary=""):
     if not needs:
         return None
     places = []
-    for r, k in COUNTRY_RE:
-        if r.search(text):
+    scan = text
+    for r, k in COUNTRY_RE:           # longest names first; blank each match so
+        if r.search(scan):            # "South Sudan" is not also counted as "Sudan"
+            scan = r.sub(" ", scan)
             name = REGION_OF.get(k, k.strip())
             if name not in [p["name"] for p in places]:
                 lon, lat = COUNTRIES[k]
                 places.append({"name": name, "lon": lon, "lat": lat})
-    if not places and not HUMANITARIAN.search(text):
+    # Needs a humanitarian or development signal, or a place plus a need named in the headline itself.
+    title_need = any(r.search(item["title"]) for r in NEEDS_RE.values())
+    if not HUMANITARIAN.search(text) and not (places and title_need):
         return None
     if CRITICAL.search(text):
         stage = "critique"
@@ -242,6 +249,8 @@ def merge(existing, new, limit=MAX_ITEMS):
     return merged[:limit]
 
 
+SOURCE_LOG = []
+
 def gather(feeds, label):
     gathered, ok = [], 0
     for name, region, url, ai_only in feeds:
@@ -250,7 +259,9 @@ def gather(feeds, label):
             gathered += got
             ok += 1
             print(f"  ✓ {name:28} {len(got):3} AI stories")
+            SOURCE_LOG.append({"name": name, "set": label, "ok": True, "ai_stories": len(got)})
         except Exception as e:
+            SOURCE_LOG.append({"name": name, "set": label, "ok": False, "error": e.__class__.__name__ + ": " + str(e)[:120]})
             print(f"  ✗ {name:28} skipped ({e.__class__.__name__})", file=sys.stderr)
     print(f"{label}: {ok}/{len(feeds)} sources reached")
     return gathered, ok
@@ -267,6 +278,7 @@ def save(path, items, ok):
     path.write_text(json.dumps({
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "sources_reached": ok,
+        "sources": SOURCE_LOG,
         "items": items,
     }, ensure_ascii=False, indent=1))
 
