@@ -5,12 +5,15 @@ The whole site lives in this repository and is published with GitHub Pages.
 | Path | Page |
 |---|---|
 | `index.html` | Home: About and Speculative, with each project opening inside the page |
-| `news.html` | AI News Wire (live, see below) |
+| `news.html` | AI News Wire: spinning globe, one tab per basic need, plus the wider AI wire (live, see below) |
 | `rome/` | Rome built in 30 minutes: drawing sheets and the interactive 3D viewer |
 | `reflow/` | 3D print your home accessories: cover image, downloadable print files and zip |
 | `sound/` | Gamifying productivity through soundscapes: video and poster |
 
 ## AI News Wire
+
+The research question: how is AI being introduced where basic needs go unmet? `fetch_news.py` builds `needs.json`, AI stories about **food & agriculture, health, water & shelter and education** in places facing hunger and food insecurity. Each story is tagged with the need(s), the place(s) it names (these become points on the globe) and a stage: *reported*, *pilot*, *proposed* or *critique*. Sources: ReliefWeb, The New Humanitarian, SciDev.Net, Rest of World, Devex, CGIAR, the Gates Foundation, WFP, and targeted Google News searches. Edit `NEEDS_FEEDS`, `NEEDS`, `COUNTRIES` in the script to change scope. The general AI wire (`news.json`) is still gathered and shows as the last tab.
+
 
 A self-updating archive of AI headlines from international newsrooms, for the Speculation section of Inaya Vhora's website.
 

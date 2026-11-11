@@ -267,13 +267,14 @@ main { min-width: 0; }
   var wireEl = document.getElementById("wirePreview");
   var tf = new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit", hour12: false });
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
-  fetch("news.json?t=" + Date.now(), { cache: "no-store" })
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+  function getJ(u) { return fetch(u + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
+  getJ("needs.json")
+    .then(function (d) { return (d.items || []).length >= 3 ? d : getJ("news.json"); }, function () { return getJ("news.json"); })
     .then(function (data) {
       var items = (data.items || []).slice(0, 5);
       if (!items.length) { wireEl.innerHTML = '<li><span class="empty">The wire is quiet right now.</span></li>'; return; }
       wireEl.innerHTML = items.map(function (it) {
-        return '<li><time datetime="' + esc(it.published) + '">' + tf.format(new Date(it.published)) + '</time><span>' + esc(it.title) + ' <span class="src">' + esc(it.source) + '</span></span></li>';
+        return '<li><time datetime="' + esc(it.published) + '">' + tf.format(new Date(it.published)) + '</time><span>' + esc(it.title) + ' <span class="src">' + esc(it.places && it.places.length ? it.places[0].name : it.source) + '</span></span></li>';
       }).join("");
     })
     .catch(function () { wireEl.innerHTML = '<li><span class="empty">Open the wire to read the latest headlines.</span></li>'; });
