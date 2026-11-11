@@ -8,6 +8,7 @@ The whole site lives in this repository and is published with GitHub Pages.
 | `wire.html` | The Wire (satellite globe): spinning globe, one tab per basic need, plus the wider AI wire (live, see below) |
 | `rome/` | Rome built in 30 minutes: drawing sheets and the interactive 3D viewer |
 | `reflow/` | 3D print your home accessories: cover image, downloadable print files and zip |
+| `purity.html` | Matter Out of Place: game draft (unlisted), dirt, purity and water |
 | `sound/` | Gamifying productivity through soundscapes: video and poster |
 
 ## AI News Wire

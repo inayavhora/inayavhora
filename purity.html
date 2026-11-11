@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matter Out of Place — Inaya Vhora</title>
+<meta name="description" content="A short keyboard game about dirt, purity and the water it takes to keep them apart.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+/* Full-bleed game canvas; the site's small type for the HUD and cards */
+:root {
+  --ink: #1c1c1b;
+  --paper: #fbfbfa;
+  --muted: #8a8a86;
+  --dirt: #6b4a2f;
+  --water: #3b7fa6;
+  --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+html, body { margin: 0; height: 100%; background: #d9d2c4; color: var(--ink); font: 400 12.5px/1.6 var(--sans); overflow: hidden; -webkit-font-smoothing: antialiased; }
+[hidden] { display: none !important; }
+canvas { display: block; }
+a { color: inherit; }
+.hud { position: fixed; left: 16px; top: calc(16px + env(safe-area-inset-top, 0px)); display: grid; gap: 6px; pointer-events: none; }
+.hud .t { font-weight: 500; }
+.meter { display: grid; grid-template-columns: 62px 120px 44px; gap: 8px; align-items: center; font: 400 11px var(--mono); }
+.bar { height: 4px; background: rgba(28,28,27,.15); }
+.bar i { display: block; height: 100%; width: 0; }
+#dirtBar i { background: var(--dirt); }
+#roomBar i { background: var(--ink); }
+#waterBar i { background: var(--water); }
+.hint { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); font: 400 11px var(--mono); color: var(--ink); background: rgba(251,251,250,.82); padding: 6px 10px; white-space: nowrap; }
+.back { position: fixed; right: 16px; top: calc(16px + env(safe-area-inset-top, 0px)); color: var(--ink); text-decoration: none; }
+.card { position: fixed; inset: 0; display: grid; place-items: center; background: rgba(217,210,196,.55); padding: 16px; }
+.card > div { background: var(--paper); max-width: 440px; padding: 22px 24px; display: grid; gap: 10px; }
+.card h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
+.card p { margin: 0; }
+.card .muted { color: var(--muted); }
+.card dl { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; font: 400 12px var(--mono); }
+.card dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.card button { justify-self: start; font: inherit; background: var(--ink); color: var(--paper); border: 0; padding: 7px 14px; cursor: pointer; }
+.card button:focus-visible { outline: 2px solid var(--water); outline-offset: 2px; }
+.pad { position: fixed; right: 16px; bottom: calc(56px + env(safe-area-inset-bottom, 0px)); display: grid; grid-template-columns: repeat(3, 44px); gap: 4px; }
+.pad button { width: 44px; height: 44px; background: rgba(251,251,250,.8); border: 0; font: 400 16px var(--sans); touch-action: none; }
+.pad .w { grid-column: 2; }
+.pad .s { grid-column: 2; grid-row: 3; }
+.pad .a { grid-column: 1; grid-row: 2; }
+.pad .d { grid-column: 3; grid-row: 2; }
+.pad .e { grid-column: 2; grid-row: 2; font-size: 11px; }
+@media (hover: hover) and (pointer: fine) { .pad { display: none; } }
+</style>
+</head>
+<body>
+<div class="hud" aria-live="polite">
+  <span class="t">Matter Out of Place</span>
+  <div class="meter"><span>on you</span><span class="bar" id="dirtBar"><i></i></span><span id="dirtVal">0%</span></div>
+  <div class="meter"><span>room</span><span class="bar" id="roomBar"><i style="width:100%"></i></span><span id="roomVal">100%</span></div>
+  <div class="meter"><span>water</span><span class="bar" id="waterBar"><i style="width:100%"></i></span><span id="waterVal">60 L</span></div>
+</div>
+<a class="back" href="./">Inaya Vhora</a>
+<div class="hint" id="hint">Arrow keys or WASD to walk</div>
+
+<div class="pad" aria-hidden="true">
+  <button class="w" data-k="up">↑</button><button class="a" data-k="left">←</button><button class="e" data-k="wash">wash</button>
+  <button class="d" data-k="right">→</button><button class="s" data-k="down">↓</button>
+</div>
+
+<div class="card" id="intro">
+  <div>
+    <h1>Matter Out of Place</h1>
+    <p>Dirt, the anthropologist Mary Douglas wrote, is matter out of place. The same earth is ground in the street and a stain on a white floor.</p>
+    <p>Walk in from the street to the inner room. Whatever is on your feet comes with you. The basin has a tank of water.</p>
+    <p class="muted">Arrow keys or WASD to walk. Hold Space at the basin to wash.</p>
+    <button id="start" type="button">Begin</button>
+  </div>
+</div>
+
+<div class="card" id="end" hidden>
+  <div>
+    <h1 id="endTitle">The inner room</h1>
+    <dl>
+      <dt>Room left clean</dt><dd id="eRoom"></dd>
+      <dt>Water used</dt><dd id="eWater"></dd>
+      <dt>Footprints carried in</dt><dd id="eSteps"></dd>
+    </dl>
+    <p id="endLine"></p>
+    <p class="muted">WHO guidance puts basic access at about 20 litres of water per person per day, for drinking, cooking and hygiene together. Many people living through drought and famine have less.</p>
+    <button id="again" type="button">Walk in again</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script>
+(function () {
+  const TANK = 60;                      // litres in the basin's tank
+  const WASH_RATE = 6;                  // litres per second while washing
+  const CLEAN_RATE = 55;                // % dirt removed per second while washing
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // ---------- renderer, scene, light
+  if (THREE.ColorManagement) THREE.ColorManagement.legacyMode = false;   // read hex colours as sRGB
+  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 0.95;
+  document.body.prepend(renderer.domElement);
+
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xd9d2c4);
+  scene.fog = new THREE.Fog(0xd9d2c4, 26, 70);
+  const camera = new THREE.PerspectiveCamera(38, innerWidth / innerHeight, 0.1, 200);
+
+  scene.add(new THREE.HemisphereLight(0xfff6e8, 0x6d6152, 0.6));
+  const sun = new THREE.DirectionalLight(0xffe8cc, 2.2);
+  sun.position.set(-18, 20, 14);
+  sun.castShadow = true;
+  sun.shadow.mapSize.set(2048, 2048);
+  Object.assign(sun.shadow.camera, { left: -40, right: 30, top: 20, bottom: -20, near: 1, far: 80 });
+  sun.shadow.bias = -0.0004;
+  scene.add(sun, sun.target);
+  sun.target.position.set(-4, 0, 0);
+  const innerGlow = new THREE.PointLight(0xffffff, 0.6, 18, 2);
+  innerGlow.position.set(11, 5, 0);
+  scene.add(innerGlow);
+
+  const mat = (c, r = 0.9) => new THREE.MeshStandardMaterial({ color: c, roughness: r, metalness: 0 });
+  function box(w, h, d, m, x, y, z, cast = true) {
+    const b = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), m);
+    b.position.set(x, y, z); b.castShadow = cast; b.receiveShadow = true; scene.add(b); return b;
+  }
+
+  // ---------- plan (x runs street -> wash room -> inner room)
+  // street: x -30..-6 | wash room: -6..4 | inner room: 4..16 ; z -7..7
+  const ZONES = { streetEnd: -6, washEnd: 4, innerEnd: 16, half: 7 };
+  const H = 3.2, T = 0.3;
+
+  // street ground: dusty, with soft patches of earth
+  const street = new THREE.Mesh(new THREE.PlaneGeometry(40, 30, 1, 1), mat(0xb08d63, 1));
+  street.rotation.x = -Math.PI / 2; street.position.set(-26, 0, 0); street.receiveShadow = true; scene.add(street);
+  const mudPatches = [];
+  const mudMat = new THREE.MeshStandardMaterial({ color: 0x4f3622, roughness: 0.55, metalness: 0 });
+  for (let i = 0; i < 26; i++) {
+    const r = 0.6 + Math.random() * 1.6;
+    const m = new THREE.Mesh(new THREE.CircleGeometry(r, 20), mudMat);
+    m.rotation.x = -Math.PI / 2;
+    const x = -29 + Math.random() * 21, z = -6.5 + Math.random() * 13;
+    m.position.set(x, 0.01, z); m.receiveShadow = true; scene.add(m);
+    mudPatches.push({ x, z, r });
+  }
+  // a few stones and dry grass tufts
+  const stoneMat = mat(0x8a7862, 1);
+  for (let i = 0; i < 40; i++) {
+    const s = new THREE.Mesh(new THREE.DodecahedronGeometry(0.08 + Math.random() * 0.18, 0), stoneMat);
+    s.position.set(-30 + Math.random() * 23, 0.05, -7 + Math.random() * 14); s.rotation.set(Math.random(), Math.random(), 0);
+    s.castShadow = true; scene.add(s);
+  }
+
+  // wash room floor (concrete) and inner room floor (white)
+  const washFloor = new THREE.Mesh(new THREE.PlaneGeometry(10, 14), mat(0x9d9a93, 0.95));
+  washFloor.rotation.x = -Math.PI / 2; washFloor.position.set(-1, 0.005, 0); washFloor.receiveShadow = true; scene.add(washFloor);
+  const innerFloor = new THREE.Mesh(new THREE.PlaneGeometry(12, 14), mat(0xf6f5f1, 0.6));
+  innerFloor.rotation.x = -Math.PI / 2; innerFloor.position.set(10, 0.005, 0); innerFloor.receiveShadow = true; scene.add(innerFloor);
+
+  // walls (low so the camera sees in); doorways at z in [-1.1, 1.1]
+  const wallMat = mat(0xd9d2c4, 0.95), innerWallMat = mat(0xffffff, 0.7);
+  const colliders = [];
+  function wall(x0, z0, x1, z1, m, h = H) {
+    const w = Math.max(Math.abs(x1 - x0), T), d = Math.max(Math.abs(z1 - z0), T);
+    box(w, h, d, m, (x0 + x1) / 2, h / 2, (z0 + z1) / 2);
+    colliders.push({ x0: Math.min(x0, x1) - T / 2, x1: Math.max(x0, x1) + T / 2, z0: Math.min(z0, z1) - T / 2, z1: Math.max(z0, z1) + T / 2 });
+  }
+  const D = 1.1;
+  // threshold wall street|wash
+  wall(-6, -7, -6, -D, wallMat); wall(-6, D, -6, 7, wallMat, 1.4);
+  // threshold wall wash|inner
+  wall(4, -7, 4, -D, innerWallMat); wall(4, D, 4, 7, innerWallMat, 1.4);
+  // outer walls of wash + inner rooms
+  wall(-6, -7, 16, -7, wallMat); wall(-6, 7, 16, 7, wallMat, 0.45); wall(16, -7, 16, 7, innerWallMat);   // near wall cut low, like a section
+  // threshold strips
+  box(0.6, 0.04, 2 * D, mat(0x8f8a80, 0.8), -6, 0.02, 0, false);
+  box(0.6, 0.04, 2 * D, mat(0xdcd8cf, 0.6), 4, 0.02, 0, false);
+
+  // basin + tank in the wash room
+  const basinPos = new THREE.Vector3(-1, 0, -5.4);
+  box(2.2, 0.9, 1.1, mat(0xdedad2, 0.5), basinPos.x, 0.45, basinPos.z);
+  const bowl = new THREE.Mesh(new THREE.CylinderGeometry(0.62, 0.5, 0.18, 32), mat(0xbcc9cf, 0.25));
+  bowl.position.set(basinPos.x, 0.95, basinPos.z); bowl.receiveShadow = true; scene.add(bowl);
+  const tankShell = box(1.0, 2.2, 1.0, new THREE.MeshStandardMaterial({ color: 0xe8eef0, roughness: 0.2, transparent: true, opacity: 0.35 }), basinPos.x + 1.9, 1.1, basinPos.z);
+  const tankWater = new THREE.Mesh(new THREE.BoxGeometry(0.9, 2.0, 0.9), new THREE.MeshStandardMaterial({ color: 0x3b7fa6, roughness: 0.15, transparent: true, opacity: 0.75 }));
+  tankWater.position.set(basinPos.x + 1.9, 1.1, basinPos.z); scene.add(tankWater);
+  box(0.06, 0.06, 0.6, mat(0x9aa3a8, 0.3), basinPos.x, 1.55, basinPos.z + 0.05, false);
+  colliders.push({ x0: basinPos.x - 1.2, x1: basinPos.x + 2.5, z0: basinPos.z - 0.7, z1: basinPos.z + 0.7 });
+
+  // inner room: a mat to reach, and a low bench
+  const goal = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 1.6), mat(0xd8cfc0, 1));
+  goal.rotation.x = -Math.PI / 2; goal.position.set(13.2, 0.012, 0); goal.receiveShadow = true; scene.add(goal);
+  box(3.2, 0.45, 0.9, mat(0xf2efe8, 0.6), 13.2, 0.225, -5.6);
+  colliders.push({ x0: 11.6, x1: 14.8, z0: -6.1, z1: -5.1 });
+
+  // ---------- the walker
+  const walker = new THREE.Group();
+  const bodyMat = mat(0x2a2a28, 0.7);
+  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.32, 0.9, 6, 16), bodyMat);
+  body.position.y = 0.95; body.castShadow = true; walker.add(body);
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.24, 24, 16), mat(0x2a2a28, 0.6));
+  head.position.y = 1.85; head.castShadow = true; walker.add(head);
+  const feetMat = mat(0x2a2a28, 0.9);
+  const footL = new THREE.Mesh(new THREE.BoxGeometry(0.28, 0.14, 0.18), feetMat); footL.position.set(0, 0.07, -0.16);
+  const footR = footL.clone(); footR.position.z = 0.16;
+  footL.castShadow = footR.castShadow = true; walker.add(footL, footR);
+  scene.add(walker);
+
+  // ---------- footprints (instanced decals)
+  const MAXP = 900;
+  const printGeo = new THREE.PlaneGeometry(0.26, 0.13); printGeo.rotateX(-Math.PI / 2);
+  const prints = new THREE.InstancedMesh(printGeo, new THREE.MeshStandardMaterial({ roughness: 1, transparent: true, opacity: 0.85, depthWrite: false }), MAXP);
+  for (let i = 0; i < MAXP; i++) prints.setColorAt(i, new THREE.Color(0x4a3420));   // allocate colours before first render
+  prints.count = 0; prints.receiveShadow = true; scene.add(prints);
+  const dummy = new THREE.Object3D(), pc = new THREE.Color(), dirtCol = new THREE.Color(0x4a3420);
+
+  // ---------- water droplets when washing
+  const DROPS = 80;
+  const drops = new THREE.InstancedMesh(new THREE.SphereGeometry(0.035, 6, 4), new THREE.MeshStandardMaterial({ color: 0x8fc3dd, roughness: 0.1 }), DROPS);
+  const dropState = Array.from({ length: DROPS }, () => ({ y: -1, v: 0, x: 0, z: 0 }));
+  drops.count = DROPS; scene.add(drops);
+
+  // ---------- state
+  let state;
+  function reset() {
+    state = { x: -26, z: 0, vx: 0, vz: 0, heading: 0, dirt: 0, water: TANK, room: 100, innerSteps: 0, stride: 0, side: 1, done: false, playing: false, washing: false, t: 0 };
+    prints.count = 0; prints.instanceMatrix.needsUpdate = true;
+    walker.position.set(state.x, 0, state.z);
+    camPos.set(state.x - 9, 11, state.z + 12);
+    hud();
+  }
+  const camPos = new THREE.Vector3();
+
+  // ---------- input
+  const keys = { up: false, down: false, left: false, right: false, wash: false };
+  const map = { ArrowUp: "up", KeyW: "up", ArrowDown: "down", KeyS: "down", ArrowLeft: "left", KeyA: "left", ArrowRight: "right", KeyD: "right", Space: "wash", KeyE: "wash" };
+  addEventListener("keydown", e => { const k = map[e.code]; if (k) { keys[k] = true; e.preventDefault(); } });
+  addEventListener("keyup", e => { const k = map[e.code]; if (k) keys[k] = false; });
+  document.querySelectorAll(".pad button").forEach(b => {
+    const k = b.dataset.k;
+    b.addEventListener("pointerdown", e => { keys[k] = true; e.preventDefault(); });
+    ["pointerup", "pointerleave", "pointercancel"].forEach(ev => b.addEventListener(ev, () => keys[k] = false));
+  });
+
+  function zone(x) { return x < ZONES.streetEnd ? "street" : x < ZONES.washEnd ? "wash" : "inner"; }
+  function onMud(x, z) { return mudPatches.some(p => (p.x - x) ** 2 + (p.z - z) ** 2 < p.r * p.r); }
+  function blocked(x, z) {
+    const r = 0.35;
+    if (x < -30 || x > 15.6 || z < -6.6 || z > 6.6) return true;
+    return colliders.some(c => x + r > c.x0 && x - r < c.x1 && z + r > c.z0 && z - r < c.z1);
+  }
+
+  function stamp() {
+    if (prints.count >= MAXP) return;
+    const z = zone(state.x);
+    if (z === "street") return;                                       // on the street, earth is just ground
+    const a = Math.min(1, state.dirt / 100);
+    if (a < 0.04) return;                                             // clean feet leave nothing
+    const side = state.side = -state.side;
+    const off = 0.16 * side;
+    dummy.position.set(state.x - Math.sin(state.heading) * off, 0.014 + prints.count * 1e-6, state.z + Math.cos(state.heading) * off);
+    dummy.rotation.set(0, -state.heading, 0); dummy.updateMatrix();
+    prints.setMatrixAt(prints.count, dummy.matrix);
+    const floor = z === "inner" ? 0xf6f5f1 : 0x9d9a93;
+    pc.set(floor).lerp(dirtCol, 0.25 + a * 0.75);
+    prints.setColorAt(prints.count, pc);
+    prints.count++; prints.instanceMatrix.needsUpdate = true; prints.instanceColor.needsUpdate = true;
+    if (z === "inner") { state.room = Math.max(0, state.room - (0.6 + a * 2.6)); state.innerSteps++; }
+    state.dirt = Math.max(0, state.dirt - 1.4);                       // each step sheds a little
+  }
+
+  // ---------- HUD
+  const $ = id => document.getElementById(id);
+  function hud() {
+    $("dirtBar").firstElementChild.style.width = state.dirt + "%"; $("dirtVal").textContent = Math.round(state.dirt) + "%";
+    $("roomBar").firstElementChild.style.width = state.room + "%"; $("roomVal").textContent = Math.round(state.room) + "%";
+    $("waterBar").firstElementChild.style.width = (state.water / TANK * 100) + "%"; $("waterVal").textContent = Math.ceil(state.water) + " L";
+    tankWater.scale.y = Math.max(0.001, state.water / TANK); tankWater.position.y = 0.1 + 1.0 * tankWater.scale.y;
+  }
+  function hint(t) { if ($("hint").textContent !== t) $("hint").textContent = t; }
+
+  function finish() {
+    state.done = true; state.playing = false;
+    const used = TANK - state.water;
+    $("eRoom").textContent = Math.round(state.room) + "%";
+    $("eWater").textContent = used.toFixed(0) + " L";
+    $("eSteps").textContent = state.innerSteps;
+    let line;
+    if (state.room > 95 && used > 20) line = "You kept the room pure, and used more water to do it than a whole day's basic allowance.";
+    else if (state.room > 95) line = "You kept the room pure. Purity here was bought with water.";
+    else if (used < 5) line = "You saved the water, and the street came inside with you.";
+    else line = "Somewhere between the street and the room, you decided what counted as dirt.";
+    $("endLine").textContent = line;
+    $("end").hidden = false; $("again").focus();
+  }
+
+  // ---------- loop
+  const clock = new THREE.Clock();
+  const tmp = new THREE.Vector3();
+  function tick() {
+    const dt = Math.min(clock.getDelta(), 0.05);
+    if (state.playing) {
+      const ix = (keys.right ? 1 : 0) - (keys.left ? 1 : 0), iz = (keys.down ? 1 : 0) - (keys.up ? 1 : 0);
+      const len = Math.hypot(ix, iz);
+      const speed = 4.2;
+      const tx = len ? ix / len * speed : 0, tz = len ? iz / len * speed : 0;
+      state.vx += (tx - state.vx) * Math.min(1, dt * 10); state.vz += (tz - state.vz) * Math.min(1, dt * 10);
+      const nx = state.x + state.vx * dt, nz = state.z + state.vz * dt;
+      if (!blocked(nx, state.z)) state.x = nx; else state.vx = 0;
+      if (!blocked(state.x, nz)) state.z = nz; else state.vz = 0;
+      const sp = Math.hypot(state.vx, state.vz);
+      if (sp > 0.3) {
+        const h = Math.atan2(-state.vz, state.vx);
+        let d = h - state.heading; d = Math.atan2(Math.sin(d), Math.cos(d)); state.heading += d * Math.min(1, dt * 12);
+        state.stride += sp * dt;
+        if (state.stride > 0.62) { state.stride = 0; stamp(); }
+        if (zone(state.x) === "street") state.dirt = Math.min(100, state.dirt + dt * (onMud(state.x, state.z) ? 34 : 6));
+      }
+      // washing
+      const nearBasin = Math.hypot(state.x - basinPos.x, state.z - (basinPos.z + 1.1)) < 1.5;
+      state.washing = keys.wash && nearBasin && state.water > 0;
+      if (state.washing) {
+        state.water = Math.max(0, state.water - WASH_RATE * dt);
+        state.dirt = Math.max(0, state.dirt - CLEAN_RATE * dt);
+      }
+      if (zone(state.x) === "street") hint(state.dirt > 40 ? "Earth gathers on your feet. The doorway is ahead." : "Arrow keys or WASD to walk");
+      else if (zone(state.x) === "wash") hint(nearBasin ? (state.water > 0 ? "Hold Space to wash" : "The tank is empty") : "The basin is by the far wall");
+      else hint("Reach the mat");
+      if (Math.abs(state.x - 13.2) < 1.2 && Math.abs(state.z) < 0.8) finish();
+      hud();
+    }
+
+    // walker pose
+    walker.position.set(state.x, 0, state.z);
+    walker.rotation.y = state.heading;
+    const sp = Math.hypot(state.vx, state.vz), ph = performance.now() / 120;
+    const swing = reduce ? 0 : Math.min(1, sp / 4) * 0.22;
+    footL.position.x = Math.sin(ph) * swing; footR.position.x = -Math.sin(ph) * swing;
+    body.position.y = 0.95 + (reduce ? 0 : Math.abs(Math.sin(ph)) * 0.04 * Math.min(1, sp));
+    feetMat.color.set(0x2a2a28).lerp(dirtCol, Math.min(1, state.dirt / 100) * 0.9);
+
+    // drops
+    for (let i = 0; i < DROPS; i++) {
+      const d = dropState[i];
+      if (d.y < 0.95) {
+        if (state.washing && Math.random() < 0.5) { d.x = basinPos.x + (Math.random() - 0.5) * 0.08; d.z = basinPos.z + 0.3 + (Math.random() - 0.5) * 0.08; d.y = 1.5; d.v = 0; }
+        else { d.y = -1; }
+      } else { d.v += 9.8 * dt; d.y -= d.v * dt; }
+      dummy.position.set(d.x, d.y, d.z); dummy.rotation.set(0, 0, 0); dummy.updateMatrix(); drops.setMatrixAt(i, dummy.matrix);
+    }
+    drops.instanceMatrix.needsUpdate = true;
+
+    // camera: follows from behind and above, leans toward the room ahead
+    tmp.set(state.x - 6.5, 12.5, state.z + 12.5);
+    camPos.lerp(tmp, Math.min(1, dt * 2.5));
+    camera.position.copy(camPos);
+    camera.lookAt(state.x + 2.2, 0.8, state.z);
+    renderer.render(scene, camera);
+    requestAnimationFrame(tick);
+  }
+
+  addEventListener("resize", () => { renderer.setSize(innerWidth, innerHeight); camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); });
+  $("start").onclick = () => { $("intro").hidden = true; state.playing = true; renderer.domElement.focus(); };
+  $("again").onclick = () => { $("end").hidden = true; reset(); state.playing = true; };
+  window.__matter = { get state() { return state; } };   // read-only handle for testing
+  reset();
+  $("start").focus();
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
