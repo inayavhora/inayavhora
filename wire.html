@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Wire — Inaya Vhora</title>
+<meta name="description" content="The Wire: how AI is being used to meet basic needs (food, health, water and shelter, education) in places facing hunger. Gathered hourly.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&family=Newsreader:opsz,wght@6..72,400&display=swap" rel="stylesheet">
+<style>
+/* Layout: the site's small left nav; globe as the instrument at the top; tabs; the record below */
+:root {
+  --bg: #fbfbfa;
+  --fg: #1c1c1b;
+  --muted: #8a8a86;
+  --line: #e4e4e0;
+  --land: #e2e1dc;
+  --focus-land: #cfcac0;
+  --pin: #b4471b;
+  --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --serif: "Newsreader", Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #141413; --fg: #e8e8e4; --muted: #7d7d78; --line: #2a2a28; --land: #2b2b29; --focus-land: #45413a; --pin: #f08a5d; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--fg); font: 400 12.5px/1.6 var(--sans); padding-inline: 24px; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+
+.site { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 48px; padding-block: 32px 64px; max-width: 1200px; }
+nav { position: sticky; top: calc(32px + env(safe-area-inset-top, 0px)); align-self: start; display: flex; flex-direction: column; gap: 2px; }
+nav .name { margin-bottom: 20px; font-weight: 500; }
+nav a { color: var(--muted); width: fit-content; }
+nav a:hover, nav a[aria-current="page"] { color: var(--fg); }
+main { min-width: 0; max-width: 820px; display: grid; gap: 28px; }
+
+.back { color: var(--muted); width: fit-content; }
+.back:hover { color: var(--fg); }
+header { display: grid; gap: 6px; }
+h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
+.meta { color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 14px; }
+.statement { max-width: 58ch; margin: 6px 0 0; }
+.dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--pin); margin-right: 6px; vertical-align: 1px; animation: blink 2.4s ease-in-out infinite; }
+@keyframes blink { 50% { opacity: .25; } }
+
+/* Globe: satellite imagery on a MapLibre globe */
+.globe-wrap { width: 100%; }
+#globe { width: 100%; aspect-ratio: 4 / 3; max-height: 72vh; background: #050607; }
+.globe-note { margin-top: 8px; max-width: 72ch; min-height: 1.5em; font: 400 11px/1.5 var(--mono); color: var(--muted); }
+.globe-note b { color: var(--fg); font-weight: 400; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; color: var(--muted); font: 400 11px/1.6 var(--mono); }
+.maplibregl-popup-content { font: 400 12px/1.45 var(--sans); color: #1c1c1b; padding: 10px 12px; max-width: 280px; border-radius: 0; }
+.maplibregl-popup-content b { display: block; margin-bottom: 4px; font-weight: 500; }
+.maplibregl-popup-content a { display: block; padding: 3px 0; border-top: 1px solid #e4e4e0; }
+.maplibregl-popup-content a:hover { text-decoration: underline; }
+.maplibregl-ctrl-attrib { font-size: 10px; }
+
+/* Tabs */
+.tabs { display: flex; flex-wrap: wrap; gap: 4px 20px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.tabs button { color: var(--muted); }
+.tabs button span { font: 400 11px var(--mono); margin-left: 4px; font-variant-numeric: tabular-nums; }
+.tabs button[aria-selected="true"] { color: var(--fg); }
+.tabs button:hover { color: var(--fg); }
+.tabs .sep { flex: 1 1 auto; }
+
+/* Record */
+.day { color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: 10.5px; padding: 22px 0 6px; border-bottom: 1px solid var(--line); }
+.row { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.row time { color: var(--muted); font: 400 11px/2 var(--mono); font-variant-numeric: tabular-nums; }
+.row h2 { font: 400 17px/1.3 var(--serif); margin: 0; }
+.row a:hover h2 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.row .src { color: var(--muted); margin-top: 4px; display: flex; flex-wrap: wrap; gap: 2px 10px; }
+.tag { font: 400 10.5px/1.7 var(--mono); text-transform: uppercase; letter-spacing: .04em; }
+.tag.critique { color: var(--pin); }
+.row.fresh { animation: arrive 1.6s ease-out; }
+@keyframes arrive { from { background: color-mix(in srgb, var(--pin) 14%, transparent); } }
+.note { color: var(--muted); padding: 20px 0; max-width: 58ch; }
+
+@media (max-width: 640px) {
+  body { padding-inline: 16px; }
+  .site { grid-template-columns: 1fr; gap: 28px; padding-block: 24px 48px; }
+  nav { position: static; flex-direction: row; flex-wrap: wrap; gap: 4px 16px; }
+  nav .name { width: 100%; margin-bottom: 4px; }
+  .row { grid-template-columns: 1fr; gap: 2px; }
+}
+@media (prefers-reduced-motion: reduce) { .dot, .row.fresh { animation: none; } }
+</style>
+</head>
+<body>
+<div class="site">
+  <nav aria-label="Site">
+    <a class="name" href="./#about">Inaya Vhora</a>
+    <a href="./#about">About</a>
+    <a href="./#speculation">Speculative</a>
+    <a href="wire.html" aria-current="page">The Wire</a>
+  </nav>
+
+  <main>
+    <header>
+      <h1>The Wire</h1>
+      <div class="meta"><span><span class="dot" aria-hidden="true"></span><span id="status">Connecting…</span></span><span id="count"></span></div>
+      <p class="statement">How is artificial intelligence being introduced where basic needs go unmet? An hourly record of reporting on AI in food, health, water and shelter, and education across places facing hunger and food insecurity. Each story is tagged by what it describes: reported use, a pilot, a proposal, or a critique.</p>
+    </header>
+
+    <div>
+      <div class="globe-wrap">
+        <div id="globe" role="region" aria-label="Satellite globe. Points mark places named in the stories below. Drag to turn, scroll or pinch to zoom, click a point for its stories."></div>
+        <div class="globe-note" id="globeNote" aria-live="polite"></div>
+      </div>
+      <div class="legend"><span>● size = number of stories</span><span>drag to turn · scroll or pinch to zoom · click a point</span></div>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Basic needs" id="tabs"></div>
+
+    <section id="wire" aria-live="polite"><p class="note">Loading the record…</p></section>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<script>
+(function () {
+  const REFRESH_MS = 5 * 60 * 1000;
+  const SHOW = 150;
+  const TABS = [
+    { id: "all", label: "All needs" },
+    { id: "food", label: "Food & agriculture" },
+    { id: "health", label: "Health" },
+    { id: "water", label: "Water & shelter" },
+    { id: "education", label: "Education" },
+    { id: "general", label: "Wider AI news", general: true },
+  ];
+  const STAGE = { reported: "Reported", pilot: "Pilot", proposed: "Proposed", critique: "Critique" };
+  const NEED = { food: "Food", health: "Health", water: "Water & shelter", education: "Education" };
+  const FOCUS = ["Sudan","South Sudan","Palestine","Haiti","Mali","Yemen","Somalia","Ethiopia","Afghanistan","Dem. Rep. Congo","Nigeria","Burkina Faso","Chad","Niger","Syria","Myanmar","Bangladesh","Pakistan","India","Kenya","Malawi","Mozambique","Zimbabwe","Zambia","Madagascar","Uganda","Tanzania","Rwanda","Burundi","Central African Rep.","Cameroon","Lebanon","Eritrea","Ghana","Senegal","Mauritania","Sierra Leone","Liberia","Guatemala","Honduras","Nepal","Lesotho","Angola"];
+
+  let tab = "all";
+  try { const t = (location.hash || "").slice(1); if (TABS.some(x => x.id === t)) tab = t; } catch (e) {}
+  let needs = [], general = [], known = new Set(), first = true;
+
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const tf = new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit", hour12: false });
+  const df = new Intl.DateTimeFormat(undefined, { weekday: "long", day: "numeric", month: "long" });
+  function dayLabel(d) {
+    const a = new Date(); a.setHours(0,0,0,0); const b = new Date(d); b.setHours(0,0,0,0);
+    const n = Math.round((a - b) / 864e5);
+    return n === 0 ? "Today" : n === 1 ? "Yesterday" : df.format(d);
+  }
+  function ago(d) {
+    const m = Math.round((Date.now() - d) / 6e4);
+    if (m < 2) return "just now"; if (m < 60) return m + " min ago";
+    const h = Math.round(m / 60); return h < 24 ? h + (h === 1 ? " hour ago" : " hours ago") : df.format(d);
+  }
+
+  function itemsFor(id) {
+    if (id === "general") return general;
+    if (id === "all") return needs;
+    return needs.filter(it => (it.needs || []).includes(id));
+  }
+
+  function renderTabs() {
+    $("tabs").innerHTML = TABS.map(t =>
+      (t.general ? '<span class="sep"></span>' : "") +
+      `<button role="tab" aria-selected="${t.id === tab}" data-tab="${t.id}">${t.label}<span>${itemsFor(t.id).length}</span></button>`
+    ).join("");
+  }
+  $("tabs").addEventListener("click", e => {
+    const b = e.target.closest("button[data-tab]"); if (!b) return;
+    tab = b.dataset.tab;
+    try { history.replaceState(null, "", "#" + tab); } catch (e) {}
+    renderTabs(); renderList(); globe.setPoints(pointsFor(tab));
+  });
+
+  function renderList() {
+    const items = itemsFor(tab).slice(0, SHOW);
+    let html = "", last = "";
+    for (const it of items) {
+      const d = new Date(it.published); const lab = dayLabel(d);
+      if (lab !== last) { html += `<div class="day">${lab}</div>`; last = lab; }
+      const fresh = !first && !known.has(it.url) ? " fresh" : "";
+      const places = (it.places || []).map(p => esc(p.name)).join(", ");
+      const tags = tab === "general" ? "" :
+        `<span class="tag ${esc(it.stage)}">${STAGE[it.stage] || ""}</span>` +
+        (it.needs || []).map(n => `<span class="tag">${NEED[n] || ""}</span>`).join("");
+      html += `<article class="row${fresh}"><time datetime="${esc(it.published)}">${tf.format(d)}</time>
+        <a href="${esc(it.url)}" target="_blank" rel="noopener"><h2>${esc(it.title)}</h2>
+        <div class="src"><span>${esc(it.source)}${places ? " · " + places : (it.region && tab === "general" ? " · " + esc(it.region) : "")}</span>${tags}</div></a></article>`;
+    }
+    $("wire").innerHTML = html || (tab === "general"
+      ? '<p class="note">The wider wire is quiet.</p>'
+      : '<p class="note">No stories in this tab yet. The specialist sources are checked every hour; stories about AI in these places are rarer than general AI news, so this record grows slowly.</p>');
+  }
+
+  function pointsFor(id) {
+    const m = new Map();
+    for (const it of itemsFor(id)) for (const p of (it.places || [])) {
+      const k = p.name; const e = m.get(k) || { name: k, lon: p.lon, lat: p.lat, n: 0, latest: it };
+      e.n++; if (it.published > e.latest.published) e.latest = it; m.set(k, e);
+    }
+    return [...m.values()];
+  }
+
+  // ---------------- Globe: MapLibre globe projection + Sentinel-2 cloudless satellite imagery (EOX)
+  const globe = window.maplibregl ? (function () {
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const map = new maplibregl.Map({
+      container: "globe",
+      style: {
+        version: 8,
+        projection: { type: "globe" },
+        sky: { "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 1, 5, 1, 7, 0] },
+        sources: {
+          s2: {
+            type: "raster", tileSize: 256, maxzoom: 14,
+            tiles: ["https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/GoogleMapsCompatible/{z}/{y}/{x}.jpg"],
+            attribution: '<a href="https://s2maps.eu" target="_blank" rel="noopener">Sentinel-2 cloudless – s2maps.eu</a> by EOX IT Services GmbH (contains modified Copernicus Sentinel data 2020)'
+          },
+          pts: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
+          pulse: { type: "geojson", data: { type: "FeatureCollection", features: [] } }
+        },
+        layers: [
+          { id: "s2", type: "raster", source: "s2" },
+          { id: "pulse", type: "circle", source: "pulse", paint: {
+              "circle-radius": ["get", "r"], "circle-color": "rgba(0,0,0,0)",
+              "circle-stroke-color": "#ff8a4c", "circle-stroke-width": 2, "circle-stroke-opacity": ["get", "o"] } },
+          { id: "pts", type: "circle", source: "pts", paint: {
+              "circle-radius": ["+", 4, ["*", 2.4, ["sqrt", ["get", "n"]]]],
+              "circle-color": "#ff8a4c", "circle-opacity": 0.9,
+              "circle-stroke-color": "#ffffff", "circle-stroke-width": 1 } }
+        ]
+      },
+      center: [45, 12], zoom: 1.6, minZoom: 1, maxZoom: 14,
+      attributionControl: { compact: true },
+      renderWorldCopies: false
+    });
+    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+    map.scrollZoom.setWheelZoomRate(1 / 300);
+
+    let pts = [], pulses = [], spinning = !reduce, idleTimer = null, ready = false;
+    const stopSpin = () => { spinning = false; clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (!reduce && map.getZoom() < 3) spinning = true; }, 8000); };
+    ["mousedown", "touchstart", "wheel", "dragstart"].forEach(ev => map.on(ev, stopSpin));
+
+    function spin() {
+      if (spinning && ready && !map.isMoving()) {
+        const c = map.getCenter(); map.jumpTo({ center: [c.lng + 0.04, c.lat] });
+      }
+      if (pulses.length && ready) {
+        const t = performance.now();
+        pulses = pulses.filter(p => t - p.t0 < 2600);
+        map.getSource("pulse").setData({ type: "FeatureCollection", features: pulses.map(p => {
+          const k = (t - p.t0) / 2600;
+          return { type: "Feature", geometry: { type: "Point", coordinates: [p.lon, p.lat] }, properties: { r: 6 + k * 40, o: 1 - k } };
+        }) });
+      }
+      requestAnimationFrame(spin);
+    }
+    map.on("load", () => { ready = true; push(); requestAnimationFrame(spin); });
+
+    function push() {
+      if (!ready) return;
+      map.getSource("pts").setData({ type: "FeatureCollection", features: pts.map(p => ({
+        type: "Feature", geometry: { type: "Point", coordinates: [p.lon, p.lat] }, properties: { name: p.name, n: p.n } })) });
+    }
+
+    map.on("mouseenter", "pts", () => map.getCanvas().style.cursor = "pointer");
+    map.on("mouseleave", "pts", () => map.getCanvas().style.cursor = "");
+    map.on("click", "pts", e => {
+      stopSpin();
+      const f = e.features[0], name = f.properties.name;
+      const list = itemsFor(tab).filter(it => (it.places || []).some(p => p.name === name)).slice(0, 6);
+      const html = `<b>${esc(name)} · ${list.length}${list.length === 6 ? "+" : ""} stories</b>` +
+        list.map(it => `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`).join("");
+      new maplibregl.Popup({ closeButton: true, maxWidth: "300px" }).setLngLat(f.geometry.coordinates).setHTML(html).addTo(map);
+      map.easeTo({ center: f.geometry.coordinates, zoom: Math.max(map.getZoom(), 4), duration: reduce ? 0 : 1600 });
+    });
+
+    return {
+      setPoints(p) { pts = p; push(); },
+      pulse(p) {
+        pulses.push({ lon: p.lon, lat: p.lat, t0: performance.now() });
+        if (map.getZoom() < 3 && !map.isMoving()) {
+          spinning = false;
+          map.easeTo({ center: [p.lon, Math.max(-50, Math.min(50, p.lat))], duration: reduce ? 0 : 2200 });
+          clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (!reduce) spinning = true; }, 5000);
+        }
+      },
+    };
+  })() : (function () { $("globe").closest(".globe-wrap").hidden = true; return { setPoints() {}, pulse() {} }; })();
+
+  // Arrivals: on first load, replay the newest few stories one by one; afterwards, pulse each new one.
+  let queue = [];
+  function announce(it) {
+    const p = (it.places || [])[0]; if (!p) return;
+    globe.pulse(p);
+    $("globeNote").innerHTML = `<b>${esc(p.name)}</b> · ${esc(it.title)}`;
+  }
+  setInterval(() => { const it = queue.shift(); if (it) announce(it); }, 6000);
+
+  async function getJSON(u) { const r = await fetch(u + "?t=" + Date.now(), { cache: "no-store" }); if (!r.ok) throw new Error(r.status); return r.json(); }
+
+  async function load() {
+    try {
+      const [n, g] = await Promise.all([getJSON("needs.json").catch(() => ({ items: [] })), getJSON("news.json")]);
+      const newOnes = first ? n.items.filter(i => (i.places || []).length).slice(0, 6).reverse()
+                            : n.items.filter(i => !known.has(i.url) && (i.places || []).length).reverse();
+      needs = n.items || []; general = g.items || [];
+      renderTabs(); renderList(); globe.setPoints(pointsFor(tab));
+      known = new Set([...needs, ...general].map(i => i.url)); first = false;
+      queue.push(...newOnes); if (queue.length && !$("globeNote").textContent) announce(queue.shift());
+      const upd = n.updated || g.updated;
+      $("status").textContent = "Last gathered " + ago(new Date(upd));
+      const places = new Set(needs.flatMap(i => (i.places || []).map(p => p.name))).size;
+      $("count").textContent = `${needs.length} stories · ${places} places`;
+    } catch (e) {
+      $("status").textContent = "Wire offline";
+      if (first) $("wire").innerHTML = '<p class="note">The record could not be loaded. Refresh the page to try again.</p>';
+    }
+  }
+  renderTabs();
+  load();
+  setInterval(load, REFRESH_MS);
+})();
+</script>
+</body>
+</html>

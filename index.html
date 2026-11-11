@@ -67,6 +67,7 @@ main { min-width: 0; }
 
 /* About */
 .about p { max-width: 52ch; margin: 0 0 1em; }
+.based, .soon { color: var(--muted); margin: 0; }
 .about .meta {
   margin-top: 32px;
   display: grid;
@@ -161,23 +162,16 @@ main { min-width: 0; }
     <a class="name" href="#about">Inaya Vhora</a>
     <a href="#about" data-page="about">About</a>
     <a href="#speculation" data-page="speculation">Speculative</a>
+    <a href="wire.html">The Wire</a>
   </nav>
 
   <main>
     <section id="about" class="about">
-      <p>Inaya Vhora is an artist working in the built environment. Her practice sits at the intersection of technology, health, wellbeing and architecture.</p>
-      <dl class="meta">
-        <dt>Based</dt><dd>Sydney, Australia</dd>
-        <dt>Focus</dt><dd>Technology, health, wellbeing, architecture</dd>
-        <dt>Contact</dt><dd>inayavhora@gmail.com</dd>
-      </dl>
+      <p class="based">Based in Sydney, Australia.</p>
     </section>
 
     <section id="speculation" class="work" hidden>
-      <a class="piece" href="news.html">
-        <ul class="wire" id="wirePreview" aria-label="Latest headlines from the AI News Wire"><li><span class="empty">Loading the latest headlines…</span></li></ul>
-        <div class="caption"><span class="title"><span class="live" aria-hidden="true"></span>AI News Wire</span><span class="date">Live, updated hourly</span></div>
-      </a>
+      <p class="soon">Architecture works, coming soon.</p>
     </section>
 
     <section id="reflow" class="project" hidden>
@@ -262,22 +256,6 @@ main { min-width: 0; }
 (function () {
   var pages = ["about", "speculation", "rome", "reflow", "soundscapes"];
   var navFor = { about: "about", speculation: "speculation", rome: "speculation", reflow: "speculation", soundscapes: "speculation" };
-
-  // Latest headlines from the AI News Wire (news.json is refreshed hourly by GitHub Actions)
-  var wireEl = document.getElementById("wirePreview");
-  var tf = new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit", hour12: false });
-  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
-  function getJ(u) { return fetch(u + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
-  getJ("needs.json")
-    .then(function (d) { return (d.items || []).length >= 3 ? d : getJ("news.json"); }, function () { return getJ("news.json"); })
-    .then(function (data) {
-      var items = (data.items || []).slice(0, 5);
-      if (!items.length) { wireEl.innerHTML = '<li><span class="empty">The wire is quiet right now.</span></li>'; return; }
-      wireEl.innerHTML = items.map(function (it) {
-        return '<li><time datetime="' + esc(it.published) + '">' + tf.format(new Date(it.published)) + '</time><span>' + esc(it.title) + ' <span class="src">' + esc(it.places && it.places.length ? it.places[0].name : it.source) + '</span></span></li>';
-      }).join("");
-    })
-    .catch(function () { wireEl.innerHTML = '<li><span class="empty">Open the wire to read the latest headlines.</span></li>'; });
 
   var SHEETS = [
     ["00", "Cover, index and sources"],
