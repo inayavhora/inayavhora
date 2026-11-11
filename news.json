@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T18:04:42+00:00",
+ "updated": "2026-11-11T19:13:51+00:00",
  "sources_reached": 12,
  "sources": [
   {
@@ -30,7 +30,7 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 1
   },
   {
    "name": "South China Morning Post",
@@ -84,13 +84,13 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 65
+   "ai_stories": 64
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 61
+   "ai_stories": 60
   },
   {
    "name": "Google News: famine",
@@ -120,21 +120,49 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 36
+   "ai_stories": 38
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 29
+   "ai_stories": 30
   }
  ],
  "items": [
   {
-   "title": "The PM wants to show action on AI, even if the answers aren't there yet",
+   "title": "AI Adoption Grows in Manufacturing, but Worker Concerns Persist",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOFZsUkdjZG9SWEJwODN1dkNialUtZVcyTG5mVEI0Ym5WZXRla2V2dWpZem5jdTdrbElSaFJVcmhXaFVTaEhzUVd2VHZIRHJEN2lqTVF5NXlLWUZ3N1h4dmxsbU4taGxTdm1WN09TaDhMU1BzOG5QbFd3NW45OG1HS0FPbGhzYnM1c3lqMmljQmhoNGk1ZWxiUzdtd2loMThVeGxlS2xTTQ?oc=5",
+   "source": "WWD",
+   "region": "International",
+   "published": "2026-11-11T18:45:15+00:00"
+  },
+  {
+   "title": "PolyU Wins CES 2027 Innovation Awards for Health and Artificial Intelligence Technologies",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOV2ZhcXlya1ZVcGg1eDBJYTFIZHlKRUtBcVBNbkhxYl9ldEdWU1FoUFR6TExPRTBEWUJOT09JTkc3Zy0wWXpBVjZwbGJjelBaSW91MWFuNC1RTlR3aDZLQkxER0otb1l0MUtUMWpMamlQQjR5M2pJY0NtVE9vZlNFbTBxbFdIem56Q2ZmdjF5ZTh3aXBnajN6azBvc1l3ZHdjV2lBR0h6RTZiSlk3N3hJdkRrdjI?oc=5",
+   "source": "Bioengineer.org",
+   "region": "International",
+   "published": "2026-11-11T18:21:12+00:00"
+  },
+  {
+   "title": "Intel, Altera Partner on Sensor Integration for Edge and Physical AI",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNekVMaGR5b1lRTXcxdV96R1dIdXhKanBHQXlpWEV0aG5DY3lJR3RiRm84eEdlOElSTlotUWJ2aHBxc04zUllhVDJwSmt2SU95em5FOERrandGUUI3Ny1LekFEZTgxVDFLek9udHVKVk5QWnBtU2dXWnlHdnExV3V2dlVMU3p3c19JVXBOR2VkTG5vbXhoOUZQb0psQ1c5Q0d4ZGxxWEZJTTJOZ3ZrMV9fTWtleDFJU2JFdmFRQ3Y0MTgxbHM?oc=5",
+   "source": "Industrial Equipment News",
+   "region": "International",
+   "published": "2026-11-11T18:16:28+00:00"
+  },
+  {
+   "title": "Government says it has AI under control as it tries to head off voter fear",
    "url": "https://www.abc.net.au/news/2026-11-12/anthony-albanese-ai-control/107373474",
    "source": "ABC News",
    "region": "Australia",
+   "published": "2026-11-11T18:00:00+00:00"
+  },
+  {
+   "title": "The job market is tough for young people. Older workers are thriving.",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY2Z4TUZGNm56WTRDc1hGLWdqbHc0ZDlYN1U5Z2VXdkM2R1Yyb0pvTzdUUklQNzJMOTZSVnViSTlzdE56WjAzRm84eEZvclAzZ2RnSjBmRWRnYUZuVzRNejViWTZZV1Q4eTdZZjV3eGc3U3ZoSGI1Y1FrWW5RX3pwdzN1dzBHWEJRd3FkSXNUREtaNklVQXFYY3VrSmNEX0hzcTlaenpDU3pwdE03Zk94SUExQ2lkTk13Rlgw?oc=5",
+   "source": "The Washington Post",
+   "region": "International",
    "published": "2026-11-11T18:00:00+00:00"
   },
   {
@@ -145,18 +173,18 @@
    "published": "2026-11-11T17:54:54+00:00"
   },
   {
+   "title": "S&P 500 rises around 1.5% as artificial intelligence optimism and CoreWeave earnings fuel rebound",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVjBFMTNZOW43d2Z4NUlSOTU5RUZXNmZqTUowUUVucGZOUWFEVDVyZGRlZmM2eWUwZG94LXpIX0hIeGZNdFc3b2hQYjJVbDktU0Q3YmN2R0U5Y25kOGdpWXd6ZEhCSXRpaUxmREtSREg4UXdwdVVXTndUdzZUOHpUQnhmc0YxTXd2dXdybg?oc=5",
+   "source": "Traders Union",
+   "region": "International",
+   "published": "2026-11-11T17:54:37+00:00"
+  },
+  {
    "title": "VerticalScope Turns 2 Billion Forum Posts Into AI Shopping Revenue",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWk1GcjhPMGFJX2UzNjY0R0dlZjNqSmNBOEczMmJhdV9Qdi15Y3UzdWpJbXlha0c5MnZxdTBweS1SMjNmTkxTVFNqTkN3NUYtczVEdXVkYjFhakUwY0ZZM1FrSllkWmRWdjJXQnBKLVZNOGMybkRLNENfSlVIV1Y4RDJGMnZkQnprTmtoZlZuVkotOXRNMlJCUU1sakNpTWxfRWdCeS1Od2JzUWFkemNESEVwX1M2MTdoMzdNd1BBWTZDdw?oc=5",
    "source": "PYMNTS.com",
    "region": "International",
    "published": "2026-11-11T17:44:45+00:00"
-  },
-  {
-   "title": "The job market is tough for young people. Older workers are thriving.",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY2Z4TUZGNm56WTRDc1hGLWdqbHc0ZDlYN1U5Z2VXdkM2R1Yyb0pvTzdUUklQNzJMOTZSVnViSTlzdE56WjAzRm84eEZvclAzZ2RnSjBmRWRnYUZuVzRNejViWTZZV1Q4eTdZZjV3eGc3U3ZoSGI1Y1FrWW5RX3pwdzN1dzBHWEJRd3FkSXNUREtaNklVQXFYY3VrSmNEX0hzcTlaenpDU3pwdE03Zk94SUExQ2lkTk13Rlgw?oc=5",
-   "source": "The Washington Post",
-   "region": "International",
-   "published": "2026-11-11T17:32:51+00:00"
   },
   {
    "title": "Hacked fridges and other dangers lurking in the ‘internet of shit’ | Letters",
@@ -166,18 +194,18 @@
    "published": "2026-11-11T17:26:27+00:00"
   },
   {
+   "title": "How we built the agents that built AWS Emulator",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWjlFckw4Vk4yZDlaOU5oeE9hWmM5OU5wQk80SzBJQjhYZkRnY3hCU1hZSGhteUhFeFlBYk01S1BPM3FoXzZnLUExakFzRm1IRU5JTHphSEJOTUxuVDZZTE9LTnJFR3hienJ2ZzR4T0w0ZFZaaGVPeDFwMklGVVNfMUw2cG9qUUE?oc=5",
+   "source": "About Amazon",
+   "region": "International",
+   "published": "2026-11-11T17:25:18+00:00"
+  },
+  {
    "title": "Best Artificial Intelligence Stocks To Keep An Eye On - November 11th",
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZmpsWjdMUVUzUTNQM3d4d2p3NUhGek5wUDBxT3F4aFdYSmRZWGliei1RdzVyM2tsZ2ZwQ1FYRkRIQTJkRF9iajV6Z0xCWmFydk41M2dMZzZmUGtycEc5M0syeFYzY2tXMlozdmgwdUs2R3F3WTFaN3BoLTJKRlBWWDE5RkFvWklKbXBGY25fYnIzLUlYOW1JekxOZXQ2emlMNEF1M244dzN2NXJqeVY1Z3dGcmpLMWJVU1l3LWhOTVhqX0Nz?oc=5",
    "source": "MarketBeat",
    "region": "International",
    "published": "2026-11-11T17:17:10+00:00"
-  },
-  {
-   "title": "AI Adoption Grows in Manufacturing, but Worker Concerns Persist",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOFZsUkdjZG9SWEJwODN1dkNialUtZVcyTG5mVEI0Ym5WZXRla2V2dWpZem5jdTdrbElSaFJVcmhXaFVTaEhzUVd2VHZIRHJEN2lqTVF5NXlLWUZ3N1h4dmxsbU4taGxTdm1WN09TaDhMU1BzOG5QbFd3NW45OG1HS0FPbGhzYnM1c3lqMmljQmhoNGk1ZWxiUzdtd2loMThVeGxlS2xTTQ?oc=5",
-   "source": "WWD",
-   "region": "International",
-   "published": "2026-11-11T17:01:56+00:00"
   },
   {
    "title": "Drug ads can influence AI treatment recommendations, study finds",
@@ -370,10 +398,10 @@
   },
   {
    "title": "Safe Pro Awarded Artificial Intelligence Powered Demining Contract...",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdEFsUTAyeVB5NmhNeGVud05hc0hvanVBaHlGb2EzckdZa1dvTEZSdW9XMF9GR3hpUmN2LXhtSE83clEtbmRXbVJJNW1ydERHQnBvalhyWUxFb2VWREtDbHJjVFdMOEhUY2QwTlJqTEp6V0dIanBMTVF3QnFSNktDdzZUb1B2SGtERTU4YURtYnpEbm1aNk1MYnp6QTZaOWpaczVsLUJKVHFlR2xPdVdOakRjWU1XNEZtSFE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNa21Jd3VzSE9vUjlFeGZDeUV1RkFQZEdZVVJsQjJWbkRyZ1NoRGhybktET2ROTDUzRlhDM3NwYlZxOEEtV3N5aVRCYkZpTW9LVU53eEZzUzNZT0hGZXRNZk9BNHZwYjRldjllaDNVSGU2dGZZRVB4RFRna3pocHRvaldoN0lDZTJLYVkyUl9JZmpqTktaQTFKd1djcEh0YUVZR19NXzJ2NmlfN1dKemxjZnI1T2J4Ni1ISm5LaTFRRQ?oc=5",
    "source": "Quantisnow",
    "region": "International",
-   "published": "2026-11-11T13:06:40+00:00"
+   "published": "2026-11-11T13:06:20+00:00"
   },
   {
    "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
@@ -384,8 +412,8 @@
   },
   {
    "title": "Global Nursing AI Alliance and American Board of Nursing Artificial Intelligence Present Nursing AI Research at AAAI",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWG9MaHJTMzB5YjFMQ3ZOVS1VbUFaRkNJRTE2czNSN2h2OE40YmFJcjdvODFtSHZULWh4T013NTlUWDdRZWNPX2ltTXBmVDhuclQzY3NJUVhrd1JWS3RoUERySW1hWVVDMklHanlmcjBVeUU3N240U202XzJlUmtJWEF3NVBZOFdONmIyMjdvYmh4NFVfMXRYdjFfNlUtR0pJYW1zS1V6aWxJRDBXcTBhTS01akFydkJMenczX28xRHYtZlV0ZjlCYW16VjJEd3Zzb1F1UXJheXJBTXpKNksyLXY2LUM2WWE3aDlpOHZRZw?oc=5",
-   "source": "EIN News",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPN2ktQjZkUUhBTHhZU0k0bE9SMW9WemZveG1vRFNwTVFiREE0YmFEay1nLUlmc1JJZEdxOERyYS1ocmIyQ25kNVhBd2VkWGlacEd5VmFpb1Z2NXNwSkw0Zi1GdVI1c2xNWHhnQzZrZjZuajZURndINEM1VGZLX29RS0xtX2tNcEZ0c0gyVHJGMlRtbUp3OERjdnFOak5oUVFZNEJNVDZ0OGJYMW9JcDFGMjFYU1plZFp6S3dlcEtmNExndWY4RDhmd0UxUXdObnZzcFhzYWZReGlvRVJSUHRRSlFCeGhDM2p0SWF4TFAxbVgtYU9zWkE?oc=5",
+   "source": "EIN Presswire",
    "region": "International",
    "published": "2026-11-11T12:51:00+00:00"
   },
@@ -404,6 +432,13 @@
    "published": "2026-11-11T12:30:00+00:00"
   },
   {
+   "title": "Rewriting less than 10 neurons in an LLM can turn it into a sleeper backdoor",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWHZaR3hKalpBcktoZXprTVBVTnU5S1JGOWtNbWtNTXFVcWdGYnllblE3T00xZmpTMlJNUEgzWDJUa2VHQkxmZV9MRlpmeHZmRzdUdWFhY1Jhd0VrRVBZOFV6LVdBMTAtSkRZanFGSlJmdlB5Wlh2LW1qMjZOOU05UGwyZFBiRHgwT3VlcVNzSXd5YnZTeFdjY3NOZ1lTSUhmVW9VM3lWN2gyTXRqYTRWYXlaN1NjOXBLSWpEXzUzM28?oc=5",
+   "source": "CSO Online",
+   "region": "International",
+   "published": "2026-11-11T12:29:56+00:00"
+  },
+  {
    "title": "Cisco boosts its AI Defense platform with Anthropic’s Claude Mythos",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNVpoR0wzQ2NmOEI1YVFsRjhGb3ZrLXlBTFliUm43Y2lwSmFLLXdEblg5dmQ1bXZ5NGYtZEJ5dWtLcG45d2hZbWxReGhPVUJuM0JFX3dwenZvZnFNVnVhMWNBNUhZSklfbVRaRGZockEwMG13MHZwLXhpdVBZV3ZmMWpURGJNVGtaUjh3b2p4cWhkeWtQRmFNWjU3c0dwUWZES0RET20ySGFjRXJCeU5RM2htSmJXOG8?oc=5",
    "source": "Network World",
@@ -415,7 +450,7 @@
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdFJGVXFRaGgxZUFrZHdFY2hoZVIxNTRTLUdFanpBQmZOdGlLVm8yOXcwM2lsb1k0WWYyX2xQU2xxTm9KLWxOeVN1MW5lSDNCc0dZS3JNMTdCTVIzblhiYjRjX2ZzLW9GdldiVXRpSmdZU0pJSU1xT2NaVmpPX29Ob2N2UHhSUjBFMzUzLVBMYlpuM2RFUDlWVWV5RXVOX0RmaTVOeQ?oc=5",
    "source": "WSJ",
    "region": "International",
-   "published": "2026-11-11T12:09:00+00:00"
+   "published": "2026-11-11T12:05:53+00:00"
   },
   {
    "title": "How AI Stocks Are Creeping Into Dividend ETFs",
@@ -852,6 +887,13 @@
    "published": "2026-11-11T00:56:10+00:00"
   },
   {
+   "title": "How AI Is Changing the Way Retail Leaders Make Decisions",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNFg2Y0F1cnJJWXBsRkZWQVQ3Q0dNUXo1M1RmSTRpU1NBNnZ5X0JyVEpOV1lIUkJuNDJPdzZPNWFVM0JMaHFFdFRwc3hEajFsMWVoMDdQbXE4YWt2ZF80VlBKS0U2VXlLaDRkazdUSGdkUWREcTZzbGlKUndfNEdLTk56YWdDLWRiQUlGdFlPdlZBSzNXTWFqQ0ZiTm9TUQ?oc=5",
+   "source": "WWD",
+   "region": "International",
+   "published": "2026-11-11T00:43:29+00:00"
+  },
+  {
    "title": "China’s Jensen Huang ‘honeypot’ trap is only more reason to win the AI race",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNVVJSjZnOGRvenlaZ3VBZXcwamxvRDBTVW9Obk1lRHVBbzhmeDJ0cWxpZkxsNzJ3a1BDemFGLXJrLVExZ1NudUMzTXQyX25ocXJKOGFkUmd3Q01VLTEtMFgxYUZubDFIUFZGRnBEbjFfNGJSWkRCR0oyZGEzOWpORmhkVDRuc1E5LU1jeFYydlJ6SHpjRk9LallQTlFsOWhOR00zcktTTHNBWVVGVGtFRQ?oc=5",
    "source": "New York Post",
@@ -1055,13 +1097,6 @@
    "published": "2026-11-10T19:47:18+00:00"
   },
   {
-   "title": "Prediction: This under-the-radar artificial intelligence (AI) stock is going to double over the next 12 months",
-   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNcUpKSU8tRlVUTE1BdjdzcWV0VldVODFuMy1ERGRNNFRJZlRrUGlOaUo4cDJmeFU0cXVmRk04S1RrR1JJSkZJSmllVkhJYlVENXlEUGxSOVQ4OVlyVGZZWFRpSUtMR1Joa1FJYTZmdk9yUUdCdFMtV29UVWN1aDhSWEV0c1ZhbUNLclRsNGUyV1dCdmJxV1U1cWplUE9NbGtJeHpJXzc1Wm5oYm42cUFKd09zWTZ3NWtMREw1RDJNYldMVG1yZE4tM1hvLW5JbHNpYUd5QWJobkM3a0kzNzRxQTBBN000NmZuQW9ya09rSllfbGZZaFhEUWFvb0tVNmIyZmZPNmJpZUlpejV4aUp1c3RIZw?oc=5",
-   "source": "MSN",
-   "region": "International",
-   "published": "2026-11-10T19:40:54+00:00"
-  },
-  {
    "title": "Op-ed: In Nvidia CEO Jensen Huang's alleged China spy scandal, there's plenty of blame to go around",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUlFQelFuUGl0X2gyVkUycVdiRDA5dUtQYkxMWGNyZkFRQVlNc2RMLWdTSUJzNmFObUsyVVVRYWFvQy1uS0hJQUdKSmpKQ0RtTWllVk14NlJqSWt4c1RyX2R4a2UyNkpiN0VuMmJqVkRuM0hnalpGYlJWcDNmbkRMVWFpczI?oc=5",
    "source": "CNBC",
@@ -1186,6 +1221,13 @@
    "source": "Los Angeles Times",
    "region": "International",
    "published": "2026-11-10T18:32:00+00:00"
+  },
+  {
+   "title": "Prediction: This Under-the-Radar Artificial Intelligence (AI) Stock Is Going to Double Over the Next 12 Months",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQTdjQzlaTkZVUFdzOHBZSlpJREQ0MkIwOFU0V2NCQVJGX2NVZ1NMbGJvSG53U3AwX3pHWWgwcWdiR0k2dkRxeERGanB3TW1pbTBULWMxTl8zNXN0cDQtTExNU0dRaEZQRmo2aHpoeEtRbXRZR1JKMUlMdjN5SXA4LTZZYTJQSWtTRmRxdF8tSjEwTmd4TEE?oc=5",
+   "source": "The Motley Fool",
+   "region": "International",
+   "published": "2026-11-10T18:31:00+00:00"
   },
   {
    "title": "Pending: AI In The Workplace : 1A",
@@ -1573,13 +1615,6 @@
    "published": "2026-11-10T14:19:00+00:00"
   },
   {
-   "title": "AMD vs. Intel: Which Is the Better Artificial Intelligence (AI) Chip Stock to Buy Right Now?",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BUHRUQ3hfNUd5WFZFdk9tWmtZTUc0X2dfZThydHpqRTgyd3VSMGFiLVlydUZtVW1kTExxQk8yWUhvODJFTHp6bUMtMjB5RFZTYWNEckM3MGFFRTB1dTZGVHBwd2xOb25XdHdtR1pDQUdkaFdLTWVnLWZCT1ZuSEk?oc=5",
-   "source": "AOL.com",
-   "region": "International",
-   "published": "2026-11-10T14:12:02+00:00"
-  },
-  {
    "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
    "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
    "source": "TechCrunch",
@@ -1648,6 +1683,13 @@
    "source": "Investing.com Canada",
    "region": "International",
    "published": "2026-11-10T13:55:13+00:00"
+  },
+  {
+   "title": "AMD vs. Intel: Which Is the Better Artificial Intelligence (AI) Chip Stock to Buy Right Now?",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNal81S2Q0LVVWX3p5UkFSeTFmRjZCUUNjaVA4eTVqVmFDYUpJT3g1NHE1MDhqUWFRcjJXUzZDa0Vkd2pLUDJqVXRfYVNORWt6SS1rT2FxUmcxSzBYQW1pS2VyUGhPV0toYnNHbWdNME5mUWNJOUtlVzZNTFVsMzZYQmg0RmJucl9sWHBVRVdEVlV2Q3dtclBzX1ZuMTIxNzlkYlB6Qkg3eGxndEFBMDJsQnJNdFdtSG5RSGNQMDJwbld3UEhUU2RlM09R?oc=5",
+   "source": "The Motley Fool",
+   "region": "International",
+   "published": "2026-11-10T13:52:00+00:00"
   },
   {
    "title": "The European Union warns that artificial intelligence increases the risk of cyberattacks in Europe",
@@ -2887,48 +2929,6 @@
    "source": "Amazon Web Services (AWS)",
    "region": "International",
    "published": "2026-11-09T18:55:43+00:00"
-  },
-  {
-   "title": "The next cyberattack could begin with a job interview",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00VGN5RXVNVWRreHVlODRnYVpSUmpaejI3OVI2OE1CS0c3SXBQZTViR01sZ04yTndRY0FNQnU1THpJOTlaOXJhQXNDWGFSRTNySGpxdHVYcjZucF9PbU9YSW5hLTNpOEhJUm1XOG13?oc=5",
-   "source": "ynetnews",
-   "region": "International",
-   "published": "2026-11-09T18:52:33+00:00"
-  },
-  {
-   "title": "The Guardian view on Jensen Huang’s affair: why did Trump ignore the warnings? | Editorial",
-   "url": "https://www.theguardian.com/commentisfree/2026/nov/09/the-guardian-view-on-jensen-huangs-affair-why-did-trump-ignore-the-warnings",
-   "source": "The Guardian",
-   "region": "UK",
-   "published": "2026-11-09T18:51:10+00:00"
-  },
-  {
-   "title": "Meta Platforms Launches Muse Ember Artificial Intelligence Model",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ1hPbVRFWTJ3Wjc2UU56RWNONURfQ0l5MXMxblI2dlE0WHhWWERVbHMtYmJrUW5qd2RsbWZ1WWtFR3VJcFROSVFtV0RHVVZJQWxVU3FzMWZ1cElFVkp0MVdGa0Jtc2tvWjIyalNVVGQ3Z1RjX1FIMHJHZVFQcnJXRlVDX25NU3BoWlRBVk1Ja0huVzM2dDVsU0tmaDVvLVA0UEhzV1picTFqRHk2emlTTTJmdjIyN3pu?oc=5",
-   "source": "marketscreener.com",
-   "region": "International",
-   "published": "2026-11-09T18:48:21+00:00"
-  },
-  {
-   "title": "Czech government approves creation of artificial intelligence council — Radio Prague International",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdUQ2TE9uX2cycUdxY2xxYXJzendZRkQxWEJKclFkNC1EOVV6WFZWUENDOExzYW5yUWwwZHNvOWJqQTRBSTFaNG5pa2hYUlBUQzlSdFhxbER2NTc1dkdmMHV0aXpoQnlVQ0gtNjNHM2Q3eFVGb3dSNnJobXZLMDBzU2E2amRyWVhyYzZuYnVrekFORHFUWWVWZ2tJMDNBYWpnbWZBWlcwZTVTV1ROS080VUlhbjN0SlNHWlo3TVdyc1Q?oc=5",
-   "source": "UA.NEWS",
-   "region": "International",
-   "published": "2026-11-09T18:45:36+00:00"
-  },
-  {
-   "title": "News24 premieres Artificial Intelligence: WHO’S IN CONTROL?",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQX2lPdmZ5R0swNm5mZHRyZWtWNHU2cHZlSFZXMVl3djZhYnIwTkxjVnJxNGRvZXVSNkxTZElkemx1OUw1TlNNdGQ2TWE2dTBPc2tqcS1kS0pOQnlDdWlMbzdQVkxRVVBRS21Qby1FOHd3UEdpbi05NUtUQmlGWkNQdzMta1BRTXhLR3hZdXFOTmtYeHZUSE9FQ2l2eUtJQURT?oc=5",
-   "source": "TV Blackbox",
-   "region": "International",
-   "published": "2026-11-09T18:45:00+00:00"
-  },
-  {
-   "title": "Professional work deserves professional tools. Meet AWS Quick. | Amazon Web Services",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZktoS0ZMQkpwM1lSWXMtdUtrRW5CSDVYVmhpNXpZN1BvUjkxTzN6REdTSDk1UjVWVmEwTkliNkpCdjJ2cFBkYzZfUTZXdTBOOHZHN2NrY3NwLWFISmZ2VVNpVWpHbTJwa25qTXJNM3c4TkZzZFpKdFVobloteGt5bGRhOHhkSG5RMVBTb3Y5My03c1Vxejd0cmFubEJyZURiNVRpeHZuQVNDWGs?oc=5",
-   "source": "Amazon Web Services (AWS)",
-   "region": "International",
-   "published": "2026-11-09T18:43:30+00:00"
   }
  ]
 }

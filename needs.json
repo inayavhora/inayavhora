@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T18:04:42+00:00",
+ "updated": "2026-11-11T19:13:51+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -30,7 +30,7 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 1
   },
   {
    "name": "South China Morning Post",
@@ -84,13 +84,13 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 65
+   "ai_stories": 64
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 61
+   "ai_stories": 60
   },
   {
    "name": "Google News: famine",
@@ -120,13 +120,13 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 36
+   "ai_stories": 38
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 29
+   "ai_stories": 30
   }
  ],
  "items": [
@@ -585,6 +585,47 @@
     }
    ],
    "stage": "reported"
+  },
+  {
+   "title": "30 Cambodian officials, teachers to attend AI-STEM training in India",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSFdZbFJnY3p0cGhZbGVBWElvcF82amxYaGZSV0ZZaUc3R3ctY2ZCcDU2TXAtWXY2YWpXSzNOM0cxTWhDdTNuMWhsZm1HU2RfT1BXUXVJZThFT1JzNWVxLVNnMlZjNXl6WXBwUTZ6eUdZdEVtNk00Q0x6bmxtS1lEaUkyVFNHMkJoNERVMXJkOEdqZGpleEdWY1NnWTRmc0RJbENuQ1FpS1h3OXM?oc=5",
+   "source": "Khmer Times",
+   "region": "International",
+   "published": "2026-07-18T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "TikTok Launches AI Literacy Hub in Kenya, Nigeria, South Africa as Part of Broader Safety Push",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOR1ozVzhhRUpkYTBXSkNoMWkwRlk4Y04tcllqSU94c0sxRjFRUTAyNWZkUlRwTmw2WW13ZXBodXlCX0VEX0hEcFgxQVFfeFQtTjNtQTloZFRQVWdseEZ3T0ZWRG9mN2JadVNvRHo2ajdlamxkRThIVjdFNmhybHhhUlVNSlk0OVRVLUxvcVNOQ2JzejlYcGtsZzJCTFhHalkyODJXZUMyaWs3NURmd1hQcWNIZUE0ei16Nnc?oc=5",
+   "source": "Bantu Gazette",
+   "region": "International",
+   "published": "2026-07-15T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "Nigeria",
+     "lon": 8.7,
+     "lat": 9.1
+    },
+    {
+     "name": "Kenya",
+     "lon": 37.9,
+     "lat": 0.0
+    }
+   ],
+   "stage": "pilot"
   },
   {
    "title": "TikTok Launches In-App AI Literacy Hub in South Africa, Nigeria and Kenya as Part of Broader Transparency Push",
