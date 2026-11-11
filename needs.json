@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T21:46:32+00:00",
+ "updated": "2026-11-11T23:03:06+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -30,7 +30,7 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 2
   },
   {
    "name": "South China Morning Post",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 100
+   "ai_stories": 102
   },
   {
    "name": "The New Humanitarian",
@@ -108,7 +108,7 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 28
+   "ai_stories": 41
   },
   {
    "name": "Google News: water",
@@ -120,7 +120,7 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 37
+   "ai_stories": 36
   },
   {
    "name": "Google News: Gates",
@@ -190,6 +190,24 @@
    "source": "Analytics India Magazine",
    "region": "International",
    "published": "2026-11-10T11:42:42+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "Google.org grants $2.3m for Indian AI disease-screening app",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWlg4TGxMX3QzTVlfSHM4SmFuX1FjOUcxMFRFd1JaYTV1NklWU2JVZGZPZzBtR0VrZXkwcFByMmZpcEdZUkd5clhMUm8zOFFzNDFYQU1DQ3ItQnNUcS12cW9TUlV3cTVXdmxOT19wN0dBSFNDdXdMVmV5RG0yZ0YtaWZpN052SEdfRkFB?oc=5",
+   "source": "Tech in Asia",
+   "region": "International",
+   "published": "2026-11-10T07:35:00+00:00",
    "needs": [
     "health"
    ],
@@ -281,24 +299,6 @@
    "stage": "reported"
   },
   {
-   "title": "IIT Kharagpur Plans India's First Physical Artificial Intelligence School",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMFdUbUxONFF2ak9DRlRoQUM5X3lDSkFmRzl4MTk0YUZGQUxlOHFxSUZucmxwMDFMbU16NXRuc2hYNDBZaHFoNlZaTVZPT1VIUktjellqeU1qbEtVdmlaME5pMlUtM2FLZlF2dExjY09EZ19QMmRoS2JPZHZJM25Yd3FtSGJwYkVZakZ6U0FOWEhwQmljcHFJSXVkYWJwMmxKdlpHRll4aFYyZE1oUkRnZ09B0gG6AUFVX3lxTFBwWFd6Q2V0UjByTVVySTF2MWRad1UyMGtvekZ1ZVhSbXBWakRwNWk2aXNINDZ3VXBRN2lReC1DR2twTmZUMC1iN0otZDNMbXJlX2VfX0xpTVo1SXI4MVNNT09XdDZoOTJsdXBfSjVIbUtOQm9ORVVKdW5TTmdNZnIyMmQ1RjZwT0ZXV2txcjBMS0dYYWctaUlpM01JZnRFdDFCbVhEZmlfTms4M2pOZWQwT1lUYW1hWW90Zw?oc=5",
-   "source": "NDTV",
-   "region": "International",
-   "published": "2026-10-27T07:00:00+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "India",
-     "lon": 78.9,
-     "lat": 21.0
-    }
-   ],
-   "stage": "proposed"
-  },
-  {
    "title": "IIT Kharagpur to Build India’s First Physical AI School: What Makes It Different?",
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUGFYMHhGS0hHN0hVN0ljXy1uamktZjlHU0o0TFl4VUROR0hycmJaNHg2a1pPbVN2TXlRQTR4eGF3R2xTbWpXZUlKTXdkNC1xMi1NUXlnb3UyNHpfSXVMaklfVWNEZlM1bE5FOGFZRmhzdTBqMkE0VHJvdDRkV294REVOZDVXdk9hVEN2SkxPc1ByREpIM1E?oc=5",
    "source": "APAC Media",
@@ -315,6 +315,24 @@
     }
    ],
    "stage": "reported"
+  },
+  {
+   "title": "IIT Kharagpur Plans India's First Physical Artificial Intelligence School",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMFdUbUxONFF2ak9DRlRoQUM5X3lDSkFmRzl4MTk0YUZGQUxlOHFxSUZucmxwMDFMbU16NXRuc2hYNDBZaHFoNlZaTVZPT1VIUktjellqeU1qbEtVdmlaME5pMlUtM2FLZlF2dExjY09EZ19QMmRoS2JPZHZJM25Yd3FtSGJwYkVZakZ6U0FOWEhwQmljcHFJSXVkYWJwMmxKdlpHRll4aFYyZE1oUkRnZ09B0gG6AUFVX3lxTFBwWFd6Q2V0UjByTVVySTF2MWRad1UyMGtvekZ1ZVhSbXBWakRwNWk2aXNINDZ3VXBRN2lReC1DR2twTmZUMC1iN0otZDNMbXJlX2VfX0xpTVo1SXI4MVNNT09XdDZoOTJsdXBfSjVIbUtOQm9ORVVKdW5TTmdNZnIyMmQ1RjZwT0ZXV2txcjBMS0dYYWctaUlpM01JZnRFdDFCbVhEZmlfTms4M2pOZWQwT1lUYW1hWW90Zw?oc=5",
+   "source": "NDTV",
+   "region": "International",
+   "published": "2026-10-27T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "proposed"
   },
   {
    "title": "IIT Kharagpur to set up India's first dedicated academic school focused on Physical AI",
@@ -582,6 +600,24 @@
      "name": "India",
      "lon": 78.9,
      "lat": 21.0
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "Far from Bangui how AI is helping detect Tuberculosis in rural Central African Republic",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRGI1bFFEUXdqSThJOV9TVHg2WHRqeGpnQ3dGSUtFTUotRXR1RG53QndXLW96RmxNUTBjeDAwZ0hMa3pFUWhBSTNMM0oxQXg1QkRKZzZSM2ZYX29JTWRQY2lyRHl0NGlBWE4xbDZEakdlUmJQdTJlcExFU0JoTno4YWphelRfalk3WjdUX1E0SUhDenRwV2M2MmRlNlk0S3QxaTI1d1Vsakt6VnBobENPcHdOeXpsaDc2NGxPTkJyTzRUeEFieGJXYXZQY0xKRDc3Rk5Ec1dtbkI1Y1dBU3NoYVZ3?oc=5",
+   "source": "MSF Southern Africa",
+   "region": "International",
+   "published": "2026-07-22T07:00:00+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [
+    {
+     "name": "Central African Republic",
+     "lon": 20.9,
+     "lat": 6.6
     }
    ],
    "stage": "reported"
