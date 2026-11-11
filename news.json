@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T23:03:06+00:00",
+ "updated": "2026-11-11T23:58:07+00:00",
  "sources_reached": 12,
  "sources": [
   {
@@ -84,7 +84,7 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 65
+   "ai_stories": 64
   },
   {
    "name": "Specialist sites (2)",
@@ -96,7 +96,7 @@
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 43
+   "ai_stories": 42
   },
   {
    "name": "Google News: farmers",
@@ -108,7 +108,7 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 41
+   "ai_stories": 28
   },
   {
    "name": "Google News: water",
@@ -131,11 +131,88 @@
  ],
  "items": [
   {
+   "title": "The unfolding Jensen Huang scandal: a timeline",
+   "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-11T23:50:00+00:00"
+  },
+  {
+   "title": "Google Brings Gemini Live to Apple CarPlay",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZlBkWUppQkFFTDdhR2N5RTFTanBidVZSOGJNcFhFRFFheHhKOHFyc1ZpTU05aW00SWRiaXFFT2V5Q0F4MGtEallGRW5BVU9Uem5uQXFITDBWYXlLSUtzUHZZVWdwNjViWnRfeW9Vd0xseTNqYXJCRklLb3VQakJrUUFaMU52UUM5SXRpS3Y2RTRMUTZ3RzdHc1ZEczYyUlo4U3c?oc=5",
+   "source": "PYMNTS.com",
+   "region": "International",
+   "published": "2026-11-11T23:46:07+00:00"
+  },
+  {
+   "title": "Jensen Huang Said to Have Had Relationship With Nvidia Executive Who Reports to Him",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPV0NCNjVPR0M2THpMdkhiTW5jZUlmVXJzNHk4YjZYeWtGZHc3Vk81V3czUXBBVjktcXlSLWs3MFdyWkRtcmRpV1BmY1hKckhyU3RYWEdsTWlGcnhFVFVNakRLLWZvREpURHJnRVVSdmZEcHJWU2p5YWJZX1pEWGRWRDB1aw?oc=5",
+   "source": "The New York Times",
+   "region": "International",
+   "published": "2026-11-11T23:44:33+00:00"
+  },
+  {
+   "title": "Dual-Branch Artificial Intelligence Enhances Forensic Sex Estimation from Adult Chest Radiographs",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPY2J2N1JmbWluVnozLVBybFN5MzFqdTM1dWhmeGdjQ0hoTGdxVzJ1VnRvTERBc2FOQ1ZFdGQ4OUxOVWxhVkJOM29HUmZRTnhHdkMxcms5Q0Y1XzBwTnMzaDFBX1hYMUNkOWw1cUJqX3JVTlFJb2ZsVHFvUXpheDF3d1ZCT2hhRXJiTG9ZbHJCRGpKeGtaRDlLbXlwcWRETGhWRHlQYnFGREZnYV9zOVN3Mi00VFJaMVVXODkwWmtlWQ?oc=5",
+   "source": "Bioengineer.org",
+   "region": "International",
+   "published": "2026-11-11T23:33:46+00:00"
+  },
+  {
+   "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+   "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-11T23:28:45+00:00"
+  },
+  {
+   "title": "The board of directors of U.S. artificial intelligence semiconductor company Nvidia is reportedly pr..",
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ScGt2SHRFQnFRRGQzRHFOR1VDMHpKeDhuRmdmaDBseEY0NVVBMHA3bDBjblpaRWZMaGp0R0gyVWlGbmVlSnQ1QmEzSDlRR2s?oc=5",
+   "source": "매일경제",
+   "region": "International",
+   "published": "2026-11-11T23:17:40+00:00"
+  },
+  {
+   "title": "Jensen Huang accused of having another affair — with an Nvidia exec",
+   "url": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-11T23:17:05+00:00"
+  },
+  {
+   "title": "Introducing the Web Search API on Amazon Bedrock AgentCore",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbWV6aXZOWENsNl9ORWZWdXJ3cG5LdmN5OFZQTk1Iekc1bmNxR1loRzVqNVpCLTQxZDF3M1hCOE1kVzgxTmkwVkxrWFhJcWVkUURuSE9LTWhNb3FrWExjWjBYUW1HdzNTT2lNaVpyQnE5eVI0clN1czZIM21kZFpsejFfeW5iVm04dzAtZEJRdFhzRHZzQmFfUjNaTnF5TFJac0I2NFZQSEQ?oc=5",
+   "source": "Amazon Web Services (AWS)",
+   "region": "International",
+   "published": "2026-11-11T23:13:16+00:00"
+  },
+  {
+   "title": "Artificial Intelligence and the Future of K-12 Education: What Do Parents Want?",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbUlsYldReTV1azdwQ0JxWWJvVGhON241MktSVzdKdGhCanhLMmphcld1NXBGei13c0NwNjZJd0VDcEhreUhDV2xWaXVaNmJFNVFpSE5CR092Z3hwaGV2NEx1b0Mwa0Yya2t0SjBqdWtoUXN2RjMxNWhZU3FuRm5QanEtTDkxbFZnX0syOENOQ0s3bVk1SWdwWDRkeHlCbmJMWG5HeVlHRVNselVkSnlMTTVn?oc=5",
+   "source": "Institute for Family Studies",
+   "region": "International",
+   "published": "2026-11-11T23:12:39+00:00"
+  },
+  {
    "title": "Nvidia is reportedly preparing to fire Jensen Huang",
    "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
    "source": "The Verge",
    "region": "US",
-   "published": "2026-11-11T22:47:38+00:00"
+   "published": "2026-11-11T23:10:43+00:00"
+  },
+  {
+   "title": "Winneshiek County Approves Policy Outlining Employee Use of Artificial Intelligence",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVjhWX0lwM2cySkdBel91ckdTc2FnRE5KR2NkbFhfTGcxWDY0QmxjeUp6dkhHSS1RcDJ1UlhXa29ZZTZZRHBId3lEcl9VaVE1ZjFBRUVUdFd1dnBUaFJMbUxUQzk5anctNDJUVUt1emVNNzNTOVJGb296WC1MMGs0NWgtaFJXT2ZEazhITVNDTWI2QkVKcmR3RnF4TlpuakdnVkZPbnk5Q1lzeXI4TE9fOXJkR0J6Q0lTWnlz?oc=5",
+   "source": "Decorah News",
+   "region": "International",
+   "published": "2026-11-11T23:00:00+00:00"
+  },
+  {
+   "title": "Stock Market Today: The AI Trade Is Back With a Vengeance",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE45LWpRV3VOM3JUSVQyeERfdTJvOEdTdWtaX0lrTlJSUDFhQi15NkFyUVlfSktGX2VvZUtLSkJKcHB5TC1KWUE2TFd5QlFyQkdhRFcxb3ZRX2FFSDRsaDNvNnR2TElWZ2E1VS14MHFucGwwdjhwRkE?oc=5",
+   "source": "Barron's",
+   "region": "International",
+   "published": "2026-11-11T22:38:00+00:00"
   },
   {
    "title": "Superhuman AI bots will not steal this man's job",
@@ -150,6 +227,13 @@
    "source": "Amazon Web Services (AWS)",
    "region": "International",
    "published": "2026-11-11T22:26:40+00:00"
+  },
+  {
+   "title": "Law firm Latham earmarks cash for associates' AI contributions",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWDRwZDBSVE5Wb3VXcDY4VU9nOWRJcWp0T1F0cEM5ZU1BaExpSHdZc1YwcllKNXZQM2ZVYURRSVZ2MnpyVTZwcGJmWV9zMENsYlo1VDlxMmJrVkhOT1lYT0YtcVE2elRtZk0xcVhfaXpoZkFaOHhtMXNuRDRfeE1tdk1JZVQtRElRLUg5NDVyamxmTHJxWXE2WU9VRGV6R085X3lpVzNEbXhvdzE3ejdr?oc=5",
+   "source": "Reuters",
+   "region": "International",
+   "published": "2026-11-11T22:22:56+00:00"
   },
   {
    "title": "View From The Eighth Pole: Artificial Intelligence Offers A New Way To Play The Horses",
@@ -276,6 +360,13 @@
    "source": "Bioengineer.org",
    "region": "International",
    "published": "2026-11-11T19:47:06+00:00"
+  },
+  {
+   "title": "WIU Cybersecurity Center Director Shares Insights on Cybersecurity in the Age of Artificial Intelligence",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8zWllQRnZNSUMyT3lXakdvTlBxNjBTM1VZcnFSUXFRaWNCM0c3RGYzczdVOWk5aEhxeDlWTlpPbVdCNVdBZGMyM2d0X1hqQ2lfaXV6X2JXOUxDYXdwS0lpRTZaTmx6QzYw?oc=5",
+   "source": "Western Illinois University",
+   "region": "International",
+   "published": "2026-11-11T19:46:45+00:00"
   },
   {
    "title": "New York Launches AI Safety Center Ahead of RAISE Act Deadline",
@@ -1137,6 +1228,13 @@
    "source": "NDTV",
    "region": "International",
    "published": "2026-11-11T01:31:04+00:00"
+  },
+  {
+   "title": "Introducing Kimi K3.1 Pro on Amazon Bedrock | Amazon Web Services",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPU2hGMmxMbEowUFJId01GM2tWekRqZURpT1ZjcjhiZUdzRFV1SEJ5OXRCRms2THkyVC1MbkQxZDBXNHlUY0lNeVdaX1lLZ08zQTg0ZHl5b0xiOGFDM19WakZ2QmFCU0djQlRCQ3I1THZTd3IxX0Q5bW5TdXV0enNkSjJkZmR4S09xRDlhTHo0bmItaXEz?oc=5",
+   "source": "Amazon Web Services (AWS)",
+   "region": "International",
+   "published": "2026-11-11T01:07:19+00:00"
   },
   {
    "title": "OpenAI Gives Businesses New Tools to Reach ChatGPT Users",
@@ -2831,104 +2929,6 @@
    "source": "CASRAI",
    "region": "International",
    "published": "2026-11-09T23:46:52+00:00"
-  },
-  {
-   "title": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-   "source": "The Verge",
-   "region": "US",
-   "published": "2026-11-09T23:46:30+00:00"
-  },
-  {
-   "title": "Silicon Valley and Trump rally behind Nvidia CEO after his affair with alleged Chinese spy",
-   "url": "https://www.theguardian.com/technology/2026/nov/09/nvidia-jensen-huang-affair-trump-musk",
-   "source": "The Guardian",
-   "region": "UK",
-   "published": "2026-11-09T23:30:37+00:00"
-  },
-  {
-   "title": "Jensen Huang reportedly engaged a PR firm with a history of handling high-profile sex scandals a year ago",
-   "url": "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-09T23:28:37+00:00"
-  },
-  {
-   "title": "Trump Says FBI Is Reviewing Huang Affair, Cites Call With CEO",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPek1jTVItNERpS2JoVzRUUUF6VjhnNzI1aVpvN09wWmRsckFmUlE4aEY0N2xNcGtVa2U2UmhhZmZvRHlLS2ptM1lKUGM2b1BOUXBlY2p3cVVpbGxrczZfQWNFSmxMc2preWw4eDNjSkhSWjAzYXhLSnltUlRSUEVPNll6NGw5SlM3b3NwSW5ZYzhyVkhZR0R6SE9YSThraE5rNFpRU1JHdld2aXB5YWVDVjRLS0xHRTg?oc=5",
-   "source": "Bloomberg Law News",
-   "region": "International",
-   "published": "2026-11-09T23:15:00+00:00"
-  },
-  {
-   "title": "Is AI A Financial Bubble? – OpEd",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9nSnJMQVVzd2pvUnBQUkdVdlRUaVpNcFk2azZyRi1NYXpLaWIzZEMtNEpONzk2ZGRFdWJuSW41NVlGcDZ3YlFzY19HX2N3S3ZzeGRBN0pIeWpkVDJyY1VnTkt0VURCVDhDV0ROLTdoTFBaR2kzLU1WOA?oc=5",
-   "source": "Eurasia Review",
-   "region": "International",
-   "published": "2026-11-09T23:10:01+00:00"
-  },
-  {
-   "title": "As systems that require artificial intelligence to attach marks to images and videos created by arti..",
-   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE93WTVPTGR6d1o2djZFb1Y1VFY3VF8yMGw5OWMxQXJub2t3Ukt6SUZYUXBUMDZDRWs5Zml4VE16UnRXM1kybW1CSUVqRQ?oc=5",
-   "source": "매일경제",
-   "region": "International",
-   "published": "2026-11-09T23:00:00+00:00"
-  },
-  {
-   "title": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
-   "url": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-09T22:46:09+00:00"
-  },
-  {
-   "title": "UK writer M. John Harrison wins Booker for AI-tinged apocalyptic novel",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZTBTMWZJVzFTZW5VUS15SGdiMnFBZnpmU2tuQlUyaTF0eXp5RWNiTTl4REMzdkU1dEJtRzRvVS1haVdMbFpZV0NTS2ozaGwwM0o4amdVNWhWNTlFRk9CdXVoMWxQZkhJejQ0anpEYnZ2cG9tR1h0WDhxVDM2RU5sNnduVEJDOE5NNHJyZlA2c3F6YXJheW40dDlCaVg4MFhZX1YxVGlUTExEaDRyY1Z30gG0AUFVX3lxTE91YmlNZDNQTEJVeXpjSUhQUnk1VWVqU1F5T0RoanEyV2ZpS0FieGkyZVluT0dJT3A5UGUzaVJ2YkptTnN4cnBqWGVmbUZGWjQ4MS1tME9GSWlvaTVOdUg4VUp2aDUxZW4xd01rVkYxdEtiRHZaQWstUE8xa0loa0wzbkp4aGpfRWtCbXJ3N3l4cXJRVmUzMEZLWVRpR2o5Q1drZ1VVeHp4bzhIVlU5djJHOVk2Wg?oc=5",
-   "source": "Inquirer.net",
-   "region": "International",
-   "published": "2026-11-09T22:44:00+00:00"
-  },
-  {
-   "title": "Macron wants AI ban wherever it threatens children",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTFM5NFdpY2JPRGNDYkRrU2hUYzh4Z0h1UFJKM29VdU9RVVEzeTdCM3BtTl9jR1NCTkFlSzVIRHFBcFNna0VsLTN2d3M0MVhpX3JrazdUZllKczhKTFVCcENTRDVJT2I0ZFJFWWtNRnVLamFCLWh4MnFZMC15WnhJVnY0ZjlsWUhvRnpXSTNCWHZOMklwanlCRXpzRFUtWm5fUmRqRUFVdmJhcV9fcjBUbWVZdVVwY1pxekE?oc=5",
-   "source": "Le Monde.fr",
-   "region": "International",
-   "published": "2026-11-09T22:30:48+00:00"
-  },
-  {
-   "title": "A Blue Tsunami in State and Local Government Elections May Have Just Driven a Dagger Through the Artificial Intelligence (AI) Data Center Trade",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX2RVM2NqZmMyTGF4SEw3SXhYYVJlVURnZXFhRHN6UGFHX2FNVHF0c3JjVUtoaS03UlFVZE15alNkRjIxanFxQzNNVEpORTluZ3Y3T1AwOEJ4MnJLX2F6MEFJbjg0LVF5UzZZOUhVVDBjRVdTWWZYbXNGdkx5S1FkWko2RjhTV0FscFlycWM4WFhBUFpPOGx1Mw?oc=5",
-   "source": "The Motley Fool",
-   "region": "International",
-   "published": "2026-11-09T22:30:00+00:00"
-  },
-  {
-   "title": "Computational Framework Maps Regional Skin Aging Through Spatial Omics and Artificial Intelligence",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWW5hQTFNbHU0bExRR3RybjltRHF1TmpJSG5TMlhRMjE5Wm0tbXV1RWc3aHc0enVXLUNxcUNTWHZzWDhZd1RyWnNIUTR2Y1NRcUhQVWZhU1lfSE52TXN4TWZBWVo1UndsdHl6MDZSVi1rNGtFNFdpbnRqR2RfN05PZElkaWx5SDBFblZlWWR1cWxiM2dEeUFacGlqUGhtTk5haUh4NE5PMlFfTVp0QkJYYkRSZXZONUhJeGdOOGxYRHY?oc=5",
-   "source": "Bioengineer.org",
-   "region": "International",
-   "published": "2026-11-09T22:28:44+00:00"
-  },
-  {
-   "title": "The race is on to sue Nvidia",
-   "url": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-09T22:23:42+00:00"
-  },
-  {
-   "title": "Howard Professor Danda B. Rawat Receives $700,000 NSF Award for AI Research",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNHJLel94eWotem45aENLZC1LdUgzWms3aWlTTkpiV2JmdXJxWS01WVR6VFAwNFVaellGNHYwYjRneGQyb3c5QW4wbkdGZDBQaGZlY2Z1RVNYaEFlcFFhUEt5ZE45eU9MQlBTdmF0TjVvT29ScHlHLXFZTXV4YklySEwzSmkzOWZtQU1pMnVOdHBxOC11WC01MUw3MzFuMm0zUjJ3dGNwRmt4UQ?oc=5",
-   "source": "The Dig at Howard University",
-   "region": "International",
-   "published": "2026-11-09T22:11:17+00:00"
-  },
-  {
-   "title": "China’s tech funding divide faces test as fears of an AI bubble rattle markets",
-   "url": "https://www.scmp.com/tech/tech-trends/article/3373746/chinas-tech-funding-divide-faces-test-fears-ai-bubble-rattle-markets",
-   "source": "South China Morning Post",
-   "region": "Hong Kong",
-   "published": "2026-11-09T22:00:13+00:00"
   }
  ]
 }
