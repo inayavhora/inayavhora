@@ -1,4 +1,16 @@
-# AI News Wire
+# Inaya Vhora — website
+
+The whole site lives in this repository and is published with GitHub Pages.
+
+| Path | Page |
+|---|---|
+| `index.html` | Home: About and Speculative, with each project opening inside the page |
+| `news.html` | AI News Wire (live, see below) |
+| `rome/` | Rome built in 30 minutes: drawing sheets and the interactive 3D viewer |
+| `reflow/` | 3D print your home accessories: cover image, downloadable print files and zip |
+| `sound/` | Gamifying productivity through soundscapes: video and poster |
+
+## AI News Wire
 
 A self-updating archive of AI headlines from international newsrooms, for the Speculation section of Inaya Vhora's website.
 
@@ -9,7 +21,7 @@ A self-updating archive of AI headlines from international newsrooms, for the Sp
 | `fetch_news.py` | The research robot. Reads 12 news feeds (UK, US, Germany, Qatar, Australia, Hong Kong, plus Google News worldwide), keeps the AI stories, and adds them to `news.json`. |
 | `.github/workflows/update-news.yml` | Runs the robot every hour on GitHub's servers, for free. |
 | `news.json` | The archive. Starts empty and fills on the first run. Keeps the latest 400 headlines. |
-| `index.html` | The page visitors see. It reads `news.json` and checks for new headlines every 5 minutes. |
+| `news.html` | The page visitors see. It reads `news.json` and checks for new headlines every 5 minutes. |
 
 ## Setup (about 10 minutes, no coding)
 
@@ -24,11 +36,11 @@ GitHub Pages can also serve the rest of your site, and you can point a custom do
 
 - **Sources**: edit the `FEEDS` list in `fetch_news.py`. Each line is a name, a region, a feed URL, and whether the feed is AI-only.
 - **What counts as AI**: the keyword lists `AI_ACRONYMS` and `AI_WORDS` in the same file.
-- **Archive size**: `MAX_ITEMS` in the script; how many show on the page: `SHOW` in `index.html`.
-- **Nav links**: the `About` and `Speculation` links at the top of `index.html` point to `about.html` and `speculation.html`; change them to match your pages.
+- **Archive size**: `MAX_ITEMS` in the script; how many show on the page: `SHOW` in `news.html`.
+- **Nav links**: the links at the top of `news.html` point back to the home page (`./#about`, `./#speculation`).
 
 ## Notes
 
 - If a news outlet changes or removes its feed, that one is skipped and the rest keep working. The Actions log shows which sources were reached on each run.
 - GitHub pauses scheduled jobs on repositories with no activity for 60 days. The hourly commits count as activity, so this normally isn't an issue.
-- Opening `index.html` by double-clicking it won't load the headlines (browsers block that). View it through the GitHub Pages link instead.
+- Opening `news.html` by double-clicking it won't load the headlines (browsers block that). View it through the GitHub Pages link instead.

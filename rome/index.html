@@ -1,0 +1,425 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Rome Documentation Set</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: drawing-office sheet — title strip, 3D model as the hero viewport, title-block style side panel, sheet register below */
+:root {
+  --paper: #f6f5f1;
+  --sheet: #fdfcf9;
+  --ink: #1f1e1c;
+  --muted: #6e6a63;
+  --rule: #d9d5cc;
+  --accent: #3d5a6c;      /* lead grey-blue of the Pantheon dome */
+  --accent-ink: #ffffff;
+  --stone: #e7dfd0;
+  --viewport: #ece9e2;
+  --f-display: "Archivo Narrow", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #161716; --sheet: #1e1f1e; --ink: #ebe8e1; --muted: #a29d93; --rule: #34352f;
+    --accent: #8fb2c6; --accent-ink: #111; --stone: #2c2a25; --viewport: #222320; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #161716; --sheet: #1e1f1e; --ink: #ebe8e1; --muted: #a29d93; --rule: #34352f;
+  --accent: #8fb2c6; --accent-ink: #111; --stone: #2c2a25; --viewport: #222320; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-inline: 20px; padding-block: 20px 48px; display: grid; gap: 22px; }
+
+header.strip { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+.brand h1 { font-family: var(--f-display); font-weight: 700; font-size: clamp(34px, 6vw, 56px); line-height: .9; margin: 0; letter-spacing: .01em; text-transform: uppercase; }
+.brand p { margin: 6px 0 0; color: var(--muted); max-width: 60ch; }
+.meta { font-family: var(--f-mono); font-size: 12px; color: var(--muted); display: grid; grid-template-columns: auto auto; gap: 2px 14px; }
+.meta b { color: var(--ink); font-weight: 500; }
+
+nav.tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+nav.tabs button { font-family: var(--f-display); font-size: 17px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  background: transparent; color: var(--ink); border: 1px solid var(--rule); padding: 8px 16px; cursor: pointer; display: flex; gap: 10px; align-items: baseline; }
+nav.tabs button span { font-family: var(--f-mono); font-size: 11px; color: var(--muted); letter-spacing: 0; }
+nav.tabs button[aria-selected="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+nav.tabs button[aria-selected="true"] span { color: var(--paper); opacity: .7; }
+button:focus-visible, .thumb:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 22px; align-items: start; }
+@media (max-width: 900px) { .main { grid-template-columns: 1fr; } }
+
+.viewer { position: relative; background: var(--viewport); border: 1px solid var(--rule); aspect-ratio: 16 / 10; max-width: 100%; overflow: hidden; }
+.viewer canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.vbar { position: absolute; left: 10px; right: 10px; bottom: 10px; display: flex; flex-wrap: wrap; gap: 6px; justify-content: space-between; pointer-events: none; }
+.vbar .group { display: flex; flex-wrap: wrap; gap: 4px; pointer-events: auto; }
+.vbar button { font-family: var(--f-mono); font-size: 12px; background: var(--sheet); color: var(--ink); border: 1px solid var(--rule); padding: 6px 10px; cursor: pointer; }
+.vbar button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.hint { position: absolute; top: 10px; left: 12px; font-family: var(--f-mono); font-size: 11px; color: var(--muted); pointer-events: none; }
+.loading { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.pins { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.pin { position: absolute; left: 0; top: 0; pointer-events: auto; display: flex; align-items: center; gap: 0; transform: translate(-6px, -6px); }
+.pin .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid var(--sheet); flex: none; box-shadow: 0 0 0 1px var(--accent); }
+.pin .tag { font-family: var(--f-mono); font-size: 11px; background: var(--sheet); color: var(--ink); border: 1px solid var(--ink); padding: 2px 6px; margin-left: 6px; white-space: nowrap; cursor: pointer; }
+.pin.active .tag { background: var(--ink); color: var(--paper); }
+.pin.behind { opacity: .35; }
+.pins.off { display: none; }
+.anno-card { position: absolute; top: 34px; left: 12px; max-width: min(320px, calc(100% - 24px)); background: var(--sheet); border: 1px solid var(--ink); padding: 10px 12px; font-size: 13px; }
+.anno-card b { font-family: var(--f-display); font-size: 16px; text-transform: uppercase; letter-spacing: .02em; display: block; margin-bottom: 2px; }
+.anno-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+.anno-list button { font: inherit; font-size: 13.5px; background: none; border: 0; color: var(--ink); padding: 3px 0; cursor: pointer; text-align: left; display: flex; gap: 8px; align-items: baseline; width: 100%; }
+.anno-list button span { font-family: var(--f-mono); font-size: 11px; color: var(--accent); min-width: 18px; }
+.anno-list button[aria-current="true"] { font-weight: 600; }
+.north { position: absolute; top: 10px; right: 12px; width: 34px; height: 34px; pointer-events: none; }
+
+aside.block { background: var(--sheet); border: 1px solid var(--ink); display: grid; }
+aside.block > section { padding: 14px 16px; border-bottom: 1px solid var(--rule); min-width: 0; }
+aside.block > section:last-child { border-bottom: 0; }
+.label { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.site-name { font-family: var(--f-display); font-size: 28px; font-weight: 700; line-height: 1; margin: 0; text-transform: uppercase; text-wrap: balance; }
+.site-sub { margin: 6px 0 0; color: var(--muted); font-size: 13.5px; }
+dl.dims { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; font-size: 13.5px; }
+dl.dims dt { color: var(--muted); }
+dl.dims dd { margin: 0; font-family: var(--f-mono); font-variant-numeric: tabular-nums; text-align: right; }
+.est { color: var(--muted); }
+.thumbs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.thumb { border: 1px solid var(--rule); background: var(--paper); padding: 0; cursor: zoom-in; display: grid; text-align: left; color: var(--ink); }
+.thumb img { display: block; width: 100%; height: auto; }
+.thumb span { font-family: var(--f-mono); font-size: 11px; padding: 5px 6px; border-top: 1px solid var(--rule); }
+.thumb span b { font-weight: 500; }
+
+.register h2, .notes h2 { font-family: var(--f-display); font-size: 22px; font-weight: 700; text-transform: uppercase; margin: 0 0 10px; letter-spacing: .02em; }
+.reg-table { overflow-x: auto; border-top: 2px solid var(--ink); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 520px; }
+td, th { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--f-mono); font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+td.num { font-family: var(--f-mono); font-weight: 500; white-space: nowrap; }
+td button { font: inherit; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+
+.notes { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; }
+@media (max-width: 760px) { .notes { grid-template-columns: 1fr; } }
+.notes p, .notes li { max-width: 65ch; font-size: 14px; }
+.notes ul { padding-left: 18px; margin: 0; display: grid; gap: 4px; }
+.notes a { color: var(--accent); }
+
+.lightbox { position: fixed; inset: 0; background: rgba(10, 10, 10, .86); display: grid; grid-template-rows: auto minmax(0, 1fr); z-index: 10;
+  padding: calc(env(safe-area-inset-top, 0px) + 10px) 12px calc(env(safe-area-inset-bottom, 0px) + 12px); }
+.lb-bar { display: flex; gap: 8px; justify-content: space-between; align-items: center; color: #f2f0eb; font-family: var(--f-mono); font-size: 13px; padding-bottom: 8px; flex-wrap: wrap; }
+.lb-bar button { font-family: var(--f-mono); font-size: 13px; background: #2a2a28; color: #f2f0eb; border: 1px solid #555; padding: 6px 12px; cursor: pointer; }
+.lb-img { overflow: auto; display: grid; place-items: center; min-height: 0; }
+.lb-img img { max-width: 100%; max-height: 100%; background: #fff; }
+.lb-img.zoom img { max-width: none; max-height: none; width: 2200px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <a href="../#rome" style="color:var(--muted);text-decoration:none;font-size:13px">← Rome built in 30 minutes</a>
+  <header class="strip">
+    <div class="brand">
+      <h1>Rome Documentation Set</h1>
+      <p>Pantheon, Colosseum and Piazza Navona. Site plans, plans, elevations, sections and orbitable 3D models built from published dimensions.</p>
+    </div>
+    <div class="meta"><span>Sheets</span><b>11 × A3</b><span>Date</span><b>10.10.2026</b><span>For</span><b>Inaya Vhora</b></div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Site">
+    <button role="tab" id="tab-pantheon" data-site="pantheon" aria-selected="true">Pantheon <span>P-01–04</span></button>
+    <button role="tab" id="tab-colosseum" data-site="colosseum" aria-selected="false">Colosseum <span>C-01–03</span></button>
+    <button role="tab" id="tab-navona" data-site="navona" aria-selected="false">Piazza Navona <span>N-01–03</span></button>
+  </nav>
+
+  <div class="main">
+    <div class="viewer" id="viewer">
+      <div class="loading" id="loading">Loading model…</div>
+      <div class="hint">Drag to orbit · scroll or pinch to zoom · right-drag to pan</div>
+      <svg class="north" id="north" viewBox="-20 -20 40 40" aria-label="North arrow"><g id="northg"><path d="M0,-15 L6,8 L0,3 Z" fill="currentColor"/><path d="M0,-15 L-6,8 L0,3 Z" fill="none" stroke="currentColor" stroke-width="1.2"/><text x="0" y="-16" font-size="8" text-anchor="middle" fill="currentColor" font-family="IBM Plex Mono, monospace">N</text></g></svg>
+      <div class="pins" id="pins"></div>
+      <div class="anno-card" id="anno-card" hidden><b id="anno-title"></b><span id="anno-text"></span></div>
+      <div class="vbar">
+        <div class="group" id="views"></div>
+        <div class="group"><button id="labels" aria-pressed="true">Annotations</button><button id="spin" aria-pressed="false">Auto-rotate</button></div>
+      </div>
+    </div>
+
+    <aside class="block" aria-live="polite">
+      <section>
+        <p class="label">Subject</p>
+        <h2 class="site-name" id="site-name">Pantheon</h2>
+        <p class="site-sub" id="site-sub"></p>
+      </section>
+      <section>
+        <p class="label">Key dimensions</p>
+        <dl class="dims" id="dims"></dl>
+      </section>
+      <section>
+        <p class="label">Annotations</p>
+        <ul class="anno-list" id="anno-list"></ul>
+      </section>
+      <section>
+        <p class="label">Sheets for this site</p>
+        <div class="thumbs" id="thumbs"></div>
+      </section>
+    </aside>
+  </div>
+
+  <section class="register">
+    <h2>Drawing register</h2>
+    <div class="reg-table">
+      <table>
+        <thead><tr><th>Sheet</th><th>Subject</th><th>Drawing</th><th>Scale (A3)</th></tr></thead>
+        <tbody id="register"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="notes">
+    <div>
+      <h2>Method and limits</h2>
+      <p>Drawings carry numbered keynotes (listed in each title block) and the renders carry labelled callouts. In the 3D viewer, tap a pin or a name in the Annotations list for a short note.</p>
+      <p>The drawings and the 3D models share one geometry, built in metres from the published figures listed alongside. Where no published figure was found (the Pantheon's stepped drum rings, the heights of Sant'Agnese and the frontage buildings, the surrounding city blocks), values are estimated from proportion and marked ≈ on the sheets. Street context is schematic.</p>
+      <p>Treat this as a study set for analysis and presentation. It is not a measured heritage survey.</p>
+    </div>
+    <div>
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://exhibits.lib.ttu.edu/s/openarch/item/18628" target="_blank" rel="noopener">Texas Tech Architecture Library, Pantheon</a>: Ø 43.3 m, oculus 8.15 m</li>
+        <li><a href="https://www.worldhistory.org/audioplayer/en/1-11201/" target="_blank" rel="noopener">World History Encyclopedia, Pantheon</a>: portico 33.1 × 13.6 m</li>
+        <li><a href="https://madainproject.com/pantheon_(rome)" target="_blank" rel="noopener">Madain Project, Pantheon</a>: column shafts 11.9 m</li>
+        <li><a href="https://the-colosseum.net/wp/?p=67" target="_blank" rel="noopener">the-colosseum.net</a>: 188/189 × 156 m, 80 arches, height 48.5 m</li>
+        <li><a href="https://www.worldhistory.org/Colosseum/" target="_blank" rel="noopener">World History Encyclopedia, Colosseum</a>: arena 87.5 × 54.8 m</li>
+        <li><a href="https://en.wikipedia.org/wiki/Stadium_of_Domitian" target="_blank" rel="noopener">Stadium of Domitian</a>: 275 × 106 m</li>
+        <li><a href="https://www.italia.it/en/lazio/rome/fontana-dei-quattro-fiumi" target="_blank" rel="noopener">italia.it, Fontana dei Quattro Fiumi</a>: obelisk ≈ 16.5 m</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lb-bar">
+    <span id="lb-title"></span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap">
+      <button id="lb-prev">← Prev</button><button id="lb-next">Next →</button><button id="lb-zoom">Zoom</button><button id="lb-close">Close</button>
+    </div>
+  </div>
+  <div class="lb-img" id="lb-imgwrap"><img id="lb-img" alt=""></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+const SHEETS = [
+  ["00", "All", "Cover, index and sources", "—"],
+  ["P-01", "Pantheon", "Site plan, Piazza della Rotonda", "1:1000"],
+  ["P-02", "Pantheon", "Ground plan + north elevation", "1:400"],
+  ["P-03", "Pantheon", "Longitudinal section + east elevation", "1:500"],
+  ["P-04", "Pantheon", "3D renders", "NTS"],
+  ["C-01", "Colosseum", "Site plan", "1:1700"],
+  ["C-02", "Colosseum", "Ground plan + north elevation", "1:1000 / 1:800"],
+  ["C-03", "Colosseum", "Cross-section + 3D renders", "1:700"],
+  ["N-01", "Piazza Navona", "Site plan", "1:1300"],
+  ["N-02", "Piazza Navona", "West frontage elevation + long section", "1:1000"],
+  ["N-03", "Piazza Navona", "3D renders", "NTS"],
+];
+// geo coords (x east, y north, z up) → three (x, z, -y)
+const G = (x, y, z) => [x, z, -y];
+const SITES = {
+  pantheon: {
+    name: "Pantheon", sub: "Hadrian's rebuilding, c. AD 118–128. Domed rotunda behind a granite portico, facing north onto Piazza della Rotonda.",
+    model: "pantheon", prefix: "P-",
+    dims: [["Rotunda interior Ø", "43.3 m"], ["Height to oculus", "43.3 m"], ["Oculus Ø", "≈ 8.2 m"], ["Portico", "33.1 × 13.6 m"], ["Columns", "16, granite"], ["Column shaft", "11.9 m × Ø 1.5"], ["Drum outer Ø", "≈ 56 m", 1]],
+    views: { "Aerial": [G(115, 175, 105), G(0, 8, 12)], "Eye level": [G(18, 118, 1.7), G(0, 28, 17)], "Cutaway": [G(70, -30, 24), G(0, 8, 19), "pantheon_cut"], "Plan view": [G(0.1, 10, 210), G(0, 10, 0)] },
+  },
+  colosseum: {
+    name: "Colosseum", sub: "Flavian Amphitheatre, opened AD 80. Outer ring survives on the north side only; buttressed at both ends in the 19th century.",
+    model: "colosseum", prefix: "C-",
+    dims: [["Overall ellipse", "189 × 156 m"], ["Arena", "87.5 × 54.8 m"], ["Height", "48.5 m"], ["Storeys", "4"], ["Arches per storey", "80"], ["Surviving outer arches", "≈ 31"], ["Seating rake", "≈ 37°"]],
+    views: { "Aerial": [G(-170, 250, 160), G(0, 0, 2)], "From the south": [G(40, -170, 95), G(0, 10, 2)], "Eye level": [G(-40, 135, 1.7), G(0, 40, 25)], "Plan view": [G(0.1, 0, 420), G(0, 0, 0)] },
+  },
+  navona: {
+    name: "Piazza Navona", sub: "Baroque square laid over the Stadium of Domitian (AD 86). Bernini's Four Rivers fountain faces Sant'Agnese in Agone.",
+    model: "navona", prefix: "N-",
+    dims: [["Piazza", "≈ 240 × 65 m"], ["Stadium of Domitian", "275 × 106 m"], ["Stadium level", "≈ −5 m"], ["Agonal obelisk", "≈ 16.5 m"], ["Fountain to apex", "≈ 29 m"], ["Sant'Agnese lantern", "≈ 55 m", 1]],
+    views: { "Aerial": [G(185, -290, 165), G(0, 25, 12)], "Eye level": [G(6, -118, 1.7), G(-14, 0, 27)], "Over the church": [G(-160, 60, 90), G(0, 0, 5)], "Plan view": [G(0.1, 0, 380), G(0, 0, 0)] },
+  },
+};
+
+const $ = (id) => document.getElementById(id);
+let current = "pantheon", meshCache = {}, data = null, group = null, spin = false, anns = null, activeKey = null, pinEls = [], activeAnn = -1, showPins = true;
+
+// ---------- register
+$("register").innerHTML = SHEETS.map((s, i) =>
+  `<tr><td class="num"><button data-i="${i}">${s[0]}</button></td><td>${s[1]}</td><td>${s[2]}</td><td class="num">${s[3]}</td></tr>`).join("");
+$("register").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) openLB(+b.dataset.i); });
+
+// ---------- three.js
+const viewer = $("viewer");
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+viewer.prepend(renderer.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(42, 1.6, 0.5, 3000);
+const controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true; controls.maxPolarAngle = Math.PI * 0.495;
+scene.add(new THREE.HemisphereLight(0xfffaf0, 0x8a8172, 0.75));
+const sun = new THREE.DirectionalLight(0xffffff, 0.75); sun.position.set(-200, 320, 260); scene.add(sun);
+const fill = new THREE.DirectionalLight(0xffffff, 0.2); fill.position.set(200, 120, -200); scene.add(fill);
+
+function themeBg() {
+  const c = getComputedStyle(document.documentElement).getPropertyValue("--viewport").trim() || "#ece9e2";
+  scene.background = new THREE.Color(c);
+  $("north").style.color = getComputedStyle(document.documentElement).getPropertyValue("--ink").trim();
+}
+themeBg();
+try { matchMedia("(prefers-color-scheme: dark)").addEventListener("change", themeBg); } catch (e) {}
+new MutationObserver(themeBg).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+function buildGroup(key) {
+  if (meshCache[key]) return meshCache[key];
+  const g = new THREE.Group();
+  const groups = data[key];
+  for (const mat in groups) {
+    const geom = new THREE.BufferGeometry();
+    geom.setAttribute("position", new THREE.Float32BufferAttribute(groups[mat], 3));
+    geom.computeVertexNormals();
+    const isFlat = ["ground", "paving", "street", "green"].includes(mat);
+    const m = new THREE.MeshLambertMaterial({ color: data.materials[mat], side: THREE.DoubleSide, flatShading: true,
+      polygonOffset: isFlat, polygonOffsetFactor: isFlat ? 2 : 0, polygonOffsetUnits: isFlat ? 2 : 0 });
+    g.add(new THREE.Mesh(geom, m));
+  }
+  meshCache[key] = g;
+  return g;
+}
+
+function resize() {
+  const w = viewer.clientWidth, h = viewer.clientHeight;
+  renderer.setSize(w, h, false);
+  camera.aspect = w / h; camera.updateProjectionMatrix();
+}
+new ResizeObserver(resize).observe(viewer);
+
+let anim = null;
+function goView(name) {
+  const site = SITES[current];
+  const v = site.views[name];
+  const key = v[2] || site.model;
+  if (data) { if (group) scene.remove(group); group = buildGroup(key); scene.add(group); }
+  setPins(key);
+  [...$("views").children].forEach((b) => b.setAttribute("aria-pressed", b.textContent === name ? "true" : "false"));
+  const from = { p: camera.position.clone(), t: controls.target.clone() };
+  const to = { p: new THREE.Vector3(...v[0]), t: new THREE.Vector3(...v[1]) };
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const t0 = performance.now(), dur = reduce || !anim && from.p.length() === 0 ? 0 : 700;
+  anim = (now) => {
+    const k = dur ? Math.min(1, (now - t0) / dur) : 1, e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+    camera.position.lerpVectors(from.p, to.p, e); controls.target.lerpVectors(from.t, to.t, e);
+    if (k >= 1) anim = true;
+  };
+}
+
+function setPins(key) {
+  if (activeKey === key && pinEls.length) return;
+  activeKey = key; activeAnn = -1; $("anno-card").hidden = true;
+  const list = (anns && anns[key]) || [];
+  $("pins").innerHTML = list.map((a, i) => `<div class="pin" data-i="${i}"><span class="dot"></span><button class="tag" type="button">${a.label}</button></div>`).join("");
+  pinEls = [...$("pins").children].map((el, i) => ({ el, v: new THREE.Vector3(...list[i].p) }));
+  $("anno-list").innerHTML = list.length ? list.map((a, i) => `<li><button data-i="${i}" aria-current="false"><span>${String(i + 1).padStart(2, "0")}</span>${a.label}</button></li>`).join("") : "<li>Loading…</li>";
+}
+function showAnn(i) {
+  const list = anns[activeKey];
+  activeAnn = activeAnn === i ? -1 : i;
+  pinEls.forEach((p, k) => p.el.classList.toggle("active", k === activeAnn));
+  [...$("anno-list").querySelectorAll("button")].forEach((b, k) => b.setAttribute("aria-current", k === activeAnn));
+  if (activeAnn < 0) { $("anno-card").hidden = true; return; }
+  $("anno-title").textContent = list[i].label; $("anno-text").textContent = list[i].note; $("anno-card").hidden = false;
+  if (!showPins) { showPins = true; $("pins").classList.remove("off"); $("labels").setAttribute("aria-pressed", "true"); }
+}
+$("pins").addEventListener("click", (e) => { const p = e.target.closest(".pin"); if (p) showAnn(+p.dataset.i); });
+$("anno-list").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) showAnn(+b.dataset.i); });
+$("labels").addEventListener("click", () => { showPins = !showPins; $("pins").classList.toggle("off", !showPins); $("labels").setAttribute("aria-pressed", showPins); if (!showPins) $("anno-card").hidden = true; });
+const ray = new THREE.Raycaster(), pv = new THREE.Vector3();
+let frameN = 0;
+function updatePins() {
+  if (!showPins || !pinEls.length) return;
+  const w = viewer.clientWidth, h = viewer.clientHeight;
+  const occl = (frameN++ % 6 === 0) && group;
+  for (const p of pinEls) {
+    pv.copy(p.v).project(camera);
+    const vis = pv.z < 1 && Math.abs(pv.x) < 1.02 && Math.abs(pv.y) < 1.02;
+    p.el.hidden = !vis;
+    if (!vis) continue;
+    p.el.style.transform = `translate(${((pv.x + 1) / 2 * w - 6).toFixed(1)}px, ${((1 - pv.y) / 2 * h - 6).toFixed(1)}px)`;
+    if (occl) {
+      const dir = p.v.clone().sub(camera.position); const dist = dir.length(); dir.normalize();
+      ray.set(camera.position, dir); ray.far = dist - 1.5;
+      p.el.classList.toggle("behind", ray.intersectObject(group, true).length > 0);
+    }
+  }
+}
+
+function selectSite(key, push) {
+  current = key;
+  const s = SITES[key];
+  document.querySelectorAll("nav.tabs button").forEach((b) => b.setAttribute("aria-selected", b.dataset.site === key ? "true" : "false"));
+  $("site-name").textContent = s.name;
+  $("site-sub").textContent = s.sub;
+  $("dims").innerHTML = s.dims.map(([k, v, est]) => `<dt>${k}</dt><dd${est ? ' class="est" title="Estimated"' : ""}>${v}</dd>`).join("");
+  $("thumbs").innerHTML = SHEETS.map((sh, i) => [sh, i]).filter(([sh]) => sh[0].startsWith(s.prefix))
+    .map(([sh, i]) => `<button class="thumb" data-i="${i}" aria-label="Open sheet ${sh[0]}"><img src="sheets/t_${sh[0]}.jpg" alt="" loading="lazy" width="360" height="254"><span><b>${sh[0]}</b> ${sh[2]}</span></button>`).join("");
+  $("views").innerHTML = Object.keys(s.views).map((n) => `<button aria-pressed="false">${n}</button>`).join("");
+  goView(Object.keys(s.views)[0]);
+  if (push) { try { history.replaceState(null, "", "#" + key); } catch (e) {} }
+}
+$("views").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) goView(b.textContent); });
+$("thumbs").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) openLB(+b.dataset.i); });
+document.querySelector("nav.tabs").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) selectSite(b.dataset.site, true); });
+$("spin").addEventListener("click", () => { spin = !spin; $("spin").setAttribute("aria-pressed", spin); controls.autoRotate = spin; });
+controls.autoRotateSpeed = 0.8;
+controls.addEventListener("start", () => { anim = true; });
+
+const v3 = new THREE.Vector3();
+function loop(now) {
+  if (typeof anim === "function") anim(now);
+  controls.update();
+  // north arrow: geo north = three -z
+  camera.getWorldDirection(v3);
+  const ang = Math.atan2(v3.x, -v3.z);
+  $("northg").setAttribute("transform", `rotate(${(-ang * 180 / Math.PI).toFixed(1)})`);
+  renderer.render(scene, camera);
+  updatePins();
+  requestAnimationFrame(loop);
+}
+
+const start = (location.hash || "").replace("#", "");
+selectSite(SITES[start] ? start : "pantheon", false);
+resize();
+requestAnimationFrame(loop);
+fetch("annotations.json").then((r) => r.json()).then((j) => { anns = j; const k = activeKey; activeKey = null; if (k) setPins(k); }).catch(() => {});
+fetch("models.json").then((r) => r.json()).then((j) => {
+  data = j; $("loading").hidden = true;
+  const s = SITES[current]; const pressed = [...$("views").children].find((b) => b.getAttribute("aria-pressed") === "true");
+  goView(pressed ? pressed.textContent : Object.keys(s.views)[0]);
+}).catch(() => { $("loading").textContent = "The 3D model could not load. Reload the page to try again."; });
+
+// ---------- lightbox
+let lbi = 0;
+function openLB(i) {
+  lbi = (i + SHEETS.length) % SHEETS.length;
+  const s = SHEETS[lbi];
+  $("lb-img").src = `sheets/${s[0]}.jpg`; $("lb-img").alt = `Sheet ${s[0]}: ${s[2]}`;
+  $("lb-title").textContent = `${s[0]} · ${s[1]} · ${s[2]}`;
+  $("lightbox").hidden = false; $("lb-imgwrap").classList.remove("zoom"); $("lb-zoom").textContent = "Zoom";
+  $("lb-close").focus();
+}
+$("lb-close").onclick = () => { $("lightbox").hidden = true; };
+$("lb-prev").onclick = () => openLB(lbi - 1);
+$("lb-next").onclick = () => openLB(lbi + 1);
+$("lb-zoom").onclick = () => { const z = $("lb-imgwrap").classList.toggle("zoom"); $("lb-zoom").textContent = z ? "Fit" : "Zoom"; };
+document.addEventListener("keydown", (e) => {
+  if ($("lightbox").hidden) return;
+  if (e.key === "Escape") $("lightbox").hidden = true;
+  if (e.key === "ArrowRight") openLB(lbi + 1);
+  if (e.key === "ArrowLeft") openLB(lbi - 1);
+});
+</script>
+
+</body></html>

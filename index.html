@@ -2,158 +2,346 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI News Wire — Inaya Vhora</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Inaya Vhora: speculative work across architecture, interiors, objects and sound.">
+<title>Inaya Vhora</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap">
 <style>
-  :root {
-    --bg: #fbfaf7;
-    --ink: #161616;
-    --muted: #8a8780;
-    --rule: #e6e3dc;
-    --live: #c2410c;
-    --serif: "Newsreader", Georgia, serif;
-    --sans: "Inter", system-ui, sans-serif;
+/* Layout: one narrow fixed text column on the left, content to the right; stacks on phones */
+:root {
+  --bg: #fbfbfa;
+  --fg: #1c1c1b;
+  --muted: #8a8a86;
+  --line: #e4e4e0;
+  --slot: #f0f0ed;
+  --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141413; --fg: #e8e8e4; --muted: #7d7d78; --line: #2a2a28; --slot: #1d1d1b; color-scheme: dark;
   }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#121211; --ink:#ecebe7; --muted:#8b8983; --rule:#2a2927; --live:#fb923c; }
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 13px; line-height: 1.5; }
-  a { color: inherit; text-decoration: none; }
+}
+:root[data-theme="dark"] {
+  --bg: #141413; --fg: #e8e8e4; --muted: #7d7d78; --line: #2a2a28; --slot: #1d1d1b; color-scheme: dark;
+}
 
-  /* Site shell: small left-hand nav */
-  .site { display: grid; grid-template-columns: 160px 1fr; min-height: 100vh; }
-  nav { padding: 32px 24px; position: sticky; top: 0; height: 100vh; }
-  nav .name { font-weight: 500; margin-bottom: 24px; display: block; }
-  nav a.link { display: block; color: var(--muted); padding: 2px 0; }
-  nav a.link:hover, nav a.link.on { color: var(--ink); }
-  main { padding: 32px 32px 96px 0; max-width: 760px; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { margin: 0; }
+body { margin: 0; }
+img { max-width: 100%; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 400 12.5px/1.6 var(--sans);
+  padding-inline: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
 
-  /* The work */
-  header { margin-bottom: 40px; }
-  h1 { font-family: var(--serif); font-weight: 400; font-size: 28px; letter-spacing: -0.01em; margin-bottom: 8px; }
-  .meta { color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; }
-  .pulse { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--live); margin-right: 6px; vertical-align: 1px; animation: pulse 2.4s ease-in-out infinite; }
-  @keyframes pulse { 50% { opacity: .2; } }
-  .statement { font-family: var(--serif); font-size: 15px; color: var(--muted); max-width: 520px; margin-top: 16px; }
+.site {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 48px;
+  padding-block: 32px 64px;
+  max-width: 1200px;
+}
 
-  .day { color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: 10.5px; padding: 28px 0 8px; border-bottom: 1px solid var(--rule); }
-  .row { display: grid; grid-template-columns: 52px 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
-  .row time { color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 3px; }
-  .row h2 { font-family: var(--serif); font-weight: 400; font-size: 18px; line-height: 1.3; }
-  .row a:hover h2 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-  .row .src { color: var(--muted); margin-top: 3px; }
-  .row.fresh { animation: arrive 1.6s ease-out; }
-  @keyframes arrive { from { background: color-mix(in srgb, var(--live) 12%, transparent); } }
-  .note { color: var(--muted); padding: 24px 0; }
+nav {
+  position: sticky;
+  top: calc(32px + env(safe-area-inset-top, 0px));
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+nav .name { margin-bottom: 20px; font-weight: 500; }
+nav a { color: var(--muted); width: fit-content; }
+nav a:hover, nav a[aria-current="page"] { color: var(--fg); }
 
-  @media (max-width: 640px) {
-    .site { grid-template-columns: 1fr; }
-    nav { position: static; height: auto; padding: 20px 16px 0; display: flex; gap: 16px; align-items: baseline; }
-    nav .name { margin: 0 auto 0 0; }
-    main { padding: 28px 16px 64px; }
-    .row { grid-template-columns: 1fr; gap: 2px; }
-    .row h2 { font-size: 17px; }
-  }
+main { min-width: 0; }
+
+/* About */
+.about p { max-width: 52ch; margin: 0 0 1em; }
+.about .meta {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 4px 16px;
+  max-width: 420px;
+}
+.about .meta dt { color: var(--muted); }
+.about .meta dd { margin: 0; }
+
+/* Speculation index */
+.work { display: flex; flex-direction: column; gap: 64px; }
+.piece { display: grid; gap: 10px; max-width: 760px; }
+.piece img { display: block; width: 100%; height: auto; aspect-ratio: 1800 / 1272; background: var(--slot); }
+.piece img.wide { aspect-ratio: 16 / 9; }
+.piece img.square { aspect-ratio: 1; max-width: 480px; background: transparent; }
+.square-lg { display: block; width: 100%; max-width: 620px; height: auto; aspect-ratio: 1; }
+.files { display: grid; gap: 14px; max-width: 58ch; border-top: 1px solid var(--line); padding-top: 14px; }
+.dl { width: fit-content; border-bottom: 1px solid var(--fg); padding-bottom: 1px; }
+.dl:hover { opacity: .7; }
+.dl[disabled] { opacity: .5; cursor: default; }
+.dl-status { color: var(--muted); }
+.dl-status:empty { display: none; }
+.filelist { margin: 0; display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 4px 16px; }
+.filelist dt { color: var(--muted); }
+.filelist dd { margin: 0; }
+.filelist a { border-bottom: 1px solid var(--line); }
+.filelist a:hover { border-color: var(--fg); }
+.wire { display: grid; gap: 0; margin: 0; padding: 0; max-width: 760px; border-top: 1px solid var(--fg); }
+.wire li { list-style: none; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.wire time { color: var(--muted); font: 400 11px/1.9 var(--mono); font-variant-numeric: tabular-nums; }
+.wire .src { color: var(--muted); }
+.wire .empty { display: block; color: var(--muted); }
+.live { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: currentColor; margin-right: 6px; vertical-align: 1px; animation: live 2.4s ease-in-out infinite; }
+@keyframes live { 50% { opacity: .2; } }
+@media (prefers-reduced-motion: reduce) { .live { animation: none; } }
+.piece:hover img { opacity: .92; }
+.film { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--slot); }
+.caption { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
+.caption .title { font-weight: 500; }
+.caption .date { color: var(--muted); }
+
+/* Project page */
+.project { display: grid; gap: 28px; max-width: 900px; }
+.back { color: var(--muted); width: fit-content; }
+.back:hover { color: var(--fg); }
+.project header { display: grid; gap: 2px; }
+.project h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
+.project .date { color: var(--muted); }
+
+.viewer { display: grid; gap: 10px; }
+.stage {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1800 / 1272;
+  max-width: 100%;
+  background: var(--slot);
+  cursor: e-resize;
+}
+.stage img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.stage .half { position: absolute; top: 0; bottom: 0; width: 35%; }
+.stage .half.prev { left: 0; cursor: w-resize; }
+.stage .half.next { right: 0; cursor: e-resize; }
+.controls { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; color: var(--muted); }
+.controls .cap { color: var(--fg); min-width: 0; }
+.controls .nav { display: flex; gap: 16px; font-variant-numeric: tabular-nums; }
+.controls button { color: var(--muted); }
+.controls button:hover { color: var(--fg); }
+
+.bio { max-width: 58ch; display: grid; gap: 8px; }
+.bio p { margin: 0; }
+.bio .by { color: var(--muted); }
+
+.extra { color: var(--muted); }
+.extra a { color: var(--fg); border-bottom: 1px solid var(--line); }
+.extra a:hover { border-color: var(--fg); }
+
+@media (max-width: 640px) {
+  .site { grid-template-columns: 1fr; gap: 32px; padding-block: 24px 48px; }
+  body { padding-inline: 16px; }
+  nav { position: static; flex-direction: row; flex-wrap: wrap; gap: 4px 16px; }
+  nav .name { width: 100%; margin-bottom: 4px; }
+}
 </style>
 </head>
 <body>
+
+
 <div class="site">
-  <nav>
-    <a class="name" href="/">Inaya Vhora</a>
-    <a class="link" href="/about.html">About</a>
-    <a class="link on" href="/speculation.html">Speculation</a>
+  <nav aria-label="Site">
+    <a class="name" href="#about">Inaya Vhora</a>
+    <a href="#about" data-page="about">About</a>
+    <a href="#speculation" data-page="speculation">Speculative</a>
   </nav>
 
   <main>
-    <header>
-      <h1>AI News Wire</h1>
-      <div class="meta">
-        <span><span class="pulse"></span><span id="status">connecting…</span></span>
-        <span id="count"></span>
-      </div>
-      <p class="statement">A continuously gathered record of how the world's newsrooms are writing about artificial intelligence. Headlines are collected every hour from international sources and left unedited.</p>
-    </header>
+    <section id="about" class="about">
+      <p>Inaya Vhora is a designer working across architecture, furniture and fashion. Her work tests how objects and buildings might be made, sold and lived with differently.</p>
+      <p>She is currently studying architecture in Sydney.</p>
+      <dl class="meta">
+        <dt>Based</dt><dd>Sydney, Australia</dd>
+        <dt>Disciplines</dt><dd>Architecture, interiors, furniture, fashion</dd>
+        <dt>Contact</dt><dd>inayavhora@gmail.com</dd>
+      </dl>
+    </section>
 
-    <section id="wire"><p class="note">Loading the wire…</p></section>
+    <section id="speculation" class="work" hidden>
+      <a class="piece" href="news.html">
+        <ul class="wire" id="wirePreview" aria-label="Latest headlines from the AI News Wire"><li><span class="empty">Loading the latest headlines…</span></li></ul>
+        <div class="caption"><span class="title"><span class="live" aria-hidden="true"></span>AI News Wire</span><span class="date">Live, updated hourly</span></div>
+      </a>
+      <a class="piece" href="#rome">
+        <img src="rome/sheets/P-04.jpg" alt="Rome built in 30 minutes: 3D renders of the Pantheon" width="1800" height="1272">
+        <div class="caption"><span class="title">Rome built in 30 minutes</span><span class="date">October, 2026</span></div>
+      </a>
+      <a class="piece" href="#reflow">
+        <img class="square" src="reflow/cover.png" alt="3D print your home accessories: section through the printed shower head" width="1400" height="1400">
+        <div class="caption"><span class="title">3D print your home accessories, free file available to download</span><span class="date">October, 2026</span></div>
+      </a>
+      <a class="piece" href="#soundscapes">
+        <img class="wide" src="sound/poster.jpg" alt="Gamifying productivity through soundscapes: threshold study drawing" width="1600" height="900">
+        <div class="caption"><span class="title">Gamifying productivity through soundscapes</span><span class="date">October, 2026</span></div>
+      </a>
+    </section>
+
+    <section id="reflow" class="project" hidden>
+      <a class="back" href="#speculation">← Speculative</a>
+
+      <header>
+        <h1>3D print your home accessories, free file available to download</h1>
+        <span class="date">October, 2026</span>
+      </header>
+
+      <img class="square-lg" src="reflow/cover.png" alt="Section through the printed shower head, showing the threaded inlet, pressure pillars and nozzle face" width="1400" height="1400">
+
+      <div class="bio">
+        <p>This concept allows interior accessories to be 3D printed and installed by the property occupier.</p>
+      </div>
+
+      <div class="files">
+        <a class="dl" href="reflow/REFLOW-Shower-Set.zip" download>Download all files (.zip, 4.6 MB)</a>
+        <dl class="filelist">
+          <dt>STL</dt><dd><a href="reflow/files/stl/REFLOW-SHOWER_01_backplate.stl" download>01 Backplate</a>, <a href="reflow/files/stl/REFLOW-SHOWER_02_shroud.stl" download>02 Shroud</a>, <a href="reflow/files/stl/REFLOW-SHOWER_03_lever.stl" download>03 Lever</a>, <a href="reflow/files/stl/REFLOW-SHOWER_04_stem-adapter.stl" download>04 Stem adapter</a>, <a href="reflow/files/stl/REFLOW-SHOWER_05_insert-hot.stl" download>05 Insert hot</a>, <a href="reflow/files/stl/REFLOW-SHOWER_06_insert-cold.stl" download>06 Insert cold</a>, <a href="reflow/files/stl/REFLOW-SHOWER_07_arm-flange.stl" download>07 Arm flange</a>, <a href="reflow/files/stl/REFLOW-SHOWER_08_head.stl" download>08 Shower head</a></dd>
+          <dt>3MF plates</dt><dd><a href="reflow/files/plates/REFLOW-SHOWER_plate-A_trim-body-colour.3mf" download>A Trim</a>, <a href="reflow/files/plates/REFLOW-SHOWER_plate-B_shower-head-body-colour.3mf" download>B Shower head</a>, <a href="reflow/files/plates/REFLOW-SHOWER_plate-C_inserts-accent-colours.3mf" download>C Inserts</a></dd>
+          <dt>Source</dt><dd><a href="reflow/files/shower_set.py" download>shower_set.py</a>, <a href="reflow/files/plates.py" download>plates.py</a></dd>
+          <dt>Notes</dt><dd><a href="reflow/files/PRINT-NOTES.md" download>PRINT-NOTES.md</a>: parts, print settings, install steps</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="soundscapes" class="project" hidden>
+      <a class="back" href="#speculation">← Speculative</a>
+
+      <header>
+        <h1>Gamifying productivity through soundscapes</h1>
+        <span class="date">October, 2026</span>
+      </header>
+
+      <div class="viewer">
+        <video class="film" id="film" src="sound/threshold_corridor.mp4" poster="sound/poster.jpg" controls playsinline preload="metadata" width="1600" height="900"></video>
+        <div class="controls"><span class="cap">Threshold corridor, 0:17. Sound on.</span></div>
+      </div>
+
+      <div class="bio">
+        <p>An audio augmentation system designed to provide positive feedback when participating in tactile productivity.</p>
+      </div>
+    </section>
+
+    <section id="rome" class="project" hidden>
+      <a class="back" href="#speculation">← Speculative</a>
+
+      <header>
+        <h1>Rome built in 30 minutes</h1>
+        <span class="date">October, 2026</span>
+      </header>
+
+      <div class="viewer">
+        <div class="stage" id="stage">
+          <img id="sheet" src="rome/sheets/00.jpg" alt="" width="1800" height="1272">
+          <button class="half prev" id="prevArea" aria-label="Previous sheet"></button>
+          <button class="half next" id="nextArea" aria-label="Next sheet"></button>
+        </div>
+        <div class="controls">
+          <span class="cap" id="cap"></span>
+          <span class="nav">
+            <button id="prev">Prev</button>
+            <span id="count"></span>
+            <button id="next">Next</button>
+          </span>
+        </div>
+      </div>
+
+      <div class="bio">
+        <p>“I made an 11-sheet A3 PDF for the Pantheon, Colosseum and Piazza Navona: site plans, plans, elevations, sections and 3D renders, built from published dimensions and annotated with keynotes and callouts.</p>
+        <p>I also published an interactive web page where you can orbit annotated 3D models and open each sheet, but I couldn’t test it here, so tell me if anything doesn’t load.”</p>
+        <p class="by">– Claude Opus 5.5 Medium</p>
+      </div>
+
+      <p class="extra">Interactive 3D models: <a href="rome/">Rome Documentation Set →</a></p>
+    </section>
   </main>
 </div>
 
 <script>
-  const DATA_URL = "news.json";      // same folder as this page
-  const REFRESH_MS = 5 * 60 * 1000;  // check for new headlines every 5 minutes
-  const SHOW = 120;                  // how many headlines to display
+(function () {
+  var pages = ["about", "speculation", "rome", "reflow", "soundscapes"];
+  var navFor = { about: "about", speculation: "speculation", rome: "speculation", reflow: "speculation", soundscapes: "speculation" };
 
-  const wire = document.getElementById("wire");
-  const status = document.getElementById("status");
-  const count = document.getElementById("count");
-  let known = new Set();
+  // Latest headlines from the AI News Wire (news.json is refreshed hourly by GitHub Actions)
+  var wireEl = document.getElementById("wirePreview");
+  var tf = new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit", hour12: false });
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  fetch("news.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (data) {
+      var items = (data.items || []).slice(0, 5);
+      if (!items.length) { wireEl.innerHTML = '<li><span class="empty">The wire is quiet right now.</span></li>'; return; }
+      wireEl.innerHTML = items.map(function (it) {
+        return '<li><time datetime="' + esc(it.published) + '">' + tf.format(new Date(it.published)) + '</time><span>' + esc(it.title) + ' <span class="src">' + esc(it.source) + '</span></span></li>';
+      }).join("");
+    })
+    .catch(function () { wireEl.innerHTML = '<li><span class="empty">Open the wire to read the latest headlines.</span></li>'; });
 
-  const timeFmt = new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit", hour12: false });
-  const dayFmt = new Intl.DateTimeFormat(undefined, { weekday: "long", day: "numeric", month: "long" });
+  var SHEETS = [
+    ["00", "Cover, index and sources"],
+    ["P-01", "Pantheon, site plan"],
+    ["P-02", "Pantheon, ground plan and north elevation"],
+    ["P-03", "Pantheon, longitudinal section and east elevation"],
+    ["P-04", "Pantheon, 3D renders"],
+    ["C-01", "Colosseum, site plan"],
+    ["C-02", "Colosseum, ground plan and north elevation"],
+    ["C-03", "Colosseum, cross-section and 3D renders"],
+    ["N-01", "Piazza Navona, site plan"],
+    ["N-02", "Piazza Navona, west frontage elevation and long section"],
+    ["N-03", "Piazza Navona, 3D renders"]
+  ];
+  var i = 0;
+  var img = document.getElementById("sheet");
 
-  function dayLabel(d) {
-    const today = new Date(); today.setHours(0,0,0,0);
-    const that = new Date(d); that.setHours(0,0,0,0);
-    const diff = Math.round((today - that) / 864e5);
-    return diff === 0 ? "Today" : diff === 1 ? "Yesterday" : dayFmt.format(d);
+  function draw() {
+    var s = SHEETS[i];
+    img.src = "rome/sheets/" + s[0] + ".jpg";
+    img.alt = "Sheet " + s[0] + ": " + s[1];
+    document.getElementById("cap").textContent = s[0] + "  " + s[1];
+    document.getElementById("count").textContent = (i + 1) + " / " + SHEETS.length;
+    var n = new Image(); n.src = "rome/sheets/" + SHEETS[(i + 1) % SHEETS.length][0] + ".jpg";
   }
+  function step(d) { i = (i + d + SHEETS.length) % SHEETS.length; draw(); }
+  document.getElementById("next").onclick = function () { step(1); };
+  document.getElementById("prev").onclick = function () { step(-1); };
+  document.getElementById("nextArea").onclick = function () { step(1); };
+  document.getElementById("prevArea").onclick = function () { step(-1); };
+  document.addEventListener("keydown", function (e) {
+    if (document.getElementById("rome").hidden) return;
+    if (e.key === "ArrowRight") step(1);
+    if (e.key === "ArrowLeft") step(-1);
+  });
 
-  function ago(d) {
-    const m = Math.round((Date.now() - d) / 6e4);
-    if (m < 2) return "just now";
-    if (m < 60) return m + " min ago";
-    const h = Math.round(m / 60);
-    return h < 24 ? h + (h === 1 ? " hour ago" : " hours ago") : dayFmt.format(d);
+  function show() {
+    var id = (location.hash || "#about").slice(1);
+    if (pages.indexOf(id) < 0) id = "about";
+    pages.forEach(function (p) { document.getElementById(p).hidden = p !== id; });
+    var film = document.getElementById("film");
+    if (id !== "soundscapes" && film && !film.paused) film.pause();
+    document.querySelectorAll("nav a[data-page]").forEach(function (a) {
+      if (a.dataset.page === navFor[id]) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+    window.scrollTo(0, 0);
   }
-
-  function esc(s) {
-    return s.replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
-  }
-
-  function render(data) {
-    const items = data.items.slice(0, SHOW);
-    const firstLoad = known.size === 0;
-    let html = "", lastDay = "";
-
-    for (const it of items) {
-      const d = new Date(it.published);
-      const label = dayLabel(d);
-      if (label !== lastDay) { html += `<div class="day">${label}</div>`; lastDay = label; }
-      const fresh = !firstLoad && !known.has(it.url) ? " fresh" : "";
-      html += `
-        <article class="row${fresh}">
-          <time datetime="${it.published}">${timeFmt.format(d)}</time>
-          <a href="${esc(it.url)}" target="_blank" rel="noopener">
-            <h2>${esc(it.title)}</h2>
-            <div class="src">${esc(it.source)} · ${esc(it.region)}</div>
-          </a>
-        </article>`;
-    }
-    wire.innerHTML = html || `<p class="note">The wire is quiet.</p>`;
-    known = new Set(data.items.map(i => i.url));
-
-    const sources = new Set(data.items.map(i => i.source)).size;
-    status.textContent = "Last gathered " + ago(new Date(data.updated));
-    count.textContent = `${data.items.length} headlines · ${sources} outlets`;
-  }
-
-  async function load() {
-    try {
-      const res = await fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" });
-      if (!res.ok) throw new Error(res.status);
-      render(await res.json());
-    } catch (e) {
-      status.textContent = "Wire offline";
-      if (!known.size) wire.innerHTML = `<p class="note">The wire couldn't be reached. If you're opening this file directly from your computer, view it through a web server instead (see README).</p>`;
-    }
-  }
-
-  load();
-  setInterval(load, REFRESH_MS);
+  window.addEventListener("hashchange", show);
+  draw();
+  show();
+})();
 </script>
 </body>
 </html>
