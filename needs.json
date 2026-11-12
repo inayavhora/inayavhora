@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T19:11:29+00:00",
+ "updated": "2026-11-12T20:05:46+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -42,7 +42,7 @@
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 5
+   "ai_stories": 4
   },
   {
    "name": "NPR",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 100
+   "ai_stories": 102
   },
   {
    "name": "The New Humanitarian",
@@ -84,13 +84,13 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 61
+   "ai_stories": 62
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 59
+   "ai_stories": 61
   },
   {
    "name": "Google News: famine",
@@ -120,16 +120,28 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 34
+   "ai_stories": 35
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 30
+   "ai_stories": 29
   }
  ],
  "items": [
+  {
+   "title": "Gates Foundation and Google to Bring AI resources to 200 Million Farmers Across the Global South",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc1RTZVc1RXJQVGpycm5DbGZmTW1rNEowNURyVXFRT0pwNjhVTWViaWdIUHdVYkNfbXVoSnlBMF9mamFlaDJmTWhRM09maFNneFRrZ201UmhVcEJFT1NwQ25hSkZQdFUyZ3Exd3hTQzZocmpPYURmb2d0MFdTRFZVdW52RlBwYnN6cjM2S2w2c3c?oc=5",
+   "source": "Gates Foundation",
+   "region": "International",
+   "published": "2026-11-12T19:45:10+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
   {
    "title": "PM Modi outlines vision to transform Indian agriculture from AI to solar power - India Today",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPRFFlbUdQbHNkaHZCVTd6U3g4NU5vTE82cXNrT0ZYUmNfTW45M3NLbTRveEVXQ2tMcm1yX1B0aTZmSlhHWUhsTThDQ3pIQVFHMFJvNUVoaTEzY3J3bWF4SWhlc1doWTB2YllIamNraXl5RnFJRnhJSzNRVzZjbnV1dk1fRWZiTGdfVHE4TkJJLUpUNU1Jekd5NTZ6TWZMeDZEaEJ0dVV3RWQ0OWsyQmV1c0c0cDU3VHBXek1obVMwRkI2RXBEb1FOZkc4N2R3MERJbUhQTDFn0gHWAUFVX3lxTE9EUWVtR1Bsc2RodkJVN3pTeDg1Tm9MTzZxc2tPRlhSY19Nbjkzc0ttNG94RVdDa0xybXJfUHRpNmZKWEdZSGxNOENDekhBUUcwUm81RWhpMTNjcndtYXhJaGVzV2hZMHZiWUhqY2tpeXlGcUlGeElLM1FXNmNudXV2TV9FZmJMZ19UcThOQkktSlQ1TUl6R3k1NnpNZkx4NkRoQnR1VXdFZDQ5azJCZXVzRzRwNTdUcFd6TWhtUzBGQjZFcERvUU5mRzg3ZHcwREltSFBMMWc?oc=5",
@@ -437,11 +449,23 @@
    "stage": "reported"
   },
   {
-   "title": "MTN Group Foundation and Gates Foundation launch first-of-its-kind Maternal Health Multiplier platform to expand access to AI-enabled maternal health care in Nigeria |",
-   "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPQ1BFSXBfSloyZ2RzMXRmWDhma0JVbVpncGRfeWkwU0h5MjNMQkpLX3F6QVFUQnZBVENGT1MxdUNsaTNPNXdQX0tic2lLcFlqRmMyTGhzdlV0Sk84VkIxYlZsT1RhS0YwTWhXdmpiejQ5dTZibGR5Tnk0Q3V5WkZLTDFmY2Z5WlZ4YkY1dzByak93Zm1zYXdQUTdORkxIOTJnMHRsS2RNbklwYWtEdXJxcFJ1X00wWjdMUFNyWUdrc1J4N1ZfSlpYeFN0ZzFfVEFfdWppeld4ZnpQaVV4Q0xGOS1JR3NYSU8tNWM3R1N6YU40NDhzUjRoMEpERlByVG10U2VLRnhuLURoSFBRZV9XU3EyT0w?oc=5",
-   "source": "MTN",
+   "title": "MTN, Gates Foundation launch AI maternal health platform",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYTg4R1NrWWpSbjVDcDBpbjJLdU9xcUoxZHNVMk0ySmVGYkJPb21JbnMzV3pTcnZuSGFhODU1REtNWG9WSURmdGtaRHpsb0p0V2wtOGFmMTFKNU1qLUZpeUZnaVlndEV6SG50N0k1bzhaeXNvdkxkWGJ1NHlsVXZkeHRubkp4TzIycFVPTlZVeVNzT3hVcDZST2hSVVhXNVFzTk5V?oc=5",
+   "source": "ITWeb Africa",
    "region": "International",
    "published": "2026-09-23T07:00:00+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [],
+   "stage": "pilot"
+  },
+  {
+   "title": "MTN Group Foundation and Gates Foundation launch first-of-its-kind Maternal Health Multiplier platform to expand access to AI-enabled maternal health care in Nigeria",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLURDTkNNQ1FYeTFIRDdEcUxlSjZYYWtSdmp1NDdndkxocEs1UzRvVG9HS2lXTzZwRktLa3Nlazc5NHlWWENRbEFpcmY4N1ZxbzRLR2p3dS15cGZRblhKQ0xnQV9fUDd0VzlPOVI0QzU4YUxhVVRqRFJlTFpkak45YkFfbmdIU3RtV2dIeXE2OVZaWmdlQ3M4UGhCRWU?oc=5",
+   "source": "Gates Foundation",
+   "region": "International",
+   "published": "2026-09-22T07:00:00+00:00",
    "needs": [
     "health"
    ],
@@ -452,18 +476,6 @@
      "lat": 9.1
     }
    ],
-   "stage": "pilot"
-  },
-  {
-   "title": "MTN, Gates Foundation launch AI maternal health platform",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYTg4R1NrWWpSbjVDcDBpbjJLdU9xcUoxZHNVMk0ySmVGYkJPb21JbnMzV3pTcnZuSGFhODU1REtNWG9WSURmdGtaRHpsb0p0V2wtOGFmMTFKNU1qLUZpeUZnaVlndEV6SG50N0k1bzhaeXNvdkxkWGJ1NHlsVXZkeHRubkp4TzIycFVPTlZVeVNzT3hVcDZST2hSVVhXNVFzTk5V?oc=5",
-   "source": "ITWeb Africa",
-   "region": "International",
-   "published": "2026-09-23T07:00:00+00:00",
-   "needs": [
-    "health"
-   ],
-   "places": [],
    "stage": "pilot"
   },
   {
