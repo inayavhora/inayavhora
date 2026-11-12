@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T13:28:30+00:00",
+ "updated": "2026-11-12T15:08:43+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -24,13 +24,13 @@
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 10
+   "ai_stories": 11
   },
   {
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "South China Morning Post",
@@ -48,7 +48,7 @@
    "name": "NPR",
    "set": "General",
    "ok": true,
-   "ai_stories": 3
+   "ai_stories": 4
   },
   {
    "name": "MIT Technology Review",
@@ -90,7 +90,7 @@
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 60
+   "ai_stories": 59
   },
   {
    "name": "Google News: famine",
@@ -126,7 +126,7 @@
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 28
+   "ai_stories": 30
   }
  ],
  "items": [
@@ -489,6 +489,18 @@
    ],
    "places": [],
    "stage": "critique"
+  },
+  {
+   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
+   "source": "thenationalnews.com",
+   "region": "International",
+   "published": "2026-09-15T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
   },
   {
    "title": "Gates Foundation pledges $1B for AI in health, farming and education",
