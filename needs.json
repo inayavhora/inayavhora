@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T16:16:08+00:00",
+ "updated": "2026-11-12T17:18:51+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,7 +12,7 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 4
+   "ai_stories": 5
   },
   {
    "name": "Al Jazeera",
@@ -42,7 +42,7 @@
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 5
+   "ai_stories": 4
   },
   {
    "name": "NPR",
@@ -84,7 +84,7 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 62
+   "ai_stories": 61
   },
   {
    "name": "Specialist sites (2)",
@@ -102,19 +102,19 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 31
+   "ai_stories": 32
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 28
+   "ai_stories": 40
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 27
   },
   {
    "name": "Google News: education",
@@ -126,10 +126,28 @@
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 29
+   "ai_stories": 30
   }
  ],
  "items": [
+  {
+   "title": "PM Modi outlines vision to transform Indian agriculture from AI to solar power - India Today",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPRFFlbUdQbHNkaHZCVTd6U3g4NU5vTE82cXNrT0ZYUmNfTW45M3NLbTRveEVXQ2tMcm1yX1B0aTZmSlhHWUhsTThDQ3pIQVFHMFJvNUVoaTEzY3J3bWF4SWhlc1doWTB2YllIamNraXl5RnFJRnhJSzNRVzZjbnV1dk1fRWZiTGdfVHE4TkJJLUpUNU1Jekd5NTZ6TWZMeDZEaEJ0dVV3RWQ0OWsyQmV1c0c0cDU3VHBXek1obVMwRkI2RXBEb1FOZkc4N2R3MERJbUhQTDFn0gHWAUFVX3lxTE9EUWVtR1Bsc2RodkJVN3pTeDg1Tm9MTzZxc2tPRlhSY19Nbjkzc0ttNG94RVdDa0xybXJfUHRpNmZKWEdZSGxNOENDekhBUUcwUm81RWhpMTNjcndtYXhJaGVzV2hZMHZiWUhqY2tpeXlGcUlGeElLM1FXNmNudXV2TV9FZmJMZ19UcThOQkktSlQ1TUl6R3k1NnpNZkx4NkRoQnR1VXdFZDQ5azJCZXVzRzRwNTdUcFd6TWhtUzBGQjZFcERvUU5mRzg3ZHcwREltSFBMMWc?oc=5",
+   "source": "India Today",
+   "region": "International",
+   "published": "2026-11-12T17:05:37+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "proposed"
+  },
   {
    "title": "Froncort.AI Secures $2.3 Mn Google.org Grant to Scale AI-Based TB Screening in India",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOE9RZ0VxV0pJU1RmODJSd0ZFcVdVeWdPSkxKRDJ5N3JVdkNmWlhLbE1COEZRYmZpVmVMYnRMT0lja3lYY01uRXA5UGlyNnBwM2pfdEM1S3ZMNGV4VXNhZmRJWm9ldHk0dWZ6NlhYY3RQeVJqU1RDMXBxVzkyS1R6ZVdSN0EzdHVCUGlKdHdqYy1URjdCYU0zallWQUJ4RE5HS0lHY2xGMlB3SlBsbEZMR3duZVVOa1dU?oc=5",
@@ -642,6 +660,24 @@
    "published": "2026-07-18T07:00:00+00:00",
    "needs": [
     "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "Water scarcity meets AI ambitions | Will India drain its aquifers to automate its demographic dividend?",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNQTRQY01LSzhIRlFYY19jMGNXWWUzNkNNdjA2dkhaVjFmR3owcGVQN3NnRG1PNnFmOUdDZTlidTd2TkRWbjQ3Tk9oN2xsVnlPVFJBR05HTjhjYWxtUEY1cTRZTlRwQlp6WlhqenFQVTluQVJBa2VuMVlTR2hPQzVkaXFLRU5qeDNZNk9JTU5fbENETDhsQjBiOFJ1V1dZdzJ5V2JhamhwX2JIS0N0cEJnaXUxRXVqbjkxR21VSmVsM0hWS1BUM0hTR1dlOTJVYVJTYWxNV2xfU0JQNTg0dEHSAe4BQVVfeXFMTVdPUmlWWFhPTWtiSFpwVGp3Q3pjbXVtZWFnMEFicW93aXpfLW1ZVzBRcWZUS01HWV85N25JYUZ4Tnp4UFVJTjdrWXBfNTZlMmJiWGFabTBBUGo2UGtYWkF0SGMwQ2lwOFhXcjZVZ0pjN19nWnRqWXZ2dG1XTlNHRFUya3RYSXJZQ1NZaDNBd20wQzRFZkxMRzNKc095SGhjNmx5eEYtckkzVDF3R01lT0swLTlQMHJnSTYwcHZGX3dTLXFZQXdjT1JOUFc3bzNsRjBJWkVPeFJ6enJBM0dqUi1qYWxfWENuMU5tX3Zxdw?oc=5",
+   "source": "Deccan Herald",
+   "region": "International",
+   "published": "2026-07-16T07:00:00+00:00",
+   "needs": [
+    "water"
    ],
    "places": [
     {

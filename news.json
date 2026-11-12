@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T16:16:08+00:00",
+ "updated": "2026-11-12T17:18:51+00:00",
  "sources_reached": 12,
  "sources": [
   {
@@ -12,7 +12,7 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 4
+   "ai_stories": 5
   },
   {
    "name": "Al Jazeera",
@@ -42,7 +42,7 @@
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 5
+   "ai_stories": 4
   },
   {
    "name": "NPR",
@@ -84,7 +84,7 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 62
+   "ai_stories": 61
   },
   {
    "name": "Specialist sites (2)",
@@ -102,19 +102,19 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 31
+   "ai_stories": 32
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 28
+   "ai_stories": 40
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 27
   },
   {
    "name": "Google News: education",
@@ -126,10 +126,143 @@
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 29
+   "ai_stories": 30
   }
  ],
  "items": [
+  {
+   "title": "More game developers are starting to use generative AI",
+   "url": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+   "source": "The Verge",
+   "region": "US",
+   "published": "2026-11-12T17:16:22+00:00"
+  },
+  {
+   "title": "Webcast: What M&A Trends Say About AI, Robotics & More",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMzJDcnhEeU11M1g3bERIZ3Z0aUdwNGNKbFFqWEg2MUF6QnRBX2dxeDk3T2o2MHJtRmtTaUNLOXljZEZCdzBxa1B5aWFzdUlMQ0lxVDB6TzYtTHpYMmhtWnNCdUl3QmtLV1ZodW04N1d3aEM3dVVYUmd0Ym15UHpLU21oRlFIb2hrQ0xFWVZ6NkRDanBXMXNvajZkcEhlLXl3bGNLRlNvQQ?oc=5",
+   "source": "ETF Database",
+   "region": "International",
+   "published": "2026-11-12T17:02:27+00:00"
+  },
+  {
+   "title": "SoftBank’s billion-dollar loss may have put a cap on AI’s natural gas ambitions",
+   "url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-12T17:00:52+00:00"
+  },
+  {
+   "title": "Phota Labs uses AI to turn everyday photos into professional-looking shots",
+   "url": "https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-12T17:00:00+00:00"
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang has resigned. What happens next?",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+   "source": "The Verge",
+   "region": "US",
+   "published": "2026-11-12T16:59:01+00:00"
+  },
+  {
+   "title": "Jensen Huang is out. What did China want from him?",
+   "url": "https://www.theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump",
+   "source": "The Verge",
+   "region": "US",
+   "published": "2026-11-12T16:59:00+00:00"
+  },
+  {
+   "title": "AI chatbots are recommending fake retail websites, study finds",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+   "source": "The Verge",
+   "region": "US",
+   "published": "2026-11-12T16:57:11+00:00"
+  },
+  {
+   "title": "Jensen Huang, a global salesman for artificial intelligence, resigns from Nvidia after affair",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdXJvcGNzS2ZVWGROQm9ZMV9FcUI2U2VCOUhWWmZ2T1JzeF9UYVh2LXVsWmdmV1ZFcGI3emgzX1ZWUVh0d0M3SmpVRmdsZ1JoVUVQSzVQSTd4RTY0bTdHT09TdUdEdkV6ZlN5TXZ6eHlmdGRjblRfWDVWSF8zNmh6M203eDV4TmlHT1U4RE5IbXgzWFdyaS1YdHhmRVVhT3AwNFhOSWh5d1Z6aXQzT2UyS01rcFlJa19Jel9pLUJQdGoxX1pLRHRPTDlRX2stN2R2MnMzSlF3TGk4Zw?oc=5",
+   "source": "5 EYEWITNESS NEWS",
+   "region": "International",
+   "published": "2026-11-12T16:54:27+00:00"
+  },
+  {
+   "title": "Jensen Huang, a global salesman for artificial intelligence, resigns from Nvidia after affair | National News | 2news.com",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNbmNZQWNHNzNwejlrRkhtT240UGtPa2NWTGFfdFNZQU9MYU5USVJ4V2VjYU1zWG5GUG1DMjkxU1ZJTFpkRmd1blBGa0tmaXAwamU0NUlHQ2lEQmFsVk9PcjlzUWpXMzVPMWhhb05pZW1wdmtMNGU3YnFiaGp1WHNYck03QUhNQVlMWENjYndodjE4ZDBEY3JITXEwYjV6cW1WOUpjdlFYak80QWY4UlE4dkRKS2ZmejA4SEJ3R091VlB2UEdNRGM2Sl9XZHpfMkdtWHVPbHZveGNYLUVkUDNiWXhfWlNYWFVFQUhjOGF0TFRxNG9wWXdzMklNdGdia3hfMjdFSkdB?oc=5",
+   "source": "KTVN",
+   "region": "International",
+   "published": "2026-11-12T16:53:00+00:00"
+  },
+  {
+   "title": "Associate professor finds agricultural relevance in artificial intelligence — and a rare sense of place",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRDFWOHg2bGZVdm1idWVYcF8zZTUzblFuRjNjdzJ3b3pyZnpoR1ZFUzNteE5wV1ROYl93cng1Ti04bTI0RXRGbXFpZmp4dzhzekhTVzZzd2QyOEhQY1VwakVqNUlkUWQwTUx3U2loaUdkREdBdmxPZmxyNEtERk04SXpSVF95anVHYkttVHhKT2E4NWlFemhVb0lsYmFaT2RTM3JZOWRHbUFleXFEUklCRERmalpReHdobW1YUEw3d0NzTjNXQXJqYzNVMUJWSXp2MllOcV9TbV8?oc=5",
+   "source": "Auburn University",
+   "region": "International",
+   "published": "2026-11-12T16:49:10+00:00"
+  },
+  {
+   "title": "How AI visionary Jensen Huang was undone by his own bad decisions",
+   "url": "https://www.bbc.co.uk/news/articles/cq5y13819gpjo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC News",
+   "region": "UK",
+   "published": "2026-11-12T16:43:36+00:00"
+  },
+  {
+   "title": "Jensen Huang agrees to testify before Congress",
+   "url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-12T16:36:37+00:00"
+  },
+  {
+   "title": "IMF monitoring AI developments, too early to say if AI reassessment underway",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOajBjUkJzUkpMQjZLck00SEljVmF6U3lRNWRVY3l4S2RpdDhJUVZHY2tmTmNrbE85VFZTQjdWU0ZiU1U0Nl8td0haRzdKOVhEYWRjMFFKaDhfbVE2NkoyS1dOUm96czBjSmlhdmJzcTdVSk1oUzZqSW1UQzZFR21zRDBlOWd1V0oxRk1ObUVlYlVjT0RfOFhlWUVZM3R2ZGh5NVAteWY4RGdfcWdqYjFaaFJnRDJOUTFZSmx5eEZ0ZmFrYVpyZ1BUemRHM1VvQQ?oc=5",
+   "source": "Reuters",
+   "region": "International",
+   "published": "2026-11-12T16:36:22+00:00"
+  },
+  {
+   "title": "Five ways Jensen Huang’s ouster from Nvidia could damage the AI industry",
+   "url": "https://techcrunch.com/2026/11/12/five-ways-jensen-huangs-ouster-from-nvidia-could-damage-the-ai-industry/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-12T16:32:33+00:00"
+  },
+  {
+   "title": "Nvidia is reportedly preparing to fire Jensen Huang",
+   "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
+   "source": "The Verge",
+   "region": "US",
+   "published": "2026-11-12T16:26:32+00:00"
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang Resigns After His Affair Raises National Security Concerns",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTzZTeUpsQzUyVW9qZm4xdEJEX2p1cGZFMHVuWVlpZkEtNEt6Mk5rVktmcmRNUDVxWklHdUt1ZFF1OVFlRy1jMW5PLUEzUWRsQlM3OV9rWU9sRDdMZGNuRWlSRE95Y1YxUlBYX0haRGx2TXpKU1dUYzdONGt0ajc4Z3ZHMVNzMGlKcEtCUVJSc0o4NWliTGJ5VGpmM2d2X2RRTHh6dUNVT1FwaG0wcG82NkdFUGlycXU4TktBY2FWbGU0ZDNzaEYyaE5TTWZVUXdDNXhjNjZvOA?oc=5",
+   "source": "Industrial Equipment News",
+   "region": "International",
+   "published": "2026-11-12T16:22:10+00:00"
+  },
+  {
+   "title": "United Kingdom-Norway Joint Statement of intent on Artificial Intelligence",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOY3I3MGw2M0FFQmxMQW5lYUhmYUpqdFBpdWlFMi1ieHBidER3LWY0NEdPT3gtRDk1YjE0a2lvcERZSERiOU14YlpULXNyQ21kQ1BQbWR4RE9KZFltX1FsTU1nTEFENFJXQnYzZm1Bejk3Wld5R2RFUDN2a05UQjRkbDJhZ2VtN0xlc0NkUXlXLU5NWk9xLWc4a3cwMk1sNGxJMFBPVUVYeWtLTmIzWGc?oc=5",
+   "source": "GOV.UK",
+   "region": "International",
+   "published": "2026-11-12T16:19:44+00:00"
+  },
+  {
+   "title": "Singapore barred Alice Huang from reentry following criminal investigation",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdzN2OHJGS1ExMThKUTVBTFdtS1FiQVpsZm5IWEZHejl2eWJNZERnbFhLWjNhUl9iaFVSVE4xMXk0cHJmeEl2dUhGVm10cWpLZmZrRURWclVMY29DUzJQcnhkUVd1WXBuTVVxSVVBVmM4WmlQZkY0SWR6MThIYW4za3h1d05DSUdBT2JYYVY0VlZfSVNlRHY0OENrTlh4ajNJQUdQSzViQl9memxSWjVON0l5cVhReDJQeDVxQXFad21yVGxpZjdjeG9VYVFvY011RG11dmROYmxvZw?oc=5",
+   "source": "Nikkei Asia",
+   "region": "International",
+   "published": "2026-11-12T16:18:00+00:00"
+  },
+  {
+   "title": "From washing dishes at Denny’s to rockstar of AI: the rise and fall of Nvidia’s Jensen Huang",
+   "url": "https://www.theguardian.com/technology/2026/nov/12/rise-and-fall-of-nvidia-ceo-jensen-huang-profile",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-12T16:17:31+00:00"
+  },
   {
    "title": "Trump floats Apple chairman Tim Cook as Jensen Huang’s successor",
    "url": "https://techcrunch.com/2026/11/12/trump-floats-apple-chairman-tim-cook-as-jensen-huangs-successor/",
@@ -143,13 +276,6 @@
    "source": "The Verge",
    "region": "US",
    "published": "2026-11-12T16:11:59+00:00"
-  },
-  {
-   "title": "Nvidia CEO Jensen Huang has resigned. What happens next?",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-   "source": "The Verge",
-   "region": "US",
-   "published": "2026-11-12T16:08:39+00:00"
   },
   {
    "title": "How CNBC is viewing artificial intelligence",
@@ -248,13 +374,6 @@
    "source": "Al Jazeera",
    "region": "Qatar",
    "published": "2026-11-12T14:44:54+00:00"
-  },
-  {
-   "title": "Nvidia is reportedly preparing to fire Jensen Huang",
-   "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
-   "source": "The Verge",
-   "region": "US",
-   "published": "2026-11-12T14:41:18+00:00"
   },
   {
    "title": "Analysts question USDA use of artificial intelligence in crop reporting",
@@ -446,6 +565,13 @@
    "published": "2026-11-12T12:31:32+00:00"
   },
   {
+   "title": "Nvidia Tumbles Early Amid Questions About Nvidia CEO Jensen Huang’s Future",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPV1V1Rk1tdVlkVDc0UmtCbmo3TncyQ1RDd0ZyNXRTNWVLbUM0SF9vYWk0RjdyUWZtYXB2cmx3cU02NlFvVHo1eWxZRkRickJLZnFLY0UzdE9NaU02dU95Z05NUEx3SHVncjNzTmRwdFlWZlU0enh2ZjlieGRTVnVxUlRjVVdKOVozanBKNk5STEI3cG05d0I2Ty1QN3lFS2RYc3YzSW5NYUxBb2RacGlScURuVEdHbUcyZmU1WUtEZzZkdw?oc=5",
+   "source": "U.S. News & World Report",
+   "region": "International",
+   "published": "2026-11-12T12:26:00+00:00"
+  },
+  {
    "title": "Training Artificial Intelligence on Top Physicians May Reduce Intensive Care Bias",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNczhXRl9FLUlsamZUNmh5aU5JOC0xSDdtWFkzSVMxUTFVSmlEM3N5M0gxRjhhLWFLY19KN29XV3lqa0R5V3VEZjRYVzkxNG5GZDA4bF9uOVlXLTRLRVhxRWNDbGpvWnpNR25mTzVJa0xSRHNaU0JFbDcxLWdVYTdoNDhHYnZhUWFIaE9ad3c1R1JTaHB5cnRsWU5qeENteDJYTkZTbVVZS0xCQQ?oc=5",
    "source": "Bioengineer.org",
@@ -506,7 +632,7 @@
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUjVuTWlObUF3V2dESWozYkJUWVVTck80anNZX2J3S05OTHMyQmNaMWV0ZXRwSElQZ1k2a1hRYzlnV2E3V3FkZ0IyM25qN3BDNS1ESmo1TlBPM3JrS0Vra3BSUUlocXEwbjRReFo0R3NGdGVJaWJmZzJvYUNCM2RkdDdOTmVlT2lDbTdpZ0I3anREeXdBWHNGSFkwTE01el9GYTNtemdqRzhpQWxQbl9sa0JZTDN2ajdoQnhwa2QzcXhVdzVqR1Fsdg?oc=5",
    "source": "Bioengineer.org",
    "region": "International",
-   "published": "2026-11-12T10:53:39+00:00"
+   "published": "2026-11-12T10:58:13+00:00"
   },
   {
    "title": "Robot tells Al Jazeera AI is ‘too useful to disappear’",
@@ -514,6 +640,13 @@
    "source": "Al Jazeera",
    "region": "Qatar",
    "published": "2026-11-12T10:53:23+00:00"
+  },
+  {
+   "title": "Geospatial Artificial Intelligence Reshapes Geographic Methods and Theory, Researchers Conclude",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSFlEVDFOOVRZZDdwUjcydW95cHo0TTNZQXhHOVQ3ejk2bnlLR1FLLUk4ZS1CSE91N0FkNDEzcnRzMm15bktWa3lzcHg4SkdTcjJCNEJkamxCdU9kd1hGZFlxMnIzNExRUVo2QW84ZlFYWHNpWVE1TXVBRy1nMGpkLXFVaURKRGxXcWRqWVBvY282cS1naWhVVlJ2SU5FNk9PSFV5TzEyaWlKNF9JR0Mzc05VQ3duODNXeGVB?oc=5",
+   "source": "Bioengineer.org",
+   "region": "International",
+   "published": "2026-11-12T10:33:13+00:00"
   },
   {
    "title": "New research reveals gap between artificial intelligence plans and workplace readiness",
@@ -1619,7 +1752,7 @@
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdFJGVXFRaGgxZUFrZHdFY2hoZVIxNTRTLUdFanpBQmZOdGlLVm8yOXcwM2lsb1k0WWYyX2xQU2xxTm9KLWxOeVN1MW5lSDNCc0dZS3JNMTdCTVIzblhiYjRjX2ZzLW9GdldiVXRpSmdZU0pJSU1xT2NaVmpPX29Ob2N2UHhSUjBFMzUzLVBMYlpuM2RFUDlWVWV5RXVOX0RmaTVOeQ?oc=5",
    "source": "WSJ",
    "region": "International",
-   "published": "2026-11-11T12:09:00+00:00"
+   "published": "2026-11-11T12:05:53+00:00"
   },
   {
    "title": "How AI Stocks Are Creeping Into Dividend ETFs",
@@ -2796,139 +2929,6 @@
    "source": "The Verge",
    "region": "US",
    "published": "2026-11-10T14:28:59+00:00"
-  },
-  {
-   "title": "Could artificial intelligence end humanity? A UT Dallas professor explains if and how it could happen.",
-   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPSVVjbkVyUG1FemxYaWM2ckxiRE84TWczYTNWenR4bUFzLUFTVFdIaUdoRWNhYkIwMFdmVmpBOEU4anh4cENlQ3RTZF9QVWZOeGhMaUNtaGxnUjAzWDJwbGJQWVljRExVM3JFaVpyYWk2NUg0c0dFSzdiRmViOHFvOGZQN0hzLTVid01XV1VwYXpTcktjeGtPeVFTd0h6QVpVSGUyRUVlemZMRHVMM3dvQ3Q5VEt1U0ItWDlIVWRaRjREakdfbVV0MjFZU1BqZVhQY3hDUXNNeElneVRUVzlwZkdvcnYwSkxkRzNIUmpJbjdsRzVWLUNJZ0ExelJ0ZTYxUDk2MU9zbkVzbjUwTlE?oc=5",
-   "source": "WFAA",
-   "region": "International",
-   "published": "2026-11-10T14:25:27+00:00"
-  },
-  {
-   "title": "The global pledge to use AI for climate good is a cruel joke",
-   "url": "https://www.theverge.com/science/1030252/ai-data-center-climate-pledge-united-nations-cop31",
-   "source": "The Verge",
-   "region": "US",
-   "published": "2026-11-10T14:19:03+00:00"
-  },
-  {
-   "title": "TSMC earmarks up to $1bn to buy Anthropic and OpenAI shares",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOX3lnNU1VVFk4T18zOEhrOVBOalRYV3BNSV9qZDhkQzZoZTdKSk4tU2lNMEd5eXc4NXlTckpIYmZvaHlfeXZ5MVI3amtRdDQyckdnTHNCWmQ5anB4YW1ZT3l6NDVNUGhnOFpQQ254SS1VUjhXckNPMzJfMFhyalh3VE8wMmZfeW4tSnZHdWN2UUVUN2J4RHEyNjBmc3pkT1BfUzlsY1lVN2ZWZ3FCdE9SZHlzU244SVBoQkpXcXBVbnNrckRt?oc=5",
-   "source": "Nikkei Asia",
-   "region": "International",
-   "published": "2026-11-10T14:19:00+00:00"
-  },
-  {
-   "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
-   "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-10T14:05:10+00:00"
-  },
-  {
-   "title": "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
-   "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-10T14:01:39+00:00"
-  },
-  {
-   "title": "AI100 Report: AI has entered the mainstream and is reshaping society",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWTJ5RzgyVmJoQnhYODBkaTdBcTdtV1Z6UnRVOE9YdC1KeVhOemZERXRyTDl6cnVOV05ValR0N3hCdXBURk5lbGlTVUdtMEZTb1pKaVB3aHN4Y3UwNUR3OGl4eHlUS29uNXl3OUh4Wmd6bUYzR3c0ZGJJTEFGWjR5SWRQdVdGbVNLbEJtaEItdE0xSkJpdktISlZqMVEtdDJ3SU4tYg?oc=5",
-   "source": "Max-Planck-Gesellschaft",
-   "region": "International",
-   "published": "2026-11-10T14:00:10+00:00"
-  },
-  {
-   "title": "After challenging Google’s Android with Cyanogen, its co-founder takes aim at Windows for AI era",
-   "url": "https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-10T14:00:00+00:00"
-  },
-  {
-   "title": "Spotify’s AI DJ gets new voices, personalities, and an option for less chatter",
-   "url": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-10T14:00:00+00:00"
-  },
-  {
-   "title": "K Altman Law Highlights School Artificial Intelligence Controls and Questions for Families",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdEFMMHlkMGZDU0ZpWTlHUU5UMWVpNVJiVjBwUFloQ3VGbkpsUWZGbi1ST25pMUxkd0c1bjdKNW9RRjNHeE1NU0l2c1I2VDdIRy1zS0MxWHhoLU5jM3R5eXVJSG5nZjdWRDBWVFJLY19wVDdUVjVMclF5RWtoamVtSkdXZmdlMVdzU0JkVmE3ZGJRZ29LcGdTeUpZRnRVNU5fUGFsd0UxdXcwTldMcTN6MXZsLVA1dV9sbS03WVpibTRPTmxzdktVVXNOVmxfbEtKelh3?oc=5",
-   "source": "EIN Presswire",
-   "region": "International",
-   "published": "2026-11-10T14:00:00+00:00"
-  },
-  {
-   "title": "While artificial intelligence (AI) has begun to solve problems that mathematicians have not solved f..",
-   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBOV0ZpZVlWMW5hZzBpeUVDQ3gwMjFUaDhUYVR1Tm1MWUwxLVh6dHlaU2VILWZaTWRHOVczVk0xUFYweDZvekhMV3d0MA?oc=5",
-   "source": "매일경제",
-   "region": "International",
-   "published": "2026-11-10T14:00:00+00:00"
-  },
-  {
-   "title": "SMX Expands Into AI-Driven Material Science With New Scientific Intelligence Platform",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVG90aEZlSVd3M0xBS1hVc0pXX2t4cGhfMlJXSFk1WTR3U3dxaVo1cnIwVmxkU0VyQjlCUjhhX3hPbXlTX1doTW00UGlpVmttMTR2cHR1aEtEUzJFenpySDYtR2M2dmZiRERCWGxnNzE4Z3h0Y0JYYWxfU0RWYWxCaUpWZjFZdw?oc=5",
-   "source": "Yahoo! Finance Canada",
-   "region": "International",
-   "published": "2026-11-10T14:00:00+00:00"
-  },
-  {
-   "title": "Meta’s AI age-check goes global: Can it protect teens?",
-   "url": "https://www.aljazeera.com/news/2026/11/10/metas-ai-age-check-goes-global-can-it-protect-teens?traffic_source=rss",
-   "source": "Al Jazeera",
-   "region": "Qatar",
-   "published": "2026-11-10T13:58:37+00:00"
-  },
-  {
-   "title": "Form 8K ARTIFICIAL INTELLIGENCE TECHNOLOGY SOLUTIONS INC. For: 10 November",
-   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQbEsxUms3OU9GRUFzR3dodWZNaEZqMWVXMzhjakhYbElRb1JNQ1NFT0pTenZmY1NVcE51bVdLTjN2LU1odjZwUEQ5VERNTU1TOW9aaWdiQTU2N0tWLVpLcjAyek1TOEhRTnpRZVhJdVBxZDd4a0V5RHUyQnh5TzIwcmIzQThWMzZFSmloQmhNWEVvNWphVWRzWjdWS0ozZmdXaTNkY3VwcnVZeTN0eGVLdVBOY01ZMHB2UWljQXAtWGVLLUYzR1A4bTd3NVhnZ2V2dktkNEh3WmRkTlhoaEU5RG1PdkZZM2NfamhrSHgzNW9lMTYxWlFnVERaMHRJUHBoRnF6anZZOUpyc0E?oc=5",
-   "source": "Investing.com Canada",
-   "region": "International",
-   "published": "2026-11-10T13:55:13+00:00"
-  },
-  {
-   "title": "AMD vs. Intel: Which Is the Better Artificial Intelligence (AI) Chip Stock to Buy Right Now?",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNal81S2Q0LVVWX3p5UkFSeTFmRjZCUUNjaVA4eTVqVmFDYUpJT3g1NHE1MDhqUWFRcjJXUzZDa0Vkd2pLUDJqVXRfYVNORWt6SS1rT2FxUmcxSzBYQW1pS2VyUGhPV0toYnNHbWdNME5mUWNJOUtlVzZNTFVsMzZYQmg0RmJucl9sWHBVRVdEVlV2Q3dtclBzX1ZuMTIxNzlkYlB6Qkg3eGxndEFBMDJsQnJNdFdtSG5RSGNQMDJwbld3UEhUU2RlM09R?oc=5",
-   "source": "The Motley Fool",
-   "region": "International",
-   "published": "2026-11-10T13:52:00+00:00"
-  },
-  {
-   "title": "The European Union warns that artificial intelligence increases the risk of cyberattacks in Europe",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOaDcwd1BCX2Zvb2t4eHk1SXRiN3FVWnQ4R1BDQ1NMR3BUZ3M4ZUFDcFB1dksxRmdrQW5iWHhWTF9HVkdqZTUycnl4RTVGeUx2amJIQ25nd0R3U3hiV3RyaThXcG5ULWRCSzhtVXhPYU1pRFJYM0NFOWtlVFo0VlBQUC1aQ0hDc1E2WVcxaFVhOXBabDllODhwNVBadF9wc3BrMjd4U0J2TXdQeXBGX0c5d3E0MjJvaTdYT2hTWFdscnJ1Zk9rekRDZlhicTVpN3ZpMVp3WW5PNWtEVmtFSW1PMll4MkNnUVVoX3lzYjRtUXdoQTFQ?oc=5",
-   "source": "El Constitucional",
-   "region": "International",
-   "published": "2026-11-10T13:43:22+00:00"
-  },
-  {
-   "title": "New framework grades AI jailbreaks across capability gains, scope, and how easy they are to deploy — Frontier Model Forum proposes CVSS-style rating system for new AI models",
-   "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxPSDcwR2sxd0luVkRpSExvM0xPT3JVekZWVE1FcEZSemtmb3Y2cVVmUzJRQmNmVEJncm5WMmwwbzUwZllZQzcwVVpDbEpacnZXX3NhSnNNdE9XS28tZi10aTc3b1JjYnljY29EdXlub3dIR1dwWkhkX1NXZk5Zek4yTk9mb0tndjVfS1VtMzFVWWZiT0dtQVlNSGlfYmRvcklHekM5WGNzS2MtZE9nQ0UtUi12bjQ4SVBaZTNIS0JTSDFGbGs0Szk5R1BPV2tWS01XU0RqX3REZDUzaWNlX3BEWXVQaE9yTmRPSndWa0pvWk94MzZJMUh2NWN4cklfQUZfWFhHclpOZFpCLUp3VVczZ2VVblpva1pnZlpUMl84Vzc3TFM0aHZDako5b2NxbjUyS0xCWDZBSjZaZVljWXAwSEppSVVqTThCQ25ZeTI4NUR4TzdRcnJZ?oc=5",
-   "source": "Tom's Hardware",
-   "region": "International",
-   "published": "2026-11-10T13:40:00+00:00"
-  },
-  {
-   "title": "SK Telecom brings artificial intelligence to everyday life through ‘AI for Everyone’ campaign",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMWNmc3FGcHRNc1l2RjZKMGExWHEwdmNRR3J1QVVZdVRPck0wV0dISnZxSjdUYzdIRDFtOFBneDY3cEhIakJUbnFZRXRtTHBDLVZncnlZdkpDTEtmY0JUZ25DZkd3RFZPVG9EdVYwdTdwWjZjbVBLM3lZdnRaNnNHeFNkZ3hmWnZXd2c3QklweWJyblh0X2NUaWxLOXZvVzdDd2VMblY0R3hIa0ZXT3Bzb0I4SVlRMGhKbTBF?oc=5",
-   "source": "marketech apac",
-   "region": "International",
-   "published": "2026-11-10T13:34:30+00:00"
-  },
-  {
-   "title": "Google Cloud launches Gemini for Healthcare in preview",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVHZ6aURheW5LbFNId1BDZGFWS0wzdEd4MHZwVEgzaEJqZFpOSExuU3plR2g0aDZrcEQ3Y082UWE4aVRtNU1jQUJ3S2tZejB5UkhnVU5rWDhaNzlKNTZaUHBEMVhZQk1idU1mSFlJNHMyLWp4S3BXWkExcWY3d3dYTlhtVXhTNVk0bnJobnpmbElmR2hSR1JYWGNtTG9QVEpMRFhjOFVvbw?oc=5",
-   "source": "AI News",
-   "region": "International",
-   "published": "2026-11-10T13:30:53+00:00"
-  },
-  {
-   "title": "Ring, known for its doorbell cameras, launches a home security drone and an enterprise security robot",
-   "url": "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-10T13:30:00+00:00"
   }
  ]
 }
