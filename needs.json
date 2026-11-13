@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T13:24:52+00:00",
+ "updated": "2026-11-13T20:54:36+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,19 +12,19 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 4
+   "ai_stories": 3
   },
   {
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 1
   },
   {
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 13
+   "ai_stories": 11
   },
   {
    "name": "ABC News",
@@ -36,13 +36,13 @@
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 27
   },
   {
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 4
+   "ai_stories": 7
   },
   {
    "name": "NPR",
@@ -72,43 +72,43 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 102
+   "ai_stories": 100
   },
   {
    "name": "The New Humanitarian",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 63
+   "ai_stories": 66
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 62
+   "ai_stories": 63
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 41
+   "ai_stories": 42
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 31
+   "ai_stories": 29
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 25
   },
   {
    "name": "Google News: water",
@@ -120,13 +120,13 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 33
+   "ai_stories": 32
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 27
+   "ai_stories": 23
   }
  ],
  "items": [
@@ -146,18 +146,6 @@
      "lat": 0.0
     }
    ],
-   "stage": "reported"
-  },
-  {
-   "title": "Gates Foundation and Google to Bring AI resources to 200 Million Farmers Across the Global South",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc1RTZVc1RXJQVGpycm5DbGZmTW1rNEowNURyVXFRT0pwNjhVTWViaWdIUHdVYkNfbXVoSnlBMF9mamFlaDJmTWhRM09maFNneFRrZ201UmhVcEJFT1NwQ25hSkZQdFUyZ3Exd3hTQzZocmpPYURmb2d0MFdTRFZVdW52RlBwYnN6cjM2S2w2c3c?oc=5",
-   "source": "Gates Foundation",
-   "region": "International",
-   "published": "2026-11-12T19:45:10+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
    "stage": "reported"
   },
   {
@@ -555,6 +543,18 @@
    ],
    "places": [],
    "stage": "critique"
+  },
+  {
+   "title": "Gates Foundation and Google to Bring AI resources to 200 Million Farmers Across the Global South",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc1RTZVc1RXJQVGpycm5DbGZmTW1rNEowNURyVXFRT0pwNjhVTWViaWdIUHdVYkNfbXVoSnlBMF9mamFlaDJmTWhRM09maFNneFRrZ201UmhVcEJFT1NwQ25hSkZQdFUyZ3Exd3hTQzZocmpPYURmb2d0MFdTRFZVdW52RlBwYnN6cjM2S2w2c3c?oc=5",
+   "source": "Gates Foundation",
+   "region": "International",
+   "published": "2026-09-18T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
   },
   {
    "title": "Gates Foundation pledges $1B for AI in health, farming and education",
