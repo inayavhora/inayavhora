@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T23:55:08+00:00",
+ "updated": "2026-11-13T01:23:49+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -36,7 +36,7 @@
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 29
+   "ai_stories": 28
   },
   {
    "name": "The New York Times",
@@ -96,7 +96,7 @@
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 42
+   "ai_stories": 43
   },
   {
    "name": "Google News: farmers",
@@ -114,7 +114,7 @@
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 27
+   "ai_stories": 40
   },
   {
    "name": "Google News: education",
@@ -159,6 +159,24 @@
     }
    ],
    "stage": "proposed"
+  },
+  {
+   "title": "Indian shares bounce back as investors seek AI shelter",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcnY2VllRT2d5Z3k5STdzZ21iSHA5WlNaakI1UnBPUjJuNHpRRWxXaV9od2lVYWlkZUUxc3pfc09LdXVmV0xQSEREUU82eENoRkltQUZraDBZa1gzaWt6aU5wVGx2cmo4RlFod1N4eFQ0M0NBR1ZUbUx5c3d2V2hUclZnUlE?oc=5",
+   "source": "Financial Times",
+   "region": "International",
+   "published": "2026-11-12T04:43:55+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "reported"
   },
   {
    "title": "Froncort.AI Secures $2.3 Mn Google.org Grant to Scale AI-Based TB Screening in India",
@@ -765,9 +783,9 @@
    "stage": "pilot"
   },
   {
-   "title": "Investors Looking for Shelter From AI Storm Are Turning to India",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZFM4RWZ6Vk5sR3BXUGxaaDZQak8yb2FVMy11WGNpakdmMFRDblRfaENLRFRjRWhLTk9UZXR3MXgyNFB3Z2xKUnVxN2ZTSFpOZ3c5RW1GbFg5Z19JWHBha0N0MGlDZlZDb0JLTXAtcTJVQTYwUXpGalllY01VUjdDbENFTFluLUdRX1prX3FZOEpaMkdIdGJmbEdYTDNpUHF2cC1nV0JkbTJOT2lMdVN3TEtiRGk3UQ?oc=5",
-   "source": "Bloomberg.com",
+   "title": "India regains favor as investors seek shelter from AI-driven market swings",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcm9BNmppa0tFbXJ4eWJRdEx3YlJRcHhnM3Atcm42MUs3bmpNSlRSLWcyMm1qWU1YSDdPUFY2WGZTcnkxS2FCNV9yUGZhUzg5Vm9CeE1Odk9zbmQwU2pBaFoyTHMyZTYyTF9FUVBJd3F0eGtmOXBsZFdJWmdmYUpHR2txQjhDRnRsSEEyQlpTQVZ0UHNRVEp0SENLUUFHUGs1?oc=5",
+   "source": "Yahoo Finance",
    "region": "International",
    "published": "2026-07-04T07:00:00+00:00",
    "needs": [
@@ -783,9 +801,9 @@
    "stage": "reported"
   },
   {
-   "title": "India regains favor as investors seek shelter from AI-driven market swings",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcm9BNmppa0tFbXJ4eWJRdEx3YlJRcHhnM3Atcm42MUs3bmpNSlRSLWcyMm1qWU1YSDdPUFY2WGZTcnkxS2FCNV9yUGZhUzg5Vm9CeE1Odk9zbmQwU2pBaFoyTHMyZTYyTF9FUVBJd3F0eGtmOXBsZFdJWmdmYUpHR2txQjhDRnRsSEEyQlpTQVZ0UHNRVEp0SENLUUFHUGs1?oc=5",
-   "source": "Yahoo Finance",
+   "title": "Investors looking for shelter from AI storm are turning to India",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeXNNTlU4T2UyNzAwM3A5RUZEcm9EeXhpaUhMYUd4dGNlejBFVWdYWDNMRTdiMEJkRTZQb0lXR3JiaG1XRk83Z05hRF9LUEhZaFFPdmF4ZEM1WHlWTjE4TFVWOEtweVZPRDQ3cW5wNWVfVkY0ci16NlN4Ymxqd1V1YkV1cjkyTUdzWUNR?oc=5",
+   "source": "Yahoo Finance Singapore",
    "region": "International",
    "published": "2026-07-04T07:00:00+00:00",
    "needs": [
@@ -841,6 +859,24 @@
     }
    ],
    "stage": "reported"
+  },
+  {
+   "title": "AI-Powered Early Warning Systems and the Governance of Autonomous Surveillance Technologies in African Conflict Zones: Lessons from the Sudan Crisis (2023–2025)",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNOFdlMUtNalNLQUN5dUZhbUlDX1RoWGdETDB6dUhhSjltV19WQ21ZMTdKeW1Ud1JycWhCWjRNVlVpZUZhLWw2UHVEQm8yeDA0dXRHenU4TEV3Q3duRmhKX0xWbTNhX3FwWUVoc0VGUzRtRWRPamI3czNhdnRUX1dFU1JMZEdGQXRQWTU5YkJuQTREc2Z1T2t5WWhIRkhmTDFqbjE4eTA1b0xFOEdlODlITUxad2YxTkx0eTc4ZHlTdl81dFFIS1pMVW43RGlHSXlJZG9kZVh3NlZKOTRkRkdudjdWMHBnamNwbWpPTU5fWlY4Wmd4Z3N1UGlnRHJmRW9fNE5wZm43Y1Ezakw1QzhtTE9aQzNjX3psZUpGNTVR?oc=5",
+   "source": "https://www.accord.org.za/",
+   "region": "International",
+   "published": "2026-05-29T07:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "Sudan",
+     "lon": 30.2,
+     "lat": 15.6
+    }
+   ],
+   "stage": "critique"
   },
   {
    "title": "Machine learning-enhanced modeling approach for optimally predicting household level food insecurity in Ethiopia during COVID-19 | Scientific Reports",
@@ -1191,6 +1227,24 @@
    "stage": "reported"
   },
   {
+   "title": "SukhaRakshak AI - anticipatory drought intelligence for India (December 2025)",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOczFLem1Pa0NNOWI1YXhmaVF4SmZ5U3JNbGt2Qy10dlFxYjc2TFdDMDAzZTNrWEllb2JiVmZrenJjcWN1SEMwXzY0SDFBQ1doWmUtN19oQ25heTUwcHpSWG1HQkNyYzhvZ2JZTkk1WUNHVTBUMmotcWgwM0hqNlo5SWJIUmdqclMyMlNsendhUWNsX0R0UHYwd0hqb3p0djJQQmZXNVBkVQ?oc=5",
+   "source": "ReliefWeb",
+   "region": "International",
+   "published": "2025-12-22T08:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "reported"
+  },
+  {
    "title": "International Affairs Office at UAE Presidential Court, in partnership with Gates Foundation launches AI ecosystem for global agricultural development",
    "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPaU1FLTQxYVMzMi1DVi1UZjJqcTlPdFpBb1JvaUJ0ZmdmdjZkbVpoUmJOY2VlVjVGaU5FQVBYR2xfSWpRbjhiNGxWVnhUdWllR25ZUDRseXZ5Q1BXNVJwamdpN2xzM1gzVHdFYzh6MUlaY2poVUcxMUdRclVPaVIyNXYxUU9WeGNBS2JPaXVfZ01OWWk0NlVaenBHT1JrdGswZS05NW1VdVE1R1N5ei1CcWtCNklDVzA0THhkeDItNFB3V3VEZWhMTm9wZGkyNmRQelM2aFp2eWlldENTdGdpY2xmNlcyNDhlV3VsTlc4dVVMTFFrODI0dGRwQ3phMHQ3LWFCeHhKejk2N0EtRDV4bDZrLUk4S3FsQjBIQlJwWVN5akRu?oc=5",
    "source": "مكتب أبوظبي الإعلامي",
@@ -1486,6 +1540,24 @@
    "stage": "pilot"
   },
   {
+   "title": "Flood risk assessment with machine learning: insights from the 2022 Pakistan mega-flood and climate adaptation strategies",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB1ZTNWa2twaXp0NFBoQTFuOWJUWWtZNFliQmFMV2tmekFtYjdRdXZvdVE2N2pwblQzdDNJcjNqSW0yV01iZF9sTk45NmoyaXl4azdjWkFzbU5adTJyRkNN?oc=5",
+   "source": "Nature",
+   "region": "International",
+   "published": "2025-05-24T07:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "Pakistan",
+     "lon": 69.3,
+     "lat": 30.4
+    }
+   ],
+   "stage": "critique"
+  },
+  {
    "title": "$21M funding to bring AI to rural clinics in India",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcnRHdFlURTc0VldJejVtZU90UElCdkZmbm9qVWZxTnp6c2FhUWliY3NUV19ueVBQVVNpOVZPQVpSY2RudGx0Y3JMdHhjYzAwa3FyYUFZWGZpQU40WHJzbG52RWdaVlVQbDV0aUdsVVJWZElrWkJCWXAyOHlnQUtTREZUZ2g2aG91?oc=5",
    "source": "MobiHealthNews",
@@ -1770,6 +1842,24 @@
      "name": "India",
      "lon": 78.9,
      "lat": 21.0
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "Identification of influential weather parameters and seasonal drought prediction in Bangladesh using machine learning algorithm",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB6TTVDQklPZkZKTElaQVB3TG9xQ24wVlRMVWlQTzBvMnJBeXRqNndhcTRFOFVLVzl3X1dDNEFyeVdvOWdCSDd6cEhHX2E5OWZjd0VYbmJ0OW1uUDU3QVc4?oc=5",
+   "source": "Nature",
+   "region": "International",
+   "published": "2024-01-04T08:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "Bangladesh",
+     "lon": 90.4,
+     "lat": 23.7
     }
    ],
    "stage": "reported"
