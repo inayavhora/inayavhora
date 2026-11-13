@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T06:14:34+00:00",
+ "updated": "2026-11-13T07:38:13+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -18,7 +18,7 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 0
   },
   {
    "name": "DW",
@@ -36,7 +36,7 @@
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 29
+   "ai_stories": 28
   },
   {
    "name": "The New York Times",
@@ -102,7 +102,7 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 31
+   "ai_stories": 32
   },
   {
    "name": "Google News: health",
@@ -120,16 +120,34 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 34
+   "ai_stories": 33
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 28
   }
  ],
  "items": [
+  {
+   "title": "Kenya’s Farmerlifeline Wins Smart Africa Innovation Challenge with AI Farming Solution",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNXV5b3ZvNm00RnFXczZ2dUpXZFFUc19qQjZlVk1ZTVJLOC1hZXFzSjNtWFQybWZqNkxFN3FmWi1Ka0pwS19oQW5EUmJPWHBscnEwZ2E4WEY2ZkxmMlBUUVFCSklvbDRQTldEQ055MWViWHhzX2FJYXZGaWhudDUwVnB4cklUWEZNV2pmdmJHaTVaLU9PenVxTFFVVmVYcERGYUdXaXZXOS1qTFhnVFE?oc=5",
+   "source": "TechAfrica News",
+   "region": "International",
+   "published": "2026-11-13T07:18:45+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Kenya",
+     "lon": 37.9,
+     "lat": 0.0
+    }
+   ],
+   "stage": "reported"
+  },
   {
    "title": "Gates Foundation and Google to Bring AI resources to 200 Million Farmers Across the Global South",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc1RTZVc1RXJQVGpycm5DbGZmTW1rNEowNURyVXFRT0pwNjhVTWViaWdIUHdVYkNfbXVoSnlBMF9mamFlaDJmTWhRM09maFNneFRrZ201UmhVcEJFT1NwQ25hSkZQdFUyZ3Exd3hTQzZocmpPYURmb2d0MFdTRFZVdW52RlBwYnN6cjM2S2w2c3c?oc=5",
@@ -539,9 +557,9 @@
    "stage": "critique"
   },
   {
-   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
-   "source": "thenationalnews.com",
+   "title": "Gates Foundation pledges $1B for AI in health, farming and education",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSjFuelZvV01mVVBiRTk3Q3BDSGROUzJEM1JZZURfVnRnaS16a1pOOUhoZW9jTGd4c3Z2Tkx4TW12bVN0LUotc3I4VUNKUDF2ZnIxaGM2TzZqRGwxdjRtUnBxYVdKWXdmWFpYeFY1b19JcW5fTjVUZ1I5ek40T1otWGpLcDVjeDZKWnp1eGoyUlFUWm5JTDhTSHpEN0RXOXFIOGM2V0F4ejhOU2hWVVIw?oc=5",
+   "source": "Connecting Africa",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [
@@ -551,9 +569,9 @@
    "stage": "reported"
   },
   {
-   "title": "Gates Foundation pledges $1B for AI in health, farming and education",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSjFuelZvV01mVVBiRTk3Q3BDSGROUzJEM1JZZURfVnRnaS16a1pOOUhoZW9jTGd4c3Z2Tkx4TW12bVN0LUotc3I4VUNKUDF2ZnIxaGM2TzZqRGwxdjRtUnBxYVdKWXdmWFpYeFY1b19JcW5fTjVUZ1I5ek40T1otWGpLcDVjeDZKWnp1eGoyUlFUWm5JTDhTSHpEN0RXOXFIOGM2V0F4ejhOU2hWVVIw?oc=5",
-   "source": "Connecting Africa",
+   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
+   "source": "thenationalnews.com",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [

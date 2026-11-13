@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T06:14:34+00:00",
+ "updated": "2026-11-13T07:38:13+00:00",
  "sources_reached": 12,
  "sources": [
   {
@@ -18,7 +18,7 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 0
   },
   {
    "name": "DW",
@@ -36,7 +36,7 @@
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 29
+   "ai_stories": 28
   },
   {
    "name": "The New York Times",
@@ -102,7 +102,7 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 31
+   "ai_stories": 32
   },
   {
    "name": "Google News: health",
@@ -120,22 +120,50 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 34
+   "ai_stories": 33
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 28
   }
  ],
  "items": [
+  {
+   "title": "What happened overnight with the Microsoft global outage",
+   "url": "https://www.bbc.co.uk/news/videos/cwm2591k27e2o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC News",
+   "region": "UK",
+   "published": "2026-11-13T07:18:17+00:00"
+  },
+  {
+   "title": "Democratic political group launches new push to shape AI agenda ahead of 2028",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQTdpdEp0Y19MeldaNzVvYmRJRlYzLTE4Q2tvbFhsckt6Y251d2l2RHFfR2owOVdHVmNkeWV1TE91ZnREYklwRW9oZHZxNTBvSkNKRnVYZmlnQWlTRFpObXdhSV91SE1ib3FZeFBKaHFNZTNNWDhCbVZQZy1IYzVWUk1yMnJqeUJpQVZHWTl1UVJnQ3NRSi1Jb1RfQVRtV1M5anE1WVNSbmdTdTFjRFVnc1MyVnVCUzQxWXlvUzhhczQ0Tlp6N3MtOFpKNEZDUQ?oc=5",
+   "source": "Click2Houston",
+   "region": "International",
+   "published": "2026-11-13T06:59:23+00:00"
+  },
+  {
+   "title": "Nvidia scandal sparks US national security furore and calls to take tough line on China",
+   "url": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-13T06:34:59+00:00"
+  },
   {
    "title": "EU leaders seek to tackle challenges at first ever AI summit",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMy10dU5kazRqbk9PSWxUbGRiUm53LU9sLXBHVnBNUW0xbElWLVVoUG9udExuMGlYZ2xldnlOQUJpMzNpNjEzN0N2TllYaUJkQzFDZG5QSXRKZWQwZlF5cUVTWlI3NVZUWkpra0diZGNtT2F3WnRFZ3ZKd3VvQ250c2tOM2VHOFlFMlRYTm5jbGZ4R0ZWaDNQc1ljR2R4SVU4Umo0NQ?oc=5",
    "source": "Reuters",
    "region": "International",
    "published": "2026-11-13T06:06:00+00:00"
+  },
+  {
+   "title": "Server Maker xFusion Gets Shenzhen Nod for $1.2 Billion Listing",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNM09rZGhVaFV2UmdSTzFLdnJXWkxfSENxUk9mT0kwM2E5ZWlSYUQ2bU1jTnlxYzcxWkNjSmxsZ2V0YXJUX2cxeFA4VWtJbXh3cXBYNi1DWXVabTQ4d0VYbUE3OXFjLVdHYXA2U2lGRmxzUDd6SW9YWmU0bVFaUUgzRkFXNURHZGlzQjNZVGtyanZSU29XUGRxRjhTUDVSbVNxaTBNTkhNZWE0Ui1sOTQxOTFUbw?oc=5",
+   "source": "Bloomberg.com",
+   "region": "International",
+   "published": "2026-11-13T06:05:00+00:00"
   },
   {
    "title": "Multimodal Artificial Intelligence Model Evaluates Aerobics Routines Across Sensor Streams",
@@ -166,6 +194,13 @@
    "published": "2026-11-13T05:41:14+00:00"
   },
   {
+   "title": "Asian Shares Are Mixed as Investors Assess Impact of Nvidia's Fallout on Global AI Development",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPQWh6b2lDeE5xZEwtY29oem5zVzB5cnQ1eU1UQVNfYy1QaDlYVFR1cTQyRWhtOFpvU2g4bEJRNGVWWnYzbkRwRjQwODlhN2E0RXZqZXpYa1U3djFGZEJubW9HZ19PRG1QY2E2QW5HZ0FVNEpFZnF1TjI5UkM4UldvWUhTS3lvc1prcFRleWZyeEpkN09WLUpYazQyZmk5LTlYdXhJYkVhSjhXT2RLZjFtZDZUMVNmUEdCVFlxaEp4TEU4UjRmWVVrVHVPZzVKUVY3U3lsX1piMzZuQ09idVZPSTdlWnk?oc=5",
+   "source": "U.S. News & World Report",
+   "region": "International",
+   "published": "2026-11-13T05:37:00+00:00"
+  },
+  {
    "title": "Have we finally found a valid use case for AI? Meet Pino the autonomous virtual kiwi | First Dog on the Moon",
    "url": "https://www.theguardian.com/commentisfree/picture/2026/nov/13/have-we-finally-found-a-valid-use-case-for-ai-meet-pino-the-autonomous-virtual-kiwi",
    "source": "The Guardian",
@@ -185,13 +220,6 @@
    "source": "매일경제",
    "region": "International",
    "published": "2026-11-13T05:09:35+00:00"
-  },
-  {
-   "title": "Democratic political group launches new push to shape AI agenda ahead of 2028",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSEMzelVyU1JMeGd6ek5fUWItQ2VHbjRJSFVaN1Bma2pZOGhvRFlLUE4wcnRHYzFXZmUwa18tUjZpR09MQzJTd2pQdmxOLTJPeGYzWXZhZjJRM2FlM254Ym1PbmdVbmlrYmdQWE9TMkJLVmk1NjZ3Q0RmclEyaEZ3RzZSMFZLR2lwRktQREJyeGJGNml1aDlVNG9CWHpsVkxZN3Bfb3gyaWR3eVBuaFgtQi1RSQ?oc=5",
-   "source": "WRAL",
-   "region": "International",
-   "published": "2026-11-13T05:08:14+00:00"
   },
   {
    "title": "Can Artificial Intelligence help with mental health issues?",
@@ -289,7 +317,7 @@
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUXV1d05hYWVNd2R3RGxnWHI2My1hX1k2SEEtdlduQkR3R2RMNHNQekZucGt2WjFkY2ZNYVNkemhvVHhqTHBORjdmOS1LOFZuYjBfLXdZMWx1X25EbHNxR3lPc1dDNlRLVGZZaGZXeV9oVVRPdXlaNTR6ZXZ0MjFBOUtYVGdMYlFGZEx2MGJacFFQYzRnODN4SkFpNHBGS25vTUVoS3VpaFBmbGVUeFltQUk3N1g3dndoM0F0cEFqSXNVYmtMWmxqcXZUWQ?oc=5",
    "source": "The South First",
    "region": "International",
-   "published": "2026-11-13T01:30:59+00:00"
+   "published": "2026-11-13T01:31:06+00:00"
   },
   {
    "title": "Nvidia’s leadership crisis puts enterprise AI’s dependence on one company under scrutiny",
@@ -304,6 +332,13 @@
    "source": "PYMNTS.com",
    "region": "International",
    "published": "2026-11-13T01:14:49+00:00"
+  },
+  {
+   "title": "Incoming Florida House Speaker shifts state technology strategy as artificial intelligence takes center stage",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSXQ2TlF4WTEtb0VZQnU4aHM3RHBjbzhSOTJRYkxhMXNHWDR6Q2JtMEh0M0VaMXFVZVVDeVVoNU9wR3BBUGZRcnE0b29qcWlYUV85M0s0eS1nV0ZBWXVlSjVsendBMkpvcTVPZzhCNkNSTVhseUZjam1vbGFjNGptWTZLTnR5cVRsSmFpMFVCMnh6OGd3M3RaQ3NDeFE?oc=5",
+   "source": "The Business Journals",
+   "region": "International",
+   "published": "2026-11-13T00:56:00+00:00"
   },
   {
    "title": "Nvidia CEO Jensen Huang has resigned. What happens next?",
@@ -338,7 +373,7 @@
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYklSQTRveDdIU1V6UmRoTE1ZWEVvem12YWx1YjFMX3VtUkxpcVZtT3BtajVRTDlkRDhNZ0k4eEtJcjBCemt1cHRoSDhlMGZYVmVuZzZFLVBlVExHdTBaZV90aWdKdmVpdC1qcm1kanRqdnNSQ0gwdldSSzNQaDVGSEcyU20tQzZjbVd5Z1ZXU0lzZHRIUDRvdllMU2FucXpISXkxTzBST2t2ZFkyMGM2NXlDSDFwN0U?oc=5",
    "source": "Bioengineer.org",
    "region": "International",
-   "published": "2026-11-13T00:12:19+00:00"
+   "published": "2026-11-13T00:11:57+00:00"
   },
   {
    "title": "ENISA: Frontier AI models identify 220 potential security flaws in EU software",
@@ -593,13 +628,6 @@
    "published": "2026-11-12T19:51:06+00:00"
   },
   {
-   "title": "SpaceX Plans $74 Billion Investment to Build Data Centers in Texas and Arizona",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50Ym5PVmtVcmozcmwzTDBvSVZuSUVuanV6R3FNY0lrQm5GZ3pYZk1TQThWd2xERm9xUWs0NEdpTnpmSEFsOG9NT1hxdHVOb2xUSVNjeWhCckR3eGxoLTlSN2VyTV9EQXJ5VDJsM3Vxalp2NF9oTFE?oc=5",
-   "source": "The New York Times",
-   "region": "International",
-   "published": "2026-11-12T19:45:26+00:00"
-  },
-  {
    "title": "No, AI agents did not discover a previously unknown Maya site",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
    "source": "The Verge",
@@ -612,6 +640,13 @@
    "source": "Le Monde.fr",
    "region": "International",
    "published": "2026-11-12T19:30:05+00:00"
+  },
+  {
+   "title": "SpaceX Plans $74 Billion Investment to Build Data Centers in Texas and Arizona",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50Ym5PVmtVcmozcmwzTDBvSVZuSUVuanV6R3FNY0lrQm5GZ3pYZk1TQThWd2xERm9xUWs0NEdpTnpmSEFsOG9NT1hxdHVOb2xUSVNjeWhCckR3eGxoLTlSN2VyTV9EQXJ5VDJsM3Vxalp2NF9oTFE?oc=5",
+   "source": "The New York Times",
+   "region": "International",
+   "published": "2026-11-12T19:29:19+00:00"
   },
   {
    "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
@@ -1048,6 +1083,13 @@
    "published": "2026-11-12T15:18:14+00:00"
   },
   {
+   "title": "Global Nursing AI Alliance and American Board of Nursing Artificial Intelligence Present Nursing AI Research at AAAI",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPODkwX0xQV3gyUENtSHludHNudnljYzRyc3hHNVJEMHplekNRcXdtWFhGR3ktSF9jY3F1b2VjaHhFR3NxVnhMUjhTNm53elNZZWphXzBZOU9rRGl0MEgxbmZmT2JwTjJOTWpTUkxiWEw3SHBOZTEyRmRMMGhwbkpfaXA0bkYzNngza1pSZExUZ2t2aXoxb1FRdFVKRjRabVJFMlI5bE9DNkZJVzNvUlM4dzNRUWlsRTJjSnhyaXlhTG9zV19xVHB5Z3kyR1ZWaTRwdXd2bWdodHBISWFzTTJ6dHB0X21JR3R4TGJJbHJDUUJWemhaN2JGdEdwaHNLQ3NDWHc?oc=5",
+   "source": "Bergen Record",
+   "region": "International",
+   "published": "2026-11-12T15:09:25+00:00"
+  },
+  {
    "title": "Jensen Huang: Spy row, second affair leaves Nvidia without its rockstar CEO",
    "url": "https://www.dw.com/en/jensen-huang-spy-row-second-affair-leaves-nvidia-without-its-rockstar-ceo/a-79926972?maca=en-rss-en-all-1573-rdf",
    "source": "DW",
@@ -1060,13 +1102,6 @@
    "source": "TechCrunch",
    "region": "US",
    "published": "2026-11-12T15:02:28+00:00"
-  },
-  {
-   "title": "Global Nursing AI Alliance and American Board of Nursing Artificial Intelligence Present Nursing AI Research at AAAI",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNNXJ0ZzhkZ0tTa0p5aVpWSVpaMjZnX2M0a0t2d0ZwZmNMRk1BMkgzclowTDhoNW1PZHYya2tuZTh5czNfNU5uSjh4b1FGSGU0SHIzSUpWdVlSLUsyY0xJYmh1MV90S1NaeWhZZEx1bm9hTV9idHNOd00tZXotOV9nNjdLcldzZEIxUU95SWI1bVp5LXVBbEt0cWlQR3h4ZHpuRlFPMGxuV21hdXNWSXlzRktyY0tLYy1VWm5QRXlnckZtM0xWMTRDMEhVSTdrRHh3Rm9BbTBWUmhLR2xGaU9pc0pFN2FuYm9vYXBxempEbjBtU3NrNzBWUkFn?oc=5",
-   "source": "The Journal News | lohud.com",
-   "region": "International",
-   "published": "2026-11-12T15:02:10+00:00"
   },
   {
    "title": "US public workers are fighting to protect their jobs from AI – and some are winning",
@@ -1707,10 +1742,10 @@
   },
   {
    "title": "Advanced Micro Devices vs. Marvell Technology: Which Artificial Intelligence Stock Is a Better Buy Going into 2027?",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOZm5UNzM2cm91UHVZZzZZWDhJN1RkSkp4OGlKcFBBRzBnOWV1Rk1rU1VGMkVESkNqYTFkUHZ3bDFJOU5Fck5SbHNxYWZHYUlIZUNWejhQcFh3LVk2VHVWWmZDeTZId1lyX1BZYklFMUN3RnNseEdERXZWRDhKbndlaTJzd1VMR1NNb3R2S3o5QVhDN0h3aHA0WWlFRkw2UGIzN2R4LXpOSk5JOWpzX0dRekVBNDI0UHBzVVY5YktxVkNxclgwcnBTYU1mWklOalNlb294TFFYaHRiajVnLXpSV0VUNzFTUGJ4ZjhfMXM2ZURXVEliMkc0UA?oc=5",
-   "source": "The Motley Fool",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc3lpYVhYczd5SEx0TUhPM3JTbkRETzZjSzE3SjFzR0tlRERObFdzdUxSbUZ1MTBzUVFVZ3UybmlSaExWNk5IOWhzbWd5MFJ1VHBGTXJ6MkNObEo5MWV5VzBpY3VKZXZBUmZtQWRsQVhsdmRGcmdHNDdSVmhHckFKd0E4bG5PeWZwWnU5amNsbEdxak9Mcmpva2Z4NWJ3UQ?oc=5",
+   "source": "Yahoo Finance",
    "region": "International",
-   "published": "2026-11-12T03:32:00+00:00"
+   "published": "2026-11-12T03:52:00+00:00"
   },
   {
    "title": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
@@ -2894,41 +2929,6 @@
    "source": "Meridian Magazine",
    "region": "International",
    "published": "2026-11-11T04:31:40+00:00"
-  },
-  {
-   "title": "‘No Illusions’ About US-China Differences Over Artificial Intelligence",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPc19adFUyQXl0cjRBUWhscVBiQXFobHdRN3c0dnczYzU4eXZjRUthMWl4NW56Rm5QXzdndC1ZSTdlR2V6RnZmQ2c4WEhMWWM1Q3VQd2NZRVdZc0NBXzV5ZEFYV01nMHRxcUNYdEtDbFV3NmxfTFdCTFhheGhtaVcydmg0WTZXdGpLLWtmTDA5MjFGOU5KVmpiVFdVcE9ocWZNRXc?oc=5",
-   "source": "StratNews Global",
-   "region": "International",
-   "published": "2026-11-11T04:21:54+00:00"
-  },
-  {
-   "title": "North Smithfield man accused of creating AI-generated child sexual abuse material",
-   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQZFNJVTVfVkQ0RUNfaFlIQVZzZFRjVlE3SDZnTnFLeXYweGFsM0tMZUlBZzJSTXhQdldZUjNVUXdLV0ZZWmR2bVg3dUgzRkRyTG43OWdmbTJ6QjNLSXlteDRfeHFhVE1GTnpBMjhtSkxDMDh6YVVuTlBXOE1LNmdsLVFmTktSSkY3N2hmNXlqdzFHOEtXT1lvbjBLNzI1WWQtbVdDTnBwM3RDN3ZUcVJCR1RudFR6LTNaTTBxZkw0Q2hna0lRN2lic2lqMjhsT1hWNGxYdXFQQ1d1ZE5rVUVUVGVieXRsQlZyb0Z2S0JFTUhWV21hMXExRzg0Um1oYWdpclBsRWZYUENsQ0E3LURaRVRhRGQ5TG5fNU5SeUZ3?oc=5",
-   "source": "WJAR",
-   "region": "International",
-   "published": "2026-11-11T04:18:05+00:00"
-  },
-  {
-   "title": "How AI powers Hong Kong Baptist University professors’ research to benefit society",
-   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNa3ZSdkZXS25KZk1ZVGJXNEJyT19oWU9BT2hsM05mS0xSbnE5MU85bWtnNzI0TzhhSHEtdS0zaUFtU0t1c08tVThrcFhuZHRzUndiam9Qd193U19oeVl4OE9Xa3VZcUtOX0dyUlhWZjFZc3c4MGNTUV9NSmRkUk9tYWZxYjR0NE5rQWYzQXFEQmNHSjNLYXFUQmVHcHhNamFWNHNKTFE1TUwwZXZvMjlnU05adEJrMm5WWFdZdlNiT3BsUnpiVDF6amNRVEhwZEdJMFNsY2Z5NEVfOGVmblFuN056eWpvMlNwM05DbUN3QWY0ajA0MVh0eEZyaWxUT1dvX1BIVnVCREpvd1Y1bnc?oc=5",
-   "source": "South China Morning Post",
-   "region": "International",
-   "published": "2026-11-11T04:00:28+00:00"
-  },
-  {
-   "title": "Wearable Artificial Intelligence Devices Accurately Detect Critical Deteriorations in Pediatric Patients",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNcWlPVkRLRVNmajV3TklVOUZVWGdIVHNmdXZRSkh6UWRSakVrS0pIeF94LWNsV1JGN3NoeUpURGF6MzI0WXRNeGZDb19LMm9uQUhjeGFhUjJQeGd6N0kxeUdxQThMbDdnSFM1akp2UnV6bTduclY0S2VkZE9JclhZSi1RcTZ6Y2JtYzZfQW03T1pCeDByWDRCNldWT19lRnZoVFRSQVdnSDU4S0JoVVFwdjNIdU9pVGxpTVFSLUpBSldiZ0R2SnBTOA?oc=5",
-   "source": "Bioengineer.org",
-   "region": "International",
-   "published": "2026-11-11T03:45:28+00:00"
-  },
-  {
-   "title": "How artificial intelligence is changing healthcare",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTGZzbUl2YXdwVFJDTlYtX29MNDNpbGt1SmFfVlYtd0hzVUxuZ3FYdUxKN3IzUHQwcnNMLXRINlVST0pLcVhsZC1XZHNCbkEzYnZnWGQyakxSYVNvSGFyVzNreHRvb2RyT0JVN2lwQTc4N09STXA3dmNWWVhQYnlGa1Z1eU1kb05yWnFpUXJDVFVOTEZxVk4zMTZB?oc=5",
-   "source": "MPR News",
-   "region": "International",
-   "published": "2026-11-11T03:38:11+00:00"
   }
  ]
 }
