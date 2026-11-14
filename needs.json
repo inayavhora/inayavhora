@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T01:27:43+00:00",
+ "updated": "2026-11-14T08:59:51+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,13 +12,13 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 3
+   "ai_stories": 4
   },
   {
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 0
   },
   {
    "name": "DW",
@@ -30,7 +30,7 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 0
   },
   {
    "name": "South China Morning Post",
@@ -84,7 +84,7 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 67
+   "ai_stories": 68
   },
   {
    "name": "Specialist sites (2)",
@@ -102,7 +102,7 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 31
+   "ai_stories": 32
   },
   {
    "name": "Google News: health",
@@ -114,13 +114,13 @@
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 27
+   "ai_stories": 25
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 33
+   "ai_stories": 34
   },
   {
    "name": "Google News: Gates",
@@ -353,24 +353,6 @@
    "stage": "reported"
   },
   {
-   "title": "IIT Kharagpur to Build India’s First Physical AI School: What Makes It Different?",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUGFYMHhGS0hHN0hVN0ljXy1uamktZjlHU0o0TFl4VUROR0hycmJaNHg2a1pPbVN2TXlRQTR4eGF3R2xTbWpXZUlKTXdkNC1xMi1NUXlnb3UyNHpfSXVMaklfVWNEZlM1bE5FOGFZRmhzdTBqMkE0VHJvdDRkV294REVOZDVXdk9hVEN2SkxPc1ByREpIM1E?oc=5",
-   "source": "APAC Media",
-   "region": "International",
-   "published": "2026-10-27T07:00:00+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "India",
-     "lon": 78.9,
-     "lat": 21.0
-    }
-   ],
-   "stage": "reported"
-  },
-  {
    "title": "IIT Kharagpur Plans India's First Physical Artificial Intelligence School",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMFdUbUxONFF2ak9DRlRoQUM5X3lDSkFmRzl4MTk0YUZGQUxlOHFxSUZucmxwMDFMbU16NXRuc2hYNDBZaHFoNlZaTVZPT1VIUktjellqeU1qbEtVdmlaME5pMlUtM2FLZlF2dExjY09EZ19QMmRoS2JPZHZJM25Yd3FtSGJwYkVZakZ6U0FOWEhwQmljcHFJSXVkYWJwMmxKdlpHRll4aFYyZE1oUkRnZ09B0gG6AUFVX3lxTFBwWFd6Q2V0UjByTVVySTF2MWRad1UyMGtvekZ1ZVhSbXBWakRwNWk2aXNINDZ3VXBRN2lReC1DR2twTmZUMC1iN0otZDNMbXJlX2VfX0xpTVo1SXI4MVNNT09XdDZoOTJsdXBfSjVIbUtOQm9ORVVKdW5TTmdNZnIyMmQ1RjZwT0ZXV2txcjBMS0dYYWctaUlpM01JZnRFdDFCbVhEZmlfTms4M2pOZWQwT1lUYW1hWW90Zw?oc=5",
    "source": "NDTV",
@@ -387,6 +369,24 @@
     }
    ],
    "stage": "proposed"
+  },
+  {
+   "title": "IIT Kharagpur to Build India’s First Physical AI School: What Makes It Different?",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUGFYMHhGS0hHN0hVN0ljXy1uamktZjlHU0o0TFl4VUROR0hycmJaNHg2a1pPbVN2TXlRQTR4eGF3R2xTbWpXZUlKTXdkNC1xMi1NUXlnb3UyNHpfSXVMaklfVWNEZlM1bE5FOGFZRmhzdTBqMkE0VHJvdDRkV294REVOZDVXdk9hVEN2SkxPc1ByREpIM1E?oc=5",
+   "source": "APAC Media",
+   "region": "International",
+   "published": "2026-10-27T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "reported"
   },
   {
    "title": "IIT Kharagpur to set up India's first dedicated academic school focused on Physical AI",
@@ -627,6 +627,24 @@
     }
    ],
    "stage": "reported"
+  },
+  {
+   "title": "AI literacy: As AI goes mainstream, India's workforce faces new skills test",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPdWVxTGNyYnNLTFpGS3ptVGtUanZmX0ZjcDRUOVNvLVQ3c0VkdUZGbks3T3hTSGxsVEhsc0k3ZmFQTXZIVUVWN3gxTWU4eW00cEk0STNINF9hM2RpV1Y1SFUxdDNfQlIwM0duZDdNR2RXRWNSNEhoMXdDUzAwWEJvRF9uSGlWbGFQRVI5Y1dkYVhwUkt2cXh3WXdINUljZ0V4RXB1TU9ITWhTZjRNX3hDRTlCYm5TdUtlbEpxcGV5YU5xU0ZqOUtReElsejVoV0g3SHY2ZlJJVnQ1ejkwRG5iUVA1MUgwSm80YmtFODhUaGp2Yzdk0gH6AUFVX3lxTFBCRUU2QUM3Wi14TjltSW1ZU2tMMlJiZHRrWUNjTG43b3c1MGUzcTlrNDVwbTdpVGJEZkxPcUdLSWh3by1aQjF5ek5MeElQSGVhRGZxbjRaTXFhQVlSdGpZT01hQ2pxS3lHOUFfRndnSUgxZDV3MmZva2YwWWM3bzFiTUtPenVSMVE0YUVfQW80Qlk0V3VaWUI3dlZrT1VEckdOVExiTm56V1dLbVJKVDZ3SGtIZUdWbHl1cHJ2eURldjYtb2lRTF9KUUJkVkxXcnVkb2w1RGgxSHVJY3JCTHdTb3hhS2VMbEFqVFhraEJfbFctbW9xSWk1U1E?oc=5",
+   "source": "Business Standard",
+   "region": "International",
+   "published": "2026-09-01T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "pilot"
   },
   {
    "title": "SRCC, EY India launch AI VIBE to bridge gap between classroom learning and industry needs",
@@ -1201,6 +1219,24 @@
    ],
    "places": [],
    "stage": "reported"
+  },
+  {
+   "title": "Rwanda to Pilot AI Technology in 50 Health Clinics Under Gates Foundation Initiative",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVmZqa2FVeEp2NGVFQWd6Qkp6eDlybm9FcEhyd1BZOG5MQVRKM3R6RXZzVDJPN0hobzhseDRsbGF1ZXNTbDBDbzdlV2ZOdVpnMU43dl9NWFlNa0w4bXJ6RDJoMVlzUTl5VE9udF9MSmI3MDd2bU1SYWRWWmNmT0xONVJObTc2d3lxMXJTejY3YUJFSkdEZEYyOS1nd0UzRzJxU1hXTWpKVFE?oc=5",
+   "source": "iAfrica.com",
+   "region": "International",
+   "published": "2026-01-25T08:00:00+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [
+    {
+     "name": "Rwanda",
+     "lon": 29.9,
+     "lat": -1.9
+    }
+   ],
+   "stage": "pilot"
   },
   {
    "title": "Rwanda to test AI-powered technology in clinics under a new Gates Foundation project",
@@ -2007,6 +2043,24 @@
     }
    ],
    "stage": "reported"
+  },
+  {
+   "title": "NASSCOM FutureSkills and Microsoft launch AI Classroom Series to skill India’s future workforce with AI capabilities",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMkpHcndBVlNnb2ZPek9ZaWZhWjFCbDdpWk9YYVpEdHg1ZXpST0NyemNhYTJRSHQtXzhtT2lSODhTN1pYRGxsQTFjUk5uN3Nuc0FiTWJxSmI5SDk1bVo1UncyZXJ6ekt4eUw3NDAxTElJZ2pCUE40bzFMV0g0aVhtZG81X3lDakFjTlhDaFVsamxScGRvSGpESGVnRm51Z0tEUjIxdks3SGxJZw?oc=5",
+   "source": "Microsoft Source",
+   "region": "International",
+   "published": "2020-09-10T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "proposed"
   },
   {
    "title": "Indian School of Business (ISB) and Microsoft join hands to advance AI skilling in India",
