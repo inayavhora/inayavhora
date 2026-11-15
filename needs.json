@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T01:04:46+00:00",
+ "updated": "2026-11-15T07:53:20+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -24,19 +24,19 @@
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 7
+   "ai_stories": 8
   },
   {
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 0
   },
   {
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 28
   },
   {
    "name": "The New York Times",
@@ -84,19 +84,19 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 64
+   "ai_stories": 65
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 63
+   "ai_stories": 62
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 43
+   "ai_stories": 42
   },
   {
    "name": "Google News: farmers",
@@ -108,7 +108,7 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 24
   },
   {
    "name": "Google News: water",
@@ -126,7 +126,7 @@
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 23
   }
  ],
  "items": [
@@ -147,6 +147,24 @@
     }
    ],
    "stage": "reported"
+  },
+  {
+   "title": "AI Geo Navigators launches NIGRAAN at COP31 Türkiye, showcasing Pakistan’s GeoAI Innovation for Climate Risk and Early Warning",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONmRIcGlFREQ5SG5Mcm9FNEliVE1zai0zcExUamVkam9Gb2ZmVG1wcHQ4VV9vVjV0eUNQSUFJVVVSMlRkOUZudkQwam8yYUpUcG9LVlg4WFBGaFhNTTZKRU5qSDRqVGUxbUdBbndOR1owLVRLLUg3bXpjVEtIeWdqLVZ0YldteGQwYUhJdmcxNl9ielFlbWtXN0R5QmYtSDBXMmlnN2NPTmdtZ3I2WEYyTTdCcGFrdzNsVzRZQ3BvOG9CMExmcGhTLS1UZmZMeHQ5Y3pJb0dKLVJsdnpPbXVMMXQ1RVkxYk1Ia3ZYSGQ1Vm9jdw?oc=5",
+   "source": "sabahnews.net",
+   "region": "International",
+   "published": "2026-11-13T11:12:43+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "Pakistan",
+     "lon": 69.3,
+     "lat": 30.4
+    }
+   ],
+   "stage": "critique"
   },
   {
    "title": "Kenya’s Farmerlifeline Wins Smart Africa Innovation Challenge with AI Farming Solution",
