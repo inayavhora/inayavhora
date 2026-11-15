@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T15:40:48+00:00",
+ "updated": "2026-11-15T21:03:38+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -18,7 +18,7 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 2
   },
   {
    "name": "DW",
@@ -30,7 +30,7 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 2
   },
   {
    "name": "South China Morning Post",
@@ -84,13 +84,13 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 63
+   "ai_stories": 65
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 61
+   "ai_stories": 60
   },
   {
    "name": "Google News: famine",
@@ -102,25 +102,25 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 27
+   "ai_stories": 30
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 23
+   "ai_stories": 24
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 22
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 35
+   "ai_stories": 36
   },
   {
    "name": "Google News: Gates",
@@ -1580,6 +1580,24 @@
     }
    ],
    "stage": "critique"
+  },
+  {
+   "title": "From generative AI to cybersecurity, how IITs are democratising AI literacy for India’s youth",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOalM0cmFCa2VxbFEwb2lfclZ5YldMcmNYYkg5WS1xQlQ5d2NxTTlBeFN5MXlIZzhrYkhCbWFuTWZVdkNBZmZFRW5YQ1NpRlZrSEZDdGx4Z2NCRFFKM0FQd29BS1FoMjZfWF9Sdl9JMDBFUGM2S1RMQktPZTJuUl9TZGRTVk9IZTFFS0podnN6VzQzM3pFYzd6dDByaDBaVTQ4MDNhQ0dvLTNDTEJuS2ZESmZ1SVhpbTB5T0tqRENCbmhLV1c2aVJmMW1sY1hWUjBYRFV1OU1DZWTSAd4BQVVfeXFMUExiTDJ3TmdSWDNRck9seG5YakVDbktKOTAzbklHalk1clNxRkdsbDhkMkI0Q2c4LTVfTm9wTENESWdjX3BvMVlLVm12ZUdlY2U5dnhrdGdwUjZhQ3BYV2xCakowaXpKQnNSZ2hvVEJ3MXoySjJtaEt5X2dnUkNiUERzMWlLRGNjX0hlXzdpUy1vdWptWW8ta1dqaEVWajVkd2FPTmFfcUY1a3ZZbm1GUWVwT0Q4dWRaekd4NkVwX3o1aWlDOTU0NjVUejNad19oanVvWEs0X0hnRGp5SHhn?oc=5",
+   "source": "ET Enterprise AI",
+   "region": "International",
+   "published": "2025-08-22T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "reported"
   },
   {
    "title": "User Consultation Workshop on SukhaRakshak AI for Drought Management in India Organized",
