@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T07:53:20+00:00",
+ "updated": "2026-11-15T15:40:48+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,13 +12,13 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 4
+   "ai_stories": 5
   },
   {
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "DW",
@@ -30,13 +30,13 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 28
+   "ai_stories": 25
   },
   {
    "name": "The New York Times",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 100
+   "ai_stories": 102
   },
   {
    "name": "The New Humanitarian",
@@ -84,31 +84,31 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 65
+   "ai_stories": 63
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 62
+   "ai_stories": 61
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 42
+   "ai_stories": 43
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 31
+   "ai_stories": 27
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 23
   },
   {
    "name": "Google News: water",
@@ -120,13 +120,13 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 37
+   "ai_stories": 35
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 23
+   "ai_stories": 22
   }
  ],
  "items": [
@@ -1392,6 +1392,24 @@
     "food"
    ],
    "places": [],
+   "stage": "reported"
+  },
+  {
+   "title": "India to introduce AI curriculum in all schools by 2026",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVmcwaDNOMXhoaXJIeEtmc0dOUWw5RGdpYXlQa3lpMEdCWU5RMW5Udk05dWs2c0pMSTJfUk9oMnR5eUNIdmQxRlVXSWt0d3FGWVA2Qm9vdUtVaUZRYmQ5NmhNMU5xTnhScTZEdTg4OUVsUkx3cHh5a05wXzlscmZEVTRtUQ?oc=5",
+   "source": "CoinGeek",
+   "region": "International",
+   "published": "2025-11-13T08:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
    "stage": "reported"
   },
   {
