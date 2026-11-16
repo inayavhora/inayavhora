@@ -43,46 +43,57 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--ink); outline-o
 .maplibregl-popup-content b { display: block; font-weight: 500; margin-bottom: 4px; }
 .maplibregl-popup-content a { display: block; padding: 3px 0; border-top: 1px solid #e4e4e0; }
 
-nav { position: fixed; z-index: 3; left: max(20px, env(safe-area-inset-left, 0px)); top: calc(20px + env(safe-area-inset-top, 0px)); display: flex; flex-direction: column; gap: 2px; background: var(--paper); padding: 10px 14px 12px; }
+nav { position: fixed; z-index: 3; left: max(20px, env(safe-area-inset-left, 0px)); top: calc(20px + env(safe-area-inset-top, 0px)); display: flex; flex-direction: column; gap: 2px; background: rgba(250,250,247,.58); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.75); padding: 9px 14px; }
 nav .name { font-weight: 500; }
 nav a { color: var(--muted); width: fit-content; }
 nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 
-/* the country you are looking at: what its economy runs on */
-.place { position: fixed; z-index: 3; right: max(20px, env(safe-area-inset-right, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: min(330px, calc(100vw - 40px));
-         background: var(--paper); padding: 14px 16px 12px; display: grid; gap: 8px; opacity: 0; transform: translateY(6px); transition: opacity .7s ease, transform .7s ease; }
-.place.show { opacity: 1; transform: none; }
-.place h2 { margin: 0; font: 500 20px/1.15 var(--sans); letter-spacing: -.01em; }
-.place .city { font: 400 10.5px/1.4 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
-.place dl { margin: 0; display: grid; gap: 6px; }
-.place dt { font: 400 10px/1.3 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
-.place dd { margin: 0; font-size: 12px; line-height: 1.4; }
-.place .bar { display: flex; height: 6px; margin: 4px 0 3px; background: #e6e6e1; }
-.place .bar i { display: block; height: 100%; }
-.place .bar .a { background: #8aa36f; } .place .bar .n { background: #6f7f8f; } .place .bar .s { background: #c7b08a; }
-.place .key { display: flex; flex-wrap: wrap; gap: 2px 12px; font: 400 10.5px/1.4 var(--mono); color: var(--muted); }
-.place .key b { font-weight: 400; color: var(--ink); }
-.place .src { font: 400 9.5px/1.4 var(--mono); color: var(--muted); }
-
-/* a story popping out of the globe */
-.pop { position: fixed; z-index: 2; max-width: 250px; background: var(--paper); padding: 8px 10px; font-size: 12px; line-height: 1.35; pointer-events: auto;
-       transform: translate(14px, -50%); opacity: 0; transition: opacity .6s ease; border-left: 2px solid var(--needs); }
-.pop.dc { border-left-color: var(--dc); }
-.pop.show { opacity: 1; }
-.pop .k { display: block; font: 400 10px/1.4 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
-.pop img { display: block; width: 100%; height: 110px; object-fit: cover; margin-bottom: 6px; background: #e8e8e4; }
-
-.legend { position: fixed; z-index: 3; right: max(20px, env(safe-area-inset-right, 0px)); top: calc(20px + env(safe-area-inset-top, 0px)); background: var(--paper); padding: 8px 12px; font: 400 10.5px/1.7 var(--mono); color: var(--muted); display: grid; }
+/* a callout anchored to the dot: frosted glass, joined to the place by a fine leader line */
+#leader { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; overflow: visible; }
+#leader line { stroke: rgba(255,255,255,.9); stroke-width: 1; }
+#leader circle { fill: none; stroke: #fff; stroke-width: 1.2; }
+.callout { position: fixed; z-index: 3; width: 340px; max-height: calc(100vh - 120px); overflow: auto; color: var(--ink);
+           background: rgba(250, 250, 247, .58); -webkit-backdrop-filter: blur(16px) saturate(1.3); backdrop-filter: blur(16px) saturate(1.3);
+           border: 1px solid rgba(255,255,255,.75); box-shadow: 0 12px 40px rgba(20, 28, 20, .18);
+           padding: 14px 16px 12px; display: grid; gap: 10px; opacity: 0; transform: translateY(6px); transition: opacity .6s ease, transform .6s ease; }
+.callout.show { opacity: 1; transform: none; }
+.callout .eyebrow { display: flex; align-items: center; gap: 8px; font: 400 10px/1.4 var(--mono); text-transform: uppercase; letter-spacing: .07em; color: #4c524b; }
+.callout .eyebrow i { width: 8px; height: 8px; border-radius: 50%; background: var(--needs); flex: none; }
+.callout.dc .eyebrow i { background: var(--dc); outline: 1px solid #6aa9d6; }
+.callout .x { margin-left: auto; background: none; border: 0; font: 400 16px/1 var(--sans); color: #4c524b; cursor: pointer; padding: 2px 4px; }
+.callout h2 { margin: 0; font: 500 22px/1.1 var(--sans); letter-spacing: -.015em; }
+.callout .story { display: grid; gap: 6px; font-size: 12.5px; line-height: 1.38; }
+.callout .story a { text-decoration: underline; text-decoration-color: rgba(28,28,27,.3); text-underline-offset: 3px; }
+.callout .story a:hover { text-decoration-color: var(--ink); }
+.callout .story img { width: 100%; height: 120px; object-fit: cover; display: block; }
+.callout .lbl { font: 400 10px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .06em; color: #4c524b; display: flex; justify-content: space-between; gap: 8px; }
+.callout .lbl button { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.callout .bar { display: flex; height: 8px; margin: 6px 0 4px; background: rgba(0,0,0,.08); }
+.callout .bar i { display: block; height: 100%; }
+.callout .bar .a, .callout .sw.a { background: #7f9b64; } .callout .bar .n, .callout .sw.n { background: #5f6f80; } .callout .bar .s, .callout .sw.s { background: #c2a676; }
+.callout .key { display: flex; flex-wrap: wrap; gap: 2px 14px; font: 400 11px/1.4 var(--mono); white-space: nowrap; }
+.callout .key span { display: flex; align-items: center; gap: 5px; }
+.callout .sw { width: 8px; height: 8px; display: inline-block; }
+.callout .defs { display: grid; gap: 4px; font-size: 11.5px; line-height: 1.4; color: #353a34; }
+.callout .defs b { font-weight: 500; color: var(--ink); }
+.callout details { border-top: 1px solid rgba(28,28,27,.12); padding-top: 8px; }
+.callout summary { cursor: pointer; font: 400 10px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .06em; color: #4c524b; list-style: none; }
+.callout summary::-webkit-details-marker { display: none; }
+.callout summary::after { content: " +"; } .callout details[open] summary::after { content: " –"; }
+.callout dl { margin: 8px 0 0; display: grid; gap: 8px; }
+.callout dt { font: 400 10px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .06em; color: #4c524b; }
+.callout dd { margin: 2px 0 0; font-size: 12px; line-height: 1.4; }
+.callout dd small { display: block; color: #4c524b; font-size: 11px; margin-top: 2px; }
+.callout .src { font: 400 9.5px/1.4 var(--mono); color: #5d625c; }
+.legend { position: fixed; z-index: 3; right: max(20px, env(safe-area-inset-right, 0px)); top: calc(20px + env(safe-area-inset-top, 0px)); background: rgba(250,250,247,.58); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.75); padding: 8px 12px; font: 400 10.5px/1.7 var(--mono); color: #3f443e; display: grid; }
 .legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 0; }
 
 @media (max-width: 640px) {
   nav { flex-direction: row; flex-wrap: wrap; gap: 2px 14px; right: 16px; left: 16px; padding: 8px 12px; }
   nav .name { width: 100%; margin-bottom: 0; }
   .legend { display: none; }
-  .place { left: 16px; right: 16px; width: auto; padding: 10px 12px; }
-  .place h2 { font-size: 17px; }
-  .place .ind { display: none; }
-  .pop { max-width: 200px; }
+  .callout { left: 12px !important; right: 12px; top: auto !important; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); width: auto; max-height: 52vh; padding: 12px 14px 10px; }
+  .callout h2 { font-size: 19px; }
 }
 </style>
 </head>
@@ -103,8 +114,8 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   <span><i style="background:var(--dc);outline:1px solid #6aa9d6"></i>Data centre construction</span>
 </div>
 
-<div class="pop" id="pop" aria-live="polite"></div>
-<section class="place" id="place" aria-live="polite" hidden></section>
+<svg id="leader" aria-hidden="true"><line id="leadLine" x1="0" y1="0" x2="0" y2="0"/><circle id="leadDot" r="6" cx="-20" cy="-20"/></svg>
+<article class="callout" id="callout" aria-live="polite" hidden></article>
 
 <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
 <script>
@@ -201,23 +212,22 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   let ready = false, spinning = !reduce, idle = null, pulses = [], userActive = false, backT = null;
   const stop = () => {   // the visitor took over: stop the tour until they've been idle for a while
     spinning = false; userActive = true; clearTimeout(idle); clearTimeout(backT);
-    idle = setTimeout(() => { userActive = false; hidePlace(); if (!reduce) { map.easeTo({ zoom: fit(), duration: 2400 }); setTimeout(() => spinning = true, 2500); } }, 20000);
+    idle = setTimeout(() => { userActive = false; closeCallout(); if (!reduce) { map.easeTo({ zoom: fit(), duration: 2400 }); setTimeout(() => spinning = true, 2500); } }, 20000);
   };
   if (map) {
     map.scrollZoom.setWheelZoomRate(1 / 300);
     ["mousedown", "touchstart", "wheel"].forEach(e => map.on(e, stop));
     map.on("load", () => { ready = true; push(); });
     addEventListener("resize", () => { sizeHalo(); if (map.getZoom() < fit() + 0.5) map.setZoom(fit()); });
-    map.on("move", () => { $("halo").style.opacity = map.getZoom() > fit() + 0.6 ? 0 : 1; placePop(); });
+    map.on("move", () => { $("halo").style.opacity = map.getZoom() > fit() + 0.6 ? 0 : 1; placeCallout(); });
+    addEventListener("resize", placeCallout);
     ["needs", "dc"].forEach(id => {
       map.on("mouseenter", id, () => map.getCanvas().style.cursor = "pointer");
       map.on("mouseleave", id, () => map.getCanvas().style.cursor = "");
       map.on("click", id, e => {
         stop();
-        const f = e.features[0], list = JSON.parse(f.properties.items);
-        showPlace(f.properties.name);
-        new maplibregl.Popup({ maxWidth: "300px" }).setLngLat(f.geometry.coordinates)
-          .setHTML(`<b>${esc(f.properties.name)}</b>` + list.slice(0, 6).map(it => `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`).join("")).addTo(map);
+        const f = e.features[0], list = JSON.parse(f.properties.items), [lon, lat] = f.geometry.coordinates;
+        openCallout({ name: f.properties.name, lon, lat, items: list }, null, id);
         map.easeTo({ center: f.geometry.coordinates, zoom: Math.max(map.getZoom(), 9), duration: reduce ? 0 : 2200 });
       });
     });
@@ -242,24 +252,69 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
     return econIdx[last.toLowerCase()] || last;
   }
   const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
-  function showPlace(placeName) {
-    const country = countryOf(placeName), e = econ[country], el = $("place");
-    const city = placeName.split(", ").length > 1 ? placeName.split(", ")[0] : "";
-    if (!e) { el.classList.remove("show"); return; }
-    const sec = e.sectors || {}, a = +sec.agriculture || 0, n = +sec.industry || 0, sv = +sec.services || 0, tot = a + n + sv || 1;
-    el.innerHTML = `${city ? `<span class="city">${esc(city)}</span>` : ""}<h2>${esc(country)}</h2>
-      <dl>
-        ${a + n + sv ? `<div><dt>Where the economy's output comes from${sec.year ? " (" + esc(sec.year) + ")" : ""}</dt><dd>
-          <div class="bar"><i class="a" style="width:${a / tot * 100}%"></i><i class="n" style="width:${n / tot * 100}%"></i><i class="s" style="width:${sv / tot * 100}%"></i></div>
-          <div class="key"><span>Farming <b>${a}%</b></span><span>Industry <b>${n}%</b></span><span>Services <b>${sv}%</b></span></div></dd></div>` : ""}
+  const pc = v => v == null || v === "" ? "–" : (+v).toFixed(+v < 10 ? 1 : 0).replace(/\.0$/, "") + "%";
+
+  // ---- the callout: the place, the story, and what the economy runs on
+  let open = null;            // { p, it, kind }
+  function openCallout(p, it, kind) {
+    const el = $("callout"), country = countryOf(p.name), e = econ[country];
+    const city = p.name.split(", ").length > 1 && countryOf(p.name) !== p.name.split(", ")[0] ? p.name.split(", ")[0] : "";
+    const sec = (e && e.sectors) || {}, a = +sec.agriculture || 0, n = +sec.industry || 0, sv = +sec.services || 0, tot = a + n + sv;
+    open = { p, it, kind };
+    el.className = "callout" + (kind === "dc" ? " dc" : "");
+    el.innerHTML = `
+      <div class="eyebrow"><i></i>${kind === "dc" ? "Data centre construction" : "AI and basic needs"}${city ? " · " + esc(city) : ""}<button class="x" type="button" aria-label="Close">×</button></div>
+      <h2>${esc(country)}</h2>
+      ${it ? `<div class="story">${it.image ? `<img src="${esc(it.image)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a></div>`
+           : (p.items || []).slice(0, 4).map(x => `<div class="story"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div>`).join("")}
+      ${e && tot ? `<div>
+        <div class="lbl"><span>What the economy produces${sec.year ? " · " + esc(sec.year) : ""}</span><button type="button" class="defsBtn">What do these mean?</button></div>
+        <div class="bar"><i class="a" style="width:${a / tot * 100}%"></i><i class="n" style="width:${n / tot * 100}%"></i><i class="s" style="width:${sv / tot * 100}%"></i></div>
+        <div class="key"><span><i class="sw a"></i>Farming ${pc(a)}</span><span><i class="sw n"></i>Industry ${pc(n)}</span><span><i class="sw s"></i>Services ${pc(sv)}</span></div>
+        <div class="defs" hidden>
+          <span><b>Farming:</b> crops, livestock, forestry and fishing.</span>
+          <span><b>Industry:</b> mining, factories, construction, and power and water supply.</span>
+          <span><b>Services:</b> everything else: shops and trade, transport, banks, phones and internet, tourism, health, schools and government.</span>
+          <span>Shares of all the value the country produces in a year. They may not add to 100%.</span>
+        </div></div>` : ""}
+      ${e ? `<details><summary>More about ${esc(country)}</summary><dl>
         ${e.exports && e.exports.length ? `<div><dt>Top exports</dt><dd>${esc(cap(e.exports.join(", ")))}</dd></div>` : ""}
-        ${e.industries && e.industries.length ? `<div class="ind"><dt>Main industries</dt><dd>${esc(cap(e.industries.slice(0, 6).join(", ")))}</dd></div>` : ""}
-        ${e.gdp_per_capita ? `<div><dt>Output per person</dt><dd>${esc(e.gdp_per_capita)} a year</dd></div>` : ""}
-      </dl>
-      <span class="src">CIA World Factbook</span>`;
-    el.hidden = false; requestAnimationFrame(() => el.classList.add("show"));
+        ${e.industries && e.industries.length ? `<div><dt>Main industries</dt><dd>${esc(cap(e.industries.slice(0, 6).join(", ")))}</dd></div>` : ""}
+        ${e.gdp_per_capita ? `<div><dt>Value produced per person</dt><dd>US${esc(e.gdp_per_capita.replace(/^\$/, "$"))} a year
+          <small>Everything the country produces in a year, divided by everyone who lives there, children included, and adjusted for local prices. It is not a wage: it includes business profits and government, and says nothing about how evenly money is shared.</small></dd></div>` : ""}
+      </dl></details>
+      <span class="src">Economy: CIA World Factbook</span>` : ""}`;
+    el.querySelector(".x").onclick = () => { closeCallout(); };
+    const db = el.querySelector(".defsBtn"); if (db) db.onclick = () => { const d = el.querySelector(".defs"); d.hidden = !d.hidden; };
+    ["pointerenter", "focusin", "click"].forEach(ev => el.addEventListener(ev, () => { if (map) stop(); }));
+    el.hidden = false; placeCallout(); requestAnimationFrame(() => el.classList.add("show"));
   }
-  function hidePlace() { $("place").classList.remove("show"); }
+  function closeCallout() {
+    open = null; $("callout").classList.remove("show");
+    $("leadLine").setAttribute("x1", -20); $("leadLine").setAttribute("x2", -20); $("leadDot").setAttribute("cx", -20);
+  }
+  function placeCallout() {
+    if (!open || !map) return;
+    const el = $("callout"), q = map.project([open.p.lon, open.p.lat]), w = el.offsetWidth, h = el.offsetHeight;
+    const c = map.getCenter(), r = Math.PI / 180;
+    const ang = Math.acos(Math.min(1, Math.sin(c.lat * r) * Math.sin(open.p.lat * r) + Math.cos(c.lat * r) * Math.cos(open.p.lat * r) * Math.cos((c.lng - open.p.lon) * r)));
+    const hidden = map.getZoom() < 5 && ang > Math.PI / 2 - 0.05;
+    const narrow = innerWidth < 640;
+    let x, y, ax, ay;
+    if (narrow) { const b = el.getBoundingClientRect(); ax = Math.max(b.left + 20, Math.min(b.right - 20, q.x)); ay = b.top; }
+    else {
+      const right = q.x + 70 + w < innerWidth - 20;
+      x = right ? q.x + 70 : q.x - 70 - w;
+      y = Math.max(90, Math.min(innerHeight - h - 20, q.y - h * 0.35));
+      el.style.left = x + "px"; el.style.top = y + "px";
+      ax = right ? x : x + w; ay = Math.max(y + 14, Math.min(y + h - 14, q.y));
+    }
+    const L = $("leadLine"), D = $("leadDot");
+    if (hidden) { L.setAttribute("x1", -20); L.setAttribute("x2", -20); D.setAttribute("cx", -20); return; }
+    L.setAttribute("x1", q.x); L.setAttribute("y1", q.y); L.setAttribute("x2", ax); L.setAttribute("y2", ay);
+    D.setAttribute("cx", q.x); D.setAttribute("cy", q.y);
+  }
+
   function group(items) {
     const m = new Map();
     for (const it of items) for (const p of (it.places || []).slice(0, 1)) {
@@ -276,43 +331,26 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   const tf = new Intl.DateTimeFormat(undefined, { day: "numeric", month: "short" });
 
 
-  // a story pops out of the globe every few seconds
-  let queue = [], current = null;
+  // a story every few seconds: the globe flies to it, the callout opens, then it eases back out
+  let queue = [];
   function nextPop() {
-    if (!ready || !map) return;
+    if (!ready || !map || userActive) return;
     if (!queue.length) queue = needs.filter(i => (i.places || []).length).slice(0, 12).map(i => ({ ...i, kind: "needs" }))
       .concat(dcs.filter(i => (i.places || []).length).slice(0, 8).map(i => ({ ...i, kind: "dc" })))
       .sort(() => Math.random() - 0.5);
     const it = queue.shift(); if (!it) return;
     const p = it.places[0];
-    current = { it, p };
     pulses.push({ lon: p.lon, lat: p.lat, t0: performance.now(), c: it.kind === "dc" ? "#9fd6ff" : "#ff8a4c" });
-    if (!userActive) {
-      spinning = false;
-      map.flyTo({ center: [p.lon, Math.max(-60, Math.min(60, p.lat))], zoom: fit() + 1.4, duration: reduce ? 0 : 3200, curve: 1.2, essential: false });
-      showPlace(p.name);
-      clearTimeout(backT);
-      backT = setTimeout(() => {
-        if (userActive) return;
-        hidePlace();
-        map.easeTo({ zoom: fit(), duration: reduce ? 0 : 2600 });
-        setTimeout(() => { if (!reduce && !userActive) spinning = true; }, 2700);
-      }, 7600);
-    }
-    const el = $("pop");
-    el.className = "pop" + (it.kind === "dc" ? " dc" : "");
-    el.innerHTML = (it.image ? `<img src="${esc(it.image)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : "") +
-      `<span class="k">${it.kind === "dc" ? "Data centre construction" : "AI and basic needs"} · ${esc(p.name)}</span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`;
-    placePop();
-    requestAnimationFrame(() => el.classList.add("show"));
-    setTimeout(() => el.classList.remove("show"), 7200);
-  }
-  function placePop() {
-    if (!current || !map) return;
-    const q = map.project([current.p.lon, current.p.lat]), el = $("pop");
-    const behind = map.getZoom() < 4 && (() => { const c = map.getCenter(); const d = Math.acos(Math.sin(c.lat * Math.PI / 180) * Math.sin(current.p.lat * Math.PI / 180) + Math.cos(c.lat * Math.PI / 180) * Math.cos(current.p.lat * Math.PI / 180) * Math.cos((c.lng - current.p.lon) * Math.PI / 180)); return d > Math.PI / 2; })();
-    el.style.visibility = behind ? "hidden" : "visible";
-    el.style.left = Math.min(innerWidth - 270, Math.max(8, q.x)) + "px"; el.style.top = Math.max(80, Math.min(innerHeight - 120, q.y)) + "px";
+    spinning = false;
+    map.flyTo({ center: [p.lon, Math.max(-60, Math.min(60, p.lat))], zoom: fit() + 1.4, duration: reduce ? 0 : 3200, curve: 1.2, essential: false });
+    openCallout(p, it, it.kind);
+    clearTimeout(backT);
+    backT = setTimeout(() => {
+      if (userActive) return;
+      closeCallout();
+      map.easeTo({ zoom: fit(), duration: reduce ? 0 : 2600 });
+      setTimeout(() => { if (!reduce && !userActive) spinning = true; }, 2700);
+    }, 9000);
   }
 
   async function getJSON(u) { const r = await fetch(u + "?t=" + Date.now(), { cache: "no-store" }); if (!r.ok) throw new Error(r.status); return r.json(); }
@@ -324,7 +362,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
     push();
   }
   load(); setInterval(load, 5 * 60 * 1000);
-  setTimeout(nextPop, 2500); setInterval(nextPop, 7000);
+  setTimeout(nextPop, 2500); setInterval(nextPop, 13000);
 })();
 </script>
 </body>
