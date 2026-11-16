@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:49:24+00:00",
+ "updated": "2026-11-16T18:35:55+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,7 +12,7 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 4
+   "ai_stories": 5
   },
   {
    "name": "Al Jazeera",
@@ -24,13 +24,13 @@
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 9
+   "ai_stories": 10
   },
   {
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 3
   },
   {
    "name": "South China Morning Post",
@@ -48,7 +48,7 @@
    "name": "NPR",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 3
   },
   {
    "name": "MIT Technology Review",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 102
+   "ai_stories": 104
   },
   {
    "name": "The New Humanitarian",
@@ -84,13 +84,13 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 66
+   "ai_stories": 65
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 61
+   "ai_stories": 62
   },
   {
    "name": "Google News: famine",
@@ -102,31 +102,31 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 34
+   "ai_stories": 28
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 26
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 23
+   "ai_stories": 22
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 34
+   "ai_stories": 36
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 18
+   "ai_stories": 17
   },
   {
    "name": "Dezeen: data centres",
@@ -174,52 +174,71 @@
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 37
+   "stories": 38
   },
   {
    "name": "DatacenterDynamics",
    "set": "Data centres",
    "ok": true,
-   "stories": 11
+   "stories": 5
   },
   {
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 23
+   "stories": 21
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
    "ok": true,
-   "stories": 40
+   "stories": 41
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 76
+   "stories": 75
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
    "ok": true,
-   "stories": 46
+   "stories": 45
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
    "ok": true,
-   "stories": 30
+   "stories": 32
   },
   {
    "name": "Google News: new builds",
    "set": "Data centres",
    "ok": true,
-   "stories": 99
+   "stories": 95
   }
  ],
  "items": [
+  {
+   "title": "AI is rewriting the rules of work. Is India's university classroom keeping up?",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTWRPRkhZcThYODJCX0VTbUR6WmFsNUl6djRYdk9uOW9fSkNLam9BQjJDWVdQSmxmRWR2bXVCdWUzVjZBb1hBSmUyYmxvLXVWOV9WZ0FaWHRZSl8zcHZHZUxhSkt3S214VG44bmUzNkYtdXR2cU9pUlJkQktpWXJkTlJhWmtzMVEzTjJrNzN5MDNxT25NR2I2SGNWRVF3WUlQWFZoU3ZteEFsOUhIMG1Xb25XenR0a3ZYWlJmY1Zxb2xPWk0wSllCVWI2dUVXYkI1SEd1RGdoQVUxMFU5MmtLZXRGZ1VPZmhC?oc=5",
+   "source": "ET Education",
+   "region": "International",
+   "published": "2026-11-16T11:37:30+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
   {
    "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
    "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",

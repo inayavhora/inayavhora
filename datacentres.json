@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:49:25+00:00",
+ "updated": "2026-11-16T18:35:55+00:00",
  "sources_reached": 15,
  "sources": [
   {
@@ -12,7 +12,7 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 4
+   "ai_stories": 5
   },
   {
    "name": "Al Jazeera",
@@ -24,13 +24,13 @@
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 9
+   "ai_stories": 10
   },
   {
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 3
   },
   {
    "name": "South China Morning Post",
@@ -48,7 +48,7 @@
    "name": "NPR",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 3
   },
   {
    "name": "MIT Technology Review",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 102
+   "ai_stories": 104
   },
   {
    "name": "The New Humanitarian",
@@ -84,13 +84,13 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 66
+   "ai_stories": 65
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 61
+   "ai_stories": 62
   },
   {
    "name": "Google News: famine",
@@ -102,31 +102,31 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 34
+   "ai_stories": 28
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 26
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 23
+   "ai_stories": 22
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 34
+   "ai_stories": 36
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 18
+   "ai_stories": 17
   },
   {
    "name": "Dezeen: data centres",
@@ -174,52 +174,475 @@
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 37
+   "stories": 38
   },
   {
    "name": "DatacenterDynamics",
    "set": "Data centres",
    "ok": true,
-   "stories": 11
+   "stories": 5
   },
   {
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 23
+   "stories": 21
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
    "ok": true,
-   "stories": 40
+   "stories": 41
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 76
+   "stories": 75
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
    "ok": true,
-   "stories": 46
+   "stories": 45
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
    "ok": true,
-   "stories": 30
+   "stories": 32
   },
   {
    "name": "Google News: new builds",
    "set": "Data centres",
    "ok": true,
-   "stories": 99
+   "stories": 95
   }
  ],
  "items": [
+  {
+   "title": "AI data center opponents cheer midterm results but say fight isn't over",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZVFGQTNSX2NpZVZVU0VCRmFBd2lyMF9GMjJJbXBhQTA5MFYwczkyYk9LWjh3VnJOWjhzeS1ncGhBUXlNd1FNY01hSHNHRkNyXzFsMVBMVmtYZHdGMEhlYUdoamY4QXFIczVqM2VuNUZhOGQxa2hFd3NwUXdWb2NlTU5PZjNUa1BYaUh1cGNwRHZOYXJjVGlpNi1MbWw3TFlwMEJvNG9ic3VHUkx4VmxnTHNyQU83amZ4VkZTUFhyMHlyZkllUm4ta0ZmdW0xLXlM?oc=5",
+   "source": "Toledo Blade",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T17:32:49+00:00",
+   "places": []
+  },
+  {
+   "title": "China Is Banned From Buying Nvidia’s Top AI Chips So They Are Legally Renting Them From a Massive New Data Center in Malaysia",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNREJuczRJUmVEUjVzOURMZmRnUm5sRGVZLXBsLW0zSnBZUjVVVzZ0N3hlV09mQXliNVYyQXF5TEVGZjZOM0ZFVzZQQzZRWk5rc25kdW44eWYtcEhCY25DMGg2bFEtNzQ0bHRxWEJPVktRM0xPVXBzV0JJdzFsSXA5eVhBb2pJV3FTYnJxdHZDNUZEWVFtTmdDSF93dENDQVNfa2tIYVM1YXZVV3d4eVJ0dTA2Z1NNZXNGNk8yaU1WTVhQTDRfZy0tV0xzQVpmZ1V3SXByWE1URUxEX1JGbVFraGRZUXE1N1Q0?oc=5",
+   "source": "Gadget Review",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T17:30:36+00:00",
+   "places": []
+  },
+  {
+   "title": "SpaceXAI Started Southaven Data Center Construction Without Water Permits, Mississippi Alleges",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdDNxMzFfV2t6bVkwbUxZM3ExUXZOWTYxTW9YakRuRm12Tzh0VE1UU3JYSDFmY2VONnVNdlEwd3U1MC1wVDgzYUFsU2FFZnJxWUVTUDJIVkZFb2l5bVVCRF9mUnpTLUtyUFhHbHl5b2FBR3FUd0VMTGt5d0UtZGpFclZqT3F5Q1lOdWVIbnpRR1dXdE0wVVhGZG9ieEd6d2tfeTI1djNXdF9Zc2V5NmFfeTAzOHR1YmkyTGxsZWcwcHFyMTg?oc=5",
+   "source": "Broadband Breakfast",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T17:24:24+00:00",
+   "places": [
+    {
+     "name": "Southaven, MS",
+     "lon": -90.0126,
+     "lat": 34.989,
+     "precision": "town"
+    }
+   ]
+  },
+  {
+   "title": "News | Blackstone’s data center REIT strikes $5 billion Amazon data center sale-leaseback deal",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRGdNa1A5d2JNWDhvQzZJTVJRV1NxUVF3V3JTby1mZjBZNXF6bkZoRGpLUWtXbnVwNm5aeDFRLWJZR1k1d0FoQmJnenlEZWZ1ODFyWGw5dXdZWWVMWXpabFJsTHFya1ZjZ3oyY2o1dXhCbUVYVTBqbHlrSW15Y2dNUUpTSkhZSWZmS09VWVJVc0NINE9GR0xWajR4YXdiVW1UREt0bzZEZGhOQ2JfS1FzQnZwaGNfajItVjVEeC1jRXlqVHBzclE?oc=5",
+   "source": "CoStar",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T17:15:48+00:00",
+   "places": []
+  },
+  {
+   "title": "Amazon and Fermi work together to save 5,000-acre data center site at Amarillo",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcnBVNVE4VDZrbGFOaGxpYlR3ZW5CLUt1QXFGV2JCdFFPbVhWWmxRczc1M1hDaFZ4M2p6dXVIWldOZjRaajVWajFXaTJuZXFmeGx6Zlc1a3BZaGJfdmE5d0RsM3JnekhXMEI3YU5hc0w2QjB3UUdRMmV6endudHdYbnVKOTZYUEFvYmxiQVY5a2JmLUN2ZngwZVUwS3k1SHQ1YThyWXpEQWNGN0U2Z3BPQTBR?oc=5",
+   "source": "Oklahoma Energy Today",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T17:08:33+00:00",
+   "places": []
+  },
+  {
+   "title": "Bloom Energy, NTT DATA Sign 900-MW Data Center Power Agreement",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdHE5S2ZTY0hsZzhZTWFRaFJPS283akpuTXN4RUNFSURfUkJZZmVwemRMZ3hQeDVlczVsVHcyaDBCOFNFam1HUjR4aGZiTzVDQVp6bm55QzhQNE1fUTdJZzRqM3lueTBmNXZxc2dNNjdBVHVlREgzalNDNE8xSjBpYnlBbF85ajY4?oc=5",
+   "source": "the Electrical Distributor magazine",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T17:02:07+00:00",
+   "places": []
+  },
+  {
+   "title": "Schneider Electric's AI Factory Strategy Moves Beyond the Modular Data Hall",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNG11RVlFblp5RHlQUmowWkt2RnVvcTJDSXF0eVJzajZlRGNzRXJINzNWbVA3SU02MmtYWkZPNVl2bXIwaVV1TnZzSXBtcnBLX29SUjRIYkFxQ21tY2ZGY2E5bXFyWHc4eGU4SVBUMWIzNjBWWlhCZGhpWWgzcE5CQzFFZzRkUjJPVXdxLTlucjEwdThRTjBOSXh2MlJqS3o1cEVXOGM3X2g2QXNxYkZmYkMyZGZaZjdnUmQxNEpVck5HM2NmUHVIaUVXM3Nrdw?oc=5",
+   "source": "Data Center Frontier",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T16:28:47+00:00",
+   "places": []
+  },
+  {
+   "title": "Data Center Expansion Under Pressure",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPc1BXMzQtbUhWLUpMSlYzQ242X1VULWcyeFUyTmgzTzVNakZGZU1oVk8ycWV2bzQtREljTWY2RnNGdXphS0g1TTFIMndOYUlDdGNMWGg3d3JqSTRKdHpBN1V0RklhSnRBRWY4eDZucGVOV29ZVVhTdTFwQ2ttWU1HRjY3WFZmMVAyNkQzNDBiUmN2OEU2?oc=5",
+   "source": "Urban Land Magazine",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T16:19:07+00:00",
+   "places": []
+  },
+  {
+   "title": "Former Fairfield Walmart to reopen as data center campus in 2027",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWl96NDZTalhLR1gxUHRlWWFkd0F4bjFpdHBNQXQyM3ozVWpmNEVDUnZVRF91SkdoWlJDRUNmTG8yclk1ZWZ3UjN5dk9zX2hObkFjazdVZk81bWZqQ0dFaElaTE9xREFPekk2ZXl1ei1wdkFyZ0dUVHloZTVOUTc1UWZKT0h3YmRLQUFDYndERFNoUEVoMGlIOFNB?oc=5",
+   "source": "Yellowhammer News",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T16:08:31+00:00",
+   "places": []
+  },
+  {
+   "title": "Environmental group urges feds to reject Columbia County data center",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOU2RFTUFvZVloVmNPX1B1QUN4NDUwakFBT0R1TEhRZ0pvZU5YaXFQRDY5amdCZFpBY09UeksxVnJaVExjUEhvNW5NUXlLOHQzU2wwWTVZN2dWMGR6aUVsVUxvWDljWDlaUVlPcm94UnBmemc5eWZPNVNwbkNmY2hncWpueDlLWWRiZ1A3R1Z1dU9UN3hWQ01RRGZCOG9VTHM?oc=5",
+   "source": "WRDW",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T16:06:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Massive data centres collectively use as much electricity as an entire US state",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONG9nOVEwcXhPN3g3Nm1UVFhMSmswMnhCdXR0emVOa3Y3S3ZOeXd2VmM1OTdrQTkzYUhpcWV5aDFHaTRIWGc1QTJDMGVUOFdKWEFGbU9sUXhZUnJOSDlqSGpZdGFUdl95UHBtX0Fya3pIdFk2aUhOc2RERFZJUUpMZEc5c3NwZkh0cng4UklGWmxPelpHSUpLa0dXSHFpbHljRlg1WTFOMHNJU3NjSTVqdQ?oc=5",
+   "source": "New Scientist",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T16:03:00+00:00",
+   "places": []
+  },
+  {
+   "title": "SK Telecom, Hyoseong Jung Gong-eop Build GW-Class AI Data Center",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOR2hJdVRuR2xwQWRiREh3TmhURTVKUFF1dW1TS0FWckVBaXIxWVpBLUVDcTB1SG1PQUphQlZLMDY1UUJmcVdEVUo3MFpSNUZWeVkzZ2RSR2hXWHluMW1ZYlVEdVZ2Nm1JSk9qZ2xZSlY1cFg1b1MtQjBKczR4SU9LRG1zMVBhaDV6?oc=5",
+   "source": "조선일보",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T15:47:24+00:00",
+   "places": []
+  },
+  {
+   "title": "Arbitrating data center disputes in Southeast Asia",
+   "url": "https://www.datacenterdynamics.com/en/opinions/arbitrating-data-center-disputes-in-southeast-asia/",
+   "source": "DatacenterDynamics",
+   "kind": "industry",
+   "image": "https://media.datacenterdynamics.com/media/images/henry-winter.42222215.fill-750x500.jpg",
+   "published": "2026-11-16T15:30:41+00:00",
+   "places": []
+  },
+  {
+   "title": "Voter Pushback Clouds the Outlook for America’s Data Center Boom",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbVR0TGM0MEE1WWtzS29odkhUUGlQZzZfSHVWRTkweS1teENjQXFKc2tJSFVVM3hrczJwQ0NvYTRELTlJMm1FVHFrclNHNmQxd0xqMkJmQ294VGVESDVYVk4yU0t3eTJVdWNfUG9ITXc5bGhEVTNqeXFYc0FFWlo2WFJKMTF6QlNzNW1rWnpIcC1kSFJOOXp6MGV2T2w3OWJlTmE4ZTJvSEZMdDQ2OWY0?oc=5",
+   "source": "EC&M",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T15:23:14+00:00",
+   "places": []
+  },
+  {
+   "title": "Microsoft looks to develop data center in Rockford, Illinois",
+   "url": "https://www.datacenterdynamics.com/en/news/microsoft-looks-to-develop-data-center-in-rockford-illinois/",
+   "source": "DatacenterDynamics",
+   "kind": "industry",
+   "image": "https://media.datacenterdynamics.com/media/images/rockford.2e16d0ba.fill-750x500.png",
+   "published": "2026-11-16T15:20:41+00:00",
+   "places": [
+    {
+     "name": "Rockford, IL",
+     "lon": -89.094,
+     "lat": 42.2711,
+     "precision": "town"
+    }
+   ]
+  },
+  {
+   "title": "Bill Ackman sees Amazon, Microsoft, Meta and Google benefiting from AI data center restrictions",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaTZnSm1LUWstOHBBa3hydC15YUNFS093aXg0TjFWSm1YVnFyaXRINjU1cUJnT2J1MC1XNnVCdmYxNGN1TG5HTEdUUlNhc0x1WkUwdHZGSGlQaGxIMmozbmUtb1o5SEczNWhvLUxZcVRZZ3JwOEFSR3Q2anBpR3JuQUZVT0ZnYk5HaE5zdy1DaWM?oc=5",
+   "source": "Beinsure",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T15:04:59+00:00",
+   "places": []
+  },
+  {
+   "title": "FERC just gave Pennsylvania a warning on data center costs — don’t ignore it | PennLive letters",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR3lCYUpja3NWMUFqcHFBdlg4UmFLN0dYd1E5RVd5RjNDdnRVelRpWXhZa2VNR0l6czBScEduY0lNUzV0MTRHX0VIX01jWUwyMV9kaV8yN1JKQl9XUm5VWGRRUGRCYlVjcmd1S0hiU1ZxdnNqLVFFSUtmZEtFaVhLRVhDaENiWWJuUlBKeGcwUTJjdWUzbkwzOF9LX2NYODkwOTFSODNFX0phNE5oOGpzLXRfNDZsd1J2X0NWYmNSY3ZzanNuelZ4QUozd3JiSEhtLXc?oc=5",
+   "source": "PennLive.com",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T15:00:00+00:00",
+   "places": [
+    {
+     "name": "Pennsylvania, US",
+     "lon": -77.8,
+     "lat": 40.9,
+     "precision": "region"
+    }
+   ]
+  },
+  {
+   "title": "Residents in CA Agricultural Town Face Down ICE Facility and Amazon Data Center",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVFRicGJZRkpBRHhmSjdkaXVsTXVWMVVxaVNiVzlwaDJaQXdSc0Q4YThoSVhSeVRSWkUxbXNDY2Q3OFZSQmtUV3pWZThDc1dES1dZZkswLVJpanVzaWM2cmdIeEt5aU5YTzNhWG9YS0pia2hFSk1aVVl2TTdsa2U4MEw2MEFLVFltNVNCRkY5NmR1ZTFyWVR5SEhBb2VkRThQR0p6bEVleldxLVhRWnhR?oc=5",
+   "source": "Truthout",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T14:52:57+00:00",
+   "places": []
+  },
+  {
+   "title": "Core Scientific files for 285MW data center outside Dallas, Texas",
+   "url": "https://www.datacenterdynamics.com/en/news/core-scientific-files-for-285mw-data-center-outside-dallas-texas/",
+   "source": "DatacenterDynamics",
+   "kind": "industry",
+   "image": "https://media.datacenterdynamics.com/media/images/core_scientific_quinlan_texas.2e16d0ba.fill-750x500.png",
+   "published": "2026-11-16T14:37:38+00:00",
+   "places": [
+    {
+     "name": "Dallas, TX",
+     "lon": -96.8067,
+     "lat": 32.7831,
+     "precision": "town"
+    }
+   ]
+  },
+  {
+   "title": "Professor: New power generation should accompany data center construction",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdEI5UXNqTnNjRTFxcl96RC1NREpYMnlPSzNUbHdXMXRPS3VLQ0VPTWtLS1NSSUtSZjgzSzlUN3pVQjhPOWF2UldlWlBPcC1TaFRHbzl3SEczZGRrN0h3WEQ1RGlpZ25rVHBQMVFIZFpRQjFEVWxhUlBiTzYzLXBRLVZBUU5oLUZvT2RDc2lVd3VIVmNIRWhDTGRjN1JzMGVVaHkwaDNR?oc=5",
+   "source": "ERR",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T14:35:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Prologis sues Ohio's Trenton city after residents vote against data centers",
+   "url": "https://www.datacenterdynamics.com/en/news/prologis-sues-ohios-trenton-city-after-residents-vote-against-data-centers/",
+   "source": "DatacenterDynamics",
+   "kind": "industry",
+   "image": "https://media.datacenterdynamics.com/media/images/prologis_trenton.2e16d0ba.fill-750x500.png",
+   "published": "2026-11-16T14:19:14+00:00",
+   "places": [
+    {
+     "name": "Ohio, US",
+     "lon": -82.8,
+     "lat": 40.3,
+     "precision": "region"
+    }
+   ]
+  },
+  {
+   "title": "U.S. Grid Operators Rework Power Connection Rules as Data Center Demand Surges",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTEp0WHNURXlCOWZCQlNrRTZ0eVBJa2dvZk5EYTdyQm9lb2N1ZWZwWEFnbERmX2s2S0tPdkJiaDM0RUxKaFF4NEVKV3E4SU1CSkFSZ2txb0Q3ZDh4WnBGaGY0TWpYNUtSSmt2NFU2ZU44eUJmXzJHRF9nTmw2eW5FU3N1WkxUQnFjdjA5dkNsQXYwMTJTZTlxbXJmMUxVWnRsaDBVSlJXMHdGcVJESFMxbUY0Ymk5dw?oc=5",
+   "source": "Construction Review",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T14:02:57+00:00",
+   "places": []
+  },
+  {
+   "title": "Bill introduced to ban data center development on some federally-owned land in US",
+   "url": "https://www.datacenterdynamics.com/en/news/bill-introduced-to-ban-data-center-development-on-some-federally-owned-land-in-us/",
+   "source": "DatacenterDynamics",
+   "kind": "industry",
+   "image": "https://media.datacenterdynamics.com/media/images/GettyImages-2211925478.2e16d0ba.fill-750x500.jpg",
+   "published": "2026-11-16T13:54:42+00:00",
+   "places": []
+  },
+  {
+   "title": "Telus abandons its Vancouver AI data center development plans",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcDBWSmNMQlppNlRSYXJSWHE2eXFrZDI0UU82eTN2VHhjVGI2elJVY29CeHAzUm9FT0hOS0ZIRkxTT0hQVHplOWV3TFp4OHZ1UDhMYzByVG11RXhEdVo5MkFDVENxZkhZUVMyc2oyT3FaRktjMVF5VFRrYTBWVnl6ZDFyWnlvRjNyU1NaWHlwSk1pR0hCZ2RVXy1ZU0hneVozbjRLc1hyZkE?oc=5",
+   "source": "Data Center Dynamics",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T13:54:01+00:00",
+   "places": []
+  },
+  {
+   "title": "Ariz. Democrats eye data center policy, but moratorium could divide them",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZERhMXR2V3BxLXFvUGFYVHRpelNvSVRvVDRXbkxJdV9ZZmdLMXZzRVZoc2FVMFdCbDg3QzlObVFtVGlfVWR3UmloSkpGeFpMRVNNRlVfRVgzSjNyNFRxd1h1b3J5Mk9tMTV4RFozb2RFSVVheWhPVHhXa1VkbUxXOHd4TVVqQ0Y1di03OGVHM29kZHduNG5DaHNEYXU2TENaakFn?oc=5",
+   "source": "Axios",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T13:22:19+00:00",
+   "places": []
+  },
+  {
+   "title": "Data center demand creates challenges, opportunities for construction industry",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBDbFpIU1Z6bDFxTnJ5aU15c2xXVy1xQnFEYXRMdkh6ZHlra2RvRmVaT2xFVXVZMlp4dFJkUk5YUkJBZ21RWnFtUXE1S1NBMElOSHBQZVBQODdEOHlRWXdTNjllNmhxSU1aSm1MWDRPTQ?oc=5",
+   "source": "Lehigh Valley Business",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T13:16:27+00:00",
+   "places": []
+  },
+  {
+   "title": "If a Data Center Moratorium Is Coming, Bill Ackman Just Explained Who Stands to Benefit Most",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNNzIxcXlrS1RYVEFObjJpdlBESWR1dkZFUWdTZ1VGNFdqYmZHOHhBQkRkWFlaT09EYkZjOE5GT0dSZGE3M29RSUdaN0ZaSGo2dFhoWE11NzkxdTNEek5NMURQSHlVeXZMQjFMQ2lJOXdwSFQ5c18xNUk0RWVpMWdRWXhzUUxaUUoyXzQxcW1wOUdtNWIyUGRDUFNCcndUZXZ0am5qVE9TYXZHVE01SkhpQmc5S2t2ekNIQXZMbS0tdk9BS3k1UkUyeTlkUVhKM0lOZjRXa3ZONVFPS3VObEQxcXl4b0F4dXBnQXRCeGZFT1dpQnk0VHVRZktFQkZYVHNNWGJ5UHREUQ?oc=5",
+   "source": "The Globe and Mail",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T13:05:35+00:00",
+   "places": []
+  },
+  {
+   "title": "$7B Amazon data center expected to bring windfall to Northwest Indiana governments",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSWJWbmRwejQyQlRhcDFZS1hZazN2a3R6aHcxNDJsOTlzVVZYOE9lX2lpNmVLcTl4Q0NRRHFtY1BsSHlxSTJOaDdkTUZ2d0NkVnYyVUZRdk80eDZZUmlZUFhkSlc2RDkxTFhkS2hYZXBzM3dWQTlNTkhEX1M3bGVLNFowLTVEV3dVbUFjR05Sb2Y3U2JQ?oc=5",
+   "source": "nwitimes.com",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T13:00:00+00:00",
+   "places": [
+    {
+     "name": "Indiana, US",
+     "lon": -86.3,
+     "lat": 39.9,
+     "precision": "region"
+    }
+   ]
+  },
+  {
+   "title": "$7bn Project Rise: Amazon Breaks Ground on 304 Acres Indiana Data Center Campus in Wheatfield",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNnBPZ0c5S0ktelJyWmVra2FoYkJJU3lwWmxJem5sV25DRnJKYTVEMzJ6Y3Z5UUhpSFNJZVZpTGNoSWk3M3hnWmxSYVo5eGNMNXQtUTlvbVJSSGVibTBXd3lMM1BMNm1QdVN1a215YlZsRVBRYUJKbTJzRHg5aDZGWWpvY0E2YVE1S0JSSzZaczN6TTlUMWZpcmUySzJXaXhabXFKcWhuRV8xOTgwd3lBbTVtV1JQbHhjZzVuNVpOaENEMUdpY2R2SQ?oc=5",
+   "source": "Construction Review",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T12:55:34+00:00",
+   "places": [
+    {
+     "name": "Indiana, US",
+     "lon": -86.3,
+     "lat": 39.9,
+     "precision": "region"
+    }
+   ]
+  },
+  {
+   "title": "Pitt County commissioners to hold public hearing on data center moratorium",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZ2VSSnY5Z1RWNkZBU1RIVWViMl9qNXljckJqT2JhYUVnelFLTmRtcURrblNzUEpaN2dYSTVZMm10VW5Mb1NiSXA4b2twMml5RURLeFNLZEhWalRpN3c2eUJHUFFsSmZPWlY5ZDhVZDdOOGE0NjBwQkM3TFdxcEpOdjFJQTRnY0kybElxajRKUDh0d3dNakxBYVJ3MXh5aUVzWENF?oc=5",
+   "source": "WITN",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T12:55:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Equinix files to develop new data center in Dallas, Texas",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPelFDNFhxSzNBX0o5MzJidFFRNERmbWdzMkd0cXUxeTVkSEZhUUhkSVJwSlpLdkg5SWlkeGZTQVB3OVpMZDZCWHpfaVFOQmYxVnFzQnhLQ0VMMENkeHc1aDhEbVBTNjFqQkF3LWprbXFQMDdQdVFhODNOV2x6cGpBTjFpUDVVbF9KcWdjTlJDVkpVZWlwVktrckVpVHE4N25VZHc?oc=5",
+   "source": "Data Center Dynamics",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T12:33:13+00:00",
+   "places": [
+    {
+     "name": "Dallas, TX",
+     "lon": -96.8067,
+     "lat": 32.7831,
+     "precision": "town"
+    }
+   ]
+  },
+  {
+   "title": "AFRIDATA Secures $1.87m USTDA Grant for $1bn Nigeria Data Centre Project",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQU2U1V09obVQwMVJ1WlRDXzZraHkyWGt5bms1engzQjJsaEludktIbWItWGxvc184cHhQdE5udk5zRXVpSVRSVE9hZVFjOHJBY2FqXy0zekNpUnR1SndDWFVZMjR0NzJ0OXhlSVBvZEM4S3JOdFNnWUJDVzNRWk9BSm5wVGR6aDdwUExpUkRTQzNFM3BvZWtn?oc=5",
+   "source": "Techeconomy",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T12:22:10+00:00",
+   "places": []
+  },
+  {
+   "title": "Augusta Planning Commission to review rezoning requests for data center project near airport in special called meeting",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOekpHemhlUmZwTHpuSHAySTh6NlBGY3lrOFhsNmR4OFBEWXRldnZXSXNLVTFmWm5aYXpZVkF6ZmswYnVDTFRfZVpaNlU5czRFWDVRVEtIS0s4dVRFYmJDam5CZmJSZGdkNlBhQ3FVTzNjR2JKQmt1d1JqTjV5ZFRmRzU5SVpzX2VpQ0tnbHhGeDBNNnJFY0I5OGVXYWNwX0dUODJCY0NsX2VPUmwtcDN0MTB3S2hpYUhveUhYRXFrNF9CMUxvaFgzOEQ1dWZqQkhkLWNmeDRIeVVsTHkzNWNGVg?oc=5",
+   "source": "The Augusta Press",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T12:05:11+00:00",
+   "places": []
+  },
+  {
+   "title": "Will Latin America Capitalize on the U.S. Data Center Backlash?",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRmtXTDNPYkhjVWNPaUFTRklaZjdPOTJGSUlpVllGWTg2d19tTTRrbXptTHVkNy1EU2Z5U0VHVXlxRlNINE5Sd3IzelIzWnZvT0thSEV6cTBQYVRpQXpINnpJX3UxMVNFZlNwQmxBdWtUeHJpM3ZIeFktYTluRE1uYkI1djN6bE9zRklqWTluWE93WWFyMUtPQW9wVTBlMk5vRWc?oc=5",
+   "source": "Americas Quarterly",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T12:02:45+00:00",
+   "places": []
+  },
+  {
+   "title": "Thailand government discusses AWS data center expansion",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUzdTTmh3QzJfeE4yU1RQeEpBSG81b1JOTDJENnBSU25OSHpnTHJKWUI5Y1NMOXRPWFBUbzExb2lOUVhmVmtsekhBVG5aVnBZX2NXUjNPM0UxekRuM0FOWlRyUzdfSnFqWlRodXBNUzdHaHNFX0dIMDY0VDFZQ3NUbnQ5cTdnRVFtVDZnckxCUF90Q1lXQkZrQzhJYjN6MG00SkFPUUFLejduODd1UXloX3VsQ3ZuM1pXMnNqVnZWNVE0U1NhdlRWNzZLekw3bHczWnFB0gHXAUFVX3lxTE1BNzg5NTNJcG1rUDcwbmRGalIyRmlEaERlQzdTLTljeFJ5Z2tlRFBnVzF3WjJJc19ZMkVXOUw5VG5OdnRXM0E3M3A3ektxT3lCQlVxT0FkMUpGeHBORTUxdUxMZHQycGJCSGU1ZHpNcmxacUtTbS1Ka25aSlNzOFdJNjQyOXZZX0szTzZfalZ5S3lmTGN2R3hvQks1d2IxU1Y2bjlWeWFFYzFSUzNMSWpKcTBGLUtHeUtScVZlVGN0bWtNUEt2SDZscVRSajhJby14NU9peVU4?oc=5",
+   "source": "ET Datacenters",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T12:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Mission-Critical Sealing Webinar: Gaskets for Data Centre Power and Cooling",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQeF8waUxpZzRNYm0waFh4S0Q4YWx2ZXVLM3BOelNqVDJscHVRX0F0bHpfSHhObTBWeEpnU3ppbmN0TFEtdkhwSm9RaEN4OFlBZ1oxd1VFRGVxRTdzaFJOQU42MlpFUXdLR1FxUjQ3Vm8xLTJrdEwzaVUwcHZSTlp5QUZhMHl6SmVLZkgzMUJ4SDJTYlRldExsVzNrX3pveWZUZTc1V1EwdGQ1ZVduUFFRbDlIMHRkSHowSGV4WE1R?oc=5",
+   "source": "Plataforma Media",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T12:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Texas data center moratorium could push AI projects to Oklahoma",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNUUVFczY3Tk5FRWd1VURUOHJoV0xETGZhSFgzU0duU1JiUzk4S0ZjUFY4SGNhZXRvZEpJUjh1U3FFeHMxOXhMcHBxZlFMOXFqMExOdF91bEd5LXNxM1UxTzVxNXVxMnFYRDN3X1dSbndjekpqVE5Bd1lJMTN4ZXA5WFl6LUNKd3F4QllINGxnSHZMQ1BCbVktOW0xRVBQYXd1NnkxUFZBbVZPdW1Jb2loODFnZjR3M3VmMHQxN3VMMnZkSTRyS09wdms3LU51cmxSRVFqSzUxdW9hYjk0TUZRRlNVQWc?oc=5",
+   "source": "The Oklahoman",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T11:15:00+00:00",
+   "places": [
+    {
+     "name": "Oklahoma, US",
+     "lon": -97.5,
+     "lat": 35.6,
+     "precision": "region"
+    }
+   ]
+  },
+  {
+   "title": "Ensure data centre, AI investments build Malaysian capabilities, says Ong Kian Ming",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA2ZmdZZzNYNzNlYmRTam9QSHNtQmRTd01zLTRJVDNBdHR0QWdpcXlCa1RTaVdCRFZEcWh5NkMzZ2puNnlxRHQtdFBGWTRjNExC?oc=5",
+   "source": "The Edge Malaysia",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T11:00:01+00:00",
+   "places": []
+  },
+  {
+   "title": "New Teraco lab puts AI data centre designs to the test",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd1V5YUhLeGp4NXpyZXhyaEZ3QlRjVWZkcHNUbzRNWkFfekp1LVU2VkF1YklUMTFzNzhjejhtdDJYSXdZd09oakpVeWw1NURfYkNxZ2V4OW9UTnF4SzhUUHdWbW0xR21Fb1lzS3cyTGZldlN4SWVPemREZ3FNTlpleEpLalBGNXdDaml1ZzQ2UVJFYmlFX3VUSUdSN3hPV0F6SkdaaFp3?oc=5",
+   "source": "ITWeb",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T10:56:32+00:00",
+   "places": []
+  },
+  {
+   "title": "Egypt Launches AI Data Center to Modernize Judicial Services",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNRndDaUNqODZnbFZLSVJXbGlJX1RMaGxzeUVZcTFqZFpBaXF6am9qNjhjWU0xMFY4ellteTNmOUhqUVNzZVRGSldkeE9HZXJTOE96WmJBcWlJZFFfNjhLMkQxVFFjYXkzSmhrcTNXREdQQllLOHhMallZbWJIMXVuRE8yd2VJRjRmbnNSYUNmc3lHeE9lb3MwaEg0Nmw0M01DSWppcGY1Qy1lMlAxSTdXZklURFpDUVdEVnRTQXVjNDY?oc=5",
+   "source": "We are Tech",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T10:50:37+00:00",
+   "places": []
+  },
   {
    "title": "Actis-backed Malaysia data center loan syndication faces delay",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWUFLM25Ibl9IRm1Baktvd18yLTNZQWpLNW1IclpjOXdMdGFIdXFYbThmNkFOdVJ3ajhlQU84aXJoVzhNU2dTOGxoTnAzYklYWXE4MkxMeE1UUWhqekZsaDJtcTM1QUttQmdjelFDLWRkcW1jR2tPdHY0dEt4Y1JSZGtNNlpEZmFJNVRFM0h5MmVvbW8?oc=5",
@@ -231,11 +654,11 @@
   },
   {
    "title": "Brazil's ABL Group launches new data center unit Astella, opens data center in Curitiba",
-   "url": "https://www.datacenterdynamics.com/en/news/astella-part-of-the-abl-group-opens-a-data-center-in-curitiba-with-an-investment-of-r60-million/",
-   "source": "DatacenterDynamics",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOYU1QLU1jUkV4d2tsOVZHNUJkWDAtZndoaGdpRGkxbkk1UVRkWERxVWtxNW1hbllQNjNad29mck9kWFdNUmNIV05hRnJ1QnRaWDV5eHpZSndVMm9qd3lOSlVDemRwb1JZOUJNb1VSVHZpbHZibHRPVExNOUt4ei1wSlQ4Q0h4NnF2ZTg3SFZ4cEpNWmk5UVhFZWEyV2NxWDZlaUpyWDhtU3JtdTdvTE81TnNTZ0JpdnZ5OUwyUTVXbmpTWmNHNzgzU2RrTWtEeE00cmhvMlJ3?oc=5",
+   "source": "Data Center Dynamics",
    "kind": "industry",
-   "image": "https://media.datacenterdynamics.com/media/images/curitiba-2778942_1920.2e16d0ba.fill-750x500.jpg",
-   "published": "2026-11-16T10:36:50+00:00",
+   "image": "",
+   "published": "2026-11-16T10:38:12+00:00",
    "places": [
     {
      "name": "Curitiba, Brazil",
@@ -264,12 +687,37 @@
    "places": []
   },
   {
+   "title": "AWS breaks ground on a $7 billion data center campus in Indiana",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdVN0bms0dE95dmV1YlZUQ1VQOTRhMUhzVi1OaVFJdGhmRVViZG1Kbmdvbzl0X1R3Y0g1ZHZUSnNnLU1qSlJqUlEtYnVUSURKMEdSSzg0TDVDLWhIaHZrQ2R5bDZEOW9TbXo0QVlOV2Z2NjQtcHJBTzhFRFVucmFFZk5uRnNUNGJTdy00?oc=5",
+   "source": "MLQ.ai",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T10:06:44+00:00",
+   "places": [
+    {
+     "name": "Indiana, US",
+     "lon": -86.3,
+     "lat": 39.9,
+     "precision": "region"
+    }
+   ]
+  },
+  {
    "title": "ByteDance-Linked $488M Malaysia Data Center Loan Is Delayed",
    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZGppUXdzMnpKREhWLTF1blZjOWNFMzNzeUpZSGtkc1FzZkhoc0EzTDBOemZQYWdQVno4YlJ0bm5uanN1N0lwWEd3dXRBY0c5WEdkN2RGM1ctRnk0YXAyb3AxaGNQMGY4MkFJRkMyOWJnYmlpcHpPMklESnVNMHlOeFFRZ3pqMjlTVzBSRmxlaw?oc=5",
    "source": "FourWeekMBA",
    "kind": "industry",
    "image": "",
-   "published": "2026-11-16T10:03:17+00:00",
+   "published": "2026-11-16T10:05:29+00:00",
+   "places": []
+  },
+  {
+   "title": "Why Greenpeace Interrupted Jensen Huang’s Keynote",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMHY0cVgyQTRNU0NKMVFka0pkcFRQMmw0OVdfSUUzOUhsWWNDMk1ZWTVJR0VibFBwWHAwUkhmcWxwbW1OVzg3N2dzMFNWVncyOVFCTXUtVXFIMWU0U3UycjI2ZjIyR09DQk1JNVR5V3h4WjE1RThSOHRrejctXzhoVW5ndDBvTTB6MFVveEJPUXl4djFJMnAzWk8zSGptMVY2Nnc?oc=5",
+   "source": "Data Center Knowledge",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T10:01:03+00:00",
    "places": []
   },
   {
@@ -289,6 +737,15 @@
    ]
   },
   {
+   "title": "India data center boom needs 30-35 million sqft by 2030",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeVlRWlN3ejVVcmx6UVlva2g4dXZodmFDSGVjMEw1dklxZGR1UHVHdW5HdVBGb25xYzN6cXdjUktLVThnSmxpZWw1SERHaVhmNmZ4TTJyTU5HNlJneTRwdXJ0V3pDb01UR0NfbEdabkZ5U05NTy1pblNucng2ZE5oMEg4dFFlWkhFVFgwRHNrTjhHQkhCaFp0T1FEb2tWOUc0WTBkR2Nn?oc=5",
+   "source": "NewsBytes",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-16T09:42:36+00:00",
+   "places": []
+  },
+  {
    "title": "Malaysia drives data centre investment and AI to build local capabilities",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQlNMbHpQODFJUGRGb1g5MUwtWGxtWDY0b0JhQVJxMVB5NFNrdW94Tm5xQTlueEZ2bXRpaG16M3I0QWhxcVU0VmhSdEZPelBVV1o2dXU5Y3BmcnU5TmJ0UjRIQlVPeDZ2N2JPRldCZE9HM3pFVGJKSmtvVEJ2UkhOZjdCVHFDekd3U3VmRDNrS1hRU2NO?oc=5",
    "source": "Traders Union",
@@ -298,12 +755,12 @@
    "places": []
   },
   {
-   "title": "Ensure data centre, AI investments build Malaysian capabilities, says Ong Kian Ming",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA2ZmdZZzNYNzNlYmRTam9QSHNtQmRTd01zLTRJVDNBdHR0QWdpcXlCa1RTaVdCRFZEcWh5NkMzZ2puNnlxRHQtdFBGWTRjNExC?oc=5",
-   "source": "The Edge Malaysia",
+   "title": "MBSB: Malaysia’s broader data centre industry less exposed to US AI chip curbs",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUDdKOG1fTU44d3d4WV9tdWp0cXFiNU1JOGpfWFByNGFIblNMVEt0VldpbG50cGZBMUtjNWtSdWZkMWhmMHhCYnlyQ3RWY1V3XzduSHdYOVBzVHIzMnJBNDRNOV9vVWZFaXJJdmZLcTM0V18yUk1HbXNrWlhSbVRwZnVYWmQ5TDIzVXlPRkZBLXFkdFFBb3ZRcWtZTjJkU0hXLTc0ZGJsU3AzMDNHMFdTRTJydTQtM0ZHN1NlX0NkbHhrVjBLSVV0MjVfREZaZS1J0gHQAUFVX3lxTFBQN0o4bV9NTjh3d3hZX211anRxcWI1TUk4al9YUHI0YUhuU0xUS3RWV2lsbnRwZkExS2M1a1J1ZmQxaGYweEJieXJDdFZjVXdfN25Id1g5UHNUcjMyckE0NE05X29VZkVpckl2ZktxMzRXXzJSTUdtc2taWFJtVHBmdVhaZDlMMjNVeU9GRkEtcWR0UUFvdlFxa1lOMmRTSFctNzRkYmxTcDMwM0cwV1NFMnJ1NC0zRkc3U2VfQ2RseGtWMEtJVXQyNV9ERlplLUk?oc=5",
+   "source": "Malay Mail",
    "kind": "industry",
    "image": "",
-   "published": "2026-11-16T09:22:16+00:00",
+   "published": "2026-11-16T09:20:13+00:00",
    "places": []
   },
   {
@@ -326,11 +783,11 @@
   },
   {
    "title": "AWS breaks ground on $7bn data center in Indiana",
-   "url": "https://www.datacenterdynamics.com/en/news/aws-breaks-ground-on-7bn-data-center-in-indiana/",
-   "source": "DatacenterDynamics",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdkl6eHhwOG1kNmpIWlV6YURITG11eDhvUjdfSFBuY2h5ZmM1TVhmaTNVS3hUZ0J3RjZyVHZLZDVJenRmVl94TTNnenRWejNpcTd4alQyaGV2VGdsUFV1YUhBRUxaS3hLN1FQLXh5RUhhN2hZQkM4NXZ3OWlmeWlucDNJY2dWOEM0VWxJNmpxdENKU3MtbHc?oc=5",
+   "source": "Data Center Dynamics",
    "kind": "industry",
-   "image": "https://media.datacenterdynamics.com/media/images/AWS_Logo.2e16d0ba.fill-750x500.jpg",
-   "published": "2026-11-16T08:20:26+00:00",
+   "image": "",
+   "published": "2026-11-16T08:23:06+00:00",
    "places": [
     {
      "name": "Indiana, US",
@@ -374,15 +831,6 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-16T07:18:09+00:00",
-   "places": []
-  },
-  {
-   "title": "Thailand government discusses AWS data center expansion",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUzdTTmh3QzJfeE4yU1RQeEpBSG81b1JOTDJENnBSU25OSHpnTHJKWUI5Y1NMOXRPWFBUbzExb2lOUVhmVmtsekhBVG5aVnBZX2NXUjNPM0UxekRuM0FOWlRyUzdfSnFqWlRodXBNUzdHaHNFX0dIMDY0VDFZQ3NUbnQ5cTdnRVFtVDZnckxCUF90Q1lXQkZrQzhJYjN6MG00SkFPUUFLejduODd1UXloX3VsQ3ZuM1pXMnNqVnZWNVE0U1NhdlRWNzZLekw3bHczWnFB0gHXAUFVX3lxTE1BNzg5NTNJcG1rUDcwbmRGalIyRmlEaERlQzdTLTljeFJ5Z2tlRFBnVzF3WjJJc19ZMkVXOUw5VG5OdnRXM0E3M3A3ektxT3lCQlVxT0FkMUpGeHBORTUxdUxMZHQycGJCSGU1ZHpNcmxacUtTbS1Ka25aSlNzOFdJNjQyOXZZX0szTzZfalZ5S3lmTGN2R3hvQks1d2IxU1Y2bjlWeWFFYzFSUzNMSWpKcTBGLUtHeUtScVZlVGN0bWtNUEt2SDZscVRSajhJby14NU9peVU4?oc=5",
-   "source": "ET Datacenters",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-16T07:11:07+00:00",
    "places": []
   },
   {
@@ -564,12 +1012,30 @@
    ]
   },
   {
+   "title": "Is the AI Infrastructure Bubble Bursting? $4.2 Trillion Wiped Off Data Center Stocks",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1meVJGZWZWbTdzalNaU3pYOWhpbFRfSDFVOUhCZHktMWU4V2NOdlJkc2ZKOGRvcGQxUUx3eEtoRXdIYTFWNGxlWDJwU0Y1bUFqLWdzVGR5Wkpjc1hFYndiLVExVEpnckRpOHNqQ1VNWkk5dXd3VlE?oc=5",
+   "source": "BigGo Finance",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-15T14:25:00+00:00",
+   "places": []
+  },
+  {
    "title": "Citi Expects Data Center Construction Growth to Continue Despite Rising Costs and Regulatory Delays",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQU0hpcGZKWDBWa0dQM3hZTTlkT24wS3RuZnZCQXZ0Y1lMMFF5OEZqajd3NE5WVHNqN0xRZEo3amhodWR5WlJOVDRwZl9YSWZFX09DTnhFQW1KTVRaZnJXSWpIbm4xRFJ4MHg2TXF6SVBmejZXNzVmYjdab09BY2dobVdKVjJyaHE3WFhncjFXNEIwblQtT2xkY1JYNjEtSEF0NzRr?oc=5",
    "source": "Yahoo Finance",
    "kind": "industry",
    "image": "",
    "published": "2026-11-15T14:19:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Lenox Township to consider rezoning of land. Some think it's a data center",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQQ3hTVS1WNmhlcF90SXJzUHVwdlJoTllxNDRjRjl6cnpTa1JQeU1IZ3A0Q21mcmx3Y0xmYmVNOUhVeEE4V0VfNHFrRGsyTXBhZlU1WEpDRmlUVjJZalVoWUNscW56bklFem5lRzRDV1JUZmhNeGs3WjZwRlJRVlNldjZKRXppZENYem5hS1cxZE1iQ2h6c1BKNWNOc0RkQ1NtMzRkUF85TkwwcmV3bi1FajVsZWtrbWtRMHVzMmE5RUtrOE9RNGk0dkdhSVVSWGxaTDNSNk9VbGxKbi0yb21sVQ?oc=5",
+   "source": "The Detroit News",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-15T14:02:00+00:00",
    "places": []
   },
   {
@@ -672,8 +1138,8 @@
    "places": []
   },
   {
-   "title": "How a USD 2.15 bn data center could put Egypt in the AI export business",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOVNSdnVSZU9GNWxHVjh0czVyU0tQU3MyOGpkZUlIZWF3T2o0N2tvZmg0bFZkdk82ck53bUdzNUpUS3gxVGl3dG5tb21tZkg4dGMtb1UzajJSQ3VETkZYMFBubHNuWDFRU3lmU0pETEg2S1FpdUQ3UzUwQ0lvbGd4WDhpeVJCLW1BTXcwOURXU0x4TzBqMzcxamc3WmVqd1Qxc0VDYmdWM2RYWGk1d3NrclVmOWY?oc=5",
+   "title": "Raya Holding eyes data center acquisition",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWFAzYVFkMzNILVAyREVuVllNcVFIYnY5a3BXMzg5RWxIN0otMXNjZnljVVJKY3BYWEgxcFFUOHFWM2xxWmVqaFVETUhFc2swb3gzRzQxYVlVTXhJZHcyVjdDM0ZrZGRNUnl4TGxrRnJoVWxXTVYzTTFFZ0JINzRXbnRES094ODNhUXJvbA?oc=5",
    "source": "EnterpriseAM",
    "kind": "industry",
    "image": "",
@@ -681,8 +1147,8 @@
    "places": []
   },
   {
-   "title": "Raya Holding eyes data center acquisition",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWFAzYVFkMzNILVAyREVuVllNcVFIYnY5a3BXMzg5RWxIN0otMXNjZnljVVJKY3BYWEgxcFFUOHFWM2xxWmVqaFVETUhFc2swb3gzRzQxYVlVTXhJZHcyVjdDM0ZrZGRNUnl4TGxrRnJoVWxXTVYzTTFFZ0JINzRXbnRES094ODNhUXJvbA?oc=5",
+   "title": "How a USD 2.15 bn data center could put Egypt in the AI export business",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOVNSdnVSZU9GNWxHVjh0czVyU0tQU3MyOGpkZUlIZWF3T2o0N2tvZmg0bFZkdk82ck53bUdzNUpUS3gxVGl3dG5tb21tZkg4dGMtb1UzajJSQ3VETkZYMFBubHNuWDFRU3lmU0pETEg2S1FpdUQ3UzUwQ0lvbGd4WDhpeVJCLW1BTXcwOURXU0x4TzBqMzcxamc3WmVqd1Qxc0VDYmdWM2RYWGk1d3NrclVmOWY?oc=5",
    "source": "EnterpriseAM",
    "kind": "industry",
    "image": "",
@@ -708,9 +1174,18 @@
    "places": []
   },
   {
+   "title": "Why India's AI Ambitions Cannot Be Achieved Without Liquid-Cooled Data Center Infrastructure",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQREZObDh1Yk9WckhOci1iaTBEaF9WNzNHV2lGeU1Yc2lEVG5yYnpjMGxWQjNfd3BEWnNUSEN4dUdmNk1KVC1ORHA2MFViazVqREFOSWt6TzRCcE9XOWc2S2lUNWoyUjVocjBDTU8tbTVLOXdrNmVIN25jZjFocUYzbEp6VVJDU05WRkZweG1qcFBGakMxTVJ0bWFwNWkxdm8yei1nTHpMaGxBUDZEWl8tby1DOTBzSzZlNHZVdVhlY1FIUQ?oc=5",
+   "source": "Nasscom",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-14T17:22:18+00:00",
+   "places": []
+  },
+  {
    "title": "Malaysia plans new law using data center power consumption to catch AI GPU smugglers — but real-world TDP variance and lack of physical audits could undermine it, new law also forces operators to pay for unused electricity capacity",
-   "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxQM1E5R2dtYU9DSjNZTWYxb3FmVlNIM1E3V0FYS0h0M2tpdGszVG1UTkRIdXRfaFM3eUhmeGdhYTQyeGZ1UnNlUVJaeWFfNVBFcFUxM2Q3Y0N6UHZlLUN5eDd6RXhEYmU3VmU1U3JKcEdnc0RUU0NMbW5oNm5XTWNvcDJpejJzNk1OcVF5R3VjdmJsZlVQc3V3LVRFYTFJVU5Bem5RME1jYkd3aEsxeTAyYzFBeE9XYmVXOTZCZFpFc2hONXMzaUM2QWpSQ01sWUJxYkFRa3lSWjVzckwyTWk0MWI0d19mQXc4VjdZMU1FSGQ5WVV4ZjEtMnpqSUNxSHRtdnpXc2FyWHF2NTRleGxwQXpud1U3WWNrSnNvUDdGSkhsLWcwdzVabHJWMkxmcHBUdFhRWEZCRXlrX2hwSHZGSzN4LVg1b0RiTjZXVmVpQURnWGl5MV9TN3RSSXBkLThEMFB2aGx5WDVmbXVXXzhKeEtFeWVhY1VIZlkwRVhxV3diYVJ2dGVpV2RCbUpaeG5ERk9maGJmbk8wekl3Nm9HOXN6WG85Zw?oc=5",
-   "source": "Tom's Hardware",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdzhFaDBwdXd6YlJwSVppMUZxdWN0X1FWRjBjcXlCSTR3X05jMHhGTmo1RWMtdjZrZVFveDdLNGFCMjJHeFcwMGlVMkl2VTJwOU1HTHNOTnR1LW9nbWZkY2Y5U2lENzQyaENEWVlka09aY2NzZEJvN05DYTl2ZFA1bTFCOXd1TXdpQWpWeHR3?oc=5",
+   "source": "Yahoo Tech",
    "kind": "industry",
    "image": "",
    "published": "2026-11-14T15:10:00+00:00",
@@ -751,6 +1226,15 @@
    ]
   },
   {
+   "title": "China AI Data Center Construction Boom Faces a New Nvidia Test: What Next?",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOb3lic0tMZEZCUHhDWkdwNlZFeFJpbXBXTkpxTXU3ZDlkWlBmbjFPLXh3SG44aG53d3ZtZEFXR2Frc1hTZU1sUWZHc2JZa3NaSGVtYTJWc1dmbXlQcmRoUFJkZGF5dDJQXy1KZG1rNEFtdDhLVHRJcExORUNQQnRqRFR1QzZLVVEtZThmQUZjTW93QkZ2R2F0THV1MWJSOVNRUDhjQS1paDdkRW5kUzdJ?oc=5",
+   "source": "Construction Review",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-14T13:41:18+00:00",
+   "places": []
+  },
+  {
    "title": "Labor shortages threaten data center construction schedules",
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxObmlDRWlPNlM5dlpNN0VjeDlCdXotQkVHWGRfLWJ5ckpOR2l6Vzd0N01lRFhwRFZ5SE5mM1hvbmY4dzBQZWRIVTc5Z05jSjB6U3BNT0VIYkdEbjhLVkpDS1VRRmVINEZBZnFfQ25KUEFOUnJtQTljOFpfR09aOFZFc1pBUmE1dGhocXRuTUVZWnQ1SnQ5b3B4SkhJSGJ6NGdudVBFVnl6NDkteDB6eVBFemsyanpoUThhVlF0NnRsZkFIUmRVY1ZfVEVEUGFkb0JrZlVBbVNENjRPYlF3dDRnWndRX1ZRUFNE0gHsAUFVX3lxTFBESHlFdGVUQ3NpamdIQkdhTHhDTzlYaVAtWXJqLWZYbnhmckF3WC1ySXFOWXUwUndlaFZJWDdpZ2cyRVJLVWxHRmdiRDZsSkNYdU9vV0cxaG0yU2liYnVkREh5YTc0QnlYQkt0YlB2T25jc1lzd0poclVOOGgwa1VrZjJxVnYzR0wxeklkVXpVT0FZREFaXzF6RXJrQzJnOFVDdHQzamc0M21KRHRqNUNONDJNTEhNOGM3VXYyTkN4cU9ZU00tRTdrRF9vVFpqMlRaSE1vZGxrZTJNejJCNTN2aENfajdWejB6bGpl?oc=5",
    "source": "ET Datacenters",
@@ -760,12 +1244,12 @@
    "places": []
   },
   {
-   "title": "AI data center opponents cheer midterm results",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZVFGQTNSX2NpZVZVU0VCRmFBd2lyMF9GMjJJbXBhQTA5MFYwczkyYk9LWjh3VnJOWjhzeS1ncGhBUXlNd1FNY01hSHNHRkNyXzFsMVBMVmtYZHdGMEhlYUdoamY4QXFIczVqM2VuNUZhOGQxa2hFd3NwUXdWb2NlTU5PZjNUa1BYaUh1cGNwRHZOYXJjVGlpNi1MbWw3TFlwMEJvNG9ic3VHUkx4VmxnTHNyQU83amZ4VkZTUFhyMHlyZkllUm4ta0ZmdW0xLXlM?oc=5",
-   "source": "Toledo Blade",
+   "title": "Syntys begins construction of 20 MW data center in Qatar to support AI",
+   "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE1pRnpzS3dBVHdwczVIaG4ydm9iQldhLVA2ZFB6akpjRVpNUC03Nmh5ZlhzTmNla0hoeUoyMXVhWQ?oc=5",
+   "source": "jawlah.co",
    "kind": "industry",
    "image": "",
-   "published": "2026-11-14T11:30:09+00:00",
+   "published": "2026-11-14T11:51:21+00:00",
    "places": []
   },
   {
@@ -830,6 +1314,15 @@
    "places": []
   },
   {
+   "title": "OMAN AWARDS TWO GREEN HYDROGEN PROJECTS IN DUQM AND LAUNCHES ROUND 4 GREEN-POWERED DATA CENTRE HYDROGEN AUCTION AT COP31",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVGhVNTJVQVdzVWtpN0ZjaU5ZQzZiLTZTQXlaWXBaTnY3MnkwamV6R1lRUFFaVkhsUE5qU0lyTkZkeENSdWhxOGJfX045cFBnUHpzcjl5Z1pjQnNOS214NHlYekV5OWRCR1lodF9NY3J3aFQyRV9UcWVWZWFVejNxai1OeGw3di1ISkVXMTdXNUszaDY5ZUlibVJLSWh5QktveXR1WlEwN19CRHUwRDBldXQ0ZHNYa0dzOXFIZTRrYlh2UWhwOFl0NUwtT2txdWg5aVdFdEVBcktlQ1FFWmxRQmNsYmI?oc=5",
+   "source": "Hydrogen Central",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-14T05:47:15+00:00",
+   "places": []
+  },
+  {
    "title": "UAE Business: DAMAC targets 10GW global data centre portfolio by 2027-end",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRWVwWVhvMmh1VmhkMGI4VVFIQXgwQWYtenhUVHFFT3djNHBFQTNyMVpYZlczVzdjTWtidzRGZXc2Q2xaYnlPb0FDTHF5UUdUSjlOZEVvX09DT1NQNDh3Nk5vemJOd2hMQ1VWUU1neVJYVm9HalhlSjRJd0NpV1ZyVWpSeG93Y3NHcDFQUVI0d0o3YUo4cVhCR3ZJbkE4eHpwLWM4?oc=5",
    "source": "Gulf Daily News (Bahrain)",
@@ -845,6 +1338,15 @@
    "kind": "industry",
    "image": "https://media.datacenterdynamics.com/media/images/NTT_docomo_shrimp_farm_-_Tokyo_Gov.2e16d0ba.fill-750x500.png",
    "published": "2026-11-14T05:00:42+00:00",
+   "places": []
+  },
+  {
+   "title": "Supply chain bottlenecks challenge AI data centre expansion",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVG5FNWZkQVZFUldySDd2VXlJSUNJMW11Wl9jUlZwRXR6bWNIcERvSV94NkNBU2xUYzV5am5vN2tfSlh4N1pjRXVuUkgwdG5PY2lTOUN6REV0cURDelk5S2k2djY3czdnVlNRTzBlN29FVmsyb0RSdl9fcVlNUlhKVHJoRWFPdm92ZnVWR0ZmaEZBZmdwdHJjX1RCTTE3dWZ3N2NPaEtQVFNCOGxuU0VRMzc3MEdHQmxZLUR1SE1MWEZJQXJfb2tYQWRhT096MEc5elNkR3EtYTlHeE1DN3dtbVdXaDhSTDkt0gHsAUFVX3lxTE1UX1ltZ1p5TEdxNVpaY0FkNmNKdUc4NUVPeGZjcFdBb1lzOGI1V3RDVmxmdTUzU216dllubEtsU0hsX1Z6U3lCVHdlTmZENVVWTWJjcEl5RkMwT1ZucFphTTVEcjZueGxxcDlfc1NLT3RkZkN5SXJFNDhJLU5JbEUwOExHY3FxUUoxOTRQdWM4TWVmMkJoTVFmNVoxMTBJOFpYS3FudGQ2Ty10MjlPYXl4ekl6cFdPeHNOMnVZT3pqRTlqZTJ4aWlHRTZzMEFJTE1sY1pIRkZVWDJsblFFVmxmdldnWFJlNDNwbm5u?oc=5",
+   "source": "ET Datacenters",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-14T03:44:05+00:00",
    "places": []
   },
   {
@@ -979,6 +1481,15 @@
    "places": []
   },
   {
+   "title": "Amazon revives deal with troubled data centre venture backed by Rick Perry",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORUJReUY4aWVzV1dsSmNsdDlBQ29HTTBlZEFTaFRGSmlPX0FnOWZwZTdwTHRBNmY0bV9kYWRKU0hVaDdTOFdDcFF6Ty1SVEZUMFdDWUJqNjFQcnMyTk1vR2QyM3lvZXk3RXlqVzhpR2NFZXFkY1NYcnNnOVJyYlU1dlJnaVI?oc=5",
+   "source": "Financial Times",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-13T20:40:40+00:00",
+   "places": []
+  },
+  {
    "title": "Amazon officially breaks ground on Jasper County data center",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVUFDaE5MR0FRdmNwUUtmQXdsOThLR2RpajVDTWJrNXBNMWJZQ3drcy1obzA1T0NOS0JkMW1nX1JZRkFnVlJ0dzRueVZGTE9LelBuaE52Z0V0bnY0YXZkQk1kUkhxdkVMZG1wMk5QMWI5Qk14ektpeVVlWVZoWXdXRzNsVUlSOE5RNzh0Skl6T042Zy1jdW03cDRPMmNaNDJoSTY3N0Vn?oc=5",
    "source": "Chicago Tribune",
@@ -1033,7 +1544,7 @@
   {
    "title": "Bethlehem data center approved despite resident opposition",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQajd0MllnWEZSX18xYnRic1E5UWhpUDRZNWh4N25UYVZaNkFjeVZJYnVXSlFJZF84aEdyWllWQlBrVUNLc212SEZ2aGZOU0ZkNXVQbjVuMktGTEJPUk1sVGl0QjRhNURTX3BScC1qako4Mnd4cVBrNmMzUUJoSlV4dlhIR0Q5R1Vfb24wZGtxWlE4SDBOUzZGWXhlZUM0UFBKTGJRNGpMUnFvMm1yTzRJcVh5eXY?oc=5",
-   "source": "Lehighvalleylive.com",
+   "source": "LehighValleyLive.com",
    "kind": "industry",
    "image": "",
    "published": "2026-11-13T17:56:00+00:00",
@@ -1153,6 +1664,15 @@
    "places": []
   },
   {
+   "title": "Surely data centre construction is ripe for robotics?",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOHpEQlI2Q1pTMm8xZDBjLWJhTm9hSFlwUmo4Q0J1R1FFS2NiTUFrYnlMeFlaMkJKNm9DYVE4cWsycWRKMjVfdFVUQ2dVRnZqdEh2cWd4aVhXT2Q4T1B5SE92eWQ4bUc5djlHNVQzT3B6ek5IX3ZjdFlGcms5bGlGLVFGY19tYWFqVG9KcjBRMUZDUUZX?oc=5",
+   "source": "Construction Management Magazine",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-13T16:17:32+00:00",
+   "places": []
+  },
+  {
    "title": "Syntys breaks ground on 20MW Qatar data centre",
    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5uVW1meEh1QXp3Ym5QbnlmTXRpMU9qOXdObEJ0Rnp3RGJGNE4yZldYN0kzbzdNUXQ1SVIyTEtlSjlJZzNlSkg4Q3NQSDU4RUtrV3hnb1EycjZDR2FGNkhWWGpYbmhHaUdHelRKNDU4OHdKbksyRHc?oc=5",
    "source": "MEED",
@@ -1231,15 +1751,6 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-13T11:34:07+00:00",
-   "places": []
-  },
-  {
-   "title": "Why India's AI Ambitions Cannot Be Achieved Without Liquid-Cooled Data Center Infrastructure",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQREZObDh1Yk9WckhOci1iaTBEaF9WNzNHV2lGeU1Yc2lEVG5yYnpjMGxWQjNfd3BEWnNUSEN4dUdmNk1KVC1ORHA2MFViazVqREFOSWt6TzRCcE9XOWc2S2lUNWoyUjVocjBDTU8tbTVLOXdrNmVIN25jZjFocUYzbEp6VVJDU05WRkZweG1qcFBGakMxTVJ0bWFwNWkxdm8yei1nTHpMaGxBUDZEWl8tby1DOTBzSzZlNHZVdVhlY1FIUQ?oc=5",
-   "source": "Nasscom",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-13T11:13:12+00:00",
    "places": []
   },
   {
@@ -1499,12 +2010,21 @@
    "places": []
   },
   {
-   "title": "SpaceX to invest $74B into data center construction projects in Texas, Arizona",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB3NkIzb2NCTURKdnV3bGRCRWJDV1UzNGFaUmhBdlkxMlp0UWJMSERaTHNfODVsRWNQa01DSWdaUk1kaXUtcFcyREdVSkpUeEk2cGpTcEJ3NU5zY2N2V3dmMm1oTTJaV3BQc1AwVndkQ19jYjlWZng3dkRiRnp2dw?oc=5",
-   "source": "AOL.com",
+   "title": "St. Joseph County Board of Zoning Appeals approves sound wall for Microsoft data center",
+   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPd3hjbGJjamxrUXpScmJjQjZrcXNxU0c5UkRSR0NydHAzbGJrbmxTd19pNXJhQUdFSTZ0dTVHNlpGcFBZcjBCdDlLRVR3Q05WYnIxRDFpa09jSGdLVE04RXZjamRzalFnbFVBSHFNUkFvTlprcUxUbmJTRUhpYVVMUm9QdDdZbGo2UFZseDUtN3pPOGsxeHlORFJMV2VCOXNfcmY1RHFSUUlhbjk4NXdtdkV5Q0Rlc0Fhd0ZTUlBPYzMteUpfWEVXUTFwVnJFX3IxaTgxblp2eHBjS1JIbHViVElVc1NEUWZwWGZKS2w0TjgtaVd1TXN1SURmZnJFNjc5MWtqaUJ1QWJGUDVn?oc=5",
+   "source": "WSBT",
    "kind": "industry",
    "image": "",
-   "published": "2026-11-13T00:31:00+00:00",
+   "published": "2026-11-12T23:47:32+00:00",
+   "places": []
+  },
+  {
+   "title": "SpaceX to invest $74B into data center construction projects in Texas, Arizona",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaFNpbVVVdk1KRHp2eVJ2RDJ2TklOaVVtWnBDNDFNMkZqYnJRNU9lM0N6WmpoaHlXRmtGYV8wVUl5a0s0bmhiSlFScjlIbWZiTldTRGRrOHVHYmtuc1A5bklCUkNKYlFGWDVhSmxWOXV2SG04b0VIZFF6Z0tBUWNBRUFSU3dNWWVMbEN1TzJBMFo3ZVF1?oc=5",
+   "source": "Yahoo Finance",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-12T23:24:15+00:00",
    "places": [
     {
      "name": "Arizona, US",
@@ -1513,15 +2033,6 @@
      "precision": "region"
     }
    ]
-  },
-  {
-   "title": "St. Joseph County Board of Zoning Appeals approves sound wall for Microsoft data center",
-   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPd3hjbGJjamxrUXpScmJjQjZrcXNxU0c5UkRSR0NydHAzbGJrbmxTd19pNXJhQUdFSTZ0dTVHNlpGcFBZcjBCdDlLRVR3Q05WYnIxRDFpa09jSGdLVE04RXZjamRzalFnbFVBSHFNUkFvTlprcUxUbmJTRUhpYVVMUm9QdDdZbGo2UFZseDUtN3pPOGsxeHlORFJMV2VCOXNfcmY1RHFSUUlhbjk4NXdtdkV5Q0Rlc0Fhd0ZTUlBPYzMteUpfWEVXUTFwVnJFX3IxaTgxblp2eHBjS1JIbHViVElVc1NEUWZwWGZKS2w0TjgtaVd1TXN1SURmZnJFNjc5MWtqaUJ1QWJGUDVn?oc=5",
-   "source": "WSBT",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-12T23:47:32+00:00",
-   "places": []
   },
   {
    "title": "Data center developer sues Ohio city over ban just approved by voters",
@@ -1614,15 +2125,6 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-12T18:33:10+00:00",
-   "places": []
-  },
-  {
-   "title": "OMAN AWARDS TWO GREEN HYDROGEN PROJECTS IN DUQM AND LAUNCHES ROUND 4 GREEN-POWERED DATA CENTRE HYDROGEN AUCTION AT COP31",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPaUMtX2NkeG5RVEdTOXBGblNPaU5OS0QyNmViY05iM1hYZXllWTd0M2JKM3ZRSFdpaklieGZ6ZEZUd19fM0MxSFFGYXluNXlOMkFTbmNvakZCS0VXMHlMaXNjR3JWNXR0d254TXBKVVRobnlIRnhjMEthaFdFUDFPYWZFc2o1ZGxRTC1IeFhkOHdMXzJEamJ4NV91VmhMaDVvVm5BQXlxWGlPc1V3akhacGRubE04WUVsT2JKRXFSXzN2RHVvTndKcm1LaEZYNkx4MFpVUkxLVG1SU2gxNWFzeXREc3VtV3oz?oc=5",
-   "source": "TNGlobal",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-12T17:57:48+00:00",
    "places": []
   },
   {
@@ -1747,7 +2249,7 @@
   },
   {
    "title": "Abu Dhabi data centre leaders unite to meet soaring AI demand",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVEsyMFNhaVlrblM0bjJmdGl1OFNPd3M4eFEwbUFRMFFnTDdoVEMxbVVLRWlIVlNsM1liU0h6X2dRR1BpYW5iU1ZraDdyUW9mUG43RV9uWHpFZ2dlRF9Fc1NNMV9vMlE3eUhVVVMxZUQzdkRKT1I1UFk4VHl2ODdKYWhILUUxbjZlc1Rac0stQkgwa2F5UUh3VF9uM25lRmIzeFFkd1Rkd0vSAagBQVVfeXFMTVRLMjBTYWlZa25TNG4yZnRpdThTT3dzOHhRMG1BUTBRZ0w3aFRDMW1VS0VpSFZTbDNZYlNIel9nUUdQaWFuYlNWa2g3clFvZlBuN0Vfblh6RWdnZURfRXNTTTFfbzJRN3lIVVVTMWVEM3ZESk9SNVBZOFR5djg3SmFoSC1FMW42ZXNUWnNLLUJIMGtheVFId1RfbjNuZUZiM3hRZHdUZHdL?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNzVxNXdhTFltWmtRdzJyYzN0VnRRWGE1bnVCa291TzY0dFc0aVNaSHdDNFZDWGdGR0p2RUtBVDFlcXU1NDktVUFDUXBHX21XelJJRWZoX0N5U0pBXy00QTRBOVYtd0lmVklnSkJSbG96aU4xM2lpenhVRWNuNjBkd3Y1RVlVbTJiU1BuVHkwaUVESWoxYVdSaFRiMDVGRG9y0gGoAUFVX3lxTE1USzIwU2FpWWtuUzRuMmZ0aXU4U093czh4UTBtQVEwUWdMN2hUQzFtVUtFaUhWU2wzWWJTSHpfZ1FHUGlhbmJTVmtoN3JRb2ZQbjdFX25YekVnZ2VEX0VzU00xX28yUTd5SFVVUzFlRDN2REpPUjVQWThUeXY4N0phaEgtRTFuNmVzVFpzSy1CSDBrYXlRSHdUX24zbmVGYjN4UWR3VGR3Sw?oc=5",
    "source": "Khaleej Times",
    "kind": "industry",
    "image": "",
@@ -1757,6 +2259,28 @@
      "name": "Abu Dhabi, United Arab Emirates",
      "lon": 54.397,
      "lat": 24.4512,
+     "precision": "town"
+    }
+   ]
+  },
+  {
+   "title": "STTGDC India Inaugurates 22 MW Data Centre In Noida As Part Of Approximately 200 MW Planned Across Delhi NCR",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNaTdxN1NfaUt4UThIaW03UHZiNjRmRHgyNTJjT0gzWVY4d2VPWDZhanhPTExCT3BOMHQ0R0J0c2tJTEFlVnhveXlldkUtcWgzcDllU1pLUW44WTNaa2pLQUhZbExBbktnZUNFdmt3LVB3dXpZNmkxblhkUXpvZEJSaW5NaExLOVZWZXZGalBqT3liU0FqT0pmS3JlajBLR2hoeGRxYzlfMU9ncFRCUXpfNWNyenJTZFctLUYwd1hpN3NJdDhpN1Zob3U4R3p2Z3pBX3pKaGRCSnVhT3d1QUNjT0lybWdUR0ItWHJYRHo1VdIB_AFBVV95cUxNTF9oSUUxd2Jkb2NWRmUxaDBZVHp3SzVhdnpPY2JhU0I4UFNqeDVrbHh4ZUUxRjRmUlhYSWRaZUxVSlFKaE15NzM3SjVLVVNqTm9GbmRjTGFwbG1JRVVVRV8tUVlOVWtseEFNQVJXN3diM3BWcENiUEd6NGhHb0p3cGxLemp4UWVHSkFBaVotOEV6M3RYMEczZjBEbW81bVlVWm00ZnA5NUJYTzNxOGthMHpuWUI1WmJxbWdKdTdES3NHSlJmTkNVZ2k4RTR4dkdYMzBEVVIwZlZSNlg2UEp0QlJQX00xQkd4UzduaktYSWpYVndEWWxYWFlFWV8?oc=5",
+   "source": "Outlook Business",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-12T14:26:07+00:00",
+   "places": [
+    {
+     "name": "Noida, India",
+     "lon": 77.33,
+     "lat": 28.58,
+     "precision": "town"
+    },
+    {
+     "name": "Delhi, India",
+     "lon": 77.2315,
+     "lat": 28.6519,
      "precision": "town"
     }
    ]
@@ -1801,28 +2325,6 @@
      "lon": -111.7,
      "lat": 39.3,
      "precision": "region"
-    }
-   ]
-  },
-  {
-   "title": "STTGDC India Inaugurates 22 MW Data Centre in Noida as Part of Approximately 200 MW Planned Across Delhi NCR",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZkYxYk9CcmVGOHhDNE9rWFZPcjlCZFU5UlF4Y0RKSDNYMGtsSlY3TUoza1AtSlAxcFY4Uk1QWTVidGltdkRscHhYMGVid1lJbFhwQjROTlJvSlZTYVkzSEdjYjRXcXFiNGdkbXpjNHZ3MW9XRkx1OURMLTRrVXVZZzMyQnZwcGMxdkk0bnNSM0lqX1lhSXZkajhwVThEaHFZMTZIOXFJa21BZTJ5bXU3VjhRdGlheTBBaDY3Q2V2dTAxcG1GaW43OFlXYklqS1JCMTBoWlB3cDdMOXBrRlF2NdIB5gFBVV95cUxNSVdfSXVwY1M0U0haZDVLZFJUZl9qajYxTlQ2eERuamV1OWFvMlc4c2ZMa3BLek9vZDRJNVFNYmJXNGJITHZHZUcwSXJCWWh0UlZNVzdxOWdSNnotUHVTbms3NzIzanpLVWR2OGRqMkNHU2pGbGRTbDR1TXp0ejdRaFp2TDdvbEt6djktTWhaN3RrRk9DRlFDR0pyekF5SmtQXzQwMEowaFBRRll3UkdJTVJYdXM2MmNpTm0wZF80VG03NVRRckdaRmdNc2VpaFFybEdybnRBSFFZNWNTYkt0aUZiajQ3UQ?oc=5",
-   "source": "TheWire.in",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-12T12:40:31+00:00",
-   "places": [
-    {
-     "name": "Noida, India",
-     "lon": 77.33,
-     "lat": 28.58,
-     "precision": "town"
-    },
-    {
-     "name": "Delhi, India",
-     "lon": 77.2315,
-     "lat": 28.6519,
-     "precision": "town"
     }
    ]
   },
@@ -1879,6 +2381,15 @@
    "places": []
   },
   {
+   "title": "Oman Awards Two Green Hydrogen Projects in Duqm, Launches Round 4 Green-Powered Data Centre Hydrogen Auction at COP31",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOcWZQWFlFV2tjbXFsdHN6czBuVVNlVkFEdk1FX2lhVTVnVEFLVWhDMzI2TDJWd3hpR2Q3b0NLSDV5aWkwVVRUV0s1MmVJbHpIcWJKNUtnSFA5NFlvT1dwbmdJbEZxREJFdlZITkhwYlNnUzNOaXU5NUtyOFl4WFBCTG9TYWs0TnNsN2I5R2ZPTUtqdWRuQWU1YjBqUUtUOUNxVGdBOGVMb2JncXNxUXBzX29yOGZRVlJrd2JkUG9XdWVSbEFIVVFtYy1XSGU3TndwaVRnYkhMQ1I5dlA5RzRuRXNoRVpmcnlxc2c?oc=5",
+   "source": "Fana News -",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-12T09:54:45+00:00",
+   "places": []
+  },
+  {
    "title": "Malaysia moves to tighten data centre controls amid scrutiny over Nvidia chip exports",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOVlnLTdCV3pvZHplcC1XaDlEZE5GTUtCV1NvWFVsWnd1MUVqeXlCWXlPT1g5djBNUTlOd3E1OTkyc1E5eDlhV1U2RmJ4WDk5dWFKWjNDbGFLM1hNYTZSbFZfbTV2U2tVdi1LZmdrSXI5ODJ1UTlZanZ5dGF0blJMbzV4bjRLNEdlcTZ3cWNQc3JLbUtoVHZVNUZ5NDZMa29TbTQ3bDFwYk0wTzVYSDRYZk82T0hEaFk?oc=5",
    "source": "Newswav",
@@ -1894,15 +2405,6 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-12T09:27:49+00:00",
-   "places": []
-  },
-  {
-   "title": "Oman Awards Two Green Hydrogen Projects in Duqm, Launches Round 4 Green-Powered Data Centre Hydrogen Auction at COP31",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBUYWpKOTIzM0JlSjhwVy1BN0NJMFFNdjl3SlphOXlDRTRPekJTZnk5UVNHTmRCajc1OWZTbGNDY2FaT2pudU16WnNWRmFhT3MxQzJTTm5ic1FyY1Bn?oc=5",
-   "source": "وكالة الأنباء العمانية (العمانية)",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-12T08:39:15+00:00",
    "places": []
   },
   {
@@ -1939,6 +2441,15 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-12T07:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "AI jitters erupt after Democrats threaten data centre build-out",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE14NG9LYUM2YU9vU3FlWXdpb1BMNnp0ZVctemVXWUpNcUlfTUJwaGdZV2JxYl9sdDF1MWx2UmtfMTVpRnIxZmtjS0tqZVEta2h3LTEyMGcwR3ZITGRjbXBpSU0zTlctU0RhWDByOEJ4cko?oc=5",
+   "source": "Financial Times",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-12T01:00:26+00:00",
    "places": []
   },
   {
@@ -2127,15 +2638,6 @@
    "places": []
   },
   {
-   "title": "Boise City Council approves 6-month moratorium on large data center construction",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSUNOSG03MFByMXJEOGhlTmxEYVBfbG9fS3pUM2lySUNsaWw4V18tZ0lScmlNTDR4MzA2R3dwQWVZaGpQZThiNmI0dmlKaVRmRFZ4ZnB1bUMtc3JtTXhncFFZdTRBdzh2WFRCYlh5NWNOWUFOczNnbDJKeUtsakxYQkFiSENBZ3JnX0Y2YmFxbXFfUHNoc1V1RGwxV0M2dnlvbG1oWjJjUFkxWVkyVFVXUHBESjN0aTh2a09vQw?oc=5",
-   "source": "Idaho Capital Sun",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-11T04:50:49+00:00",
-   "places": []
-  },
-  {
    "title": "Japan's Akita AI data center seen anchoring tech hub, boosting tax revenue",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZ3RMMlNiR2NMZ0QxZTJrT0kxbnExMlo3S3R4djVYZVhEdXJuanAzQkpQSWZReEpXRUR2TUdwcTJkWERCb2VlWEVUeWRIWDRMSzZfc042WnVYcE9XbFJIN1FpbUdueVZDTTl0a1hlazBFMTJEM0VBTVl4MnpCcUpCTHVpbG5ZZmRuUG5rMk9vdnJnTmpIXy1PQUlVcDUta0Frc3RreFVEMkhzNWI0T1JZNUJyQzhZZmh6ME90WEcyUWZWY1Q0Y0NhZlhCdFNUZFNIWXFXbTlHWFA?oc=5",
    "source": "Nikkei Asia",
@@ -2150,6 +2652,15 @@
      "precision": "town"
     }
    ]
+  },
+  {
+   "title": "Boise City Council approves 6-month moratorium on large data center construction",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ2sydXB3SXAyTnBVazNaY0hJMGVYdjhsVi1FM2NpenB5V251bWI0ZG9JXzU2YnJ4WlhlSnRsZXlWR2RGLTB0RkJMZEU0c3VLT3FOOVpSdVJ0cTRRZmdvMDZUYjFrZ2hLY3FTNmpLYzdYX3VseElWdFUydHJXQTZHeG9LV251d2N2NlNIVFo0aE1tX0hPQjdmdFVDRFdwc2t4ZXJDQnNCbUo2dWotNERlcm9MQVVmWFNCUTVJ?oc=5",
+   "source": "News From The States",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-11T04:46:56+00:00",
+   "places": []
   },
   {
    "title": "Declo residents bring heated questions to open house on proposed TerraVolt data center campus plan",
@@ -2222,6 +2733,31 @@
    "image": "",
    "published": "2026-11-10T21:57:36+00:00",
    "places": []
+  },
+  {
+   "title": "Can Malaysia Sustain Its Data Center Boom?",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQaDMyX3lzQmxSSVhHZlF4VnNlWmdLa0psWUdzSEstMmpETm9wQ18wQ0lMejFSUmVZZWREdndjdWo2ZnprTW50ZGh2cWtNSVh4Tm5xQkhmUFRiSFpmVVBqQkJFc3VyOVI2OHp4cTQ2bE9XT2w1NG55b3Ywb1pMbFY0RGxZRWRsLWF5Y0FDYks2VQ?oc=5",
+   "source": "International Relations Review",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-10T18:04:51+00:00",
+   "places": []
+  },
+  {
+   "title": "Fluidstack begins construction on a 99-acre AI data center campus in Wythe County, Virginia",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQX25aT1Fxd19GcTNtVHlEWFotcUdBdHUtY1E4UDJGTVpPeHlfYTZYUUcxYnhGMm9oalRnb0I2cUktRmdqRnctN2pMb3FkbU1xWDZjZWJIMTQ5VFZ1dEFjTDd1aXRZRjZ3QUhPSGJPbjR4aS10OEtkd01BcER0RDlJNWNvUXN5R1AtdWdKaE42Q1plZXFXa3NqTU1PeDFfUXRIcDJzRXZtdWlfUi1JdDFTaA?oc=5",
+   "source": "MLQ.ai",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-10T16:54:22+00:00",
+   "places": [
+    {
+     "name": "Virginia, US",
+     "lon": -78.8,
+     "lat": 37.5,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "900-megawatt data center campus proposed for central Massachusetts, backed by Kraft Group",
@@ -2300,11 +2836,11 @@
   },
   {
    "title": "Bursa Malaysia ends lower as banking, data centre heavyweights weigh on sentiment",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdGpSdzZQeTh0aW9UbVhWTjF6b2xqTjFBVWhHOWlYMXdqZ0U4UUluSkhIeGNtQXVUemhReXJWTlI3aXhTUElRZnZQZmlnaFR6OEZhMmhsTnZzbUF1Qk45bFRkR1FtaUM2Y29qd3pBUW1SUkpnd2lXMDRQVDZmMDR2NVE2azN5VVBVdzBmQnZNS19ZdUtTSHZ6cW02cnVjS2lQakRZdWJYVEpLeGJsUUlKdlplR2h5U3JfZEdJajUtYUdlT3dKQTNj?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYWMxWl9ZX2pxcjRfNWZqeWtyaDJkYW5URmVlT1ZoNjZGY1kydXdOa0xZTDUxN0plLUJVU3FHYzNaQjJ4Q2o2WE5QMEd6MWIzUWZ2MERpMWV0UHlveXM5RWgyekY1MmtBSU0yVF9rekNZMURpMGtwT1h6eFhBeV8yRzlvNlJfeHJrcWNlbk5fZGNLWkVBcG1iV0dFVXJDVGRfMEYyNkdHeVl6QWU0alBHajZ1TEkwMVN2ZmlWdkY2SC1VUQ?oc=5",
    "source": "The Malaysian Reserve",
    "kind": "industry",
    "image": "",
-   "published": "2026-11-10T14:21:51+00:00",
+   "published": "2026-11-10T14:21:05+00:00",
    "places": [
     {
      "name": "Bursa, Turkey",
@@ -2595,6 +3131,15 @@
    "places": []
   },
   {
+   "title": "Johor targets additional 5 GW solar energy by 2031 for data centre demand",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMXRYSmJPMlVkbVhDV2tkb24zaGpXcDRhbGxFamFTOVdSRTI2X1JvYWJqWGxXalF3bTBFNDBjdkZubWlnMnlFNjRWUGpPZzhzejh1UjhzTWxXTXQwbU5EYmhFTjM4X3gxWjdpZFBhUllzZGxVUlhZazJfLWxreTlmSWRJVTZuSnJCXy0zb25yd0Vic1RZM3lmMWE1X2J4ZXJlanRkSlRxVDVGY3JGS2JQSg?oc=5",
+   "source": "The Sun Malaysia",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-08T14:49:56+00:00",
+   "places": []
+  },
+  {
    "title": "Adani Energy Solutions Step-Eleven says parent has funds to support power licence for proposed Noida data centre project",
    "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQWWhidlozNEFFcEJ2SzBWdFpjc3BDUnR4c3Y5NTJGUlBuY3RHUldINFdLeEdEMWtqbEN6S3otUDR3WFE0b3FsOVFCcEs4RHpFZzJLTlZ1Q2NkaW5tcFg4LVRPYllfNC1VWWh2X1JsNWJSbjhkMktWbjFlclVXc0xqQWV0SG9rcXJtcnFBOXY3TnlBMElSaTFLdUpLazV3ZGdwS08yWVlBSDhITTl1WngtNms2djJabVQta2k0M21DTlNLV0NWQ1c3MXhwUDdESUFVY1BzR1U3cDd2alpFQ3htRER1anBvUzlFdHdvZkthYVVmay16RTEzajE3LURpMkx2VmhOY1NmRjd3ZGPSAZACQVVfeXFMT1QxODNRMklkc29SSjM1aEVzQUlEdUV2WDRvdDF3NmNmcmR4YmNXVlJlRV9RUFBqend0Ym50SHFHc0todFJlWmlZWnc0RTMzelFSN3Zfajdaa0pvQWZWOXprT3UwQkUxdGs4TTNfdEY3TmJDdFM2XzREaXlaT2ZXSWxKb2VYRTRyd3c1M2NvRUIxczJXR3NNNGRpcXh6TmJGMmR4VDZ4N2xmM0k2bmpSY1lmbll2aWpOaVlCYkhQMk1tTU5DbTRDTHRFanRjNEhQQndFTm5qMTZoazZITUhmUWFCQlVpTE5aM1VSQmp4WnZIVGpBRENVbGV5OEdkblN1YUhaX3BfU0VCQzg2NFQwc2Y?oc=5",
    "source": "Livemint",
@@ -2640,15 +3185,6 @@
    "places": []
   },
   {
-   "title": "Why global investors are betting big on Nigeria’s data centre market – Rack Centre CEO",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNR3VPekNfU2wtc1dyU2RQTlZncDlFVVJSRkVlZDFJbEpEY0NzMEhNaGh6bDI3RUdpX2d2bno1cVJqRDB5MVNNUWJzZFJBYzFyVXFqREUzMlpKc0NDSnZ5T1h5WGNHdkdTaTlxMTVwanJlMDg1dHEzWUxwSUtxSjZLcDdGZEY1VHpKT29xNWhvdnc0aC1fSGR6Y2tUekVVcWkyYXRLLXAyVkowaS1SaFRTOWxTVnNxckZqOElkRA?oc=5",
-   "source": "Nairametrics",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-07T10:21:53+00:00",
-   "places": []
-  },
-  {
    "title": "Drax data-center campus is first deal for Brookfield and Qatar's $20 billion AI venture",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSzUtNGlkTlRFMXRiVDdMY21zWlctSWxsamtwUndSaFhpci1uSXZseERTVVpOT2FlVmZjWDhFb3VYTFFwUm9sQlpfaUVUWnhvck9kSUhvcHJtNDVyRkpzWHNtMUFES280cU1ycU9RTEg4VHl2WnZlRERTWFd1aldpcUY4V1VqR0c0d1ZLV1lEOEdSdVd3ck5naGNUWFBUOUdaai1zTzJpcFJVZw?oc=5",
    "source": "MLQ.ai",
@@ -2661,6 +3197,15 @@
    "title": "South African activists push back on data centre rush",
    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTkdZSjF1NW53Tmp6YzRobW12RF96WnRCYmNUNmloanlIcFJZOVIyZDYtZDA3VjZobnVNblhnVlNXN3FiNlU2MS1HYVNCOTZqaFJqUk1RM3NlaEpWX0dNSlBsaExlVzVwZ0RPckFfc3NZdGRWQkRBTmNrcE9nS2I5cFMzampacEhzUWdlT2p3YUxacGluUGVN0gGcAUFVX3lxTE5pRFFUUjVMcVZZNTdmTHRRSHlNSGpEcFcxMkRWWWxYQ3Q0dV8xSmU3ZER6cERwRDh2bjZMNmdEZkREUmVYb3lTT2RaeVVlX3laUFBnZ3R5cVZGS2VSaFlrRGRFbmxXQ0FvWnJPUGMxYXdRaEtoRzBNMmhKRUY5Wm5sTTRwa195Umh0aHFPaVlhQnlfY0p5emhJTEY5Tg?oc=5",
    "source": "Africanews",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-07T08:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Why global investors are betting big on Nigeria’s data centre market – Rack Centre CEO",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNR3VPekNfU2wtc1dyU2RQTlZncDlFVVJSRkVlZDFJbEpEY0NzMEhNaGh6bDI3RUdpX2d2bno1cVJqRDB5MVNNUWJzZFJBYzFyVXFqREUzMlpKc0NDSnZ5T1h5WGNHdkdTaTlxMTVwanJlMDg1dHEzWUxwSUtxSjZLcDdGZEY1VHpKT29xNWhvdnc0aC1fSGR6Y2tUekVVcWkyYXRLLXAyVkowaS1SaFRTOWxTVnNxckZqOElkRA?oc=5",
+   "source": "Nairametrics",
    "kind": "industry",
    "image": "",
    "published": "2026-11-07T08:00:00+00:00",
@@ -2732,7 +3277,7 @@
   {
    "title": "TikTok Owner ByteDance Weighs Data Center Expansion in Brazil",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMlJJV3NKSnJtYXNxRWRUdFRJLWRQWXVPSENXWGFQYi0zV3ZzenZqdXNFNXA3SjFITTZhOG4yTjYyWVFfQWs2Uno2RmdWV1NVc3ZkYzkxWXh0SERLU0cyR3NtelJESnRMUlQxamg0Q1RVeGpXODFFWHJ4NGdqbVdVYlc2ZWFqNThjNjhCT0dpbDZoSm5IdUZ0NVpXLWU3Sk5icW9PQjR5OFFNdjJwVGN3Qkd3?oc=5",
-   "source": "Bloomberg.com",
+   "source": "Bloomberg",
    "kind": "industry",
    "image": "",
    "published": "2026-11-06T08:00:00+00:00",
@@ -2775,21 +3320,21 @@
    "places": []
   },
   {
+   "title": "Brazil allocates $68 million for sovereign AI data center",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQN2ZKUVhlTFB2RUpacUhGTXJCZlVTVTNKS3RzcVd3bXQxZU5sUWQ5cTRBTmNKcWF0T2JMWlh6RzIyXzJKMFgzTTR6LXBZa0NiVUl1czJhQXVZaXNzZHV2NTJGN3o5bFViSW9ZWDdueFNYZ2xUN0daY0p2R0VLSUkwbFVrN2lxME43dXlWT0tTeV9JX18tMWtNb3pCWmJoTmFSMG1OZGRrbXhRNjZIN2NJcXZUbGEwV2I4ZUtzUGpudXE4V3kzeWltOEpjakxYdEVtSVVjZ0Z0YmQyRWxTZ1ZN0gHjAUFVX3lxTE5mWE9tWmg0VVc2LTBxcVFHNExuT051N05sTE01YjlWRmVxbHR0aVZZQmE3N2hVS1FwWU1jN2Z5d2NVNXZBaU9NTVFacE15VDJNc2ttTkVHMHJoenNzZmsyYnI3QTg1Uk8yX0U0Mk1oTjliSXV3c2RsRWtPSXJkODAxcmFkOVZnUmxfOEVMVG5xcnI0T1U0bkRLc2owT01LUTV2Si1wNlNCV2JUeG9KTWVCTXdmUndhVWgyT3htVW1FaXkzN3VwalVLcFg0ME45ejZmOXdaUG53NWNVMlhwZ2pmRW9r?oc=5",
+   "source": "ET Datacenters",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-05T18:01:05+00:00",
+   "places": []
+  },
+  {
    "title": "The UK’s Largest Data Centre Strikes Deal With Its Largest Emitter",
    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcUpPV05DTFRQaGRXc0k0UUFaVnltNHZURmZsNkNYejJ1QVFJaXhzSjFSVHNjYnJXNmdzdmhDbEVMbkg0czdSNWt0SmIzRUVLOUw1TG8teTIxdlFpbl9xbkVEZG9KVU40NkNGYnBpUHNJbWw0NWo5X0ZzSHFtYnBYZU82QlJHUWZ2ZnRtVnhLbw?oc=5",
    "source": "Impakter",
    "kind": "industry",
    "image": "",
    "published": "2026-11-05T16:59:01+00:00",
-   "places": []
-  },
-  {
-   "title": "Democrats’ data center rules could raise costs for U.S. tech giants",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObzFnYzNhc2xZVTBtcW12VnNrNUE5UzZVXzhPdklDRzluWVFKVFhsNWFBQ1FnbWFWS1k0UnhTRUhpcDA0UnhGR2pLRlR6eHNDTXNyZW5EX3NXSEhRdUtfcTNXcnAzU0RBZGhBSFRKbTlkOXlha25CQUF3OE51VW14SFY4UFNfYTlxTUo5bUo4UFZ2YjA3RGRNWGF5N0lxTWxpS3FXOGpyQVZONDM5WURUSjJ3MW1wcEdzd21sSEs4dncyTGVKOTBEenAyTkfSAdsBQVVfeXFMUHNmWTlGYi0xczdXZldwVVJieFZfTDQ2RW1wSEVWS3R0UHBpYVVDVGNDWjBQX21UYlkwVjVFVDZoaE1zYjVkbU1OWURkMmlIZnNfOTZZVGhYQ1BreU8wOTYwMUlZcjJFT2tremoxdTBOTk05c0F2dVNaUUJuT0VmMF91LVdhVlVYVy1GZzZUMlEtLUJ0SmZkOWRpVV9HU1BCdzRXNXJGaHFJaU53QnNLWjdaR3R4WXdUT05hY3VpV3YwblV2b1ZJLVN0eXNRNDQ3RGFYR09NWnAwVkJr?oc=5",
-   "source": "Valor International",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-05T15:05:09+00:00",
    "places": []
   },
   {
@@ -2814,6 +3359,24 @@
    "title": "Google to invest US$15 billion in Malaysia as first data center campus goes live",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVEwxdXpDbEV3ZE1aVGE3WjVmOUpJc0xUV19fRU1GeVRjSndMUU5ENnRIRS02UFRHZTJKSnVROVg0bVpIMC1SeGdjRHJaYkRWRmhXYk9EZXRsYXJkV3ctS1NPWEV1SHdhRWZvYk5QS1c5RmpDblFjcDlHZ3BoZmJpRVljWnFRQ0lrOEY2bTFobmh4emwtMmlRQkkxeHdTbV9oLUVTbzBKem9SZw?oc=5",
    "source": "CRN Asia",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-05T08:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Johor govt mulls treating surplus water from data centre ops for public consumption",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOeC1QX3BBT2RGdnR6NUFPLVdGaWZzVmJPcW52RTFXcERMM2ZhZExNVkRtVk9TTU5UaU9BRVZfM0pFamlGYlJ3UWNTSHBzOEJnQ3B6STd6aVZDRzZyZzlnNTg5c2pCTHpqRDlSaUY5blQ0aUU3a3NHemxld3F4R2ZKcjNSUURYdTE3aXF5NDIyYWM4MUFBVWU0cFNyRmtFWkxMZjNKUmVoeVpzcnFxOGxJYXZiZ3dZb0V5ZXgwMFoxYTR1X0d5OFdmYVhJcVlpdw?oc=5",
+   "source": "The Star",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-05T08:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Democrats’ data center rules could raise costs for U.S. tech giants",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObzFnYzNhc2xZVTBtcW12VnNrNUE5UzZVXzhPdklDRzluWVFKVFhsNWFBQ1FnbWFWS1k0UnhTRUhpcDA0UnhGR2pLRlR6eHNDTXNyZW5EX3NXSEhRdUtfcTNXcnAzU0RBZGhBSFRKbTlkOXlha25CQUF3OE51VW14SFY4UFNfYTlxTUo5bUo4UFZ2YjA3RGRNWGF5N0lxTWxpS3FXOGpyQVZONDM5WURUSjJ3MW1wcEdzd21sSEs4dncyTGVKOTBEenAyTkfSAdsBQVVfeXFMUHNmWTlGYi0xczdXZldwVVJieFZfTDQ2RW1wSEVWS3R0UHBpYVVDVGNDWjBQX21UYlkwVjVFVDZoaE1zYjVkbU1OWURkMmlIZnNfOTZZVGhYQ1BreU8wOTYwMUlZcjJFT2tremoxdTBOTk05c0F2dVNaUUJuT0VmMF91LVdhVlVYVy1GZzZUMlEtLUJ0SmZkOWRpVV9HU1BCdzRXNXJGaHFJaU53QnNLWjdaR3R4WXdUT05hY3VpV3YwblV2b1ZJLVN0eXNRNDQ3RGFYR09NWnAwVkJr?oc=5",
+   "source": "Valor International",
    "kind": "industry",
    "image": "",
    "published": "2026-11-05T08:00:00+00:00",
@@ -2856,6 +3419,15 @@
    "places": []
   },
   {
+   "title": "Google plans $15b Malaysia data center push to meet AI demand",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQTNJNHphRS0wTTFnOVBzNEJya1JURW5DQmxfM1JzaTF5V19MNUQ5bldWdmlYYzd0bnNlX3JEal9faC1nUmVpcjU3SzloMkxkaDdUMVJZdlQyM2Q1cFRtNkhtSnZJeWdlc3ZRbDdmMkpqX0pYcE9pdEJyWlZna1ZacjVoOXlkcU4wX3VJdVNSdVgyOFE?oc=5",
+   "source": "Tech in Asia",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-05T04:43:00+00:00",
+   "places": []
+  },
+  {
    "title": "Solo Network buys 80% of Planeje in bet on Brazil's data center boom",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTEN5djdxZE1aQUVkVWVpV0tiVy1BMTltQng2OFlJYy1TLVNGVzR1NFhqQ1JXYzFwWGl5b19vemh2aFVPYXFvVXFTWjVoakJJdkVIZkVVWjlyckI3QnV3T0NhV1cxRzRIRHhabVhnX3puLVlWWVIyM2JFc0xaM19CQjhNbDhoaW9qME41TkN1eGZIMXRYcGxjS0UyenkzR0NNSDJr?oc=5",
    "source": "Dealroom",
@@ -2872,6 +3444,22 @@
    "image": "",
    "published": "2026-11-04T17:09:14+00:00",
    "places": []
+  },
+  {
+   "title": "NTT DATA Adds 12 MW of Data Center Capacity in Jakarta",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeFZ3RkdhUVJTem1LTWNBLVRWTXh0anZ1Y3FHR3ByUzFpWDQ3bmowcmluVm5wU1BqWTZvOUhkTVNKWHlGOU5rajFBbnJVWkR3VG1MZFpPRHg4S19KRlhNMjg4Z1FnSzFCVEJrZEtkNEt2cWY2MUhFUEI2ZGNXUWhDQ09MdWhfTlYyQkVR?oc=5",
+   "source": "Jakarta Globe",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-04T11:07:00+00:00",
+   "places": [
+    {
+     "name": "Jakarta, Indonesia",
+     "lon": 106.8451,
+     "lat": -6.2146,
+     "precision": "town"
+    }
+   ]
   },
   {
    "title": "City of Mexico seeks more input on proposed data center ordinance",
@@ -2960,15 +3548,6 @@
    "places": []
   },
   {
-   "title": "Google to 'invest $15bn in Malaysia data centre expansion'",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUFIzZVBMdmpEaENta3FSZUszcGNGblpyNW5DbXh6NlgyX21sa3hSb0ZWNUpSM0xGeEpVaWhEanQyNUtRU0taSXUtcFVsMGNPOVpEbk1xWmtlYWwwYXBjZGg0MURNdkxsbl9DTGhkYWQtQTJMX3lyTVEwR05CaE9IaGJMbENaaWYzVUgwa2xhODMxM05OWkE0?oc=5",
-   "source": "National Technology News",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-04T08:00:00+00:00",
-   "places": []
-  },
-  {
    "title": "Japanese tech firm NTT Data scales up Jakarta data center capacity",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOd0hfZnRXZnJpNF9WcmsxVUltRUZXdXpnTjRUbnFjQWxKbGhzS3puR1Azc2s3Wk9nZlJaWjM2SWpiWE9od05oZmxpSnd3OW9OdDY5VGE3dFlka1p5dGtLa2QzUS02a2U3a0QwWHFtYzhGdDRpcmp4cEJwQW9LeVY5dE15TE1MNE9reTJZd3MwWWpubU5aTzNvSW1BMVFiRWhORTdCbkc4ZDgwOTdxbXhXaUtPaVNIRzA3?oc=5",
    "source": "The Jakarta Post",
@@ -2985,9 +3564,27 @@
    ]
   },
   {
+   "title": "Google to 'invest $15bn in Malaysia data centre expansion'",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUFIzZVBMdmpEaENta3FSZUszcGNGblpyNW5DbXh6NlgyX21sa3hSb0ZWNUpSM0xGeEpVaWhEanQyNUtRU0taSXUtcFVsMGNPOVpEbk1xWmtlYWwwYXBjZGg0MURNdkxsbl9DTGhkYWQtQTJMX3lyTVEwR05CaE9IaGJMbENaaWYzVUgwa2xhODMxM05OWkE0?oc=5",
+   "source": "National Technology News",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-04T08:00:00+00:00",
+   "places": []
+  },
+  {
    "title": "Google Announces US$15 Billion Malaysia Investment, Plans New Data Centre And 1GW Clean Energy Capacity",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdXdxT3F0a1EwQ3h0R2NhUEZNaHZHYm1PN2VYWGtISDI5OG9rTGJPVWYxcmdJUFFmd3FRNGNMaVlUdC1PSlVnNWg2M0FtdTQ2b2NQRFF5ZFZLdnEzNHJJSTRzRkl4Y2tOaWRhWkxjdWZqeVN2b0ZQem8tNDBLVU5nRUtPUjBkWC12RUFtV1F0eDJvUTZjMF9sMjkxU1RQNHBLV2stNzBSWDk3R2hmS25Ja3MtMjZSbkpMbE50UFB3WGtwNDhOS0dfVGhVWnIxeTNjeThvdjZhZlFZSGVvVnY0?oc=5",
    "source": "BusinessToday Malaysia",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-04T08:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Malaysia’s Perak state explores proposed 100MW AI data center",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONTI3TF9OdlUydEwtQ0ZyUngxTTlnVEpZUlBpWldLTWFqdVBhYVBJV0QzVy03M2VQYzFNV3NaSnA0Vkhsckl4dHkxb2hZOERESUplcVIxQXFxVkI0d3dKRU9YMXpZSDJ3SGNKSEFMaEVyUHRzTVUyenNjMk5vWjhNQzFuMA?oc=5",
+   "source": "W.Media",
    "kind": "industry",
    "image": "",
    "published": "2026-11-04T08:00:00+00:00",
@@ -3156,31 +3753,6 @@
    ]
   },
   {
-   "title": "India's data centre capacity set for 5x surge by 2030",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSGRDZDJwOTlCZk5uSWozamtWLUxjSFZTV24xZ1VUQmJiNk50dEZ5dEN6RGdrenVQQ2FhcG41QjhHLS00TFRUZS01MFh3cmd6aUpXaGNGQWd4Vmw4WGpObUU5NmRYSjVmQlpZamFBbzhISjJLaHYxODZnUy1PdXpaeTAtcVQzN1BBZVZ1NlN6blJRRFJybTJFazJwSWttSmFwWkdJZVpMcDhwdE9lNUd6TXhqdzFlZWdRcWh5bUh6V3FlMi1QVHZ30gHMAUFVX3lxTE16OURpTHRRV1pfb3ZCUmFsVndfYkVta0FTcDdwOFpPcmJwZVhxN0VVTE50SXFtNUVsS2RVclR2ZHY3OG9lRHRxdExwQmxGaWNXcXdEZHBZZE43VFM0V0JaZVg2bmt6aWd2aVhERnVQXzBPMWtiUWdLcm5BOHVBcjlHLUs1M1hfY1FKZC1QMmJGalFPV2V6ejJRQ2FJeWxXOHZqbmZidDB3akJUMHhJQno3bWoycUc4RG1kb2RQdjNabm1YMGVkSXpZYlM3Tw?oc=5",
-   "source": "Moneycontrol.com",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-03T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "STTGDC India inaugurates 22 MW data centre in Noida",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdVNjNDB2U3oxMTNEVkdOTUJUTnFYTV9iMUR1ajU5NmVKODg0ZWtmd1lQV0UyaGZ1Y29ZdFM5dllCVlBOMTFwYWZGeDNhN0hDalpEb2FFWlJaZVZidzdwcURVc1p4UmpxWGsyRzBia01qNXliQnNkbmFpZ1JJd3Y1Z21sX05MZHpWS3F2bUM3cG9WZ0lhVXFBY0N3?oc=5",
-   "source": "tele.net.in",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-03T08:00:00+00:00",
-   "places": [
-    {
-     "name": "Noida, India",
-     "lon": 77.33,
-     "lat": 28.58,
-     "precision": "town"
-    }
-   ]
-  },
-  {
    "title": "Corning expands Pune optical connectivity products manufacturing for data center market; Chennai cover...",
    "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOZWpVRmtrV1VOSWMtQXRZZWJqc2JBTVFYYnNsaW5mZmpkczktdHBIQmVNVndmT1lsN2FJUjFtRlJuNU5pRk5BcWdNYmNUTy0ySFNiZ2I1RzFqUHpWbjFkckxYU0hYV0ZTLWhwLWZIWFBsYVVpMXc5WWhWRGt6UWFRbEpGYjllYmpRX294UVB6YjRLYUFnNERhRXpyOGZTRTloN3lMbWZQUFRKZHRYS0ltcXFBRkxMWkZacTZrdWluNF9HUGpLT0lFWE9yWmhsd3E2Q0lMSlRBY24wWEhYVDN4b0F4b0E0LWt0YWNORzg0NXhVbUNCUmlSS3hmR3FRbjAwOUo4a3d4dVFXM2tZUTVFYlB3eHlGVjV2MjYxNdIBogJBVV95cUxQVVBEbjhuRVlLbF95ZVF4V1BxZHNDdmh1NlBCUS0xWEl4TmlJekxiZy1SZXh3dGNZTWhveXA1cWwzcXlVclJNRi1fVlVtN0VHYXpXZzFuZURkYWtiY1k0UDFuVmZmMExLVTlyaXJFNGRwN0p4RS1ZejRMcmxpbFRyaThVOTlZajd3ajIybE1ScGQxRGtoZ2k2NGtWTzFyNy1KSWpIQlp6UF9Ya3hraHZLYTNMR0JDTmI5cmJBVmZjQnZzY1hhaWRMaGJ5dEJYNGhfU2o3bzloSWZkOTdPSVo3SGpzd1FETERJb0N6LWFJUlBaYVpiVDNRTVk4OVNrTlFqUG5idkwyMl92SWxwZ2o3WmxZalFXYkFxaElpamtDWnBZZw?oc=5",
    "source": "Moneycontrol.com",
@@ -3198,6 +3770,22 @@
      "name": "Chennai, India",
      "lon": 80.2785,
      "lat": 13.0878,
+     "precision": "town"
+    }
+   ]
+  },
+  {
+   "title": "STTGDC India inaugurates 22 MW data centre in Noida",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdVNjNDB2U3oxMTNEVkdOTUJUTnFYTV9iMUR1ajU5NmVKODg0ZWtmd1lQV0UyaGZ1Y29ZdFM5dllCVlBOMTFwYWZGeDNhN0hDalpEb2FFWlJaZVZidzdwcURVc1p4UmpxWGsyRzBia01qNXliQnNkbmFpZ1JJd3Y1Z21sX05MZHpWS3F2bUM3cG9WZ0lhVXFBY0N3?oc=5",
+   "source": "tele.net.in",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-03T08:00:00+00:00",
+   "places": [
+    {
+     "name": "Noida, India",
+     "lon": 77.33,
+     "lat": 28.58,
      "precision": "town"
     }
    ]
@@ -3240,15 +3828,6 @@
    "title": "Johor’s data centre boom brings pylons, noise and property worries",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONnVKXzJhZE5obWtBR2IxV2dEYW5FRUVUbUlyVEdnLVAyclE5aWVKYnBXdFYxZnJJbGFMNzFOLUlCMzlqZ2FPU3ZKTXlNTjRwUVFlRVFNOGU1UmZ0SzZETExvNjhNWnRJWUJqbkRsQU1WNDFlZE5GOWNRY092MW5VMXBvMGFaQzh0ZzMzS1RWa0wxVzNoNjRjR0ctTjFhamlmbUZIeTZYT2FIdw?oc=5",
    "source": "The Straits Times",
-   "kind": "industry",
-   "image": "",
-   "published": "2026-11-03T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Johor's data centre surge unsettles Iskandar Puteri residents, some consider selling homes, Malaysia News",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdENmTGtRRkpFMVNvLVlXYmtfcHkxWk5zdTNERU9UMjNYa1l4WVpveVV3YTVBQlFMVDM5OUo4aUlQemJRaVVjTDlqWWRnQXV5bnRfX21iNHpJOXZzbUZzX2otdXdyVkhZdjNqOVdtMkhxN2lTQ2FMU2JLV0xpZGRQeG1jbUp4WVFTN1lURHJtRl9ndmlhdGh2NU1qY0xta0tBekhzbnFwZGhyRzV0RVVMSlpnQ1hMeGZfZU9ZU2J3?oc=5",
-   "source": "AsiaOne.com",
    "kind": "industry",
    "image": "",
    "published": "2026-11-03T08:00:00+00:00",
@@ -3318,6 +3897,24 @@
    "places": []
   },
   {
+   "title": "India's data centre capacity set for 5x surge by 2030",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSGRDZDJwOTlCZk5uSWozamtWLUxjSFZTV24xZ1VUQmJiNk50dEZ5dEN6RGdrenVQQ2FhcG41QjhHLS00TFRUZS01MFh3cmd6aUpXaGNGQWd4Vmw4WGpObUU5NmRYSjVmQlpZamFBbzhISjJLaHYxODZnUy1PdXpaeTAtcVQzN1BBZVZ1NlN6blJRRFJybTJFazJwSWttSmFwWkdJZVpMcDhwdE9lNUd6TXhqdzFlZWdRcWh5bUh6V3FlMi1QVHZ30gHMAUFVX3lxTE16OURpTHRRV1pfb3ZCUmFsVndfYkVta0FTcDdwOFpPcmJwZVhxN0VVTE50SXFtNUVsS2RVclR2ZHY3OG9lRHRxdExwQmxGaWNXcXdEZHBZZE43VFM0V0JaZVg2bmt6aWd2aVhERnVQXzBPMWtiUWdLcm5BOHVBcjlHLUs1M1hfY1FKZC1QMmJGalFPV2V6ejJRQ2FJeWxXOHZqbmZidDB3akJUMHhJQno3bWoycUc4RG1kb2RQdjNabm1YMGVkSXpZYlM3Tw?oc=5",
+   "source": "Moneycontrol.com",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-03T08:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Johor's data centre surge unsettles Iskandar Puteri residents, some consider selling homes, Malaysia News",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdENmTGtRRkpFMVNvLVlXYmtfcHkxWk5zdTNERU9UMjNYa1l4WVpveVV3YTVBQlFMVDM5OUo4aUlQemJRaVVjTDlqWWRnQXV5bnRfX21iNHpJOXZzbUZzX2otdXdyVkhZdjNqOVdtMkhxN2lTQ2FMU2JLV0xpZGRQeG1jbUp4WVFTN1lURHJtRl9ndmlhdGh2NU1qY0xta0tBekhzbnFwZGhyRzV0RVVMSlpnQ1hMeGZfZU9ZU2J3?oc=5",
+   "source": "AsiaOne.com",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-03T08:00:00+00:00",
+   "places": []
+  },
+  {
    "title": "Oxide Cloud Services expands at Digital Parks Africa data centre",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNGNzdGMtWW9Cc0Q0Mnp2Y2luVk5KUGRUb3A1NllNTFZjbmtOZDQxN3p2UFl5aUNmZWVHaXZKYm5qRm1LR183M2tBcmUydDhoUjVnU0pUQ2RfanFscDllRTdIOUlGaGRFem1HN3NwbjRGbkFFenJ6ZExnUXU3Ymo1RE5ncmlCejhHakxRS2hGQ0EyX2NVUmVLM3JNVVN5SHVuRU9BMVZwNzVWM28?oc=5",
    "source": "Telecompaper",
@@ -3360,6 +3957,15 @@
    "kind": "industry",
    "image": "",
    "published": "2026-10-31T07:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Shared GPUs, data centres and energy are shaping the cost of building AI in Africa",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5wZ3V0cFBJV3lxSXRid2I3em90MFZRX3pfbjZ2Wk13Q241SVJxWWpCM0FBTkpjampTT0c0UU0yTVgycFZIM2NWWlBlc0g3enp2ZVBPNTlZV0ZudWxYZFFsaEJfNnNyTlFnNW5KOVZEb0dUQS1hYWRyVQ?oc=5",
+   "source": "TechTrendsKE",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-10-30T07:00:00+00:00",
    "places": []
   },
   {
@@ -3555,6 +4161,15 @@
    "places": []
   },
   {
+   "title": "Data Center Solutions",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ZQWo3WUtRUXRMdDNKQVJnYjQwdXNJWUR1bG56Z0hfcXpVaXQtYWxHWU1EUzA5X0xOZ3lOWTM5TjN3LXBpR2NTQWtEWFR3ZnMtaURzcHdOS2p5cGFZamtXMA?oc=5",
+   "source": "SLB",
+   "kind": "design",
+   "image": "",
+   "published": "2026-07-01T07:00:00+00:00",
+   "places": []
+  },
+  {
    "title": "Nvidia says its new data center design will fix AI’s water problem",
    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOGJUNFVsQWxocmsxbkFWQ0tsYmo3c3FhdUFIaVRxUEZLbGZVQmJkMkNxVkdyWng2MzZzMFc2dk84d0dfNjQzbTh5TGdMaEJPcF8wOVRxVFFZMHptTHBYS3VZX3lxSzJ1ejc3elZGaUtaUUhIdUFSNUNyMUh1R0hvZmZ1MDRqd09hQ2V2MFhDOA?oc=5",
    "source": "Fortune",
@@ -3676,600 +4291,6 @@
    "kind": "design",
    "image": "",
    "published": "2026-04-22T15:41:14+00:00",
-   "places": []
-  },
-  {
-   "title": "Introducing Virgo Network megascale data center fabric",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSzFYemRneXc1RDFlWVFrNGExeWpxcXNCbHlCTUlHQ3h0QVlVcHQzVzZfakI3bl9aNTlJMm1MTXFialk2TVZic2xDai1ja3h0ZldySm9hSW9tdVo0SkFFeUhnRDBveEhzSnhfVTRtaDZMc1FSeTh4TkRWS2Q0eGtqaWdsTlFNWG1oVkpvbHpzSWg0RkJ4a3QwU2tkZmc?oc=5",
-   "source": "Google Cloud",
-   "kind": "design",
-   "image": "",
-   "published": "2026-04-22T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "AtkinsRéalis to partner with Nvidia on nuclear-powered data centre design",
-   "url": "https://www.dezeen.com/2026/04/21/atkinsrealis-nvidia-nuclear-powered-data-centres/",
-   "source": "Dezeen: data centres",
-   "kind": "design",
-   "image": "https://static-2026.dezeen.com/uploads/2023/08/google-data-centre-sq_dezeen_1704_col_0-411x411.jpg",
-   "published": "2026-04-21T16:55:04+00:00",
-   "places": []
-  },
-  {
-   "title": "This new chip could slash data center energy waste",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9jY1BORmlKeVFIcVpTQ3kxZ25MNHRmU1pTV3JrdTVjSUhrMFpUWmZFR3JhTEh3TjZrS05mYS1zNWdvVTkxd1ZMcFVvc1FGalRUQU1oWW04eFlWZ1NzNGVwNkcyZU5pTnZqaktQUVhaSQ?oc=5",
-   "source": "Science Daily",
-   "kind": "design",
-   "image": "",
-   "published": "2026-04-10T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Study links data centres to heat island effects worldwide",
-   "url": "https://www.dezeen.com/2026/04/09/data-centres-heat-island-effect-study/",
-   "source": "Dezeen: data centres",
-   "kind": "design",
-   "image": "https://static-2026.dezeen.com/uploads/2026/04/data-centre-columbus-ohio-shutterstock_dezeen_2364_sq-1-411x411.jpg",
-   "published": "2026-04-09T19:00:41+00:00",
-   "places": []
-  },
-  {
-   "title": "Federal lawmakers are proposing a ban on new data center construction",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQ1RXcVhDMURBRW9lNmpsTHBPcGJVOEdGTldxVHIwMHFuRzRyMXJnRW5RM3MwYnhmcXgwRTdOb3QyWEhud2xNNEdIU2J4cjJsbDZVOGpONUx0bWVHTWVrcU9PVm5kYjNKbnFmd29HNk54czhIeE9RMGxyV2pDbDh1N0F1N1dEdWVpS0ZuWTd5UEpKblpjVHc?oc=5",
-   "source": "The Architect’s Newspaper",
-   "kind": "design",
-   "image": "",
-   "published": "2026-03-25T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Carl Fredrik Svenstedt Architects designs structural stone data centre in Sweden",
-   "url": "https://www.dezeen.com/2026/02/26/stone-clouds-data-centre-carl-fredrik-svenstedt-architects/",
-   "source": "Dezeen: data centres",
-   "kind": "design",
-   "image": "https://static-2026.dezeen.com/uploads/2026/02/sq-stone-clouds-data-centre-carl-fredrik-svenstedt-architects_dezeen_2364_col_0-1-411x411.jpg",
-   "published": "2026-02-26T10:45:11+00:00",
-   "places": []
-  },
-  {
-   "title": "How Closed-Loop Cooling Is Reshaping Data Centre Design",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbDZjMndUNVhzV2tJMDRrYV9UYXVlLW9pazNueFU0RktOVkhIdFhRbUdRZ1N4QzVfUUR1cGlJOHN2LW13b19XMHJ6bG1zcFUwUUd1YXd0VlRWMTNYNGI5Wkg4NFJFMjJUQ21kTDFTS2o2TnV1aGhPU1ZqMjdFUGpsUU5ORjF3TG13SWQwNHZNWDBqTUNrY3c?oc=5",
-   "source": "Data Centre Magazine",
-   "kind": "design",
-   "image": "",
-   "published": "2026-02-20T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Closed-loop cooling in Oracle AI data centers",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQenlaSDQ0d2Zwak93TGlEUXkwOElvajhpTGNGd0x5UXY5Rmtpc2RFZzNxSE05UVhMOEVGV2Q0ZW1wckpGV0FLbXV1WDhsdnM4YkROWkhZZGlFaTZmbzE2YWFJdFVXYTk5TWprTXBuSWVqV0Q1QVhPZHFLY2l1eS0taVcxbnUyU3pSanh6VEZ4WURjc2ZMbERVWlktQkMxQ0Rzb2FQSlRB?oc=5",
-   "source": "Oracle",
-   "kind": "design",
-   "image": "",
-   "published": "2026-02-09T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Budget 2026-27 lays strong foundation for AI Data Centres and Semiconductor Ecosystem",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1TTTdxY0hKOGNybFJ2TWZaYWtRUnFkOVFyRTZYcTVYQjZpbVhaNHQ4ZVZOQk91Nm1MdGlzcjQzQk9UUUxfU2JSV1JHNjRkWFVFMk5nQnVTY1NlSU43cXVaYUNDcVM1R0syVlVOQlAyRDBIbkhncmRBN2NB?oc=5",
-   "source": "www.pib.gov.in",
-   "kind": "design",
-   "image": "",
-   "published": "2026-02-01T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "2026 Global Data Center Outlook",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBNUDBKOGZmYTdYYmE0U09yd3N2SUZSOTIyMk1FVVI2azBfX25vTndScFd0a1pXek1wSk5nYV81QVNQeXBISXZTMElSQTI1NVd6NEpXUWtvYzBaVVNGWE1EdVZDRjZSeWRieHNnNG9TZnZBdjcxT0NqcQ?oc=5",
-   "source": "JLL",
-   "kind": "design",
-   "image": "",
-   "published": "2026-01-05T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Exposed ducts and server rooms reveal the \"heartbeat\" of AI data centre in Beijing",
-   "url": "https://www.dezeen.com/2025/12/10/ai-data-centre-beijing-lllab/",
-   "source": "Dezeen: data centres",
-   "kind": "design",
-   "image": "https://static-2026.dezeen.com/uploads/2025/11/ai-data-centre-beijing-lllab-arch-exist-sq_dezeen_2364_col_0-411x411.jpg",
-   "published": "2025-12-10T11:30:20+00:00",
-   "places": [
-    {
-     "name": "Beijing, China",
-     "lon": 116.3972,
-     "lat": 39.9075,
-     "precision": "town"
-    }
-   ]
-  },
-  {
-   "title": "Exposed ducts and server rooms feature at Beijing data centre by LLLAB",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5VeGlkaUwyTkdXMEMxaThfc19jZkFHWnYxWkNESHRaTmhEZ240T3F6NFcxMlJ4VWZWdVBEYjVuMXQ2aG5UcTh4Q1ZneVoyUGV1ZVNDbnpmWm5rYURQeHZZTl9uRjNacnBYSDhrRFVEUEg?oc=5",
-   "source": "Dezeen",
-   "kind": "design",
-   "image": "",
-   "published": "2025-12-10T08:00:00+00:00",
-   "places": [
-    {
-     "name": "Beijing, China",
-     "lon": 116.3972,
-     "lat": 39.9075,
-     "precision": "town"
-    }
-   ]
-  },
-  {
-   "title": "AI creates demand for new data center facilities across the U.S.",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQ2lLNmZZZDlSTF9idnV2UFZrbjJVMGRxLTFsXzRjVGh4ekx3Q0lPYjhzNUpJbnJfZzVsU0N1cGs4cm01d1dHT1EwNzNPZTRaakhBdTU3NjFjT3A1NkQtV1NBTVIzNEVaVUFHQkRBNTNmWTJVMGU0WkNqYnBlOEJlZFpzeFBaREFoYWxoQ25NM3JwNUEwZncxeWR1eE9LU28?oc=5",
-   "source": "The Architect’s Newspaper",
-   "kind": "design",
-   "image": "",
-   "published": "2025-11-17T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Zero Emission Data Center ISHIKARI (ZED ISHIKARI) / TAISEI DESIGN Planners Architects & Engineers",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUnlMN2hER0N5Wm1yU21iME8ya0t4RV9zcXVWT2lTRzRqT29SejZLS2RMSkJZaElyLTB0UXJ0MzdtUkptNUw4cEtDbi1Yci1nV0VNbnI3amVRR0V5cDFIQzltV2h4M0xNNHhnNUhYd0xoeUxpVUZQa3lBRWFXNkMyQnpzNTZ1ZFlQMFlxS3dXckdRNUFFQ1Z2Q25BYlNwVzUyNnctWHlFcjB1am5aS2k0NFpJZE1yTW82ZlhrYUhuN1RHSHhhRGttNA?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2025-10-22T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "A Beijing data centre where humans and AI work side by side",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQakpjSXFkdXVxTFJyLVQ1aDdDTzRsbDVGM2Y4NHFuc1VLSkpjUS1KV0JkT19jZllXM1hNU1NJOWl0OXZqd3F5bHBnbXdJbFNqa0ZzRFg2UDFsMm9VVTZFWk5aV1ZGTG9wUEcxYkhPU1NDQy1ZWmN5Zi05d1dVd1ctcW9Nay05T3owaUE?oc=5",
-   "source": "Wallpaper*",
-   "kind": "design",
-   "image": "",
-   "published": "2025-09-24T07:00:00+00:00",
-   "places": [
-    {
-     "name": "Beijing, China",
-     "lon": 116.3972,
-     "lat": 39.9075,
-     "precision": "town"
-    }
-   ]
-  },
-  {
-   "title": "The Hyperscale Revolution Reshaping Data Centre Architecture",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZnU3NG9jU1c5RlQ3aURMemtpdlE2cmJIanR6RGhUc1lzQVJ1Skl5bDBhMFhuLWt3ZU04dnBCLWhrYmNTaFVzZHlrZTNCVnhDMFcxYWFMQU84NXVLU0dHNk5RN2s5MVQzdzJ1SDdBeTJoaHpBOTdWTWtYLTBWRHJCd1d0MlNWTVNuVkNnaDdkRjlMN1d0TWx3WDFJa3Q?oc=5",
-   "source": "Data Centre Magazine",
-   "kind": "design",
-   "image": "",
-   "published": "2025-09-20T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Evolution of Data Center Design: Modular Construction, Sustainable Architecture and Eclectic Form",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWWhtUnQ1M0dxYTVrSUhVeTZwa3pYOTlUR1A5djJnR1d0R3lvQXk4VFI5OEtXUVRNbnY2SGpHRGZMNkZGSEtvVk85WkN5MElGLW9kcDNDZ0F3aGtzdGNybXhvT1l4MWljQWp1VUg3d29tWUVzTXE1UXY5MV9VbmZYeGUzM3Bud1ZfcDN1U3BnY1NpclpjYnIwTG4wNkFNQWpuVFE5VzE3OGdrYng5MlVzR3Z6LVBZZUJWRllCbnRFU0VYZkQ3VXhmQQ?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2025-08-25T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Air2O proposes new stackable data center rack design",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNVMxNUgxMVpmSnBiRTNhTW9YVGhZZ2NDcENvQU5zTTdaNnVDbGg3M1dmLWNaMzZTM1kwTVJZZWF2QkhwNnRHR0doTW5QaER6ME5tX2NzNG9Va05DQkl6UHB0cUhNNExoNkRlWXhPcmR1T2ZSTVUyalNQQ3ZBYmhTLUVVTGRxa3cwS1dGQk9iTnpMVUJMVmN4SjlYVFo?oc=5",
-   "source": "Data Center Dynamics",
-   "kind": "design",
-   "image": "",
-   "published": "2025-08-06T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Scaling bigger, faster, cheaper data centers with smarter designs",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNeGwzV2NHYXJQNExRZG81czRFU3Z3S1d0V2YzZ1Z5UEFQRmxxYmp3MDBacTFoNXc3emVLSHc4TjdHWFlyMmNwREV6ajhZWG1wQ2FacE1jcklaQjloSHo2am9pVV9BN05uc0NmTk5iY3dSeVY0VkwxTXRhMDVHSm04LUhEemg0MTRTZl9TNkxpdnlqWS1CUmZxbUxxaU5PZWoyM2p5NXByS09MLTcyMkx3Z0NRT216aTRBYldMU3F2WC1RTHJmR3dJ?oc=5",
-   "source": "McKinsey & Company",
-   "kind": "design",
-   "image": "",
-   "published": "2025-08-01T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "AI-Ready Infrastructure: A New Era of Data Center Design",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZ0l2OFZRUk5BVTlkZHZ4QlZVVEllNGZDNUtSLThUR1BXZUlQS3oyQ28tU3NmU21yNXNiMjV3V2E4bmVDWWg1ZktlRWxmS3ZXQm1IWXg1Y1hlSi1ES0NPMF9Ka3dMcF92YzBPSkZRZXp4YXR4TE5UeV9XSkN1b3praG5hVjV2MFZYaTNfTFJBMkpNS3c4?oc=5",
-   "source": "Cisco Blogs",
-   "kind": "design",
-   "image": "",
-   "published": "2025-06-17T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Kingspan IMPs Deliver Thermal Efficiency & Design for New Data Center",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOekRfa21uelk0UFl1akNiRXhsU1k2dU9ac21XWkhlN0tEZGdUdmppQ3NrbDc4Y05oNWdiZGtNS0VrRE9JeEl1dDRmVW5Bb1U0Sk43WElUNFl1eVNTZkowemlfSGpxOEdNb3lhU0dHZUxyVWtlWkRqV3ByblhzZ1RRb0tXcVRYeWN0VmVRX0lVNHdrNGIyTUxyZmZ0anJtZXVtMzJzR2RWbDJ2X2dEVE9Yd0NOUWQ2aklsZy1vOHNB?oc=5",
-   "source": "Building Design + Construction",
-   "kind": "design",
-   "image": "",
-   "published": "2025-06-03T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "AI-fuelled data centre demand will set back energy transition",
-   "url": "https://www.dezeen.com/2025/04/25/ai-data-centre-demand-energy-transition/",
-   "source": "Dezeen: data centres",
-   "kind": "design",
-   "image": "https://static-2026.dezeen.com/uploads/2025/04/sq2-data-centres-new-energy-outlook-2025_dezeen_2364_col_0-411x411.jpg",
-   "published": "2025-04-25T09:45:30+00:00",
-   "places": []
-  },
-  {
-   "title": "A New Era in Data Center Networking with NVIDIA Silicon Photonics-based Network Switching | NVIDIA Technical Blog",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc19DbjlsYXNqQzVSdWd6b0lmMkJIRm5CLThWRkdxcnY1bWszSWdyOGhIZFRGdFpXd2ZyQ0RPNzdhNEtwQmR2YVBJSUVCdW5ZdlRld1d5Ym8wY2hYbDVqZDFyYWJFVTVFMXJRVkFzcUQ0eDZNX2hXQ3F5SHBrLVNCZ0lEMjBmTG0xWEhxMmlyeU9EOUJaQ2VkS3l1TV9YaVBMTFoxUTBvQ0RCTmx2MlVHN2paX0swTllDRk5IZFAxMTRQZw?oc=5",
-   "source": "NVIDIA Developer",
-   "kind": "design",
-   "image": "",
-   "published": "2025-03-27T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "BIG-designed hard drive launches to the moon on SpaceX rocket",
-   "url": "https://www.dezeen.com/2025/02/27/big-designed-hard-drive-launches-to-the-moon-on-spacex-rocket/",
-   "source": "Dezeen: data centres",
-   "kind": "design",
-   "image": "https://static-2026.dezeen.com/uploads/2025/02/im-2-intuitive-machines-moon-big-data-centre_dezeen_2364_sq2-411x411.jpg",
-   "published": "2025-02-27T20:00:58+00:00",
-   "places": []
-  },
-  {
-   "title": "Data Center Architecture: From Blank Box to Blockbuster Design",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUXk0MW9fSDc4aDFQTUtLTG1UWWI5NWdaWWh6ZmhNRGdudllRVk9hRkllbkJ5QUY4R1htbkpELUx3Zk15Yjl0ZlREcU00QzRtamZmVFZTN25nLWVGQ1pCQ2JoN2RpdEN3U0paZWlhOVdoYVlzZG1nVHBibjFhaUJOQTVZaDROVkNXaWxYNXRjenRDQjdmUGI3Wkx0LXZGWS1iYUlPYnh0eWNPNTN0LW1wN1R6eVctNjlhWHk0azktMA?oc=5",
-   "source": "Data Center Knowledge",
-   "kind": "design",
-   "image": "",
-   "published": "2025-02-13T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Cisco Redefines Data Center Architecture with New Smart Switches, Embedding Services Directly into the Network",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbXJlbGcxMGw0OXhXVUxTTUdVTjMwQ09qSTJOWWs3eEp1RE5FaDhPcHphOUZXS3JrSTV4SlVVcFZjazhIYVFaOFVxOHlnS05EZWFfU3lJcmlESWpqV0lVczI3b19VU2xUZE0tYm5pZlAycGhjeWFVRVRWLXp6ZE1wai1DUXhNOTBsNU5ldXYwWktOODJ4RFE4Wk0ya0NwNS1TUEVNOGR1Y3l2UWJfWTJfOHh2VWN1Y0V4THdIZkM0aTE0Q3BORVE?oc=5",
-   "source": "Cisco Newsroom",
-   "kind": "design",
-   "image": "",
-   "published": "2025-02-11T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Microsoft building first data centres with cross-laminated timber",
-   "url": "https://www.dezeen.com/2025/01/28/timber-data-centre-microsoft-virginia/",
-   "source": "Dezeen: data centres",
-   "kind": "design",
-   "image": "https://static-2026.dezeen.com/uploads/2025/01/microsoft-data-centres-sq_dezeen_2364_col_0-411x411.jpg",
-   "published": "2025-01-28T09:00:09+00:00",
-   "places": []
-  },
-  {
-   "title": "Microsoft designs hybrid CLT data centres to meet sustainability goals",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vSVNrN1RrTXI4b1BTaWpadkdwdUNGaFB6dlNCMDZSek9UWEwyQ1EySUx0YnJwZ1A0QXl0VldxeUc0UWRsSHJpczhuNXhMaHdsX3FBbmlEY2szaFE1UjZRMXZFTXp1ZXM5QkJKN2RoWDF4VEZ6QW9sUlVBUkw?oc=5",
-   "source": "Dezeen",
-   "kind": "design",
-   "image": "",
-   "published": "2025-01-28T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "AWS launches new data center components to support AI",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeTloOGZBZzBWb1FHUEtUR2JFZzF0akEzOVZZM1Q0X0o3azlDZ1d3d0hJTjVFcmYxTURObkJ6YTg2MnNJQWV6alJnSEd4eUYyUXlSUHBEWGQ4Q2NmRTJPckktbVozUzBwRFpwVUlodGRsdDBWLWotbmhZTHNqUGJYRkh5alZBNTlCdXdYUENsNk1GUVQxaXJ5WTRHY2Mxdw?oc=5",
-   "source": "Data Center Dynamics",
-   "kind": "design",
-   "image": "",
-   "published": "2024-12-02T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "How to Design and Build a Data Centre for the New AI Era",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZFZRRFlQejVXUW1GTGR0Um9tLW54OW1wZUZDd2ltcm5pT2ZmcmNjR1NSRHJYWUVId1I4bFFQbU1GNVVLM3NKNzlMREVHRVVhbTNfLW5PQmlYbFpLVDJGMG9NWjk4VGZPUDV6ZzNiaDRvYkYwQjJHT1hhX2J6b2ZXUEVGdlZQcXNSOS02M1VXOHZPd0VlVTRYd1hkNXA?oc=5",
-   "source": "Data Centre Magazine",
-   "kind": "design",
-   "image": "",
-   "published": "2024-11-29T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Gallery of ZUR3 Data Center / Gruner&Friends - 20",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZW52LTBSeElLMWdjSWxKRVNnXzJpODlJWHJyTTREeW9BRTVaN1NLYm5NWmR3MEs3YUVMSnZHWTBmY1dCM3MzM3RxaHlUaDZKVlJQSlp4bHNISXoyWTBDcGVRWHdPVkI5YlVIQmpPdHBtYnBDOXJoenZrUk9jb3ZDZ1V3NGdtY0ZhWkJRcDFrZWdvQXoxbUN0OTlIOXRxcjlYNDE5Y05GMmFKY2c2X29DZjQzUnRydGJiUjVWRFVMWllJZG1vR3lGb2RrdjNtSjRsanFJOWxsY0lVVXgtQVpYVXNVQ3NEQQ?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2024-09-03T14:19:15+00:00",
-   "places": []
-  },
-  {
-   "title": "ZUR3 Data Center / Gruner&Friends",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB3VHA3Tm5LaDVGZ3ZqUm8xVU1tVUhINlR6bHI3M3BOVmktQTFncTdyMFBoaVVUV0NCMWNSRzVZdF9tb09GLWVRRl84RklFZzc3N01zSDNNRFVDQmxJa1ZUWHpBMFR6V1lCUExCSzJvLU5PRkNTc2loTg?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2024-09-03T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "RagingWire 2.0: New Data Center Design, New Markets",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRjhlT3Yxd25BbTB5QU9LMHZveE5rblRoNElMcEZXRUFNWWZuVjFtNzJwekVRdDJDazZvdkdKRUlmbDU5OTJ6bjc4azFCRE4wYXJaQ2ladnYwRXBsRmp5TENiYVVDRnBCczZoWDV5MWo3dTZONW8tZlRabUNWVFFRTUhsZFVhZnVLempwc3FRWVBEdDhaU01XMm5lc0RUX2M?oc=5",
-   "source": "Data Center Knowledge",
-   "kind": "design",
-   "image": "",
-   "published": "2024-06-01T02:51:17+00:00",
-   "places": []
-  },
-  {
-   "title": "How to Design a Data Center in a Norwegian Fjord",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcDVhWlBSSjJPMmlJT1E4R21odmVydEFjaGY2MjNCUDhqSTRBYnpVNjQwVnBuV1VWQVVxU01PazZoZk5XdlJ1MkZzOEZUVERuWmtGQlRfcnFSRjVEc05yR3BZWWxLS1BQMmFUQ2RSU0lpZHMxRFoyMGdWSGhJWlJ2aHpvcXJzR0pILVJoQmRZclJwaXlGN2N3QnJydTNlZw?oc=5",
-   "source": "Data Center Knowledge",
-   "kind": "design",
-   "image": "",
-   "published": "2024-05-31T21:19:45+00:00",
-   "places": []
-  },
-  {
-   "title": "Wild New Design: Data Center in A Silo",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdEZWemFRY2h4UEl4aFEzSU80clhLeEhfbjR5U0hhc3V3NE5fOE1UYURfUUgweUxTaXJwUTM2YXpwZEU5WGYxTHpLSGNxYUpaWTI2VVc0RGdKdm5hTVdfd25TdW12NnZVOXNlRnNUelQ1Nm1tSmJzRF9QV3hDZi0xN3hPTmxpY3hKb1VBZmtNdw?oc=5",
-   "source": "Data Center Knowledge",
-   "kind": "design",
-   "image": "",
-   "published": "2024-05-31T02:07:40+00:00",
-   "places": []
-  },
-  {
-   "title": "Why data centers could hit obsolescence sooner than you think",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNWlhNDNBVW9BWWhVa3ZZWU1ZZ2piV2xmWk92NUI1emprc0dxUV9WX2VVMU1FQTA2RUkzY2xLUERDbzhXcjVCa0hNa1k4VGtKRS1iRGdBNzVucTBMcVlUNlcwV2ZqT3RQbkQ3X3lDTWFJUVdzVGpwdjhYcVkxTXhFWEdkVDF5aGFsWkdqLTVVWXdZU0lha1pidkRFcGM?oc=5",
-   "source": "JLL",
-   "kind": "design",
-   "image": "",
-   "published": "2024-03-19T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Meta resumes construction of Texas and Idaho data centers with new AI design",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM05GdXU0NXh0YnM0bEtUWk1ITjVfWVRNZ3JOdW5CLTBCbDYtdm1TV1lkRDVhaUJkVkRtQ0FFcWh4RUxTNXVydFFUQmc0eml3T01kbmZadVBSWE5KcFV4RmI5a25VcHVWeVVlaEstZ1h6bTN5X1BmNmgzWmhidFRRWHhKZnBReDNhTEcyR0tZUjJvMzFfQW9ZZXE4VW9UU3ZaZFRzTXdIYTNsd3NPRFdTdHBYWU9qNklaYkNLMQ?oc=5",
-   "source": "Data Center Dynamics",
-   "kind": "design",
-   "image": "",
-   "published": "2023-10-19T07:00:00+00:00",
-   "places": [
-    {
-     "name": "Idaho, US",
-     "lon": -114.6,
-     "lat": 44.4,
-     "precision": "region"
-    }
-   ]
-  },
-  {
-   "title": "Gallery of Architecture of the Cloud: The Data Center Footprint - 1",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQSklIVUdNOXRvMW1WdkFtRGRnVkV4VFR0ME1pTFA1bmpXMFlDaGt1U3pvYmVrTFFFcDNtaVFVQUlQSXFCVi1tN2ROTFd1V09DcUxjRDRQZ1QxTEVZQkJJelRqMnBuT0ZLX1BMNS1BdmxaRkYtMC1JZ3ZCRzlrQjJNTlpRVkxaVG5YNXlXclliTUtjUlVUbGVjZGNJcXplWjFSLWloTy0yb2xPc1lDWjJzbzZwZnJKOEdqUm44algycXBIM3AyN2VWYmQ1UUpub2tQN1U0bjJGOURrS2tUMEZKQVNTb014UUZEUVg3RDdXZVB1aW1oQkV5OFRhdw?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2023-03-01T12:31:36+00:00",
-   "places": []
-  },
-  {
-   "title": "Architecture of the Cloud: The Data Center Footprint",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSkRiSHpiMVRIS0c1TmcxT3VBV0V3dXNyc3N2Ni1nTzFCLVZ4Y2dscTlJUU1xZnJuZzJONnFvczJ1TUstdGpyV1dyd0htZDZNc3lIbVVPRXZzOElJYXhBVW5pUzNrcDc1UWR2d3BDUFlWRENDdlc4OU9KQUdDVnlsOHBPeHVIdkttV0xJVA?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2023-03-01T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Data centres",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1MWHlJck9RYVNTZmlOTlU3a3R5a2tYR01EY0UtYVZjcmYzR0YycDlpWFc1VFU1VDlod3prQ2t0TVpUMUJPbEgyank4SDVnVmswdFE?oc=5",
-   "source": "Dezeen",
-   "kind": "design",
-   "image": "",
-   "published": "2022-11-24T12:33:01+00:00",
-   "places": []
-  },
-  {
-   "title": "Data centre architecture and innovation explored in London exhibition",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQ1dYcG5ibjdVX2kyOXNYbDBnUkFWRncwZ1JvTm1ZYjVSRDFaR0d3WkdqTDYyWWlHc2o5aUZ6Tm83YUM0aXpEYjJoMnhEQzhIYktYMEJNZGpTa1FhV25mcldKbDkyMlFlNjlZVWN0S0JuV3pzTWNvcnpLbG42aWdIcUtwV2ducVlON3lsbEFNaWNVMVpfTl95anNxbkZuX19OZVNuLVRvcTFTQXZvOTVCUG1icS0?oc=5",
-   "source": "www.wallpaper.com",
-   "kind": "design",
-   "image": "",
-   "published": "2022-10-12T07:00:00+00:00",
-   "places": [
-    {
-     "name": "London, United Kingdom",
-     "lon": -0.1257,
-     "lat": 51.5085,
-     "precision": "town"
-    }
-   ]
-  },
-  {
-   "title": "Data centre design is entering a new era",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4xV2JJV01iT2ROS0tCQ1dhZWsyejluVFZibzZrc2gtVnRFVFBuZWlaUXlQXzhTLUtRN3BYZEYtcVExM2dRSUhqSF9kMDVocnEyM2QyRWdva2UycE1jUjZWb2JlZGRxSDRlZzQxMEFHSERCM2szRGJtSDNn?oc=5",
-   "source": "Workplace Insight",
-   "kind": "design",
-   "image": "",
-   "published": "2022-09-06T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Eight \"weird and wonderful\" data centres from around the world",
-   "url": "https://www.dezeen.com/2022/04/04/data-centres-power-house-exhibition/",
-   "source": "Dezeen: data centres",
-   "kind": "design",
-   "image": "https://static-2026.dezeen.com/uploads/2022/03/equinix-am4-data-center-benthem-crouwel-architects_dezeen_2364_sq-2-411x411.jpg",
-   "published": "2022-04-04T05:00:27+00:00",
-   "places": []
-  },
-  {
-   "title": "Gallery of A Data Center in South Korea and a Refurbished Georgian Theater: 10 Unbuilt Projects Submitted by our Readers - 57",
-   "url": "https://news.google.com/rss/articles/CBMikwNBVV95cUxOSEk2YTAtd3NBTGl3QWtMNENpdDVwSWI5MkFLNTlSd1A0dkZlNTNJQ3p5TE9xMmE5MnFXOFpMd3Fmd3NqczNfNVlxUEpBNFJMMk1POFJHMWZybzJ3Yjg1c3VweGQ1Q0JweXphLVVjSEdnYnBmaDB4SDM5a3RvZ3p6T2w3OWNTTDdadHN0a090SkhWM082TGlPdWUzYjl6a3VHMXpEb05xNGp3dUVwRm1wQlE0WGlHeGh3R3I3aDRld3hpRlRySk1LcEhqX0lUM0xZekthNWhjVHdmbU9ZZUZfWi1JREhCUlc2d1JWQkp0amJNRE96emtOQTU0OXQtTjl4Y2VaSmVtSm9QUEtBZFJKUEV5NHBDbi1YRXBEWndpSUJoU0xldWMzNlV2SmhoY25qa2Z4VTBSZTd2ZlgtN3FIeW50VUhUVy1SVjNES1lFR3dYZHl2bDM1Z0dBbjY5WUIzRU80R29aRU9tM21CSzhTYmd2VU1xLW1kMGFQd1hKZUdDRXdDN2dvckRsRW82VTJJc2N3?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2020-06-17T12:56:23+00:00",
-   "places": []
-  },
-  {
-   "title": "A Data Center in South Korea and a Refurbished Georgian Theater: 10 Unbuilt Projects Submitted by our Readers",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOaEptWGlXQVhIVkZ6UVYzTmh6UjdJaS1uS2dUemRSNXlsNmthaUhZaFhNdzNrRmJPNHlEdmItMG8xT1R4eFdyRXlnZ3V0dWNaWVZSTVBKdnFPRnhReGc2WWpDeTVXallldGZxYll1X1BhdWVkZkkyemlFTGc5WXhRRFJoaTBhbFJkem91akVnZG8yNmRJSEdDdzRSVFhLMUJnNTRadnRqZ1l4MmhwUEJ5SUJZaGtJRU5BandEUmpzMzJmdktoMzlzVVJ0ZHV1M1Z2S2l3elpsbzM?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2020-06-17T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Rethinking data center design for Singapore",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMDNpekpZa0I3bTRxMGlHcTFFZ2hFZ1lWZF9lYlVMei11M1BCNFBNb3NNN3ZZMUpONlB2Yll5ZElnSzlOZkRyamkyUWx0U3Njd2ZlUWROamVJbENERXg0T2drTUZLdGh5RzlrOUtDY3gyM1NDUzc5ZUxoNy1waHowZU04cUc3THFMYkFNQw?oc=5",
-   "source": "Engineering at Meta Blog",
-   "kind": "design",
-   "image": "",
-   "published": "2019-01-14T08:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Gallery of Mecanoo's Qianhai Data Center is a \"Digital Lighthouse\" for Shenzhen - 12",
-   "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOV2cyWTRUYTFncklIMVI1eFZfSjhwbjUtX1VOUWtVOXdzQ0UtRDJmdjVUUnlqM3hJU1FwdzZNMl9ON25KS0hiZXQ2eU16R0p6djBIU2JrYXR1R0dmZVdYb3ZZSy03LThpX2VlU2FTc3FpdjR6SXZwaS14QS1RWkMyQkhZMlNMMTJ0YjM0d1BOeV9NSlF2NklFYm1TSzljNEtHUTdqeGR0dkRiVHE3dDFpYjc0bFdBeGM5UWZSVGI2ZnlNV0wxSHE2dDB1UEhPTXRLQXViWEhSXzhVZ1NFalhueWlOV3lwT0tPeFR3ckZrazcwdTRaN0xsOTBRNFpyOUw0OGtXWTRnOXBva1A4UW01cm1laVMzTU5lTFJUaUJ1MF8?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2018-12-29T05:38:17+00:00",
-   "places": [
-    {
-     "name": "Shenzhen, China",
-     "lon": 114.0683,
-     "lat": 22.5455,
-     "precision": "town"
-    }
-   ]
-  },
-  {
-   "title": "Gallery of Mecanoo's Qianhai Data Center is a \"Digital Lighthouse\" for Shenzhen - 2",
-   "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPUlFaOW1XcDNvSWZFX0JBUDFhU3JIVFVWWVh6THJrR3FoRmJ0Z1lWOHdJSVdqMlJYTFhxWG1hMHJlR3Nta2ZhRFRfdHByNEFBYTNGTUR2MHhST1lRclFHSGJ5bGhzLTdHNFl4dkp1QWR5VGFoNlhhRVdmX2phQmlNeThXcm1kUEgxLW1pQmd3d2VXN2h4QTF1SlBJSEZsYnhBcVNQT0dDM05EeUlUYU5hWHBGeDhMLTRXOHFSWF9WemVwVVRzM0Z2ek9YM1BrZTdzdlBIQ2xnRGhMX0pTSjNuSXQ5XzJZTUpwVUZ0c1UtRzlhX29FbmpabHJfV3dreTh0YnFxcnU5V2Vjdkw5WUxZYVJtbEFjcENscXJQUm55bTY?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2018-12-26T14:12:06+00:00",
-   "places": [
-    {
-     "name": "Shenzhen, China",
-     "lon": 114.0683,
-     "lat": 22.5455,
-     "precision": "town"
-    }
-   ]
-  },
-  {
-   "title": "Mecanoo's Qianhai Data Center is a \"Digital Lighthouse\" for Shenzhen",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZDN6VlpRejdtSVF2UldCN1FUakxEb2t5eGNmSVhTdUJyTDc5OVA2Z3FOTElwX2tENl9Xb0VSSnExYnVicUtBbUd4Z1lPaHRIMHRnUjQwcV9UeTNwTnBwdFpzMGl1aGhzZGh5UHZRaWJ3eGdKa3hiamhnYW5WUkFtZm5qcXBBZDZxclN3Z0FMa2NHTkRxdzJDZkxuTkFIU0U?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2018-12-26T08:00:00+00:00",
-   "places": [
-    {
-     "name": "Shenzhen, China",
-     "lon": 114.0683,
-     "lat": 22.5455,
-     "precision": "town"
-    }
-   ]
-  },
-  {
-   "title": "Gallery of Global Switch Data Centre / Reid Brewin Architects - 9",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPN2dpQ1pMZUZwWTl0Wm9xSWtCdXFxVGFsT0NualVnUWpxR0lxRWJaR2lldmcwV3dKQ2lEMU5Qd3k1NUtyVDQ4SDRjdGhlSGh3b3NqNXB2N0I4TDh2cVRkTjN2dUlNNGRZWUNscGFWWjJfdkEyb2tZTEhyOVpOQzlvYWZmZERCZGpOSURnbUZhVFB2QXJiOTRFeFpXSzgyNVlFTGtOR2VkTG82cWVWb0pJWDMwM0VsZ3QzYmZXN2lMQ2NpRmQ5UHJ3MkVkTEt6NWhjZDZYRXNBLXdSeV9pYkk2Vm8wTDlwUURFNkI4N3JYVDBXcG8?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2018-07-14T16:04:50+00:00",
-   "places": []
-  },
-  {
-   "title": "Gallery of Global Switch Data Centre / Reid Brewin Architects - 11",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQT2lJNjVadjNlOXFnMGpSTUVDaW5tNzl0T0wzYzcwa2k3WFE5WUZUc2dWZ2dnMHY5c2xreFZWcjNtMnVWMGNmTVBpd1Vzb0FnV0dyajFLbXJNN2ZaVlRTX1VtX1dXSjE5TzZCdnRVMjR6NHZmU2E4SS1jQk1Gdkx6SDBiWTRmX2NZd3pjaEEyQkVnblBFS0RMQXZrOWoydElyNkU3QWxwQkpzdEFXY0M4Q0tpck5jb0E0NFNLaWpEazRuV1M0Tm9DczRLRTAtYU9RREp6ZGhVNkRMVkZVcllmbDV6ZkpZcXZnbkZCVWk5UHlPd1l3SlZNMQ?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2018-07-14T16:01:38+00:00",
-   "places": []
-  },
-  {
-   "title": "Gallery of Sora Data Centre / Shaw Architect - 36",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQejlGbS0yZWFPNExia3RpOTI4aVVITkxIWmE3UDU0LXlONl9YRk9SR2l5Z29Na2JZRm9nb3VOb25kQXJRSmF5NTZEbUxWNmowMFJsd3dwQnBKeUozdUVReWIyM25rSDVfR1FPUjYweXMtQmVSZHJyQklRNld5VGE1eW5qWm9PSVh0QWkzY3d5ZURkeHo3RmVkZ2daTmRNOUl1Rlk5US1WQUdSd29Celp1QzVyQ0xmUTdaSDJyMlNSX3ZTcHNtaUFhcVhYRW91b2MweXhiM2JPbm92UQ?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2018-06-23T00:08:31+00:00",
-   "places": []
-  },
-  {
-   "title": "Gallery of Snøhetta Designs Sustainable Data Center as \"The Body and Brain of Future Cities\" - 2",
-   "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxOUVJsck1WNF9rVnM0eFRqUkloRXFibXVJc3Y4YjlXWHlGQVlZNXFoY1lFV0pZbnFHbkNCVWtiWnVsMnY2VEFqTkNKV1F4S1V2LUVjUjBsSFNvQWUyRkg0ZTNtdTM2QVJMR09RRUQwOGx1QlpTdjBETnFnQzYzWVpCRkFSckpEYzBISERZd3k2SURFOURvbHZFM0xKSDhqUUU2Q2N4cXZqZ1d1SGd0Vk5RQXM1U1BlV0psVU5FX2xmS2tfMmQ5MjhxWllocERZTGt2ZEtVSkpLYWc0dEhHS1FNenpsSTlxUURXbHgwbGliQVlkcGQ5UG9YR1VuNE5oeTNYdVVYRUZVSkdqSXNRdnB0N2dPTkh4bDhWQmpULW1wVlZGeFBab0UwdldQYWI1RlBabDBicnhPQTA3NEpVSzZ3YTRHcWpnQQ?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2018-06-22T16:02:02+00:00",
-   "places": []
-  },
-  {
-   "title": "Snøhetta Designs Sustainable Data Center as \"The Body and Brain of Future Cities\"",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVURkZno1OE9SeVFxbEx3R0lpRDliVUlXZ0N2ZVRCeVgzQnRRdHNJWVR6Q21BZTFURi1Fay0xanhQWmQ4NVp1UnQwZHVSWmhNaWtqdFY2WkNnaXV1MGN3RWpJX3h5MllodWRkYVptYWJhUDJGY1JWNlBMY09OWDB6NXEwLTJtM19Ja2NDTWFiYl9DeF9lVTBySVV3bzVTMHNzRFJlZExEclFlNnhnZ25wOEVR?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2018-06-22T07:00:00+00:00",
-   "places": []
-  },
-  {
-   "title": "Benthem Crouwel adds stripy tower surrounded by a moat to Amsterdam data centre",
-   "url": "https://www.dezeen.com/2017/11/21/benthem-crouwel-stripy-tower-moat-amsterdam-data-centre-architecture-netherlands/",
-   "source": "Dezeen: data centres",
-   "kind": "design",
-   "image": "https://static-2026.dezeen.com/uploads/2017/11/equinix-am4-data-center-benthem-crouwel-architects_dezeen_2364_sq-1-411x411.jpg",
-   "published": "2017-11-21T00:00:30+00:00",
-   "places": []
-  },
-  {
-   "title": "Gallery of Data Centre In Cerdanyola / ACXT - 12",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOLUxpZmIySE9HVnYzVndfNTRPRE1nR3F4R3J2Vm5ZXzFCZzQ1LTZfbC1vVkhxcVhEZEx5djRwSl93ZVpsTmYyRDZmS09rU0JHLS14aTIzX2pnN0RkYVdPRk5rTlVoTkVxelVpenFfalE4OTRNMTBINEhwVUVxbGVFdElHVWxVVFRIRV9IRU1weUNlSjR5ZXlYa2lrYzhHUDBlUFlaNEJvbGgzRS14bTRjYXhOaUdyWk4xbFpNWTZITWp2dw?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2017-09-20T07:05:56+00:00",
-   "places": []
-  },
-  {
-   "title": "Gallery of Data Center In Milan / AMA – Albera Monti & Associati - 19",
-   "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxObDJjcGIzQTdVNXhpWGZ3YjFZWHdTS2QxS0JKckd1X0QzSzdLeUs5VlpGQzdwRHpFc1dtWlRFTGpvN3JYLUtGYldOTWtyc0tvZGpDdDVSc3FEcXZfZmJ6TGFHLVhjeldfa0NJa3RWRDY0Sm5CLU5SMzRpTEltYVh5Nkx4dEpCamlYYnQwdVRVbGJBa2tranh4UzVhWjFTOWpTR0ZtVVFJVDRmUDNjSGxob2ZxNHIySTBXZFNZNnhZTlJJLTZrc2N4bkNWaWRfdXZKOUYxbWFiTU1JUEIwbVM5cDNOblRtSUZFQkNjNEdlX1VvMktKUXQzb2NwMjlyM0Q2bWI1OFZQamltRUtRSm5yZy1aWlR6MzRv?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2017-09-20T04:25:12+00:00",
-   "places": [
-    {
-     "name": "Milan, Italy",
-     "lon": 9.1895,
-     "lat": 45.4643,
-     "precision": "town"
-    }
-   ]
-  },
-  {
-   "title": "Data Center: The Latest Architecture and News",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9WeTJJbVF6cmhtdzhXd3k3N1RQWXlGY2w4Qk5CYnVpZXIzazBOeEszandwVEI4U1hSSkQ5VmtfMVRQS1pyY3hvLWxOUEgwRUlQeGJN?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2017-09-15T12:21:26+00:00",
-   "places": []
-  },
-  {
-   "title": "VIDEO: Inside A Data Center, The Architecture Of The Cloud",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWE5hdHhHYWIyX2M4LXhHUklmVU1xOVktT3JDSUJpaV9vVDFybWcyRk5RMG5pbkFwZkx3cXAwV1BHNkI3Zll6NWh3YlNscWp4ejZNc3BzYllPRmNwUWJrRDRjaVFfZXlKRzV1QUtpRTc3RC0zd1Y0Q0pOZTdGV1A3bFBkS0dlajhjcktaYkozYVRRR28?oc=5",
-   "source": "ArchDaily",
-   "kind": "design",
-   "image": "",
-   "published": "2014-05-16T07:00:00+00:00",
    "places": []
   }
  ]
