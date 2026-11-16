@@ -390,7 +390,7 @@ def place_worldwide(text):
                         found.append(place)
     if not found:
         for name, code in states.items():
-            if code in US_STATE_CENTRES and re.search(r"\b" + re.escape(name) + r"\b", text):
+            if code in US_STATE_CENTRES and re.search(r"\b" + re.escape(name) + r"\b(?! City)", text):
                 lon, lat = US_STATE_CENTRES[code]
                 found.append({"name": f"{name}, US", "lon": lon, "lat": lat, "precision": "region"})
                 break
