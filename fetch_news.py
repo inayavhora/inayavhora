@@ -309,8 +309,6 @@ US_STATE_CENTRES = {   # approximate geographic centres, for stories that name o
 DESIGN_SITES = ["dezeen.com", "designboom.com", "archdaily.com", "architecturaldigest.com", "wallpaper.com", "archpaper.com", "architectsjournal.co.uk", "dwell.com"]
 DC_FEEDS = [
     ("Dezeen: data centres",  "Design", "https://www.dezeen.com/tag/data-centres/feed/"),
-    ("designboom: data center", "Design", "https://www.designboom.com/tag/data-center/feed/"),
-    ("designboom: data centers", "Design", "https://www.designboom.com/tag/data-centers/feed/"),
     ("Dezeen",                "Design", "https://www.dezeen.com/feed/"),
     ("designboom",            "Design", "https://www.designboom.com/feed/"),
     ("ArchDaily",             "Design", "https://www.archdaily.com/feed"),
@@ -369,7 +367,7 @@ def place_worldwide(text):
     if not towns:
         return []
     named_cc = {code for name, code in countries.items() if re.search(r"\b" + re.escape(name) + r"\b", text)}
-    named_st = {code for name, code in states.items() if re.search(r"\b" + re.escape(name) + r"\b", text)}
+    named_st = {code for name, code in states.items() if re.search(r"\b" + re.escape(name) + r"\b(?! City)", text)}   # "Kansas City" is not Kansas
     if named_st:
         named_cc.add("US")
     found = []
