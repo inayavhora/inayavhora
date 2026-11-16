@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
 /* Layout: one full screen. A living forest drawn in code behind; the satellite globe in the middle;
-   the site's small nav top-left; the latest stories bottom-left. One deliberate daylight look. */
+   the name top-left; the country being looked at bottom-right. One deliberate daylight look. */
 :root {
   --sky: #e4ebe3;
   --ink: #1c1c1b;
@@ -48,6 +48,22 @@ nav .name { font-weight: 500; }
 nav a { color: var(--muted); width: fit-content; }
 nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 
+/* the country you are looking at: what its economy runs on */
+.place { position: fixed; z-index: 3; right: max(20px, env(safe-area-inset-right, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: min(330px, calc(100vw - 40px));
+         background: var(--paper); padding: 14px 16px 12px; display: grid; gap: 8px; opacity: 0; transform: translateY(6px); transition: opacity .7s ease, transform .7s ease; }
+.place.show { opacity: 1; transform: none; }
+.place h2 { margin: 0; font: 500 20px/1.15 var(--sans); letter-spacing: -.01em; }
+.place .city { font: 400 10.5px/1.4 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.place dl { margin: 0; display: grid; gap: 6px; }
+.place dt { font: 400 10px/1.3 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.place dd { margin: 0; font-size: 12px; line-height: 1.4; }
+.place .bar { display: flex; height: 6px; margin: 4px 0 3px; background: #e6e6e1; }
+.place .bar i { display: block; height: 100%; }
+.place .bar .a { background: #8aa36f; } .place .bar .n { background: #6f7f8f; } .place .bar .s { background: #c7b08a; }
+.place .key { display: flex; flex-wrap: wrap; gap: 2px 12px; font: 400 10.5px/1.4 var(--mono); color: var(--muted); }
+.place .key b { font-weight: 400; color: var(--ink); }
+.place .src { font: 400 9.5px/1.4 var(--mono); color: var(--muted); }
+
 /* a story popping out of the globe */
 .pop { position: fixed; z-index: 2; max-width: 250px; background: var(--paper); padding: 8px 10px; font-size: 12px; line-height: 1.35; pointer-events: auto;
        transform: translate(14px, -50%); opacity: 0; transition: opacity .6s ease; border-left: 2px solid var(--needs); }
@@ -56,16 +72,6 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 .pop .k { display: block; font: 400 10px/1.4 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
 .pop img { display: block; width: 100%; height: 110px; object-fit: cover; margin-bottom: 6px; background: #e8e8e4; }
 
-/* latest list */
-.latest { position: fixed; z-index: 3; left: max(20px, env(safe-area-inset-left, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: min(340px, calc(100vw - 40px)); background: var(--paper); padding: 10px 14px 12px; }
-.latest h2 { font: 400 10.5px/1.4 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin: 0 0 6px; display: flex; justify-content: space-between; gap: 8px; }
-.latest ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-.latest li a { display: grid; grid-template-columns: 10px minmax(0, 1fr); gap: 8px; }
-.latest li i { width: 7px; height: 7px; border-radius: 50%; margin-top: 6px; background: var(--needs); }
-.latest li.dc i { background: var(--dc); outline: 1px solid #6aa9d6; }
-.latest li span { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-.latest li a:hover span { text-decoration: underline; text-underline-offset: 3px; }
-.latest .more { display: inline-block; margin-top: 8px; color: var(--muted); border-bottom: 1px solid #cfcfca; }
 .legend { position: fixed; z-index: 3; right: max(20px, env(safe-area-inset-right, 0px)); top: calc(20px + env(safe-area-inset-top, 0px)); background: var(--paper); padding: 8px 12px; font: 400 10.5px/1.7 var(--mono); color: var(--muted); display: grid; }
 .legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 0; }
 
@@ -73,8 +79,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   nav { flex-direction: row; flex-wrap: wrap; gap: 2px 14px; right: 16px; left: 16px; padding: 8px 12px; }
   nav .name { width: 100%; margin-bottom: 0; }
   .legend { display: none; }
-  .latest { left: 16px; right: 16px; width: auto; max-height: 27vh; overflow: auto; }
-  .latest li:nth-child(n+4) { display: none; }
+  .place { left: 16px; right: 16px; width: auto; padding: 10px 12px; }
+  .place h2 { font-size: 17px; }
+  .place .ind { display: none; }
   .pop { max-width: 200px; }
 }
 </style>
@@ -96,11 +103,8 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   <span><i style="background:var(--dc);outline:1px solid #6aa9d6"></i>Data centre construction</span>
 </div>
 
-<section class="latest" aria-label="Latest from The Wire">
-  <h2><span>The Wire · live</span><span id="updated"></span></h2>
-  <ul id="latest"><li><span>Loading…</span></li></ul>
-</section>
 <div class="pop" id="pop" aria-live="polite"></div>
+<section class="place" id="place" aria-live="polite" hidden></section>
 
 <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
 <script>
@@ -194,8 +198,11 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
     attributionControl: { compact: true }, renderWorldCopies: false
   }) : null;
 
-  let ready = false, spinning = !reduce, idle = null, pulses = [];
-  const stop = () => { spinning = false; clearTimeout(idle); idle = setTimeout(() => { if (!reduce && map.getZoom() < fit() + 1) spinning = true; }, 9000); };
+  let ready = false, spinning = !reduce, idle = null, pulses = [], userActive = false, backT = null;
+  const stop = () => {   // the visitor took over: stop the tour until they've been idle for a while
+    spinning = false; userActive = true; clearTimeout(idle); clearTimeout(backT);
+    idle = setTimeout(() => { userActive = false; hidePlace(); if (!reduce) { map.easeTo({ zoom: fit(), duration: 2400 }); setTimeout(() => spinning = true, 2500); } }, 20000);
+  };
   if (map) {
     map.scrollZoom.setWheelZoomRate(1 / 300);
     ["mousedown", "touchstart", "wheel"].forEach(e => map.on(e, stop));
@@ -208,6 +215,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
       map.on("click", id, e => {
         stop();
         const f = e.features[0], list = JSON.parse(f.properties.items);
+        showPlace(f.properties.name);
         new maplibregl.Popup({ maxWidth: "300px" }).setLngLat(f.geometry.coordinates)
           .setHTML(`<b>${esc(f.properties.name)}</b>` + list.slice(0, 6).map(it => `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`).join("")).addTo(map);
         map.easeTo({ center: f.geometry.coordinates, zoom: Math.max(map.getZoom(), 9), duration: reduce ? 0 : 2200 });
@@ -226,7 +234,32 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   }
 
   // =================================================================== the stories
-  let needs = [], dcs = [];
+  let needs = [], dcs = [], econ = {}, econIdx = {};
+  const US_STATES = new Set("AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC US".split(" "));
+  function countryOf(placeName) {
+    const parts = placeName.split(", "), last = parts[parts.length - 1];
+    if (US_STATES.has(last)) return "United States";
+    return econIdx[last.toLowerCase()] || last;
+  }
+  const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+  function showPlace(placeName) {
+    const country = countryOf(placeName), e = econ[country], el = $("place");
+    const city = placeName.split(", ").length > 1 ? placeName.split(", ")[0] : "";
+    if (!e) { el.classList.remove("show"); return; }
+    const sec = e.sectors || {}, a = +sec.agriculture || 0, n = +sec.industry || 0, sv = +sec.services || 0, tot = a + n + sv || 1;
+    el.innerHTML = `${city ? `<span class="city">${esc(city)}</span>` : ""}<h2>${esc(country)}</h2>
+      <dl>
+        ${a + n + sv ? `<div><dt>Where the economy's output comes from${sec.year ? " (" + esc(sec.year) + ")" : ""}</dt><dd>
+          <div class="bar"><i class="a" style="width:${a / tot * 100}%"></i><i class="n" style="width:${n / tot * 100}%"></i><i class="s" style="width:${sv / tot * 100}%"></i></div>
+          <div class="key"><span>Farming <b>${a}%</b></span><span>Industry <b>${n}%</b></span><span>Services <b>${sv}%</b></span></div></dd></div>` : ""}
+        ${e.exports && e.exports.length ? `<div><dt>Top exports</dt><dd>${esc(cap(e.exports.join(", ")))}</dd></div>` : ""}
+        ${e.industries && e.industries.length ? `<div class="ind"><dt>Main industries</dt><dd>${esc(cap(e.industries.slice(0, 6).join(", ")))}</dd></div>` : ""}
+        ${e.gdp_per_capita ? `<div><dt>Output per person</dt><dd>${esc(e.gdp_per_capita)} a year</dd></div>` : ""}
+      </dl>
+      <span class="src">CIA World Factbook</span>`;
+    el.hidden = false; requestAnimationFrame(() => el.classList.add("show"));
+  }
+  function hidePlace() { $("place").classList.remove("show"); }
   function group(items) {
     const m = new Map();
     for (const it of items) for (const p of (it.places || []).slice(0, 1)) {
@@ -241,11 +274,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   }
 
   const tf = new Intl.DateTimeFormat(undefined, { day: "numeric", month: "short" });
-  function renderLatest() {
-    const all = needs.map(i => ({ ...i, kind: "needs" })).concat(dcs.map(i => ({ ...i, kind: "dc" })))
-      .sort((a, b) => (b.published || "").localeCompare(a.published || "")).slice(0, 5);
-    $("latest").innerHTML = all.map(it => `<li class="${it.kind}"><a href="${esc(it.url)}" target="_blank" rel="noopener"><i></i><span>${esc(it.title)}</span></a></li>`).join("") || "<li><span>The wire is quiet right now.</span></li>";
-  }
+
 
   // a story pops out of the globe every few seconds
   let queue = [], current = null;
@@ -258,10 +287,17 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
     const p = it.places[0];
     current = { it, p };
     pulses.push({ lon: p.lon, lat: p.lat, t0: performance.now(), c: it.kind === "dc" ? "#9fd6ff" : "#ff8a4c" });
-    if (spinning && map.getZoom() < fit() + 0.5) {
+    if (!userActive) {
       spinning = false;
-      map.easeTo({ center: [p.lon, Math.max(-45, Math.min(45, p.lat))], duration: reduce ? 0 : 2000 });
-      setTimeout(() => { if (!reduce) spinning = true; }, 4200);
+      map.flyTo({ center: [p.lon, Math.max(-60, Math.min(60, p.lat))], zoom: fit() + 1.4, duration: reduce ? 0 : 3200, curve: 1.2, essential: false });
+      showPlace(p.name);
+      clearTimeout(backT);
+      backT = setTimeout(() => {
+        if (userActive) return;
+        hidePlace();
+        map.easeTo({ zoom: fit(), duration: reduce ? 0 : 2600 });
+        setTimeout(() => { if (!reduce && !userActive) spinning = true; }, 2700);
+      }, 7600);
     }
     const el = $("pop");
     el.className = "pop" + (it.kind === "dc" ? " dc" : "");
@@ -269,7 +305,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
       `<span class="k">${it.kind === "dc" ? "Data centre construction" : "AI and basic needs"} · ${esc(p.name)}</span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`;
     placePop();
     requestAnimationFrame(() => el.classList.add("show"));
-    setTimeout(() => el.classList.remove("show"), 6200);
+    setTimeout(() => el.classList.remove("show"), 7200);
   }
   function placePop() {
     if (!current || !map) return;
@@ -281,11 +317,11 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 
   async function getJSON(u) { const r = await fetch(u + "?t=" + Date.now(), { cache: "no-store" }); if (!r.ok) throw new Error(r.status); return r.json(); }
   async function load() {
-    const [n, d] = await Promise.all([getJSON("needs.json").catch(() => ({ items: [] })), getJSON("datacentres.json").catch(() => ({ items: [] }))]);
+    const [n, d, ec] = await Promise.all([getJSON("needs.json").catch(() => ({ items: [] })), getJSON("datacentres.json").catch(() => ({ items: [] })),
+      Object.keys(econ).length ? Promise.resolve(null) : getJSON("economy.json").catch(() => null)]);
+    if (ec) { econ = ec.items || {}; for (const [k, v] of Object.entries(econ)) { econIdx[k.toLowerCase()] = k; (v.aliases || []).forEach(a => econIdx[a.toLowerCase()] = k); } }
     needs = n.items || []; dcs = d.items || [];
-    push(); renderLatest();
-    const upd = n.updated || d.updated;
-    if (upd) { const m = Math.round((Date.now() - new Date(upd)) / 6e4); $("updated").textContent = m < 60 ? m + " min ago" : tf.format(new Date(upd)); }
+    push();
   }
   load(); setInterval(load, 5 * 60 * 1000);
   setTimeout(nextPop, 2500); setInterval(nextPop, 7000);
