@@ -76,6 +76,18 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 .callout .sw { width: 8px; height: 8px; display: inline-block; }
 .callout .defs { display: grid; gap: 4px; font-size: 11.5px; line-height: 1.4; color: #353a34; }
 .callout .defs b { font-weight: 500; color: var(--ink); }
+.callout .rich { display: grid; gap: 6px; }
+.callout .share { display: grid; grid-template-columns: 82px minmax(0, 1fr) 42px; gap: 8px; align-items: center; font: 400 11px/1.3 var(--mono); }
+.callout .share .track { height: 8px; background: rgba(0,0,0,.08); }
+.callout .share .track i { display: block; height: 100%; background: #2d3a2f; }
+.callout .share.poor .track i { background: #b9774f; }
+.callout .share b { font-weight: 400; text-align: right; }
+.callout .say { margin: 0; font-size: 12px; line-height: 1.4; }
+.callout .say b { font-weight: 500; }
+.callout .people { display: grid; grid-template-columns: repeat(25, 1fr); gap: 2px; margin-top: 2px; max-width: 240px; }
+.callout .people i { aspect-ratio: 1; border-radius: 50%; background: rgba(0,0,0,.14); }
+.callout .people i.on { background: #b9774f; }
+.callout .note { margin: 0; font-size: 10.5px; line-height: 1.35; color: #4c524b; }
 .callout details { border-top: 1px solid rgba(28,28,27,.12); padding-top: 8px; }
 .callout summary { cursor: pointer; font: 400 10px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .06em; color: #4c524b; list-style: none; }
 .callout summary::-webkit-details-marker { display: none; }
@@ -244,7 +256,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   }
 
   // =================================================================== the stories
-  let needs = [], dcs = [], econ = {}, econIdx = {};
+  let needs = [], dcs = [], econ = {}, econIdx = {}, ineq = {}, ineqLabels = {};
   const US_STATES = new Set("AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC US".split(" "));
   function countryOf(placeName) {
     const parts = placeName.split(", "), last = parts[parts.length - 1];
@@ -254,11 +266,19 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
   const pc = v => v == null || v === "" ? "–" : (+v).toFixed(+v < 10 ? 1 : 0).replace(/\.0$/, "") + "%";
 
+  function ineqFor(country) {
+    const names = [country].concat((econ[country] && econ[country].aliases) || []);
+    for (const n of names) if (ineq[n]) return ineq[n];
+    return null;
+  }
+  function povLine() { const m = (ineqLabels.poverty || "").match(/\$[\d.]+/); return m ? m[0].replace(/\.00$/, "") + " a day" : ""; }
+
   // ---- the callout: the place, the story, and what the economy runs on
   let open = null;            // { p, it, kind }
   function openCallout(p, it, kind) {
     const el = $("callout"), country = countryOf(p.name), e = econ[country];
     const city = p.name.split(", ").length > 1 && countryOf(p.name) !== p.name.split(", ")[0] ? p.name.split(", ")[0] : "";
+    const g = ineqFor(country);
     const sec = (e && e.sectors) || {}, a = +sec.agriculture || 0, n = +sec.industry || 0, sv = +sec.services || 0, tot = a + n + sv;
     open = { p, it, kind };
     el.className = "callout" + (kind === "dc" ? " dc" : "");
@@ -277,13 +297,22 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
           <span><b>Services:</b> everything else: shops and trade, transport, banks, phones and internet, tourism, health, schools and government.</span>
           <span>Shares of all the value the country produces in a year. They may not add to 100%.</span>
         </div></div>` : ""}
+      ${g && (g.top10 != null || g.poverty != null) ? `<div class="rich">
+        <div class="lbl"><span>Rich and poor${g.top10_year || g.poverty_year ? " · " + esc(g.top10_year || g.poverty_year) : ""}</span></div>
+        ${g.top10 != null && g.bottom10 != null ? `
+          <div class="share"><span>Richest 10%</span><span class="track"><i style="width:${Math.min(100, g.top10 / 60 * 100)}%"></i></span><b>${g.top10}%</b></div>
+          <div class="share poor"><span>Poorest 10%</span><span class="track"><i style="width:${Math.min(100, g.bottom10 / 60 * 100)}%"></i></span><b>${g.bottom10}%</b></div>
+          <p class="say">Of all the income in ${esc(country)}, the richest tenth of people receive about <b>${Math.round(g.top10 / g.bottom10)} times</b> as much as the poorest tenth.</p>` : ""}
+        ${g.poverty != null ? `<div class="people" aria-hidden="true">${Array.from({ length: 100 }, (_, k) => `<i${k < Math.round(g.poverty) ? ' class="on"' : ""}></i>`).join("")}</div>
+          <p class="say"><b>${g.poverty < 1 ? "Fewer than 1" : Math.round(g.poverty)} in 100</b> people live below the international poverty line${povLine() ? " of " + povLine() : ""}.</p>` : ""}
+        <p class="note">From household surveys, which tend to miss the very richest${country === "India" || country === "Bangladesh" || country === "Pakistan" ? "; here they measure spending, not income, which narrows the gap" : ""}.</p>
+      </div>` : ""}
       ${e ? `<details><summary>More about ${esc(country)}</summary><dl>
         ${e.exports && e.exports.length ? `<div><dt>Top exports</dt><dd>${esc(cap(e.exports.join(", ")))}</dd></div>` : ""}
         ${e.industries && e.industries.length ? `<div><dt>Main industries</dt><dd>${esc(cap(e.industries.slice(0, 6).join(", ")))}</dd></div>` : ""}
-        ${e.gdp_per_capita ? `<div><dt>Value produced per person</dt><dd>US${esc(e.gdp_per_capita.replace(/^\$/, "$"))} a year
-          <small>Everything the country produces in a year, divided by everyone who lives there, children included, and adjusted for local prices. It is not a wage: it includes business profits and government, and says nothing about how evenly money is shared.</small></dd></div>` : ""}
+        ${g && g.gini != null ? `<div><dt>Inequality index</dt><dd>${g.gini} out of 100 <small>0 would mean everyone has the same income; 100 would mean one person has all of it.</small></dd></div>` : ""}
       </dl></details>
-      <span class="src">Economy: CIA World Factbook</span>` : ""}`;
+      <span class="src">Economy: CIA World Factbook${g ? " · Rich and poor: World Bank" : ""}</span>` : ""}`;
     el.querySelector(".x").onclick = () => { closeCallout(); };
     const db = el.querySelector(".defsBtn"); if (db) db.onclick = () => { const d = el.querySelector(".defs"); d.hidden = !d.hidden; };
     ["pointerenter", "focusin", "click"].forEach(ev => el.addEventListener(ev, () => { if (map) stop(); }));
@@ -357,6 +386,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   async function load() {
     const [n, d, ec] = await Promise.all([getJSON("needs.json").catch(() => ({ items: [] })), getJSON("datacentres.json").catch(() => ({ items: [] })),
       Object.keys(econ).length ? Promise.resolve(null) : getJSON("economy.json").catch(() => null)]);
+    if (!Object.keys(ineq).length) { const q = await getJSON("inequality.json").catch(() => null); if (q) { ineq = q.items || {}; ineqLabels = q.labels || {}; } }
     if (ec) { econ = ec.items || {}; for (const [k, v] of Object.entries(econ)) { econIdx[k.toLowerCase()] = k; (v.aliases || []).forEach(a => econIdx[a.toLowerCase()] = k); } }
     needs = n.items || []; dcs = d.items || [];
     push();

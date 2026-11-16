@@ -17,11 +17,19 @@ OUT = Path(__file__).resolve().parent.parent / "inequality.json"
 
 
 def get(code):
+    """Most recent value per country. The World Bank API is slow at times, so wait long and retry."""
+    import time
     url = f"https://api.worldbank.org/v2/country/all/indicator/{code}?format=json&mrnev=1&per_page=500"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (The Wire; personal art project)"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        meta, rows = json.load(r)
-    return rows or []
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=240) as r:
+                meta, rows = json.load(r)
+            return rows or []
+        except Exception as e:
+            print(f"  {code}: attempt {attempt + 1} failed ({e.__class__.__name__})")
+            time.sleep(20 * (attempt + 1))
+    return []
 
 
 def main():
