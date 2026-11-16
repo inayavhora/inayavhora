@@ -77,6 +77,7 @@ h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
 .row h2 { font: 400 17px/1.3 var(--serif); margin: 0; }
 .row a:hover h2 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .row .src { color: var(--muted); margin-top: 4px; display: flex; flex-wrap: wrap; gap: 2px 10px; }
+.row .photo { display: block; width: 100%; max-width: 420px; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 8px; background: var(--line); }
 .row .sheet { grid-column: 2; display: grid; gap: 4px; margin: 8px 0 4px; padding: 0; border: 1px solid var(--line); background: #fff; max-width: 420px; cursor: zoom-in; text-align: left; }
 .row .sheet img { display: block; width: 100%; height: auto; }
 .row .sheet span { font: 400 10.5px var(--mono); color: #8a8a86; padding: 0 8px 6px; }
@@ -109,9 +110,9 @@ h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
 <body>
 <div class="site">
   <nav aria-label="Site">
-    <a class="name" href="./#about">Inaya Vhora</a>
-    <a href="./#about">About</a>
-    <a href="./#speculation">Speculative</a>
+    <a class="name" href="./">Inaya Vhora</a>
+    <a href="work.html#about">About</a>
+    <a href="work.html#speculation">Speculative</a>
     <a href="wire.html" aria-current="page">The Wire</a>
   </nav>
 
@@ -151,7 +152,9 @@ h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
     { id: "health", label: "Health" },
     { id: "water", label: "Water & shelter" },
     { id: "education", label: "Education" },
-    { id: "general", label: "Wider AI news", general: true },
+    { id: "studies", label: "Drawings" },
+    { id: "dc", label: "Data centres", general: true },
+    { id: "general", label: "Wider AI news" },
   ];
   const STAGE = { reported: "Reported", pilot: "Pilot", proposed: "Proposed", critique: "Critique" };
   const NEED = { food: "Food", health: "Health", water: "Water & shelter", education: "Education" };
@@ -159,7 +162,7 @@ h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
 
   let tab = "all";
   try { const t = (location.hash || "").slice(1); if (TABS.some(x => x.id === t)) tab = t; } catch (e) {}
-  let needs = [], general = [], known = new Set(), first = true;
+  let needs = [], general = [], dcs = [], known = new Set(), first = true;
 
   const $ = id => document.getElementById(id);
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -178,6 +181,8 @@ h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
 
   function itemsFor(id) {
     if (id === "general") return general;
+    if (id === "dc") return dcs;
+    if (id === "studies") return needs.filter(it => it.drawing);
     if (id === "all") return needs;
     return needs.filter(it => (it.needs || []).includes(id));
   }
@@ -210,16 +215,17 @@ h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
       if (lab !== last) { html += `<div class="day">${lab}</div>`; last = lab; }
       const fresh = !first && !known.has(it.url) ? " fresh" : "";
       const places = (it.places || []).map(p => esc(p.name)).join(", ");
-      const tags = tab === "general" ? "" :
+      const isDC = tab === "dc";
+      const tags = tab === "general" ? "" : isDC ? `<span class="tag">${it.kind === "design" ? "Design press" : "Industry news"}</span>` :
         `<span class="tag ${esc(it.stage)}">${STAGE[it.stage] || ""}</span>` +
         (it.needs || []).map(n => `<span class="tag">${NEED[n] || ""}</span>`).join("");
       html += `<article class="row${fresh}"><time datetime="${esc(it.published)}">${tf.format(d)}</time>
-        <a href="${esc(it.url)}" target="_blank" rel="noopener"><h2>${esc(it.title)}</h2>
+        <a href="${esc(it.url)}" target="_blank" rel="noopener">${isDC && it.image ? `<img class="photo" src="${esc(it.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}<h2>${esc(it.title)}</h2>
         <div class="src"><span>${esc(it.source)}${places ? " · " + places : (it.region && tab === "general" ? " · " + esc(it.region) : "")}</span>${tags}</div></a>
         ${it.drawing ? `<button class="sheet" type="button" data-sheet="${esc(it.drawing)}" data-title="${esc(it.title)}" aria-label="Open the drawing for this story"><img src="${esc(it.drawing)}" alt="Line drawing of what this story reports" loading="lazy"><span>Study drawing</span></button>` : ""}
-        ${tab === "general" ? "" : `<div class="cta"><a href="https://www.google.com/search?q=${encodeURIComponent(it.title)}" target="_blank" rel="noopener">Find the people involved ↗</a>${FORM_URL ? `<a href="${esc(FORM_URL + (FORM_URL.includes("?") ? "&" : "?") + "story=" + encodeURIComponent(it.title))}" target="_blank" rel="noopener">Help solve this →</a>` : ""}</div>`}</article>`;
+        ${tab === "general" || isDC ? "" : `<div class="cta"><a href="https://www.google.com/search?q=${encodeURIComponent(it.title)}" target="_blank" rel="noopener">Find the people involved ↗</a>${FORM_URL ? `<a href="${esc(FORM_URL + (FORM_URL.includes("?") ? "&" : "?") + "story=" + encodeURIComponent(it.title))}" target="_blank" rel="noopener">Help solve this →</a>` : ""}</div>`}</article>`;
     }
-    $("wire").innerHTML = html || (tab === "general"
+    $("wire").innerHTML = html || (tab === "studies" ? '<p class="note">No drawings yet. New study drawings are added every Monday.</p>' : tab === "general"
       ? '<p class="note">The wider wire is quiet.</p>'
       : '<p class="note">No stories in this tab yet. The specialist sources are checked every hour; stories about AI in these places are rarer than general AI news, so this record grows slowly.</p>');
   }
@@ -316,7 +322,7 @@ h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
     });
 
     return {
-      setPoints(p) { pts = p; push(); },
+      setPoints(p) { pts = p; push(); if (ready) map.setPaintProperty("pts", "circle-color", tab === "dc" ? "#9fd6ff" : "#ff8a4c"); },
       pulse(p) {
         pulses.push({ lon: p.lon, lat: p.lat, t0: performance.now() });
         if (map.getZoom() < 3 && !map.isMoving()) {
@@ -341,7 +347,8 @@ h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
 
   async function load() {
     try {
-      const [n, g] = await Promise.all([getJSON("needs.json").catch(() => ({ items: [] })), getJSON("news.json")]);
+      const [n, g, d] = await Promise.all([getJSON("needs.json").catch(() => ({ items: [] })), getJSON("news.json"), getJSON("datacentres.json").catch(() => ({ items: [] }))]);
+      dcs = d.items || [];
       const newOnes = first ? n.items.filter(i => (i.places || []).length).slice(0, 6).reverse()
                             : n.items.filter(i => !known.has(i.url) && (i.places || []).length).reverse();
       needs = n.items || []; general = g.items || [];

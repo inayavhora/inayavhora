@@ -296,14 +296,26 @@ def parse_feed(xml_bytes: bytes, name: str, region: str, ai_only: bool):
 DC_FILE = Path(__file__).parent / "datacentres.json"
 DC_MAX = 400
 DC_RE = re.compile(r"\bdata[ -]?cent(er|re)s?\b|\bhyperscale\w*\b|\bserver farms?\b|\bAI (campus|factory|factories)\b|\bcompute campus\b", re.I)
+US_STATE_CENTRES = {   # approximate geographic centres, for stories that name only a state
+    "AL": (-86.8, 32.8), "AZ": (-111.7, 34.3), "AR": (-92.4, 34.9), "CA": (-119.5, 37.2), "CO": (-105.5, 39.0), "CT": (-72.7, 41.6),
+    "DE": (-75.5, 39.0), "FL": (-81.7, 28.6), "GA": (-83.4, 32.7), "ID": (-114.6, 44.4), "IL": (-89.2, 40.0), "IN": (-86.3, 39.9),
+    "IA": (-93.5, 42.1), "KS": (-98.4, 38.5), "KY": (-85.3, 37.5), "LA": (-92.0, 31.1), "ME": (-69.2, 45.4), "MD": (-76.8, 39.0),
+    "MA": (-71.8, 42.3), "MI": (-84.7, 43.7), "MN": (-94.3, 46.3), "MS": (-89.7, 32.7), "MO": (-92.5, 38.4), "MT": (-109.6, 47.0),
+    "NE": (-99.8, 41.5), "NV": (-116.9, 39.3), "NH": (-71.6, 43.7), "NJ": (-74.7, 40.2), "NM": (-106.1, 34.4), "NY": (-75.5, 42.9),
+    "NC": (-79.4, 35.6), "ND": (-100.5, 47.5), "OH": (-82.8, 40.3), "OK": (-97.5, 35.6), "OR": (-120.6, 43.9), "PA": (-77.8, 40.9),
+    "RI": (-71.5, 41.7), "SC": (-80.9, 33.9), "SD": (-100.2, 44.4), "TN": (-86.3, 35.9), "TX": (-99.3, 31.5), "UT": (-111.7, 39.3),
+    "VT": (-72.7, 44.1), "VA": (-78.8, 37.5), "WA": (-120.4, 47.4), "WV": (-80.6, 38.6), "WI": (-89.8, 44.6), "WY": (-107.5, 43.0),
+}
 DESIGN_SITES = ["dezeen.com", "designboom.com", "archdaily.com", "architecturaldigest.com", "wallpaper.com", "archpaper.com", "architectsjournal.co.uk", "dwell.com"]
 DC_FEEDS = [
+    ("Dezeen: data centres",  "Design", "https://www.dezeen.com/tag/data-centres/feed/"),
+    ("designboom: data center", "Design", "https://www.designboom.com/tag/data-center/feed/"),
+    ("designboom: data centers", "Design", "https://www.designboom.com/tag/data-centers/feed/"),
     ("Dezeen",                "Design", "https://www.dezeen.com/feed/"),
     ("designboom",            "Design", "https://www.designboom.com/feed/"),
     ("ArchDaily",             "Design", "https://www.archdaily.com/feed"),
     ("Architectural Digest",  "Design", "https://www.architecturaldigest.com/feed/rss"),
     ("Wallpaper*",            "Design", "https://www.wallpaper.com/feeds/all"),
-    ("The Architect's Newspaper", "Design", "https://www.archpaper.com/feed/"),
     ("Google News: design press", "Design", gnews('("data center" OR "data centre") (' + " OR ".join("site:" + d for d in DESIGN_SITES) + ")")),
     ("Google News: architecture", "Design", gnews('("data center" OR "data centre") (architecture OR architects OR design) (new OR unveiled OR completed OR planned)')),
     ("DatacenterDynamics",    "Industry", "https://www.datacenterdynamics.com/en/rss/"),
@@ -378,7 +390,26 @@ def place_worldwide(text):
                     place = {"name": f"{cand}, {where}", "lon": round(c["longitude"], 4), "lat": round(c["latitude"], 4), "precision": "town"}
                     if place["name"] not in [p["name"] for p in found]:
                         found.append(place)
+    if not found:
+        for name, code in states.items():
+            if code in US_STATE_CENTRES and re.search(r"\b" + re.escape(name) + r"\b", text):
+                lon, lat = US_STATE_CENTRES[code]
+                found.append({"name": f"{name}, US", "lon": lon, "lat": lat, "precision": "region"})
+                break
     return found[:2]
+
+OG_RE = re.compile(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)|<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', re.I)
+
+def og_image(url):
+    """The article's own lead photo (og:image), read from the publisher's page."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (The Wire; personal art project)"})
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+            html = r.read(400000).decode("utf-8", "ignore")
+        m = OG_RE.search(html)
+        return (m.group(1) or m.group(2)) if m else ""
+    except Exception:
+        return ""
 
 def gather_datacentres():
     got, ok = [], 0
@@ -408,7 +439,7 @@ def gather_datacentres():
                     "title": title, "url": link, "source": source, "kind": "design" if design else "industry",
                     "image": item_image(it),
                     "published": (date or datetime.now(timezone.utc)).isoformat(timespec="seconds"),
-                    "places": place_worldwide(f"{title} {summary.replace(source, ' ')}"),
+                    "places": place_worldwide(title),
                 })
                 n += 1
             ok += 1
@@ -529,9 +560,15 @@ def main():
 
     if ok_d:
         old = load(DC_FILE)
-        for it in old:   # re-place older stories with the current rules
-            if not it.get("places"):
-                it["places"] = place_worldwide(it["title"])
+        for it in old:   # re-place older stories with the current rules (headline only)
+            it["places"] = place_worldwide(it["title"])
+        # lead photos for design-press stories that arrived without one (direct links only, a few per run)
+        tries = 0
+        for it in dcs + old:
+            if tries >= 12:
+                break
+            if not it.get("image") and it.get("kind") == "design" and "news.google.com" not in it["url"]:
+                it["image"] = og_image(it["url"]); tries += 1
         dc_items = merge(old, dcs, DC_MAX)
         save(DC_FILE, dc_items, ok_d)
         print(f"datacentres.json now holds {len(dc_items)} stories.")

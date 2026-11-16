@@ -3,310 +3,327 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Inaya Vhora: speculative work across architecture, interiors, objects and sound.">
 <title>Inaya Vhora</title>
+<meta name="description" content="Inaya Vhora: an artist working in the built environment. The Wire, a live globe of AI, basic needs and the data centres being built around the world.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
-/* Layout: one narrow fixed text column on the left, content to the right; stacks on phones */
+/* Layout: one full screen. A living forest drawn in code behind; the satellite globe in the middle;
+   the site's small nav top-left; the latest stories bottom-left. One deliberate daylight look. */
 :root {
-  --bg: #fbfbfa;
-  --fg: #1c1c1b;
-  --muted: #8a8a86;
-  --line: #e4e4e0;
-  --slot: #f0f0ed;
+  --sky: #e4ebe3;
+  --ink: #1c1c1b;
+  --paper: rgba(251, 251, 250, 0.9);
+  --muted: #6f726b;
+  --needs: #ff8a4c;
+  --dc: #9fd6ff;
   --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #141413; --fg: #e8e8e4; --muted: #7d7d78; --line: #2a2a28; --slot: #1d1d1b; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #141413; --fg: #e8e8e4; --muted: #7d7d78; --line: #2a2a28; --slot: #1d1d1b; color-scheme: dark;
-}
-
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-html { margin: 0; }
-body { margin: 0; }
-img { max-width: 100%; }
-body {
-  background: var(--bg);
-  color: var(--fg);
-  font: 400 12.5px/1.6 var(--sans);
-  padding-inline: 24px;
-  -webkit-font-smoothing: antialiased;
-}
+html, body { margin: 0; height: 100%; }
+body { background: var(--sky); color: var(--ink); font: 400 12.5px/1.6 var(--sans); overflow: hidden; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
-a:focus-visible, button:focus-visible { outline: 1px solid var(--fg); outline-offset: 3px; }
-button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+a:focus-visible, button:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
 
-.site {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 48px;
-  padding-block: 32px 64px;
-  max-width: 1200px;
-}
+#forest { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+.halo { position: fixed; left: 50%; top: 50%; width: var(--d, 70vmin); height: var(--d, 70vmin); transform: translate(-50%, -50%); border-radius: 50%;
+        background: radial-gradient(circle, rgba(255,255,255,.55) 0%, rgba(255,255,255,.25) 52%, rgba(255,255,255,0) 72%); pointer-events: none; }
+#globe { position: fixed; inset: 0; }
+#globe canvas { outline: none; }
+.maplibregl-ctrl-attrib { font-size: 10px; background: rgba(251,251,250,.7) !important; }
+.maplibregl-popup-content { font: 400 12px/1.45 var(--sans); color: var(--ink); padding: 10px 12px; border-radius: 0; max-width: 280px; }
+.maplibregl-popup-content b { display: block; font-weight: 500; margin-bottom: 4px; }
+.maplibregl-popup-content a { display: block; padding: 3px 0; border-top: 1px solid #e4e4e0; }
 
-nav {
-  position: sticky;
-  top: calc(32px + env(safe-area-inset-top, 0px));
-  align-self: start;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-nav .name { margin-bottom: 20px; font-weight: 500; }
+nav { position: fixed; z-index: 3; left: max(20px, env(safe-area-inset-left, 0px)); top: calc(20px + env(safe-area-inset-top, 0px)); display: flex; flex-direction: column; gap: 2px; background: var(--paper); padding: 10px 14px 12px; }
+nav .name { font-weight: 500; margin-bottom: 10px; }
 nav a { color: var(--muted); width: fit-content; }
-nav a:hover, nav a[aria-current="page"] { color: var(--fg); }
+nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 
-main { min-width: 0; }
+/* a story popping out of the globe */
+.pop { position: fixed; z-index: 2; max-width: 250px; background: var(--paper); padding: 8px 10px; font-size: 12px; line-height: 1.35; pointer-events: auto;
+       transform: translate(14px, -50%); opacity: 0; transition: opacity .6s ease; border-left: 2px solid var(--needs); }
+.pop.dc { border-left-color: var(--dc); }
+.pop.show { opacity: 1; }
+.pop .k { display: block; font: 400 10px/1.4 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
+.pop img { display: block; width: 100%; height: 110px; object-fit: cover; margin-bottom: 6px; background: #e8e8e4; }
 
-/* About */
-.about p { max-width: 52ch; margin: 0 0 1em; }
-.based, .soon { color: var(--muted); margin: 0; }
-.about .meta {
-  margin-top: 32px;
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 4px 16px;
-  max-width: 420px;
-}
-.about .meta dt { color: var(--muted); }
-.about .meta dd { margin: 0; }
-
-/* Speculation index */
-.work { display: flex; flex-direction: column; gap: 64px; }
-.piece { display: grid; gap: 10px; max-width: 760px; }
-.piece img { display: block; width: 100%; height: auto; aspect-ratio: 1800 / 1272; background: var(--slot); }
-.piece img.wide { aspect-ratio: 16 / 9; }
-.piece img.square { aspect-ratio: 1; max-width: 480px; background: transparent; }
-.square-lg { display: block; width: 100%; max-width: 620px; height: auto; aspect-ratio: 1; }
-.files { display: grid; gap: 14px; max-width: 58ch; border-top: 1px solid var(--line); padding-top: 14px; }
-.dl { width: fit-content; border-bottom: 1px solid var(--fg); padding-bottom: 1px; }
-.dl:hover { opacity: .7; }
-.dl[disabled] { opacity: .5; cursor: default; }
-.dl-status { color: var(--muted); }
-.dl-status:empty { display: none; }
-.filelist { margin: 0; display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 4px 16px; }
-.filelist dt { color: var(--muted); }
-.filelist dd { margin: 0; }
-.filelist a { border-bottom: 1px solid var(--line); }
-.filelist a:hover { border-color: var(--fg); }
-.wire { display: grid; gap: 0; margin: 0; padding: 0; max-width: 760px; border-top: 1px solid var(--fg); }
-.wire li { list-style: none; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line); }
-.wire time { color: var(--muted); font: 400 11px/1.9 var(--mono); font-variant-numeric: tabular-nums; }
-.wire .src { color: var(--muted); }
-.wire .empty { display: block; color: var(--muted); }
-.live { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: currentColor; margin-right: 6px; vertical-align: 1px; animation: live 2.4s ease-in-out infinite; }
-@keyframes live { 50% { opacity: .2; } }
-@media (prefers-reduced-motion: reduce) { .live { animation: none; } }
-.piece:hover img { opacity: .92; }
-.film { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--slot); }
-.caption { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
-.caption .title { font-weight: 500; }
-.caption .date { color: var(--muted); }
-
-/* Project page */
-.project { display: grid; gap: 28px; max-width: 900px; }
-.back { color: var(--muted); width: fit-content; }
-.back:hover { color: var(--fg); }
-.project header { display: grid; gap: 2px; }
-.project h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
-.project .date { color: var(--muted); }
-
-.viewer { display: grid; gap: 10px; }
-.stage {
-  position: relative;
-  display: block;
-  width: 100%;
-  aspect-ratio: 1800 / 1272;
-  max-width: 100%;
-  background: var(--slot);
-  cursor: e-resize;
-}
-.stage img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.stage .half { position: absolute; top: 0; bottom: 0; width: 35%; }
-.stage .half.prev { left: 0; cursor: w-resize; }
-.stage .half.next { right: 0; cursor: e-resize; }
-.controls { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; color: var(--muted); }
-.controls .cap { color: var(--fg); min-width: 0; }
-.controls .nav { display: flex; gap: 16px; font-variant-numeric: tabular-nums; }
-.controls button { color: var(--muted); }
-.controls button:hover { color: var(--fg); }
-
-.bio { max-width: 58ch; display: grid; gap: 8px; }
-.bio p { margin: 0; }
-.bio .by { color: var(--muted); }
-
-.extra { color: var(--muted); }
-.extra a { color: var(--fg); border-bottom: 1px solid var(--line); }
-.extra a:hover { border-color: var(--fg); }
+/* latest list */
+.latest { position: fixed; z-index: 3; left: max(20px, env(safe-area-inset-left, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: min(340px, calc(100vw - 40px)); background: var(--paper); padding: 10px 14px 12px; }
+.latest h2 { font: 400 10.5px/1.4 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin: 0 0 6px; display: flex; justify-content: space-between; gap: 8px; }
+.latest ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.latest li a { display: grid; grid-template-columns: 10px minmax(0, 1fr); gap: 8px; }
+.latest li i { width: 7px; height: 7px; border-radius: 50%; margin-top: 6px; background: var(--needs); }
+.latest li.dc i { background: var(--dc); outline: 1px solid #6aa9d6; }
+.latest li span { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.latest li a:hover span { text-decoration: underline; text-underline-offset: 3px; }
+.latest .more { display: inline-block; margin-top: 8px; color: var(--muted); border-bottom: 1px solid #cfcfca; }
+.legend { position: fixed; z-index: 3; right: max(20px, env(safe-area-inset-right, 0px)); top: calc(20px + env(safe-area-inset-top, 0px)); background: var(--paper); padding: 8px 12px; font: 400 10.5px/1.7 var(--mono); color: var(--muted); display: grid; }
+.legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 0; }
 
 @media (max-width: 640px) {
-  .site { grid-template-columns: 1fr; gap: 32px; padding-block: 24px 48px; }
-  body { padding-inline: 16px; }
-  nav { position: static; flex-direction: row; flex-wrap: wrap; gap: 4px 16px; }
-  nav .name { width: 100%; margin-bottom: 4px; }
+  nav { flex-direction: row; flex-wrap: wrap; gap: 2px 14px; right: 16px; left: 16px; padding: 8px 12px; }
+  nav .name { width: 100%; margin-bottom: 0; }
+  .legend { display: none; }
+  .latest { left: 16px; right: 16px; width: auto; max-height: 27vh; overflow: auto; }
+  .latest li:nth-child(n+4) { display: none; }
+  .pop { max-width: 200px; }
 }
 </style>
 </head>
 <body>
+<canvas id="forest" aria-hidden="true"></canvas>
+<div class="halo" id="halo" aria-hidden="true"></div>
+<div id="globe" role="region" aria-label="Satellite globe. Orange points are stories about AI and basic needs; blue points are data centres. Drag to turn, scroll or pinch to zoom."></div>
 
+<nav aria-label="Site">
+  <a class="name" href="./" aria-current="page">Inaya Vhora</a>
+  <a href="work.html#about">About</a>
+  <a href="work.html#speculation">Speculative</a>
+  <a href="wire.html">The Wire</a>
+</nav>
 
-<div class="site">
-  <nav aria-label="Site">
-    <a class="name" href="#about">Inaya Vhora</a>
-    <a href="#about" data-page="about">About</a>
-    <a href="#speculation" data-page="speculation">Speculative</a>
-    <a href="wire.html">The Wire</a>
-  </nav>
-
-  <main>
-    <section id="about" class="about">
-      <p class="based">Based in Sydney, Australia.</p>
-    </section>
-
-    <section id="speculation" class="work" hidden>
-      <p class="soon">Architecture works, coming soon.</p>
-    </section>
-
-    <section id="reflow" class="project" hidden>
-      <a class="back" href="#speculation">← Speculative</a>
-
-      <header>
-        <h1>3D print your home accessories, free file available to download</h1>
-        <span class="date">October, 2026</span>
-      </header>
-
-      <img class="square-lg" src="reflow/cover.png" alt="Section through the printed shower head, showing the threaded inlet, pressure pillars and nozzle face" width="1400" height="1400">
-
-      <div class="bio">
-        <p>This concept allows interior accessories to be 3D printed and installed by the property occupier.</p>
-      </div>
-
-      <div class="files">
-        <a class="dl" href="reflow/REFLOW-Shower-Set.zip" download>Download all files (.zip, 4.6 MB)</a>
-        <dl class="filelist">
-          <dt>STL</dt><dd><a href="reflow/files/stl/REFLOW-SHOWER_01_backplate.stl" download>01 Backplate</a>, <a href="reflow/files/stl/REFLOW-SHOWER_02_shroud.stl" download>02 Shroud</a>, <a href="reflow/files/stl/REFLOW-SHOWER_03_lever.stl" download>03 Lever</a>, <a href="reflow/files/stl/REFLOW-SHOWER_04_stem-adapter.stl" download>04 Stem adapter</a>, <a href="reflow/files/stl/REFLOW-SHOWER_05_insert-hot.stl" download>05 Insert hot</a>, <a href="reflow/files/stl/REFLOW-SHOWER_06_insert-cold.stl" download>06 Insert cold</a>, <a href="reflow/files/stl/REFLOW-SHOWER_07_arm-flange.stl" download>07 Arm flange</a>, <a href="reflow/files/stl/REFLOW-SHOWER_08_head.stl" download>08 Shower head</a></dd>
-          <dt>3MF plates</dt><dd><a href="reflow/files/plates/REFLOW-SHOWER_plate-A_trim-body-colour.3mf" download>A Trim</a>, <a href="reflow/files/plates/REFLOW-SHOWER_plate-B_shower-head-body-colour.3mf" download>B Shower head</a>, <a href="reflow/files/plates/REFLOW-SHOWER_plate-C_inserts-accent-colours.3mf" download>C Inserts</a></dd>
-          <dt>Source</dt><dd><a href="reflow/files/shower_set.py" download>shower_set.py</a>, <a href="reflow/files/plates.py" download>plates.py</a></dd>
-          <dt>Notes</dt><dd><a href="reflow/files/PRINT-NOTES.md" download>PRINT-NOTES.md</a>: parts, print settings, install steps</dd>
-        </dl>
-      </div>
-    </section>
-
-    <section id="soundscapes" class="project" hidden>
-      <a class="back" href="#speculation">← Speculative</a>
-
-      <header>
-        <h1>Gamifying productivity through soundscapes</h1>
-        <span class="date">October, 2026</span>
-      </header>
-
-      <div class="viewer">
-        <video class="film" id="film" src="sound/threshold_corridor.mp4" poster="sound/poster.jpg" controls playsinline preload="metadata" width="1600" height="900"></video>
-        <div class="controls"><span class="cap">Threshold corridor, 0:17. Sound on.</span></div>
-      </div>
-
-      <div class="bio">
-        <p>An audio augmentation system designed to provide positive feedback when participating in tactile productivity.</p>
-      </div>
-    </section>
-
-    <section id="rome" class="project" hidden>
-      <a class="back" href="#speculation">← Speculative</a>
-
-      <header>
-        <h1>Rome built in 30 minutes</h1>
-        <span class="date">October, 2026</span>
-      </header>
-
-      <div class="viewer">
-        <div class="stage" id="stage">
-          <img id="sheet" src="rome/sheets/00.jpg" alt="" width="1800" height="1272">
-          <button class="half prev" id="prevArea" aria-label="Previous sheet"></button>
-          <button class="half next" id="nextArea" aria-label="Next sheet"></button>
-        </div>
-        <div class="controls">
-          <span class="cap" id="cap"></span>
-          <span class="nav">
-            <button id="prev">Prev</button>
-            <span id="count"></span>
-            <button id="next">Next</button>
-          </span>
-        </div>
-      </div>
-
-      <div class="bio">
-        <p>“I made an 11-sheet A3 PDF for the Pantheon, Colosseum and Piazza Navona: site plans, plans, elevations, sections and 3D renders, built from published dimensions and annotated with keynotes and callouts.</p>
-        <p>I also published an interactive web page where you can orbit annotated 3D models and open each sheet, but I couldn’t test it here, so tell me if anything doesn’t load.”</p>
-        <p class="by">– Claude Opus 5.5 Medium</p>
-      </div>
-
-      <p class="extra">Interactive 3D models: <a href="rome/">Rome Documentation Set →</a></p>
-    </section>
-  </main>
+<div class="legend" aria-hidden="true">
+  <span><i style="background:var(--needs)"></i>AI and basic needs</span>
+  <span><i style="background:var(--dc);outline:1px solid #6aa9d6"></i>Data centres</span>
 </div>
 
+<section class="latest" aria-label="Latest from The Wire">
+  <h2><span>The Wire · live</span><span id="updated"></span></h2>
+  <ul id="latest"><li><span>Loading…</span></li></ul>
+  <a class="more" href="wire.html">Open the full record →</a>
+</section>
+<div class="pop" id="pop" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
 <script>
 (function () {
-  var pages = ["about", "speculation", "rome", "reflow", "soundscapes"];
-  var navFor = { about: "about", speculation: "speculation", rome: "speculation", reflow: "speculation", soundscapes: "speculation" };
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-  var SHEETS = [
-    ["00", "Cover, index and sources"],
-    ["P-01", "Pantheon, site plan"],
-    ["P-02", "Pantheon, ground plan and north elevation"],
-    ["P-03", "Pantheon, longitudinal section and east elevation"],
-    ["P-04", "Pantheon, 3D renders"],
-    ["C-01", "Colosseum, site plan"],
-    ["C-02", "Colosseum, ground plan and north elevation"],
-    ["C-03", "Colosseum, cross-section and 3D renders"],
-    ["N-01", "Piazza Navona, site plan"],
-    ["N-02", "Piazza Navona, west frontage elevation and long section"],
-    ["N-03", "Piazza Navona, 3D renders"]
-  ];
-  var i = 0;
-  var img = document.getElementById("sheet");
+  // =================================================================== the forest (drawn in code)
+  const fc = $("forest"), fx = fc.getContext("2d");
+  let W = 0, H = 0, DPR = 1, layers = [], birds = [], leaves = [];
+  const rand = (a, b) => a + Math.random() * (b - a);
 
-  function draw() {
-    var s = SHEETS[i];
-    img.src = "rome/sheets/" + s[0] + ".jpg";
-    img.alt = "Sheet " + s[0] + ": " + s[1];
-    document.getElementById("cap").textContent = s[0] + "  " + s[1];
-    document.getElementById("count").textContent = (i + 1) + " / " + SHEETS.length;
-    var n = new Image(); n.src = "rome/sheets/" + SHEETS[(i + 1) % SHEETS.length][0] + ".jpg";
+  function treeLayer(w, h, base, col, density, scale, seed) {
+    const c = document.createElement("canvas"); c.width = w * 1.1; c.height = h; const x = c.getContext("2d");
+    let s = seed; const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+    x.fillStyle = col;
+    x.beginPath(); x.moveTo(0, h); x.lineTo(0, base);
+    for (let i = 0; i <= 40; i++) { const px = i / 40 * c.width; x.lineTo(px, base - Math.sin(i * 0.7 + seed) * 6 * scale); }
+    x.lineTo(c.width, h); x.fill();
+    const n = Math.round(c.width / (26 * scale) * density);
+    for (let i = 0; i < n; i++) {
+      const tx = r() * c.width, th = (60 + r() * 120) * scale, tw = th * (0.28 + r() * 0.2);
+      const ty = base + 4 * scale;
+      if (r() < 0.55) {            // conifer
+        x.beginPath(); x.moveTo(tx, ty - th);
+        for (let k = 0; k < 5; k++) { const yy = ty - th + (k + 1) * th / 5; const ww = tw * (k + 1) / 5; x.lineTo(tx + ww, yy); x.lineTo(tx + ww * 0.45, yy - th / 14); }
+        for (let k = 4; k >= 0; k--) { const yy = ty - th + (k + 1) * th / 5; const ww = tw * (k + 1) / 5; x.lineTo(tx - ww * 0.45, yy - th / 14); x.lineTo(tx - ww, yy); }
+        x.closePath(); x.fill();
+      } else {                     // broadleaf: clustered rounds on a trunk
+        x.fillRect(tx - 1.5 * scale, ty - th * 0.45, 3 * scale, th * 0.45);
+        for (let k = 0; k < 6; k++) { x.beginPath(); x.arc(tx + (r() - 0.5) * tw * 1.2, ty - th * (0.5 + r() * 0.45), tw * (0.32 + r() * 0.25), 0, Math.PI * 2); x.fill(); }
+      }
+    }
+    return c;
   }
-  function step(d) { i = (i + d + SHEETS.length) % SHEETS.length; draw(); }
-  document.getElementById("next").onclick = function () { step(1); };
-  document.getElementById("prev").onclick = function () { step(-1); };
-  document.getElementById("nextArea").onclick = function () { step(1); };
-  document.getElementById("prevArea").onclick = function () { step(-1); };
-  document.addEventListener("keydown", function (e) {
-    if (document.getElementById("rome").hidden) return;
-    if (e.key === "ArrowRight") step(1);
-    if (e.key === "ArrowLeft") step(-1);
-  });
 
-  function show() {
-    var id = (location.hash || "#about").slice(1);
-    if (pages.indexOf(id) < 0) id = "about";
-    pages.forEach(function (p) { document.getElementById(p).hidden = p !== id; });
-    var film = document.getElementById("film");
-    if (id !== "soundscapes" && film && !film.paused) film.pause();
-    document.querySelectorAll("nav a[data-page]").forEach(function (a) {
-      if (a.dataset.page === navFor[id]) a.setAttribute("aria-current", "page");
-      else a.removeAttribute("aria-current");
+  function buildForest() {
+    DPR = Math.min(devicePixelRatio || 1, 1.5);
+    W = innerWidth; H = innerHeight;
+    fc.width = W * DPR; fc.height = H * DPR; fx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    const k = Math.max(0.7, Math.min(1.4, H / 800));
+    layers = [
+      { c: treeLayer(W, H, H * 0.70, "#c9d6cb", 1.0, 0.75 * k, 3), sway: 2 },
+      { c: treeLayer(W, H, H * 0.78, "#adc2b0", 1.0, 0.95 * k, 7), sway: 4 },
+      { c: treeLayer(W, H, H * 0.86, "#8aa58f", 0.9, 1.2 * k, 11), sway: 6 },
+      { c: treeLayer(W, H, H * 0.95, "#5f7d66", 0.8, 1.5 * k, 19), sway: 9 },
+    ];
+    const n = W < 640 ? 18 : 34;
+    birds = Array.from({ length: n }, () => ({ x: rand(-W * 0.2, W), y: rand(H * 0.08, H * 0.4), vx: rand(0.5, 0.9), vy: rand(-0.1, 0.1), ph: rand(0, 6), s: rand(0.7, 1.3) }));
+    leaves = Array.from({ length: W < 640 ? 10 : 22 }, () => ({ x: rand(0, W), y: rand(-H, H), v: rand(0.2, 0.5), a: rand(0, 6), s: rand(2, 4) }));
+  }
+
+  function drawForest(t) {
+    const g = fx.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, "#dfe8e2"); g.addColorStop(0.55, "#eef1ea"); g.addColorStop(1, "#d7e0d4");
+    fx.fillStyle = g; fx.fillRect(0, 0, W, H);
+    // light through the canopy
+    fx.save(); fx.globalCompositeOperation = "lighter";
+    for (let i = 0; i < 4; i++) {
+      const x0 = W * (0.15 + i * 0.22) + Math.sin(t * 0.00012 + i) * 30, a = 0.05 + 0.03 * Math.sin(t * 0.0004 + i * 2);
+      fx.fillStyle = `rgba(255,250,232,${a})`;
+      fx.beginPath(); fx.moveTo(x0, 0); fx.lineTo(x0 + 70, 0); fx.lineTo(x0 + 260, H); fx.lineTo(x0 + 120, H); fx.fill();
+    }
+    fx.restore();
+    // birds (a loose flock, high in the sky)
+    const cx = birds.reduce((s, b) => s + b.x, 0) / birds.length, cy = birds.reduce((s, b) => s + b.y, 0) / birds.length;
+    fx.strokeStyle = "rgba(40,48,42,.7)"; fx.lineWidth = 1.2; fx.lineCap = "round";
+    for (const b of birds) {
+      if (!reduce) {
+        b.vy += (cy - b.y) * 0.00004 + Math.sin(t * 0.0007 + b.ph) * 0.004;
+        b.vx += (cx - b.x) * 0.000004;
+        b.vx = Math.max(0.35, Math.min(1.1, b.vx)); b.vy = Math.max(-0.35, Math.min(0.35, b.vy));
+        b.x += b.vx; b.y += b.vy;
+        if (b.x > W + 40) { b.x = -40 - rand(0, W * 0.3); b.y = rand(H * 0.08, H * 0.4); }
+      }
+      const f = Math.sin(t * 0.012 * b.s + b.ph) * 4 * b.s, w = 6 * b.s;
+      fx.beginPath(); fx.moveTo(b.x - w, b.y - f); fx.quadraticCurveTo(b.x - w * 0.4, b.y - f * 0.2 - 2, b.x, b.y); fx.quadraticCurveTo(b.x + w * 0.4, b.y - f * 0.2 - 2, b.x + w, b.y - f); fx.stroke();
+    }
+    // tree layers with mist between them
+    layers.forEach((L, i) => {
+      const off = reduce ? 0 : Math.sin(t * 0.0003 * (i + 1)) * L.sway;
+      fx.drawImage(L.c, off - W * 0.05, 0, L.c.width, H);
+      const m = fx.createLinearGradient(0, H * (0.55 + i * 0.09), 0, H);
+      m.addColorStop(0, "rgba(238,241,234,0)"); m.addColorStop(0.4, `rgba(238,241,234,${0.22 - i * 0.04})`); m.addColorStop(1, "rgba(238,241,234,0)");
+      fx.fillStyle = m; fx.fillRect(0, H * (0.55 + i * 0.09), W, H);
     });
-    window.scrollTo(0, 0);
+    // drifting leaves
+    fx.fillStyle = "rgba(95,125,102,.55)";
+    for (const l of leaves) {
+      if (!reduce) { l.y += l.v; l.x += Math.sin(t * 0.001 + l.a) * 0.4; if (l.y > H + 10) { l.y = -10; l.x = rand(0, W); } }
+      fx.save(); fx.translate(l.x, l.y); fx.rotate(Math.sin(t * 0.002 + l.a)); fx.beginPath(); fx.ellipse(0, 0, l.s, l.s * 0.45, 0, 0, Math.PI * 2); fx.fill(); fx.restore();
+    }
   }
-  window.addEventListener("hashchange", show);
-  draw();
-  show();
+  buildForest();
+  addEventListener("resize", buildForest);
+  (function loop(t) { drawForest(t); if (!reduce) requestAnimationFrame(loop); })(0);
+
+  // =================================================================== the globe
+  const MAPTILER_KEY = "4RJrlbyP57DSKJIwC3Ev";
+  const fit = () => Math.log2(Math.min(innerWidth, innerHeight) * 0.66 * Math.PI / 512);
+  function sizeHalo() { const d = Math.min(innerWidth, innerHeight) * 0.66 / 0.62; $("halo").style.setProperty("--d", d + "px"); }
+  sizeHalo();
+  if (!window.maplibregl) { $("globe").hidden = true; }
+  const map = window.maplibregl ? new maplibregl.Map({
+    container: "globe",
+    canvasContextAttributes: { alpha: true, antialias: true },
+    style: {
+      version: 8,
+      projection: { type: "globe" },
+      sky: { "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 0.6, 5, 0.6, 7, 0] },
+      sources: {
+        sat: { type: "raster", tileSize: 512, url: "https://api.maptiler.com/tiles/satellite-v2/tiles.json?key=" + MAPTILER_KEY,
+               attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank" rel="noopener">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a>' },
+        needs: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
+        dc: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
+        pulse: { type: "geojson", data: { type: "FeatureCollection", features: [] } }
+      },
+      layers: [
+        { id: "sat", type: "raster", source: "sat" },
+        { id: "pulse", type: "circle", source: "pulse", paint: { "circle-radius": ["get", "r"], "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": ["get", "c"], "circle-stroke-width": 2, "circle-stroke-opacity": ["get", "o"] } },
+        { id: "dc", type: "circle", source: "dc", paint: { "circle-radius": 4.5, "circle-color": "#9fd6ff", "circle-stroke-color": "#24597d", "circle-stroke-width": 1 } },
+        { id: "needs", type: "circle", source: "needs", paint: { "circle-radius": ["+", 4, ["*", 2.2, ["sqrt", ["get", "n"]]]], "circle-color": "#ff8a4c", "circle-opacity": 0.92, "circle-stroke-color": "#ffffff", "circle-stroke-width": 1 } }
+      ]
+    },
+    center: [50, 14], zoom: fit(), minZoom: 0.5, maxZoom: 18,
+    attributionControl: { compact: true }, renderWorldCopies: false
+  }) : null;
+
+  let ready = false, spinning = !reduce, idle = null, pulses = [];
+  const stop = () => { spinning = false; clearTimeout(idle); idle = setTimeout(() => { if (!reduce && map.getZoom() < fit() + 1) spinning = true; }, 9000); };
+  if (map) {
+    map.scrollZoom.setWheelZoomRate(1 / 300);
+    ["mousedown", "touchstart", "wheel"].forEach(e => map.on(e, stop));
+    map.on("load", () => { ready = true; push(); });
+    addEventListener("resize", () => { sizeHalo(); if (map.getZoom() < fit() + 0.5) map.setZoom(fit()); });
+    map.on("move", () => { $("halo").style.opacity = map.getZoom() > fit() + 0.6 ? 0 : 1; placePop(); });
+    ["needs", "dc"].forEach(id => {
+      map.on("mouseenter", id, () => map.getCanvas().style.cursor = "pointer");
+      map.on("mouseleave", id, () => map.getCanvas().style.cursor = "");
+      map.on("click", id, e => {
+        stop();
+        const f = e.features[0], list = JSON.parse(f.properties.items);
+        new maplibregl.Popup({ maxWidth: "300px" }).setLngLat(f.geometry.coordinates)
+          .setHTML(`<b>${esc(f.properties.name)}</b>` + list.slice(0, 6).map(it => `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`).join("")).addTo(map);
+        map.easeTo({ center: f.geometry.coordinates, zoom: Math.max(map.getZoom(), 9), duration: reduce ? 0 : 2200 });
+      });
+    });
+    (function spin() {
+      if (ready) {
+        if (spinning && !map.isMoving()) { const c = map.getCenter(); map.jumpTo({ center: [c.lng + 0.035, c.lat] }); }
+        if (pulses.length) {
+          const t = performance.now(); pulses = pulses.filter(p => t - p.t0 < 2600);
+          map.getSource("pulse").setData({ type: "FeatureCollection", features: pulses.map(p => { const k = (t - p.t0) / 2600; return { type: "Feature", geometry: { type: "Point", coordinates: [p.lon, p.lat] }, properties: { r: 6 + k * 46, o: 1 - k, c: p.c } }; }) });
+        }
+      }
+      requestAnimationFrame(spin);
+    })();
+  }
+
+  // =================================================================== the stories
+  let needs = [], dcs = [];
+  function group(items) {
+    const m = new Map();
+    for (const it of items) for (const p of (it.places || []).slice(0, 1)) {
+      const e = m.get(p.name) || { name: p.name, lon: p.lon, lat: p.lat, items: [] }; e.items.push({ title: it.title, url: it.url }); m.set(p.name, e);
+    }
+    return { type: "FeatureCollection", features: [...m.values()].map(e => ({ type: "Feature", geometry: { type: "Point", coordinates: [e.lon, e.lat] }, properties: { name: e.name, n: e.items.length, items: JSON.stringify(e.items) } })) };
+  }
+  function push() {
+    if (!ready) return;
+    map.getSource("needs").setData(group(needs));
+    map.getSource("dc").setData(group(dcs));
+  }
+
+  const tf = new Intl.DateTimeFormat(undefined, { day: "numeric", month: "short" });
+  function renderLatest() {
+    const all = needs.map(i => ({ ...i, kind: "needs" })).concat(dcs.map(i => ({ ...i, kind: "dc" })))
+      .sort((a, b) => (b.published || "").localeCompare(a.published || "")).slice(0, 5);
+    $("latest").innerHTML = all.map(it => `<li class="${it.kind}"><a href="${esc(it.url)}" target="_blank" rel="noopener"><i></i><span>${esc(it.title)}</span></a></li>`).join("") || "<li><span>The wire is quiet right now.</span></li>";
+  }
+
+  // a story pops out of the globe every few seconds
+  let queue = [], current = null;
+  function nextPop() {
+    if (!ready || !map) return;
+    if (!queue.length) queue = needs.filter(i => (i.places || []).length).slice(0, 12).map(i => ({ ...i, kind: "needs" }))
+      .concat(dcs.filter(i => (i.places || []).length).slice(0, 8).map(i => ({ ...i, kind: "dc" })))
+      .sort(() => Math.random() - 0.5);
+    const it = queue.shift(); if (!it) return;
+    const p = it.places[0];
+    current = { it, p };
+    pulses.push({ lon: p.lon, lat: p.lat, t0: performance.now(), c: it.kind === "dc" ? "#9fd6ff" : "#ff8a4c" });
+    if (spinning && map.getZoom() < fit() + 0.5) {
+      spinning = false;
+      map.easeTo({ center: [p.lon, Math.max(-45, Math.min(45, p.lat))], duration: reduce ? 0 : 2000 });
+      setTimeout(() => { if (!reduce) spinning = true; }, 4200);
+    }
+    const el = $("pop");
+    el.className = "pop" + (it.kind === "dc" ? " dc" : "");
+    el.innerHTML = (it.image ? `<img src="${esc(it.image)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : "") +
+      `<span class="k">${it.kind === "dc" ? "Data centre" : "AI and basic needs"} · ${esc(p.name)}</span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`;
+    placePop();
+    requestAnimationFrame(() => el.classList.add("show"));
+    setTimeout(() => el.classList.remove("show"), 6200);
+  }
+  function placePop() {
+    if (!current || !map) return;
+    const q = map.project([current.p.lon, current.p.lat]), el = $("pop");
+    const behind = map.getZoom() < 4 && (() => { const c = map.getCenter(); const d = Math.acos(Math.sin(c.lat * Math.PI / 180) * Math.sin(current.p.lat * Math.PI / 180) + Math.cos(c.lat * Math.PI / 180) * Math.cos(current.p.lat * Math.PI / 180) * Math.cos((c.lng - current.p.lon) * Math.PI / 180)); return d > Math.PI / 2; })();
+    el.style.visibility = behind ? "hidden" : "visible";
+    el.style.left = Math.min(innerWidth - 270, Math.max(8, q.x)) + "px"; el.style.top = Math.max(80, Math.min(innerHeight - 120, q.y)) + "px";
+  }
+
+  async function getJSON(u) { const r = await fetch(u + "?t=" + Date.now(), { cache: "no-store" }); if (!r.ok) throw new Error(r.status); return r.json(); }
+  async function load() {
+    const [n, d] = await Promise.all([getJSON("needs.json").catch(() => ({ items: [] })), getJSON("datacentres.json").catch(() => ({ items: [] }))]);
+    needs = n.items || []; dcs = d.items || [];
+    push(); renderLatest();
+    const upd = n.updated || d.updated;
+    if (upd) { const m = Math.round((Date.now() - new Date(upd)) / 6e4); $("updated").textContent = m < 60 ? m + " min ago" : tf.format(new Date(upd)); }
+  }
+  load(); setInterval(load, 5 * 60 * 1000);
+  setTimeout(nextPop, 2500); setInterval(nextPop, 7000);
 })();
 </script>
 </body>
