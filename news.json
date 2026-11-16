@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:32:30+00:00",
+ "updated": "2026-11-16T10:33:47+00:00",
  "sources_reached": 12,
  "sources": [
   {
@@ -108,7 +108,7 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 24
   },
   {
    "name": "Google News: water",
@@ -133,18 +133,6 @@
    "set": "Data centres",
    "ok": true,
    "stories": 22
-  },
-  {
-   "name": "designboom: data center",
-   "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 404: Not Found"
-  },
-  {
-   "name": "designboom: data centers",
-   "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 404: Not Found"
   },
   {
    "name": "Dezeen",

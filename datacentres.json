@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:32:30+00:00",
+ "updated": "2026-11-16T10:33:47+00:00",
  "sources_reached": 10,
  "sources": [
   {
@@ -108,7 +108,7 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 24
   },
   {
    "name": "Google News: water",
@@ -133,18 +133,6 @@
    "set": "Data centres",
    "ok": true,
    "stories": 22
-  },
-  {
-   "name": "designboom: data center",
-   "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 404: Not Found"
-  },
-  {
-   "name": "designboom: data centers",
-   "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 404: Not Found"
   },
   {
    "name": "Dezeen",
@@ -203,6 +191,15 @@
  ],
  "items": [
   {
+   "title": "3Q 2026 global data center market report",
+   "url": "https://www.datacenterdynamics.com/en/whitepapers/3q-2026-global-data-center-market-report/",
+   "source": "DatacenterDynamics",
+   "kind": "industry",
+   "image": "https://media.datacenterdynamics.com/media/images/Screenshot_2026-11-16_100535.2e16d0ba.fill-750x500.png",
+   "published": "2026-11-16T10:28:37+00:00",
+   "places": []
+  },
+  {
    "title": "How will Georgia's data center deluge fare after midterm elections?",
    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9CRTItMEgxYnNlODJieEViRU83MEZxVkktNWFkS21MdGZvdW5mM0FiOGxUaFNRSkp1OWl1Y1NURVRXTkNMNFVaR3ZBMThEaERaMWZQT2tNclFEV2pQMU5jVVl3b3VYOFVwNVpz?oc=5",
    "source": "The Atlanta Journal-Constitution",
@@ -236,7 +233,7 @@
   },
   {
    "title": "Unprecedented data-center growth dominates U.S. construction: Economists",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbDA4ckQ5T1lNdW13cXNSaFRRQjdsM21HVmRNNzlDOS1MZW1OSEpvcFZMcE9WY3VNZExRZVBWT2VNdmdZWXp0QjFCU1pwNmg0Q3ZwenNtMklSUUVJeVFzNnphWG9UZ1dWMlJuTnRza1k1MFUwMEt2Z1VpNHlTNkR4QmFqQjJRY1paTmV4M2t3ekpyb0hGZmsxNzNuMnY5YmdId0hiUkF0S19xQXZqMTV0N0t6R29IUERySzhpYkpjUDZlUHJQMGc?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZXZDVENkWGUzcE02SFh5a0QwZXRodGpqeEZ2NUFrcjJ5TEgtTExQRVlNT1ZuSFktQlctdFE4UjhRUXpDOGo0YW9wdDd6Vlk4UHUtc3hrTDZZTEMzRmxqZEE4aF9qQi00Z0djbF9ZLXBYbHJ6MWMzSVNPWWtEd1lqZ21SeC01dEVfTnktMEtubFFMZXQ5WXdHUlMzdUJrSXdzT1RNY1ktS1Z1VVRXRWZzZmhPWGdwWTRUelpFVXZQdEJiVndKNFE?oc=5",
    "source": "constructconnect.com",
    "kind": "industry",
    "image": "",
@@ -1422,14 +1419,7 @@
    "kind": "design",
    "image": "",
    "published": "2026-08-17T07:00:00+00:00",
-   "places": [
-    {
-     "name": "Kansas City, KS",
-     "lon": -94.6275,
-     "lat": 39.1142,
-     "precision": "town"
-    }
-   ]
+   "places": []
   },
   {
    "title": "SOM designs \"vertical data center\" for Downtown Kansas City",
@@ -1438,14 +1428,7 @@
    "kind": "design",
    "image": "https://static-2026.dezeen.com/uploads/2026/08/som-data-center-kansas-city_dezeen_2364_sq-411x411.jpg",
    "published": "2026-08-05T15:13:34+00:00",
-   "places": [
-    {
-     "name": "Kansas City, KS",
-     "lon": -94.6275,
-     "lat": 39.1142,
-     "precision": "town"
-    }
-   ]
+   "places": []
   },
   {
    "title": "Data centre approved as part of Truman Brewery masterplan in east London",
