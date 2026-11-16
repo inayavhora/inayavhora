@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T21:03:38+00:00",
+ "updated": "2026-11-16T01:04:03+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -18,7 +18,7 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 1
   },
   {
    "name": "DW",
@@ -30,7 +30,7 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 0
   },
   {
    "name": "South China Morning Post",
@@ -90,7 +90,7 @@
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 60
+   "ai_stories": 59
   },
   {
    "name": "Google News: famine",
@@ -102,7 +102,7 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 30
+   "ai_stories": 27
   },
   {
    "name": "Google News: health",
@@ -120,7 +120,7 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 36
+   "ai_stories": 35
   },
   {
    "name": "Google News: Gates",
@@ -130,6 +130,24 @@
   }
  ],
  "items": [
+  {
+   "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+   "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-15T23:30:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0
+    }
+   ],
+   "stage": "reported"
+  },
   {
    "title": "AI enters Class 3: On National Education Day, India rethinks what school is really for",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSDk0MlJ5b0tYTG5ZWGV3bkpDSndxeThuS2N4R0ZwcWptUGotVlpXdGRRWDRzSlpnUFQ2bHRNTDN1U0NHN0VKZGdPQWxsanhKRVR6N25MS0NmUWNjZlNZRDlwa0g1bi1KOWRWc2wyN3didVIwX0p3YmdsS25LLTBXUlFja3JEMXloQmZVb3lSMmNoLTBtMWZaODNhQ1hycU13ZDF2dTdGT2Q1RTNf?oc=5",
