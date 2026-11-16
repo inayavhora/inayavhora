@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:33:47+00:00",
+ "updated": "2026-11-16T10:49:24+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 100
+   "ai_stories": 102
   },
   {
    "name": "The New Humanitarian",
@@ -102,7 +102,7 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 28
+   "ai_stories": 34
   },
   {
    "name": "Google News: health",
@@ -120,7 +120,7 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 35
+   "ai_stories": 34
   },
   {
    "name": "Google News: Gates",
@@ -181,6 +181,36 @@
    "set": "Data centres",
    "ok": true,
    "stories": 11
+  },
+  {
+   "name": "Google News: India",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 23
+  },
+  {
+   "name": "Google News: Africa",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 40
+  },
+  {
+   "name": "Google News: Asia",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 76
+  },
+  {
+   "name": "Google News: Gulf",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 46
+  },
+  {
+   "name": "Google News: Latin America",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 30
   },
   {
    "name": "Google News: new builds",
@@ -500,9 +530,9 @@
    "stage": "proposed"
   },
   {
-   "title": "IIT-Kharagpur inks deal with alumni to set up India’s first Physical AI school",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVWY5R0liRmNTdVh1ZG5GQzlneVd1eTkwcFM4em1nOEk5M2xvVEhMcHJ4R09YY1pJdjNHVDNrb0JfaXpsaTRVUHdMQzh0Ty1LQm0xUWI1a1J2Zmd3eEJlZm9oVkdaQ2l2bHFQdjZhTTBiekFDV0NoZlc3eU1mdm9HMkQyX2h1MlZUeHAyRGNpQzM1emI2bWpRTUZ1aEZvc3NHNkNvVW5wdHFDQVNHbFRQckNnLXdPRUwteFpZSG9pYl9vOFlkRW1jU1AyNExEWVRWSW1WTXp3bEpzLUHSAeABQVVfeXFMT1F0NlBiUHQ0MmUzZkRGU2s1QzlHT1FOWFgwRmRrOTd4T1EzUEtlcVAyTlluUGo3RnFlSlMxZGdzazdFWkc3ZG95SFhlemZsWG5lendLYnVWSkJWNFBmdWRfcEIxbWJhdVFDbWFFcGkwTzY0RXRKZ2hRaXQzNGtRRXVsWXlobmZwcjhhcnVxc1lkVG9WTXFjcWZZMjY1a1Ytb0l5b01uNjBFLWFoalc3OEQ2dWZZMi1fVV9jT3R3MGpUZUg4eFJObG5hblkycjh4VGJKbWdCQ2F6UzFnQU53eGo?oc=5",
-   "source": "The Times of India",
+   "title": "IIT Kharagpur to establish India’s first Physical AI school with Rs 35 crore investment",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZ1dkNG4yeDhnT1JHcUtuaFplX1RRWXdtZnlFV3BGRGhoSmd1M3hSbUlLZS1DckphYTlWMG9VeTJtT2hQTGtfQUw5S21tNXlBUllxbHc1UHBaSW1zM0RLZEYxZXZ1S3ZsUVFxM0ptYmoxMHVUbm9POWdBWHdqQTNWdmFpWmJwbFhyd1VGbWZhMHFoR3U3QzI2SDk1NjdKeE04MHpzWXNmN3hzdXFyQ1RoaFA3U25wSFpySmViTjZ0UlR6M3ctZEJQNkV4bHVad2NsNENUQ3BURHhEU1RwWEljSEZEbVVDTEHSAe4BQVVfeXFMTTMzZ0FFQ2FIdDdDVW9UMkZLelRoV05rREh1MkFXYkR1RXlHSGs0cGVIbzdDdWFLNEltMC0zbHpaQW1PYmV5ZkRwdUFFbmNFWW1HVk9EQnQxSkJxdmNtMUhiaUM4LXB4YkxBQno3dWJoX0RpeVp1WFpwNGNRTFlDc2Ric09nZzQwRnlRYVQ1dC1Qd203LTF5N1J1N1VFWEI4WUFXcFNKdmpDOW1NYjJMVmdaZDlUTWIzaFBDRnlpbDNtNHoxTnRaREo3cHlVaVhsaTZ1cUdYeGVXcGxPc2xaTlE3VUJRSEtjZnR6S2hrQQ?oc=5",
+   "source": "The Indian Express",
    "region": "International",
    "published": "2026-10-27T07:00:00+00:00",
    "needs": [
@@ -519,9 +549,9 @@
    "stage": "reported"
   },
   {
-   "title": "IIT Kharagpur to establish India’s first Physical AI school with Rs 35 crore investment",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZ1dkNG4yeDhnT1JHcUtuaFplX1RRWXdtZnlFV3BGRGhoSmd1M3hSbUlLZS1DckphYTlWMG9VeTJtT2hQTGtfQUw5S21tNXlBUllxbHc1UHBaSW1zM0RLZEYxZXZ1S3ZsUVFxM0ptYmoxMHVUbm9POWdBWHdqQTNWdmFpWmJwbFhyd1VGbWZhMHFoR3U3QzI2SDk1NjdKeE04MHpzWXNmN3hzdXFyQ1RoaFA3U25wSFpySmViTjZ0UlR6M3ctZEJQNkV4bHVad2NsNENUQ3BURHhEU1RwWEljSEZEbVVDTEHSAe4BQVVfeXFMTTMzZ0FFQ2FIdDdDVW9UMkZLelRoV05rREh1MkFXYkR1RXlHSGs0cGVIbzdDdWFLNEltMC0zbHpaQW1PYmV5ZkRwdUFFbmNFWW1HVk9EQnQxSkJxdmNtMUhiaUM4LXB4YkxBQno3dWJoX0RpeVp1WFpwNGNRTFlDc2Ric09nZzQwRnlRYVQ1dC1Qd203LTF5N1J1N1VFWEI4WUFXcFNKdmpDOW1NYjJMVmdaZDlUTWIzaFBDRnlpbDNtNHoxTnRaREo3cHlVaVhsaTZ1cUdYeGVXcGxPc2xaTlE3VUJRSEtjZnR6S2hrQQ?oc=5",
-   "source": "The Indian Express",
+   "title": "IIT-Kharagpur inks deal with alumni to set up India’s first Physical AI school",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVWY5R0liRmNTdVh1ZG5GQzlneVd1eTkwcFM4em1nOEk5M2xvVEhMcHJ4R09YY1pJdjNHVDNrb0JfaXpsaTRVUHdMQzh0Ty1LQm0xUWI1a1J2Zmd3eEJlZm9oVkdaQ2l2bHFQdjZhTTBiekFDV0NoZlc3eU1mdm9HMkQyX2h1MlZUeHAyRGNpQzM1emI2bWpRTUZ1aEZvc3NHNkNvVW5wdHFDQVNHbFRQckNnLXdPRUwteFpZSG9pYl9vOFlkRW1jU1AyNExEWVRWSW1WTXp3bEpzLUHSAeABQVVfeXFMT1F0NlBiUHQ0MmUzZkRGU2s1QzlHT1FOWFgwRmRrOTd4T1EzUEtlcVAyTlluUGo3RnFlSlMxZGdzazdFWkc3ZG95SFhlemZsWG5lendLYnVWSkJWNFBmdWRfcEIxbWJhdVFDbWFFcGkwTzY0RXRKZ2hRaXQzNGtRRXVsWXlobmZwcjhhcnVxc1lkVG9WTXFjcWZZMjY1a1Ytb0l5b01uNjBFLWFoalc3OEQ2dWZZMi1fVV9jT3R3MGpUZUg4eFJObG5hblkycjh4VGJKbWdCQ2F6UzFnQU53eGo?oc=5",
+   "source": "The Times of India",
    "region": "International",
    "published": "2026-10-27T07:00:00+00:00",
    "needs": [
@@ -1262,6 +1292,18 @@
    "stage": "critique"
   },
   {
+   "title": "Digital technologies and AI can strengthen agricultural systems and improve climate resilience for smallholder farmers",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdzlJbWRVUmg0U0FmbkItNTRTTmdMY1lMT3hpclIwY0tmdFpBaGIxYmNsQmtjR3ViUnJBSy1Kd3d6YTNYRF9GaEZ3UVd3UExheGVNNV9ISzV2WDdCRDJXLUM0YS1JdmJ4OVlFb3hPUGpWaGVOaTBUTDU5SF83eU9HajdHSDYxSVpTRHkyeUtRVnRON2tVT01CVTlNaDducGozQ1AxX29LaENGZXdSS2w0?oc=5",
+   "source": "UNU | United Nations University",
+   "region": "International",
+   "published": "2026-03-09T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "EEG-based foundation AI for early brain disease diagnosis unveiled in India",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPakhWc1VYMzVBaEpGZjgxX2dnZU9tQ3QyVmE5R1lfcnJUN2dUNmJwdTd1UUpKU05McTJOWFAxNG9vV1YtT0NDd0Jpc0VULXZiUXY0eGZGa1pGWV82cHVmVHhJeGQwa1lZT1FWaTFEXzB1QV9RS3V2NHcyRjVSejdtOGhqRUhIMmdxVUlFVDRwcUNiVkxsZ001UTdOemM0YzhiR0EtSXh2VkNuclRKTHc?oc=5",
    "source": "MobiHealthNews",
@@ -1789,6 +1831,25 @@
    "published": "2025-08-13T07:00:00+00:00",
    "needs": [
     "water"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "India observes AI Appreciation Day, marking growth in healthcare, education, agriculture, governance",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSVRvWGRKVGlwZjhfSVhIcEMzdmNEMk5McUlqeUh3R3RSdVdsYVVjRTN3Q3B0Y2UxSkI5aldwSGVCUDQ5MHAxdlJlbDBXZVNIMEJHaUp2ZGlKenJINFY0UjdjSjZnRmZ6TDNvWDRXNjhwZHJtQTIwM1FPVkI4clRaRXRXeS0yczVCbF9hTEpobFRwbzN5cXdGbXRGLXpIVzBydC1heWZ2U2hCaUtJcGdPN1NMcVFuVktkWTJwa2ZNVQ?oc=5",
+   "source": "News On AIR",
+   "region": "International",
+   "published": "2025-07-16T07:00:00+00:00",
+   "needs": [
+    "food"
    ],
    "places": [
     {
