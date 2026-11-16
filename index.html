@@ -26,11 +26,14 @@
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html, body { margin: 0; height: 100%; }
-body { background: var(--sky); color: var(--ink); font: 400 12.5px/1.6 var(--sans); overflow: hidden; -webkit-font-smoothing: antialiased; }
+body { background: #c9cfc4; color: var(--ink); font: 400 12.5px/1.6 var(--sans); overflow: hidden; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 a:focus-visible, button:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
 
-#forest { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+.bg { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.6s ease; background: #c9cfc4 url(media/forest-aerial-mist.jpg) center / cover no-repeat; }
+.bg.on { opacity: 1; }
+.veil { position: fixed; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(240,242,236,.18), rgba(30,36,30,.10) 70%); pointer-events: none; }
+#birds { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 .halo { position: fixed; left: 50%; top: 50%; width: var(--d, 70vmin); height: var(--d, 70vmin); transform: translate(-50%, -50%); border-radius: 50%;
         background: radial-gradient(circle, rgba(255,255,255,.55) 0%, rgba(255,255,255,.25) 52%, rgba(255,255,255,0) 72%); pointer-events: none; }
 #globe { position: fixed; inset: 0; }
@@ -41,7 +44,7 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--ink); outline-o
 .maplibregl-popup-content a { display: block; padding: 3px 0; border-top: 1px solid #e4e4e0; }
 
 nav { position: fixed; z-index: 3; left: max(20px, env(safe-area-inset-left, 0px)); top: calc(20px + env(safe-area-inset-top, 0px)); display: flex; flex-direction: column; gap: 2px; background: var(--paper); padding: 10px 14px 12px; }
-nav .name { font-weight: 500; margin-bottom: 10px; }
+nav .name { font-weight: 500; }
 nav a { color: var(--muted); width: fit-content; }
 nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 
@@ -77,26 +80,25 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 </style>
 </head>
 <body>
-<canvas id="forest" aria-hidden="true"></canvas>
+<video class="bg on" id="bgA" poster="media/forest-aerial-mist.jpg" muted playsinline preload="auto" aria-hidden="true"></video>
+<video class="bg" id="bgB" muted playsinline preload="auto" aria-hidden="true"></video>
+<div class="veil" aria-hidden="true"></div>
+<canvas id="birds" aria-hidden="true"></canvas>
 <div class="halo" id="halo" aria-hidden="true"></div>
-<div id="globe" role="region" aria-label="Satellite globe. Orange points are stories about AI and basic needs; blue points are data centres. Drag to turn, scroll or pinch to zoom."></div>
+<div id="globe" role="region" aria-label="Satellite globe. Orange points are stories about AI and basic needs; blue points are data centre construction. Drag to turn, scroll or pinch to zoom."></div>
 
 <nav aria-label="Site">
   <a class="name" href="./" aria-current="page">Inaya Vhora</a>
-  <a href="work.html#about">About</a>
-  <a href="work.html#speculation">Speculative</a>
-  <a href="wire.html">The Wire</a>
 </nav>
 
 <div class="legend" aria-hidden="true">
   <span><i style="background:var(--needs)"></i>AI and basic needs</span>
-  <span><i style="background:var(--dc);outline:1px solid #6aa9d6"></i>Data centres</span>
+  <span><i style="background:var(--dc);outline:1px solid #6aa9d6"></i>Data centre construction</span>
 </div>
 
 <section class="latest" aria-label="Latest from The Wire">
   <h2><span>The Wire · live</span><span id="updated"></span></h2>
   <ul id="latest"><li><span>Loading…</span></li></ul>
-  <a class="more" href="wire.html">Open the full record →</a>
 </section>
 <div class="pop" id="pop" aria-live="polite"></div>
 
@@ -108,95 +110,58 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-  // =================================================================== the forest (drawn in code)
-  const fc = $("forest"), fx = fc.getContext("2d");
-  let W = 0, H = 0, DPR = 1, layers = [], birds = [], leaves = [];
+  // =================================================================== the forest: real footage, looped with a crossfade
+  // Aerial view of morning mist over a forest (Mixkit, free licence). Phones get a lighter file.
+  const small = Math.min(innerWidth, innerHeight) < 700 || (navigator.connection && navigator.connection.saveData);
+  const SRC = small ? "media/forest-aerial-mist-small.mp4" : "media/forest-aerial-mist.mp4";
+  const vids = [$("bgA"), $("bgB")];
+  vids.forEach(v => { v.src = SRC; v.muted = true; v.playsInline = true; });
+  let cur = 0;
+  if (!reduce) {
+    vids[0].play().catch(() => {});
+    const FADE = 1.6;
+    setInterval(() => {
+      const a = vids[cur], b = vids[1 - cur];
+      if (a.duration && a.currentTime > a.duration - FADE - 0.1 && b.paused) {
+        b.currentTime = 0; b.play().catch(() => {}); b.classList.add("on"); a.classList.remove("on");
+        setTimeout(() => { a.pause(); }, FADE * 1000 + 200); cur = 1 - cur;
+      }
+    }, 120);
+  }
+
+  // distant birds crossing the sky (small silhouettes, upper part of the frame only)
+  const fc = $("birds"), fx = fc.getContext("2d");
+  let W = 0, H = 0, birds = [];
   const rand = (a, b) => a + Math.random() * (b - a);
-
-  function treeLayer(w, h, base, col, density, scale, seed) {
-    const c = document.createElement("canvas"); c.width = w * 1.1; c.height = h; const x = c.getContext("2d");
-    let s = seed; const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
-    x.fillStyle = col;
-    x.beginPath(); x.moveTo(0, h); x.lineTo(0, base);
-    for (let i = 0; i <= 40; i++) { const px = i / 40 * c.width; x.lineTo(px, base - Math.sin(i * 0.7 + seed) * 6 * scale); }
-    x.lineTo(c.width, h); x.fill();
-    const n = Math.round(c.width / (26 * scale) * density);
-    for (let i = 0; i < n; i++) {
-      const tx = r() * c.width, th = (60 + r() * 120) * scale, tw = th * (0.28 + r() * 0.2);
-      const ty = base + 4 * scale;
-      if (r() < 0.55) {            // conifer
-        x.beginPath(); x.moveTo(tx, ty - th);
-        for (let k = 0; k < 5; k++) { const yy = ty - th + (k + 1) * th / 5; const ww = tw * (k + 1) / 5; x.lineTo(tx + ww, yy); x.lineTo(tx + ww * 0.45, yy - th / 14); }
-        for (let k = 4; k >= 0; k--) { const yy = ty - th + (k + 1) * th / 5; const ww = tw * (k + 1) / 5; x.lineTo(tx - ww * 0.45, yy - th / 14); x.lineTo(tx - ww, yy); }
-        x.closePath(); x.fill();
-      } else {                     // broadleaf: clustered rounds on a trunk
-        x.fillRect(tx - 1.5 * scale, ty - th * 0.45, 3 * scale, th * 0.45);
-        for (let k = 0; k < 6; k++) { x.beginPath(); x.arc(tx + (r() - 0.5) * tw * 1.2, ty - th * (0.5 + r() * 0.45), tw * (0.32 + r() * 0.25), 0, Math.PI * 2); x.fill(); }
+  function sizeBirds() {
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    W = innerWidth; H = innerHeight; fc.width = W * dpr; fc.height = H * dpr; fx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function flock() {   // a loose group enters from one side every so often
+    const n = 5 + Math.floor(Math.random() * 7), y0 = rand(H * 0.08, H * 0.32), dir = Math.random() < 0.5 ? 1 : -1;
+    for (let i = 0; i < n; i++) birds.push({ x: dir > 0 ? -20 - i * rand(8, 18) : W + 20 + i * rand(8, 18), y: y0 + rand(-14, 14) + i * rand(-2, 3),
+      vx: dir * rand(0.55, 0.8), vy: rand(-0.04, 0.04), ph: rand(0, 6), rate: rand(0.009, 0.013), s: rand(0.6, 1.0), glide: 0 });
+  }
+  sizeBirds(); addEventListener("resize", sizeBirds);
+  if (!reduce) {
+    flock(); setInterval(() => { if (birds.length < 30) flock(); }, 14000);
+    (function loop(t) {
+      fx.clearRect(0, 0, W, H);
+      fx.strokeStyle = "rgba(34,36,32,.72)"; fx.lineCap = "round"; fx.lineJoin = "round";
+      for (const b of birds) {
+        b.x += b.vx; b.y += b.vy + Math.sin(t * 0.0012 + b.ph) * 0.05;
+        if (b.glide > 0) b.glide--; else if (Math.random() < 0.004) b.glide = 60 + Math.random() * 80;   // birds glide between wingbeats
+        const f = b.glide > 0 ? 0.25 : Math.sin(t * b.rate * 6 + b.ph), w = 4.2 * b.s;
+        fx.lineWidth = 1.1 * b.s;
+        fx.beginPath();
+        fx.moveTo(b.x - w, b.y - f * 2.4 * b.s); fx.quadraticCurveTo(b.x - w * 0.45, b.y - 1.2 - f * 0.8, b.x, b.y);
+        fx.quadraticCurveTo(b.x + w * 0.45, b.y - 1.2 - f * 0.8, b.x + w, b.y - f * 2.4 * b.s);
+        fx.stroke();
       }
-    }
-    return c;
+      birds = birds.filter(b => b.x > -80 && b.x < W + 80);
+      requestAnimationFrame(loop);
+    })(0);
   }
-
-  function buildForest() {
-    DPR = Math.min(devicePixelRatio || 1, 1.5);
-    W = innerWidth; H = innerHeight;
-    fc.width = W * DPR; fc.height = H * DPR; fx.setTransform(DPR, 0, 0, DPR, 0, 0);
-    const k = Math.max(0.7, Math.min(1.4, H / 800));
-    layers = [
-      { c: treeLayer(W, H, H * 0.70, "#c9d6cb", 1.0, 0.75 * k, 3), sway: 2 },
-      { c: treeLayer(W, H, H * 0.78, "#adc2b0", 1.0, 0.95 * k, 7), sway: 4 },
-      { c: treeLayer(W, H, H * 0.86, "#8aa58f", 0.9, 1.2 * k, 11), sway: 6 },
-      { c: treeLayer(W, H, H * 0.95, "#5f7d66", 0.8, 1.5 * k, 19), sway: 9 },
-    ];
-    const n = W < 640 ? 18 : 34;
-    birds = Array.from({ length: n }, () => ({ x: rand(-W * 0.2, W), y: rand(H * 0.08, H * 0.4), vx: rand(0.5, 0.9), vy: rand(-0.1, 0.1), ph: rand(0, 6), s: rand(0.7, 1.3) }));
-    leaves = Array.from({ length: W < 640 ? 10 : 22 }, () => ({ x: rand(0, W), y: rand(-H, H), v: rand(0.2, 0.5), a: rand(0, 6), s: rand(2, 4) }));
-  }
-
-  function drawForest(t) {
-    const g = fx.createLinearGradient(0, 0, 0, H);
-    g.addColorStop(0, "#dfe8e2"); g.addColorStop(0.55, "#eef1ea"); g.addColorStop(1, "#d7e0d4");
-    fx.fillStyle = g; fx.fillRect(0, 0, W, H);
-    // light through the canopy
-    fx.save(); fx.globalCompositeOperation = "lighter";
-    for (let i = 0; i < 4; i++) {
-      const x0 = W * (0.15 + i * 0.22) + Math.sin(t * 0.00012 + i) * 30, a = 0.05 + 0.03 * Math.sin(t * 0.0004 + i * 2);
-      fx.fillStyle = `rgba(255,250,232,${a})`;
-      fx.beginPath(); fx.moveTo(x0, 0); fx.lineTo(x0 + 70, 0); fx.lineTo(x0 + 260, H); fx.lineTo(x0 + 120, H); fx.fill();
-    }
-    fx.restore();
-    // birds (a loose flock, high in the sky)
-    const cx = birds.reduce((s, b) => s + b.x, 0) / birds.length, cy = birds.reduce((s, b) => s + b.y, 0) / birds.length;
-    fx.strokeStyle = "rgba(40,48,42,.7)"; fx.lineWidth = 1.2; fx.lineCap = "round";
-    for (const b of birds) {
-      if (!reduce) {
-        b.vy += (cy - b.y) * 0.00004 + Math.sin(t * 0.0007 + b.ph) * 0.004;
-        b.vx += (cx - b.x) * 0.000004;
-        b.vx = Math.max(0.35, Math.min(1.1, b.vx)); b.vy = Math.max(-0.35, Math.min(0.35, b.vy));
-        b.x += b.vx; b.y += b.vy;
-        if (b.x > W + 40) { b.x = -40 - rand(0, W * 0.3); b.y = rand(H * 0.08, H * 0.4); }
-      }
-      const f = Math.sin(t * 0.012 * b.s + b.ph) * 4 * b.s, w = 6 * b.s;
-      fx.beginPath(); fx.moveTo(b.x - w, b.y - f); fx.quadraticCurveTo(b.x - w * 0.4, b.y - f * 0.2 - 2, b.x, b.y); fx.quadraticCurveTo(b.x + w * 0.4, b.y - f * 0.2 - 2, b.x + w, b.y - f); fx.stroke();
-    }
-    // tree layers with mist between them
-    layers.forEach((L, i) => {
-      const off = reduce ? 0 : Math.sin(t * 0.0003 * (i + 1)) * L.sway;
-      fx.drawImage(L.c, off - W * 0.05, 0, L.c.width, H);
-      const m = fx.createLinearGradient(0, H * (0.55 + i * 0.09), 0, H);
-      m.addColorStop(0, "rgba(238,241,234,0)"); m.addColorStop(0.4, `rgba(238,241,234,${0.22 - i * 0.04})`); m.addColorStop(1, "rgba(238,241,234,0)");
-      fx.fillStyle = m; fx.fillRect(0, H * (0.55 + i * 0.09), W, H);
-    });
-    // drifting leaves
-    fx.fillStyle = "rgba(95,125,102,.55)";
-    for (const l of leaves) {
-      if (!reduce) { l.y += l.v; l.x += Math.sin(t * 0.001 + l.a) * 0.4; if (l.y > H + 10) { l.y = -10; l.x = rand(0, W); } }
-      fx.save(); fx.translate(l.x, l.y); fx.rotate(Math.sin(t * 0.002 + l.a)); fx.beginPath(); fx.ellipse(0, 0, l.s, l.s * 0.45, 0, 0, Math.PI * 2); fx.fill(); fx.restore();
-    }
-  }
-  buildForest();
-  addEventListener("resize", buildForest);
-  (function loop(t) { drawForest(t); if (!reduce) requestAnimationFrame(loop); })(0);
 
   // =================================================================== the globe
   const MAPTILER_KEY = "4RJrlbyP57DSKJIwC3Ev";
@@ -301,7 +266,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
     const el = $("pop");
     el.className = "pop" + (it.kind === "dc" ? " dc" : "");
     el.innerHTML = (it.image ? `<img src="${esc(it.image)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : "") +
-      `<span class="k">${it.kind === "dc" ? "Data centre" : "AI and basic needs"} · ${esc(p.name)}</span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`;
+      `<span class="k">${it.kind === "dc" ? "Data centre construction" : "AI and basic needs"} · ${esc(p.name)}</span><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`;
     placePop();
     requestAnimationFrame(() => el.classList.add("show"));
     setTimeout(() => el.classList.remove("show"), 6200);

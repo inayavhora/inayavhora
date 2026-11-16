@@ -296,6 +296,10 @@ def parse_feed(xml_bytes: bytes, name: str, region: str, ai_only: bool):
 DC_FILE = Path(__file__).parent / "datacentres.json"
 DC_MAX = 400
 DC_RE = re.compile(r"\bdata[ -]?cent(er|re)s?\b|\bhyperscale\w*\b|\bserver farms?\b|\bAI (campus|factory|factories)\b|\bcompute campus\b", re.I)
+SUBNATIONAL = {n: "IN" for n in ["Gujarat", "Maharashtra", "Tamil Nadu", "Telangana", "Karnataka", "Uttar Pradesh", "Andhra Pradesh",
+                                  "Kerala", "Odisha", "Bihar", "Punjab", "Haryana", "Rajasthan", "West Bengal", "Madhya Pradesh", "Assam"]}
+SUBNATIONAL.update({"Johor": "MY", "Selangor": "MY", "Bavaria": "DE", "Ontario": "CA", "Quebec": "CA", "Alberta": "CA",
+                    "New South Wales": "AU", "Victoria": "AU", "Queensland": "AU", "Sao Paulo": "BR", "Queretaro": "MX", "Gauteng": "ZA"})
 US_STATE_CENTRES = {   # approximate geographic centres, for stories that name only a state
     "AL": (-86.8, 32.8), "AZ": (-111.7, 34.3), "AR": (-92.4, 34.9), "CA": (-119.5, 37.2), "CO": (-105.5, 39.0), "CT": (-72.7, 41.6),
     "DE": (-75.5, 39.0), "FL": (-81.7, 28.6), "GA": (-83.4, 32.7), "ID": (-114.6, 44.4), "IL": (-89.2, 40.0), "IN": (-86.3, 39.9),
@@ -317,6 +321,12 @@ DC_FEEDS = [
     ("Google News: design press", "Design", gnews('("data center" OR "data centre") (' + " OR ".join("site:" + d for d in DESIGN_SITES) + ")")),
     ("Google News: architecture", "Design", gnews('("data center" OR "data centre") (architecture OR architects OR design) (new OR unveiled OR completed OR planned)')),
     ("DatacenterDynamics",    "Industry", "https://www.datacenterdynamics.com/en/rss/"),
+    # beyond the US and Europe, so the map shows where compute is (and is not) being built
+    ("Google News: India",    "Industry", gnews('("data center" OR "data centre") (India OR Mumbai OR Chennai OR Hyderabad OR Navi Mumbai OR Noida OR Pune) when:14d')),
+    ("Google News: Africa",   "Industry", gnews('("data center" OR "data centre") (Africa OR Nigeria OR Kenya OR Lagos OR Nairobi OR "South Africa" OR Johannesburg OR Egypt OR Morocco OR Ethiopia) when:30d')),
+    ("Google News: Asia",     "Industry", gnews('("data center" OR "data centre") (Malaysia OR Johor OR Indonesia OR Jakarta OR Thailand OR Vietnam OR Philippines OR Bangladesh OR Pakistan) when:14d')),
+    ("Google News: Gulf",     "Industry", gnews('("data center" OR "data centre") ("Saudi Arabia" OR UAE OR "Abu Dhabi" OR Dubai OR Qatar OR Oman) when:14d')),
+    ("Google News: Latin America", "Industry", gnews('("data center" OR "data centre") (Brazil OR "Sao Paulo" OR Mexico OR Queretaro OR Chile OR Santiago OR Colombia) when:14d')),
     ("Google News: new builds", "Industry", gnews('("data center" OR "data centre") (construction OR "breaks ground" OR approved OR campus) when:7d')),
 ]
 IMG_RE = re.compile(r"<img[^>]+src=[\"']([^\"']+)", re.I)
@@ -367,6 +377,7 @@ def place_worldwide(text):
     if not towns:
         return []
     named_cc = {code for name, code in countries.items() if re.search(r"\b" + re.escape(name) + r"\b", text)}
+    named_cc |= {code for name, code in SUBNATIONAL.items() if re.search(r"\b" + re.escape(name) + r"\b", text)}
     named_st = {code for name, code in states.items() if re.search(r"\b" + re.escape(name) + r"\b(?! City)", text)}   # "Kansas City" is not Kansas
     if named_st:
         named_cc.add("US")
@@ -386,7 +397,7 @@ def place_worldwide(text):
                     c = max(hits, key=lambda c: c["population"])
                     where = c["admin1code"] if c["countrycode"] == "US" else next((k for k, v in countries.items() if v == c["countrycode"]), c["countrycode"])
                     place = {"name": f"{cand}, {where}", "lon": round(c["longitude"], 4), "lat": round(c["latitude"], 4), "precision": "town"}
-                    if place["name"] not in [p["name"] for p in found]:
+                    if place["name"] not in [p["name"] for p in found] and not any(cand in p["name"].split(",")[0] for p in found):
                         found.append(place)
     if not found:
         for name, code in states.items():
