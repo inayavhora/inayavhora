@@ -1,0 +1,45 @@
+name: Fetch background footage
+
+# One-off: downloads free Mixkit forest clips (Mixkit Free License: web use allowed, no attribution
+# required), compresses them for phones, makes a still from each, and commits them to media/.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/fetch-media.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and compress
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg >/dev/null
+          mkdir -p media
+          get() {  # id, name
+            for u in "https://assets.mixkit.co/videos/$1/$1-1080.mp4" "https://assets.mixkit.co/videos/$1/$1-720.mp4" \
+                     "https://assets.mixkit.co/active_storage/videos/$1/$1-1080.mp4" "https://assets.mixkit.co/active_storage/videos/$1/$1-720.mp4"; do
+              if curl -fsSL -A "Mozilla/5.0" -o "/tmp/$2.mp4" "$u"; then echo "got $u"; break; fi
+            done
+            [ -s "/tmp/$2.mp4" ] || { echo "could not fetch $1"; return 0; }
+            ffprobe -v error -show_entries format=duration:stream=width,height -of compact "/tmp/$2.mp4"
+            ffmpeg -v error -y -i "/tmp/$2.mp4" -an -vf "scale=1600:-2,fps=30" -c:v libx264 -preset slow -crf 27 -pix_fmt yuv420p -movflags +faststart "media/$2.mp4"
+            ffmpeg -v error -y -i "/tmp/$2.mp4" -an -vf "scale=900:-2,fps=24" -c:v libx264 -preset slow -crf 29 -pix_fmt yuv420p -movflags +faststart "media/$2-small.mp4"
+            ffmpeg -v error -y -ss 2 -i "/tmp/$2.mp4" -frames:v 1 -vf "scale=1600:-2" -q:v 4 "media/$2.jpg"
+            ls -la media/
+          }
+          get 50867 forest-mist
+          get 3009 forest-sunrays
+          get 28339 forest-aerial-mist
+      - name: Commit
+        run: |
+          git config user.name "ai-news-wire"
+          git config user.email "actions@users.noreply.github.com"
+          git add media
+          git diff --cached --quiet || git commit -m "Background footage from Mixkit (free licence)"
+          git pull --rebase origin main
+          git push
