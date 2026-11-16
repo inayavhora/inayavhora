@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name  "ai-news-wire"
           git config user.email "actions@users.noreply.github.com"
-          git add news.json needs.json
+          git add news.json needs.json datacentres.json
           git diff --cached --quiet || git commit -m "Wire update $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase origin main
           git push

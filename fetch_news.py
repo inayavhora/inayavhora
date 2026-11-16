@@ -290,6 +290,136 @@ def parse_feed(xml_bytes: bytes, name: str, region: str, ai_only: bool):
     return out
 
 
+# ================================================================ DATA CENTRES
+# Where new data centres are being built, and what they look like. Design and architecture press first
+# (their feeds carry the article's lead photo), plus industry news for locations.
+DC_FILE = Path(__file__).parent / "datacentres.json"
+DC_MAX = 400
+DC_RE = re.compile(r"\bdata[ -]?cent(er|re)s?\b|\bhyperscale\w*\b|\bserver farms?\b|\bAI (campus|factory|factories)\b|\bcompute campus\b", re.I)
+DESIGN_SITES = ["dezeen.com", "designboom.com", "archdaily.com", "architecturaldigest.com", "wallpaper.com", "archpaper.com", "architectsjournal.co.uk", "dwell.com"]
+DC_FEEDS = [
+    ("Dezeen",                "Design", "https://www.dezeen.com/feed/"),
+    ("designboom",            "Design", "https://www.designboom.com/feed/"),
+    ("ArchDaily",             "Design", "https://www.archdaily.com/feed"),
+    ("Architectural Digest",  "Design", "https://www.architecturaldigest.com/feed/rss"),
+    ("Wallpaper*",            "Design", "https://www.wallpaper.com/feeds/all"),
+    ("The Architect's Newspaper", "Design", "https://www.archpaper.com/feed/"),
+    ("Google News: design press", "Design", gnews('("data center" OR "data centre") (' + " OR ".join("site:" + d for d in DESIGN_SITES) + ")")),
+    ("Google News: architecture", "Design", gnews('("data center" OR "data centre") (architecture OR architects OR design) (new OR unveiled OR completed OR planned)')),
+    ("DatacenterDynamics",    "Industry", "https://www.datacenterdynamics.com/en/rss/"),
+    ("Google News: new builds", "Industry", gnews('("data center" OR "data centre") (construction OR "breaks ground" OR approved OR campus) when:7d')),
+]
+IMG_RE = re.compile(r"<img[^>]+src=[\"']([^\"']+)", re.I)
+
+def item_image(it):
+    """The lead photo a feed attaches to an item: media:content / media:thumbnail / enclosure / first <img>."""
+    for el in it.iter():
+        t = local(el.tag)
+        if t in ("content", "thumbnail") and el.get("url") and (el.get("medium") == "image" or re.search(r"\.(jpe?g|png|webp)(\?|$)", el.get("url"), re.I) or t == "thumbnail"):
+            return el.get("url")
+        if t == "enclosure" and el.get("url") and (el.get("type") or "").startswith("image"):
+            return el.get("url")
+    for el in it.iter():
+        if el.text and "<img" in el.text:
+            m = IMG_RE.search(el.text)
+            if m:
+                return m.group(1)
+    return ""
+
+_WORLD = None
+def world_index():
+    """Towns of 15,000+ people worldwide, country names and US states, for placing data centres."""
+    global _WORLD
+    if _WORLD is None:
+        _WORLD = ({}, {}, {})
+        try:
+            import unicodedata, geonamescache
+            gc = geonamescache.GeonamesCache(min_city_population=15000)
+            plain = lambda t: unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
+            for c in gc.get_cities().values():
+                n = plain(c["name"])
+                if len(n) >= 4:
+                    _WORLD[0].setdefault(n, []).append(c)
+            for code, c in gc.get_countries().items():
+                _WORLD[1][c["name"]] = code
+            for code, st in gc.get_us_states().items():
+                _WORLD[2][st["name"]] = code
+        except Exception as e:
+            print(f"  world towns unavailable ({e.__class__.__name__})", file=sys.stderr)
+    return _WORLD
+
+COMMON = {"Mobile", "Reading", "Independence", "Commerce", "Energy", "Power", "Ocean", "Data", "Center", "Centre", "Cloud",
+          "Google", "Meta", "Amazon", "Oracle", "Microsoft", "Apple", "Nvidia", "Stargate", "Phoenix Data", "Victoria", "Florence",
+          "Paris Agreement", "Columbia", "Marion", "Lincoln", "Jackson", "Franklin", "Clinton", "Washington Post", "Sherman"}
+
+def place_worldwide(text):
+    towns, countries, states = world_index()
+    if not towns:
+        return []
+    named_cc = {code for name, code in countries.items() if re.search(r"\b" + re.escape(name) + r"\b", text)}
+    named_st = {code for name, code in states.items() if re.search(r"\b" + re.escape(name) + r"\b", text)}
+    if named_st:
+        named_cc.add("US")
+    found = []
+    for m in CAPS.finditer(text):
+        words = m.group(0).replace("-", " ").split()
+        for n in range(len(words), 0, -1):
+            for i in range(0, len(words) - n + 1):
+                cand = " ".join(words[i:i + n])
+                if cand in COMMON or cand in countries or cand in states:
+                    continue
+                hits = [c for c in towns.get(cand, [])
+                        if (c["countrycode"] == "US" and c["admin1code"] in named_st)
+                        or (c["countrycode"] != "US" and c["countrycode"] in named_cc)
+                        or c["population"] >= 1000000]
+                if hits:
+                    c = max(hits, key=lambda c: c["population"])
+                    where = c["admin1code"] if c["countrycode"] == "US" else next((k for k, v in countries.items() if v == c["countrycode"]), c["countrycode"])
+                    place = {"name": f"{cand}, {where}", "lon": round(c["longitude"], 4), "lat": round(c["latitude"], 4), "precision": "town"}
+                    if place["name"] not in [p["name"] for p in found]:
+                        found.append(place)
+    return found[:2]
+
+def gather_datacentres():
+    got, ok = [], 0
+    for name, kind, url in DC_FEEDS:
+        try:
+            root = ET.fromstring(fetch(url))
+            n = 0
+            for it in [el for el in root.iter() if local(el.tag) in ("item", "entry")]:
+                title = clean(child_text(it, "title"))
+                link = child_text(it, "link", "guid").strip()
+                if not link:
+                    for el in it:
+                        if local(el.tag) == "link" and el.get("href"):
+                            link = el.get("href"); break
+                summary = clean(child_text(it, "description", "summary", "content"))
+                if not title or not link or not DC_RE.search(f"{title} {summary}"):
+                    continue
+                source = name
+                if name.startswith("Google News"):
+                    outlet = child_text(it, "source")
+                    if outlet:
+                        source = outlet
+                        title = re.sub(r"\s+-\s+" + re.escape(outlet) + r"$", "", title)
+                design = kind == "Design" or any(d.split(".")[0] in source.lower().replace(" ", "") for d in DESIGN_SITES)
+                date = parse_date(child_text(it, "pubDate", "published", "updated", "date"))
+                got.append({
+                    "title": title, "url": link, "source": source, "kind": "design" if design else "industry",
+                    "image": item_image(it),
+                    "published": (date or datetime.now(timezone.utc)).isoformat(timespec="seconds"),
+                    "places": place_worldwide(f"{title} {summary.replace(source, ' ')}"),
+                })
+                n += 1
+            ok += 1
+            print(f"  ✓ {name:28} {n:3} data-centre stories")
+            SOURCE_LOG.append({"name": name, "set": "Data centres", "ok": True, "stories": n})
+        except Exception as e:
+            print(f"  ✗ {name:28} skipped ({e.__class__.__name__})", file=sys.stderr)
+            SOURCE_LOG.append({"name": name, "set": "Data centres", "ok": False, "error": e.__class__.__name__ + ": " + str(e)[:120]})
+    return got, ok
+
+
 def fetch(url: str) -> bytes:
     req = urllib.request.Request(url, headers={
         "User-Agent": "Mozilla/5.0 (AI News Wire; personal art project)",
@@ -375,7 +505,10 @@ def main():
     print("Basic needs")
     special, ok_n = gather(NEEDS_FEEDS, "Basic needs")
 
-    if ok_g == 0 and ok_n == 0:
+    print("Data centres")
+    dcs, ok_d = gather_datacentres()
+
+    if ok_g == 0 and ok_n == 0 and ok_d == 0:
         print("No feeds reachable — leaving archives unchanged.", file=sys.stderr)
         sys.exit(1)
 
@@ -393,6 +526,15 @@ def main():
     apply_featured(needs)
     save(NEEDS_FILE, needs, ok_n)
     print(f"needs.json now holds {len(needs)} stories.")
+
+    if ok_d:
+        old = load(DC_FILE)
+        for it in old:   # re-place older stories with the current rules
+            if not it.get("places"):
+                it["places"] = place_worldwide(it["title"])
+        dc_items = merge(old, dcs, DC_MAX)
+        save(DC_FILE, dc_items, ok_d)
+        print(f"datacentres.json now holds {len(dc_items)} stories.")
 
     for it in general:
         it.pop("_summary", None)
