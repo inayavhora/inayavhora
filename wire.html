@@ -236,7 +236,7 @@ h1 { font: 500 12.5px/1.6 var(--sans); margin: 0; }
   // ---------------- Globe: MapLibre globe projection + Sentinel-2 cloudless satellite imagery (EOX)
   // Satellite imagery. Paste a free MapTiler key here (cloud.maptiler.com -> API keys) for sharp,
   // street-level satellite photos. Without a key the globe uses the 10 m Sentinel-2 mosaic.
-  const MAPTILER_KEY = "";
+  const MAPTILER_KEY = "4RJrlbyP57DSKJIwC3Ev";
   const IMAGERY = MAPTILER_KEY ? {
     type: "raster", tileSize: 512,
     url: "https://api.maptiler.com/tiles/satellite-v2/tiles.json?key=" + MAPTILER_KEY,
