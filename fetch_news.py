@@ -102,14 +102,71 @@ COUNTRIES = {
     "Cameroon": (12.4, 7.4), "Lebanon": (35.9, 33.9), "Eritrea": (39.8, 15.2), "Ghana": (-1.0, 7.9),
     "Senegal": (-14.5, 14.5), "Mauritania": (-10.9, 21.0), "Sierra Leone": (-11.8, 8.5), "Liberia": (-9.4, 6.4),
     "Guatemala": (-90.2, 15.8), "Honduras": (-86.2, 15.2), "Nepal": (84.1, 28.4), "Lesotho": (28.2, -29.6),
-    "Angola": (17.9, -11.2), "Rwanda ": (29.9, -1.9), "Bihar": (85.3, 25.1), "Odisha": (85.1, 20.9),
+    "Angola": (17.9, -11.2), "Bihar": (85.3, 25.1), "Odisha": (85.1, 20.9),
     "Maharashtra": (75.7, 19.7), "Telangana": (79.0, 18.1), "Andhra Pradesh": (79.7, 15.9), "Punjab": (75.3, 31.1),
     "Tigray": (39.0, 14.0), "Darfur": (24.9, 13.5), "Sahel": (2.0, 15.0), "Rohingya": (92.2, 21.2),
 }
-REGION_OF = {"Gaza": "Palestine", "DRC": "Congo", "Rwanda ": "Rwanda", "Bihar": "India", "Odisha": "India",
+REGION_OF = {"Gaza": "Palestine", "Bihar": "India", "Odisha": "India",
              "Maharashtra": "India", "Telangana": "India", "Andhra Pradesh": "India", "Punjab": "India",
              "Tigray": "Ethiopia", "Darfur": "Sudan", "Rohingya": "Bangladesh"}
 COUNTRY_RE = [(re.compile(r"\b" + re.escape(k.strip()) + r"(?:n|ns|ese|ian|ians|i|is)?\b"), k) for k in sorted(COUNTRIES, key=len, reverse=True)]
+
+# ---- Precise places: towns named in a story, looked up in GeoNames (towns of 5,000+ people).
+ISO2 = {"Sudan": "SD", "South Sudan": "SS", "Palestine": "PS", "Haiti": "HT", "Mali": "ML", "Yemen": "YE",
+        "Somalia": "SO", "Ethiopia": "ET", "Afghanistan": "AF", "Congo": "CD", "Nigeria": "NG", "Burkina Faso": "BF",
+        "Chad": "TD", "Niger": "NE", "Syria": "SY", "Myanmar": "MM", "Bangladesh": "BD", "Pakistan": "PK", "India": "IN",
+        "Kenya": "KE", "Malawi": "MW", "Mozambique": "MZ", "Zimbabwe": "ZW", "Zambia": "ZM", "Madagascar": "MG",
+        "Uganda": "UG", "Tanzania": "TZ", "Rwanda": "RW", "Burundi": "BI", "Central African Republic": "CF",
+        "Cameroon": "CM", "Lebanon": "LB", "Eritrea": "ER", "Ghana": "GH", "Senegal": "SN", "Mauritania": "MR",
+        "Sierra Leone": "SL", "Liberia": "LR", "Guatemala": "GT", "Honduras": "HN", "Nepal": "NP", "Lesotho": "LS", "Angola": "AO"}
+_TOWNS = None
+NOT_TOWNS = {"Mango", "Asia", "Africa", "Data", "Google", "Gates", "Bill", "Union", "Delta", "Victoria", "Bay", "Aid",
+             "Kisan", "Bharat", "Digital", "Smart", "Green", "Sun", "Rose", "Bali", "Agra"}  # words that are also town names
+
+def towns():
+    """name (accents removed) -> list of towns, only in the countries this wire follows."""
+    global _TOWNS
+    if _TOWNS is None:
+        _TOWNS = {}
+        try:
+            import unicodedata
+            import geonamescache
+            plain = lambda t: unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
+            keep = set(ISO2.values())
+            for c in geonamescache.GeonamesCache(min_city_population=5000).get_cities().values():
+                if c["countrycode"] not in keep:
+                    continue
+                names = {plain(c["name"])}   # official name only: alternate names misfire (Chittagong is also "Islamabad")
+                for n in names:
+                    if len(n) >= 4 and n not in NOT_TOWNS:
+                        _TOWNS.setdefault(n, []).append(c)
+        except Exception as e:
+            print(f"  towns unavailable ({e.__class__.__name__}); places stay at region or country level", file=sys.stderr)
+    return _TOWNS
+
+CAPS = re.compile(r"\b[A-Z][a-z]+(?:[ -][A-Z][a-z]+){0,2}\b")
+
+def find_towns(text, countries):
+    """Towns named in the text. A town counts only if its country is also named, or it has 500,000+ people."""
+    idx, codes, found = towns(), {ISO2[c] for c in countries if c in ISO2}, []
+    if not idx:
+        return found
+    for m in CAPS.finditer(text):
+        words = m.group(0).replace("-", " ").split()
+        for n in range(len(words), 0, -1):            # longest name first: "Navi Mumbai" before "Mumbai"
+            for i in range(0, len(words) - n + 1):
+                cand = " ".join(words[i:i + n])
+                if cand in COUNTRIES or cand + " " in COUNTRIES:   # a state or country, not a town
+                    continue
+                hits = [c for c in idx.get(cand, []) if c["countrycode"] in codes or c["population"] >= 500000]
+                if hits:
+                    c = max(hits, key=lambda c: c["population"])
+                    country = next((k for k, v in ISO2.items() if v == c["countrycode"]), "")
+                    place = {"name": f"{cand}, {country}", "lon": round(c["longitude"], 4), "lat": round(c["latitude"], 4), "precision": "town"}
+                    if place["name"] not in [p["name"] for p in found]:
+                        found.append(place)
+    return found
+
 
 STAGE_PILOT = re.compile(r"\b(pilot\w*|trials?|trialled|tests?|testing|launch\w*|rolls? out|rolling out|deploy\w*)\b", re.I)
 STAGE_PROPOSED = re.compile(r"\b(could|may|might|would|plans?|planned|proposal|proposes?|aims? to|seeks? to|promise\w*|potential|future|vision|call\w* for|should)\b", re.I)
@@ -125,15 +182,26 @@ def classify(item, summary=""):
     needs = [k for k, r in NEEDS_RE.items() if r.search(text)]
     if not needs:
         return None
-    places = []
+    countries, regions = [], []
     scan = text
     for r, k in COUNTRY_RE:           # longest names first; blank each match so
         if r.search(scan):            # "South Sudan" is not also counted as "Sudan"
             scan = r.sub(" ", scan)
-            name = REGION_OF.get(k, k.strip())
-            if name not in [p["name"] for p in places]:
-                lon, lat = COUNTRIES[k]
-                places.append({"name": name, "lon": lon, "lat": lat})
+            lon, lat = COUNTRIES[k]
+            if k.strip() == "DRC":
+                k = "Congo"
+            if k in REGION_OF:        # a state or region: keep its own point
+                country = REGION_OF[k]
+                regions.append({"name": f"{k.strip()}, {country}", "lon": lon, "lat": lat, "precision": "region"})
+                if country not in countries:
+                    countries.append(country)
+            elif k.strip() not in countries:
+                countries.append(k.strip())
+    town_places = find_towns(text, countries)
+    named = {p["name"].split(", ")[1] for p in town_places + regions}
+    places = town_places + regions + [
+        {"name": c, "lon": COUNTRIES[c][0], "lat": COUNTRIES[c][1], "precision": "country"}
+        for c in countries if c not in named and c in COUNTRIES]
     # Needs a humanitarian or development signal, or a place plus a need named in the headline itself.
     title_need = any(r.search(item["title"]) for r in NEEDS_RE.values())
     if not HUMANITARIAN.search(text) and not (places and title_need):
@@ -251,6 +319,24 @@ def merge(existing, new, limit=MAX_ITEMS):
 
 SOURCE_LOG = []
 
+FEATURED_FILE = Path(__file__).parent / "featured.json"
+
+def apply_featured(items):
+    """Stories drawn in the weekly batch: attach the drawing, and the exact place when one is known."""
+    try:
+        feats = {f["url"]: f for f in json.loads(FEATURED_FILE.read_text())["items"]}
+    except Exception:
+        return
+    for it in items:
+        f = feats.get(it["url"])
+        if not f:
+            continue
+        it["drawing"] = f.get("drawing")
+        it["drawing_note"] = f.get("note", "")
+        if f.get("place"):
+            it["places"] = [f["place"]] + [p for p in it.get("places", []) if p["name"] != f["place"]["name"]][:2]
+
+
 def gather(feeds, label):
     gathered, ok = [], 0
     for name, region, url, ai_only in feeds:
@@ -304,6 +390,7 @@ def main():
     for it in needs:
         it.pop("_summary", None)
     needs = merge([], needs, NEEDS_MAX)
+    apply_featured(needs)
     save(NEEDS_FILE, needs, ok_n)
     print(f"needs.json now holds {len(needs)} stories.")
 
