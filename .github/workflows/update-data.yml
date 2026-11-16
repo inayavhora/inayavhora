@@ -1,0 +1,32 @@
+name: Update country data
+
+# Rich-and-poor figures per country from the World Bank. They change about once a year; checked monthly.
+on:
+  schedule:
+    - cron: "41 3 2 * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [tools/inequality.py, .github/workflows/update-data.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install geonamescache==2.0.0
+      - run: python tools/inequality.py
+      - name: Commit
+        run: |
+          git config user.name "ai-news-wire"
+          git config user.email "actions@users.noreply.github.com"
+          git add inequality.json
+          git diff --cached --quiet || git commit -m "Country data: rich and poor (World Bank)"
+          git pull --rebase origin main
+          git push
