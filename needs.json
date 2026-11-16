@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:28:25+00:00",
+ "updated": "2026-11-16T10:32:30+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -108,7 +108,7 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 25
   },
   {
    "name": "Google News: water",
@@ -127,6 +127,24 @@
    "set": "Basic needs",
    "ok": true,
    "ai_stories": 18
+  },
+  {
+   "name": "Dezeen: data centres",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 22
+  },
+  {
+   "name": "designboom: data center",
+   "set": "Data centres",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+   "name": "designboom: data centers",
+   "set": "Data centres",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 404: Not Found"
   },
   {
    "name": "Dezeen",
@@ -157,12 +175,6 @@
    "set": "Data centres",
    "ok": true,
    "stories": 0
-  },
-  {
-   "name": "The Architect's Newspaper",
-   "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "name": "Google News: design press",

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16T10:28:25+00:00",
- "sources_reached": 9,
+ "updated": "2026-11-16T10:32:30+00:00",
+ "sources_reached": 10,
  "sources": [
   {
    "name": "The Guardian",
@@ -108,7 +108,7 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 25
   },
   {
    "name": "Google News: water",
@@ -127,6 +127,24 @@
    "set": "Basic needs",
    "ok": true,
    "ai_stories": 18
+  },
+  {
+   "name": "Dezeen: data centres",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 22
+  },
+  {
+   "name": "designboom: data center",
+   "set": "Data centres",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+   "name": "designboom: data centers",
+   "set": "Data centres",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 404: Not Found"
   },
   {
    "name": "Dezeen",
@@ -157,12 +175,6 @@
    "set": "Data centres",
    "ok": true,
    "stories": 0
-  },
-  {
-   "name": "The Architect's Newspaper",
-   "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "name": "Google News: design press",
@@ -197,7 +209,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-16T10:00:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Georgia, US",
+     "lon": -83.4,
+     "lat": 32.7,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "AWS breaks ground on $7bn data center in Indiana",
@@ -208,16 +227,16 @@
    "published": "2026-11-16T08:20:26+00:00",
    "places": [
     {
-     "name": "Chantilly, VA",
-     "lon": -77.4311,
-     "lat": 38.8943,
-     "precision": "town"
+     "name": "Indiana, US",
+     "lon": -86.3,
+     "lat": 39.9,
+     "precision": "region"
     }
    ]
   },
   {
    "title": "Unprecedented data-center growth dominates U.S. construction: Economists",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZXZDVENkWGUzcE02SFh5a0QwZXRodGpqeEZ2NUFrcjJ5TEgtTExQRVlNT1ZuSFktQlctdFE4UjhRUXpDOGo0YW9wdDd6Vlk4UHUtc3hrTDZZTEMzRmxqZEE4aF9qQi00Z0djbF9ZLXBYbHJ6MWMzSVNPWWtEd1lqZ21SeC01dEVfTnktMEtubFFMZXQ5WXdHUlMzdUJrSXdzT1RNY1ktS1Z1VVRXRWZzZmhPWGdwWTRUelpFVXZQdEJiVndKNFE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbDA4ckQ5T1lNdW13cXNSaFRRQjdsM21HVmRNNzlDOS1MZW1OSEpvcFZMcE9WY3VNZExRZVBWT2VNdmdZWXp0QjFCU1pwNmg0Q3ZwenNtMklSUUVJeVFzNnphWG9UZ1dWMlJuTnRza1k1MFUwMEt2Z1VpNHlTNkR4QmFqQjJRY1paTmV4M2t3ekpyb0hGZmsxNzNuMnY5YmdId0hiUkF0S19xQXZqMTV0N0t6R29IUERySzhpYkpjUDZlUHJQMGc?oc=5",
    "source": "constructconnect.com",
    "kind": "industry",
    "image": "",
@@ -313,6 +332,15 @@
    "places": []
   },
   {
+   "title": "Labor shortages threaten data center construction schedules",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxObmlDRWlPNlM5dlpNN0VjeDlCdXotQkVHWGRfLWJ5ckpOR2l6Vzd0N01lRFhwRFZ5SE5mM1hvbmY4dzBQZWRIVTc5Z05jSjB6U3BNT0VIYkdEbjhLVkpDS1VRRmVINEZBZnFfQ25KUEFOUnJtQTljOFpfR09aOFZFc1pBUmE1dGhocXRuTUVZWnQ1SnQ5b3B4SkhJSGJ6NGdudVBFVnl6NDkteDB6eVBFemsyanpoUThhVlF0NnRsZkFIUmRVY1ZfVEVEUGFkb0JrZlVBbVNENjRPYlF3dDRnWndRX1ZRUFNE0gHsAUFVX3lxTFBESHlFdGVUQ3NpamdIQkdhTHhDTzlYaVAtWXJqLWZYbnhmckF3WC1ySXFOWXUwUndlaFZJWDdpZ2cyRVJLVWxHRmdiRDZsSkNYdU9vV0cxaG0yU2liYnVkREh5YTc0QnlYQkt0YlB2T25jc1lzd0poclVOOGgwa1VrZjJxVnYzR0wxeklkVXpVT0FZREFaXzF6RXJrQzJnOFVDdHQzamc0M21KRHRqNUNONDJNTEhNOGM3VXYyTkN4cU9ZU00tRTdrRF9vVFpqMlRaSE1vZGxrZTJNejJCNTN2aENfajdWejB6bGpl?oc=5",
+   "source": "ET Datacenters",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-14T12:27:53+00:00",
+   "places": []
+  },
+  {
    "title": "AI data center opponents cheer midterm results",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZVFGQTNSX2NpZVZVU0VCRmFBd2lyMF9GMjJJbXBhQTA5MFYwczkyYk9LWjh3VnJOWjhzeS1ncGhBUXlNd1FNY01hSHNHRkNyXzFsMVBMVmtYZHdGMEhlYUdoamY4QXFIczVqM2VuNUZhOGQxa2hFd3NwUXdWb2NlTU5PZjNUa1BYaUh1cGNwRHZOYXJjVGlpNi1MbWw3TFlwMEJvNG9ic3VHUkx4VmxnTHNyQU83amZ4VkZTUFhyMHlyZkllUm4ta0ZmdW0xLXlM?oc=5",
    "source": "Toledo Blade",
@@ -328,7 +356,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-14T11:04:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Michigan, US",
+     "lon": -84.7,
+     "lat": 43.7,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "AirTrunk signs MoU for 1.8GW of data center capacity in Andhra Pradesh, India",
@@ -364,14 +399,7 @@
    "kind": "industry",
    "image": "https://media.datacenterdynamics.com/media/images/NTT_docomo_shrimp_farm_-_Tokyo_Gov.2e16d0ba.fill-750x500.png",
    "published": "2026-11-14T05:00:42+00:00",
-   "places": [
-    {
-     "name": "Tokyo, Japan",
-     "lon": 139.6917,
-     "lat": 35.6895,
-     "precision": "town"
-    }
-   ]
+   "places": []
   },
   {
    "title": "Activists, city planners dissatisfied with Minneapolis City Council's vote on data center regulations",
@@ -425,7 +453,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-13T23:40:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Iowa, US",
+     "lon": -93.5,
+     "lat": 42.1,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "B-N labor leaders support data centers built with community-minded regulation, union labor",
@@ -513,7 +548,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-13T18:15:50+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Pennsylvania, US",
+     "lon": -77.8,
+     "lat": 40.9,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Bethlehem data center approved despite resident opposition",
@@ -531,7 +573,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-13T17:49:41+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Utah, US",
+     "lon": -111.7,
+     "lat": 39.3,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Minneapolis City Council approves new data center limits and regulations",
@@ -603,7 +652,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-13T16:36:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Ohio, US",
+     "lon": -82.8,
+     "lat": 40.3,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Samsung in talks to acquire data center cooling company Modine Manufacturing - report",
@@ -727,7 +783,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-13T03:20:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Texas, US",
+     "lon": -99.3,
+     "lat": 31.5,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Westlake OKs data center after settlement ends Keller neighbors’ lawsuit",
@@ -763,7 +826,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-13T02:00:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Indiana, US",
+     "lon": -86.3,
+     "lat": 39.9,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Amazon breaks ground on $7 billion data center in Northwest Indiana",
@@ -772,7 +842,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-13T00:54:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Indiana, US",
+     "lon": -86.3,
+     "lat": 39.9,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Data center projects, moratoriums and proposed rules vary by county",
@@ -790,7 +867,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-13T00:31:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Arizona, US",
+     "lon": -111.7,
+     "lat": 34.3,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "St. Joseph County Board of Zoning Appeals approves sound wall for Microsoft data center",
@@ -808,7 +892,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-12T22:39:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Ohio, US",
+     "lon": -82.8,
+     "lat": 40.3,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Data Center Construction Increasingly Constrained by Legal Barriers",
@@ -826,7 +917,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-12T20:55:58+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Indiana, US",
+     "lon": -86.3,
+     "lat": 39.9,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "SpaceX Plans $74 Billion Investment to Build Data Centers in Texas and Arizona",
@@ -835,7 +933,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-12T19:29:19+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Arizona, US",
+     "lon": -111.7,
+     "lat": 34.3,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Amazon buys another Chantilly property for $72M, likely for data center development",
@@ -862,7 +967,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-12T17:51:58+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Washington, US",
+     "lon": -120.4,
+     "lat": 47.4,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "CHIPS Act Tax Credit: The Data Center Subsidy No One Is Talking About",
@@ -925,7 +1037,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-12T13:06:14+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Utah, US",
+     "lon": -111.7,
+     "lat": 39.3,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Texas Wants to Rethink Data Center Construction. Here's the AI Stock Most Exposed.",
@@ -934,7 +1053,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-12T12:30:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Texas, US",
+     "lon": -99.3,
+     "lat": 31.5,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Syntys Breaks Ground on New 20MW Data Center Development in Qatar",
@@ -961,7 +1087,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-11T20:25:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Virginia, US",
+     "lon": -78.8,
+     "lat": 37.5,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "The Data Centre Interview: Rita Monteiro of Start Campus",
@@ -997,7 +1130,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-11T13:37:05+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Kansas, US",
+     "lon": -98.4,
+     "lat": 38.5,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "US data center construction to remain strong in 2027",
@@ -1045,6 +1185,15 @@
    "places": []
   },
   {
+   "title": "Data center recall effort approved in Van Buren Twp.",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5OOU5EUnRtVWtDNGdDd3U2VlpfSUVxaWh6eTd0bXdrMzNIOXEzNG1yWFVQMTE4a1FzdmF0eTZNWVFRdWFCc0tJbm4wakp2LXl5TWNzYXU3b2RsaEdTNVlFdWNkX3nSAWpBVV95cUxPcUk1eGE0dy0zaHRsOTc4YWYzdEdhb2tfUEFNRGhpS2Nfd3NkZW9pYVp0NXhUTGVUWlk4V0tGcmlmRV9Oa2xPejZOWC1oQ0hXS1YtVTg3VXFleEU4RFdxamtOdEI4eVBtX1NR?oc=5",
+   "source": "FOX 2 Detroit",
+   "kind": "industry",
+   "image": "",
+   "published": "2026-11-11T03:17:06+00:00",
+   "places": []
+  },
+  {
    "title": "The Kraft Group wants to build a $16 billion data center campus in a small Central Mass. town",
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVUhPdFM3OGRhR21uLVBfakszNTFVUUZKOGFDdXJ2Z0hqOFBDUmgtWW10UzlxVlF4ak1keFExYUp2TldkWXhnc2Z3d1RHRWZyUlc3UWJyOUlfcWRYdFp4RVIwajFmRE1oSzNIZ3p4a2ZyX211N2t5SFF2bnVjWFoxU1k0TDFJdXJoSVJDbmJn?oc=5",
    "source": "The Boston Globe",
@@ -1069,7 +1218,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-10T16:47:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Massachusetts, US",
+     "lon": -71.8,
+     "lat": 42.3,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Fluidstack begins construction of 99-acre data center campus in Wythe County, Virginia",
@@ -1078,7 +1234,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-10T16:23:05+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Virginia, US",
+     "lon": -78.8,
+     "lat": 37.5,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Colt breaks ground on data center in Berlin, Germany",
@@ -1148,7 +1311,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-09T16:56:47+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Indiana, US",
+     "lon": -86.3,
+     "lat": 39.9,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Google data center could be approved before San Jose sets standards",
@@ -1173,7 +1343,14 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-09T15:48:55+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Kentucky, US",
+     "lon": -85.3,
+     "lat": 37.5,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "China builds massive 800-megawatt AI data center campus to rival US Stargate project — Galaxy campus delivers first 120 megawatts in a year at one-fifth the cost",
@@ -1182,6 +1359,15 @@
    "kind": "industry",
    "image": "",
    "published": "2026-11-09T13:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Playfool spotlights hidden digital labour in data centre cleaning game at the V&A",
+   "url": "https://www.dezeen.com/2026/11/09/playfool-studio-data-server-cleaning-game-va/",
+   "source": "Dezeen: data centres",
+   "kind": "design",
+   "image": "https://static-2026.dezeen.com/uploads/2026/10/Square-The-Server-Studio-Playfool_dezeen_2364_col_2-1024x1024.jpg",
+   "published": "2026-11-09T09:00:00+00:00",
    "places": []
   },
   {
@@ -1204,29 +1390,29 @@
   },
   {
    "title": "This week we looked at the future of data-centre design",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvVFNlVVhmNFRWUzZBbjFpOC1jakx4ZWc5d1Q1NklxT3c3VHJ5aDNId3prNUhrX0daN3BwYU52WFZKTUVrb09FdWRucWxVSlFWeTVDRmRKeWQ1M3MzQWltMUJOUFd4VmRQSUdvWEFzTUExcGtoazRLcQ?oc=5",
-   "source": "Dezeen",
+   "url": "https://www.dezeen.com/2026/10/03/data-centre-architecture-this-week/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-10-03T07:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2026/10/data-centers-corgan_dezeen_2364_sq-1704x959-1-411x411.jpg",
+   "published": "2026-10-03T05:00:45+00:00",
    "places": []
   },
   {
    "title": "Can data centres ever be well-designed?",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNR0RCVUs1Qm9YOEZ3dE9NbC1nYllKU3RFczV6NEtHRXhLV24zNno4OGExcWtIVVNxTFZEZ0pnUktHeVZjVE1uWGIyMmVTSllNV3pIbjJSWjFOQmJmMVEwTUdFbzNEUWpaLXRvUU5QZ244a3ZvcVplbHI2d0pwUG5aZVNTa3N3NWxu?oc=5",
-   "source": "Dezeen",
+   "url": "https://www.dezeen.com/2026/09/29/data-centres-design-architecture-hyperscale-ai/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-09-29T07:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2026/09/data-centers-corgan_dezeen_2364_sq-411x411.jpg",
+   "published": "2026-09-29T18:00:36+00:00",
    "places": []
   },
   {
-   "title": "Basura creates data centre toy that emits “ear piercing hum” when squeezed",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1wTVJQWW96U0VXeDIxMmJGSnU5TDJfRFllRXlDNUVaX3A5OUI4Q21TX1lXck1FUWNnbGdkRzVVdDBpcmJjaEdhdTlvYndyamozR1plYy1CVGRaMkZFQlNPQkcwMEgzYzQtYS1HVVE4R2dBUzRQU1E?oc=5",
-   "source": "Dezeen",
+   "title": "Basura creates data centre toy that emits \"ear piercing hum\" when squeezed",
+   "url": "https://www.dezeen.com/2026/09/18/basura-big-data-centre-toy-bezzy/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-09-18T07:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2026/09/basura-big-data-sq_dezeen_2364_col_0-411x411.jpg",
+   "published": "2026-09-18T18:39:28+00:00",
    "places": []
   },
   {
@@ -1247,16 +1433,32 @@
   },
   {
    "title": "SOM designs \"vertical data center\" for Downtown Kansas City",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBwSWZ0MGZQdHNhQmItdUI4S1QzVXhsN3daX0RuTkVkcllxdDdYRnd3QjZDQkVvT0pMYW1FYTVWN241bTB6aTFnTmQ1S0YzMUJ5TWpCMkRsUmd0NkpOS09jUDU2aTgzUWQ5OG92U1VXQjFxZHJaUXp0UFZkQ0Y1UQ?oc=5",
-   "source": "Dezeen",
+   "url": "https://www.dezeen.com/2026/08/05/data-center-skyscraper-kansas-city-som/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-08-05T07:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2026/08/som-data-center-kansas-city_dezeen_2364_sq-411x411.jpg",
+   "published": "2026-08-05T15:13:34+00:00",
    "places": [
     {
      "name": "Kansas City, KS",
      "lon": -94.6275,
      "lat": 39.1142,
+     "precision": "town"
+    }
+   ]
+  },
+  {
+   "title": "Data centre approved as part of Truman Brewery masterplan in east London",
+   "url": "https://www.dezeen.com/2026/08/03/truman-brewery-masterplan-buckley-gray-yeoman-london/",
+   "source": "Dezeen: data centres",
+   "kind": "design",
+   "image": "https://static-2026.dezeen.com/uploads/2026/08/truman-brewery-masterplan-buckley-gray-yeoman-london-sq_dezeen_2364_col_0-411x411.jpg",
+   "published": "2026-08-03T15:00:32+00:00",
+   "places": [
+    {
+     "name": "London, United Kingdom",
+     "lon": -0.1257,
+     "lat": 51.5085,
      "precision": "town"
     }
    ]
@@ -1268,7 +1470,14 @@
    "kind": "design",
    "image": "",
    "published": "2026-07-15T07:00:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "New York, US",
+     "lon": -75.5,
+     "lat": 42.9,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Can a Prettier Data Center Curb the Community Backlash?",
@@ -1316,12 +1525,12 @@
    "places": []
   },
   {
-   "title": "Plant-covered Rio AI City set to be Latin America’s largest data centre",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbVNXV2FmTEJUVk9JYkY1ZHQyLXlaRG5aNzBXeEw5UVdZYzBwTWQyN21MbmJPUjlySUlWYkFGVW43d3NjV2k2eGhrSWpnWnZ0dGJVakRhV2dyT2FwSFFyZmtVY2dJbVV6VHQwclNTbWQ3alRxNUpXa0o4RHlIcHFVeGpSNWNSNHJ3LVJKT1RYYlFxVG5oVXV6eg?oc=5",
-   "source": "Dezeen",
+   "title": "Plant-covered Rio AI City set to be Latin America's largest data centre",
+   "url": "https://www.dezeen.com/2026/06/08/rio-ai-city-hyphen-elea-latin-americas-largest-data-center/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-06-08T07:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2026/06/rio-ai-city-hyphen-elea-data-center_dezeen_2364_sq2-411x411.jpg",
+   "published": "2026-06-08T17:00:27+00:00",
    "places": []
   },
   {
@@ -1344,30 +1553,55 @@
   },
   {
    "title": "This week a 60-building data centre by Gensler was unveiled",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE04LXFaR24tWU14RFREWkhxSUNFb3IxWTkyMm5pQ20yOEZ5RmtsSkZhZ2xRX0FGY2FDbUhIVFV5dGY4cnFmMTRBc1dmVzhncWF6VVd6cDNiWnVhbnd2ZFp0cHVWQkJGVE8tMzVuSzRHUHEzdHMyMXpDTw?oc=5",
-   "source": "Dezeen",
+   "url": "https://www.dezeen.com/2026/05/23/utah-data-centre-gensler-this-week/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-05-23T07:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2026/05/gensler-stratos-data-center-utah_dezeen_2364_hero-1-1-411x411.jpg",
+   "published": "2026-05-23T05:00:42+00:00",
    "places": []
   },
   {
-   "title": "Gensler designs Corten data centre to have “meaningful civic contribution”",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOb04tTnhOZ3ZScXlYV0M5OGFVeXhIQTg3NjdaUS1wSDJUQXNQbDl1RjBvVFZoSi1selJ4QmpBY2loeElFbGY2WDVvRU5NMjg1OW00blVzN01XVnFIdEdGWVFYaDJnMkRfbS1DVnM4TW8ySUNueGF6NFItRUp5ZGhiRjBNbFB3b1dfNW9Z?oc=5",
-   "source": "Dezeen",
+   "title": "Is IKEA's new collection too good to be true?",
+   "url": "https://www.dezeen.com/2026/05/22/utah-data-centre-ikea-ps-collection-tour-triangle-paris-dezeen-weekly-podcast/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-05-21T07:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2026/05/dezeen-weekly-podcast-22-may-2026-sq-411x411.jpg",
+   "published": "2026-05-22T09:00:31+00:00",
+   "places": []
+  },
+  {
+   "title": "\"Welcome to our brave new world, I suppose\" says commenter",
+   "url": "https://www.dezeen.com/2026/05/22/stratos-hyperscale-data-center-gensler-utah-comments/",
+   "source": "Dezeen: data centres",
+   "kind": "design",
+   "image": "https://static-2026.dezeen.com/uploads/2026/05/gensler-stratos-data-center-utah_dezeen_2364_col_4_square-411x411.jpg",
+   "published": "2026-05-22T08:30:06+00:00",
+   "places": []
+  },
+  {
+   "title": "Gensler designs Corten data centre to have \"meaningful civic contribution\"",
+   "url": "https://www.dezeen.com/2026/05/21/gensler-thistle-data-center-phoenix-corten-steel/",
+   "source": "Dezeen: data centres",
+   "kind": "design",
+   "image": "https://static-2026.dezeen.com/uploads/2026/05/gensler-thistle-data-center-arizona-corten_dezeen_2364_sq-411x411.jpg",
+   "published": "2026-05-21T17:00:06+00:00",
    "places": []
   },
   {
    "title": "First images of Gensler-designed 60-building data centre development in Utah revealed",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNOHNQdUhmTlpieDZNTjktb2EzWFdpc01zTWNVSlFsZmE3X3ZLZVRYLXJrSkFPLU1qdmRvY1VKajJVazJWQ3hLTXdTcGVLM1QtNTEyS0V3VzlZUnJFeTVQaE5pa2Y2TG1neXVMMm50TURiVEdMSTVRUU91RnROZ1Racg?oc=5",
-   "source": "Dezeen",
+   "url": "https://www.dezeen.com/2026/05/15/stratos-data-center-designs-gensler-utah/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-05-15T07:00:00+00:00",
-   "places": []
+   "image": "https://static-2026.dezeen.com/uploads/2026/05/gensler-stratos-data-center-utah_dezeen_2364_sq-411x411.jpg",
+   "published": "2026-05-15T16:35:36+00:00",
+   "places": [
+    {
+     "name": "Utah, US",
+     "lon": -111.7,
+     "lat": 39.3,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "ICC Launches Effort to Standardize Data Center Design, Construction Practices",
@@ -1398,11 +1632,11 @@
   },
   {
    "title": "AtkinsRéalis to partner with Nvidia on nuclear-powered data centre design",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQN21XSklVS1piQWVwVlJ3TmJSaW9VRkxQTmprUXpGR2lhYjBTNHg3djk5WlhHX1I1LXJad0ZUdkhsaUM4V3dhX05zMzZRdFVvOGlqb2tVRTVSbGVQMXlDUG5ubVhjbVlmWHN4dy04bmNwYUc0WDFidVZ1a1cyN2JxN1QwdXlOdWxxZWsw?oc=5",
-   "source": "Dezeen",
+   "url": "https://www.dezeen.com/2026/04/21/atkinsrealis-nvidia-nuclear-powered-data-centres/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-04-21T07:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2023/08/google-data-centre-sq_dezeen_1704_col_0-411x411.jpg",
+   "published": "2026-04-21T16:55:04+00:00",
    "places": []
   },
   {
@@ -1416,11 +1650,11 @@
   },
   {
    "title": "Study links data centres to heat island effects worldwide",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB6dUJPTG8xWEQ5U3BlcFNnUXlKZDV1dHduSU1KRHJTODVCMTBCZGJncjlzMzI3U3pLUi1kUjRDWDhVSXR1eERadkJCd3BuamFuQ2dWeC1KT0xsUndUaHNMWVF4a05qekF4NTJjdFhQa1ZUYVNtMXJFRWtoeGI?oc=5",
-   "source": "Dezeen",
+   "url": "https://www.dezeen.com/2026/04/09/data-centres-heat-island-effect-study/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-04-09T07:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2026/04/data-centre-columbus-ohio-shutterstock_dezeen_2364_sq-1-411x411.jpg",
+   "published": "2026-04-09T19:00:41+00:00",
    "places": []
   },
   {
@@ -1434,11 +1668,11 @@
   },
   {
    "title": "Carl Fredrik Svenstedt Architects designs structural stone data centre in Sweden",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVkQxdFJ0bG9McHowSEJjNDRWeHE4YzY4bzdybWdyRTh5Wl9TS1hYaUZ3cVZNYjFEVndGN2VhTW4xMzVXU05XQjRVTFZuYTZlVHFYR0JCUW5EXzNSTFVjd2xGMG11Wk9NM0k3RnFyRV9UUS1FT2M5UVg1RlVCaWV3ZlRlSy03aWtiU0owMkVseHNPNGhDb0ZWYg?oc=5",
-   "source": "Dezeen",
+   "url": "https://www.dezeen.com/2026/02/26/stone-clouds-data-centre-carl-fredrik-svenstedt-architects/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2026-02-26T08:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2026/02/sq-stone-clouds-data-centre-carl-fredrik-svenstedt-architects_dezeen_2364_col_0-1-411x411.jpg",
+   "published": "2026-02-26T10:45:11+00:00",
    "places": []
   },
   {
@@ -1476,6 +1710,22 @@
    "image": "",
    "published": "2026-01-05T08:00:00+00:00",
    "places": []
+  },
+  {
+   "title": "Exposed ducts and server rooms reveal the \"heartbeat\" of AI data centre in Beijing",
+   "url": "https://www.dezeen.com/2025/12/10/ai-data-centre-beijing-lllab/",
+   "source": "Dezeen: data centres",
+   "kind": "design",
+   "image": "https://static-2026.dezeen.com/uploads/2025/11/ai-data-centre-beijing-lllab-arch-exist-sq_dezeen_2364_col_0-411x411.jpg",
+   "published": "2025-12-10T11:30:20+00:00",
+   "places": [
+    {
+     "name": "Beijing, China",
+     "lon": 116.3972,
+     "lat": 39.9075,
+     "precision": "town"
+    }
+   ]
   },
   {
    "title": "Exposed ducts and server rooms feature at Beijing data centre by LLLAB",
@@ -1583,11 +1833,11 @@
   },
   {
    "title": "AI-fuelled data centre demand will set back energy transition",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lTEkzeVFfYkNCSWlYS19zVldRVERVRXJJMGhiaDlubFdNSmNJU29abkRxbzFtQUh4eDJ1eHdUYmxHRmVuOVJhYkpiNGVFSHRJN3c2eklFZEo4eTA1bWFxTmNnYTJaMG1fbG5saEJyTzdoSDZGeWk1ZmlmUVFBRGs?oc=5",
-   "source": "Dezeen",
+   "url": "https://www.dezeen.com/2025/04/25/ai-data-centre-demand-energy-transition/",
+   "source": "Dezeen: data centres",
    "kind": "design",
-   "image": "",
-   "published": "2025-04-25T07:00:00+00:00",
+   "image": "https://static-2026.dezeen.com/uploads/2025/04/sq2-data-centres-new-energy-outlook-2025_dezeen_2364_col_0-411x411.jpg",
+   "published": "2025-04-25T09:45:30+00:00",
    "places": []
   },
   {
@@ -1597,6 +1847,15 @@
    "kind": "design",
    "image": "",
    "published": "2025-03-27T07:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "BIG-designed hard drive launches to the moon on SpaceX rocket",
+   "url": "https://www.dezeen.com/2025/02/27/big-designed-hard-drive-launches-to-the-moon-on-spacex-rocket/",
+   "source": "Dezeen: data centres",
+   "kind": "design",
+   "image": "https://static-2026.dezeen.com/uploads/2025/02/im-2-intuitive-machines-moon-big-data-centre_dezeen_2364_sq2-411x411.jpg",
+   "published": "2025-02-27T20:00:58+00:00",
    "places": []
   },
   {
@@ -1615,6 +1874,15 @@
    "kind": "design",
    "image": "",
    "published": "2025-02-11T08:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Microsoft building first data centres with cross-laminated timber",
+   "url": "https://www.dezeen.com/2025/01/28/timber-data-centre-microsoft-virginia/",
+   "source": "Dezeen: data centres",
+   "kind": "design",
+   "image": "https://static-2026.dezeen.com/uploads/2025/01/microsoft-data-centres-sq_dezeen_2364_col_0-411x411.jpg",
+   "published": "2025-01-28T09:00:09+00:00",
    "places": []
   },
   {
@@ -1705,7 +1973,14 @@
    "kind": "design",
    "image": "",
    "published": "2023-10-19T07:00:00+00:00",
-   "places": []
+   "places": [
+    {
+     "name": "Idaho, US",
+     "lon": -114.6,
+     "lat": 44.4,
+     "precision": "region"
+    }
+   ]
   },
   {
    "title": "Gallery of Architecture of the Cloud: The Data Center Footprint - 1",
@@ -1757,6 +2032,15 @@
    "kind": "design",
    "image": "",
    "published": "2022-09-06T07:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Eight \"weird and wonderful\" data centres from around the world",
+   "url": "https://www.dezeen.com/2022/04/04/data-centres-power-house-exhibition/",
+   "source": "Dezeen: data centres",
+   "kind": "design",
+   "image": "https://static-2026.dezeen.com/uploads/2022/03/equinix-am4-data-center-benthem-crouwel-architects_dezeen_2364_sq-2-411x411.jpg",
+   "published": "2022-04-04T05:00:27+00:00",
    "places": []
   },
   {
@@ -1880,6 +2164,15 @@
    "places": []
   },
   {
+   "title": "Benthem Crouwel adds stripy tower surrounded by a moat to Amsterdam data centre",
+   "url": "https://www.dezeen.com/2017/11/21/benthem-crouwel-stripy-tower-moat-amsterdam-data-centre-architecture-netherlands/",
+   "source": "Dezeen: data centres",
+   "kind": "design",
+   "image": "https://static-2026.dezeen.com/uploads/2017/11/equinix-am4-data-center-benthem-crouwel-architects_dezeen_2364_sq-1-411x411.jpg",
+   "published": "2017-11-21T00:00:30+00:00",
+   "places": []
+  },
+  {
    "title": "Gallery of Data Centre In Cerdanyola / ACXT - 12",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOLUxpZmIySE9HVnYzVndfNTRPRE1nR3F4R3J2Vm5ZXzFCZzQ1LTZfbC1vVkhxcVhEZEx5djRwSl93ZVpsTmYyRDZmS09rU0JHLS14aTIzX2pnN0RkYVdPRk5rTlVoTkVxelVpenFfalE4OTRNMTBINEhwVUVxbGVFdElHVWxVVFRIRV9IRU1weUNlSjR5ZXlYa2lrYzhHUDBlUFlaNEJvbGgzRS14bTRjYXhOaUdyWk4xbFpNWTZITWp2dw?oc=5",
    "source": "ArchDaily",
@@ -1929,6 +2222,15 @@
    "kind": "design",
    "image": "",
    "published": "2012-10-24T07:00:00+00:00",
+   "places": []
+  },
+  {
+   "title": "Google offers a glimpse inside its data centres",
+   "url": "https://www.dezeen.com/2012/10/18/google-offers-a-glimpse-inside-its-data-centres/",
+   "source": "Dezeen: data centres",
+   "kind": "design",
+   "image": "https://static-2026.dezeen.com/uploads/2012/10/dezeen_Googles-data-centres-revealed_sq_1.jpg",
+   "published": "2012-10-18T11:26:22+00:00",
    "places": []
   },
   {

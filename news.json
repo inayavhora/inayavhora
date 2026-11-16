@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:28:25+00:00",
+ "updated": "2026-11-16T10:32:30+00:00",
  "sources_reached": 12,
  "sources": [
   {
@@ -108,7 +108,7 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 25
   },
   {
    "name": "Google News: water",
@@ -127,6 +127,24 @@
    "set": "Basic needs",
    "ok": true,
    "ai_stories": 18
+  },
+  {
+   "name": "Dezeen: data centres",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 22
+  },
+  {
+   "name": "designboom: data center",
+   "set": "Data centres",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+   "name": "designboom: data centers",
+   "set": "Data centres",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 404: Not Found"
   },
   {
    "name": "Dezeen",
@@ -157,12 +175,6 @@
    "set": "Data centres",
    "ok": true,
    "stories": 0
-  },
-  {
-   "name": "The Architect's Newspaper",
-   "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "name": "Google News: design press",
@@ -231,6 +243,13 @@
    "source": "The New York Times",
    "region": "US",
    "published": "2026-11-16T10:02:09+00:00"
+  },
+  {
+   "title": "Billions in Insurance Money Is Being Bet on AI Debt, and Analyst Are Nervous",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDSXM5UXJ3Z1hQMDk3TDJIRk9GanNoNUhiZk8tM3gzel9ZNkxxQ2Z5dHJCNm1hSkhxSkh0aS1NWFFkcXNzY0VIWkYtdkpSMXR2Mk1wbWwyQjBuTHZEMC1VN210SUYxTE1xSUtpT21fVDRIT29h?oc=5",
+   "source": "The New York Times",
+   "region": "International",
+   "published": "2026-11-16T10:00:46+00:00"
   },
   {
    "title": "Questions swirl around FAA's new SMART AI system, though officials say no link to ground stop",
@@ -2982,13 +3001,6 @@
    "source": "Yahoo Finance",
    "region": "International",
    "published": "2026-11-12T21:30:00+00:00"
-  },
-  {
-   "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
-   "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-12T21:27:10+00:00"
   }
  ]
 }
