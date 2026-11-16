@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T08:00:52+00:00",
+ "updated": "2026-11-16T10:19:30+00:00",
  "sources_reached": 12,
  "sources": [
   {
@@ -24,7 +24,7 @@
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 8
+   "ai_stories": 9
   },
   {
    "name": "ABC News",
@@ -42,7 +42,7 @@
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 7
+   "ai_stories": 8
   },
   {
    "name": "NPR",
@@ -90,13 +90,13 @@
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 62
+   "ai_stories": 61
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 42
+   "ai_stories": 44
   },
   {
    "name": "Google News: farmers",
@@ -120,16 +120,191 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 33
+   "ai_stories": 35
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 21
+   "ai_stories": 18
   }
  ],
  "items": [
+  {
+   "title": "Information Technology workforce facing new demands from artificial intelligence.",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTlp0b0Y4dkpzdzRNTlZfZ2VmZXFNMUFyLWttci0tVmdFeFA2Rl8zQjFsblQxNVhSd1JhaU5XMjdGbHJuUkZiU0dfOUF0eWxjd3dnLU1yRWwxdXNGQTVybnVRSG9hZGgzNlBOVldtc2l1ZjJvR3VGdl9mLVNSQTlNTkRZWmZnTjdFVllEWkJJSjJwdXlrYlBj?oc=5",
+   "source": "Vietnam.vn",
+   "region": "International",
+   "published": "2026-11-16T10:15:26+00:00"
+  },
+  {
+   "title": "ARTEX: How Cybercriminals Use AI Agents to Scale Their Attacks",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUmJER1FmTmtmNElRbWtOTFYtUVlWOUEtT0xkaF9zcjZVODBlMmp0eEwxemVaVlZ6WVplb3hzVTdKb1YxUzZaMnBGTXIxOThfanZMWS1JaEtxSHBLN2NxYVRtSWV2N2Q0MHBBQkhGX2dJYzNKZWwyVXJDUFZrZDVvazJsMURadXpxQlpacng4QUg0VXFBUDNFRVhaQ19pemJDREZpVXF3SdIBrAFBVV95cUxNbGJKZldBMFJYVXVLeXluWTZIY3NSTUZmWHBzeFh3TDNjd0YyTWJ4SXpnMTZvUUJKSWdsYmZlX0RXN00xWHlJUkVwOUZMdklBVWFnM2I1LW5DajN1NXR4OTk1dnBhUlZLRG9KQ184eE9WNFpwV2NLdURwbExlV3FUODR2Q3FpSUIyWF9SUG10amRzaVVnTHk1OWFVVWMwcmJKVWhjTE5NS3pCdHp4?oc=5",
+   "source": "Security Affairs",
+   "region": "International",
+   "published": "2026-11-16T10:12:26+00:00"
+  },
+  {
+   "title": "Baidu quarterly profit plunges 46% as ad slump overshadows AI growth",
+   "url": "https://www.scmp.com/tech/big-tech/article/3374604/baidu-quarterly-profit-plunges-46-ad-slump-overshadows-ai-growth",
+   "source": "South China Morning Post",
+   "region": "Hong Kong",
+   "published": "2026-11-16T10:10:31+00:00"
+  },
+  {
+   "title": "How Sam Bankman-Fried Lost Out on a $35 Billion Jackpot From Anthropic",
+   "url": "https://www.nytimes.com/2026/11/16/technology/sam-bankman-fried-anthropic.html",
+   "source": "The New York Times",
+   "region": "US",
+   "published": "2026-11-16T10:02:09+00:00"
+  },
+  {
+   "title": "Questions swirl around FAA's new SMART AI system, though officials say no link to ground stop",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1fX21IRWRCMkhNQm5sbHQwbk9OdExQNWd1ZFVEWU1HdzBKYVhKcVRxS2k4VWtTSkFMcTVzSHJuSFhoYThQbXpIdlVRNmtJbV9ub2ItUy02MG1KNlMxemgwTVZwamIwVEMwVGNYbnd2QV9ldw?oc=5",
+   "source": "Tech Xplore",
+   "region": "International",
+   "published": "2026-11-16T09:50:01+00:00"
+  },
+  {
+   "title": "Systematic Review Outlines Artificial Intelligence Strategies for Designing Functional Taste Peptides",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSkxsdWhvNVFxa1ppZFhKR2RZQ1NFWllKNURzcllJZjlwUVBnVmx5UnRsVHdnSkdtMDd3dW9sUHEtYzRKTVhSY2ZiUTRMUV9jM2ZCTHM2a1JOek0wOEd2QnNUVGVzZFR1akNyNF9OaTIyZjU0OExnbXJXYkpWeXhZbURMUjd5YjZRRTNSTkF1Z1FCeDctM09jRlJxVDU0b3BfdnlPTF9idzdnX1hqbXN0alFPUGVUZkJGWUs5VTVLc21lUmk2?oc=5",
+   "source": "Bioengineer.org",
+   "region": "International",
+   "published": "2026-11-16T09:46:08+00:00"
+  },
+  {
+   "title": "‘Five-alarm fire’: Nvidia’s fall from grace sets off Washington AI industry scramble",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWWFNRmRXWU9SbVE1aUJFc2tNT1dWc1U0TVFqZHhaVy1PTGtSMXhhZ3pBYUY4YTdnMnN5T0dhUGl0Ri1kRkc5bE9zTXN4c01jQUlfbHhUN3p6dmVKM2lRblRlYmtzc0x6MkVjLTdHOGtlX3pkUXNxRHV6TnpfMDdzbFc2eTA4cVNCcklDRU5UTEkxUQ?oc=5",
+   "source": "Politico",
+   "region": "International",
+   "published": "2026-11-16T09:45:00+00:00"
+  },
+  {
+   "title": "Albanese treads tightrope in upcoming Trump meeting, wanting Indo-Pacific engagement and end to Iran and Ukraine wars",
+   "url": "https://www.theguardian.com/australia-news/2026/nov/16/albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-16T09:40:29+00:00"
+  },
+  {
+   "title": "An AI (Artificial Intelligence) sign is seen at the World Artificial Intelligence Conference (WAIC) in Shanghai",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNOGtTaWF4OW9WT1JhLVBOcjNJdmc1UWR5aF9WRlhCRkk1Qy1FNWlWbGwydzNWeWhaLWNtV0pFMzNpSHQ0V0xOWWIwYjNWTEFFd0Y2blZpNXJ1TWtxYTE4QXV4X1RQaHFzMTU3cjZzZ0NMbGI0UFduSmJCcDFqWTdZNnZtZG1qOTFSRUY4blZNLUhHa01ZSzkwY3V6RE5mTE95UDVxeE1LV0dtSnJPbU41QnFtSktzQjNfOTd1QmV3aUlENjd4X1ZzYlBvVXpuRWhjMDd1NkdFdGlnVEp0M3RWb0dzMkMyX3VEam5MMHVvT1JDc2NpcTd4WG00aWdKeHBRRExleFlJeGdVYW9kUVZiU2ZOTGFCdW5Qcy1JSVl3?oc=5",
+   "source": "The Daily News | Texas' Oldest Newspaper",
+   "region": "International",
+   "published": "2026-11-16T09:16:47+00:00"
+  },
+  {
+   "title": "Dealership Technology at Automotive Management Live",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNERaUUd2VWdkWUFFVXlXSjFBY3lBd3RmYXM0eC1BWmZuNENXU2d6NHhKUTRLOExIemJPdlIxeWdEbW0xWXVWWnNSbG5qUlV1RWc4SUFBaWg5dkZPMnVvSlZ5SHZsVU9lYy10OFZHbV92N3JqdUxHWlJZaUdhbzRBNjZFSGlRZ3B5Wm1sZ0RpZGI0TkI2bExubTBLNUJfUzY2R0tYU3hLMjZYZw?oc=5",
+   "source": "FleetPoint",
+   "region": "International",
+   "published": "2026-11-16T09:15:31+00:00"
+  },
+  {
+   "title": "Prediction: Berkshire Hathaway Could Use Its $377.4 Billion of Cash to Buy This Monopoly Artificial Intelligence (AI) Stock Next",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOVmRTNDI2TV9QcDA5M205TzFTRkV5Wmw1bkpxZTFRckZ5b2dYSlN2TGYwUXFHdGlPY2ZNaU9FYzFCS2FRZ2F1djVJQlN3aVBFdG9UZTN5Z2hqbUU1UDBzUjlhakhPdWRUalNmQmdtekRKemZOWkcxQ2FFYU56cVQ2YTlnZ1M1RzB2cGRIWmVmUEdlNGZYVDRvU0J2SFQ5OTZEcGlZczZyTGlnZE5SaV9oQUNSbE1EamV6eGtmdUhONnRHZjFYX2Z4Rjg1MmlTRTdRWFBxRzBab3hPbTR5OVdLdEsxRDM4dllXNWhJRDNnTmlqSF81NVcyZXhJZThpQQ?oc=5",
+   "source": "The Motley Fool",
+   "region": "International",
+   "published": "2026-11-16T09:12:00+00:00"
+  },
+  {
+   "title": "As suspicions of cheating using artificial intelligence (AI) glasses continue in various tests, inte..",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTMC16dmpnSTVNRzhRM1hzNk1mVHVmYWRZV1ZCdTdqTEJVcVlLT2t5OFljMFlZVVVreGJxQjdGQ1JzTzBwMHM4bkd0eC1XVEhub3c?oc=5",
+   "source": "매일경제",
+   "region": "International",
+   "published": "2026-11-16T09:07:17+00:00"
+  },
+  {
+   "title": "US, allies team up to protect AI tech and infrastructure amid China rivalry",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQME9ldVY0V0JLTVYyLTZZcXZlVmZwNnNlcWw5MHYwa0F4VUdRbGFueXVXX29SaXdiWTR4LWpfbDY5dV9sclVXNHBhakdiMUlBeWc5S1M0dmZTMW5IcmYwV2REZ1hUYnhyWFJDT2t5dkFuRlh6Q3RMYUxfVFh2X3JCR3VxMENuYzdMMWxFZzFSOV80OC10ZFNyMldjR1dyOTNOYlY5Y3JyTDJRSEV4anRmaHFidnJ0dw?oc=5",
+   "source": "Reuters",
+   "region": "International",
+   "published": "2026-11-16T09:04:16+00:00"
+  },
+  {
+   "title": "SPECIAL PUBLICATION: Private Health Insurance: Artificial intelligence, private health insurance and matters arising",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPcEt4dkVvTDVmdHlmcnZVY01iaVVqMFZlaXlMTklYdVFHcm1xU0w1M2tUNlc2QlBkeUc3LTJmY3N5aGo3Vm55eEJXa2NKS09TdnhJMmlhRVJhRklPNWVMRVBQY0Y2Nm41MU10dXl1Q0l5QXJSZGt2T1JRbjE4NTh2b19hcXVTQm8zYVpIbFlNUkhtdy1SNHp4c01ySHFhS0RpRTlpaDZQMzExblhCc1JGcEJGYXQyNXpyYXFTT09yWUV2OWRrNWZveHZYby1sVjhhVEJPbkJWaFBkQ2R2eldB?oc=5",
+   "source": "Business & Financial Times",
+   "region": "International",
+   "published": "2026-11-16T08:50:16+00:00"
+  },
+  {
+   "title": "What Artificial Intelligence (AI) research misses about African markets (By Bas Wijne)",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaHBBRGpwVjVnRk53dlpKeG5OT2NIZnR6dXRpMEtqLS05cllBUTlfSi10c2k5ODFFNmtQMmtRd2NBaWdmQ1hDa05zeFlxTVpGV1FxUFZxV3BfSnN4Q0poZzctcm1GUDA2MzRQYm9GN0xwSTdpY1c3ODd3bGptTG1nYmVhODBRYm5zdW5HUllRQzMzTUZnbl9udHNOUG1XRlh5UVJObnpIVWM?oc=5",
+   "source": "Africa.com",
+   "region": "International",
+   "published": "2026-11-16T08:45:53+00:00"
+  },
+  {
+   "title": "Qatar, France Sign Technology Cooperation Letter, Highlight Shared Quantum Ambitions",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTDI1RGR3a3B3MTFNQzhYdFRLWDFWVHRtUjBRamdDWnhCT3Uza05TSnZaaGQtNkFpUFlBdDk4WVh1Yk5PMHB5NTBKRkdvTEluUHFYS0lWSVpIZHpKZ0Z6X2VvT0xpXzVrQU56OC1fOWJMRUxnamRJNTlVa1YtazhyQ0t1ZmZJOC1mX1k0d19lUndUcTJJMllmZ2pCRlhPQ04tTUVIcEhrR0NndUMyTElIQXpBeXBhc3IxXzNiMHRRZGR5QQ?oc=5",
+   "source": "The Quantum Insider",
+   "region": "International",
+   "published": "2026-11-16T08:41:15+00:00"
+  },
+  {
+   "title": "As anxiety over \"artificial intelligence (AI) cheating\" spread, the government is considering blocki..",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LTkZnLTZjWk9jak1HclJIdHF4UFEzRUQ0QjVCZklUNWhNX2c2X2M0STg1WGpITlp0UGc0YmtpLVJlaEdsZGRUUHdoUTV4enNwYVE?oc=5",
+   "source": "매일경제",
+   "region": "International",
+   "published": "2026-11-16T08:40:14+00:00"
+  },
+  {
+   "title": "Digital Security: How to Protect Trust in the Face of Fraud and Artificial Intelligence",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPLVBSUkpqT29SSWo3SXoyRlhYRWU5dE5CWjBuV1VFdy1ZSEY4azEwQ1hnZXk1dHRJZTg4OUdBbXg2RklVMXQ5QWtXbUw2Q3pBczhRd0gwS1R2WjkyaG83Z0hHSWdsVGphZFkyWXdmbTQ3YU9zNU5RN3RpTkNQT2ZuMWo2aThkbWV4R2VNYm1PUjVtcGcyVXZuS0pNZUdfMVZrVHhFcC04UEtHc0p1SktzYWVKWTZ6NFNLbmdOTw?oc=5",
+   "source": "www.telefonica.com",
+   "region": "International",
+   "published": "2026-11-16T08:30:00+00:00"
+  },
+  {
+   "title": "AI-written patches are becoming attack maps for hackers",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQa1dJdGpHT3FaWHVHTVhYclNUaWhybGtjOTlBSTdqSW5EM1ZLcWxQX2tQT2lFMXZvWlp6WGVjczU0Z3pFc0hfY2VsNHJYd05neDVHN2ZXazhUTzRpUHNGWkRaYy1uTTE1ZmdqS3pWT0JpdEtGMGx6N0MtcXhNWUJCRXMwTjNlN1NYUV8wYVk4bkVJcU9oa2dXZ3lLMkFwLW1fUVMxNA?oc=5",
+   "source": "CSO Online",
+   "region": "International",
+   "published": "2026-11-16T08:29:01+00:00"
+  },
+  {
+   "title": "In order for artificial intelligence (AI) to change the world, someone must build a data center and",
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9mMXNYQ3hBRVBlQlZaQ2VMZ1FmdE02YVExS2YwbHh4SG9GV0hmOUZ1OUYzaFNBdWl5U05UeXZoQXExTVI3OWUwX3ZHS2tnNkE?oc=5",
+   "source": "매일경제",
+   "region": "International",
+   "published": "2026-11-16T08:20:59+00:00"
+  },
+  {
+   "title": "John Gray, president of Blackstone, pointed to caution on artificial intelligence (AI) as the reason..",
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1VVGJLRlpBc3U2cFpDSTR0TlRBUjVqbktTNVhwcmVFMXI2VjhYaEFzMFVCeHFiQS1LSTVMV3Y3YkJTUk9zV1UyRGdXWXY1VVE?oc=5",
+   "source": "매일경제",
+   "region": "International",
+   "published": "2026-11-16T08:20:59+00:00"
+  },
+  {
+   "title": "Elon Musk joins 165,000 others calling for Nvidia to bring back Jensen Huang in open letter",
+   "url": "https://www.theguardian.com/technology/2026/nov/16/elon-musk-tech-execs-open-letter-jensen-huang-return-nvidia-ceo",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-16T08:18:12+00:00"
+  },
+  {
+   "title": "APA offers new guidance as artificial intelligence use at work expands",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeU9FSWVZeWdiVnZKT3BFRm05czdhUEJlRkYwTUFhMFdFQ1phSUhTZVNyYlhkVi02M0ZaY2lfeUh1VEkyTjF1NVl0bkRjdEhBLWI2V2xVakd3N0NJdXJkUEpvbFNsNVN1aWNSSUtib0lJMEFvNzQxT2JBajZFWDNxZVFyT192S295bG14d3N3?oc=5",
+   "source": "American Psychological Association (APA)",
+   "region": "International",
+   "published": "2026-11-16T08:05:57+00:00"
+  },
+  {
+   "title": "A 3-Day Work Week? Jeff Bezos, Bill Gates, Others Say Yes",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVmg1WlZuOGJNT2FLZy11dDFQb2QxUDNiUndFcFlxWmt4SFJ1cUZLXzBfbkpicDZQTllTVzRYMFdjbVdTNDVZSmVBd0R3TGZ2X2RMQ2pUTXVGMVVZRjNPZjJuRWtmU0xpX2F5N01pVC1IUl9RaWZOcmZ4WVRHbWlJWkk1LUJrSW1ZV0RFTWxGcGEwTDk0Z1Z2LUhKNThGaTFQMzN4YVVXbFZNZktX0gG0AUFVX3lxTFBUMnRmY2ltNDFpVzlzSVB3X1lodjlpWnpSeFA4aEdKSmhlNWNhYUxCcC1hSmZ3SVFJQ3JyOGpDU09kOEZfbTJ3Umt6d0lzMUJVcjkzQWloak5HQ2hqS21qNFdPVXFLa09PcjlDTjBmQ2JwcUdGUWVHMUpRLVlpa2hwOE5ISlpmVFBzc2FSODZkbDRDX0toMThrMy11U2hTVTRkZE0yaUxFa2VlZDR1eE84SWtMaw?oc=5",
+   "source": "NDTV",
+   "region": "International",
+   "published": "2026-11-16T07:59:04+00:00"
+  },
+  {
+   "title": "Following the controversy over cheating using artificial intelligence (AI) by senior tax accountants..",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBLcnlqM1cyT0l0TXpaM0JKQkd2S0daRDVBX1ZPXzFzNjRKa08tVlJBWkpOUFQwUExObW9MdDJ5djVsX1M5WWZwZzJ6Y1lqaVhZYnc?oc=5",
+   "source": "매일경제",
+   "region": "International",
+   "published": "2026-11-16T07:56:39+00:00"
+  },
   {
    "title": "Dubai Taxi Company to train 400 employees in AI under new DIFC partnership",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPck9KSmZCcmtMWjlyLVV4SC1aUzBPNHIxU3ZWUTJtRHUxdDFlUGZSVUx3aFNrRmtUUHNPbzR1N3RyRXpIak5tNjdrVzgyUjZRdDR0dGxQcGNoN2lvNGFhNkw4aER0Uzh0M1NNRnd0cnNGeUkxdHlnUm1wSEhSVy1WbmhVdzVGcmktRXlNUVA1QXNsVXB2Nmp5cnFMUXBLZHlvQ3E3cXBJMEVKQmdZZUZsRG9UeW1PVkVDazdQT0g2bGtjaDBPMC12ZzJDSlU?oc=5",
@@ -152,25 +327,25 @@
    "published": "2026-11-16T07:41:07+00:00"
   },
   {
-   "title": "Questions swirl around FAA's new SMART AI system, though officials say no link to ground stop",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOa08xTkRnVkNIRmhrZ0Z5ZUh1Wmt4NzRjdm02R0tqcmt0b01lZ2N2b0FZb0RUWEt0UjBYaWdNemxXRXBlOTVnTUdsaS1JZlRaZFM1N1hGZldseDRBZ05TV1ZETWxOeW02UkV0V3dFQ2VvVWRKNFlHZGtLM2g0ak51bDM5blB2OW1jaXlQTWZuVC1pVlNLcUthSkNnVG9Yb0NtRGNUc0FVYW9BeU45NTYycm5EbDU5Vmo0NVRFMXA0cElfM3FBTnc?oc=5",
-   "source": "WRAL",
-   "region": "International",
-   "published": "2026-11-16T07:33:06+00:00"
-  },
-  {
-   "title": "Perfume industry gets whiff of artificial intelligence | Daily Sabah",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcHFqYjI0azVDNFVMZDRNZ2x6dDZ1UEd1Q3QtUHVuaGhjZHlnUlV4a21kU3NWWXhYMzRIdTlCUzk3R0otWnlDdHA0MVhkTXFVUkxXQ0NneUZqc2hBdTR3bUgzOFYxS0NEa0FBSHpZNGd5N1lMalhRLUs5Vk1fU1lscDcwR2dmY1YyVjlHLTJDWEcwVkpybHfSAZsBQVVfeXFMT0Vfd2JxLXVQdWswZnZwRU1Pa3o5X1RETUxtVzhVY1I4ZzkzU3djWllvY1J5MzNHTGxnNmwzcno3dmV0cWZpU2pHVWtaYXBaVkNkcU50QkkyLVJhWDJCS3V1UUVleWM3YzhhejFIR3BRaC1jOG1CYllNeEU5Y1k0WGVvUEN5ek40WFJCTVNqUG12WmlHN1ZsdWhhRWc?oc=5",
-   "source": "Daily Sabah",
-   "region": "International",
-   "published": "2026-11-16T07:31:23+00:00"
-  },
-  {
-   "title": "China’s Moonshot AI puts Kimi models into race for science discoveries",
+   "title": "China’s Moonshot AI puts Kimi models into race for scientific discoveries",
    "url": "https://www.scmp.com/tech/article/3374568/chinas-moonshot-ai-puts-kimi-models-race-science-discoveries",
    "source": "South China Morning Post",
    "region": "Hong Kong",
    "published": "2026-11-16T07:30:08+00:00"
+  },
+  {
+   "title": "China’s Moonshot AI puts Kimi models into race for science discoveries",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPekpucXFHMllYak5sZ0xCX2gzaUttVldTLVhuMjdmTTBQMHBsYnlxUVNfYU05Y3ZrQzM4YWxnaG9ZRllhLUxNUXFObEtPTWdLZTQwR1J5NG9VYW5Hak1aT1VoV2Y3M2x3WnV5Nmp2d1VRUlp0blRYRUFJcGw1ZTlQdUl4S3BkeWFVUkY5N1EtbkJCb0JWeDU4MHhaYmotZjd0YThrTdIBpAFBVV95cUxPSDh1S2RyczlzTnc4RnNEVnNRMl9SWW1jQXVPZVNXVmEzVW1kWnFZT29oRFQ1R0hWTGFKenBWeTZOUkZvWERUUjNlWlVHY21iMnJDX2dueTFxT2dLRVozcGlkaG5BNFlGZ09FOFpubGIyRjJ5Tll1NDR3dkV6VUdfN1B6Y1JRMjUxaTRXb3Nodk8xcVFWUWJhNnFIZnExMTlDckg5UQ?oc=5",
+   "source": "South China Morning Post",
+   "region": "International",
+   "published": "2026-11-16T07:30:08+00:00"
+  },
+  {
+   "title": "India, US join eight nations to strengthen AI supply chains amid China competition",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOMWRMNHdQUF9WcmJZak5yOGtqRkNXVDFfMzhuVDlEVjh4VEtSdWE4Vy1Cc0xwbmVRT1p2NXNDSkV3TXFEejI3SXgzRTd4Y3lLa3ZhN2N5cWRiczlqaUxpemxvRVo3WVlFU21hWDBxNkxFNjViUGlTV3MxYXNJNE5LR2Q5SmZnZzNKTE1VV2ZILUdscG5QYWxoOVR0ZUx4QnB6VUdLd29lRU5LZUNvY3p5SmktaDRsYnpwSktjTnNtWVhpWkZpY0Z4VDV1OERvTmJHM00xQ09ZSUFmZEtGOHJ6VlRZUy1kMktTdVRJU3VGUTF1RW450gH6AUFVX3lxTFB1bElaWGFiSHZBN0hLRExxMTJaS2tXU2pBNmI0aWJzal9DMkEyVWlxV2hUOGJkUW5iSGFKTmpuT2NNZVppRnUwRVVHUVhqSEV0RzFYV292RHpKZzFaZDUyY1FvNkFsM1ROTVNrY2liM2RBbnpSNDYyc2JZMHRKNHJFcTIzdmhNY1o3RVp5dzdOYXU2S1RIZ0ZXY2JnY3hQVEVVaHR6OUFpYlZOaWxmejdlak1rNldkYVpWTUhNX0dsZi1tT3JtVEhodGg5Z1pheDVkUWJjNW1uVTVxSWlzYWtyQjg5Qi15ZmFqYk9aV2RONUIybTB6UE00VkE?oc=5",
+   "source": "Telegraph India",
+   "region": "International",
+   "published": "2026-11-16T07:29:17+00:00"
   },
   {
    "title": "Japanese forecasters find AI beats traditional models at tracking typhoons",
@@ -185,6 +360,13 @@
    "source": "Simply Wall St",
    "region": "International",
    "published": "2026-11-16T07:19:39+00:00"
+  },
+  {
+   "title": "[REPORTERSNOTEBOOK] AI cheating is forcing Korea to rethink CSAT",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNlMyWDBzWWUtMVZGRnhORUFxSlZ3aC1tcHFhc2pnYml3M1JWMlMwZGp5cWdJQm1vLTBycHBvd3RQdGJhOVpOaDh6WlVSS2FwNV9mQnMxYmRHU3NQZlRsSDFSdVc1RU5UWTl6dWJTUmF5NjgzR1Y4azJfUTVWWDlraTdiN0Zsa3FqcHhvR294Z0dGbWNWOHo3X1VxZ3hpZ1lJVm9peW930gGrAUFVX3lxTFB2SF83WTVTTlR3SjFnUUNFSkpxZkRyUldhM2dZbGhMWHdQNEIydzFjQW9YT3BuUHBVNVdpUExYWDdUd0F5anVpLXBIbVY4Q29MWFVPR1VhSlZOaV9EUHFUUjVjRWlIZk0zdFN3Z2FEbFNwZi1RbnAyZnpDc0EzNDRWQnJIRnV2TmlGM2QxX1dWRVJUVmNtaWhUek8xNUgxOENTWEVPZk5Zd3FuTQ?oc=5",
+   "source": "The Korea Times",
+   "region": "International",
+   "published": "2026-11-16T07:15:03+00:00"
   },
   {
    "title": "India, US, Eight Other Nations Sign Declaration To Secure AI Supply Chains",
@@ -278,13 +460,6 @@
    "published": "2026-11-16T05:26:22+00:00"
   },
   {
-   "title": "APA offers new guidance as artificial intelligence use at work expands",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeU9FSWVZeWdiVnZKT3BFRm05czdhUEJlRkYwTUFhMFdFQ1phSUhTZVNyYlhkVi02M0ZaY2lfeUh1VEkyTjF1NVl0bkRjdEhBLWI2V2xVakd3N0NJdXJkUEpvbFNsNVN1aWNSSUtib0lJMEFvNzQxT2JBajZFWDNxZVFyT192S295bG14d3N3?oc=5",
-   "source": "American Psychological Association (APA)",
-   "region": "International",
-   "published": "2026-11-16T05:23:00+00:00"
-  },
-  {
    "title": "AI agents could help banks generate nearly 3x returns over three years: McKinsey",
    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQUFZFSm9kaFYzbDFtWFppTW4ybFUweFB1cmk3Yjk1NGhnWnhFOFNZVVd0bHNrR3NVVkZPdXIyODAzeUwwM0tyU2FoS3hBYzJKazdXTlNUUW1wVFVnZlNCZV95Z2tFaDBQS3o5clFrWG5lQkU0UHJNeUx2R0FTZTVLNXFMVTRGTEplcUJ0RVJBeVJNekphelVWZlQ0SWhiVFhSMmlrQnJOZjRYTzJaMzJHejNsWkt5XzJ1R2gwQzlFMktjUF9HSFpBekNRcEhpZnZWYjVZVW9qeHlhRUNkV3ctSGJRRDZETVBnTEJVbExhOVJabWx2M0d6d9IB_gFBVV95cUxQT0lzNFNUUGJGb3NnQnB0OHpibkR2SWRseHNqbngzYzQwSFI2TGdIdWE0SDVBNkh5SzcyWURqN3NjSkZRWGRzNDFXeVlQQWozN1JCVjlNSm04Uk14Y1ZnMnVKektoTzVJSkJCemZIVFllT01qSHhoUmJ1U2xYR0RNLXNaRGh3eUVfQ2lyRWgzUjNST3Vyb3NacHNIVURaUjVKbXMySk9WbGptekg4UXRSZGpWMVNtWC1MLVlpcWZsM1ZYZ1lnYklhUXlINkViZzBvcjA5cWU1WlkybURtcTJXLVNyYXI2d1lGdnQ3R2VQRXVjbUlrQ2JuWDkzSmZWZw?oc=5",
    "source": "The Times of India",
@@ -297,6 +472,13 @@
    "source": "AFR",
    "region": "International",
    "published": "2026-11-16T05:00:00+00:00"
+  },
+  {
+   "title": "Perfume industry gets whiff of artificial intelligence | Daily Sabah",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcHFqYjI0azVDNFVMZDRNZ2x6dDZ1UEd1Q3QtUHVuaGhjZHlnUlV4a21kU3NWWXhYMzRIdTlCUzk3R0otWnlDdHA0MVhkTXFVUkxXQ0NneUZqc2hBdTR3bUgzOFYxS0NEa0FBSHpZNGd5N1lMalhRLUs5Vk1fU1lscDcwR2dmY1YyVjlHLTJDWEcwVkpybHfSAZsBQVVfeXFMT0Vfd2JxLXVQdWswZnZwRU1Pa3o5X1RETUxtVzhVY1I4ZzkzU3djWllvY1J5MzNHTGxnNmwzcno3dmV0cWZpU2pHVWtaYXBaVkNkcU50QkkyLVJhWDJCS3V1UUVleWM3YzhhejFIR3BRaC1jOG1CYllNeEU5Y1k0WGVvUEN5ek40WFJCTVNqUG12WmlHN1ZsdWhhRWc?oc=5",
+   "source": "Daily Sabah",
+   "region": "International",
+   "published": "2026-11-16T04:31:27+00:00"
   },
   {
    "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
@@ -339,6 +521,13 @@
    "source": "CRN Asia",
    "region": "International",
    "published": "2026-11-16T03:42:15+00:00"
+  },
+  {
+   "title": "Rising anti-AI movement forgets all the wonders, life-changing improvements technology has brought us",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5qMjJfVEhhSFUtcUl4TWhmRlh4ejdWeGtDclBJZTNJamZ4M2tVYkFVb1NSM2NhZzJzcVFLZUx1aHR2Sll1X1RXcHFJelI0MVo0aFJXRkVxZmNKNUJXUE8yRW4yVm1iZkhFOTFBT0JvZzBpR0ZMN2l3?oc=5",
+   "source": "New York Post",
+   "region": "International",
+   "published": "2026-11-16T03:29:00+00:00"
   },
   {
    "title": "India Joins US-Led Declaration to Secure AI Supply Chains Amid China Competition",
@@ -388,13 +577,6 @@
    "source": "TechCrunch",
    "region": "US",
    "published": "2026-11-16T01:30:00+00:00"
-  },
-  {
-   "title": "Elon Musk joins 165,000 others calling for Nvidia to bring back Jensen Huang in open letter",
-   "url": "https://www.theguardian.com/technology/2026/nov/16/elon-musk-tech-execs-open-letter-jensen-huang-return-nvidia-ceo",
-   "source": "The Guardian",
-   "region": "UK",
-   "published": "2026-11-16T01:01:08+00:00"
   },
   {
    "title": "Confident businesses lead on AI governance and cyber investment while others lag, Spark finds",
@@ -724,13 +906,6 @@
    "source": "The Guardian",
    "region": "UK",
    "published": "2026-11-15T08:56:11+00:00"
-  },
-  {
-   "title": "President Ramaphosa arrives in California for high-level artificial intelligence learning visit to Silicon Valley",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdGo4THB6bnJmWWdUU0diMUc5WklRVjlaLXJyaXpMMFRLX09JT05JN040c202MjZVeHVsbTc0TWk2UjBWZmc2RktVODA2Y0NQQlVsLWR4NnFJd05CY3N0bXJTRFhTMnFkZkV5VHZUMHJwaGZTNldjbXNyRGM1Y1Y2S2dYV0xWMmN6M1laWlJ3clJsbVc0MGpzVWNTOWpKaTY5R3ZRZXlKZHRXVHUtZmtkOXBoR2ZZSW9ac0NuMnFwbXpzLU8zVVJjag?oc=5",
-   "source": "The Presidency",
-   "region": "International",
-   "published": "2026-11-15T08:00:56+00:00"
   },
   {
    "title": "Driver drinking from wine bottle among shocking images captured by AI cameras",
@@ -1116,6 +1291,13 @@
    "source": "The Edwardsville Intelligencer",
    "region": "International",
    "published": "2026-11-14T12:22:50+00:00"
+  },
+  {
+   "title": "President Ramaphosa arrives in California for high-level artificial intelligence learning visit to Silicon Valley",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdGo4THB6bnJmWWdUU0diMUc5WklRVjlaLXJyaXpMMFRLX09JT05JN040c202MjZVeHVsbTc0TWk2UjBWZmc2RktVODA2Y0NQQlVsLWR4NnFJd05CY3N0bXJTRFhTMnFkZkV5VHZUMHJwaGZTNldjbXNyRGM1Y1Y2S2dYV0xWMmN6M1laWlJ3clJsbVc0MGpzVWNTOWpKaTY5R3ZRZXlKZHRXVHUtZmtkOXBoR2ZZSW9ac0NuMnFwbXpzLU8zVVJjag?oc=5",
+   "source": "The Presidency",
+   "region": "International",
+   "published": "2026-11-14T12:00:00+00:00"
   },
   {
    "title": "Is it AI or SI? Neither seems fully right. | Opinion",
@@ -2747,188 +2929,6 @@
    "source": "Bloomberg.com",
    "region": "International",
    "published": "2026-11-12T21:25:32+00:00"
-  },
-  {
-   "title": "OpenAI Board Member Warns AI Takeover Could Be Months Away",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQVRqSW9hb0lleThEMDFlYnJlbmM4cmRWZkZ4U2JZQUdaMzg4dmp1eXhsR2hYS2ZEUl9MVUVoU1VKaVdaSW9sU0dGRUpzeExySXMwdmJJcDE3eDM1Z2QyZXhyeFBvTkVYWXg1cS0wZVdKcmt4OUR4MVZXaTFZMGNla3FNdmc3NjRHdkNlZTlqTjNCN3RIdDR0d1lTTXN4Zm9BOEJUQV9NWmp1MzRyQmRzVUF3RnI4UUozNnc?oc=5",
-   "source": "Gizmodo",
-   "region": "International",
-   "published": "2026-11-12T21:24:42+00:00"
-  },
-  {
-   "title": "Jensen Huang Reportedly Had Third Affair With Nvidia Employee",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZHRscWw3d1lJdWs2SDI2QmJGY3dfWWdMbTVXcmF0MG1UaGZsX1RIN3JYN1Z3a1lyYVFhbFBvZFRKdkRJQmU4WTNsOHJ2U0ZKVVVXVEJSbF9Bb1BoNDVYU1VtMGN2LTJhOG5fTE1sQkhPRzlHejBnLXJEWXlLbTlBVV9jZ19HQQ?oc=5",
-   "source": "Gizmodo",
-   "region": "International",
-   "published": "2026-11-12T21:05:43+00:00"
-  },
-  {
-   "title": "Microsoft outage hits tens of thousands of users",
-   "url": "https://www.aljazeera.com/news/2026/11/12/microsoft-outage-hits-tens-of-thousands-of-users?traffic_source=rss",
-   "source": "Al Jazeera",
-   "region": "Qatar",
-   "published": "2026-11-12T21:03:09+00:00"
-  },
-  {
-   "title": "I reviewed the Apple HomeView, ask me anything",
-   "url": "https://www.theverge.com/tech/1031868/i-reviewed-the-apple-homeview-ask-me-anything",
-   "source": "The Verge",
-   "region": "US",
-   "published": "2026-11-12T20:55:42+00:00"
-  },
-  {
-   "title": "Four Amazon Bedrock inference choices that affect cost | Amazon Web Services",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVDBxQmdGc2FjdUtJLXpEYkQ0bEp6d2pzRUxqV3lHMlQtVHZwa2ZvWWVDMV9ycmZrODR5bEQ3Q0V2dlNFNm4tQVRqOFQ2eWRxTmVYQkhDajVDeXJ6dDJ3a0F2VlZkUERTZDJJMEt5ZnpkYjZFUTJid0lrRzZkWlB6clkxQXhDUmw4RWJpdnQ3YjBzdm1EU1dwVTVjaEt0OHh6X2dj?oc=5",
-   "source": "Amazon Web Services (AWS)",
-   "region": "International",
-   "published": "2026-11-12T20:51:55+00:00"
-  },
-  {
-   "title": "Review Finds Artificial Intelligence Shows Promise but Limited Real-World Healthcare Infection Surveillance",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQY0dDOFRhVWkwMFU2TWkzelhkRDZoV2V3M0FFcXJaZU5PZEM5MmFQX3cyNjVhamctRzMzWWh1MUtud0JZUVN4QlotR2k3ei1HNktkenpIX1V5a0pjZ001RTM2eV95QWZkek1obm1kMnphY1lpeHE1b0dWUGo0Qmg1Zk03WDFRbEhjQXZJNndYczFDNGpnaEc2TXl6bGxZTlhYVEc2Vnlnc0RhQWQ2WVJUTklRQUs0a0NyNTA1NEM3SHlkdmlyd2hsMUFYdzU?oc=5",
-   "source": "Bioengineer.org",
-   "region": "International",
-   "published": "2026-11-12T20:46:52+00:00"
-  },
-  {
-   "title": "United Airlines blocks AI agents from booking flights",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkVsZUJhUHZoMTlPa05zbzFaSHBObFhuSTJ3QUx5QU15NEVCanBwanpmeHUybDNJWVpQRDVWUEt1T2JvejU2bXhMOWFkNTdLR1FLMTBPS3VqUU1TTUg1VjltMFQ1TF9ZTkFxclB0RTJEZEFvSGlKMEFqRXdCLTFYNG4zLWkzdjZTdXRJUGlMZTRWU042U212YzRUNGQtR2s?oc=5",
-   "source": "The Washington Post",
-   "region": "International",
-   "published": "2026-11-12T20:30:00+00:00"
-  },
-  {
-   "title": "Jensen Huang was having a third affair, Reuters reports",
-   "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-12T20:26:47+00:00"
-  },
-  {
-   "title": "US nonprofits sue tech giants to halt AI development",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUzh3Xzg0ek1tUjktMHMxV1pIR014ckFIT202VFUwTGpDMC0tOWZKaFRkQVg5UzkzaE9VWVVxcnFpclVOU05PZElkMUJXT19qS1NQTE5UbUFPMUFnRDVTeW9oUkpSbkFMcy02WUZwRm44eVV4ZGJNMGxjaEM0TGZ1cVgzejFmaU1sc1diV2R6UDlMZTB1UnYzcXpR0gGfAUFVX3lxTE96N2UydjlyZ3Vmbm9RemR1SGxrMjdQRXFOQ0ZHaUFxOHVlRmVoR3dHV3poMUtuSnNVWEtVWFlpR3RubjRNTkxPVkxSQ1lRNkZsbmozcVYydWRjaTBwM0M1Y21SNWVZNFRzSkZtYVM1OTV6VDFFZkhkSWxyT3BEakZMRkMzeEpzNVhBcXBpY3hIOUw1WlpBMlZLLWpieTZlUQ?oc=5",
-   "source": "Al Jazeera",
-   "region": "International",
-   "published": "2026-11-12T20:24:22+00:00"
-  },
-  {
-   "title": "A.I., the Incarnation and the true source of human dignity",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZFpMdTBra2RIdXhnMkZMOUt5d1ZrcHhmWWlfMld1RlE1TlFLZG9TT29ONHc3ZDB1VVk2TUd4M2VCdWpFUUEyOVhmY0I0R1BKNUZ1VHJtYloxVWZnUmVDeFNLR0hXa0lNVEFsVURjVEhJQTh4RHJQc0paRkEyQ0NyaDgyZ3Q1anZ5cnlUTkpMdG41Z184ck82SlJnZW9GTEZkeVVhdg?oc=5",
-   "source": "America Magazine",
-   "region": "International",
-   "published": "2026-11-12T19:51:06+00:00"
-  },
-  {
-   "title": "SpaceX Plans $74 Billion Investment to Build Data Centers in Texas and Arizona",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50Ym5PVmtVcmozcmwzTDBvSVZuSUVuanV6R3FNY0lrQm5GZ3pYZk1TQThWd2xERm9xUWs0NEdpTnpmSEFsOG9NT1hxdHVOb2xUSVNjeWhCckR3eGxoLTlSN2VyTV9EQXJ5VDJsM3Vxalp2NF9oTFE?oc=5",
-   "source": "The New York Times",
-   "region": "International",
-   "published": "2026-11-12T19:45:26+00:00"
-  },
-  {
-   "title": "No, AI agents did not discover a previously unknown Maya site",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
-   "source": "The Verge",
-   "region": "US",
-   "published": "2026-11-12T19:42:40+00:00"
-  },
-  {
-   "title": "In Taiwan, AI-related stocks send investors into a frenzy",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM2xMdmZYOHF1QzViaWZzRjlnTHdtWVAyQ1F1UVlJN0xDZmZGWVZTZ3ZtUXdLWFZvMU9fVFNfdW9YV2RIV00wS2hPYUdia3ZNQkpGOTU1WWQtTzlYTU9vUUNNWGtvMVBCSFBBYjBUeHRsNGJtLWVrRjlWUm5xSXhVWDdlX25scXhFWjNiNnJDRDhXVGJuSHN2Y2IxUkxNb01tdnlVYWFqeVZtVDZMUXZHOTJrYnJTVmlpQ0xmcVhaLXQyZDA?oc=5",
-   "source": "Le Monde.fr",
-   "region": "International",
-   "published": "2026-11-12T19:30:05+00:00"
-  },
-  {
-   "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
-   "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-12T19:27:45+00:00"
-  },
-  {
-   "title": "Advocacy groups sue AI giants to freeze models, warning of 'catastrophic' risks",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQS1luaHNxVndSRGswZnFpcW1LcHZXMXhhN2ZicXJqMDUxcjJHSEI0WGd5UTlYeFdZNHhUSlNRbTNNQjY2ZnhBTWFzOGJQaElrbUYzaFh0TEJrdTZBLTZMNl9kblc4QWpmRTdOYjN4SlRMQ3NKbEgyZUdHNkQzc2NGM05ETC0zUWlzR2NzOVBmb1NLOXdBX2ZrMmduWVJpcF9DRFpEeFNIVVBzYnI1ckI1MWVhZlpiS2dGNUY3QzRSSnppVlFJd3YxNDNFaGdCaXVKcklhN1ViV0QxaXJiVnc?oc=5",
-   "source": "Scripps News",
-   "region": "International",
-   "published": "2026-11-12T19:18:45+00:00"
-  },
-  {
-   "title": "SDSU researcher puts artificial intelligence to work in wheat fields",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdXYtUkxPRE5hQmRqMk5zVi1XLUxSUGk3aXBNZWJYekdULXozREZoUlptMkhBQmNHaUFFdjVsMElCZDdBVWVTenVQQUVQcm5CVmh2M1RuNEtGQnEtZGVXRXdvMkZFbURra0dsMVhPN2RhN0lNMk16OV93XzZtR19ubEZOTXRRaENPdXM0SHY4NUtiRUtJQUNLa3VYRVBqekduYmRv?oc=5",
-   "source": "The Dakota Scout",
-   "region": "International",
-   "published": "2026-11-12T19:12:16+00:00"
-  },
-  {
-   "title": "Nectar launches an AI agent to automate creator discovery and outreach for brands",
-   "url": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-12T19:11:00+00:00"
-  },
-  {
-   "title": "AI Expert, Spelman College President’s New Book Offers a New Vision for the Future of Artificial Intelligence",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYVViNFV0RFVaRWItaUJ3YnJKYkVuemVBVWU5NWdyLWhXaUt6X0xpalg4M1JNTnlUVWJpUGZrYWhfbXVnN3poNnA4YnFubl9LcGhsWjljLS1vejJTVE1IT0FtU2RHcHhPeENabUxtMUo4bjYtVWFjc2p5QlFfdjdyRVlTV2dtSTlJSF93NE5BczZzT2ZBM3gxbGsyZU9Lb0ZvZEVSS3B4YVNONnBiZGNyN1FNV1ZVbHc?oc=5",
-   "source": "Carroll County Mirror-Democrat",
-   "region": "International",
-   "published": "2026-11-12T19:10:15+00:00"
-  },
-  {
-   "title": "SMX Brings American Innovation to the Next Frontier of Artificial Intelligence",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPV0NESW01eUdUZ2hwR3Q2VkE3RWZiOGZqNktsZlhWQ2M0c3ZlcXluUkpqUVd3Y0Q3c3FkRjkyZkxlaGJHTjNNRk04aXIxNmFRUHRUWHBFUGM2bmgzczFSbnRmTW5IczVGZV83RGlidnlvZnliMHBkUHhGQk1OVHBOSHl3N1dJQ29VQURwWXhWMHFKQ2tVQU9yU1B5cUVVcDhY?oc=5",
-   "source": "Yahoo Finance",
-   "region": "International",
-   "published": "2026-11-12T19:10:00+00:00"
-  },
-  {
-   "title": "Anthropic Preps for a Trillion-Dollar Debut",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRU1PLXRFWThaMlc5emtuWnhRYXI0cmlVTjVjZFBOYU5CUldTMTBsdDZkc2JPR3lWbXFRcEs5VkU3eXBKVEhXUDI5QjR2WkRKUW5aSndQX0VEV1ZDLVRLZnhTSXZ2YmJ2eUVLbGVFVVIteEZMdk9CVVJESXo3d01NMHQyVG5FSmlRY251anVMLUlhRkVQZ1RJ?oc=5",
-   "source": "Global Finance Magazine",
-   "region": "International",
-   "published": "2026-11-12T18:59:48+00:00"
-  },
-  {
-   "title": "Explainer-Tougher curbs on AI chip sales to China likely after Nvidia CEO resigns",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONkotRFd1eEhsdnVwUU9OVDZGUkQwU3JyLW00V05JT1RkZ3NtZGhJX3RObEVYZHlPbHA2UzZsUmJaMVlVMl9Jbl80WVM0NjZIX2VBWE1hV0owNTlTYXMyaHZOMHlrT18ybktTSFZ1b0o2U0pXMUEzZXlucGdGcnB0OTRXQkFWVDA?oc=5",
-   "source": "Yahoo! Finance Canada",
-   "region": "International",
-   "published": "2026-11-12T18:54:47+00:00"
-  },
-  {
-   "title": "Victorian Labor's multi-million-dollar social media ad spend revealed",
-   "url": "https://www.abc.net.au/news/2026-11-13/political-ads-vic-election-ai-social-media-use/107378416",
-   "source": "ABC News",
-   "region": "Australia",
-   "published": "2026-11-12T18:54:30+00:00"
-  },
-  {
-   "title": "Jensen Huang, a global salesman for artificial intelligence, resigns from Nvidia after affair",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYW1femlfRjNlV3dYVzZjYklVMmkzZ3U5S1h4c25tV2k2LWQ0a3ROODFLR2M3MW9idHBGMThpVEkxSEs0YVRxX2VRSURaTXFxYVpjQ0E4VjQzLU9KZzNycDVuelVGbjhNRklmVXZQOXBsRlpQbWVKN2FsVFZDZFpORW9vWUZ6eWlUWlB3ZlIyYWN4andWamtsUlY4N0pJVXM1TTBfSUZoOHdwb0RtYVRxUVRwUTNCT3VrN3FmcnBaTQ?oc=5",
-   "source": "Courthouse News",
-   "region": "International",
-   "published": "2026-11-12T18:48:30+00:00"
-  },
-  {
-   "title": "Jensen Huang was a busted flush at Nvidia – he had to go | Nils Pratley",
-   "url": "https://www.theguardian.com/technology/nils-pratley-on-finance/2026/nov/12/jensen-huang-was-a-busted-flush-at-nvidia-he-had-to-go",
-   "source": "The Guardian",
-   "region": "UK",
-   "published": "2026-11-12T18:46:48+00:00"
-  },
-  {
-   "title": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
-   "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
-   "source": "TechCrunch",
-   "region": "US",
-   "published": "2026-11-12T18:39:23+00:00"
-  },
-  {
-   "title": "Local student helps lead team to victory in artificial intelligence pitch competition",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPMGtNSTNlV0JuWmdFcV9XcnJvVGd1NlJHMjJ2Vm5JeWtseWtCMElXSjFQQmNZSjgwSXA1VlluQVBRUV95LXZJSzc3dkU1M0RmWEI1QTRFYW9veDJGNmFYS1FIcXF1NC1jSzJTWHprLWhFbEVOQjZrRzhsMDFVLXZQY1JJWHVJeWFSMkdWUHFjZG5mUnNEcnkyX3lJMFI3cWVIdFNzNk5Vb2tOb3BXako1Z1dTM1NSZVV5ZkFOV2hfY1kzUEozekdZX29XR0FyVHh1VXlyNF8xd2JUOVpiTXV5TW5QT1pURjh4ZHNzZ0ZDckZhNE9rdWZjZGluNUZQcl91aFRyOWh1dw?oc=5",
-   "source": "Marietta Daily Journal",
-   "region": "International",
-   "published": "2026-11-12T18:36:00+00:00"
   }
  ]
 }
