@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:19:30+00:00",
+ "updated": "2026-11-16T10:28:25+00:00",
  "sources_reached": 12,
  "sources": [
   {
@@ -96,7 +96,7 @@
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 44
+   "ai_stories": 42
   },
   {
    "name": "Google News: farmers",
@@ -127,9 +127,76 @@
    "set": "Basic needs",
    "ok": true,
    "ai_stories": 18
+  },
+  {
+   "name": "Dezeen",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 0
+  },
+  {
+   "name": "designboom",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 0
+  },
+  {
+   "name": "ArchDaily",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 0
+  },
+  {
+   "name": "Architectural Digest",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 0
+  },
+  {
+   "name": "Wallpaper*",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 0
+  },
+  {
+   "name": "The Architect's Newspaper",
+   "set": "Data centres",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "Google News: design press",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 48
+  },
+  {
+   "name": "Google News: architecture",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 37
+  },
+  {
+   "name": "DatacenterDynamics",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 11
+  },
+  {
+   "name": "Google News: new builds",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 99
   }
  ],
  "items": [
+  {
+   "title": "What Artificial Intelligence (AI) Research Misses About African Markets (By Bas Wijne).",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUzE3ekNNM2t1VkxUTHFTNS1xQzBuSVdiUEE1QUFTcDJzem9uTlNMZ05YWGhPSndDdEt4dFAxd0J5eEZuNUo0bGw0LWZHdzI3Nk1ialJHQXg3RnFqVlI5d19CZjZMR0E2NjRBRmVkMUhCZWs4b2VscFZ6UFNscVJkb1BsUTJkMk5BVjhoSDZSd1RLakU0eUhnLTF0TWRqVGd1MTdhZ1ZJSmpELVJiNkN6Nk41cVhDdw?oc=5",
+   "source": "TRIPURA STAR NEWS",
+   "region": "International",
+   "published": "2026-11-16T10:16:41+00:00"
+  },
   {
    "title": "Information Technology workforce facing new demands from artificial intelligence.",
    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTlp0b0Y4dkpzdzRNTlZfZ2VmZXFNMUFyLWttci0tVmdFeFA2Rl8zQjFsblQxNVhSd1JhaU5XMjdGbHJuUkZiU0dfOUF0eWxjd3dnLU1yRWwxdXNGQTVybnVRSG9hZGgzNlBOVldtc2l1ZjJvR3VGdl9mLVNSQTlNTkRZWmZnTjdFVllEWkJJSjJwdXlrYlBj?oc=5",
@@ -150,6 +217,13 @@
    "source": "South China Morning Post",
    "region": "Hong Kong",
    "published": "2026-11-16T10:10:31+00:00"
+  },
+  {
+   "title": "Algeria explores AI data centre project in partnership with China",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWTRxTHZDWWhoY3Yta21ZMzNKcGVUVUtIcVNaQ2FiZEJHVm9Vd1pMSy0yZGtITGRLLWRTNjFmQzhmZ2ZrcDNoVmN3V2tlbzIzZm1HelIxaHVfS3JwRXpDWmtab3p5WGxIVDM3ZTkwOEY1a0FFQ1l6YkhPNHQwd2RJczhCQXJldzlJUjhSQ1h2RHJXQ3hxNWxxZVNmY05ueUdmcXFMSjdJRzJiUi1x?oc=5",
+   "source": "Telecompaper",
+   "region": "International",
+   "published": "2026-11-16T10:09:25+00:00"
   },
   {
    "title": "How Sam Bankman-Fried Lost Out on a $35 Billion Jackpot From Anthropic",
@@ -227,13 +301,6 @@
    "source": "Business & Financial Times",
    "region": "International",
    "published": "2026-11-16T08:50:16+00:00"
-  },
-  {
-   "title": "What Artificial Intelligence (AI) research misses about African markets (By Bas Wijne)",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaHBBRGpwVjVnRk53dlpKeG5OT2NIZnR6dXRpMEtqLS05cllBUTlfSi10c2k5ODFFNmtQMmtRd2NBaWdmQ1hDa05zeFlxTVpGV1FxUFZxV3BfSnN4Q0poZzctcm1GUDA2MzRQYm9GN0xwSTdpY1c3ODd3bGptTG1nYmVhODBRYm5zdW5HUllRQzMzTUZnbl9udHNOUG1XRlh5UVJObnpIVWM?oc=5",
-   "source": "Africa.com",
-   "region": "International",
-   "published": "2026-11-16T08:45:53+00:00"
   },
   {
    "title": "Qatar, France Sign Technology Cooperation Letter, Highlight Shared Quantum Ambitions",
@@ -2922,13 +2989,6 @@
    "source": "TechCrunch",
    "region": "US",
    "published": "2026-11-12T21:27:10+00:00"
-  },
-  {
-   "title": "Australia’s Biggest Pension Fund Mulls Chinese AI as Costs Spike",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUGtMN2dkd0phSC1vWHJDdU5Pb0RGUV95Yk5sV09nY1BkNEZ0NHpNYnQza2VoVWROOWVhcVZqUEY3S1M2cXp4T1FWZ0FBOWNaSnR5ZVJlOWl1TTB3SFNIdWl6RU9jUDUxa1BMU2ZHakFFTXItZFl4R2tNWllpcEV2MThHMHZhV1FmWHFfZXltUGpFTjdPVUJkbmNLck11R3BaeUVOQkpCcVF0cEhaQ2d0Z3FxUHR5QVR2Mk5zMEhPYW90cnFmOE1QZmliMHZ4NHllSlhDeQ?oc=5",
-   "source": "Bloomberg.com",
-   "region": "International",
-   "published": "2026-11-12T21:25:32+00:00"
   }
  ]
 }

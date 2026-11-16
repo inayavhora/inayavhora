@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:19:30+00:00",
+ "updated": "2026-11-16T10:28:25+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -96,7 +96,7 @@
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 44
+   "ai_stories": 42
   },
   {
    "name": "Google News: farmers",
@@ -127,6 +127,66 @@
    "set": "Basic needs",
    "ok": true,
    "ai_stories": 18
+  },
+  {
+   "name": "Dezeen",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 0
+  },
+  {
+   "name": "designboom",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 0
+  },
+  {
+   "name": "ArchDaily",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 0
+  },
+  {
+   "name": "Architectural Digest",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 0
+  },
+  {
+   "name": "Wallpaper*",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 0
+  },
+  {
+   "name": "The Architect's Newspaper",
+   "set": "Data centres",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "Google News: design press",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 48
+  },
+  {
+   "name": "Google News: architecture",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 37
+  },
+  {
+   "name": "DatacenterDynamics",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 11
+  },
+  {
+   "name": "Google News: new builds",
+   "set": "Data centres",
+   "ok": true,
+   "stories": 99
   }
  ],
  "items": [
