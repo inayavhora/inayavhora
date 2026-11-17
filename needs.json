@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16T18:35:55+00:00",
- "sources_reached": 9,
+ "updated": "2026-11-17T02:28:55+00:00",
+ "sources_reached": 7,
  "sources": [
   {
    "name": "The Guardian",
@@ -12,13 +12,13 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 5
+   "ai_stories": 7
   },
   {
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "DW",
@@ -30,7 +30,7 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 3
+   "ai_stories": 0
   },
   {
    "name": "South China Morning Post",
@@ -42,7 +42,7 @@
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 8
+   "ai_stories": 9
   },
   {
    "name": "NPR",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 104
+   "ai_stories": 102
   },
   {
    "name": "The New Humanitarian",
@@ -84,7 +84,7 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 65
+   "ai_stories": 66
   },
   {
    "name": "Specialist sites (2)",
@@ -102,19 +102,19 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 28
+   "ai_stories": 29
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 26
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 22
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "Google News: education",
@@ -126,7 +126,7 @@
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 17
+   "ai_stories": 18
   },
   {
    "name": "Dezeen: data centres",
@@ -173,8 +173,8 @@
   {
    "name": "Google News: architecture",
    "set": "Data centres",
-   "ok": true,
-   "stories": 38
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "DatacenterDynamics",
@@ -186,31 +186,31 @@
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 21
+   "stories": 22
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
-   "ok": true,
-   "stories": 41
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 75
+   "stories": 65
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
-   "ok": true,
-   "stories": 45
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
    "ok": true,
-   "stories": 32
+   "stories": 29
   },
   {
    "name": "Google News: new builds",
