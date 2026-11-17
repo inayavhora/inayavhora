@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17T02:28:55+00:00",
- "sources_reached": 7,
+ "updated": "2026-11-17T11:56:03+00:00",
+ "sources_reached": 9,
  "sources": [
   {
    "name": "The Guardian",
@@ -12,13 +12,13 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 7
+   "ai_stories": 8
   },
   {
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 2
   },
   {
    "name": "DW",
@@ -36,7 +36,7 @@
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 23
   },
   {
    "name": "The New York Times",
@@ -48,7 +48,7 @@
    "name": "NPR",
    "set": "General",
    "ok": true,
-   "ai_stories": 3
+   "ai_stories": 4
   },
   {
    "name": "MIT Technology Review",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 102
+   "ai_stories": 100
   },
   {
    "name": "The New Humanitarian",
@@ -84,7 +84,7 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 66
+   "ai_stories": 65
   },
   {
    "name": "Specialist sites (2)",
@@ -96,37 +96,37 @@
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 42
+   "ai_stories": 41
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 29
+   "ai_stories": 27
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "ai_stories": 26
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "ai_stories": 25
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 36
+   "ai_stories": 37
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 18
+   "ai_stories": 20
   },
   {
    "name": "Dezeen: data centres",
@@ -168,37 +168,37 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 48
+   "stories": 47
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "stories": 38
   },
   {
    "name": "DatacenterDynamics",
    "set": "Data centres",
    "ok": true,
-   "stories": 5
+   "stories": 6
   },
   {
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 22
+   "stories": 23
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "stories": 43
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 65
+   "stories": 98
   },
   {
    "name": "Google News: Gulf",
@@ -209,8 +209,8 @@
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
-   "ok": true,
-   "stories": 29
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "Google News: new builds",
@@ -220,6 +220,25 @@
   }
  ],
  "items": [
+  {
+   "title": "India launches Khushi AI chatbot to aid tuberculosis patients",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTjdmdDZEWVdfWkEyaHZFSEVZSi01cVByOEVyTUk0emdDbzZDNWdhY1Z0QkZHc0pUOFB4dXdBWXN2VDN4NVREbTZqdGhvMDZkVVVKMXhFNjVQaVhLX29rcUFCanVfSlBPbmhOQUIwRDg2YjRFczgwNGdheXBKX1FRN0tnN01PMVpDdWZuN2JseHkwNWVUSHE4R0RlNncyUHZnUll0aVhNenpTY0tk?oc=5",
+   "source": "NewsBytes",
+   "region": "International",
+   "published": "2026-11-17T04:48:53+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "pilot"
+  },
   {
    "title": "AI is rewriting the rules of work. Is India's university classroom keeping up?",
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTWRPRkhZcThYODJCX0VTbUR6WmFsNUl6djRYdk9uOW9fSkNLam9BQjJDWVdQSmxmRWR2bXVCdWUzVjZBb1hBSmUyYmxvLXVWOV9WZ0FaWHRZSl8zcHZHZUxhSkt3S214VG44bmUzNkYtdXR2cU9pUlJkQktpWXJkTlJhWmtzMVEzTjJrNzN5MDNxT25NR2I2SGNWRVF3WUlQWFZoU3ZteEFsOUhIMG1Xb25XenR0a3ZYWlJmY1Zxb2xPWk0wSllCVWI2dUVXYkI1SEd1RGdoQVUxMFU5MmtLZXRGZ1VPZmhC?oc=5",
@@ -499,11 +518,23 @@
    "stage": "reported"
   },
   {
+   "title": "AI’s hunger for power can help electrify Africa",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeWh0MzZOdllONlJ5bTVQbkx4QmZhd3Fmejh0R0V0aF90ckhyMFZoUVVnZFFJWUV5Unphb2RZUUFfNFBob0h5c28zaUZlWUlSUVIxRlhIYkhYQ3NqaERKYlZuZHlTNTdDS3M4bjJBWS1Ca2RGR2gyNTQ4WnBES2E4Y2o2VExGRGxW?oc=5",
+   "source": "Devex",
+   "region": "International",
+   "published": "2026-10-27T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "Omron to push AI-powered remote ECG diagnosis in India with Singapore firm",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSW9zMU1VZG1VejJDV1FHdHlTN0ItbEVUbDZVV1dLYXlwcXdjOWV4YVZKeHBQN1BjZ0Zjc1NzTGt0dm42bllNaGZ1ZDM4ai10clpiWGJaRGpET3cwajBNSm5MNGpCSUEybG5EbDdSRlpLSGZ6dzZUaWVQUHdpZXhtSWhRVU8xVjQ1TUpXWWdlanFDUmFudDgtcE1WZlNyc1hRNk1wdFgtWmJZVzFLNXlYYUdxQkFsQQ?oc=5",
    "source": "Singapore Economic Development Board (EDB)",
    "region": "International",
-   "published": "2026-11-01T07:00:00+00:00",
+   "published": "2026-10-27T07:00:00+00:00",
    "needs": [
     "health"
    ],
@@ -515,18 +546,6 @@
      "precision": "country"
     }
    ],
-   "stage": "reported"
-  },
-  {
-   "title": "AI’s hunger for power can help electrify Africa",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeWh0MzZOdllONlJ5bTVQbkx4QmZhd3Fmejh0R0V0aF90ckhyMFZoUVVnZFFJWUV5Unphb2RZUUFfNFBob0h5c28zaUZlWUlSUVIxRlhIYkhYQ3NqaERKYlZuZHlTNTdDS3M4bjJBWS1Ca2RGR2gyNTQ4WnBES2E4Y2o2VExGRGxW?oc=5",
-   "source": "Devex",
-   "region": "International",
-   "published": "2026-10-27T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
    "stage": "reported"
   },
   {
@@ -592,6 +611,25 @@
    "source": "APAC Media",
    "region": "International",
    "published": "2026-10-27T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "Kharagpur, India",
+     "lon": 87.325,
+     "lat": 22.3397,
+     "precision": "town"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "IIT Kharagpur to pioneer India's First Dedicated School of Physical AI",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB0QWVVNm5RYU5SRVpISC1TbjRmWEJzTkRDRExqRHJYNDFkdk5tSURrVUUtUTZzcGlXRV9vUFRyUTh1WG9fTHUxMUVRN014aU5XSzc5SzJtLW5TZ3dnMlllM2pkekVfMnQz?oc=5",
+   "source": "www.pib.gov.in",
+   "region": "International",
+   "published": "2026-10-26T07:00:00+00:00",
    "needs": [
     "education"
    ],
