@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T11:56:03+00:00",
+ "updated": "2026-11-17T20:58:21+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,19 +12,19 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 8
+   "ai_stories": 7
   },
   {
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 1
   },
   {
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 10
+   "ai_stories": 9
   },
   {
    "name": "ABC News",
@@ -36,13 +36,13 @@
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 23
+   "ai_stories": 22
   },
   {
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 9
+   "ai_stories": 7
   },
   {
    "name": "NPR",
@@ -54,7 +54,7 @@
    "name": "MIT Technology Review",
    "set": "General",
    "ok": true,
-   "ai_stories": 5
+   "ai_stories": 4
   },
   {
    "name": "TechCrunch",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 100
+   "ai_stories": 102
   },
   {
    "name": "The New Humanitarian",
@@ -84,7 +84,7 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 65
+   "ai_stories": 69
   },
   {
    "name": "Specialist sites (2)",
@@ -102,7 +102,7 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 27
+   "ai_stories": 25
   },
   {
    "name": "Google News: health",
@@ -114,19 +114,19 @@
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 24
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 37
+   "ai_stories": 36
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 20
+   "ai_stories": 21
   },
   {
    "name": "Dezeen: data centres",
@@ -168,58 +168,77 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 47
+   "stories": 46
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 38
+   "stories": 40
   },
   {
    "name": "DatacenterDynamics",
    "set": "Data centres",
    "ok": true,
-   "stories": 6
+   "stories": 8
   },
   {
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 23
+   "stories": 22
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
    "ok": true,
-   "stories": 43
+   "stories": 46
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 98
+   "stories": 96
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "stories": 41
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "stories": 28
   },
   {
    "name": "Google News: new builds",
    "set": "Data centres",
    "ok": true,
-   "stories": 95
+   "stories": 97
   }
  ],
  "items": [
+  {
+   "title": "IIT-Madras to train teachers in AI literacy across India",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdi0xTXhiWlZ3YnZzUlJVZjNFb3I3T0RIMFk5Unp2QWZEM09ocWdHak9tM1V2eXd5UGtMQnRncDRfajlWRklNdkZyNGRGYXVxZ2tJTjR1U3FlUm82czBIZGFMeHZ1TWsxOGZRM2pSOF9jTTBlb2JPN1FzdzhxMHRPcjFTN2NYQWJhMl9kM2xLZi1sUWtRdDZTamhJenJiNlFWMEZQQmljRlpubEVveWRiUXFKdEZpVjcweGw5Wl9wM2dxMzIx?oc=5",
+   "source": "The Hindu",
+   "region": "International",
+   "published": "2026-11-17T19:21:36+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
   {
    "title": "India launches Khushi AI chatbot to aid tuberculosis patients",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTjdmdDZEWVdfWkEyaHZFSEVZSi01cVByOEVyTUk0emdDbzZDNWdhY1Z0QkZHc0pUOFB4dXdBWXN2VDN4NVREbTZqdGhvMDZkVVVKMXhFNjVQaVhLX29rcUFCanVfSlBPbmhOQUIwRDg2YjRFczgwNGdheXBKX1FRN0tnN01PMVpDdWZuN2JseHkwNWVUSHE4R0RlNncyUHZnUll0aVhNenpTY0tk?oc=5",
@@ -241,10 +260,10 @@
   },
   {
    "title": "AI is rewriting the rules of work. Is India's university classroom keeping up?",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTWRPRkhZcThYODJCX0VTbUR6WmFsNUl6djRYdk9uOW9fSkNLam9BQjJDWVdQSmxmRWR2bXVCdWUzVjZBb1hBSmUyYmxvLXVWOV9WZ0FaWHRZSl8zcHZHZUxhSkt3S214VG44bmUzNkYtdXR2cU9pUlJkQktpWXJkTlJhWmtzMVEzTjJrNzN5MDNxT25NR2I2SGNWRVF3WUlQWFZoU3ZteEFsOUhIMG1Xb25XenR0a3ZYWlJmY1Zxb2xPWk0wSllCVWI2dUVXYkI1SEd1RGdoQVUxMFU5MmtLZXRGZ1VPZmhC?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTWRPRkhZcThYODJCX0VTbUR6WmFsNUl6djRYdk9uOW9fSkNLam9BQjJDWVdQSmxmRWR2bXVCdWUzVjZBb1hBSmUyYmxvLXVWOV9WZ0FaWHRZSl8zcHZHZUxhSkt3S214VG44bmUzNkYtdXR2cU9pUlJkQktpWXJkTlJhWmtzMVEzTjJrNzN5MDNxT25NR2I2SGNWRVF3WUlQWFZoU3ZteEFsOUhIMG1Xb25XenR0a3ZYWlJmY1Zxb2xPWk0wSllCVWI2dUVXYkI1SEd1RGdoQVUxMFU5MmtLZXRGZ1VPZmhC0gHuAUFVX3lxTE1OUWp1TzFaSkxaRXN0UjJ4NGFUeVNxU0tvUFA4VkdFc2FJcFJQRVdvalRDM2lneFdlZEVEVUNMQkFvbGJrNXF0R2puOW1EV1ZRZmVXWWt3ZXdrQWg2a212dFlBYzNId1BMWk9ReXJ0V0tROU1PMVVRRlN0Sk9iMzdWWUJGdDZodEpQWTVHdURTX2Mzd0hrVU1scHJPTUF6cjB3OVZ2NDAyS2FNVkwxbGdoRmhMUnBPMzVPZW1NZHFqQkxqUHhjNDM2Q1hpaHBkSF9Ibk4xb3J1MmI0d1dvTEtoaVBnT2Z3SlFEbmNlWlE?oc=5",
    "source": "ET Education",
    "region": "International",
-   "published": "2026-11-16T11:37:30+00:00",
+   "published": "2026-11-16T11:48:24+00:00",
    "needs": [
     "education"
    ],
