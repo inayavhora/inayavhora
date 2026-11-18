@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T20:58:21+00:00",
+ "updated": "2026-11-18T02:55:19+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -18,25 +18,25 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 0
   },
   {
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 9
+   "ai_stories": 10
   },
   {
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 3
   },
   {
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 22
+   "ai_stories": 24
   },
   {
    "name": "The New York Times",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 102
+   "ai_stories": 100
   },
   {
    "name": "The New Humanitarian",
@@ -90,13 +90,13 @@
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 62
+   "ai_stories": 63
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 41
+   "ai_stories": 43
   },
   {
    "name": "Google News: farmers",
@@ -168,7 +168,7 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 46
+   "stories": 48
   },
   {
    "name": "Google News: architecture",
@@ -186,19 +186,19 @@
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 22
+   "stories": 24
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
    "ok": true,
-   "stories": 46
+   "stories": 45
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 96
+   "stories": 85
   },
   {
    "name": "Google News: Gulf",
@@ -210,22 +210,41 @@
    "name": "Google News: Latin America",
    "set": "Data centres",
    "ok": true,
-   "stories": 28
+   "stories": 30
   },
   {
    "name": "Google News: new builds",
    "set": "Data centres",
    "ok": true,
-   "stories": 97
+   "stories": 98
   }
  ],
  "items": [
   {
    "title": "IIT-Madras to train teachers in AI literacy across India",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdi0xTXhiWlZ3YnZzUlJVZjNFb3I3T0RIMFk5Unp2QWZEM09ocWdHak9tM1V2eXd5UGtMQnRncDRfajlWRklNdkZyNGRGYXVxZ2tJTjR1U3FlUm82czBIZGFMeHZ1TWsxOGZRM2pSOF9jTTBlb2JPN1FzdzhxMHRPcjFTN2NYQWJhMl9kM2xLZi1sUWtRdDZTamhJenJiNlFWMEZQQmljRlpubEVveWRiUXFKdEZpVjcweGw5Wl9wM2dxMzIx?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdi0xTXhiWlZ3YnZzUlJVZjNFb3I3T0RIMFk5Unp2QWZEM09ocWdHak9tM1V2eXd5UGtMQnRncDRfajlWRklNdkZyNGRGYXVxZ2tJTjR1U3FlUm82czBIZGFMeHZ1TWsxOGZRM2pSOF9jTTBlb2JPN1FzdzhxMHRPcjFTN2NYQWJhMl9kM2xLZi1sUWtRdDZTamhJenJiNlFWMEZQQmljRlpubEVveWRiUXFKdEZpVjcweGw5Wl9wM2dxMzIx0gHLAUFVX3lxTE9KaDB3ZEVJSVRreXlQTzNlbU1oUFRuSTdIRVhOWlFyNFQ4RlZBMUI1LVVHVUVQOXJlcTJ5eHFGTVkzU2pkTjRIY213UmZORkJmNjBpU1Bpb1VHSnAyTElIVGNuTUs4NUY4cEd1OEdpdlZlbFRIZ3JWVzJaNHNoWjA4eXpCNlhEOXhKSHhCQXlnRDZfVGtXTUNOcVhVYlF4SS1aWlZBTzE5Zi15anVUd0NHTmRIT2NkLXFjRmpGMDJMQ1NaTWUwTHFLODRV?oc=5",
    "source": "The Hindu",
    "region": "International",
    "published": "2026-11-17T19:21:36+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "AI is rewriting the rules of work. Is India's university classroom keeping up?",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTWRPRkhZcThYODJCX0VTbUR6WmFsNUl6djRYdk9uOW9fSkNLam9BQjJDWVdQSmxmRWR2bXVCdWUzVjZBb1hBSmUyYmxvLXVWOV9WZ0FaWHRZSl8zcHZHZUxhSkt3S214VG44bmUzNkYtdXR2cU9pUlJkQktpWXJkTlJhWmtzMVEzTjJrNzN5MDNxT25NR2I2SGNWRVF3WUlQWFZoU3ZteEFsOUhIMG1Xb25XenR0a3ZYWlJmY1Zxb2xPWk0wSllCVWI2dUVXYkI1SEd1RGdoQVUxMFU5MmtLZXRGZ1VPZmhC0gHuAUFVX3lxTE1OUWp1TzFaSkxaRXN0UjJ4NGFUeVNxU0tvUFA4VkdFc2FJcFJQRVdvalRDM2lneFdlZEVEVUNMQkFvbGJrNXF0R2puOW1EV1ZRZmVXWWt3ZXdrQWg2a212dFlBYzNId1BMWk9ReXJ0V0tROU1PMVVRRlN0Sk9iMzdWWUJGdDZodEpQWTVHdURTX2Mzd0hrVU1scHJPTUF6cjB3OVZ2NDAyS2FNVkwxbGdoRmhMUnBPMzVPZW1NZHFqQkxqUHhjNDM2Q1hpaHBkSF9Ibk4xb3J1MmI0d1dvTEtoaVBnT2Z3SlFEbmNlWlE?oc=5",
+   "source": "ET Education",
+   "region": "International",
+   "published": "2026-11-17T06:14:59+00:00",
    "needs": [
     "education"
    ],
@@ -257,25 +276,6 @@
     }
    ],
    "stage": "pilot"
-  },
-  {
-   "title": "AI is rewriting the rules of work. Is India's university classroom keeping up?",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTWRPRkhZcThYODJCX0VTbUR6WmFsNUl6djRYdk9uOW9fSkNLam9BQjJDWVdQSmxmRWR2bXVCdWUzVjZBb1hBSmUyYmxvLXVWOV9WZ0FaWHRZSl8zcHZHZUxhSkt3S214VG44bmUzNkYtdXR2cU9pUlJkQktpWXJkTlJhWmtzMVEzTjJrNzN5MDNxT25NR2I2SGNWRVF3WUlQWFZoU3ZteEFsOUhIMG1Xb25XenR0a3ZYWlJmY1Zxb2xPWk0wSllCVWI2dUVXYkI1SEd1RGdoQVUxMFU5MmtLZXRGZ1VPZmhC0gHuAUFVX3lxTE1OUWp1TzFaSkxaRXN0UjJ4NGFUeVNxU0tvUFA4VkdFc2FJcFJQRVdvalRDM2lneFdlZEVEVUNMQkFvbGJrNXF0R2puOW1EV1ZRZmVXWWt3ZXdrQWg2a212dFlBYzNId1BMWk9ReXJ0V0tROU1PMVVRRlN0Sk9iMzdWWUJGdDZodEpQWTVHdURTX2Mzd0hrVU1scHJPTUF6cjB3OVZ2NDAyS2FNVkwxbGdoRmhMUnBPMzVPZW1NZHFqQkxqUHhjNDM2Q1hpaHBkSF9Ibk4xb3J1MmI0d1dvTEtoaVBnT2Z3SlFEbmNlWlE?oc=5",
-   "source": "ET Education",
-   "region": "International",
-   "published": "2026-11-16T11:48:24+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "India",
-     "lon": 78.9,
-     "lat": 21.0,
-     "precision": "country"
-    }
-   ],
-   "stage": "reported"
   },
   {
    "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
@@ -1685,6 +1685,18 @@
    "stage": "reported"
   },
   {
+   "title": "If you want to satiate AI’s hunger for power, Google suggests going to space",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaDVDdmhHT25GR1hOOEFyblRWRk1jUHZsZE1QWEdLUGp1VktibVRKZTFTX2lDeFJSNWtGMl9LU2l5ODZkX3JqVDBoclRMZEstZ0lNbEZfNkZLa1lYZlROV0VmandJNThYMjdZdkJqMzQ4aEctTUFGLWNDYjFyaHlKTlotSWNpQzV5WUhkeDR0Ukp4Q0s2enNMVFZsQ3l6WDBfRUROZU5wUlB4N2twWENVaGY0aw?oc=5",
+   "source": "Ars Technica",
+   "region": "International",
+   "published": "2025-11-05T08:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "Integrated groundwater quality assessment using geochemical modelling and machine learning approach in Northern India",
    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0MEFvWi1iVUlKSWtVX1VkbXlpMGVlQmRzUkNwb1lFbC0zSHJMQjJ6cmlKM3B5MVNBT3FGUXpnamc2Sk1UcmFjQnh3WTM1UEZmQUQ1RFo0OGNma2lhTmpN?oc=5",
    "source": "Nature",
@@ -1860,6 +1872,18 @@
     }
    ],
    "stage": "critique"
+  },
+  {
+   "title": "I'm on a hunger strike outside DeepMind's office in London. Here's what I fear most about AI.",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQno4dXVha0pJUXRyQnR6RGNZSm85ZE1uSDBsZV85NjJiem9IekFwY09ocHBMOGhRN0tqSEFhVWZVaWZjbjAzNWhHcUlhd09iOGZZSzFfdzJKVGVqS2VTeERBTmRFczVGc3NFd3ZZVHBvZXpjV3lnaEViLWxEZ2IzWmJQMTY2MUpYTlFweC1lT1NPUm10WUlLdWVzUkE?oc=5",
+   "source": "Business Insider",
+   "region": "International",
+   "published": "2025-09-08T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
   },
   {
    "title": "From generative AI to cybersecurity, how IITs are democratising AI literacy for India’s youth",
