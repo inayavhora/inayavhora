@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T02:55:19+00:00",
+ "updated": "2026-11-18T11:47:18+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,13 +12,13 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 7
+   "ai_stories": 6
   },
   {
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "DW",
@@ -30,13 +30,13 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 3
+   "ai_stories": 1
   },
   {
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 26
   },
   {
    "name": "The New York Times",
@@ -48,7 +48,7 @@
    "name": "NPR",
    "set": "General",
    "ok": true,
-   "ai_stories": 4
+   "ai_stories": 3
   },
   {
    "name": "MIT Technology Review",
@@ -84,7 +84,7 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 69
+   "ai_stories": 66
   },
   {
    "name": "Specialist sites (2)",
@@ -96,7 +96,7 @@
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 43
+   "ai_stories": 44
   },
   {
    "name": "Google News: farmers",
@@ -108,19 +108,19 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 27
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 25
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 36
+   "ai_stories": 40
   },
   {
    "name": "Google News: Gates",
@@ -168,25 +168,25 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 48
+   "stories": 47
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 40
+   "stories": 38
   },
   {
    "name": "DatacenterDynamics",
    "set": "Data centres",
    "ok": true,
-   "stories": 8
+   "stories": 9
   },
   {
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 24
+   "stories": 25
   },
   {
    "name": "Google News: Africa",
@@ -198,19 +198,19 @@
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 85
+   "stories": 82
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
    "ok": true,
-   "stories": 41
+   "stories": 37
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
    "ok": true,
-   "stories": 30
+   "stories": 31
   },
   {
    "name": "Google News: new builds",
@@ -220,6 +220,44 @@
   }
  ],
  "items": [
+  {
+   "title": "As the West hits pause on AI in schools, India rushes in without a debate",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQVGpKY3ZZT1hyWTlwOVBMVHAyLWJsLU9zZ3lMVWN0YzhuWU0tOC1lMTZoLWl5OThQb0Iyd2ExVUNTUEJLazBDQS1Gam5od2IwMUdubVpEU2Y0LUdJdk1MN2N5VEhaTWpoZFc1cDc0WjB6LUprblZFdmN4dkp2ZElGcV8yeFBjZDFSeUFkM01fNDZ5aWhlb0pqUkRsYlE1TFRGT25haXhnQTUzVWEwSzRlTkJ6aGJxaEpuZk1CS3dhSGd1UnJfTVHSAcwBQVVfeXFMTlMyZVlSSGxwRjQ4RHBES0FWeDZRWlVpdV9WbkhjS1J5WEdlRWs2MENuZU45aTlQUF9YNjItdXZvY0FEQktNRk05cTVzWDlGRjZ1YmxKc1JEVUt1SXVLaUg1d19RRVZienZ4R05pWmJWRnFDUF9lRVhvMm5BVG1JdEpIYXZXQTJ2Q1ZwbkpzcnpoRGhUNW9ZVnhjQ05mZndKdTFzWjVxOVdyNjdsV3RpdWxhVEN6cnFEMWNuMV9uOTNXTUhkMEd5eUdwc3dD?oc=5",
+   "source": "The Hindu",
+   "region": "International",
+   "published": "2026-11-18T03:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "Bodhan to provide AI training to 10L teachers across India",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVW55VDloSDJaUUNwNkVTQ21XTVRNQjdKRzJ0TkcwSUtKeGJwQWhGUHY2bHZrMXYxelh3UC1sNEFJb2VnZmdCUW90eE1XRGttemlQMjRnbk5IRDVldGZmckZ6d1IzYU5hZjhJRXgxRkJpVHR1Qk5kTDEzMDFQcTBHWUVrVk8wVkIxSEd2MEpvRHQ0UjRPNWh4dVc3MGtNaDNSbWJQTzBickJ4OHlyd0ZXZXV4UVc5MzJYNS1Dbnp30gHLAUFVX3lxTE5zOGxycWZYdEZleENQWDlfTnJ2aFNMVXJ6MDFpU0w3UHY3V0p1VHAwZE1BejFCRldxeUlPTVJZN052ZmlMcVJGcEh5cTVNeG90NkQ3V28tY0VndUMteGpWQmJvNlM4RHF0eVFuS0x2TGZRdU1qSTdLem85a1dPZC1NTldUVXNoMDN2WTU1NlJoVl8ta0FHVkxHTmxpY2NBdWc2Z084MktZZmxUWThObVUzOF9NSDZ0Mml5aUVsT1V4SVdfSHFXQWd1S0pj?oc=5",
+   "source": "The New Indian Express",
+   "region": "International",
+   "published": "2026-11-18T02:59:30+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "Bodhan, India",
+     "lon": 77.8858,
+     "lat": 18.6621,
+     "precision": "town"
+    }
+   ],
+   "stage": "reported"
+  },
   {
    "title": "IIT-Madras to train teachers in AI literacy across India",
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdi0xTXhiWlZ3YnZzUlJVZjNFb3I3T0RIMFk5Unp2QWZEM09ocWdHak9tM1V2eXd5UGtMQnRncDRfajlWRklNdkZyNGRGYXVxZ2tJTjR1U3FlUm82czBIZGFMeHZ1TWsxOGZRM2pSOF9jTTBlb2JPN1FzdzhxMHRPcjFTN2NYQWJhMl9kM2xLZi1sUWtRdDZTamhJenJiNlFWMEZQQmljRlpubEVveWRiUXFKdEZpVjcweGw5Wl9wM2dxMzIx0gHLAUFVX3lxTE9KaDB3ZEVJSVRreXlQTzNlbU1oUFRuSTdIRVhOWlFyNFQ4RlZBMUI1LVVHVUVQOXJlcTJ5eHFGTVkzU2pkTjRIY213UmZORkJmNjBpU1Bpb1VHSnAyTElIVGNuTUs4NUY4cEd1OEdpdlZlbFRIZ3JWVzJaNHNoWjA4eXpCNlhEOXhKSHhCQXlnRDZfVGtXTUNOcVhVYlF4SS1aWlZBTzE5Zi15anVUd0NHTmRIT2NkLXFjRmpGMDJMQ1NaTWUwTHFLODRV?oc=5",
@@ -1099,6 +1137,25 @@
    "source": "Education Times",
    "region": "International",
    "published": "2026-07-12T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "pilot"
+  },
+  {
+   "title": "Saina Human AI launches India’s First AI Literacy Summit in Kochi, the event was inaugurated by Keralam’s AI Minister - Shri P.K. Kunhalikutty",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQdzVTRzdIYzNDdG9hSGpqclpKM2pIaTBob0R0aDlwb19KcFY1enBSVXJfNTFwSWNGb193NkVFTWVybnNzUnlhNEhLOEJkQWVUU3dJWEFQQ29uV3ZqZFppc1l4c3FneUxwS0NqdnZUVlNwNERYWTlqSUFzeWQ5SjNTWnNCWXJwMDJFZWMwczVBTGtMQzdJYUIyN2tOREJ0U0hrT3I2QUVYX0RNZkhlbXB3alUxNHVJd3d6VUI0SXhGX1I3Q3Y0R0JmclFyS2NkOFBqUjYtaVM3c1F2TExwRm01cmVGOC00SkdGanJLTnNCeU0?oc=5",
+   "source": "Roastbrief US",
+   "region": "International",
+   "published": "2026-07-10T07:00:00+00:00",
    "needs": [
     "education"
    ],
@@ -2254,7 +2311,7 @@
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBjV3AzREJBMm9LLS1nNW9jOGJiOXlFWV9lNWV0S3lXZng5QUFvS0x0R1lEZU51NWdLelJTUzFLbnRhTldvU3FPQl9IcndWeW9OUXc?oc=5",
    "source": "IEEE Spectrum",
    "region": "International",
-   "published": "2024-12-10T14:04:18+00:00",
+   "published": "2024-12-10T08:00:00+00:00",
    "needs": [
     "food"
    ],
