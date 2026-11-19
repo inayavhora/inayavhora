@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T02:36:24+00:00",
+ "updated": "2026-11-19T11:44:16+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,7 +12,7 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 7
+   "ai_stories": 8
   },
   {
    "name": "Al Jazeera",
@@ -30,25 +30,25 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 27
   },
   {
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 10
+   "ai_stories": 11
   },
   {
    "name": "NPR",
    "set": "General",
    "ok": true,
-   "ai_stories": 3
+   "ai_stories": 4
   },
   {
    "name": "MIT Technology Review",
@@ -84,13 +84,13 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 65
+   "ai_stories": 70
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 64
+   "ai_stories": 62
   },
   {
    "name": "Google News: famine",
@@ -102,7 +102,7 @@
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 28
   },
   {
    "name": "Google News: health",
@@ -114,19 +114,19 @@
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 26
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 40
+   "ai_stories": 41
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 21
+   "ai_stories": 22
   },
   {
    "name": "Dezeen: data centres",
@@ -168,25 +168,25 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 45
+   "stories": 46
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 43
+   "stories": 45
   },
   {
    "name": "DatacenterDynamics",
    "set": "Data centres",
    "ok": true,
-   "stories": 11
+   "stories": 9
   },
   {
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 26
+   "stories": 25
   },
   {
    "name": "Google News: Africa",
@@ -198,19 +198,19 @@
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 89
+   "stories": 95
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
    "ok": true,
-   "stories": 39
+   "stories": 38
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "stories": 29
   },
   {
    "name": "Google News: new builds",
@@ -220,6 +220,44 @@
   }
  ],
  "items": [
+  {
+   "title": "AI can help Nigerian farmers beat climate uncertainty – Expert",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWld3R0xJaFNqc0xpQlhBem5oVVhIUTdObXctNmk4QjY4cFZ0WlpJclJFNGVqcnFCc3I3NnZLbXZxT3VuRmVRdm1GLWc1TmVaV3QycUx5bjNXQUt5VEhNZzllQ0VWNXRiQ1pfU2RCMUUxY3FzYlVhSDhxbVVsX0FlZktZeXJKQQ?oc=5",
+   "source": "The Sun Nigeria",
+   "region": "International",
+   "published": "2026-11-19T11:05:31+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Nigeria",
+     "lon": 8.7,
+     "lat": 9.1,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "Odisha, DIL-India Ink Two-Year MoU to Boost AI Farming and Village Water Systems",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU2NSS0pWNUN5SzlLVDlsSU96NHk1NzdYR1pNQ1Jya0k0OHozeXVzUVAyTlkwaXJZSkQ5aE5MRzlOdzlOcmNrdmVydld0eDdsXzBEUEs1M2dmZGw2N2l2N01TUU5iMzZDOHNPOV8wNEZnQ3ZhR2F3MnNENU1sa1pwQWdLWFc4SzdJSENnNkVxRWo1Y0ZuYkNqd2FQbHlzVTVTYTZFdlFEbWVRcDk3eTVQQQ?oc=5",
+   "source": "Kalinga TV",
+   "region": "International",
+   "published": "2026-11-19T07:31:16+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Odisha, India",
+     "lon": 85.1,
+     "lat": 20.9,
+     "precision": "region"
+    }
+   ],
+   "stage": "reported"
+  },
   {
    "title": "Odisha Signs MoU with DIL-India for AI Farming & Rural Water",
    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWnpSdTltdFJaWlFwYm50bHhqUFJWUUhRd1BSeXVieVo4cUVjeHdfS2o2Mkl1WHVRREZQUkZKVkdUMVpMU2RTWUF5d1dPX3VVczgtcGFGbzFhNnVETE9qU2l6SG1aYm5xamwxQS1oVmpkV0tsU1IyQXdIa1gwNF80YnNxM0ZOREV6cDE0?oc=5",
@@ -644,6 +682,25 @@
    "stage": "proposed"
   },
   {
+   "title": "IIT Kharagpur to Build India’s First Physical AI School: What Makes It Different?",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUGFYMHhGS0hHN0hVN0ljXy1uamktZjlHU0o0TFl4VUROR0hycmJaNHg2a1pPbVN2TXlRQTR4eGF3R2xTbWpXZUlKTXdkNC1xMi1NUXlnb3UyNHpfSXVMaklfVWNEZlM1bE5FOGFZRmhzdTBqMkE0VHJvdDRkV294REVOZDVXdk9hVEN2SkxPc1ByREpIM1E?oc=5",
+   "source": "APAC Media",
+   "region": "International",
+   "published": "2026-10-27T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "Kharagpur, India",
+     "lon": 87.325,
+     "lat": 22.3397,
+     "precision": "town"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
    "title": "IIT Kharagpur to establish India’s first Physical AI school with Rs 35 crore investment",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZ1dkNG4yeDhnT1JHcUtuaFplX1RRWXdtZnlFV3BGRGhoSmd1M3hSbUlLZS1DckphYTlWMG9VeTJtT2hQTGtfQUw5S21tNXlBUllxbHc1UHBaSW1zM0RLZEYxZXZ1S3ZsUVFxM0ptYmoxMHVUbm9POWdBWHdqQTNWdmFpWmJwbFhyd1VGbWZhMHFoR3U3QzI2SDk1NjdKeE04MHpzWXNmN3hzdXFyQ1RoaFA3U25wSFpySmViTjZ0UlR6M3ctZEJQNkV4bHVad2NsNENUQ3BURHhEU1RwWEljSEZEbVVDTEHSAe4BQVVfeXFMTTMzZ0FFQ2FIdDdDVW9UMkZLelRoV05rREh1MkFXYkR1RXlHSGs0cGVIbzdDdWFLNEltMC0zbHpaQW1PYmV5ZkRwdUFFbmNFWW1HVk9EQnQxSkJxdmNtMUhiaUM4LXB4YkxBQno3dWJoX0RpeVp1WFpwNGNRTFlDc2Ric09nZzQwRnlRYVQ1dC1Qd203LTF5N1J1N1VFWEI4WUFXcFNKdmpDOW1NYjJMVmdaZDlUTWIzaFBDRnlpbDNtNHoxTnRaREo3cHlVaVhsaTZ1cUdYeGVXcGxPc2xaTlE3VUJRSEtjZnR6S2hrQQ?oc=5",
    "source": "The Indian Express",
@@ -666,25 +723,6 @@
    "title": "IIT-Kharagpur inks deal with alumni to set up India’s first Physical AI school",
    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVWY5R0liRmNTdVh1ZG5GQzlneVd1eTkwcFM4em1nOEk5M2xvVEhMcHJ4R09YY1pJdjNHVDNrb0JfaXpsaTRVUHdMQzh0Ty1LQm0xUWI1a1J2Zmd3eEJlZm9oVkdaQ2l2bHFQdjZhTTBiekFDV0NoZlc3eU1mdm9HMkQyX2h1MlZUeHAyRGNpQzM1emI2bWpRTUZ1aEZvc3NHNkNvVW5wdHFDQVNHbFRQckNnLXdPRUwteFpZSG9pYl9vOFlkRW1jU1AyNExEWVRWSW1WTXp3bEpzLUHSAeABQVVfeXFMT1F0NlBiUHQ0MmUzZkRGU2s1QzlHT1FOWFgwRmRrOTd4T1EzUEtlcVAyTlluUGo3RnFlSlMxZGdzazdFWkc3ZG95SFhlemZsWG5lendLYnVWSkJWNFBmdWRfcEIxbWJhdVFDbWFFcGkwTzY0RXRKZ2hRaXQzNGtRRXVsWXlobmZwcjhhcnVxc1lkVG9WTXFjcWZZMjY1a1Ytb0l5b01uNjBFLWFoalc3OEQ2dWZZMi1fVV9jT3R3MGpUZUg4eFJObG5hblkycjh4VGJKbWdCQ2F6UzFnQU53eGo?oc=5",
    "source": "The Times of India",
-   "region": "International",
-   "published": "2026-10-27T07:00:00+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "Kharagpur, India",
-     "lon": 87.325,
-     "lat": 22.3397,
-     "precision": "town"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
-   "title": "IIT Kharagpur to Build India’s First Physical AI School: What Makes It Different?",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUGFYMHhGS0hHN0hVN0ljXy1uamktZjlHU0o0TFl4VUROR0hycmJaNHg2a1pPbVN2TXlRQTR4eGF3R2xTbWpXZUlKTXdkNC1xMi1NUXlnb3UyNHpfSXVMaklfVWNEZlM1bE5FOGFZRmhzdTBqMkE0VHJvdDRkV294REVOZDVXdk9hVEN2SkxPc1ByREpIM1E?oc=5",
-   "source": "APAC Media",
    "region": "International",
    "published": "2026-10-27T07:00:00+00:00",
    "needs": [
@@ -1191,7 +1229,7 @@
   {
    "title": "Investors Looking for Shelter From AI Storm Are Turning to India",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZFM4RWZ6Vk5sR3BXUGxaaDZQak8yb2FVMy11WGNpakdmMFRDblRfaENLRFRjRWhLTk9UZXR3MXgyNFB3Z2xKUnVxN2ZTSFpOZ3c5RW1GbFg5Z19JWHBha0N0MGlDZlZDb0JLTXAtcTJVQTYwUXpGalllY01VUjdDbENFTFluLUdRX1prX3FZOEpaMkdIdGJmbEdYTDNpUHF2cC1nV0JkbTJOT2lMdVN3TEtiRGk3UQ?oc=5",
-   "source": "Bloomberg.com",
+   "source": "Bloomberg",
    "region": "International",
    "published": "2026-07-04T07:00:00+00:00",
    "needs": [
