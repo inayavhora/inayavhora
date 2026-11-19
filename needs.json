@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T20:35:40+00:00",
+ "updated": "2026-11-19T02:36:24+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,13 +12,13 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 6
+   "ai_stories": 7
   },
   {
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "DW",
@@ -42,13 +42,13 @@
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 9
+   "ai_stories": 10
   },
   {
    "name": "NPR",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 3
   },
   {
    "name": "MIT Technology Review",
@@ -84,19 +84,19 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 66
+   "ai_stories": 65
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 65
+   "ai_stories": 64
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 43
+   "ai_stories": 44
   },
   {
    "name": "Google News: farmers",
@@ -114,7 +114,7 @@
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 24
   },
   {
    "name": "Google News: education",
@@ -168,13 +168,13 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 46
+   "stories": 45
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 39
+   "stories": 43
   },
   {
    "name": "DatacenterDynamics",
@@ -192,25 +192,25 @@
    "name": "Google News: Africa",
    "set": "Data centres",
    "ok": true,
-   "stories": 42
+   "stories": 45
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 91
+   "stories": 89
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
    "ok": true,
-   "stories": 36
+   "stories": 39
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
-   "ok": true,
-   "stories": 31
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "Google News: new builds",
@@ -644,9 +644,9 @@
    "stage": "proposed"
   },
   {
-   "title": "IIT-Kharagpur inks deal with alumni to set up India’s first Physical AI school",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVWY5R0liRmNTdVh1ZG5GQzlneVd1eTkwcFM4em1nOEk5M2xvVEhMcHJ4R09YY1pJdjNHVDNrb0JfaXpsaTRVUHdMQzh0Ty1LQm0xUWI1a1J2Zmd3eEJlZm9oVkdaQ2l2bHFQdjZhTTBiekFDV0NoZlc3eU1mdm9HMkQyX2h1MlZUeHAyRGNpQzM1emI2bWpRTUZ1aEZvc3NHNkNvVW5wdHFDQVNHbFRQckNnLXdPRUwteFpZSG9pYl9vOFlkRW1jU1AyNExEWVRWSW1WTXp3bEpzLUHSAeABQVVfeXFMT1F0NlBiUHQ0MmUzZkRGU2s1QzlHT1FOWFgwRmRrOTd4T1EzUEtlcVAyTlluUGo3RnFlSlMxZGdzazdFWkc3ZG95SFhlemZsWG5lendLYnVWSkJWNFBmdWRfcEIxbWJhdVFDbWFFcGkwTzY0RXRKZ2hRaXQzNGtRRXVsWXlobmZwcjhhcnVxc1lkVG9WTXFjcWZZMjY1a1Ytb0l5b01uNjBFLWFoalc3OEQ2dWZZMi1fVV9jT3R3MGpUZUg4eFJObG5hblkycjh4VGJKbWdCQ2F6UzFnQU53eGo?oc=5",
-   "source": "The Times of India",
+   "title": "IIT Kharagpur to establish India’s first Physical AI school with Rs 35 crore investment",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZ1dkNG4yeDhnT1JHcUtuaFplX1RRWXdtZnlFV3BGRGhoSmd1M3hSbUlLZS1DckphYTlWMG9VeTJtT2hQTGtfQUw5S21tNXlBUllxbHc1UHBaSW1zM0RLZEYxZXZ1S3ZsUVFxM0ptYmoxMHVUbm9POWdBWHdqQTNWdmFpWmJwbFhyd1VGbWZhMHFoR3U3QzI2SDk1NjdKeE04MHpzWXNmN3hzdXFyQ1RoaFA3U25wSFpySmViTjZ0UlR6M3ctZEJQNkV4bHVad2NsNENUQ3BURHhEU1RwWEljSEZEbVVDTEHSAe4BQVVfeXFMTTMzZ0FFQ2FIdDdDVW9UMkZLelRoV05rREh1MkFXYkR1RXlHSGs0cGVIbzdDdWFLNEltMC0zbHpaQW1PYmV5ZkRwdUFFbmNFWW1HVk9EQnQxSkJxdmNtMUhiaUM4LXB4YkxBQno3dWJoX0RpeVp1WFpwNGNRTFlDc2Ric09nZzQwRnlRYVQ1dC1Qd203LTF5N1J1N1VFWEI4WUFXcFNKdmpDOW1NYjJMVmdaZDlUTWIzaFBDRnlpbDNtNHoxTnRaREo3cHlVaVhsaTZ1cUdYeGVXcGxPc2xaTlE3VUJRSEtjZnR6S2hrQQ?oc=5",
+   "source": "The Indian Express",
    "region": "International",
    "published": "2026-10-27T07:00:00+00:00",
    "needs": [
@@ -663,9 +663,9 @@
    "stage": "reported"
   },
   {
-   "title": "IIT Kharagpur to establish India’s first Physical AI school with Rs 35 crore investment",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZ1dkNG4yeDhnT1JHcUtuaFplX1RRWXdtZnlFV3BGRGhoSmd1M3hSbUlLZS1DckphYTlWMG9VeTJtT2hQTGtfQUw5S21tNXlBUllxbHc1UHBaSW1zM0RLZEYxZXZ1S3ZsUVFxM0ptYmoxMHVUbm9POWdBWHdqQTNWdmFpWmJwbFhyd1VGbWZhMHFoR3U3QzI2SDk1NjdKeE04MHpzWXNmN3hzdXFyQ1RoaFA3U25wSFpySmViTjZ0UlR6M3ctZEJQNkV4bHVad2NsNENUQ3BURHhEU1RwWEljSEZEbVVDTEHSAe4BQVVfeXFMTTMzZ0FFQ2FIdDdDVW9UMkZLelRoV05rREh1MkFXYkR1RXlHSGs0cGVIbzdDdWFLNEltMC0zbHpaQW1PYmV5ZkRwdUFFbmNFWW1HVk9EQnQxSkJxdmNtMUhiaUM4LXB4YkxBQno3dWJoX0RpeVp1WFpwNGNRTFlDc2Ric09nZzQwRnlRYVQ1dC1Qd203LTF5N1J1N1VFWEI4WUFXcFNKdmpDOW1NYjJMVmdaZDlUTWIzaFBDRnlpbDNtNHoxTnRaREo3cHlVaVhsaTZ1cUdYeGVXcGxPc2xaTlE3VUJRSEtjZnR6S2hrQQ?oc=5",
-   "source": "The Indian Express",
+   "title": "IIT-Kharagpur inks deal with alumni to set up India’s first Physical AI school",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVWY5R0liRmNTdVh1ZG5GQzlneVd1eTkwcFM4em1nOEk5M2xvVEhMcHJ4R09YY1pJdjNHVDNrb0JfaXpsaTRVUHdMQzh0Ty1LQm0xUWI1a1J2Zmd3eEJlZm9oVkdaQ2l2bHFQdjZhTTBiekFDV0NoZlc3eU1mdm9HMkQyX2h1MlZUeHAyRGNpQzM1emI2bWpRTUZ1aEZvc3NHNkNvVW5wdHFDQVNHbFRQckNnLXdPRUwteFpZSG9pYl9vOFlkRW1jU1AyNExEWVRWSW1WTXp3bEpzLUHSAeABQVVfeXFMT1F0NlBiUHQ0MmUzZkRGU2s1QzlHT1FOWFgwRmRrOTd4T1EzUEtlcVAyTlluUGo3RnFlSlMxZGdzazdFWkc3ZG95SFhlemZsWG5lendLYnVWSkJWNFBmdWRfcEIxbWJhdVFDbWFFcGkwTzY0RXRKZ2hRaXQzNGtRRXVsWXlobmZwcjhhcnVxc1lkVG9WTXFjcWZZMjY1a1Ytb0l5b01uNjBFLWFoalc3OEQ2dWZZMi1fVV9jT3R3MGpUZUg4eFJObG5hblkycjh4VGJKbWdCQ2F6UzFnQU53eGo?oc=5",
+   "source": "The Times of India",
    "region": "International",
    "published": "2026-10-27T07:00:00+00:00",
    "needs": [
@@ -1377,6 +1377,25 @@
      "lon": 73.0433,
      "lat": 33.7215,
      "precision": "town"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "Mandatory AI literacy: China joins the UAE and India. Where is Southeast Asia?",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1TVFVDUWxmdlVxLVBvdEtiUkFxbFhsdjI1ZUZYeV9nN2otM1lISmE1cmZqdHU4MVVfSzlnUnp1LUZORlV0THMtZlc4UU9DU0dDWDU1ZjRUOXQ5clpXTUg5S2dXZ0tnUmE0YTRmSU9ablIzLTBIY0wtWkJIbFdsQjA?oc=5",
+   "source": "Tech Wire Asia",
+   "region": "International",
+   "published": "2026-04-13T09:02:58+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
     }
    ],
    "stage": "reported"
