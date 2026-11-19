@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T11:44:16+00:00",
+ "updated": "2026-11-19T20:40:54+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -24,13 +24,13 @@
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 8
+   "ai_stories": 10
   },
   {
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 2
   },
   {
    "name": "South China Morning Post",
@@ -42,7 +42,7 @@
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 11
+   "ai_stories": 16
   },
   {
    "name": "NPR",
@@ -54,7 +54,7 @@
    "name": "MIT Technology Review",
    "set": "General",
    "ok": true,
-   "ai_stories": 5
+   "ai_stories": 4
   },
   {
    "name": "TechCrunch",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 100
+   "ai_stories": 102
   },
   {
    "name": "The New Humanitarian",
@@ -84,13 +84,13 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 70
+   "ai_stories": 92
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 62
+   "ai_stories": 64
   },
   {
    "name": "Google News: famine",
@@ -108,7 +108,7 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 26
   },
   {
    "name": "Google News: water",
@@ -120,13 +120,13 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 41
+   "ai_stories": 40
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 22
+   "ai_stories": 23
   },
   {
    "name": "Dezeen: data centres",
@@ -168,49 +168,49 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 46
+   "stories": 47
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 45
+   "stories": 43
   },
   {
    "name": "DatacenterDynamics",
    "set": "Data centres",
    "ok": true,
-   "stories": 9
+   "stories": 11
   },
   {
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 25
+   "stories": 26
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
    "ok": true,
-   "stories": 45
+   "stories": 47
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 95
+   "stories": 91
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
    "ok": true,
-   "stories": 38
+   "stories": 37
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
    "ok": true,
-   "stories": 29
+   "stories": 30
   },
   {
    "name": "Google News: new builds",
@@ -220,6 +220,25 @@
   }
  ],
  "items": [
+  {
+   "title": "Odisha Signs MoU with DIL-India for AI Farming & Rural Water",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWnpSdTltdFJaWlFwYm50bHhqUFJWUUhRd1BSeXVieVo4cUVjeHdfS2o2Mkl1WHVRREZQUkZKVkdUMVpMU2RTWUF5d1dPX3VVczgtcGFGbzFhNnVETE9qU2l6SG1aYm5xamwxQS1oVmpkV0tsU1IyQXdIa1gwNF80YnNxM0ZOREV6cDE0?oc=5",
+   "source": "Pragativadi",
+   "region": "International",
+   "published": "2026-11-19T19:20:04+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Odisha, India",
+     "lon": 85.1,
+     "lat": 20.9,
+     "precision": "region"
+    }
+   ],
+   "stage": "reported"
+  },
   {
    "title": "AI can help Nigerian farmers beat climate uncertainty – Expert",
    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWld3R0xJaFNqc0xpQlhBem5oVVhIUTdObXctNmk4QjY4cFZ0WlpJclJFNGVqcnFCc3I3NnZLbXZxT3VuRmVRdm1GLWc1TmVaV3QycUx5bjNXQUt5VEhNZzllQ0VWNXRiQ1pfU2RCMUUxY3FzYlVhSDhxbVVsX0FlZktZeXJKQQ?oc=5",
@@ -245,25 +264,6 @@
    "source": "Kalinga TV",
    "region": "International",
    "published": "2026-11-19T07:31:16+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [
-    {
-     "name": "Odisha, India",
-     "lon": 85.1,
-     "lat": 20.9,
-     "precision": "region"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
-   "title": "Odisha Signs MoU with DIL-India for AI Farming & Rural Water",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWnpSdTltdFJaWlFwYm50bHhqUFJWUUhRd1BSeXVieVo4cUVjeHdfS2o2Mkl1WHVRREZQUkZKVkdUMVpMU2RTWUF5d1dPX3VVczgtcGFGbzFhNnVETE9qU2l6SG1aYm5xamwxQS1oVmpkV0tsU1IyQXdIa1gwNF80YnNxM0ZOREV6cDE0?oc=5",
-   "source": "Pragativadi",
-   "region": "International",
-   "published": "2026-11-18T13:05:58+00:00",
    "needs": [
     "food"
    ],
@@ -1265,6 +1265,18 @@
    "stage": "reported"
   },
   {
+   "title": "AI can help protect forcibly displaced: UNHCR highlights responsible innovation for refugees",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYUFqOXlZU3ZMbDNtZ2pDdHFScUpnMlNtZHNUSTBVTkNsY0RlRW1qcTVrMUpPNnB5Qm1oSkJXR2tMZUJGVmZXZ2pBR3JHTkpCbnd0Wk9uWmIxcVhJUlVfN1hTb3NVWmpyRlZjRHBxM2F3YVRSRnVSWU92cmlJRkxVLS1sMkdsUmZ5V21KeGtfUkY1MnZwV1BidTYzZGtlRGlBaEZiYkFqYmhKQXR1WlBTUmNFT3JLTm45RHV1VUZ6MA?oc=5",
+   "source": "ReliefWeb",
+   "region": "International",
+   "published": "2026-07-03T07:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "America's AI hunger has reached the Nashville Zoo and its endangered animals may be the ones to pay the price",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZEZweGdOQW9xWUxPcnY5NUdHWFg5MlAtR3lmYUJ0YnBoY01yWHd4STdKOUVzQjNhZjNMNHpHZU8xVjN0U3Jla1lTR2lxb19vd0c2d3c2LU1iUU4xQWJJSVRpaDFYdXo0X3ZMZ3NNbG5USnU4RHBaLS05ODJqQXIyR2E2S3E5UXV6bTJDbXRZZl9RQU9hTFRwOGE1V3h4TkJQQzFF?oc=5",
    "source": "Fortune",
@@ -1513,6 +1525,18 @@
    "stage": "reported"
   },
   {
+   "title": "Big tech ‘leave poor farmers sidelined’ in AI revolution",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMnBzemF0aVpJeUdmNmJmUEFIUVdZelJ0TUZ2d3R6TEp2aFBSeFZEVjdxbEVMRFRfdGlLeTlrWFRMMnBDNjVJNC1QMHZBejdDUW1FT1JYMF9Pa3JSSWR6T21PNDF4VlBRODQxN2xhVzR5YjZiOWhjQWxUbDN5dHh2amdGWG1wcWotNWdTS1VNOFQyc2hX?oc=5",
+   "source": "SciDev.Net",
+   "region": "International",
+   "published": "2026-02-27T08:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "EEG-based foundation AI for early brain disease diagnosis unveiled in India",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPakhWc1VYMzVBaEpGZjgxX2dnZU9tQ3QyVmE5R1lfcnJUN2dUNmJwdTd1UUpKU05McTJOWFAxNG9vV1YtT0NDd0Jpc0VULXZiUXY0eGZGa1pGWV82cHVmVHhJeGQwa1lZT1FWaTFEXzB1QV9RS3V2NHcyRjVSejdtOGhqRUhIMmdxVUlFVDRwcUNiVkxsZ001UTdOemM0YzhiR0EtSXh2VkNuclRKTHc?oc=5",
    "source": "MobiHealthNews",
@@ -1732,6 +1756,25 @@
    "stage": "pilot"
   },
   {
+   "title": "Harmonizing Agricultural Data for AI-Powered Intelligent Agricultural Systems Advisory Tool (ISAT) in Ethiopia",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5NUGgyWUNMN1FrLVROanViMFpJaElHQUMwWnJMZS1yMWV6S2QzekJlZWVFYlVLY2FoelozTUFEUm44d29QanNtMEZwQ0JfdHdxNWRrN0plc21LQXdoa1ZPUWFzR1ZaZUYxelFOM2dCLWdlRHU1cThV?oc=5",
+   "source": "CGSpace (CGIAR)",
+   "region": "International",
+   "published": "2026-01-21T23:38:20+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Ethiopia",
+     "lon": 39.6,
+     "lat": 8.6,
+     "precision": "country"
+    }
+   ],
+   "stage": "critique"
+  },
+  {
    "title": "Gates Foundation, OpenAI launch $50M AI health initiative targeting 1,000 clinics in Africa",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaEduYWExZkRWWFlEMmxfTmxmakhyTkp3RXVWdE16Y2NRNW96VE92d2JRMzdvNTNzQ3JHa2V1XzB5NkdEQ1lqS0pzVEdROVgyTkVzWjFzdnpBbm5wQl9lX2pjUF90cmtxT2Y0LWZxQXg2MDc4TlhMaXBGREN4QXR4ZHRnUHR6cGZKbVpWazhsLUhCQjBvMWI3NW02aXVJelgtS0ppakFTYXBTZnlzRC1Pd21ibUJPbHp5LWww?oc=5",
    "source": "GeekWire",
@@ -1869,7 +1912,7 @@
   },
   {
    "title": "Text mining and machine learning reveal global determinants of food insecurity",
-   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1WeVAxTndMWDI2LUYtNHpzM2RFazYtcW1EbDFudkxONnY2X1ZqTGIxNnpmSjMyTkhuVWhZWC00d01pUQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TbUt6ZGg5RnhvWjQ1N25QQkJ1UTk2Vy12ZWRSTXg3S2dkalNORHAtZzlQandxSGF3UWo0WGNpaWxJbjhhcl8wa2RzdjhHZF95bUI5MVg5OHk2SllDb19n?oc=5",
    "source": "Nature",
    "region": "International",
    "published": "2025-10-21T07:00:00+00:00",
@@ -2212,7 +2255,7 @@
    "stage": "reported"
   },
   {
-   "title": "Future Farming in India: Scaling AI in Agriculture",
+   "title": "Future Farming in India: A Playbook for Scaling Artificial Intelligence in Agriculture",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNczk5QnU1VndQVUpEdUQzMWRfMEFjd3RDanNqT2ZEcGN0NlBGV0ZqclZIZlVlcXY3SEpjdnZtSDdMcnZuQy1TU28zWENCSXd5ZFY2WXhuTzV6ZlR3Z3JQLTRuOURMUDJCQTU1bFpZZUhiS010TnVxYlc1QjY3eVlPaGpsZVFBdGVmVmNlWHJGN0N2QktMZWFBTGt2Ni1Bc0NuX3JmY19fUWRXTDNRei1JcUdKOA?oc=5",
    "source": "World Economic Forum",
    "region": "International",
@@ -2229,6 +2272,18 @@
     }
    ],
    "stage": "proposed"
+  },
+  {
+   "title": "As famine data dries up, can AI step in?",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB2ZDR0VUJ3MVJ2cnVxWmJBTDItV0FfVUhxUmx2Q25TQVE0XzBxSmx0ZlRvbWtNOHl0NmNoZjdGSko0QW9TR0VVQU1zdmxKdXNPSU1Ib0lXemRyb1d6eEVQYVBNVHgtMUdwU2FTbVJQWnMzTU1ReU13cUNSVmI?oc=5",
+   "source": "Devex",
+   "region": "International",
+   "published": "2025-04-17T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
   },
   {
    "title": "Unlocking AI’s Potential in India | Transforming Agriculture and Healthcare",
