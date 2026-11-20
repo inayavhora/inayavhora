@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T11:44:31+00:00",
+ "updated": "2026-11-20T20:24:42+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,13 +12,13 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 8
+   "ai_stories": 9
   },
   {
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 2
   },
   {
    "name": "DW",
@@ -30,19 +30,19 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 27
+   "ai_stories": 28
   },
   {
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 17
+   "ai_stories": 13
   },
   {
    "name": "NPR",
@@ -54,7 +54,7 @@
    "name": "MIT Technology Review",
    "set": "General",
    "ok": true,
-   "ai_stories": 4
+   "ai_stories": 5
   },
   {
    "name": "TechCrunch",
@@ -72,7 +72,7 @@
    "name": "Google News (world)",
    "set": "General",
    "ok": true,
-   "ai_stories": 100
+   "ai_stories": 102
   },
   {
    "name": "The New Humanitarian",
@@ -84,49 +84,49 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 64
+   "ai_stories": 62
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 64
+   "ai_stories": 58
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 83
+   "ai_stories": 46
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 27
+   "ai_stories": 26
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 85
+   "ai_stories": 27
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 81
+   "ai_stories": 26
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 40
+   "ai_stories": 39
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 83
   },
   {
    "name": "Dezeen: data centres",
@@ -168,58 +168,89 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 46
+   "stories": 44
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 39
+   "stories": 40
   },
   {
    "name": "DatacenterDynamics",
    "set": "Data centres",
    "ok": true,
-   "stories": 10
+   "stories": 14
   },
   {
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 26
+   "stories": 27
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
    "ok": true,
-   "stories": 47
+   "stories": 51
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 96
+   "stories": 97
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
    "ok": true,
-   "stories": 38
+   "stories": 41
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
    "ok": true,
-   "stories": 56
+   "stories": 30
   },
   {
    "name": "Google News: new builds",
    "set": "Data centres",
    "ok": true,
-   "stories": 99
+   "stories": 98
   }
  ],
  "items": [
+  {
+   "title": "AI's power hunger, solar's new opportunity",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSy1jQTNvRkpEZFBDQ3E2MXlYVWZ0RU5aUzVpWU1qZTd1TzIyQXZzTm9PbW9tbm03WHdHRlZnYXZlTC0yNGM2SXczV19ON2FvWVQxc2NSN3ZqY1FpOHZleU9ubXBwT3dxc3BZSHpNWU9jSHRES2RIN193b0R5V3FrWDBCOGp3OGFQYzNyM1hadllTQUNTV1RNRU5qOTRRR1k?oc=5",
+   "source": "CGTN",
+   "region": "International",
+   "published": "2026-11-20T13:04:56+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
+   "title": "How AI could change way India manages drug-resistant TB",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVlA3UFhLeXJIWTBPeU1felpURkV2aUI3ejFvZ2FHTXpzeDh3V0Uza21yNXFJWWRrODdNX0RaaHpKSTRvdUV2TVFaaTVWZ1RXZGZyQ3lDeExxNUlFdlFoeU5za1FpVEllRE5ORmRnejJZeVVuU0paT2dZd1BvRFltb0ZZOEFRZG9NTHFTSVFaWmt6UXVLWWEyWi1KZm1lbkxUY1RuUGhINFpuN3hh?oc=5",
+   "source": "BioSpectrum India",
+   "region": "International",
+   "published": "2026-11-20T11:35:09+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "proposed"
+  },
   {
    "title": "Odisha Signs MoU with DIL-India for AI Farming & Rural Water",
    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWnpSdTltdFJaWlFwYm50bHhqUFJWUUhRd1BSeXVieVo4cUVjeHdfS2o2Mkl1WHVRREZQUkZKVkdUMVpMU2RTWUF5d1dPX3VVczgtcGFGbzFhNnVETE9qU2l6SG1aYm5xamwxQS1oVmpkV0tsU1IyQXdIa1gwNF80YnNxM0ZOREV6cDE0?oc=5",
@@ -235,6 +266,25 @@
      "lon": 85.1,
      "lat": 20.9,
      "precision": "region"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "Chennai researcher builds AI system to stop proxy attendance in classrooms",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNSTU5ZjRQS1NRTWFyNk1XaHF5OTU4ajlsWjVpNFVLbUR2anFjTzdvY19Jb0hjTk9WY1g2N2VidDlwRW9aalZoY2VSQUNRc1N0cERHS1F1UHh2dHY1VUk3V2E2WmVMb0hTZHY3cmc1c2lUU2V5VUJnRVQ2cXhfemVlWXIzaWlsWi1aWURqWFp4LTZHN1M3WGFUSWkzdTNNMmR5azBPRWMzeWhodXdYajg0UXZhYmtETVBFV01tRm11VlhXVTdMWlVraFNpazd0US1obU02TVZUbWZ5SHFJZ2pPZHByczNBSTdjczZYR9IB8gFBVV95cUxOV1JHQXVhcGJsWUtKWWNhY0tTS0xIQVZKdDI0U2x5Q1FhTTVEeGRtd2U5S19QbGZVeVRYd1JkVVI0MWZzNlVXQ3ZrVHVILTJjZ29YZnFScFhiMU1Oa1FsbVRCWlNFZllwREJHVTZWQUVLUHU4SlFRS21ZRWhPOTJnWHhmLUx0ejZUT0d4NFppd1pwNFdSRDQ4RzZnU3pYcXEtU0NJWmtWVm1McjZ3a0NVUENZVjEyQzB1T1U4czlDU1VjQXNvS0pIZDhwWTZBb1A1LU9LMGFlTGtMcW1UWW1IUTg4ZlhGdW1vR3pxTHJ1MlRodw?oc=5",
+   "source": "India Today",
+   "region": "International",
+   "published": "2026-11-19T11:21:16+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "Chennai, India",
+     "lon": 80.2785,
+     "lat": 13.0878,
+     "precision": "town"
     }
    ],
    "stage": "reported"
@@ -671,10 +721,10 @@
   },
   {
    "title": "The Gates Foundation Is Pouring $400 Million Into AI While Schools Still Struggle With Basic Literacy",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOeUVlczdZdmE1R0FDdHRBWU8xc3hlakhsemcyNGZwbEVyMDZpeGlRcVEzSEItaUxqTlZUalZUclFoaTVEdzN0bzE1Q2JOUlowZU1rQ2xjb3Bod3JLYTduWm8xOXJWQTkxdHk1R0NkNUVZckxaQkJzcU10cmp2TEU3YnpkS1plcnR6eXhkOU54cXhBbDl4NGdnbmp2bkt2YWozaEQzZ1g5bFpWWUZmdUlxYWFBMWZRdWx3Q0FaQkhrNXpUdVVzdS1Ncw?oc=5",
-   "source": "Gadget Review",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeDBkaTdwbzVIT0pudjFiMkpBUmpBUWJFaVNzUVE0QkpvbDRXdHRfTGMzVzlhNF9SaXVxUWVxazQ0Q0pnQ0lPV3pkSjIzWWdpaFNYOU1CbTRJUjNreHpTUTRoa3BIS3BsdlBXVUY3U3ZqT2xQcmZyVzdkVlRkZ251OURWeVJYSWZ6U1FjdXVNNVVDWGd0?oc=5",
+   "source": "Yahoo",
    "region": "International",
-   "published": "2026-11-04T15:47:15+00:00",
+   "published": "2026-11-04T08:00:00+00:00",
    "needs": [
     "education"
    ],
@@ -996,23 +1046,11 @@
    "stage": "reported"
   },
   {
-   "title": "MTN, Gates Foundation launch AI maternal health platform",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYTg4R1NrWWpSbjVDcDBpbjJLdU9xcUoxZHNVMk0ySmVGYkJPb21JbnMzV3pTcnZuSGFhODU1REtNWG9WSURmdGtaRHpsb0p0V2wtOGFmMTFKNU1qLUZpeUZnaVlndEV6SG50N0k1bzhaeXNvdkxkWGJ1NHlsVXZkeHRubkp4TzIycFVPTlZVeVNzT3hVcDZST2hSVVhXNVFzTk5V?oc=5",
-   "source": "ITWeb Africa",
+   "title": "MTN Group Foundation and Gates Foundation launch first-of-its-kind Maternal Health Multiplier platform to expand access to AI-enabled maternal health care in Nigeria |",
+   "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPQ1BFSXBfSloyZ2RzMXRmWDhma0JVbVpncGRfeWkwU0h5MjNMQkpLX3F6QVFUQnZBVENGT1MxdUNsaTNPNXdQX0tic2lLcFlqRmMyTGhzdlV0Sk84VkIxYlZsT1RhS0YwTWhXdmpiejQ5dTZibGR5Tnk0Q3V5WkZLTDFmY2Z5WlZ4YkY1dzByak93Zm1zYXdQUTdORkxIOTJnMHRsS2RNbklwYWtEdXJxcFJ1X00wWjdMUFNyWUdrc1J4N1ZfSlpYeFN0ZzFfVEFfdWppeld4ZnpQaVV4Q0xGOS1JR3NYSU8tNWM3R1N6YU40NDhzUjRoMEpERlByVG10U2VLRnhuLURoSFBRZV9XU3EyT0w?oc=5",
+   "source": "MTN",
    "region": "International",
    "published": "2026-09-23T07:00:00+00:00",
-   "needs": [
-    "health"
-   ],
-   "places": [],
-   "stage": "pilot"
-  },
-  {
-   "title": "MTN Group Foundation and Gates Foundation launch first-of-its-kind Maternal Health Multiplier platform to expand access to AI-enabled maternal health care in Nigeria",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLURDTkNNQ1FYeTFIRDdEcUxlSjZYYWtSdmp1NDdndkxocEs1UzRvVG9HS2lXTzZwRktLa3Nlazc5NHlWWENRbEFpcmY4N1ZxbzRLR2p3dS15cGZRblhKQ0xnQV9fUDd0VzlPOVI0QzU4YUxhVVRqRFJlTFpkak45YkFfbmdIU3RtV2dIeXE2OVZaWmdlQ3M4UGhCRWU?oc=5",
-   "source": "Gates Foundation",
-   "region": "International",
-   "published": "2026-09-22T07:00:00+00:00",
    "needs": [
     "health"
    ],
@@ -1024,6 +1062,18 @@
      "precision": "country"
     }
    ],
+   "stage": "pilot"
+  },
+  {
+   "title": "MTN, Gates Foundation launch AI maternal health platform",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYTg4R1NrWWpSbjVDcDBpbjJLdU9xcUoxZHNVMk0ySmVGYkJPb21JbnMzV3pTcnZuSGFhODU1REtNWG9WSURmdGtaRHpsb0p0V2wtOGFmMTFKNU1qLUZpeUZnaVlndEV6SG50N0k1bzhaeXNvdkxkWGJ1NHlsVXZkeHRubkp4TzIycFVPTlZVeVNzT3hVcDZST2hSVVhXNVFzTk5V?oc=5",
+   "source": "ITWeb Africa",
+   "region": "International",
+   "published": "2026-09-23T07:00:00+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [],
    "stage": "pilot"
   },
   {
@@ -1053,6 +1103,18 @@
    "published": "2026-09-22T07:00:00+00:00",
    "needs": [
     "health"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
+   "title": "Gates Foundation commits $1 billion to deliver equitable AI for health, farming, and education in developing regions",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOM2owR2QxY28wdHg0cnd1S252N2RpMF8wT1l4dGZFaS16dnVKNGVqYkdFYWZXSzEzYTM1a0ZlSnJrTkNfZGl6cy1lYmVMNDJyOEd2eFN1MVNpVlltc0g4aXduSmREdFRsNjdNX18tUWlpYldXWHZOV0hWdE5WNFBwTGp6bFM0QXU3UFZwa0IwcHoxTThCRkJWank1T3FuNkNHYW5QU1lacjFHbjNSZ1U2RURRQTVCQ3F4WWw5aWFOVl9JWHJzOXRGc0Z4aURUZUxUb19XNTd0WF9rSXAwcXVBNjlrX2Y4OERD?oc=5",
+   "source": "CapitalEthiopia",
+   "region": "International",
+   "published": "2026-09-20T07:00:00+00:00",
+   "needs": [
+    "food"
    ],
    "places": [],
    "stage": "reported"
@@ -1106,9 +1168,9 @@
    "stage": "reported"
   },
   {
-   "title": "‘Not trying to solve world hunger’: GoTo takes pragmatic AI path",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM0RSUnNNcUp3Q1VfYzRQWHZDdVllb0dJZEdQUlZJSmMzVUpPSVJjNHN1NHU3RnFiR2hsMXNzMlY2bmhhTWM0ckFWQ2xlTVZoSlVjMGNtOFY4RE9ScldoSUduRzZtVzlveHd6R2FxVVB6eVNGMUZUalNndFBIblZGX1pidlo?oc=5",
-   "source": "Tech in Asia",
+   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
+   "source": "The National",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [
@@ -1130,9 +1192,21 @@
    "stage": "reported"
   },
   {
-   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
-   "source": "thenationalnews.com",
+   "title": "Gates Foundation Commits $1bn to Equitable AI for Health, Education, Agriculture",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPakIwLTA2bEhEcExESmRiM2doRW9RVTJCazJsdGJrY3FDSndLMUxybG9CUEpWV2gwM0ZZRjhlUGZIMnBqTE1XaE5EZ0JrUjZydlJqVENtN1dJQzJaLW1aQV9SeW5HZl9PUHg2ekc5bG9MR0FQUkhfWjVNbG16bWZBUk0wOThwMUtObk4tM0hLUWk4UGZVeWJkX1oyMVhqWGFwZDJsS2s2aloybUE?oc=5",
+   "source": "MSME Africa",
+   "region": "International",
+   "published": "2026-09-15T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
+   "title": "‘Not trying to solve world hunger’: GoTo takes pragmatic AI path",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM0RSUnNNcUp3Q1VfYzRQWHZDdVllb0dJZEdQUlZJSmMzVUpPSVJjNHN1NHU3RnFiR2hsMXNzMlY2bmhhTWM0ckFWQ2xlTVZoSlVjMGNtOFY4RE9ScldoSUduRzZtVzlveHd6R2FxVVB6eVNGMUZUalNndFBIblZGX1pidlo?oc=5",
+   "source": "Tech in Asia",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [
@@ -1420,9 +1494,9 @@
    "stage": "reported"
   },
   {
-   "title": "Somalia: In Somalia, AI Is Helping Deliver Food to Hungry Families",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03b3VnR0xnVGQ5enljV0pDWWdVQzBnRFlaNVpDeFQ3MEZaUDhoLWV5bDRZOXhsekw5dVRCLTVvY0liZ3RXSmdlZXlfQnZPVGxoYjNGR1ZOZWt4cVE?oc=5",
-   "source": "allAfrica.com",
+   "title": "In Somalia, AI is helping deliver food to hungry families",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YV3ZyMkZnN3FBWHNfRmpvSGEyNkhVOGZtMHJVYjBaQTEyVml0Q3g2SjgxMW02OENteU8tc0J6T2dIM3B3NF9kcXVFaEFudFRwNVZNOHVjRQ?oc=5",
+   "source": "UN News",
    "region": "International",
    "published": "2026-08-03T07:00:00+00:00",
    "needs": [
@@ -1458,9 +1532,9 @@
    "stage": "reported"
   },
   {
-   "title": "In Somalia, AI is helping deliver food to hungry families",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YV3ZyMkZnN3FBWHNfRmpvSGEyNkhVOGZtMHJVYjBaQTEyVml0Q3g2SjgxMW02OENteU8tc0J6T2dIM3B3NF9kcXVFaEFudFRwNVZNOHVjRQ?oc=5",
-   "source": "UN News",
+   "title": "Somalia: In Somalia, AI Is Helping Deliver Food to Hungry Families",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03b3VnR0xnVGQ5enljV0pDWWdVQzBnRFlaNVpDeFQ3MEZaUDhoLWV5bDRZOXhsekw5dVRCLTVvY0liZ3RXSmdlZXlfQnZPVGxoYjNGR1ZOZWt4cVE?oc=5",
+   "source": "allAfrica.com",
    "region": "International",
    "published": "2026-08-03T07:00:00+00:00",
    "needs": [
@@ -1633,25 +1707,6 @@
    "stage": "pilot"
   },
   {
-   "title": "FloodSense-PK — AI Flood Early Warning System for Pakistan | Demo",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BaVVkQWhDX2huR1BNLWFsS00taEtuZmJPdUVaVkR2SVZCQ21ZRDlYRy1oQlYxY0NZLVZBUWd3RXB6RGhGZDNFYVBmcXhOMnd5cE9oZ2gzdHR0ZHV5?oc=5",
-   "source": "YouTube",
-   "region": "International",
-   "published": "2026-07-14T07:00:00+00:00",
-   "needs": [
-    "water"
-   ],
-   "places": [
-    {
-     "name": "Pakistan",
-     "lon": 69.3,
-     "lat": 30.4,
-     "precision": "country"
-    }
-   ],
-   "stage": "critique"
-  },
-  {
    "title": "TikTok Launches In-App AI Literacy Hub in South Africa, Nigeria and Kenya as Part of Broader Transparency Push",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcUsyNDBaYmhWTXkzV2RwZ3RGRURXdmhPbmR1WG5GS1dxOTNKbGdBZVBoSFBrSVZfbURGMFQzZXZMMmY1WDRRZWNBbjFvNHo0WloyQWw1RkhoQnZacC0yOEl3VnpIVG81OTI5dTdhMHRYN25FVnotU2ZtWmtReEdZQ1hHLWt3c1RodUNmNFZJdVlSZWhKTkp1dWlLMGFkbC1KMDhrcE55Nk41ZzZmTV9xQ2VoRDVZdWlyTmlVZ2RxTzU0R1JKbWJ6ajZ3?oc=5",
    "source": "iAfrica.com",
@@ -1677,11 +1732,49 @@
    "stage": "pilot"
   },
   {
+   "title": "FloodSense-PK — AI Flood Early Warning System for Pakistan | Demo",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BaVVkQWhDX2huR1BNLWFsS00taEtuZmJPdUVaVkR2SVZCQ21ZRDlYRy1oQlYxY0NZLVZBUWd3RXB6RGhGZDNFYVBmcXhOMnd5cE9oZ2gzdHR0ZHV5?oc=5",
+   "source": "YouTube",
+   "region": "International",
+   "published": "2026-07-14T07:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "Pakistan",
+     "lon": 69.3,
+     "lat": 30.4,
+     "precision": "country"
+    }
+   ],
+   "stage": "critique"
+  },
+  {
    "title": "From policy to classroom: India’s AI rollout faces its real test",
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTkJtSy1tRTd5bF9yS1FuVXk3eURPTHdQZ042UUtpZmNJX3gyMGE1UzdBX2VldUlfRFdRUkpZcXRRVm1nZG0xcGQyWERTZW5OX3BQeXdtb2UyM2paYjB2SHh3ekthcDN5d1JlSm51cjRZQ1U4SXgxby1wRVdnMndTTmJOT3FBdUpXNjBxNVJiNThFZ09jUzJwV0lKaUZYQ0hGSmltZmZwbFEwanNQWS1yWmx2LU9qbmpQb21ENndsck50OS1tWDg4MlE2dk1FY1V4WXc?oc=5",
    "source": "Education Times",
    "region": "International",
    "published": "2026-07-12T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "pilot"
+  },
+  {
+   "title": "Saina Human AI launches India’s First AI Literacy Summit in Kochi, the event was inaugurated by Keralam’s AI Minister - Shri P.K. Kunhalikutty",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQdzVTRzdIYzNDdG9hSGpqclpKM2pIaTBob0R0aDlwb19KcFY1enBSVXJfNTFwSWNGb193NkVFTWVybnNzUnlhNEhLOEJkQWVUU3dJWEFQQ29uV3ZqZFppc1l4c3FneUxwS0NqdnZUVlNwNERYWTlqSUFzeWQ5SjNTWnNCWXJwMDJFZWMwczVBTGtMQzdJYUIyN2tOREJ0U0hrT3I2QUVYX0RNZkhlbXB3alUxNHVJd3d6VUI0SXhGX1I3Q3Y0R0JmclFyS2NkOFBqUjYtaVM3c1F2TExwRm01cmVGOC00SkdGanJLTnNCeU0?oc=5",
+   "source": "Roastbrief US",
+   "region": "International",
+   "published": "2026-07-10T07:00:00+00:00",
    "needs": [
     "education"
    ],
@@ -1713,25 +1806,6 @@
     }
    ],
    "stage": "proposed"
-  },
-  {
-   "title": "Saina Human AI launches India’s First AI Literacy Summit in Kochi, the event was inaugurated by Keralam’s AI Minister - Shri P.K. Kunhalikutty",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQdzVTRzdIYzNDdG9hSGpqclpKM2pIaTBob0R0aDlwb19KcFY1enBSVXJfNTFwSWNGb193NkVFTWVybnNzUnlhNEhLOEJkQWVUU3dJWEFQQ29uV3ZqZFppc1l4c3FneUxwS0NqdnZUVlNwNERYWTlqSUFzeWQ5SjNTWnNCWXJwMDJFZWMwczVBTGtMQzdJYUIyN2tOREJ0U0hrT3I2QUVYX0RNZkhlbXB3alUxNHVJd3d6VUI0SXhGX1I3Q3Y0R0JmclFyS2NkOFBqUjYtaVM3c1F2TExwRm01cmVGOC00SkdGanJLTnNCeU0?oc=5",
-   "source": "Roastbrief US",
-   "region": "International",
-   "published": "2026-07-10T07:00:00+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "India",
-     "lon": 78.9,
-     "lat": 21.0,
-     "precision": "country"
-    }
-   ],
-   "stage": "pilot"
   },
   {
    "title": "SK Hynix’s $28B US share sale draws 7x oversubscription as AI chip hunger intensifies",
@@ -1829,6 +1903,18 @@
    "published": "2026-07-03T07:00:00+00:00",
    "needs": [
     "water"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
+   "title": "SK bioscience to lead Gates Foundation-backed AI platform for vaccine development",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12QVlfd3lTeEMyYldQOE51WXpGZHBYbERlcjNCcWtmZDI5OThnbnZhOFNBN196R2NmVVpha0FTY2xsS2tsLS1pV3p3MjJkYWdaZUtGQnhmek9DYTRYaENUVjhZZE0wRVlXb3FqdVRB0gFyQVVfeXFMTzF4OFFiOHhpVjNGekNHZHVyMmFXT0VSVXg4ODhvcjBHNE1aRUd1U0Y0MmRZemdaWmZBdGItMHR0Q1F4dGQteHp3MDFuNTZ2enlBX0t4aFhMUzlFOW16WXFhUVlmTkFMNXBHRE9IRklLN2dB?oc=5",
+   "source": "Korea Biomedical Review",
+   "region": "International",
+   "published": "2026-07-02T07:00:00+00:00",
+   "needs": [
+    "health"
    ],
    "places": [],
    "stage": "reported"
@@ -2064,9 +2150,9 @@
    "stage": "reported"
   },
   {
-   "title": "Fervo becomes clean energy's biggest-ever IPO with $10B valuation—powered by the earth’s heat and AI’s hunger",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNjBiQTF3TmRoYmdiLXFOOFRaUk9QeFJTWm12RUo4Z19PdG1hWUEybkVDX0JTTWFVNW84eFdyQXEwRklJeGN5Y2RKS1RZM21idFNBZDNXNFdwTzZBdGE4d1lVUTFpWGdWTFVLQWJZcTBIbHJXWEpvMnFLdHBRbjlhbTRQVVc0N19iN200cFFlWVlseThNZ3NfYWtOd1RjN1lSUmxJOWRoR1VvUQ?oc=5",
-   "source": "Fortune",
+   "title": "Anthropic And Gates Foundation Sign $200 Million Partnership For AI Use In Health, Education, Agriculture",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNRmwzdnJEOFRad2pqRTJXR29PNGZiR29RLU81VFkwZjZydm9sZDdhRjlmZFV1dl9ud01HUXdOelRJNWVFaGdCS29qVFNXQXFIMGZkVGEzODFDSDdNQ2JBTy1zR1ZFaV9JOE5rbmxpdUZqdV96SzJROTItSXZKOG9sMXJfM3hrX2E1dlYxRXppUllwNl9GUkF0b2hjSDA3aklBZC15VGZ3WFRFbzVDb0s2TmpKS3FNTXJ6QzNYQk5wcEh0c2pNeW9GUmNESnE0VnlsYmNXTW1QTzlEQmw2WkV1SWdrRXdXNFJRSUs0?oc=5",
+   "source": "Forbes",
    "region": "International",
    "published": "2026-05-14T07:00:00+00:00",
    "needs": [
@@ -2076,9 +2162,9 @@
    "stage": "reported"
   },
   {
-   "title": "Anthropic And Gates Foundation Sign $200 Million Partnership For AI Use In Health, Education, Agriculture",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNRmwzdnJEOFRad2pqRTJXR29PNGZiR29RLU81VFkwZjZydm9sZDdhRjlmZFV1dl9ud01HUXdOelRJNWVFaGdCS29qVFNXQXFIMGZkVGEzODFDSDdNQ2JBTy1zR1ZFaV9JOE5rbmxpdUZqdV96SzJROTItSXZKOG9sMXJfM3hrX2E1dlYxRXppUllwNl9GUkF0b2hjSDA3aklBZC15VGZ3WFRFbzVDb0s2TmpKS3FNTXJ6QzNYQk5wcEh0c2pNeW9GUmNESnE0VnlsYmNXTW1QTzlEQmw2WkV1SWdrRXdXNFJRSUs0?oc=5",
-   "source": "Forbes",
+   "title": "Fervo becomes clean energy's biggest-ever IPO with $10B valuation—powered by the earth’s heat and AI’s hunger",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNjBiQTF3TmRoYmdiLXFOOFRaUk9QeFJTWm12RUo4Z19PdG1hWUEybkVDX0JTTWFVNW84eFdyQXEwRklJeGN5Y2RKS1RZM21idFNBZDNXNFdwTzZBdGE4d1lVUTFpWGdWTFVLQWJZcTBIbHJXWEpvMnFLdHBRbjlhbTRQVVc0N19iN200cFFlWVlseThNZ3NfYWtOd1RjN1lSUmxJOWRoR1VvUQ?oc=5",
+   "source": "Fortune",
    "region": "International",
    "published": "2026-05-14T07:00:00+00:00",
    "needs": [
@@ -2331,18 +2417,6 @@
    "stage": "reported"
   },
   {
-   "title": "The AI memory chip famine that’s raising smartphone prices",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMy1QTkxQQWNLTjMzTDF5QkkzLV9aeFdVZmNDQ2NxckZRYlNMaHkxSHMwM0d0VDJDQ2JYeFp0cmo1OS1YSkR3Z08xNTc2NnhSVzhWOXpFVWI2cldsSV9jSEtNOEtIWnpsXzlOM2NpT3lkSFdHbmM2YTF0WUxYYm9nLTJaRFkxWHA5UHhlTVV0WThBekdERmczcE5CbkkwYm8weGttNGZPSnBvTjg?oc=5",
-   "source": "The Times",
-   "region": "International",
-   "published": "2026-02-23T08:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
-   "stage": "reported"
-  },
-  {
    "title": "Reliance Industries Limited. . Jio Shiksha AI: Powering the Future of Learning What if classrooms could move beyond blackboards and heavy school bags? At the India AI Impact Summit, Jio Intelligence showcased the Jio-Shiksha Classroom, an AI-powered l",
    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQb2lZS3hRbW1JWkViMlJaTDAwc1psNTBRMlBSNWQ4Vm1rMkhGWkVsb1NRLTlralBtV0NvcHZjMkRGMS13Qm1jZHFnUnlKa2dQZHVReENzeXVCbmJ2enpUU3FSMmM5R1BaNmhqMUlCcTB5RFVybHhXaklBbmo1THI4UnczT09IckZKMjZnejh5akdsY1ZYb0RRdFJxVWFld25GUUE0amJuQlV3TDZDLUFIOTJXSTJjUXJRVTZxOEQ3bVExZTZjc1g5YUlDOFQ1czA5SnZMcXFweXV4bnluaS04VDNDNjh1M0lWMndJcg?oc=5",
    "source": "Facebook",
@@ -2360,6 +2434,18 @@
     }
    ],
    "stage": "proposed"
+  },
+  {
+   "title": "The AI memory chip famine that’s raising smartphone prices",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMy1QTkxQQWNLTjMzTDF5QkkzLV9aeFdVZmNDQ2NxckZRYlNMaHkxSHMwM0d0VDJDQ2JYeFp0cmo1OS1YSkR3Z08xNTc2NnhSVzhWOXpFVWI2cldsSV9jSEtNOEtIWnpsXzlOM2NpT3lkSFdHbmM2YTF0WUxYYm9nLTJaRFkxWHA5UHhlTVV0WThBekdERmczcE5CbkkwYm8weGttNGZPSnBvTjg?oc=5",
+   "source": "The Times",
+   "region": "International",
+   "published": "2026-02-23T08:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
   },
   {
    "title": "India’s Next Agricultural Revolution Will Be AI-Driven: Dr. Jitendra Singh",
@@ -2405,18 +2491,6 @@
    "stage": "reported"
   },
   {
-   "title": "24-hour ‘hackathon’ at St. Thomas asks creators to use AI to fight hunger",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMGIwR2pvSkYtQ21aNTdiLW1hMlpKSzd2SEdPQlJQVTNqWEdIVXhtQTNmVHM1SGVXVnlrSTZyWC1vOGxDM2JheHpHMkxfNVVkMHItN2ZkSXlndjB3cldQRzNKb1h3NHVScmRLay1JY3l5VXpMM2I3ZnotVGJoYnNkNkNvUVJ0M0dObW9lTEJtMVJEUTJncmxsM3AwaTI2a29CSFhzbzgxWEVPak5QT0E?oc=5",
-   "source": "Pioneer Press",
-   "region": "International",
-   "published": "2026-02-18T08:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
-   "stage": "reported"
-  },
-  {
    "title": "Reliance Industries Limited. . Jio Arogya AI: Transforming Primary Healthcare with AI At the India AI Impact Summit 2026, Jio Intelligence showcased Jio Arogya AI; an AI-powered clinic model designed to make early health screening faster, smarter and more a",
    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQZ0FOdEhBYWlPdFZsS0ZiVmo0LWlEeDdtUW5ZLTlEcmZaeWpBWGlvQUdJMmRKc3dvQmtZd2tUUGlXNU5COG1xTVhEN3JoSnI1SG1rdEg3c21EeGhQWDJBNzVlTi03azQ0OEd1UGlteGk2RnRDdUVzZzNMOXQzRjhITkJGOW1WVzhHdjZvM21PbjJ3REpJMnRCbTRqajJidVAzX2VfQ29RQ0FkNy1pNS1BQnFvbTVOclBCb2VPQzhqUTlRNm14VVdRMnpQSVBvYUxSV28zU21XdlNMeFhEeEdBYWFVTV84TDExa2xv?oc=5",
    "source": "Facebook",
@@ -2433,6 +2507,18 @@
      "precision": "country"
     }
    ],
+   "stage": "reported"
+  },
+  {
+   "title": "24-hour ‘hackathon’ at St. Thomas asks creators to use AI to fight hunger",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMGIwR2pvSkYtQ21aNTdiLW1hMlpKSzd2SEdPQlJQVTNqWEdIVXhtQTNmVHM1SGVXVnlrSTZyWC1vOGxDM2JheHpHMkxfNVVkMHItN2ZkSXlndjB3cldQRzNKb1h3NHVScmRLay1JY3l5VXpMM2I3ZnotVGJoYnNkNkNvUVJ0M0dObW9lTEJtMVJEUTJncmxsM3AwaTI2a29CSFhzbzgxWEVPak5QT0E?oc=5",
+   "source": "Pioneer Press",
+   "region": "International",
+   "published": "2026-02-18T08:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
    "stage": "reported"
   },
   {
@@ -2512,11 +2598,11 @@
    "stage": "reported"
   },
   {
-   "title": "Climate change could expose 1.1 billion people to hunger by 2100 (but there's good news, too)—AI modeling study",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5laXhQZG9nME55ZjNtSFkwZHVvY2tCOXNZYWc5dmhwbjg1WDduUVZobU9wV0E2VFU0cXlaNVAtTUpsc2Q2ckxwcGVJUFNyTlJCYnBfYXo2dENMeUZ0T0RINy0tMWtnSlZZWDlFY054cjJjekowS2xkRUh1MA?oc=5",
-   "source": "Phys.org",
+   "title": "Climate change could expose 1.1 billion people to hunger by 2100 (but there’s good news too) – AI modelling study",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPakFic1B4ZFEwZ28yZG96T1E2RVVwX1A5Rjl3ZWt6LWM1RTBvUWNibzVhVnd5UEJXMGpsYzdxRVg1WXBLNVJWOEdXZXYwU01BOFIwNUZpOXdSQkNKaEFuREhKRTVkeUNMWVVydlJ1blhGYlpOdTZBb3A3ODIxd2NXREhfWW5FSzdVeS1CeE9PR0hxalJ2M3l5enJTcGVBalIxc2tPQ0d5VWFkWkpLWTBCMFJkZDVSdE53MHhfcXJlb2Rkdm5WQTFOaXZNWG50UlR2ekxNMkVrVUhXZmM?oc=5",
+   "source": "The Conversation",
    "region": "International",
-   "published": "2026-02-16T08:00:00+00:00",
+   "published": "2026-02-15T08:00:00+00:00",
    "needs": [
     "food"
    ],
