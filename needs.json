@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T20:40:54+00:00",
+ "updated": "2026-11-20T02:21:23+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -18,7 +18,7 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 3
   },
   {
    "name": "DW",
@@ -30,7 +30,7 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 0
   },
   {
    "name": "South China Morning Post",
@@ -84,7 +84,7 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 92
+   "ai_stories": 67
   },
   {
    "name": "Specialist sites (2)",
@@ -96,13 +96,13 @@
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 44
+   "ai_stories": 42
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 28
+   "ai_stories": 29
   },
   {
    "name": "Google News: health",
@@ -114,13 +114,13 @@
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 27
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 40
+   "ai_stories": 38
   },
   {
    "name": "Google News: Gates",
@@ -168,13 +168,13 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 47
+   "stories": 46
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 43
+   "stories": 39
   },
   {
    "name": "DatacenterDynamics",
@@ -192,19 +192,19 @@
    "name": "Google News: Africa",
    "set": "Data centres",
    "ok": true,
-   "stories": 47
+   "stories": 86
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 91
+   "stories": 93
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
    "ok": true,
-   "stories": 37
+   "stories": 38
   },
   {
    "name": "Google News: Latin America",
@@ -1358,6 +1358,18 @@
    "stage": "reported"
   },
   {
+   "title": "Rewriting smallholder finance: How AI is changing the game",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdkRScjJtcXFEMEl5dkxNZG9wS1JWR2VvSl9IZTFCMmdtUkFPdVp3M3NLYkVST3hEb0hnWV8xMi1BTlVxeGZuV2Jiamd0alFrU2ppMUdfcGR2TEtucFdZenFvY0ZwUHFSZE1veUV0OWJNRTNCZk1wWURpLUVpMll4d1BuSlNsOUNxLWI5YnFGZXI?oc=5",
+   "source": "Microsoft Source",
+   "region": "International",
+   "published": "2026-05-19T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "Anthropic and Gates Foundation commit $200 million to AI tools for health, education, and agriculture",
    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5wTXlMSHg5bWI4MmNGVWhRRW5HeXQ2djFPWnM1Y0c1alFfR0JYd212Tld0Ynk5ZERaM29QN1h2ejZtMlR6ZDJRVVJyakVYbmctcGlLaGxMdHZUdUQ0ZVBleFl3c2NhZ3MwY3JRRm5VdkpsZGNl?oc=5",
    "source": "TechHQ",
@@ -1912,7 +1924,7 @@
   },
   {
    "title": "Text mining and machine learning reveal global determinants of food insecurity",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TbUt6ZGg5RnhvWjQ1N25QQkJ1UTk2Vy12ZWRSTXg3S2dkalNORHAtZzlQandxSGF3UWo0WGNpaWxJbjhhcl8wa2RzdjhHZF95bUI5MVg5OHk2SllDb19n?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1WeVAxTndMWDI2LUYtNHpzM2RFazYtcW1EbDFudkxONnY2X1ZqTGIxNnpmSjMyTkhuVWhZWC00d01pUQ?oc=5",
    "source": "Nature",
    "region": "International",
    "published": "2025-10-21T07:00:00+00:00",
