@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T06:55:52+00:00",
- "sources_reached": 1,
+ "updated": "2026-11-22T15:21:27+00:00",
+ "sources_reached": 9,
  "sources": [
   {
    "name": "The Guardian",
@@ -18,7 +18,7 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "DW",
@@ -30,13 +30,13 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 29
+   "ai_stories": 30
   },
   {
    "name": "The New York Times",
@@ -71,8 +71,8 @@
   {
    "name": "Google News (world)",
    "set": "General",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "ai_stories": 100
   },
   {
    "name": "The New Humanitarian",
@@ -83,50 +83,50 @@
   {
    "name": "Specialist sites (1)",
    "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "ai_stories": 62
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "ai_stories": 63
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "ai_stories": 45
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "ai_stories": 28
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "ai_stories": 25
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "ai_stories": 24
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "ai_stories": 35
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "ai_stories": 82
   },
   {
    "name": "Dezeen: data centres",
@@ -167,14 +167,14 @@
   {
    "name": "Google News: design press",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "stories": 49
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "stories": 39
   },
   {
    "name": "DatacenterDynamics",
@@ -185,41 +185,60 @@
   {
    "name": "Google News: India",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "stories": 26
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "stories": 46
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "stories": 95
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "stories": 37
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "stories": 29
   },
   {
    "name": "Google News: new builds",
    "set": "Data centres",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "stories": 97
   }
  ],
  "items": [
+  {
+   "title": "AI could help Pakistani farmers manage crops, but adoption faces major hurdles",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX2k2NHlTSDNzbmRzVlFqY0FHcms3U0xBRGtPekptaE1kaTJ1WjVrWTNJbmQyMmswRGZIckFDdXZ6LWpMUjNnX2wyS1dCSjYyV2VUNHlsQ0FKTmt3TGdOUVJzNXFVWG1qT0ExYzJ5bXRHOUhFNGhhVld0N1hlNzFiSjdKV0tzYWo4NkZSX196cGdEd3dFYWVtZl9Mcw?oc=5",
+   "source": "UrduPoint",
+   "region": "International",
+   "published": "2026-11-22T09:45:07+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Pakistan",
+     "lon": 69.3,
+     "lat": 30.4,
+     "precision": "country"
+    }
+   ],
+   "stage": "proposed"
+  },
   {
    "title": "Anthropic IPO and the energy hunger of AI and HighTech - Micron, Infineon, Anthropic and NU E Power in focus",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWEsyblg2dUgyNVVMY3hxLVVJSHJyRkN2b2UtaTRLaUpEQWdjRmswbUhOMnpaUjFWMkM5X1lWWU9hZ3A0SkMyelB1Z0p5bkk4RjhMdk4yWmdicS0ycGRHS0tOQkFoMWx2WFZld1F3Y1RocTAxSXFGckU5VUc3Wno3ZHhMb1BnMDFKcFZ1MmFYRDBDZ2JMVTJENWtiQVVyTFRuQU1ndmdyaEZodml2T0ZKQ00tdmhXXzJUODU2TDQ4VE1VV29FNGV2NHVqZFU?oc=5",
@@ -832,6 +851,18 @@
    "stage": "reported"
   },
   {
+   "title": "AI’s hunger for power can help electrify Africa",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeWh0MzZOdllONlJ5bTVQbkx4QmZhd3Fmejh0R0V0aF90ckhyMFZoUVVnZFFJWUV5Unphb2RZUUFfNFBob0h5c28zaUZlWUlSUVIxRlhIYkhYQ3NqaERKYlZuZHlTNTdDS3M4bjJBWS1Ca2RGR2gyNTQ4WnBES2E4Y2o2VExGRGxW?oc=5",
+   "source": "Devex",
+   "region": "International",
+   "published": "2026-10-27T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "Omron to push AI-powered remote ECG diagnosis in India with Singapore firm",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSW9zMU1VZG1VejJDV1FHdHlTN0ItbEVUbDZVV1dLYXlwcXdjOWV4YVZKeHBQN1BjZ0Zjc1NzTGt0dm42bllNaGZ1ZDM4ai10clpiWGJaRGpET3cwajBNSm5MNGpCSUEybG5EbDdSRlpLSGZ6dzZUaWVQUHdpZXhtSWhRVU8xVjQ1TUpXWWdlanFDUmFudDgtcE1WZlNyc1hRNk1wdFgtWmJZVzFLNXlYYUdxQkFsQQ?oc=5",
    "source": "Singapore Economic Development Board (EDB)",
@@ -905,18 +936,6 @@
      "precision": "town"
     }
    ],
-   "stage": "reported"
-  },
-  {
-   "title": "AI’s hunger for power can help electrify Africa",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeWh0MzZOdllONlJ5bTVQbkx4QmZhd3Fmejh0R0V0aF90ckhyMFZoUVVnZFFJWUV5Unphb2RZUUFfNFBob0h5c28zaUZlWUlSUVIxRlhIYkhYQ3NqaERKYlZuZHlTNTdDS3M4bjJBWS1Ca2RGR2gyNTQ4WnBES2E4Y2o2VExGRGxW?oc=5",
-   "source": "Devex",
-   "region": "International",
-   "published": "2026-10-27T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
    "stage": "reported"
   },
   {
@@ -1464,25 +1483,6 @@
    "stage": "pilot"
   },
   {
-   "title": "Kenya and Intel Partner to Expand AI Literacy Through Public Libraries",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNVndZOEo2c012ZnE4dm95VTlVZ1lsbl9vM1VWRHZYazFWUWJtcmFDdUxiRVQtYjVDb3o0MzUwNWVIeXZJWTBHSkFzaEJXZDZUZE5XWDlBZE5RSlpodFZPaFdmLXphMXp5RDRkOW9sN29qN0R1Y05FbGJaSXVTV0NLUDNTbVF0aWsyWmhQS2U1T0JGdHI2R0pBYTBWWUFsRjFFSXg4anRNc0JtREg2cUE?oc=5",
-   "source": "TechAfrica News",
-   "region": "International",
-   "published": "2026-09-22T07:00:00+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "Kenya",
-     "lon": 37.9,
-     "lat": 0.0,
-     "precision": "country"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
    "title": "Gates Foundation and MTN launch AI maternal health platform with aim to reach 500,000 Nigerian women",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQ2Ffd25udjdIZVlHTVNKeDJtbGFRRERMOUZXTm9SZ0hIeXl6R25CdXJwWk5vM3NYeGEzcjVpdW14QmpNN21aN3puaVRjekZ6cTRfSWRQZ1Uwa3A3VUhDdTM4VFFGcmVxQVppMjJmZW5DZktveF9pUm9QanJKZXBfRk41NXhYZzRxcHJyWF9WbXgtVHJfY1JpLVl4cw?oc=5",
    "source": "Fortune",
@@ -1500,6 +1500,37 @@
     }
    ],
    "stage": "proposed"
+  },
+  {
+   "title": "Gates Foundation commits $400M to bring AI tools into US classrooms",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nQWxWR3JzZ0JyWVFNTEkzdjR0MWJyb1FNT0VtUzdSa1JfRTVLOHY4M1F2Mlk2OTlrUmRsa1g2Y3RKd2ZrZEN4ZTNDMDZ5SmhIZU5kYk85X0xuSWxaZ01pOTU1Ym1lRF9ObmlQTWR3Z3U?oc=5",
+   "source": "Crypto Briefing",
+   "region": "International",
+   "published": "2026-09-22T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
+   "title": "Kenya and Intel Partner to Expand AI Literacy Through Public Libraries",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNVndZOEo2c012ZnE4dm95VTlVZ1lsbl9vM1VWRHZYazFWUWJtcmFDdUxiRVQtYjVDb3o0MzUwNWVIeXZJWTBHSkFzaEJXZDZUZE5XWDlBZE5RSlpodFZPaFdmLXphMXp5RDRkOW9sN29qN0R1Y05FbGJaSXVTV0NLUDNTbVF0aWsyWmhQS2U1T0JGdHI2R0pBYTBWWUFsRjFFSXg4anRNc0JtREg2cUE?oc=5",
+   "source": "TechAfrica News",
+   "region": "International",
+   "published": "2026-09-22T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "Kenya",
+     "lon": 37.9,
+     "lat": 0.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
   },
   {
    "title": "MTN, Gates Foundation commit $25m to AI healthcare, affordable phones to tackle maternal mortality",
@@ -1533,6 +1564,18 @@
    "stage": "reported"
   },
   {
+   "title": "Gates Foundation commits $1 billion to deliver equitable AI for health, farming, and education in developing regions",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOM2owR2QxY28wdHg0cnd1S252N2RpMF8wT1l4dGZFaS16dnVKNGVqYkdFYWZXSzEzYTM1a0ZlSnJrTkNfZGl6cy1lYmVMNDJyOEd2eFN1MVNpVlltc0g4aXduSmREdFRsNjdNX18tUWlpYldXWHZOV0hWdE5WNFBwTGp6bFM0QXU3UFZwa0IwcHoxTThCRkJWank1T3FuNkNHYW5QU1lacjFHbjNSZ1U2RURRQTVCQ3F4WWw5aWFOVl9JWHJzOXRGc0Z4aURUZUxUb19XNTd0WF9rSXAwcXVBNjlrX2Y4OERD?oc=5",
+   "source": "CapitalEthiopia",
+   "region": "International",
+   "published": "2026-09-20T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "AI and precision agriculture to take centre stage at Nairobi show",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQXzVJWC10SU13OTRwWFlKLTVqZ1V3dlN6b3JuNHNhaGd2cjRfaXRUSzdKMnhQSFpvLXFRZF9heWV3aUNNUVVuakJFZzBBZkJ3T3czREJtazFNUnAtOGE4dC02OGdYMXBCck1vTXc1N05QeVpMbW5GSjlET3FoejhnbWVYYXRrU1J6ektYM0hjUnljbVJpUllEZGVXOEF0emRZeHp2TWdWaGg?oc=5",
    "source": "Citizen Digital",
@@ -1549,18 +1592,6 @@
      "precision": "town"
     }
    ],
-   "stage": "reported"
-  },
-  {
-   "title": "Gates Foundation commits $1 billion to deliver equitable AI for health, farming, and education in developing regions",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOM2owR2QxY28wdHg0cnd1S252N2RpMF8wT1l4dGZFaS16dnVKNGVqYkdFYWZXSzEzYTM1a0ZlSnJrTkNfZGl6cy1lYmVMNDJyOEd2eFN1MVNpVlltc0g4aXduSmREdFRsNjdNX18tUWlpYldXWHZOV0hWdE5WNFBwTGp6bFM0QXU3UFZwa0IwcHoxTThCRkJWank1T3FuNkNHYW5QU1lacjFHbjNSZ1U2RURRQTVCQ3F4WWw5aWFOVl9JWHJzOXRGc0Z4aURUZUxUb19XNTd0WF9rSXAwcXVBNjlrX2Y4OERD?oc=5",
-   "source": "CapitalEthiopia",
-   "region": "International",
-   "published": "2026-09-20T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
    "stage": "reported"
   },
   {
@@ -1669,6 +1700,18 @@
    "stage": "reported"
   },
   {
+   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
+   "source": "The National",
+   "region": "International",
+   "published": "2026-09-15T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "Gates Foundation pledges $1B for AI in health, farming and education",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSjFuelZvV01mVVBiRTk3Q3BDSGROUzJEM1JZZURfVnRnaS16a1pOOUhoZW9jTGd4c3Z2Tkx4TW12bVN0LUotc3I4VUNKUDF2ZnIxaGM2TzZqRGwxdjRtUnBxYVdKWXdmWFpYeFY1b19JcW5fTjVUZ1I5ek40T1otWGpLcDVjeDZKWnp1eGoyUlFUWm5JTDhTSHpEN0RXOXFIOGM2V0F4ejhOU2hWVVIw?oc=5",
    "source": "Connecting Africa",
@@ -1681,21 +1724,9 @@
    "stage": "reported"
   },
   {
-   "title": "Gates Foundation Commits $1bn To Equitable AI For Health, Education, Agriculture",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcVpXTGtwTGVFVER2dXBHeGJWZ1V1LXpNMExaLV9DeTNRX0xvZnU4QUZLNURZYWRmQjJ1a0tjVEVJVHd0SHhZY2ttbmVmSUE2dHgxb2VDekJyUm9Dem44RkotU2ZFUWZ6Y1FIelhmRHdsZWRhbncwZm50aTV3RS1XLXJiM1ZhS29GSjRVUmsyQThYWVZySG9RNGFZX1FSZw?oc=5",
-   "source": "News Agency of Nigeria",
-   "region": "International",
-   "published": "2026-09-15T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
-   "stage": "reported"
-  },
-  {
-   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
-   "source": "The National",
+   "title": "Gates Foundation Commits $1bn to Equitable AI for Health, Education, Agriculture",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPakIwLTA2bEhEcExESmRiM2doRW9RVTJCazJsdGJrY3FDSndLMUxybG9CUEpWV2gwM0ZZRjhlUGZIMnBqTE1XaE5EZ0JrUjZydlJqVENtN1dJQzJaLW1aQV9SeW5HZl9PUHg2ekc5bG9MR0FQUkhfWjVNbG16bWZBUk0wOThwMUtObk4tM0hLUWk4UGZVeWJkX1oyMVhqWGFwZDJsS2s2aloybUE?oc=5",
+   "source": "MSME Africa",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [
@@ -2368,25 +2399,6 @@
    "stage": "reported"
   },
   {
-   "title": "India's AI Data Centers: Liquid Cooling, Water Scarcity Drive Design Choices",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNN3V0dUtZSnhlendrNE1rcUlHTGVEUURMU2t5YTRidEc5UVlYZGhHUnE4M2EwZTMwYm1UOFNRdWlkbC10eVpBMGF6OG5BeDBFdEVxRVlzMENmY1EwdnRTakdoX2dNMGNmZGVrOEZ1bktvZDllTUFHV1pmdnFkRG9XcVAteUNzQmt3NG9KUnVtR3RsSzZqQTBlSzZ3STAxbDN6bDBXYURRZG9mQ1U5aGJlNFAwbHFRS2x0aDRCOUUxTGlEVzFiOG9TMjliYWVYUzhoYnE1cjBzam91c0hWLTkyMk9tTFRWQzlPNmprd2Y3OHotWVRzRlRyNDFR0gH_AUFVX3lxTFBiZThwdndLNC1zTGFvNFVYWG9teGlkQUFKM1JTTjNYeEpjUlVDbUxuTmxTY0tpZkkwUlFNbVhsdTdVMzJWeVJsYmlvYUxzTWlKbDlLY05JMzNlSHRpR09GbU5KTzktVTBhV1J5QmhYdkUtVzlYZVRJNGwyUnR3QUZPbkpjQmJsM0RDeUVmMVpuQnhCV3UzMmhNeVZQSTN2LUc5ZjNXek1fX185LXV1aVhCbklBOV9FUlJNNjhaTzdpWnRVdzFDSENFREU5Z1BFZkJNTmhmT0hEdlpxcUplbHFsT3lKRkFnVVdHb3I2eUNEdDhPV3R2ZlBHZFVfOUpTcw?oc=5",
-   "source": "ET Datacenters",
-   "region": "International",
-   "published": "2026-08-03T07:00:00+00:00",
-   "needs": [
-    "water"
-   ],
-   "places": [
-    {
-     "name": "India",
-     "lon": 78.9,
-     "lat": 21.0,
-     "precision": "country"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
    "title": "In Somalia, AI is helping deliver food to hungry families",
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YV3ZyMkZnN3FBWHNfRmpvSGEyNkhVOGZtMHJVYjBaQTEyVml0Q3g2SjgxMW02OENteU8tc0J6T2dIM3B3NF9kcXVFaEFudFRwNVZNOHVjRQ?oc=5",
    "source": "UN News",
@@ -2400,6 +2412,25 @@
      "name": "Somalia",
      "lon": 46.2,
      "lat": 5.2,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "India's AI Data Centers: Liquid Cooling, Water Scarcity Drive Design Choices",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNN3V0dUtZSnhlendrNE1rcUlHTGVEUURMU2t5YTRidEc5UVlYZGhHUnE4M2EwZTMwYm1UOFNRdWlkbC10eVpBMGF6OG5BeDBFdEVxRVlzMENmY1EwdnRTakdoX2dNMGNmZGVrOEZ1bktvZDllTUFHV1pmdnFkRG9XcVAteUNzQmt3NG9KUnVtR3RsSzZqQTBlSzZ3STAxbDN6bDBXYURRZG9mQ1U5aGJlNFAwbHFRS2x0aDRCOUUxTGlEVzFiOG9TMjliYWVYUzhoYnE1cjBzam91c0hWLTkyMk9tTFRWQzlPNmprd2Y3OHotWVRzRlRyNDFR0gH_AUFVX3lxTFBiZThwdndLNC1zTGFvNFVYWG9teGlkQUFKM1JTTjNYeEpjUlVDbUxuTmxTY0tpZkkwUlFNbVhsdTdVMzJWeVJsYmlvYUxzTWlKbDlLY05JMzNlSHRpR09GbU5KTzktVTBhV1J5QmhYdkUtVzlYZVRJNGwyUnR3QUZPbkpjQmJsM0RDeUVmMVpuQnhCV3UzMmhNeVZQSTN2LUc5ZjNXek1fX185LXV1aVhCbklBOV9FUlJNNjhaTzdpWnRVdzFDSENFREU5Z1BFZkJNTmhmT0hEdlpxcUplbHFsT3lKRkFnVVdHb3I2eUNEdDhPV3R2ZlBHZFVfOUpTcw?oc=5",
+   "source": "ET Datacenters",
+   "region": "International",
+   "published": "2026-08-03T07:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
      "precision": "country"
     }
    ],
@@ -4035,6 +4066,25 @@
    "stage": "reported"
   },
   {
+   "title": "Artificial Intelligence (AI) in Indian Agriculture",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMHBKZ1R5N25aODM2b3FzVm5VM2Zzcjgzc0xVTGRoWm1rSkYyQ0Jod0Z1NHkxT0N4cmI0clFKU1kxVEVzYXo0RXNEMGUxQ2JZUVpWUTdmX0JGM2RiQVo2QW04VDR2bFJscjgwek5IcV8xR0VqRlc1MzVfRGRmbC1NM2xqWVdRMS1Rbk9UREMzcHg3SWVhby1DampUZHJqQjU3LUwxdjI1YjMzRnFEOWNIbWlORGdsWTFEUnlOT09vdlpVb1dHV2xjMDh3?oc=5",
+   "source": "Vision IAS",
+   "region": "International",
+   "published": "2026-02-16T08:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
    "title": "Climate change could expose 1.1 billion people to hunger by 2100 (but there’s good news too) – AI modelling study",
    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPakFic1B4ZFEwZ28yZG96T1E2RVVwX1A5Rjl3ZWt6LWM1RTBvUWNibzVhVnd5UEJXMGpsYzdxRVg1WXBLNVJWOEdXZXYwU01BOFIwNUZpOXdSQkNKaEFuREhKRTVkeUNMWVVydlJ1blhGYlpOdTZBb3A3ODIxd2NXREhfWW5FSzdVeS1CeE9PR0hxalJ2M3l5enJTcGVBalIxc2tPQ0d5VWFkWkpLWTBCMFJkZDVSdE53MHhfcXJlb2Rkdm5WQTFOaXZNWG50UlR2ekxNMkVrVUhXZmM?oc=5",
    "source": "The Conversation",
@@ -4048,7 +4098,7 @@
   },
   {
    "title": "Artificial Intelligence (AI) Transforming Indian Agriculture",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9QbWE0dlItWVZ0Q1FrMk42YXd2czFFdTlBWkk1QjY1ODhzZmhWVXFjeDlmUjBrMjkzT1lhTUp2ZHNMa0trdTNXUFRZclpDMHBMTlVqdFlfR1FSSFFxc3BaSWVaU2NxbEZPd0JLeGdDVnBCeWpYTzJxRjc5TQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE92VWxMWjh1SDc5R3hic2pJYzl1VDRzN0VOdm9qWHVRN1pDRjdYbzQ3Z3c2WEUtTlJkdGdERnFzU2huam5EX2pjOWJ5UXZfOU9OcFFhMlprUnVxQTRhclJWMVRaNGRPbTVOc3dqanFaMl92SnMtcnVvRkFR?oc=5",
    "source": "www.pib.gov.in",
    "region": "International",
    "published": "2026-02-14T08:00:00+00:00",
@@ -4650,8 +4700,8 @@
   },
   {
    "title": "Reading between the lines: Leveraging news data for AI-powered food insecurity forecasts",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTG5CWEFJNk5NeWRGeDNJV2dUZkNhZWZHUFdTb0I0ei1qZWZtZllIN2FYV0lUTVN5Q01hRmc2RHgzekpEUVc2S1J2eEI1R2Z2eC0wSUJkVXBEZ2g2WUNGSkxmSjU0MWpPUVZ1bWRkR05YNEZoLWlXeXI0LW9aRm1EM0ZscFVBbG8xWWlMV2Vfa1FjbnZuRGxrV2RGSXBQM2UtdlVhZGRMa0hMb19Qc0Z2T1lkXzE?oc=5",
-   "source": "PreventionWeb.net",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdWVfMW14cDFYd3M5WW5sTW9LN0ZiV3h2WWgzdjJPWGZfQkthRWVPcDVXNGt1WkhfOHZRU3oybF9ya0RWdVh3aFo2cUpJanAzRndjWFJIVFBOSGJDeHhOUWpDRUFpWTExM1pMOGpWdWRMQjFxUk1xYzVlZ3FBdTMyU2JzaUNsRW4tdUpMMVc4QktMa0gteU9KMjNEZkdWSXA2Nno2d3JoOTlpT3ZPSmtQZmU3a0E?oc=5",
+   "source": "VoxDev",
    "region": "International",
    "published": "2025-06-12T07:00:00+00:00",
    "needs": [
