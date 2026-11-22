@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T15:21:27+00:00",
+ "updated": "2026-11-22T21:48:59+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -24,13 +24,13 @@
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 12
+   "ai_stories": 10
   },
   {
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 1
+   "ai_stories": 0
   },
   {
    "name": "South China Morning Post",
@@ -84,25 +84,25 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 62
+   "ai_stories": 64
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 63
+   "ai_stories": 62
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 45
+   "ai_stories": 46
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 28
+   "ai_stories": 30
   },
   {
    "name": "Google News: health",
@@ -120,13 +120,13 @@
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 35
+   "ai_stories": 33
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 82
+   "ai_stories": 24
   },
   {
    "name": "Dezeen: data centres",
@@ -168,7 +168,7 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 49
+   "stories": 48
   },
   {
    "name": "Google News: architecture",
@@ -186,7 +186,7 @@
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 26
+   "stories": 29
   },
   {
    "name": "Google News: Africa",
@@ -198,7 +198,7 @@
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 95
+   "stories": 76
   },
   {
    "name": "Google News: Gulf",
@@ -220,6 +220,25 @@
   }
  ],
  "items": [
+  {
+   "title": "Atiku urges Nigeria to harness AI, automation, digital networks to transform agriculture, other sectors",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNbEdsQk4yY1RIVjNhODFocXV2Qi1Qb2dhYjBlZEZ1Tk9Fb2ZQZ2w0SzVTQ1h2NUd3ODdtSFBRZHROdGRmX2xYeXNiZnNwQnBneXYtMEk3X3Q5dDhyTzRpR3ZmcElheUduaUw5SGtuM08wT3VlZHA5cGlPX0ViVGFZYnZfY0oxMW1FWXN0YTdKeEV4ekVmRkxab0NUWFQtUUszTmFDTFdDelpMREFyaHB5YTkwT09JdUFLZ3ZlN3dRU1BwRERYUEdOM0V3WVNzT0NPcWl1TEtR?oc=5",
+   "source": "Apex News Exclusive",
+   "region": "International",
+   "published": "2026-11-22T21:11:20+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Nigeria",
+     "lon": 8.7,
+     "lat": 9.1,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
   {
    "title": "AI could help Pakistani farmers manage crops, but adoption faces major hurdles",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX2k2NHlTSDNzbmRzVlFqY0FHcms3U0xBRGtPekptaE1kaTJ1WjVrWTNJbmQyMmswRGZIckFDdXZ6LWpMUjNnX2wyS1dCSjYyV2VUNHlsQ0FKTmt3TGdOUVJzNXFVWG1qT0ExYzJ5bXRHOUhFNGhhVld0N1hlNzFiSjdKV0tzYWo4NkZSX196cGdEd3dFYWVtZl9Mcw?oc=5",
@@ -1700,9 +1719,9 @@
    "stage": "reported"
   },
   {
-   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
-   "source": "The National",
+   "title": "Gates Foundation pledges $1B for AI in health, farming and education",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSjFuelZvV01mVVBiRTk3Q3BDSGROUzJEM1JZZURfVnRnaS16a1pOOUhoZW9jTGd4c3Z2Tkx4TW12bVN0LUotc3I4VUNKUDF2ZnIxaGM2TzZqRGwxdjRtUnBxYVdKWXdmWFpYeFY1b19JcW5fTjVUZ1I5ek40T1otWGpLcDVjeDZKWnp1eGoyUlFUWm5JTDhTSHpEN0RXOXFIOGM2V0F4ejhOU2hWVVIw?oc=5",
+   "source": "Connecting Africa",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [
@@ -1712,9 +1731,9 @@
    "stage": "reported"
   },
   {
-   "title": "Gates Foundation pledges $1B for AI in health, farming and education",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSjFuelZvV01mVVBiRTk3Q3BDSGROUzJEM1JZZURfVnRnaS16a1pOOUhoZW9jTGd4c3Z2Tkx4TW12bVN0LUotc3I4VUNKUDF2ZnIxaGM2TzZqRGwxdjRtUnBxYVdKWXdmWFpYeFY1b19JcW5fTjVUZ1I5ek40T1otWGpLcDVjeDZKWnp1eGoyUlFUWm5JTDhTSHpEN0RXOXFIOGM2V0F4ejhOU2hWVVIw?oc=5",
-   "source": "Connecting Africa",
+   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
+   "source": "The National",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [
