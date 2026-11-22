@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T23:20:58+00:00",
- "sources_reached": 12,
+ "updated": "2026-11-22T06:55:52+00:00",
+ "sources_reached": 11,
  "sources": [
   {
    "name": "The Guardian",
@@ -71,8 +71,8 @@
   {
    "name": "Google News (world)",
    "set": "General",
-   "ok": true,
-   "ai_stories": 102
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "The New Humanitarian",
@@ -83,50 +83,50 @@
   {
    "name": "Specialist sites (1)",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 63
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 64
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": false,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 26
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 26
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 25
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 37
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 23
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Dezeen: data centres",
@@ -167,14 +167,14 @@
   {
    "name": "Google News: design press",
    "set": "Data centres",
-   "ok": true,
-   "stories": 48
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
-   "ok": true,
-   "stories": 39
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "DatacenterDynamics",
@@ -185,41 +185,55 @@
   {
    "name": "Google News: India",
    "set": "Data centres",
-   "ok": true,
-   "stories": 26
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
-   "ok": true,
-   "stories": 48
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
-   "ok": true,
-   "stories": 95
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
-   "ok": true,
-   "stories": 46
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
-   "ok": true,
-   "stories": 28
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: new builds",
    "set": "Data centres",
-   "ok": true,
-   "stories": 99
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   }
  ],
  "items": [
+  {
+   "title": "‘Serious error of judgment’: outrage over military AI event at Berlin arts complex",
+   "url": "https://www.theguardian.com/world/2026/nov/22/military-ai-event-berlin-kraftwerk-arts-complex",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-22T06:00:21+00:00"
+  },
+  {
+   "title": "South Korea education minister resigns after AI cheating scandal engulfs university exams",
+   "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-22T05:04:39+00:00"
+  },
   {
    "title": "Google employees protest AI in schools policy",
    "url": "https://www.npr.org/2026/11/21/nx-s1-6048599/google-employees-protest-ai-in-schools-policy",
@@ -3005,20 +3019,6 @@
    "source": "The Guardian",
    "region": "UK",
    "published": "2026-11-19T06:00:19+00:00"
-  },
-  {
-   "title": "Is the AI bubble bursting just as Anthropic goes public?",
-   "url": "https://www.dw.com/en/is-the-ai-bubble-bursting-just-as-anthropic-goes-public/a-79896537?maca=en-rss-en-all-1573-rdf",
-   "source": "DW",
-   "region": "Germany",
-   "published": "2026-11-19T05:58:00+00:00"
-  },
-  {
-   "title": "Utah lets AI renew—and in one pilot write—prescriptions, but federal FDA oversight remains unanswered",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRmVqbVBvLWlqdElzY1BPNG9LUHhxSU9Ub01BeDRibzRadmZDN2huYTh0eGd1RURZVjhxYktIOEUtek02UGRaSEdoRFhpY1hkV3dUOVZxbFdGcVRhSUxkbkRPbU1QT0FlTk9MWHFGU0VSdC1MYVQyVW5jSnlnd2RjXzlyUUNZQzlU?oc=5",
-   "source": "Medical Daily",
-   "region": "International",
-   "published": "2026-11-19T05:54:44+00:00"
   }
  ]
 }
