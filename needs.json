@@ -484,12 +484,14 @@
    "places": [
     {
      "name": "Kenya",
-     "lon": 37.9,
      "lat": 0.0,
-     "precision": "country"
+     "lon": 37.9,
+     "precision": "region"
     }
    ],
-   "stage": "reported"
+   "stage": "reported",
+   "drawing": "drawings/02-kenya-forecast-sms.svg",
+   "drawing_note": "Study 02. Reported elements only, from Meteored (on Gates Notes), DevelopmentAid and UC Davis MRR."
   },
   {
    "title": "ISOC Nigeria Launches Africa’s First School on Data and AI Governance",
