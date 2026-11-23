@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T21:48:59+00:00",
+ "updated": "2026-11-23T02:48:15+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -12,7 +12,7 @@
    "name": "BBC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 9
+   "ai_stories": 10
   },
   {
    "name": "Al Jazeera",
@@ -84,13 +84,13 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 64
+   "ai_stories": 63
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 62
+   "ai_stories": 50
   },
   {
    "name": "Google News: famine",
@@ -114,13 +114,13 @@
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 82
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 33
+   "ai_stories": 34
   },
   {
    "name": "Google News: Gates",
@@ -168,13 +168,13 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 48
+   "stories": 47
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 39
+   "stories": 38
   },
   {
    "name": "DatacenterDynamics",
@@ -186,19 +186,19 @@
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 29
+   "stories": 26
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
    "ok": true,
-   "stories": 46
+   "stories": 48
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 76
+   "stories": 88
   },
   {
    "name": "Google News: Gulf",
@@ -210,7 +210,7 @@
    "name": "Google News: Latin America",
    "set": "Data centres",
    "ok": true,
-   "stories": 29
+   "stories": 27
   },
   {
    "name": "Google News: new builds",
@@ -220,6 +220,25 @@
   }
  ],
  "items": [
+  {
+   "title": "India and Korea's non-techs may offer shelter from AI volatility: Santa Lucia AM",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdE9iVjY4SHZDcGVYYm1xZWdmUkpYbE1CMDl4WFVWbndpTlBpSmFnOGZ5LUhkakVmVVdhdHhpdnVlNG1qamFyRkpjdmlIdWU0cUxveWFfeHBSSHlabkYzWXJsTERUdHNLU1ZNa1FBcTFYZF96Mm5fOHhlOUh6VnZuVFV5TjBVcEdfdUFBelJBTEV6SDU4QzIzMXRJNVRFdm5nWVM3cDk3bDBDOUo5Q0hr?oc=5",
+   "source": "CNBC",
+   "region": "International",
+   "published": "2026-11-23T02:27:43+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "proposed"
+  },
   {
    "title": "Atiku urges Nigeria to harness AI, automation, digital networks to transform agriculture, other sectors",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNbEdsQk4yY1RIVjNhODFocXV2Qi1Qb2dhYjBlZEZ1Tk9Fb2ZQZ2w0SzVTQ1h2NUd3ODdtSFBRZHROdGRmX2xYeXNiZnNwQnBneXYtMEk3X3Q5dDhyTzRpR3ZmcElheUduaUw5SGtuM08wT3VlZHA5cGlPX0ViVGFZYnZfY0oxMW1FWXN0YTdKeEV4ekVmRkxab0NUWFQtUUszTmFDTFdDelpMREFyaHB5YTkwT09JdUFLZ3ZlN3dRU1BwRERYUEdOM0V3WVNzT0NPcWl1TEtR?oc=5",
@@ -665,6 +684,25 @@
    "stage": "reported"
   },
   {
+   "title": "From “A-I!” to AI: What Ghana’s teachers want from artificial intelligence",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNREdvRUdodlh4c2EtdkIwX1FOOVVESHZjelRPQWYxVzVHUjktT1ZWQ09tajVTRkJQUUE3Wi1pTklJOXlYZkhYN2FZMl9ILXNINHF4SERYNUZTVGhhWDR2V2tNZ3pJUk9RLXlKcXQ4d20wOXMzUG5yakp4cWk5LUJmbnd1SHM5TkN3YjhtbjdHV3JkZw?oc=5",
+   "source": "Unicef",
+   "region": "International",
+   "published": "2026-11-11T08:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "Ghana",
+     "lon": -1.0,
+     "lat": 7.9,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
    "title": "AI in Indian agriculture: Can technology make farming smarter and easier?",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWVhlWTFvZkJ4elNfOXRwZUNUeFZBVy1FWGFXQ3lodXRRcTFlTEpXZ0JrN3BPWVZ2a09PT0dwTFRpRk5oM3E4VjBWbXpadGc4MmdoRjdrYXQtQjRlWkVCM1dvZHhDM0NmSWJ0S19hUDBqOVR1XzFSSlNlZXpRNmJhQmhxY19sT2hXb3MyNTlzWElCNjJqXzdNaVBka3V5RjZ5TTMyRThlRmNadVRBZmNxZlJXOTVOTzhlR2lOa3ZWVV9meE5oNXhMQzFva1DSAdIBQVVfeXFMTlhMaVFXY3FYLS1GdElCb2RnU1FsMFVYcXRuNy1oMEEwU0lSZ0ozeHNEZ01aTXc1ZGRQTmgyMlQ5d2hiUGY3QS1peF9IbFRPbC1FZGR3NXptcy16RUY2SXZGODdPMEp5Um1MY1dYVlUtUjlBdlM0TFRhM0pTYXdPbTJxUWx1Uk5xYXZ0cFBkV2hYcnZjT094d3ZJUU04ZVB6akhDMVFWWDZjRHBpUlBoVzBBNjNYdmtRQVBXTGFJNVZvbkNoUTNoWW5rMGtwMXBnRGxR?oc=5",
    "source": "India Today",
@@ -678,25 +716,6 @@
      "name": "India",
      "lon": 78.9,
      "lat": 21.0,
-     "precision": "country"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
-   "title": "From “A-I!” to AI: What Ghana’s teachers want from artificial intelligence",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNREdvRUdodlh4c2EtdkIwX1FOOVVESHZjelRPQWYxVzVHUjktT1ZWQ09tajVTRkJQUUE3Wi1pTklJOXlYZkhYN2FZMl9ILXNINHF4SERYNUZTVGhhWDR2V2tNZ3pJUk9RLXlKcXQ4d20wOXMzUG5yakp4cWk5LUJmbnd1SHM5TkN3YjhtbjdHV3JkZw?oc=5",
-   "source": "UNICEF",
-   "region": "International",
-   "published": "2026-11-11T07:12:47+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "Ghana",
-     "lon": -1.0,
-     "lat": 7.9,
      "precision": "country"
     }
    ],
@@ -1295,9 +1314,9 @@
    "stage": "reported"
   },
   {
-   "title": "AI tool makes culturally appropriate lessons for teachers in India",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUFVGWGs1RC1YMUxUZVllM3c0NjFCbW9aNFpuajV3eHJmNFhpRjlfQ0tzV2pnOG0wVUpGSlQzVVN4Y3RVV3ZyRmlLSVdZSGk3WlYzVHdTZFRtY2xISmtKR0FBMWxhTHBjR0VnV3VPZ19JTzBVaVIyRkx3MlpSUXpSRGp4N2ZXQkl6S0lnWXdyODk5ZW1SV1VlQ1JEUXVWWWxyalE?oc=5",
-   "source": "Cornell Chronicle",
+   "title": "AI in the classroom: Are students in India ready for a machine-run world?",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeVJLUmhZaW1yb2JVNnFWTDBXSHhHOHl2aDZINnF0Qjh1RFZuRjhkaG5CdTNKQ3lWdkhIc1JvNHNpb3doVWNtUFE5NFpNeVNxc3ZlNndqMTVyVDBteGY1ZHNCZEswelVoN1RvZHktOEFHMDBNWmxQbGFpakMwZ0ExelExbVlVM0pBTnhfZ3d5WkRZazBQTWVrSnprbW02YlFrTXNKc0Z2dzZJeHZHZ0lTMTlpcEh6TTZVQm5INVlQNFdBVnPSAcgBQVVfeXFMUGJzSEZCU1o4dUpqLVBMUlZFcEZnSkdZRmpneG9xaWVOdjhuZGlkVGdQa194WGoxUzVkZmxfbVFJRGpDb0NCeENrTE5nNkdVSWtsOUdXTFdJQjhiS3JwRkNMYmJpRVlaTThiRFNtYlZ6ZUE3X2pRdTRScFp5TGh0azgyWVJFU0M2dG44QWRiSEVHSmdQbEZzallkSU9CVGIyVmMxMXZXOUMwTkVvXzkxR3pORlIwa3lvZXNla1c3X0dIVGZzc0ZsV0s?oc=5",
+   "source": "The Week",
    "region": "International",
    "published": "2026-10-08T07:00:00+00:00",
    "needs": [
@@ -1314,9 +1333,9 @@
    "stage": "reported"
   },
   {
-   "title": "AI in the classroom: Are students in India ready for a machine-run world?",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeVJLUmhZaW1yb2JVNnFWTDBXSHhHOHl2aDZINnF0Qjh1RFZuRjhkaG5CdTNKQ3lWdkhIc1JvNHNpb3doVWNtUFE5NFpNeVNxc3ZlNndqMTVyVDBteGY1ZHNCZEswelVoN1RvZHktOEFHMDBNWmxQbGFpakMwZ0ExelExbVlVM0pBTnhfZ3d5WkRZazBQTWVrSnprbW02YlFrTXNKc0Z2dzZJeHZHZ0lTMTlpcEh6TTZVQm5INVlQNFdBVnPSAcgBQVVfeXFMUGJzSEZCU1o4dUpqLVBMUlZFcEZnSkdZRmpneG9xaWVOdjhuZGlkVGdQa194WGoxUzVkZmxfbVFJRGpDb0NCeENrTE5nNkdVSWtsOUdXTFdJQjhiS3JwRkNMYmJpRVlaTThiRFNtYlZ6ZUE3X2pRdTRScFp5TGh0azgyWVJFU0M2dG44QWRiSEVHSmdQbEZzallkSU9CVGIyVmMxMXZXOUMwTkVvXzkxR3pORlIwa3lvZXNla1c3X0dIVGZzc0ZsV0s?oc=5",
-   "source": "The Week",
+   "title": "AI tool makes culturally appropriate lessons for teachers in India",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUFVGWGs1RC1YMUxUZVllM3c0NjFCbW9aNFpuajV3eHJmNFhpRjlfQ0tzV2pnOG0wVUpGSlQzVVN4Y3RVV3ZyRmlLSVdZSGk3WlYzVHdTZFRtY2xISmtKR0FBMWxhTHBjR0VnV3VPZ19JTzBVaVIyRkx3MlpSUXpSRGp4N2ZXQkl6S0lnWXdyODk5ZW1SV1VlQ1JEUXVWWWxyalE?oc=5",
+   "source": "Cornell Chronicle",
    "region": "International",
    "published": "2026-10-08T07:00:00+00:00",
    "needs": [
@@ -1362,6 +1381,25 @@
     }
    ],
    "stage": "reported"
+  },
+  {
+   "title": "Meta’s AI could flood the internet; Four Indian brands putting a new spin on khadi",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSzBiQjRrQWljRnVIVjZGZEhvOUVDZGMzb3Q4N2hjZGVXcWw0VkpfN1NJM0Y5THNuT2dMSXJsX2p4dk9Dajg2dWtIS0d4cGNXcjRNa212RGZxaUVsaTlUS19TSWJaa2RiSGJXazBKcHA3bTQyNFR1dmUtblpPOTFlSVRFcnN3QWZ2THc?oc=5",
+   "source": "YourStory.com",
+   "region": "International",
+   "published": "2026-10-02T07:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "proposed"
   },
   {
    "title": "Cambridge Report Urges Teacher Involvement In Shaping India's AI Education Policy",
@@ -1473,11 +1511,23 @@
    "stage": "reported"
   },
   {
-   "title": "MTN Group Foundation and Gates Foundation launch first-of-its-kind Maternal Health Multiplier platform to expand access to AI-enabled maternal health care in Nigeria |",
-   "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPQ1BFSXBfSloyZ2RzMXRmWDhma0JVbVpncGRfeWkwU0h5MjNMQkpLX3F6QVFUQnZBVENGT1MxdUNsaTNPNXdQX0tic2lLcFlqRmMyTGhzdlV0Sk84VkIxYlZsT1RhS0YwTWhXdmpiejQ5dTZibGR5Tnk0Q3V5WkZLTDFmY2Z5WlZ4YkY1dzByak93Zm1zYXdQUTdORkxIOTJnMHRsS2RNbklwYWtEdXJxcFJ1X00wWjdMUFNyWUdrc1J4N1ZfSlpYeFN0ZzFfVEFfdWppeld4ZnpQaVV4Q0xGOS1JR3NYSU8tNWM3R1N6YU40NDhzUjRoMEpERlByVG10U2VLRnhuLURoSFBRZV9XU3EyT0w?oc=5",
-   "source": "MTN",
+   "title": "MTN, Gates Foundation launch AI maternal health platform",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYTg4R1NrWWpSbjVDcDBpbjJLdU9xcUoxZHNVMk0ySmVGYkJPb21JbnMzV3pTcnZuSGFhODU1REtNWG9WSURmdGtaRHpsb0p0V2wtOGFmMTFKNU1qLUZpeUZnaVlndEV6SG50N0k1bzhaeXNvdkxkWGJ1NHlsVXZkeHRubkp4TzIycFVPTlZVeVNzT3hVcDZST2hSVVhXNVFzTk5V?oc=5",
+   "source": "ITWeb Africa",
    "region": "International",
    "published": "2026-09-23T07:00:00+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [],
+   "stage": "pilot"
+  },
+  {
+   "title": "MTN Group Foundation and Gates Foundation launch first-of-its-kind Maternal Health Multiplier platform to expand access to AI-enabled maternal health care in Nigeria",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLURDTkNNQ1FYeTFIRDdEcUxlSjZYYWtSdmp1NDdndkxocEs1UzRvVG9HS2lXTzZwRktLa3Nlazc5NHlWWENRbEFpcmY4N1ZxbzRLR2p3dS15cGZRblhKQ0xnQV9fUDd0VzlPOVI0QzU4YUxhVVRqRFJlTFpkak45YkFfbmdIU3RtV2dIeXE2OVZaWmdlQ3M4UGhCRWU?oc=5",
+   "source": "Gates Foundation",
+   "region": "International",
+   "published": "2026-09-22T07:00:00+00:00",
    "needs": [
     "health"
    ],
@@ -1489,18 +1539,6 @@
      "precision": "country"
     }
    ],
-   "stage": "pilot"
-  },
-  {
-   "title": "MTN, Gates Foundation launch AI maternal health platform",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYTg4R1NrWWpSbjVDcDBpbjJLdU9xcUoxZHNVMk0ySmVGYkJPb21JbnMzV3pTcnZuSGFhODU1REtNWG9WSURmdGtaRHpsb0p0V2wtOGFmMTFKNU1qLUZpeUZnaVlndEV6SG50N0k1bzhaeXNvdkxkWGJ1NHlsVXZkeHRubkp4TzIycFVPTlZVeVNzT3hVcDZST2hSVVhXNVFzTk5V?oc=5",
-   "source": "ITWeb Africa",
-   "region": "International",
-   "published": "2026-09-23T07:00:00+00:00",
-   "needs": [
-    "health"
-   ],
-   "places": [],
    "stage": "pilot"
   },
   {
@@ -1647,6 +1685,18 @@
    "stage": "reported"
   },
   {
+   "title": "Gates Foundation and Google to Bring AI resources to 200 Million Farmers Across the Global South",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc1RTZVc1RXJQVGpycm5DbGZmTW1rNEowNURyVXFRT0pwNjhVTWViaWdIUHdVYkNfbXVoSnlBMF9mamFlaDJmTWhRM09maFNneFRrZ201UmhVcEJFT1NwQ25hSkZQdFUyZ3Exd3hTQzZocmpPYURmb2d0MFdTRFZVdW52RlBwYnN6cjM2S2w2c3c?oc=5",
+   "source": "Gates Foundation",
+   "region": "International",
+   "published": "2026-09-18T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "Adobe expands AI, digital creativity skilling to 7.8 million students, teachers in India",
    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZnJ4WkxYbHdXVGlIdG5pdFRsOVkxUENMS2Z3V0hMX01IMi1LVEZQOW1UV3YyODcxWlJTd2dhLTRNUEFjaW5ZbXg4Rl9zY1dCbDk5aC1ySXo0MHJKNFAyR1p6MFZTWC16SjZPUUxQalRsU0NJdDExTXlqc1hzV3JlY3ZpbVRtc2VxRnZUU2pyUlBaNnlQd1hqNnBRNVlHdlc5NE5lS0ZfNEc4OFJSWlljTWRYTmZ3QndjaWdoU3FnaVZJd2VtbjdpZnVUWE5OcE9YbUYyOFlTZ3RpX3dZUzV0TVZIM1VJUldvc1YtStIB8gFBVV95cUxQYUVOZTRKcjNDdU5ReWQzUFZhNGZIa2lFbXFHZTNrdHFZbTFDamM1ZGlNbFpkemE2Z19LbmNYNEw5V0pKVklfTnY5YTljWHV4WWtLVHIwY2JBLUhUb0xBcU1zNVlPZmtBVks0VUZYc1RPOXFZcjg5VFBXeUx3SGVCbEVNNW4wWHRwLXo3dDk2WmdzOEdIZ05zR2hzZ19TbURvTTJobHVHNjI0MVBYUHJaQS15WlRBTUpDdHF5azBpaWNPRU11YnNaMFBRX2gyNnlpNjl3ZHp2OTBGVjQyZHF2cTQ5akYyLUtrY1JpNTJDdG4wUQ?oc=5",
    "source": "ET Education",
@@ -1663,18 +1713,6 @@
      "precision": "country"
     }
    ],
-   "stage": "reported"
-  },
-  {
-   "title": "Gates Foundation and Google to Bring AI resources to 200 Million Farmers Across the Global South",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc1RTZVc1RXJQVGpycm5DbGZmTW1rNEowNURyVXFRT0pwNjhVTWViaWdIUHdVYkNfbXVoSnlBMF9mamFlaDJmTWhRM09maFNneFRrZ201UmhVcEJFT1NwQ25hSkZQdFUyZ3Exd3hTQzZocmpPYURmb2d0MFdTRFZVdW52RlBwYnN6cjM2S2w2c3c?oc=5",
-   "source": "Gates Foundation",
-   "region": "International",
-   "published": "2026-09-18T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
    "stage": "reported"
   },
   {
@@ -2066,25 +2104,6 @@
    "stage": "pilot"
   },
   {
-   "title": "AI cooperation with China brings hope to Pakistan's small farmers",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5hOEZUM0JwVHFvZHhET3pHUFBQemd1NHdfMFBCR3VQdnZPNTZneHVTeDFyV0o0ZTdfR2Nfa0hFR1h1RG96NGQzNXBFTFRpai16U08zUWpyVS1IME9SZ2R2QkNwd2dNMW5lX1lsbFFiZmhYMy1Fek9LcERUMDZtXzQ?oc=5",
-   "source": "State Council Information Office",
-   "region": "International",
-   "published": "2026-08-31T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [
-    {
-     "name": "Pakistan",
-     "lon": 69.3,
-     "lat": 30.4,
-     "precision": "country"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
    "title": "Nepal disaster: Fake and AI images flood social media as deaths mount - Truth or Fake",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMHgyRDhnYXJGZm45YVR6YkhfX0p1LUpJSmlVdnFla0VWN1ZVMFB4dHk2TEx6cWxUaDBPdHdpWTJSeHFNeTU0bzFhUGJKcnU1TGR4ZE5KelF1YjV3MUFRQkJOT3FvYXNtNTV3X3hScGRRVGlWT2Y4OWV6dHRiQXVpLXl5ekh0eWtLNDBxbVVWRlRRdlI1MkN3WXpQUW0?oc=5",
    "source": "France 24",
@@ -2121,6 +2140,25 @@
     }
    ],
    "stage": "critique"
+  },
+  {
+   "title": "AI cooperation with China brings hope to Pakistan's small farmers",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5hOEZUM0JwVHFvZHhET3pHUFBQemd1NHdfMFBCR3VQdnZPNTZneHVTeDFyV0o0ZTdfR2Nfa0hFR1h1RG96NGQzNXBFTFRpai16U08zUWpyVS1IME9SZ2R2QkNwd2dNMW5lX1lsbFFiZmhYMy1Fek9LcERUMDZtXzQ?oc=5",
+   "source": "State Council Information Office",
+   "region": "International",
+   "published": "2026-08-31T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Pakistan",
+     "lon": 69.3,
+     "lat": 30.4,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
   },
   {
    "title": "FM Sitharaman meets US CEOs, pitches India as global hub for AI, agriculture and hospitality investments",
@@ -2730,7 +2768,7 @@
   },
   {
    "title": "Water scarcity meets AI ambitions | Will India drain its aquifers to automate its demographic dividend?",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNQTRQY01LSzhIRlFYY19jMGNXWWUzNkNNdjA2dkhaVjFmR3owcGVQN3NnRG1PNnFmOUdDZTlidTd2TkRWbjQ3Tk9oN2xsVnlPVFJBR05HTjhjYWxtUEY1cTRZTlRwQlp6WlhqenFQVTluQVJBa2VuMVlTR2hPQzVkaXFLRU5qeDNZNk9JTU5fbENETDhsQjBiOFJ1V1dZdzJ5V2JhamhwX2JIS0N0cEJnaXUxRXVqbjkxR21VSmVsM0hWS1BUM0hTR1dlOTJVYVJTYWxNV2xfU0JQNTg0dEE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNQTRQY01LSzhIRlFYY19jMGNXWWUzNkNNdjA2dkhaVjFmR3owcGVQN3NnRG1PNnFmOUdDZTlidTd2TkRWbjQ3Tk9oN2xsVnlPVFJBR05HTjhjYWxtUEY1cTRZTlRwQlp6WlhqenFQVTluQVJBa2VuMVlTR2hPQzVkaXFLRU5qeDNZNk9JTU5fbENETDhsQjBiOFJ1V1dZdzJ5V2JhamhwX2JIS0N0cEJnaXUxRXVqbjkxR21VSmVsM0hWS1BUM0hTR1dlOTJVYVJTYWxNV2xfU0JQNTg0dEHSAesBQVVfeXFMT0lLSnRzeGVlTmdjVi1ma0VyV1daMVY0YjFjVm80VHFXbnIwSzgwNktENzNxMEx1SVZRcVBycGxTMk82Rmlia1BzTkIwOXVITFZXRU8zVGpwYkVha1lOVGhvajZTSU1hQTk0RUNGZmxXMVVYdGNuNGhTR0J1ZVZIQmdaUVpPVTVBWm1rV0NlQXJqSjlfRGRKOE5sdmZyRFFzTzBWYTdHbFQxRTk2WnlacUVVRlFQVmhwcjg4TFF2cFo3LUoxLWtMbzBHZXcydU1fU1BDUWhpVHhmdno4UWEyMkJyVHNIeF9OYWtHOA?oc=5",
    "source": "Deccan Herald",
    "region": "International",
    "published": "2026-07-16T07:00:00+00:00",
@@ -2842,6 +2880,25 @@
    "stage": "reported"
   },
   {
+   "title": "FloodSense-PK — AI Flood Early Warning System for Pakistan | Demo",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BaVVkQWhDX2huR1BNLWFsS00taEtuZmJPdUVaVkR2SVZCQ21ZRDlYRy1oQlYxY0NZLVZBUWd3RXB6RGhGZDNFYVBmcXhOMnd5cE9oZ2gzdHR0ZHV5?oc=5",
+   "source": "YouTube",
+   "region": "International",
+   "published": "2026-07-14T07:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "Pakistan",
+     "lon": 69.3,
+     "lat": 30.4,
+     "precision": "country"
+    }
+   ],
+   "stage": "critique"
+  },
+  {
    "title": "TikTok Launches In-App AI Literacy Hub in South Africa, Nigeria and Kenya as Part of Broader Transparency Push",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcUsyNDBaYmhWTXkzV2RwZ3RGRURXdmhPbmR1WG5GS1dxOTNKbGdBZVBoSFBrSVZfbURGMFQzZXZMMmY1WDRRZWNBbjFvNHo0WloyQWw1RkhoQnZacC0yOEl3VnpIVG81OTI5dTdhMHRYN25FVnotU2ZtWmtReEdZQ1hHLWt3c1RodUNmNFZJdVlSZWhKTkp1dWlLMGFkbC1KMDhrcE55Nk41ZzZmTV9xQ2VoRDVZdWlyTmlVZ2RxTzU0R1JKbWJ6ajZ3?oc=5",
    "source": "iAfrica.com",
@@ -2865,25 +2922,6 @@
     }
    ],
    "stage": "pilot"
-  },
-  {
-   "title": "FloodSense-PK — AI Flood Early Warning System for Pakistan | Demo",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BaVVkQWhDX2huR1BNLWFsS00taEtuZmJPdUVaVkR2SVZCQ21ZRDlYRy1oQlYxY0NZLVZBUWd3RXB6RGhGZDNFYVBmcXhOMnd5cE9oZ2gzdHR0ZHV5?oc=5",
-   "source": "YouTube",
-   "region": "International",
-   "published": "2026-07-14T07:00:00+00:00",
-   "needs": [
-    "water"
-   ],
-   "places": [
-    {
-     "name": "Pakistan",
-     "lon": 69.3,
-     "lat": 30.4,
-     "precision": "country"
-    }
-   ],
-   "stage": "critique"
   },
   {
    "title": "From policy to classroom: India’s AI rollout faces its real test",
@@ -2971,6 +3009,25 @@
     "food"
    ],
    "places": [],
+   "stage": "reported"
+  },
+  {
+   "title": "India emerges as safe haven for investors as they seek shelter from AI frenzy",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNVplUjV2VWR5a3ZwRzVmT2g5eFllQVR0V2RlRGs5dzlZd3JZZVpEeHZET0FnV010dGFYSGxCYUZOR1J6cjRXamtKR2xWWWFaRHZRTnkySW1BWTJfZnhWYzZGdnZzOHlEeWg0STNHQTdpMWRuVzhfZEdNa0pESHdYb2FLZEotR0JxOTJ5N0N5SmdnMTZiWDRNQktoZmdYVUstTEFaWE56cXotWFVnRnhBYWpURmczZlhJM3U0N0RMb2wyQ1JDNFpoYW55Z9IB0AFBVV95cUxOaER0NUZoLTJ6anY3UWNEdFlVczlmTS1HcTBEVGVTdlBjX19Tb0pRdEZEVC1ueVR2T2Iwc0lyTzhyb2RTV2Y5ZVFvSnpYeWczTFpYclhmcnNtcXl4RXNhUkxQckNfbkNISGVxVlUwcUMzT3hBYTVIdmRJcXJLZExwSnVmUm9KRFdYUHhTRGFzX2ZNbURjQVlVWld2RGlSOVlhempRMTNTMHFIT2hVVlNwWmotMzZYdS12OVVMbzlMX3dHbEgxeDJHb2JOdWttaU81?oc=5",
+   "source": "ET Enterprise AI",
+   "region": "International",
+   "published": "2026-07-05T07:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
    "stage": "reported"
   },
   {
