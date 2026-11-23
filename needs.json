@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T02:48:15+00:00",
- "sources_reached": 9,
+ "updated": "2026-11-23T12:51:39+00:00",
+ "sources_reached": 7,
  "sources": [
   {
    "name": "The Guardian",
@@ -24,7 +24,7 @@
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 10
+   "ai_stories": 11
   },
   {
    "name": "ABC News",
@@ -42,7 +42,7 @@
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 15
+   "ai_stories": 14
   },
   {
    "name": "NPR",
@@ -89,14 +89,14 @@
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 50
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 46
+   "ai_stories": 47
   },
   {
    "name": "Google News: farmers",
@@ -108,25 +108,25 @@
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 25
+   "ai_stories": 23
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 82
+   "ai_stories": 25
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 34
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 24
+   "ai_stories": 83
   },
   {
    "name": "Dezeen: data centres",
@@ -173,8 +173,8 @@
   {
    "name": "Google News: architecture",
    "set": "Data centres",
-   "ok": true,
-   "stories": 38
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "DatacenterDynamics",
@@ -185,8 +185,8 @@
   {
    "name": "Google News: India",
    "set": "Data centres",
-   "ok": true,
-   "stories": 26
+   "ok": false,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "Google News: Africa",
@@ -198,34 +198,46 @@
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 88
+   "stories": 79
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
    "ok": true,
-   "stories": 37
+   "stories": 38
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
    "ok": true,
-   "stories": 27
+   "stories": 56
   },
   {
    "name": "Google News: new builds",
    "set": "Data centres",
    "ok": true,
-   "stories": 97
+   "stories": 96
   }
  ],
  "items": [
+  {
+   "title": "AI’s hunger for turbines is sucking in entire industries",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVWVaWWZfRTZlcFBldXIySndULUFua0JuakpHYlp2UHJFNzlkR0xhdWdTbnZFazdjNXVzQ1dlcmMtZTZnT2R4UG5hRDh0Ql9pSVA4MHl1YURqQW1hbEw1dUFTX1FGVmVQUklwa214V2h1TmlBeEMybWZuaHNtZU56S1pmTFBSMHJLMDYyMi1DZ05objNHWjN5VHlDMA?oc=5",
+   "source": "The Business Times",
+   "region": "International",
+   "published": "2026-11-23T10:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
   {
    "title": "India and Korea's non-techs may offer shelter from AI volatility: Santa Lucia AM",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdE9iVjY4SHZDcGVYYm1xZWdmUkpYbE1CMDl4WFVWbndpTlBpSmFnOGZ5LUhkakVmVVdhdHhpdnVlNG1qamFyRkpjdmlIdWU0cUxveWFfeHBSSHlabkYzWXJsTERUdHNLU1ZNa1FBcTFYZF96Mm5fOHhlOUh6VnZuVFV5TjBVcEdfdUFBelJBTEV6SDU4QzIzMXRJNVRFdm5nWVM3cDk3bDBDOUo5Q0hr?oc=5",
    "source": "CNBC",
    "region": "International",
-   "published": "2026-11-23T02:27:43+00:00",
+   "published": "2026-11-23T02:27:00+00:00",
    "needs": [
     "water"
    ],
@@ -1511,23 +1523,11 @@
    "stage": "reported"
   },
   {
-   "title": "MTN, Gates Foundation launch AI maternal health platform",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYTg4R1NrWWpSbjVDcDBpbjJLdU9xcUoxZHNVMk0ySmVGYkJPb21JbnMzV3pTcnZuSGFhODU1REtNWG9WSURmdGtaRHpsb0p0V2wtOGFmMTFKNU1qLUZpeUZnaVlndEV6SG50N0k1bzhaeXNvdkxkWGJ1NHlsVXZkeHRubkp4TzIycFVPTlZVeVNzT3hVcDZST2hSVVhXNVFzTk5V?oc=5",
-   "source": "ITWeb Africa",
+   "title": "MTN Group Foundation and Gates Foundation launch first-of-its-kind Maternal Health Multiplier platform to expand access to AI-enabled maternal health care in Nigeria |",
+   "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPQ1BFSXBfSloyZ2RzMXRmWDhma0JVbVpncGRfeWkwU0h5MjNMQkpLX3F6QVFUQnZBVENGT1MxdUNsaTNPNXdQX0tic2lLcFlqRmMyTGhzdlV0Sk84VkIxYlZsT1RhS0YwTWhXdmpiejQ5dTZibGR5Tnk0Q3V5WkZLTDFmY2Z5WlZ4YkY1dzByak93Zm1zYXdQUTdORkxIOTJnMHRsS2RNbklwYWtEdXJxcFJ1X00wWjdMUFNyWUdrc1J4N1ZfSlpYeFN0ZzFfVEFfdWppeld4ZnpQaVV4Q0xGOS1JR3NYSU8tNWM3R1N6YU40NDhzUjRoMEpERlByVG10U2VLRnhuLURoSFBRZV9XU3EyT0w?oc=5",
+   "source": "MTN",
    "region": "International",
    "published": "2026-09-23T07:00:00+00:00",
-   "needs": [
-    "health"
-   ],
-   "places": [],
-   "stage": "pilot"
-  },
-  {
-   "title": "MTN Group Foundation and Gates Foundation launch first-of-its-kind Maternal Health Multiplier platform to expand access to AI-enabled maternal health care in Nigeria",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLURDTkNNQ1FYeTFIRDdEcUxlSjZYYWtSdmp1NDdndkxocEs1UzRvVG9HS2lXTzZwRktLa3Nlazc5NHlWWENRbEFpcmY4N1ZxbzRLR2p3dS15cGZRblhKQ0xnQV9fUDd0VzlPOVI0QzU4YUxhVVRqRFJlTFpkak45YkFfbmdIU3RtV2dIeXE2OVZaWmdlQ3M4UGhCRWU?oc=5",
-   "source": "Gates Foundation",
-   "region": "International",
-   "published": "2026-09-22T07:00:00+00:00",
    "needs": [
     "health"
    ],
@@ -1539,6 +1539,18 @@
      "precision": "country"
     }
    ],
+   "stage": "pilot"
+  },
+  {
+   "title": "MTN, Gates Foundation launch AI maternal health platform",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYTg4R1NrWWpSbjVDcDBpbjJLdU9xcUoxZHNVMk0ySmVGYkJPb21JbnMzV3pTcnZuSGFhODU1REtNWG9WSURmdGtaRHpsb0p0V2wtOGFmMTFKNU1qLUZpeUZnaVlndEV6SG50N0k1bzhaeXNvdkxkWGJ1NHlsVXZkeHRubkp4TzIycFVPTlZVeVNzT3hVcDZST2hSVVhXNVFzTk5V?oc=5",
+   "source": "ITWeb Africa",
+   "region": "International",
+   "published": "2026-09-23T07:00:00+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [],
    "stage": "pilot"
   },
   {
@@ -1759,9 +1771,9 @@
    "stage": "reported"
   },
   {
-   "title": "Gates Foundation pledges $1B for AI in health, farming and education",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSjFuelZvV01mVVBiRTk3Q3BDSGROUzJEM1JZZURfVnRnaS16a1pOOUhoZW9jTGd4c3Z2Tkx4TW12bVN0LUotc3I4VUNKUDF2ZnIxaGM2TzZqRGwxdjRtUnBxYVdKWXdmWFpYeFY1b19JcW5fTjVUZ1I5ek40T1otWGpLcDVjeDZKWnp1eGoyUlFUWm5JTDhTSHpEN0RXOXFIOGM2V0F4ejhOU2hWVVIw?oc=5",
-   "source": "Connecting Africa",
+   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
+   "source": "The National",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [
@@ -1771,9 +1783,9 @@
    "stage": "reported"
   },
   {
-   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
-   "source": "The National",
+   "title": "Gates Foundation pledges $1B for AI in health, farming and education",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSjFuelZvV01mVVBiRTk3Q3BDSGROUzJEM1JZZURfVnRnaS16a1pOOUhoZW9jTGd4c3Z2Tkx4TW12bVN0LUotc3I4VUNKUDF2ZnIxaGM2TzZqRGwxdjRtUnBxYVdKWXdmWFpYeFY1b19JcW5fTjVUZ1I5ek40T1otWGpLcDVjeDZKWnp1eGoyUlFUWm5JTDhTSHpEN0RXOXFIOGM2V0F4ejhOU2hWVVIw?oc=5",
+   "source": "Connecting Africa",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [
@@ -4507,6 +4519,25 @@
    "stage": "reported"
   },
   {
+   "title": "PSA Prof. Ajay Kumar Sood launched ‘AI Playbooks for Agriculture and SMEs’ and ‘AI Sandbox White Paper’ to accelerate Responsible AI Adoption across India",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE03S002a28yZXdpNHNoaDIxLU10VmlGNHoxR21tOW16N19hRTBUTE1hdVM2X28zbTdpOEoxdmN5ZHh5YnhWbDQzakFsX3BTcEhHSHlTMVhmYURraXp2VnNaREVuT2NEZGJj?oc=5",
+   "source": "PIB",
+   "region": "International",
+   "published": "2025-10-22T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "pilot"
+  },
+  {
    "title": "Text mining and machine learning reveal global determinants of food insecurity",
    "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1WeVAxTndMWDI2LUYtNHpzM2RFazYtcW1EbDFudkxONnY2X1ZqTGIxNnpmSjMyTkhuVWhZWC00d01pUQ?oc=5",
    "source": "Nature",
@@ -4677,8 +4708,8 @@
    "stage": "reported"
   },
   {
-   "title": "User Consultation Workshop on SukhaRakshak AI for Drought Management in India Organized",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOc3dRb3RhS25GZXVmcVpLelRwRy1YNE9OYUxCcFR2dUw1dkxTRkVjMTBKOFFYVWJTYkpSdEVaM0U4eEFDSDAxQnFhekpYd2cxYnotM0hVVEp1VWhYRVJUT3BpU3lRcFJ3WXRUdjFoLUszSjVCbXBJMExCX25iNTBTNXdXalItcHVGNC01U1dOdzdSazJMeFM4bl8taERia09PWEE?oc=5",
+   "title": "User Consultation Workshop on SukhaRakshak AI for Drought Management in India",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM185bGRUeXB0VzdHVXczQWt0bXI1VmxJMWlGU2hib2xGcFVlOHlxZjJUWDVvOTVueDZzNHdGdExORHhPaGduYlhqamxwSk1fM0EycWRla3MyUFo0Z0pwdnU2amhKaEtyWWFZV2FBekUzc2FaWFczbVNXVXN5cEVqald4ZHMtRDVneXk2NkF2Znd1SjZF?oc=5",
    "source": "Indian Council Of Agricultural Research",
    "region": "International",
    "published": "2025-08-13T07:00:00+00:00",
@@ -4696,8 +4727,8 @@
    "stage": "reported"
   },
   {
-   "title": "User Consultation Workshop on SukhaRakshak AI for Drought Management in India",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM185bGRUeXB0VzdHVXczQWt0bXI1VmxJMWlGU2hib2xGcFVlOHlxZjJUWDVvOTVueDZzNHdGdExORHhPaGduYlhqamxwSk1fM0EycWRla3MyUFo0Z0pwdnU2amhKaEtyWWFZV2FBekUzc2FaWFczbVNXVXN5cEVqald4ZHMtRDVneXk2NkF2Znd1SjZF?oc=5",
+   "title": "User Consultation Workshop on SukhaRakshak AI for Drought Management in India Organized",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOc3dRb3RhS25GZXVmcVpLelRwRy1YNE9OYUxCcFR2dUw1dkxTRkVjMTBKOFFYVWJTYkpSdEVaM0U4eEFDSDAxQnFhekpYd2cxYnotM0hVVEp1VWhYRVJUT3BpU3lRcFJ3WXRUdjFoLUszSjVCbXBJMExCX25iNTBTNXdXalItcHVGNC01U1dOdzdSazJMeFM4bl8taERia09PWEE?oc=5",
    "source": "Indian Council Of Agricultural Research",
    "region": "International",
    "published": "2025-08-13T07:00:00+00:00",
