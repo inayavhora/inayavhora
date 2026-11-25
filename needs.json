@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T21:14:59+00:00",
- "sources_reached": 9,
+ "updated": "2026-11-25T04:19:08+00:00",
+ "sources_reached": 1,
  "sources": [
   {
    "name": "The Guardian",
@@ -18,7 +18,7 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "DW",
@@ -30,13 +30,13 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 0
   },
   {
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 30
+   "ai_stories": 28
   },
   {
    "name": "The New York Times",
@@ -71,8 +71,8 @@
   {
    "name": "Google News (world)",
    "set": "General",
-   "ok": true,
-   "ai_stories": 100
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "The New Humanitarian",
@@ -83,50 +83,50 @@
   {
    "name": "Specialist sites (1)",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 95
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 62
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 48
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 91
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 84
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 80
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 31
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 82
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Dezeen: data centres",
@@ -167,14 +167,14 @@
   {
    "name": "Google News: design press",
    "set": "Data centres",
-   "ok": true,
-   "stories": 97
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
-   "ok": true,
-   "stories": 92
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "DatacenterDynamics",
@@ -185,38 +185,38 @@
   {
    "name": "Google News: India",
    "set": "Data centres",
-   "ok": true,
-   "stories": 28
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
-   "ok": true,
-   "stories": 89
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
-   "ok": true,
-   "stories": 98
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
-   "ok": true,
-   "stories": 36
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
-   "ok": true,
-   "stories": 57
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: new builds",
    "set": "Data centres",
-   "ok": true,
-   "stories": 100
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   }
  ],
  "items": [

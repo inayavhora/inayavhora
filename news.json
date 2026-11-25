@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T21:14:59+00:00",
- "sources_reached": 12,
+ "updated": "2026-11-25T04:19:09+00:00",
+ "sources_reached": 11,
  "sources": [
   {
    "name": "The Guardian",
@@ -18,7 +18,7 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "DW",
@@ -30,13 +30,13 @@
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 2
+   "ai_stories": 0
   },
   {
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 30
+   "ai_stories": 28
   },
   {
    "name": "The New York Times",
@@ -71,8 +71,8 @@
   {
    "name": "Google News (world)",
    "set": "General",
-   "ok": true,
-   "ai_stories": 100
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "The New Humanitarian",
@@ -83,50 +83,50 @@
   {
    "name": "Specialist sites (1)",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 95
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Specialist sites (2)",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 62
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: famine",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 48
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 91
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 84
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 80
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 31
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
-   "ok": true,
-   "ai_stories": 82
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Dezeen: data centres",
@@ -167,14 +167,14 @@
   {
    "name": "Google News: design press",
    "set": "Data centres",
-   "ok": true,
-   "stories": 97
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
-   "ok": true,
-   "stories": 92
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "DatacenterDynamics",
@@ -185,41 +185,146 @@
   {
    "name": "Google News: India",
    "set": "Data centres",
-   "ok": true,
-   "stories": 28
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
-   "ok": true,
-   "stories": 89
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
-   "ok": true,
-   "stories": 98
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
-   "ok": true,
-   "stories": 36
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
-   "ok": true,
-   "stories": 57
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Google News: new builds",
    "set": "Data centres",
-   "ok": true,
-   "stories": 100
+   "ok": false,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   }
  ],
  "items": [
+  {
+   "title": "Asia’s stock markets dive as doubts swirl over AI boom",
+   "url": "https://www.aljazeera.com/news/2026/11/25/asias-stock-markets-dive-as-doubts-to-swirl-over-ai-boom?traffic_source=rss",
+   "source": "Al Jazeera",
+   "region": "Qatar",
+   "published": "2026-11-25T03:31:59+00:00"
+  },
+  {
+   "title": "Jensen Huang’s return steadies Nvidia, but China curbs, US scrutiny show no sign of easing",
+   "url": "https://www.scmp.com/tech/big-tech/article/3375632/jensen-huangs-return-steadies-nvidia-china-curbs-us-scrutiny-show-no-sign-easing",
+   "source": "South China Morning Post",
+   "region": "Hong Kong",
+   "published": "2026-11-25T03:00:17+00:00"
+  },
+  {
+   "title": "Tidal bans 100% AI-generated music with plans to delete more than 27m tracks",
+   "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-25T02:12:22+00:00"
+  },
+  {
+   "title": "I asked AI if it was OK to use AI to write an obituary. The answer surprised me | Anna Spargo-Ryan",
+   "url": "https://www.theguardian.com/commentisfree/2026/nov/25/jess-wilson-molly-meldrum-tribute-ai-ethics-obituary",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-25T01:00:01+00:00"
+  },
+  {
+   "title": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion",
+   "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-25T00:12:02+00:00"
+  },
+  {
+   "title": "Is Albo terminal? No – but the world is in chaos and he will need to find his way through wicked problems | Peter Lewis",
+   "url": "https://www.theguardian.com/commentisfree/2026/nov/25/anthony-albanese-approval-rating-poll-results",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-24T23:22:51+00:00"
+  },
+  {
+   "title": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
+   "url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-24T22:27:52+00:00"
+  },
+  {
+   "title": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
+   "url": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang",
+   "source": "The Guardian",
+   "region": "UK",
+   "published": "2026-11-24T22:05:21+00:00"
+  },
+  {
+   "title": "Nvidia’s Jensen Huang says he is in therapy, as comeback rally fades",
+   "url": "https://www.scmp.com/news/world/united-states-canada/article/3375675/nvidias-jensen-huang-apologises-staff-says-he-therapy",
+   "source": "South China Morning Post",
+   "region": "Hong Kong",
+   "published": "2026-11-24T22:03:22+00:00"
+  },
+  {
+   "title": "Why Asia’s AI rally faces a tougher road even after Jensen Huang’s comeback",
+   "url": "https://www.scmp.com/business/markets/article/3375601/why-asias-ai-rally-faces-tougher-road-even-after-jensen-huangs-comeback",
+   "source": "South China Morning Post",
+   "region": "Hong Kong",
+   "published": "2026-11-24T22:00:15+00:00"
+  },
+  {
+   "title": "In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy",
+   "url": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-24T21:48:27+00:00"
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang is back. What happens next?",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+   "source": "The Verge",
+   "region": "US",
+   "published": "2026-11-24T21:41:37+00:00"
+  },
+  {
+   "title": "Even the best AI agents struggle with everyday life",
+   "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-24T21:33:29+00:00"
+  },
+  {
+   "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
+   "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-24T21:32:38+00:00"
+  },
+  {
+   "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
+   "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
+   "source": "TechCrunch",
+   "region": "US",
+   "published": "2026-11-24T21:19:52+00:00"
+  },
   {
    "title": "OpenAI Engineer Secretly Recorded Dozens of Meetings, Prosecutors Say",
    "url": "https://www.nytimes.com/2026/11/23/technology/openai-engineer-secret-recordings.html",
@@ -254,13 +359,6 @@
    "source": "KOMO",
    "region": "International",
    "published": "2026-11-24T20:58:41+00:00"
-  },
-  {
-   "title": "Nvidia CEO Jensen Huang is back. What happens next?",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-   "source": "The Verge",
-   "region": "US",
-   "published": "2026-11-24T20:52:20+00:00"
   },
   {
    "title": "Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired",
@@ -415,13 +513,6 @@
    "source": "UkrMedia News",
    "region": "International",
    "published": "2026-11-24T18:02:28+00:00"
-  },
-  {
-   "title": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
-   "url": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang",
-   "source": "The Guardian",
-   "region": "UK",
-   "published": "2026-11-24T18:00:24+00:00"
   },
   {
    "title": "Researchers Propose Calibrated Safeguard Framework for Generative Artificial Intelligence in Scientific Writing",
@@ -2928,97 +3019,6 @@
    "source": "FOX 32 Chicago",
    "region": "International",
    "published": "2026-11-21T15:38:46+00:00"
-  },
-  {
-   "title": "AI may not work like the human brain after all, scientists discover",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0yaS1OaGZZX0NqZndfaW1HQ01LQmZxU0lIaUhmTVdEdFZPSVpJUlVudjBFVFR2eFdmY3F6U2FTbThfbU9lOE5kUmowYUJuOUl5d1c3TEM3dWxsUG9WQUFVZVB6dkFSTDk4eWFOTHhPWQ?oc=5",
-   "source": "ScienceDaily",
-   "region": "International",
-   "published": "2026-11-21T15:25:56+00:00"
-  },
-  {
-   "title": "35-year-old SNES runs ChatGPT, accelerated with a Super FX 2 chip",
-   "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNMC1lY0VUUUV0SmFSY1ExbGJFMjUzMjJfd1VlM19LVTZRMS1hSWh5SVh3eDhzZVdCVDFSTFBfOTN0bENrYVJfRXJQOTBvYmt4ZGUxQjlzZDN2NjB1aDZ6bUI0TTJCN1NFUWxTZVJjYTdDQWNCTGprNG5TUG1QOEVBcndhVHpDYnVxNHpwODZ1cDIyaWk5YzRvSDFjWm1Bb1FrRFVTdFEtbE5KTWU1VWtsRWZmMWd0VHFteUR6MFNFaVYzaXZnOE9IN1lfNUU2Uy0zRUx4SGNqMVA0TzJCSmVqdkY1NkN0clY4UnFiN1RXaGNPeEpkVVpDZ3VGSXNyUUZhelNfajEwWElLX05aeFJJNXkwOGhxc0FJN3pR?oc=5",
-   "source": "Tom's Hardware",
-   "region": "International",
-   "published": "2026-11-21T15:02:17+00:00"
-  },
-  {
-   "title": "Likely solution to Riemann hypothesis by AI marks turning point for mathematics",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPRVdVdHVNNEI2T3RRTExId2xVWXlXTXRhOW5wOXUwNWMtbWpaUjk1MzhYTTExRll2RklULTJFZVVDbnpsT0hSXzgtRFVnVk9RSjY4Q3VPMDllY1RDUXRYcF93Ql9SLVVQOTNWOEFnMUkydDdacVlyMVZqWkhOajlpRUQtVHFGYU85dUJHaExCeUdCU3NXSEYxZEJXbVFHNkFycTZCY016Z1ZNSWE5U1l3TDJBVkdOdnRpdnR1ckNORFE1U1d6NjB3bVdCMnlzRy0xbnUzckR4eGJBdHN3UlFXMzhhSmJ6cjJmSDFOaWJpRQ?oc=5",
-   "source": "Le Monde.fr",
-   "region": "International",
-   "published": "2026-11-21T14:54:31+00:00"
-  },
-  {
-   "title": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
-   "source": "NPR",
-   "region": "US",
-   "published": "2026-11-21T14:18:17+00:00"
-  },
-  {
-   "title": "Dual Plane Orchestration Framework Optimizes Distributed Artificial Intelligence Pipelines Across Networks",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTDhHSXF2dDRPLUtxd2ZzRnk4LW5Pend3Mm15N0cwT1FJQ3JYTW9YdlJsX0JXTEdUbW1BVGFTVzk3NTQtMEppQnVSVW5UVFZRREtHMFQ4VW5SdklYaC0xaE1HbkxsZUxvVzdaX1ZYNHA2NGVJQ1Nsb1JnN3F5M3ppWTBLX2FIYmNCQ0lZaDE0c2g2WW5PdDQ2VTkzcTluTU5DQlhTZlJTaHRjZHZrNUV3ZUpGcWJ6RTRlY2lleGVwLXVWMUoyVXg0b2NGUQ?oc=5",
-   "source": "Bioengineer.org",
-   "region": "International",
-   "published": "2026-11-21T14:17:41+00:00"
-  },
-  {
-   "title": "Billionaire Daniel Loeb’s ‘Bear Math’: AI’s $7 Trillion Spending Boom Faces a $3 Trillion Reality Check",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQNHBwTl9sMTFBVFNuN3JacVpUSkJNNFFtSWVVbWpVTVYyMzNMRGZqTmJCRldTX1JwTnZEQVhLaTBEQV9ZLTNFa2xmWnJKTTdKWnkxQlRSNmdsVEczakp3Rm5tREJSWWRQTktpa09ZYUVWVnJGcktNNExhWXFGampZeWJVR1gzVHB6YjVlbmVZNjV1UDU2THBoTGlUd0JSZHpaUWZDZ2RQSXAxQTYyUVhYeUhMV2JLOW8tOENzWmZ6TTlDY0NjamsxRFR5SDRHNXhRbjdFdkN1SQ?oc=5",
-   "source": "24/7 Wall St.",
-   "region": "International",
-   "published": "2026-11-21T14:13:00+00:00"
-  },
-  {
-   "title": "We May Be Witnessing Wall Street's Biggest Bubble Burst in Real Time (and I'm Not Talking About Artificial Intelligence)",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcjJWdXRwbEtCeEM0WTdLYVVfaTBTSnM0Q0N6Z3Yzd1RPRVE5STNTcEp5STJ0bGFuRThnbm1ydnVyUTV6ZWZLRWxpY2k1OThuOFNlVnphM196YjIycEZ0cVdVQUs5YWtocWxDY1ZCMldYa0tEbXNpQjFsNTBOQ3BKN29tR3lLRDhyT3I5NldmX0o2c1psQ04ta1Q4NG1NbjZfbE53ZG5qSTBHTUFLMTJzTE9LVnZmNkp2RjVfQW9OV3g3SWNHSUlfVGF0TGFjcmZZX01z?oc=5",
-   "source": "The Motley Fool",
-   "region": "International",
-   "published": "2026-11-21T14:06:02+00:00"
-  },
-  {
-   "title": "‘I was shaking, crying, having trouble breathing’: the uncharted trauma of breaking up with AI companions",
-   "url": "https://www.theguardian.com/technology/ng-interactive/2026/nov/21/shaking-crying-trouble-breathing-breaking-up-with-ai-companions",
-   "source": "The Guardian",
-   "region": "UK",
-   "published": "2026-11-21T14:00:01+00:00"
-  },
-  {
-   "title": "Can Anthropic afford to put safety first?",
-   "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-   "source": "The Verge",
-   "region": "US",
-   "published": "2026-11-21T13:29:45+00:00"
-  },
-  {
-   "title": "Brevo AI-Powered Email Marketing: Transforming Digital Communication with Artificial Intelligence",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdS1TNm1zRWFRQkdsdFEyVjh4dkx3U0tuUGg4OEpoS01qX0F4Q1BubFNLaTkyMjZFN0NQRXZ1QzdadzBITHBjMWpMcFNrb1Z0amlFOXpfZ25QbEJHcjhVc2R2UEdURFIxaWFHVzBiRlF1MVpteE1mUFJEUnA1eHBOZ292OWJvc2pTcXcwblZfcWt6WDBJOFU2aDlnTW05djllYTMwMU5XcUpRQ2Q5VXF4NXV1QmExYUhWS21uRUJWUlk1dw?oc=5",
-   "source": "Vocal",
-   "region": "International",
-   "published": "2026-11-21T13:27:42+00:00"
-  },
-  {
-   "title": "Open-Source Farming Tech Relies on Offline Rules Over Cloud Artificial Intelligence",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPX1lMWDJpNnltbE83VUFiRnRVaDBTdUcwZzdiT0FyOWlqWkpaaFhlMHJUQnVocGl0SUhuU1l1Y0NSY2dJaWdfVTJSMlg5cVJoSHcwQzRmME8tX2plQ2xFVkhjaV9aWEI3R1gxQW40UG9zWk95STBNSG9fakRBQWgtZHlzNk8tLW1wNVlCVElobmVSN29IeTFoLTh5Sm9NZVVQaWtSM1dRWXlJWXZ0?oc=5",
-   "source": "Bioengineer.org",
-   "region": "International",
-   "published": "2026-11-21T13:22:33+00:00"
-  },
-  {
-   "title": "LDS leaders have warned against treating A.I. like God. Are members listening?",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWFBWdExnMDRIREpNc19DX2tEWC1oNHQ1Ml9MbENvWjJFdkV0UFlDdHNKT0dlWnJNWmJtSHNwSDF4MF9GZmZERWhNaWkzZXVPSTIwdDl2Z0w5SlpqTVBRbUttLUlmS0lWeTU2MHZjR3FQU3VVN281VzYtdWkyN2QydWJB?oc=5",
-   "source": "The Salt Lake Tribune",
-   "region": "International",
-   "published": "2026-11-21T13:00:40+00:00"
-  },
-  {
-   "title": "‘Little room for error’: what a debt-laden cloud computing company says about the AI boom",
-   "url": "https://www.theguardian.com/business/2026/nov/21/debt-laden-cloud-computing-company-coreweave-ai-boom",
-   "source": "The Guardian",
-   "region": "UK",
-   "published": "2026-11-21T13:00:01+00:00"
   }
  ]
 }
