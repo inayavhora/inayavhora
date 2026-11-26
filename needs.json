@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T08:24:41+00:00",
+ "updated": "2026-11-26T19:03:52+00:00",
  "sources_reached": 9,
  "sources": [
   {
@@ -18,31 +18,31 @@
    "name": "Al Jazeera",
    "set": "General",
    "ok": true,
-   "ai_stories": 3
+   "ai_stories": 0
   },
   {
    "name": "DW",
    "set": "General",
    "ok": true,
-   "ai_stories": 13
+   "ai_stories": 9
   },
   {
    "name": "ABC News",
    "set": "General",
    "ok": true,
-   "ai_stories": 0
+   "ai_stories": 1
   },
   {
    "name": "South China Morning Post",
    "set": "General",
    "ok": true,
-   "ai_stories": 27
+   "ai_stories": 26
   },
   {
    "name": "The New York Times",
    "set": "General",
    "ok": true,
-   "ai_stories": 13
+   "ai_stories": 9
   },
   {
    "name": "NPR",
@@ -84,7 +84,7 @@
    "name": "Specialist sites (1)",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 94
+   "ai_stories": 68
   },
   {
    "name": "Specialist sites (2)",
@@ -96,37 +96,37 @@
    "name": "Google News: famine",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 84
+   "ai_stories": 44
   },
   {
    "name": "Google News: farmers",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 91
+   "ai_stories": 28
   },
   {
    "name": "Google News: health",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 26
+   "ai_stories": 83
   },
   {
    "name": "Google News: water",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 73
+   "ai_stories": 79
   },
   {
    "name": "Google News: education",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 87
+   "ai_stories": 33
   },
   {
    "name": "Google News: Gates",
    "set": "Basic needs",
    "ok": true,
-   "ai_stories": 27
+   "ai_stories": 83
   },
   {
    "name": "Dezeen: data centres",
@@ -168,13 +168,13 @@
    "name": "Google News: design press",
    "set": "Data centres",
    "ok": true,
-   "stories": 49
+   "stories": 97
   },
   {
    "name": "Google News: architecture",
    "set": "Data centres",
    "ok": true,
-   "stories": 38
+   "stories": 39
   },
   {
    "name": "DatacenterDynamics",
@@ -186,31 +186,31 @@
    "name": "Google News: India",
    "set": "Data centres",
    "ok": true,
-   "stories": 22
+   "stories": 26
   },
   {
    "name": "Google News: Africa",
    "set": "Data centres",
    "ok": true,
-   "stories": 41
+   "stories": 79
   },
   {
    "name": "Google News: Asia",
    "set": "Data centres",
    "ok": true,
-   "stories": 89
+   "stories": 97
   },
   {
    "name": "Google News: Gulf",
    "set": "Data centres",
    "ok": true,
-   "stories": 47
+   "stories": 32
   },
   {
    "name": "Google News: Latin America",
    "set": "Data centres",
    "ok": true,
-   "stories": 29
+   "stories": 31
   },
   {
    "name": "Google News: new builds",
@@ -220,6 +220,18 @@
   }
  ],
  "items": [
+  {
+   "title": "Gates Foundation Pledges $1 Billion to Expand AI Access in Health Care, Education, and Agriculture",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUkxFc3Axd3pyVG44ODBHVjlGS0JGNzEyYy1ZWHdNWk90VUQ0dXZVMnJpS0VScWVWM2ZqZ3M4TlNFcVM0eEFWTU9ORks2Q2FkQ2lRSTRfV0lUQzVsNjFHN0VBYko0cDBnYWZwZldVbDYwcU1SQlNwN1hTeElDR1F3V3RuVDdCcTE4N25GUGk5cTFyTThKR2U2cS1mdE9RYzF6bnk3U00ycER6YzRLX3FaNExhYnpFdF9RaWx4WWZiVENxVGxvVXVNUXpQVjlMYUhtYnJibDYwaw?oc=5",
+   "source": "https://www.thekeyexecutives.com/",
+   "region": "International",
+   "published": "2026-11-26T08:00:41+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
   {
    "title": "AI’s hunger for compute could break uranium’s boom-bust cycle",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOaElZYlZhTzdtbjBPR2ZJbzRONkpDMnpnV3lkdktzdDF0TFpqeEpTYWMxSWF6TWVKYWVXMUY1T0RpTVlkSWNFN0dRNjdMMU1IaGQ5MUhwOUJsZEVsS1FpTFYzM3JDV0VwSjNLUU5nYnFsOGp2Zk85dmJwWXE2YTQzaUUzMHN4MFE?oc=5",
@@ -815,11 +827,11 @@
    "stage": "reported"
   },
   {
-   "title": "Froncort.AI Gets $2.3M From Google.org to Expand AI-Based Disease Screening in India",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNa0dJNDVSSTdmQjU2eW95RXZLTW81QWw5RjlrMjlXalY2M2dQSDFlQU5POHR2RzB2VkpBdkpNWG9QTG9zbHlwNV9UbkYwOGQwUVg2Y1F4ZFpLLWNGYUhwOXdEUy1VY3lIN0tNWVNjaXNTTXVuRUhvNFA3Vkx4cU0wQXZsYmpZOUQ4ZjlBLUxlVkU4b3NwNFJfNU56MGFBd095MHNvNUlGQ3c2ZnVjNjVQZ2JpUGkxdmZKZFE?oc=5",
-   "source": "Analytics India Magazine",
+   "title": "India needs 1.25 million AI-ready health workers annually, report says",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQUtmbjVqNG0zcXVERnZQb3cyU2gxdTVMdVZqQnlpRXhYWnB0YmQ5bHJ0d2t5TWZFM2poUmh0V1Vqc0g2Wnp1VmVTeG5Celc3d1pRcXdyMlFlRGdoaHFXOGotS3lpVU1CWkN4OFItbjFTUXBQMDBTaVhGZUx5X3NhOS00a0t3V0ZuOEt6X3NvbVJ4S0FYV3VTYnBfU0FuLW01MEVLSkItV1VkdGFnSnY1MXBMNDJQQ1EtX1dMVk9fdkc?oc=5",
+   "source": "Healthcare Asia Magazine",
    "region": "International",
-   "published": "2026-11-10T11:42:42+00:00",
+   "published": "2026-11-10T08:00:00+00:00",
    "needs": [
     "health"
    ],
@@ -834,9 +846,9 @@
    "stage": "reported"
   },
   {
-   "title": "India needs 1.25 million AI-ready health workers annually, report says",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQUtmbjVqNG0zcXVERnZQb3cyU2gxdTVMdVZqQnlpRXhYWnB0YmQ5bHJ0d2t5TWZFM2poUmh0V1Vqc0g2Wnp1VmVTeG5Celc3d1pRcXdyMlFlRGdoaHFXOGotS3lpVU1CWkN4OFItbjFTUXBQMDBTaVhGZUx5X3NhOS00a0t3V0ZuOEt6X3NvbVJ4S0FYV3VTYnBfU0FuLW01MEVLSkItV1VkdGFnSnY1MXBMNDJQQ1EtX1dMVk9fdkc?oc=5",
-   "source": "Healthcare Asia Magazine",
+   "title": "Froncort.AI Gets $2.3M From Google.org to Expand AI-Based Disease Screening in India",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNa0dJNDVSSTdmQjU2eW95RXZLTW81QWw5RjlrMjlXalY2M2dQSDFlQU5POHR2RzB2VkpBdkpNWG9QTG9zbHlwNV9UbkYwOGQwUVg2Y1F4ZFpLLWNGYUhwOXdEUy1VY3lIN0tNWVNjaXNTTXVuRUhvNFA3Vkx4cU0wQXZsYmpZOUQ4ZjlBLUxlVkU4b3NwNFJfNU56MGFBd095MHNvNUlGQ3c2ZnVjNjVQZ2JpUGkxdmZKZFE?oc=5",
+   "source": "Analytics India Magazine",
    "region": "International",
    "published": "2026-11-10T08:00:00+00:00",
    "needs": [
@@ -984,6 +996,44 @@
    "stage": "reported"
   },
   {
+   "title": "IIT Kharagpur to establish India’s first Physical AI school with Rs 35 crore investment",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZ1dkNG4yeDhnT1JHcUtuaFplX1RRWXdtZnlFV3BGRGhoSmd1M3hSbUlLZS1DckphYTlWMG9VeTJtT2hQTGtfQUw5S21tNXlBUllxbHc1UHBaSW1zM0RLZEYxZXZ1S3ZsUVFxM0ptYmoxMHVUbm9POWdBWHdqQTNWdmFpWmJwbFhyd1VGbWZhMHFoR3U3QzI2SDk1NjdKeE04MHpzWXNmN3hzdXFyQ1RoaFA3U25wSFpySmViTjZ0UlR6M3ctZEJQNkV4bHVad2NsNENUQ3BURHhEU1RwWEljSEZEbVVDTEHSAe4BQVVfeXFMTTMzZ0FFQ2FIdDdDVW9UMkZLelRoV05rREh1MkFXYkR1RXlHSGs0cGVIbzdDdWFLNEltMC0zbHpaQW1PYmV5ZkRwdUFFbmNFWW1HVk9EQnQxSkJxdmNtMUhiaUM4LXB4YkxBQno3dWJoX0RpeVp1WFpwNGNRTFlDc2Ric09nZzQwRnlRYVQ1dC1Qd203LTF5N1J1N1VFWEI4WUFXcFNKdmpDOW1NYjJMVmdaZDlUTWIzaFBDRnlpbDNtNHoxTnRaREo3cHlVaVhsaTZ1cUdYeGVXcGxPc2xaTlE3VUJRSEtjZnR6S2hrQQ?oc=5",
+   "source": "The Indian Express",
+   "region": "International",
+   "published": "2026-10-27T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "Kharagpur, India",
+     "lon": 87.325,
+     "lat": 22.3397,
+     "precision": "town"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "IIT Kharagpur Announces India's First School for Physical AI - Check Courses, Curriculum Details",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa2pmTGNTUHYwY3piX1N2a0xRYmVpM1ZxVDBPM2VxRFk0bHdxbE9JOHd0Y1AwdU1LR3l2MFh4SndFVHBuaU5LUlhRRWNsaUlyVUtTck50bnRmandXcVUxLWZ4MWlVUnJYRXh1Y1JCVHFXQy1kVncwRUEtQzBBSTFPVHVUX1c2VmJuRjQ5MEZBR21CQmlOSzBJQlVqVW9PT2pUdFVvRl93NFB5OWowaTdpLWdzUmstaFNmSzdod0g1cS03elFBU1FpaXdrSWJPa3FVemk2YndyUkNGQ3RhcVFIZNIB5gFBVV95cUxPb0llTjA3SV9RU0JLNGpUc0JwMWs2Y3pLMmdaVEFfcC1YRmZUUDk0MHd4cVZMWXJwd1AzUHdEUG9DMy14UW1lTEg5NkJqZ1Z0NjU4V3N5c2x3M1BNbWQ4dVlCU3pBSWdaLVFoRTJZVE5iMzNvcFZVREFYTWFBVGVVZ0NHMDd5LWZmVUd6N3pLQkJuaGNvQjF0bE5jYzlQdlFWcWluUTFKQUZxWXpJWW56Q29RcTN4aXZ6Z2ZqOWV1TFlfeHRIdnVvbm80LVcwM01ibGkzRy1Ga0NSdXVKOGdDMzY2Zmg3QQ?oc=5",
+   "source": "Telegraph India",
+   "region": "International",
+   "published": "2026-10-27T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "Kharagpur, India",
+     "lon": 87.325,
+     "lat": 22.3397,
+     "precision": "town"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
    "title": "AI’s hunger for power catches America unprepared",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeFJMY1RTdHFGQ3pHVGdfQXhzUlNkTXRfLXJzczk1ZTlJUmFCVUFYSF9YSHlaSEZnSUNmTXRGejRJVFBaRWdTRDdzLU5keWlKYlNncy12aHBFUTdmaFhTZTFxalVhY0pCRXNaUWNGOGx0TEdNQmRMSG1EbDg2aWxVUFo2NlFMRmE3ZWdEV0RTX0FqMEk?oc=5",
    "source": "MacroBusiness",
@@ -1034,25 +1084,6 @@
    "stage": "proposed"
   },
   {
-   "title": "IIT Kharagpur to establish India’s first Physical AI school with Rs 35 crore investment",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZ1dkNG4yeDhnT1JHcUtuaFplX1RRWXdtZnlFV3BGRGhoSmd1M3hSbUlLZS1DckphYTlWMG9VeTJtT2hQTGtfQUw5S21tNXlBUllxbHc1UHBaSW1zM0RLZEYxZXZ1S3ZsUVFxM0ptYmoxMHVUbm9POWdBWHdqQTNWdmFpWmJwbFhyd1VGbWZhMHFoR3U3QzI2SDk1NjdKeE04MHpzWXNmN3hzdXFyQ1RoaFA3U25wSFpySmViTjZ0UlR6M3ctZEJQNkV4bHVad2NsNENUQ3BURHhEU1RwWEljSEZEbVVDTEHSAe4BQVVfeXFMTTMzZ0FFQ2FIdDdDVW9UMkZLelRoV05rREh1MkFXYkR1RXlHSGs0cGVIbzdDdWFLNEltMC0zbHpaQW1PYmV5ZkRwdUFFbmNFWW1HVk9EQnQxSkJxdmNtMUhiaUM4LXB4YkxBQno3dWJoX0RpeVp1WFpwNGNRTFlDc2Ric09nZzQwRnlRYVQ1dC1Qd203LTF5N1J1N1VFWEI4WUFXcFNKdmpDOW1NYjJMVmdaZDlUTWIzaFBDRnlpbDNtNHoxTnRaREo3cHlVaVhsaTZ1cUdYeGVXcGxPc2xaTlE3VUJRSEtjZnR6S2hrQQ?oc=5",
-   "source": "The Indian Express",
-   "region": "International",
-   "published": "2026-10-27T07:00:00+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "Kharagpur, India",
-     "lon": 87.325,
-     "lat": 22.3397,
-     "precision": "town"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
    "title": "IIT-Kharagpur inks deal with alumni to set up India’s first Physical AI school",
    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVWY5R0liRmNTdVh1ZG5GQzlneVd1eTkwcFM4em1nOEk5M2xvVEhMcHJ4R09YY1pJdjNHVDNrb0JfaXpsaTRVUHdMQzh0Ty1LQm0xUWI1a1J2Zmd3eEJlZm9oVkdaQ2l2bHFQdjZhTTBiekFDV0NoZlc3eU1mdm9HMkQyX2h1MlZUeHAyRGNpQzM1emI2bWpRTUZ1aEZvc3NHNkNvVW5wdHFDQVNHbFRQckNnLXdPRUwteFpZSG9pYl9vOFlkRW1jU1AyNExEWVRWSW1WTXp3bEpzLUHSAeABQVVfeXFMT1F0NlBiUHQ0MmUzZkRGU2s1QzlHT1FOWFgwRmRrOTd4T1EzUEtlcVAyTlluUGo3RnFlSlMxZGdzazdFWkc3ZG95SFhlemZsWG5lendLYnVWSkJWNFBmdWRfcEIxbWJhdVFDbWFFcGkwTzY0RXRKZ2hRaXQzNGtRRXVsWXlobmZwcjhhcnVxc1lkVG9WTXFjcWZZMjY1a1Ytb0l5b01uNjBFLWFoalc3OEQ2dWZZMi1fVV9jT3R3MGpUZUg4eFJObG5hblkycjh4VGJKbWdCQ2F6UzFnQU53eGo?oc=5",
    "source": "The Times of India",
@@ -1074,26 +1105,7 @@
   {
    "title": "IIT Kharagpur to pioneer India's First Dedicated School of Physical AI",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB0QWVVNm5RYU5SRVpISC1TbjRmWEJzTkRDRExqRHJYNDFkdk5tSURrVUUtUTZzcGlXRV9vUFRyUTh1WG9fTHUxMUVRN014aU5XSzc5SzJtLW5TZ3dnMlllM2pkekVfMnQz?oc=5",
-   "source": "पीआईबी",
-   "region": "International",
-   "published": "2026-10-26T07:00:00+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "Kharagpur, India",
-     "lon": 87.325,
-     "lat": 22.3397,
-     "precision": "town"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
-   "title": "IIT-Kharagpur to set up India's first dedicated school of Physical AI",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcktVSWdqWW5JV0NwREFLNlhFdEthYldtLThtbmNNalNMWWRPTExPa2h5dTVZR3VHQUVjZVpKc1BuZWVkZlhBLXB0YVNwX3pmWXBwZXMxNWc4LVpMUTFuMk41NU1JU2ZBeEp6S09jSFZwbDB4c1A0X1ZWX2dkcUhsbVFkS0YxbXdoaEFIUEN1NDhuYV9Va050SDZ0TEtwM2Y3STdyM0Vmb205MFZoNk5ZSUdrY2N1SWY3UU1xbFlyODJ0cTJkdVVpWlZTeVNEM0JEZEtiLdIB2gFBVV95cUxPYnMxN0hnMXVlY2stSDRHSjRaT1A4WFZoOG5XTms0WjU2UTFUeGF2TTlYSDJCNGhzQTdySDlrSEZjeTliQmVrTE1oV3Q4Z0RJd3c0N21ia0NMc21OZ3RSdXdraW0tUENQVk02LUFwNUowa3F0b0g1WWRFYUREMkpFeVpvMFNsRC1veWlEWXQwOVVMNzhBYW5ldFNtQld0VXIycDBPWkZWMG9hbzRwNHQ5bmxBWFkxdGFGb1FQdE5YM3BfTENnMmczY2ZtTE5mTVpOZVVsX0ZFQUx3dw?oc=5",
-   "source": "Business Standard",
+   "source": "www.pib.gov.in",
    "region": "International",
    "published": "2026-10-26T07:00:00+00:00",
    "needs": [
@@ -1113,6 +1125,25 @@
    "title": "IIT Kharagpur to set up India's first dedicated academic school focused on Physical AI",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSUFPMFQ4Mm9KUTlQZWRua2hodkdnNmVoR21ibElhRkJNbkF6MVVXTHFKeUd5eHpPWEpHdUhFcFNCNzlFcEZWc2Fib25RMUJoZ1Y0bFNvTmNhZlZmeXhUdzFfcmF5cHMyMG5hVkhtUVJxQ1FpWklxRVhBcmlwZDNOUzB2LTcxb3RWa0J1ZFMyLWlZeFNlZmZrRnY2cGFocUJtaGZrWl9tNnJ1MVZ2VGdFUzNFOU5TWUp2b1Y3YjlNT3o4MWhQTVVKOUR0TGc5cjJMN1lBMW5SOEXSAd4BQVVfeXFMTzYxdzNFV2J3S2VWNVJTVTRCV2pXYUVRN1IyYlJ0VktxT1ViaDY1MVdJQmplQURLMm9KcWhaSGNIUks4Mm0yd2x3akVBaHY3WGNPUW9KXzJERVlfamJMY2RneXpaSFNrRDhIY1NpMnZ1Tk1pb1dqYkpDZXpiVURoYjdzODFwUHlPaGRYYTctbFlucnZWWlpOaTZwV200ZG10c3RSaU56OHRiVTdYQmRNV0R2ZEJaSzkxNlVCZVVPSV9JRWo1bE5wbExSaFJsLUtBUlYzdm9XZHZCUlJWQl9R?oc=5",
    "source": "Telegraph India",
+   "region": "International",
+   "published": "2026-10-26T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "Kharagpur, India",
+     "lon": 87.325,
+     "lat": 22.3397,
+     "precision": "town"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "IIT-Kharagpur to set up India's first dedicated school of Physical AI",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcktVSWdqWW5JV0NwREFLNlhFdEthYldtLThtbmNNalNMWWRPTExPa2h5dTVZR3VHQUVjZVpKc1BuZWVkZlhBLXB0YVNwX3pmWXBwZXMxNWc4LVpMUTFuMk41NU1JU2ZBeEp6S09jSFZwbDB4c1A0X1ZWX2dkcUhsbVFkS0YxbXdoaEFIUEN1NDhuYV9Va050SDZ0TEtwM2Y3STdyM0Vmb205MFZoNk5ZSUdrY2N1SWY3UU1xbFlyODJ0cTJkdVVpWlZTeVNEM0JEZEtiLdIB2gFBVV95cUxPYnMxN0hnMXVlY2stSDRHSjRaT1A4WFZoOG5XTms0WjU2UTFUeGF2TTlYSDJCNGhzQTdySDlrSEZjeTliQmVrTE1oV3Q4Z0RJd3c0N21ia0NMc21OZ3RSdXdraW0tUENQVk02LUFwNUowa3F0b0g1WWRFYUREMkpFeVpvMFNsRC1veWlEWXQwOVVMNzhBYW5ldFNtQld0VXIycDBPWkZWMG9hbzRwNHQ5bmxBWFkxdGFGb1FQdE5YM3BfTENnMmczY2ZtTE5mTVpOZVVsX0ZFQUx3dw?oc=5",
+   "source": "Business Standard",
    "region": "International",
    "published": "2026-10-26T07:00:00+00:00",
    "needs": [
@@ -1450,6 +1481,25 @@
    "stage": "reported"
   },
   {
+   "title": "Kenya Re taps 90 university students to develop AI flood risk tool",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcm5zc0tKb251a0l2UFZ5blczYjdEanlXMVNtdzUzWGNYeFF3YU8tYXNHRWpLMlRRa0ZRWmcwMVhiREwtMzhKQkstd2ZkYVh6WEpER1RFMWlLMUtvMm9UUGdvRnJEM0h3WkdfVkUzZUQ1X0p1eVpmVTQzNm9LR2xCOEc2Nkd5anlrYW5NbENHUjZtd3Nxbnhr?oc=5",
+   "source": "Capital FM Africa",
+   "region": "International",
+   "published": "2026-10-09T07:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "Kenya",
+     "lon": 37.9,
+     "lat": 0.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "critique"
+  },
+  {
    "title": "AI tool makes culturally appropriate lessons for teachers in India",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUFVGWGs1RC1YMUxUZVllM3c0NjFCbW9aNFpuajV3eHJmNFhpRjlfQ0tzV2pnOG0wVUpGSlQzVVN4Y3RVV3ZyRmlLSVdZSGk3WlYzVHdTZFRtY2xISmtKR0FBMWxhTHBjR0VnV3VPZ19JTzBVaVIyRkx3MlpSUXpSRGp4N2ZXQkl6S0lnWXdyODk5ZW1SV1VlQ1JEUXVWWWxyalE?oc=5",
    "source": "Cornell Chronicle",
@@ -1716,6 +1766,37 @@
    "stage": "pilot"
   },
   {
+   "title": "Gates Foundation and MTN launch AI maternal health platform with aim to reach 500,000 Nigerian women",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQ2Ffd25udjdIZVlHTVNKeDJtbGFRRERMOUZXTm9SZ0hIeXl6R25CdXJwWk5vM3NYeGEzcjVpdW14QmpNN21aN3puaVRjekZ6cTRfSWRQZ1Uwa3A3VUhDdTM4VFFGcmVxQVppMjJmZW5DZktveF9pUm9QanJKZXBfRk41NXhYZzRxcHJyWF9WbXgtVHJfY1JpLVl4cw?oc=5",
+   "source": "Fortune",
+   "region": "International",
+   "published": "2026-09-22T07:00:00+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [
+    {
+     "name": "Nigeria",
+     "lon": 8.7,
+     "lat": 9.1,
+     "precision": "country"
+    }
+   ],
+   "stage": "proposed"
+  },
+  {
+   "title": "Gates Foundation commits $400M to bring AI tools into US classrooms",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nQWxWR3JzZ0JyWVFNTEkzdjR0MWJyb1FNT0VtUzdSa1JfRTVLOHY4M1F2Mlk2OTlrUmRsa1g2Y3RKd2ZrZEN4ZTNDMDZ5SmhIZU5kYk85X0xuSWxaZ01pOTU1Ym1lRF9ObmlQTWR3Z3U?oc=5",
+   "source": "Crypto Briefing",
+   "region": "International",
+   "published": "2026-09-22T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "Kenya and Intel Partner to Expand AI Literacy Through Public Libraries",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNVndZOEo2c012ZnE4dm95VTlVZ1lsbl9vM1VWRHZYazFWUWJtcmFDdUxiRVQtYjVDb3o0MzUwNWVIeXZJWTBHSkFzaEJXZDZUZE5XWDlBZE5RSlpodFZPaFdmLXphMXp5RDRkOW9sN29qN0R1Y05FbGJaSXVTV0NLUDNTbVF0aWsyWmhQS2U1T0JGdHI2R0pBYTBWWUFsRjFFSXg4anRNc0JtREg2cUE?oc=5",
    "source": "TechAfrica News",
@@ -1754,37 +1835,6 @@
    "stage": "reported"
   },
   {
-   "title": "Gates Foundation and MTN launch AI maternal health platform with aim to reach 500,000 Nigerian women",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQ2Ffd25udjdIZVlHTVNKeDJtbGFRRERMOUZXTm9SZ0hIeXl6R25CdXJwWk5vM3NYeGEzcjVpdW14QmpNN21aN3puaVRjekZ6cTRfSWRQZ1Uwa3A3VUhDdTM4VFFGcmVxQVppMjJmZW5DZktveF9pUm9QanJKZXBfRk41NXhYZzRxcHJyWF9WbXgtVHJfY1JpLVl4cw?oc=5",
-   "source": "Fortune",
-   "region": "International",
-   "published": "2026-09-22T07:00:00+00:00",
-   "needs": [
-    "health"
-   ],
-   "places": [
-    {
-     "name": "Nigeria",
-     "lon": 8.7,
-     "lat": 9.1,
-     "precision": "country"
-    }
-   ],
-   "stage": "proposed"
-  },
-  {
-   "title": "Gates Foundation commits $400M to bring AI tools into US classrooms",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nQWxWR3JzZ0JyWVFNTEkzdjR0MWJyb1FNT0VtUzdSa1JfRTVLOHY4M1F2Mlk2OTlrUmRsa1g2Y3RKd2ZrZEN4ZTNDMDZ5SmhIZU5kYk85X0xuSWxaZ01pOTU1Ym1lRF9ObmlQTWR3Z3U?oc=5",
-   "source": "Crypto Briefing",
-   "region": "International",
-   "published": "2026-09-22T07:00:00+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [],
-   "stage": "reported"
-  },
-  {
    "title": "MTN, Gates Foundation commit $25m to AI healthcare, affordable phones to tackle maternal mortality",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbS1ueHA5RFZRVGpVQXloRjVicDE4NHFyNVU2Snk4ZTJ0d3h1cDNNZE00dkpyLUpJdnJiTWRoMmdfNXYxcGpKV2p2Nno4dG5lMTdPbU5qbVRKUzdIQ0h1UjlmUE1HM3k0ZldBWWpDS2JuWGJCczM4akhRUXE0REU0NHZlMUlEZHpnQ2VzT2diSkhHM0dHZS0zaGdkN2lCQVRmemVjU0FmSTJFNHlhaThZ?oc=5",
    "source": "TheCable",
@@ -1816,6 +1866,18 @@
    "stage": "reported"
   },
   {
+   "title": "Gates Foundation commits $1 billion to deliver equitable AI for health, farming, and education in developing regions",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOM2owR2QxY28wdHg0cnd1S252N2RpMF8wT1l4dGZFaS16dnVKNGVqYkdFYWZXSzEzYTM1a0ZlSnJrTkNfZGl6cy1lYmVMNDJyOEd2eFN1MVNpVlltc0g4aXduSmREdFRsNjdNX18tUWlpYldXWHZOV0hWdE5WNFBwTGp6bFM0QXU3UFZwa0IwcHoxTThCRkJWank1T3FuNkNHYW5QU1lacjFHbjNSZ1U2RURRQTVCQ3F4WWw5aWFOVl9JWHJzOXRGc0Z4aURUZUxUb19XNTd0WF9rSXAwcXVBNjlrX2Y4OERD?oc=5",
+   "source": "CapitalEthiopia",
+   "region": "International",
+   "published": "2026-09-20T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
    "title": "AI and precision agriculture to take centre stage at Nairobi show",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQXzVJWC10SU13OTRwWFlKLTVqZ1V3dlN6b3JuNHNhaGd2cjRfaXRUSzdKMnhQSFpvLXFRZF9heWV3aUNNUVVuakJFZzBBZkJ3T3czREJtazFNUnAtOGE4dC02OGdYMXBCck1vTXc1N05QeVpMbW5GSjlET3FoejhnbWVYYXRrU1J6ektYM0hjUnljbVJpUllEZGVXOEF0emRZeHp2TWdWaGg?oc=5",
    "source": "Citizen Digital",
@@ -1832,18 +1894,6 @@
      "precision": "town"
     }
    ],
-   "stage": "reported"
-  },
-  {
-   "title": "Gates Foundation commits $1 billion to deliver equitable AI for health, farming, and education in developing regions",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOM2owR2QxY28wdHg0cnd1S252N2RpMF8wT1l4dGZFaS16dnVKNGVqYkdFYWZXSzEzYTM1a0ZlSnJrTkNfZGl6cy1lYmVMNDJyOEd2eFN1MVNpVlltc0g4aXduSmREdFRsNjdNX18tUWlpYldXWHZOV0hWdE5WNFBwTGp6bFM0QXU3UFZwa0IwcHoxTThCRkJWank1T3FuNkNHYW5QU1lacjFHbjNSZ1U2RURRQTVCQ3F4WWw5aWFOVl9JWHJzOXRGc0Z4aURUZUxUb19XNTd0WF9rSXAwcXVBNjlrX2Y4OERD?oc=5",
-   "source": "CapitalEthiopia",
-   "region": "International",
-   "published": "2026-09-20T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
    "stage": "reported"
   },
   {
@@ -1952,33 +2002,9 @@
    "stage": "proposed"
   },
   {
-   "title": "‘Not trying to solve world hunger’: GoTo takes pragmatic AI path",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM0RSUnNNcUp3Q1VfYzRQWHZDdVllb0dJZEdQUlZJSmMzVUpPSVJjNHN1NHU3RnFiR2hsMXNzMlY2bmhhTWM0ckFWQ2xlTVZoSlVjMGNtOFY4RE9ScldoSUduRzZtVzlveHd6R2FxVVB6eVNGMUZUalNndFBIblZGX1pidlo?oc=5",
-   "source": "Tech in Asia",
-   "region": "International",
-   "published": "2026-09-15T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
-   "stage": "reported"
-  },
-  {
-   "title": "‘Not trying to solve world hunger’: GoTo takes pragmatic approach to AI",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb1Q0QXJ6MlJweXg4M2hZRS1tRlVIX2lxdm9lNkhrQnRWQi02X3V3R2FwcDRfN2dYUkNDRHprQUFPQ0p3NGlsTUE0OTV0eGkyanhISHhDYUpDMTZ0YWxaX1N6RlZsSTgwZjhOdU1WN0MzY2ZqbUcweGRLSkhxSFdEcERNc2RmSE85TGthVUxEWlp5N183LTNFS1dCMEF3eHFkWlIwSjQ1YXktYW82TkFPQmlWNA?oc=5",
-   "source": "The Business Times",
-   "region": "International",
-   "published": "2026-09-15T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
-   "stage": "reported"
-  },
-  {
-   "title": "Gates Foundation Commits $1bn To Equitable AI For Health, Education, Agriculture",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcVpXTGtwTGVFVER2dXBHeGJWZ1V1LXpNMExaLV9DeTNRX0xvZnU4QUZLNURZYWRmQjJ1a0tjVEVJVHd0SHhZY2ttbmVmSUE2dHgxb2VDekJyUm9Dem44RkotU2ZFUWZ6Y1FIelhmRHdsZWRhbncwZm50aTV3RS1XLXJiM1ZhS29GSjRVUmsyQThYWVZySG9RNGFZX1FSZw?oc=5",
-   "source": "News Agency of Nigeria",
+   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
+   "source": "thenationalnews.com",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [
@@ -2000,9 +2026,33 @@
    "stage": "reported"
   },
   {
-   "title": "Gates Foundation praises UAE's AI approach and agricultural tech ambition",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZE1hNTBVdVdSSTdWNGczcFZWZXliQ3lFc1EtNTBfQi1hcWplbk1FdFBad016aWlld2pmYTZLSFRudmxGU2VfU29UREJITnFRYWFJYWg1ZnBOWDFtM0NpbmNVLWg4WjZYS2xSaXBTTjJrYVR0a3dTcFo5WUUxX3RXb3Zka2RtV3ZvaVVRMEZGNEdKN3BmcmNB?oc=5",
-   "source": "thenationalnews.com",
+   "title": "Gates Foundation Commits $1bn to Equitable AI for Health, Education, Agriculture",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPakIwLTA2bEhEcExESmRiM2doRW9RVTJCazJsdGJrY3FDSndLMUxybG9CUEpWV2gwM0ZZRjhlUGZIMnBqTE1XaE5EZ0JrUjZydlJqVENtN1dJQzJaLW1aQV9SeW5HZl9PUHg2ekc5bG9MR0FQUkhfWjVNbG16bWZBUk0wOThwMUtObk4tM0hLUWk4UGZVeWJkX1oyMVhqWGFwZDJsS2s2aloybUE?oc=5",
+   "source": "MSME Africa",
+   "region": "International",
+   "published": "2026-09-15T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
+   "title": "‘Not trying to solve world hunger’: GoTo takes pragmatic AI path",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM0RSUnNNcUp3Q1VfYzRQWHZDdVllb0dJZEdQUlZJSmMzVUpPSVJjNHN1NHU3RnFiR2hsMXNzMlY2bmhhTWM0ckFWQ2xlTVZoSlVjMGNtOFY4RE9ScldoSUduRzZtVzlveHd6R2FxVVB6eVNGMUZUalNndFBIblZGX1pidlo?oc=5",
+   "source": "Tech in Asia",
+   "region": "International",
+   "published": "2026-09-15T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "reported"
+  },
+  {
+   "title": "‘Not trying to solve world hunger’: GoTo takes pragmatic approach to AI",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb1Q0QXJ6MlJweXg4M2hZRS1tRlVIX2lxdm9lNkhrQnRWQi02X3V3R2FwcDRfN2dYUkNDRHprQUFPQ0p3NGlsTUE0OTV0eGkyanhISHhDYUpDMTZ0YWxaX1N6RlZsSTgwZjhOdU1WN0MzY2ZqbUcweGRLSkhxSFdEcERNc2RmSE85TGthVUxEWlp5N183LTNFS1dCMEF3eHFkWlIwSjQ1YXktYW82TkFPQmlWNA?oc=5",
+   "source": "The Business Times",
    "region": "International",
    "published": "2026-09-15T07:00:00+00:00",
    "needs": [
@@ -2157,25 +2207,6 @@
    "stage": "reported"
   },
   {
-   "title": "Google’s India-first AI models for agriculture | Key Details",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdG43dC1ydk42Y1BsYzhkTkZLTURoTjkyazlCTko3WkEydnlSb3ljbjRwZGN6dG95Sm0zT3FuV3FuZjB5TG5OYUEybklDSE92TTlWTEc5T2ZnQmhoS0FfNzcwNjl3MGhGbHJUQ1NaRGRYM2F4VVVMc3pFVWZhN19CT09TNFdwSHJkMlNQTGJDNDBubHFOOUQ3R25hOFNab2Nmb3F3UFlBNWhnQlY0RnNjSW9ZRG1HYkFjMVMzb1BYRjdOd1VUUmgxcndxUUg?oc=5",
-   "source": "Utkarsh Classes",
-   "region": "International",
-   "published": "2026-09-07T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [
-    {
-     "name": "India",
-     "lon": 78.9,
-     "lat": 21.0,
-     "precision": "country"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
    "title": "Kenya turns to AI to improve maternal, newborn care",
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaTFMWE5xS2J2UTBFY0I5NmZDeW9PcWVpeWl5SEdSTnRBUXVTaWdwMERZcWpDa205S0lKN05Wc2wyS0ZZcnFsc183X00zR0ZxZUVsb0ZfcDJvbnVHeV9abFk3RENFYkE4aUpiZjVpRTFtVGZ1QlIwdkVldmtRSFR5dGNxUXVpX0RpRk5fTzZKWHpYTVFLZjVfNQ?oc=5",
    "source": "Daily Nation",
@@ -2212,6 +2243,25 @@
     }
    ],
    "stage": "critique"
+  },
+  {
+   "title": "Google’s India-first AI models for agriculture | Key Details",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdG43dC1ydk42Y1BsYzhkTkZLTURoTjkyazlCTko3WkEydnlSb3ljbjRwZGN6dG95Sm0zT3FuV3FuZjB5TG5OYUEybklDSE92TTlWTEc5T2ZnQmhoS0FfNzcwNjl3MGhGbHJUQ1NaRGRYM2F4VVVMc3pFVWZhN19CT09TNFdwSHJkMlNQTGJDNDBubHFOOUQ3R25hOFNab2Nmb3F3UFlBNWhnQlY0RnNjSW9ZRG1HYkFjMVMzb1BYRjdOd1VUUmgxcndxUUg?oc=5",
+   "source": "Utkarsh Classes",
+   "region": "International",
+   "published": "2026-09-07T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
   },
   {
    "title": "AI and traditional farming can coexist: Google executive on Indian agri models",
@@ -2328,25 +2378,6 @@
    "stage": "pilot"
   },
   {
-   "title": "AI cooperation with China brings hope to Pakistan's small farmers",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5hOEZUM0JwVHFvZHhET3pHUFBQemd1NHdfMFBCR3VQdnZPNTZneHVTeDFyV0o0ZTdfR2Nfa0hFR1h1RG96NGQzNXBFTFRpai16U08zUWpyVS1IME9SZ2R2QkNwd2dNMW5lX1lsbFFiZmhYMy1Fek9LcERUMDZtXzQ?oc=5",
-   "source": "State Council Information Office",
-   "region": "International",
-   "published": "2026-08-31T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [
-    {
-     "name": "Pakistan",
-     "lon": 69.3,
-     "lat": 30.4,
-     "precision": "country"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
    "title": "Nepal disaster: Fake and AI images flood social media as deaths mount - Truth or Fake",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMHgyRDhnYXJGZm45YVR6YkhfX0p1LUpJSmlVdnFla0VWN1ZVMFB4dHk2TEx6cWxUaDBPdHdpWTJSeHFNeTU0bzFhUGJKcnU1TGR4ZE5KelF1YjV3MUFRQkJOT3FvYXNtNTV3X3hScGRRVGlWT2Y4OWV6dHRiQXVpLXl5ekh0eWtLNDBxbVVWRlRRdlI1MkN3WXpQUW0?oc=5",
    "source": "France 24",
@@ -2383,6 +2414,25 @@
     }
    ],
    "stage": "critique"
+  },
+  {
+   "title": "AI cooperation with China brings hope to Pakistan's small farmers",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5hOEZUM0JwVHFvZHhET3pHUFBQemd1NHdfMFBCR3VQdnZPNTZneHVTeDFyV0o0ZTdfR2Nfa0hFR1h1RG96NGQzNXBFTFRpai16U08zUWpyVS1IME9SZ2R2QkNwd2dNMW5lX1lsbFFiZmhYMy1Fek9LcERUMDZtXzQ?oc=5",
+   "source": "State Council Information Office",
+   "region": "International",
+   "published": "2026-08-31T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Pakistan",
+     "lon": 69.3,
+     "lat": 30.4,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
   },
   {
    "title": "FM Sitharaman meets US CEOs, pitches India as global hub for AI, agriculture and hospitality investments",
@@ -2656,18 +2706,6 @@
    "stage": "reported"
   },
   {
-   "title": "AI’s hunger for power sparks US private gas plant boom",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUjF6UWpLak5JV1RwZERxTW9UVlhxcHhPV3R6LVlmMFpUQlpJRXRuVWhhNnZITENmQ3VnZFFqUFpDcUo2UHRCbzM5VUlNV0t2QWFuR2VrVWFHSFVXbm84QTlCVlBkb2tkOWZtbWhCM1l0QnU1ZUt3TjlsNk8xTFdkMW1vaEhFVTkyZndGYmIzZktZOGxxeHN6SGVicGE3SjAweU4waVJWci0zU0I10gGyAUFVX3lxTE1EZzBPX243NTFyNFNzeTJlX01Wb2JpWW9BUDYwbHc5UkY0R2JRaEVRRjktU2lKYVBzSlVrc3NmaWtHN25uRmo5TTFZMzVSd0JKV01oSl9wUUNVczAwY2ZuLS1weE5oY2FwdG8wY0RqZlhZYkVrY3pPZy05WE9iU1ZsZzVLSjJFb2NrX1Z6RjdpTTRwSUhwSTFMT0pxZ2FNZk1QR1hJbTA4SVBqWHYyOWJ0WWc?oc=5",
-   "source": "Malay Mail",
-   "region": "International",
-   "published": "2026-08-11T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
-   "stage": "reported"
-  },
-  {
    "title": "(Hello Africa) China-Tanzania healthcare cooperation brings AI-powered diagnosis to patients",
    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBFOUh2clhyOS04dTRpZS1JOGlzMW80REF4enRxTlVIMkF0U3ZDdWQ4QUs5THZXWGRHb29KRm5faE11SzhnWUxMWW9oZ0VIbkVrbDJRYzFPNUZnYmw5WWVLeHJpVDlHNTE0dlowcW1lalppR2c2bHY5cG9reEM?oc=5",
    "source": "Xinhua",
@@ -2684,6 +2722,18 @@
      "precision": "country"
     }
    ],
+   "stage": "reported"
+  },
+  {
+   "title": "AI’s hunger for power sparks US private gas plant boom",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUjF6UWpLak5JV1RwZERxTW9UVlhxcHhPV3R6LVlmMFpUQlpJRXRuVWhhNnZITENmQ3VnZFFqUFpDcUo2UHRCbzM5VUlNV0t2QWFuR2VrVWFHSFVXbm84QTlCVlBkb2tkOWZtbWhCM1l0QnU1ZUt3TjlsNk8xTFdkMW1vaEhFVTkyZndGYmIzZktZOGxxeHN6SGVicGE3SjAweU4waVJWci0zU0I10gGyAUFVX3lxTE1EZzBPX243NTFyNFNzeTJlX01Wb2JpWW9BUDYwbHc5UkY0R2JRaEVRRjktU2lKYVBzSlVrc3NmaWtHN25uRmo5TTFZMzVSd0JKV01oSl9wUUNVczAwY2ZuLS1weE5oY2FwdG8wY0RqZlhZYkVrY3pPZy05WE9iU1ZsZzVLSjJFb2NrX1Z6RjdpTTRwSUhwSTFMT0pxZ2FNZk1QR1hJbTA4SVBqWHYyOWJ0WWc?oc=5",
+   "source": "Malay Mail",
+   "region": "International",
+   "published": "2026-08-11T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
    "stage": "reported"
   },
   {
@@ -2725,25 +2775,6 @@
    "stage": "reported"
   },
   {
-   "title": "Maharashtra’s AI advantage: Building the future of Indian agriculture",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOX0FuSG8yMWhfaVQyWGhoTjlYN1J5RHYzeEY0QnR4M19aRDlmQ0VQdGxZZEppc0gxLWhPd0VBelZrR2dadlV4Rm50b1FiVl9VTzJQaURRMlNPRFQzaWoyNk1uTDg0TDFPaURIZDZfdEJWRnRfQnJZQk94eEw4bElvSGZ2b0JpdFREeklLTDFuNUF5b1ZiMmJaYUVGQkFodlhVbFJ4M1QxWjZZMzkwcmNHT2hzOFloMnQ1eGZWLXpwWG9vcDR6WExmbmJfVjIyMlV2Ui1VV3BtbWQyREhYNmM00gHmAUFVX3lxTE1QQmpLek85X3o2UktSWTFqWGJZVkpjSlVxQmVjZDNiSXpOaElYQlk2MWx6aTQxQWZVdU9iazhRU0xDZms5R3h2Z3NvQm04Y21nMzFfMDlmV3hzR0N4SjZsSzA2TU1vNEh1a29xZ0J4LXp1eS0tdVI0WjZmcy1aRmdYT1lhNkpHaXRPMjlTR2tNbUlaM2wyVUFHYWZHdWUxNXQzYTBBZ0gybWZiemtQMHUyck9lRmZNSHpLdjJDUndNV25tZlZVd21xWDZmVTYtVXhCRW1pTjFzYUhQWjFPcXplcDZCRzlB?oc=5",
-   "source": "BusinessLine",
-   "region": "International",
-   "published": "2026-08-08T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [
-    {
-     "name": "Maharashtra, India",
-     "lon": 75.7,
-     "lat": 19.7,
-     "precision": "region"
-    }
-   ],
-   "stage": "proposed"
-  },
-  {
    "title": "Working in AI offers no shelter from AI, new India survey of tech professionals suggests",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQalYtSXhlS1FuN2RTdDBuNkRpd1FGbHhoQUwxb1ZOZ3U2NjRYdVQteXpPbnJkYWlhdVp3U09LWWM1RWppc3cyaFBZc2o4WG4yRDZfd2c5TjhYMHVLckloT3RpVU9kYjFyNko5UXNfc3ZZMm5fUlFZYWVYYmNuOFl4VTd2ZTBfZmlNeXFDQmlJRnVocF9JLTFsRlhKUkc3RDVrak9fUFRveUZlZnFmSGJUSjJvWEZTTEh3RzQxVGJZQ3J2bFE2VDlDUVlsSQ?oc=5",
    "source": "t2ONLINE",
@@ -2761,6 +2792,25 @@
     }
    ],
    "stage": "reported"
+  },
+  {
+   "title": "Maharashtra’s AI advantage: Building the future of Indian agriculture",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOX0FuSG8yMWhfaVQyWGhoTjlYN1J5RHYzeEY0QnR4M19aRDlmQ0VQdGxZZEppc0gxLWhPd0VBelZrR2dadlV4Rm50b1FiVl9VTzJQaURRMlNPRFQzaWoyNk1uTDg0TDFPaURIZDZfdEJWRnRfQnJZQk94eEw4bElvSGZ2b0JpdFREeklLTDFuNUF5b1ZiMmJaYUVGQkFodlhVbFJ4M1QxWjZZMzkwcmNHT2hzOFloMnQ1eGZWLXpwWG9vcDR6WExmbmJfVjIyMlV2Ui1VV3BtbWQyREhYNmM00gHmAUFVX3lxTE1QQmpLek85X3o2UktSWTFqWGJZVkpjSlVxQmVjZDNiSXpOaElYQlk2MWx6aTQxQWZVdU9iazhRU0xDZms5R3h2Z3NvQm04Y21nMzFfMDlmV3hzR0N4SjZsSzA2TU1vNEh1a29xZ0J4LXp1eS0tdVI0WjZmcy1aRmdYT1lhNkpHaXRPMjlTR2tNbUlaM2wyVUFHYWZHdWUxNXQzYTBBZ0gybWZiemtQMHUyck9lRmZNSHpLdjJDUndNV25tZlZVd21xWDZmVTYtVXhCRW1pTjFzYUhQWjFPcXplcDZCRzlB?oc=5",
+   "source": "BusinessLine",
+   "region": "International",
+   "published": "2026-08-08T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Maharashtra, India",
+     "lon": 75.7,
+     "lat": 19.7,
+     "precision": "region"
+    }
+   ],
+   "stage": "proposed"
   },
   {
    "title": "India needs faster water reforms to support AI, manufacturing and agriculture growth: Economist",
@@ -2851,6 +2901,44 @@
    "stage": "reported"
   },
   {
+   "title": "In Somalia, AI is helping deliver food to hungry families",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YV3ZyMkZnN3FBWHNfRmpvSGEyNkhVOGZtMHJVYjBaQTEyVml0Q3g2SjgxMW02OENteU8tc0J6T2dIM3B3NF9kcXVFaEFudFRwNVZNOHVjRQ?oc=5",
+   "source": "UN News",
+   "region": "International",
+   "published": "2026-08-03T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [
+    {
+     "name": "Somalia",
+     "lon": 46.2,
+     "lat": 5.2,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "India's AI Data Centers: Liquid Cooling, Water Scarcity Drive Design Choices",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWE5TamRGZWIwc0VZWk1yYno2RlVnRUU1RzhreFZyLTJfR2NUSHhBeU9POU9oNHV1cG5NUFRnUlQ5ek1VaHlrUUFYb09fZ1F5SmVsNnRsMXp3QnRIMjhMbE1keWZQWXNQdjdiWGJWcnNrMGlDQWp6ZlRvcW5MRkJiQUE5azJqYW96aEZnV3R6bWx0TU80MUJEOU91eDZveWhDWE1DRVh6aDZZV25zZmNJYzl6dlM5VFN6Qjc1WU1WNmFFcmRKbTlXSEFhbzJYNWZxYlEtYkJZVzVxRHl1ZUlReVVMWXRQa2NYNXhEWDN2RmRqRzRXRDA1aTdlVdIBgAJBVV95cUxOWHZvbDJmQXZvUDVSZnBJOXlkRkhma2VLR0NBdlVqc0VDYVRnckxLTk1lT0JYS2ZpblJYVXZRTFNUd25ob0N2eEhuZ0NSdHhtVzVRWW5CRXBwNE5TSWFuQzNTSjZESVZITXFfM1ZKamZBay1LcWxHUmVzMFdoN084aDIwVFhlbXZLcjZ4T3lRY09Ld3V2dWg1a00tMVI1U09PRVQ5TXVlZlJlRDZqUDFNRFRBalNJaUpuYXpKeHcwdWFCVndORjk0d2xCLWR6bG5qWHJlOFVkdmVvRjlSTTNnekY1bjJ4ZDItanl0X3B1RFB0MG9LUjJUT3c5WnpURWc4?oc=5",
+   "source": "ET Datacenters",
+   "region": "International",
+   "published": "2026-08-03T07:00:00+00:00",
+   "needs": [
+    "water"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
    "title": "Somalia: In Somalia, AI Is Helping Deliver Food to Hungry Families",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03b3VnR0xnVGQ5enljV0pDWWdVQzBnRFlaNVpDeFQ3MEZaUDhoLWV5bDRZOXhsekw5dVRCLTVvY0liZ3RXSmdlZXlfQnZPVGxoYjNGR1ZOZWt4cVE?oc=5",
    "source": "allAfrica.com",
@@ -2884,44 +2972,6 @@
      "lon": 79.7,
      "lat": 15.9,
      "precision": "region"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
-   "title": "India's AI Data Centers: Liquid Cooling, Water Scarcity Drive Design Choices",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWE5TamRGZWIwc0VZWk1yYno2RlVnRUU1RzhreFZyLTJfR2NUSHhBeU9POU9oNHV1cG5NUFRnUlQ5ek1VaHlrUUFYb09fZ1F5SmVsNnRsMXp3QnRIMjhMbE1keWZQWXNQdjdiWGJWcnNrMGlDQWp6ZlRvcW5MRkJiQUE5azJqYW96aEZnV3R6bWx0TU80MUJEOU91eDZveWhDWE1DRVh6aDZZV25zZmNJYzl6dlM5VFN6Qjc1WU1WNmFFcmRKbTlXSEFhbzJYNWZxYlEtYkJZVzVxRHl1ZUlReVVMWXRQa2NYNXhEWDN2RmRqRzRXRDA1aTdlVdIBgAJBVV95cUxOWHZvbDJmQXZvUDVSZnBJOXlkRkhma2VLR0NBdlVqc0VDYVRnckxLTk1lT0JYS2ZpblJYVXZRTFNUd25ob0N2eEhuZ0NSdHhtVzVRWW5CRXBwNE5TSWFuQzNTSjZESVZITXFfM1ZKamZBay1LcWxHUmVzMFdoN084aDIwVFhlbXZLcjZ4T3lRY09Ld3V2dWg1a00tMVI1U09PRVQ5TXVlZlJlRDZqUDFNRFRBalNJaUpuYXpKeHcwdWFCVndORjk0d2xCLWR6bG5qWHJlOFVkdmVvRjlSTTNnekY1bjJ4ZDItanl0X3B1RFB0MG9LUjJUT3c5WnpURWc4?oc=5",
-   "source": "ET Datacenters",
-   "region": "International",
-   "published": "2026-08-03T07:00:00+00:00",
-   "needs": [
-    "water"
-   ],
-   "places": [
-    {
-     "name": "India",
-     "lon": 78.9,
-     "lat": 21.0,
-     "precision": "country"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
-   "title": "In Somalia, AI is helping deliver food to hungry families",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YV3ZyMkZnN3FBWHNfRmpvSGEyNkhVOGZtMHJVYjBaQTEyVml0Q3g2SjgxMW02OENteU8tc0J6T2dIM3B3NF9kcXVFaEFudFRwNVZNOHVjRQ?oc=5",
-   "source": "UN News",
-   "region": "International",
-   "published": "2026-08-03T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [
-    {
-     "name": "Somalia",
-     "lon": 46.2,
-     "lat": 5.2,
-     "precision": "country"
     }
    ],
    "stage": "reported"
@@ -3405,25 +3455,6 @@
    "stage": "pilot"
   },
   {
-   "title": "Saina Human AI launches India’s First AI Literacy Summit in Kochi, the event was inaugurated by Keralam’s AI Minister - Shri P.K. Kunhalikutty",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQdzVTRzdIYzNDdG9hSGpqclpKM2pIaTBob0R0aDlwb19KcFY1enBSVXJfNTFwSWNGb193NkVFTWVybnNzUnlhNEhLOEJkQWVUU3dJWEFQQ29uV3ZqZFppc1l4c3FneUxwS0NqdnZUVlNwNERYWTlqSUFzeWQ5SjNTWnNCWXJwMDJFZWMwczVBTGtMQzdJYUIyN2tOREJ0U0hrT3I2QUVYX0RNZkhlbXB3alUxNHVJd3d6VUI0SXhGX1I3Q3Y0R0JmclFyS2NkOFBqUjYtaVM3c1F2TExwRm01cmVGOC00SkdGanJLTnNCeU0?oc=5",
-   "source": "Roastbrief US",
-   "region": "International",
-   "published": "2026-07-10T07:00:00+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "India",
-     "lon": 78.9,
-     "lat": 21.0,
-     "precision": "country"
-    }
-   ],
-   "stage": "pilot"
-  },
-  {
    "title": "AI in radiology: The future of early diagnosis in India",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSU5TRlNBUGNoWEhqRU9MNXdPNDQzSnZlLWZzSTFQWVlxQWpiY1E4dHJtMFZ3Q1p1YkpqVlA4QlNmT1ZBSWVMQU1tU19wZEZ1OUxTV3BTZDdVUnhyakRHdWVmazRBTWROaS1UU1ZXOTRmS1lRVjVCOVhvcExlc2h6ci1pZ2w5b09lY0VPd2JTMThQRGdFWDd3bGZNZEpySUhub1E?oc=5",
    "source": "Express Healthcare",
@@ -3441,6 +3472,25 @@
     }
    ],
    "stage": "proposed"
+  },
+  {
+   "title": "Saina Human AI launches India’s First AI Literacy Summit in Kochi, the event was inaugurated by Keralam’s AI Minister - Shri P.K. Kunhalikutty",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQdzVTRzdIYzNDdG9hSGpqclpKM2pIaTBob0R0aDlwb19KcFY1enBSVXJfNTFwSWNGb193NkVFTWVybnNzUnlhNEhLOEJkQWVUU3dJWEFQQ29uV3ZqZFppc1l4c3FneUxwS0NqdnZUVlNwNERYWTlqSUFzeWQ5SjNTWnNCWXJwMDJFZWMwczVBTGtMQzdJYUIyN2tOREJ0U0hrT3I2QUVYX0RNZkhlbXB3alUxNHVJd3d6VUI0SXhGX1I3Q3Y0R0JmclFyS2NkOFBqUjYtaVM3c1F2TExwRm01cmVGOC00SkdGanJLTnNCeU0?oc=5",
+   "source": "Roastbrief US",
+   "region": "International",
+   "published": "2026-07-10T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "pilot"
   },
   {
    "title": "AI Intervention holds promise of manifold increase in India's Agriculture Economy; Agri-Startups Hold the Key to the Future of Farming: Dr. Jitendra Singh",
@@ -3486,25 +3536,6 @@
    "stage": "reported"
   },
   {
-   "title": "Empowering farmers: How AI is making Indian agriculture smarter, simpler and more profitable",
-   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPQ1NxUlpGX3VJNEpCU2ZFQ1RuNGVpcTlJRTRJN2xWTWxCeTJsSXVWMGhHVlRNQ1NVY25yTVpDYjZ5UnBsaTVwcG9YaFpkdjNoRmJ5Nzd0blFLNUhNNlBZRTVUTlNkcE0xaE5YY0Q5ZWo3UlZ1S1N3a1lvSHQ5cDdPYXJhT1JxNjZ2clVtSFQ0TjdCdVlPSmQxd1lKVVVXd0dLWUpKeC1PeG1FbVRjYWFhZEVRRmtDQjkzOVdDeW9kZTdGdG5lalJvMXpEMEtaUTZMbWJpcFIyMHRNSVJldlY2bmtvV2RYOVFDeV9XU3RtSGdxdkVKNEtyOUVHbzhxUdIBhAJBVV95cUxNejlSUWFBT011MXliUmhWMnRkYkl3UHNXM1ZxSWM4ckpTMF81cVZScEhVVjBqMkE0bVhhRWRiN0FOR0M1NTRsVVdtZEs1NGFGX0g3Yi1odXdlRHI4RjVGMDc0SUIzSWkyQm8wRy1feVhwQlpHMjJpN0x4aDlVQXdGZlNhQ3dDbnJKYjVwNFQybEgzLUVidVROeXc4WDNtUmNkRXlRS2M5eGdncXoxa2h1eTF5ZnhQWFR5Z21CdW1SUzE2MWVxdzBoN0NtYV9uSHgzc2dSV3N2N0tTUTlPZHoyNUVoRmxyV0lEbXlFcDFJdjRmd1ZBaENoTWFKZlNMUHN4a2FwNQ?oc=5",
-   "source": "BusinessLine",
-   "region": "International",
-   "published": "2026-07-05T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [
-    {
-     "name": "India",
-     "lon": 78.9,
-     "lat": 21.0,
-     "precision": "country"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
    "title": "India emerges as safe haven for investors as they seek shelter from AI frenzy",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNVplUjV2VWR5a3ZwRzVmT2g5eFllQVR0V2RlRGs5dzlZd3JZZVpEeHZET0FnV010dGFYSGxCYUZOR1J6cjRXamtKR2xWWWFaRHZRTnkySW1BWTJfZnhWYzZGdnZzOHlEeWg0STNHQTdpMWRuVzhfZEdNa0pESHdYb2FLZEotR0JxOTJ5N0N5SmdnMTZiWDRNQktoZmdYVUstTEFaWE56cXotWFVnRnhBYWpURmczZlhJM3U0N0RMb2wyQ1JDNFpoYW55Z9IB0AFBVV95cUxOaER0NUZoLTJ6anY3UWNEdFlVczlmTS1HcTBEVGVTdlBjX19Tb0pRdEZEVC1ueVR2T2Iwc0lyTzhyb2RTV2Y5ZVFvSnpYeWczTFpYclhmcnNtcXl4RXNhUkxQckNfbkNISGVxVlUwcUMzT3hBYTVIdmRJcXJLZExwSnVmUm9KRFdYUHhTRGFzX2ZNbURjQVlVWld2RGlSOVlhempRMTNTMHFIT2hVVlNwWmotMzZYdS12OVVMbzlMX3dHbEgxeDJHb2JOdWttaU81?oc=5",
    "source": "ET Enterprise AI",
@@ -3531,6 +3562,25 @@
    "published": "2026-07-05T07:00:00+00:00",
    "needs": [
     "water"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "Empowering farmers: How AI is making Indian agriculture smarter, simpler and more profitable",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPQ1NxUlpGX3VJNEpCU2ZFQ1RuNGVpcTlJRTRJN2xWTWxCeTJsSXVWMGhHVlRNQ1NVY25yTVpDYjZ5UnBsaTVwcG9YaFpkdjNoRmJ5Nzd0blFLNUhNNlBZRTVUTlNkcE0xaE5YY0Q5ZWo3UlZ1S1N3a1lvSHQ5cDdPYXJhT1JxNjZ2clVtSFQ0TjdCdVlPSmQxd1lKVVVXd0dLWUpKeC1PeG1FbVRjYWFhZEVRRmtDQjkzOVdDeW9kZTdGdG5lalJvMXpEMEtaUTZMbWJpcFIyMHRNSVJldlY2bmtvV2RYOVFDeV9XU3RtSGdxdkVKNEtyOUVHbzhxUdIBhAJBVV95cUxNejlSUWFBT011MXliUmhWMnRkYkl3UHNXM1ZxSWM4ckpTMF81cVZScEhVVjBqMkE0bVhhRWRiN0FOR0M1NTRsVVdtZEs1NGFGX0g3Yi1odXdlRHI4RjVGMDc0SUIzSWkyQm8wRy1feVhwQlpHMjJpN0x4aDlVQXdGZlNhQ3dDbnJKYjVwNFQybEgzLUVidVROeXc4WDNtUmNkRXlRS2M5eGdncXoxa2h1eTF5ZnhQWFR5Z21CdW1SUzE2MWVxdzBoN0NtYV9uSHgzc2dSV3N2N0tTUTlPZHoyNUVoRmxyV0lEbXlFcDFJdjRmd1ZBaENoTWFKZlNMUHN4a2FwNQ?oc=5",
+   "source": "BusinessLine",
+   "region": "International",
+   "published": "2026-07-05T07:00:00+00:00",
+   "needs": [
+    "food"
    ],
    "places": [
     {
@@ -3674,6 +3724,25 @@
    "stage": "pilot"
   },
   {
+   "title": "Mumbai Makes History: Sir J.J. Hospital Opens India’s First Government AI-Powered “Lazy Eye” Clinic — Digital Vision Therapy for Millions",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOX296VzFlME1pM3p6LWFtWWhzZ2pIU2psZ2xhNkhYQzlQSUlXNFNDZDRkOTBLN05ZaW9IaExZYUx2Y0UtTng3bFUyTDBvOXVKdUtnRDVRai1NaUsxTk1sRV9FMi1ESENaZVRvS01XUE53aUZpV0pxdlFkQ3E1Y1BfZm5LTVExNUtlWk5aVDU5cW53S1luRFJidEU1MjlwaFNodmhoSmhVZS0yN05tQklwQ3BOc08yQlIyQXRTckRlMGVKQVlfaE51X3ZiQlloaWFwcHFsR1ZaSVE1QmE2cG9SeWJzYlppUHZ0SEFWWTBySVhhc0ZiUEs2MEhjMFlHQdIBgwJBVV95cUxNTU04bUR0UGhVMF9HdUxQZUxFbnRtX2ZORkl1MUJleXE3ZnR4U0VpUVoyRXlWOGc2Zi1zRTg0bDZuVElsRXJzZzVvS1RITXU4TFRwazN4cnVpckZxc0l3UEs1VlNtbGdmc21ZMkxaOU1NLXF2dEF0UUVTVTRIOURtWWZmSkpQUzFWY3YwWlVDbHRUMjQwTDRwbGt2bUVab0lFN0d3bldJZzJFckNzNjhIUzZMRllKYXdlS0pOcklLY2tPUWhaRHZaVnY3M1pvc0FDNDlQSEx1TVNjT2pOTG1GZjgyODhvemQ0Nkt5aTd5em9BaG03eE5JdkVPNVNMU1lKdTVV?oc=5",
+   "source": "TheWire.in",
+   "region": "International",
+   "published": "2026-06-25T07:00:00+00:00",
+   "needs": [
+    "health"
+   ],
+   "places": [
+    {
+     "name": "Mumbai, India",
+     "lon": 72.8826,
+     "lat": 19.0728,
+     "precision": "town"
+    }
+   ],
+   "stage": "proposed"
+  },
+  {
    "title": "From Rotten Tomatoes to AI: Ugandan Commonwealth Youth Award Winner Takes Aim at Hunger Across Africa",
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQLTgtcnNkNHZGUnlST3NxRV9LczhBSUdtSmRjRXJZMVRhWGRMMFZhOElKTmpfZWs5VVdYYzVRSl9jZGl0cG95MGR6eXZ4RXl4Y2N6MTBUSkJOVktFV3NuTm5XbGx0M1ZUY2lfdl9uQ3N0Mkw5VkdxQWVDSWdCUU85dnlFTmg3UUwtOXRsTDNJZmlGMWZWaFJMR1EzN0NnQ1JWWTZtMVpTajJoRVF4dXZNVlJFWEtOZ1I3X0tBNmlYeFpEZ1NaT2JCZTlDUzY1dw?oc=5",
    "source": "Inter Press Service",
@@ -3710,25 +3779,6 @@
     }
    ],
    "stage": "reported"
-  },
-  {
-   "title": "Mumbai Makes History: Sir J.J. Hospital Opens India’s First Government AI-Powered “Lazy Eye” Clinic — Digital Vision Therapy for Millions",
-   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOX296VzFlME1pM3p6LWFtWWhzZ2pIU2psZ2xhNkhYQzlQSUlXNFNDZDRkOTBLN05ZaW9IaExZYUx2Y0UtTng3bFUyTDBvOXVKdUtnRDVRai1NaUsxTk1sRV9FMi1ESENaZVRvS01XUE53aUZpV0pxdlFkQ3E1Y1BfZm5LTVExNUtlWk5aVDU5cW53S1luRFJidEU1MjlwaFNodmhoSmhVZS0yN05tQklwQ3BOc08yQlIyQXRTckRlMGVKQVlfaE51X3ZiQlloaWFwcHFsR1ZaSVE1QmE2cG9SeWJzYlppUHZ0SEFWWTBySVhhc0ZiUEs2MEhjMFlHQdIBgwJBVV95cUxNTU04bUR0UGhVMF9HdUxQZUxFbnRtX2ZORkl1MUJleXE3ZnR4U0VpUVoyRXlWOGc2Zi1zRTg0bDZuVElsRXJzZzVvS1RITXU4TFRwazN4cnVpckZxc0l3UEs1VlNtbGdmc21ZMkxaOU1NLXF2dEF0UUVTVTRIOURtWWZmSkpQUzFWY3YwWlVDbHRUMjQwTDRwbGt2bUVab0lFN0d3bldJZzJFckNzNjhIUzZMRllKYXdlS0pOcklLY2tPUWhaRHZaVnY3M1pvc0FDNDlQSEx1TVNjT2pOTG1GZjgyODhvemQ0Nkt5aTd5em9BaG03eE5JdkVPNVNMU1lKdTVV?oc=5",
-   "source": "TheWire.in",
-   "region": "International",
-   "published": "2026-06-25T07:00:00+00:00",
-   "needs": [
-    "health"
-   ],
-   "places": [
-    {
-     "name": "Mumbai, India",
-     "lon": 72.8826,
-     "lat": 19.0728,
-     "precision": "town"
-    }
-   ],
-   "stage": "proposed"
   },
   {
    "title": "The emerging role of AI tools in smallholder finance",
@@ -3945,13 +3995,13 @@
    "stage": "reported"
   },
   {
-   "title": "'Oilseeds Kisaan Mitra', India's First Nationwide WhatsApp AI Advisory for Oilseed Farmers",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBpcUgxY1FodTZkRkd6bFhzcGZ3YThBU1Q2djJScTZzd2xETFZGcVZmOGt2bVByM2Y1VVpVa0NFbm81emYzVGNYd1k1QmdDeU1rNUpHRGVCbzNiTVNuSmFwd3VTUDlLNTN5UkFvczZvTVdMM3JXNGg0R3VRcw?oc=5",
-   "source": "www.pib.gov.in",
+   "title": "Asha Workers Co-Design AI Pregnancy Tracker Rural India Maternal Health",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVVZjRDl5ZnZ6RnZKOXl0M2hJRG5nY29CS0VqSEprblJyNTZBZkQteDhTM2tYLWt3ZV96eTN5UDRmTE5GeXV6a2I5TUlqRDRNSXVxdWFjUnZpY1pmT3hwT251OEQ0UkNId3dnU0FhOHFnbnROVTlhdllwY2hNX0dXWlAyd0k2SGk3bmdUblUyOU9oUUwxSEgyR0Q0TGNFYUlDQnNsTNIBqgFBVV95cUxONkRmZm5CbHFLRTc4RWJGN2lySFRDSkdEU1B4MGt6YmpHZTlROFhMbUtpWEc1VGRFYkxkQVkyaTJ6WDBJbDNBeXZkbkdVb24tOHRlbGVRWFluV0w3Mi1hODBJU3pfUVNaZ2RFemJzbFdVYXVMYkNveG1Sb3hERHMwQVNNc1B2TWtCOUFwQ1BMVmJmRDFCMVpRR296dV9yMzVzQTVXVzZWX081QQ?oc=5",
+   "source": "The Better India",
    "region": "International",
    "published": "2026-06-11T07:00:00+00:00",
    "needs": [
-    "food"
+    "health"
    ],
    "places": [
     {
@@ -3964,13 +4014,13 @@
    "stage": "reported"
   },
   {
-   "title": "Asha Workers Co-Design AI Pregnancy Tracker Rural India Maternal Health",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVVZjRDl5ZnZ6RnZKOXl0M2hJRG5nY29CS0VqSEprblJyNTZBZkQteDhTM2tYLWt3ZV96eTN5UDRmTE5GeXV6a2I5TUlqRDRNSXVxdWFjUnZpY1pmT3hwT251OEQ0UkNId3dnU0FhOHFnbnROVTlhdllwY2hNX0dXWlAyd0k2SGk3bmdUblUyOU9oUUwxSEgyR0Q0TGNFYUlDQnNsTNIBqgFBVV95cUxONkRmZm5CbHFLRTc4RWJGN2lySFRDSkdEU1B4MGt6YmpHZTlROFhMbUtpWEc1VGRFYkxkQVkyaTJ6WDBJbDNBeXZkbkdVb24tOHRlbGVRWFluV0w3Mi1hODBJU3pfUVNaZ2RFemJzbFdVYXVMYkNveG1Sb3hERHMwQVNNc1B2TWtCOUFwQ1BMVmJmRDFCMVpRR296dV9yMzVzQTVXVzZWX081QQ?oc=5",
-   "source": "The Better India",
+   "title": "'Oilseeds Kisaan Mitra', India's First Nationwide WhatsApp AI Advisory for Oilseed Farmers",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBpcUgxY1FodTZkRkd6bFhzcGZ3YThBU1Q2djJScTZzd2xETFZGcVZmOGt2bVByM2Y1VVpVa0NFbm81emYzVGNYd1k1QmdDeU1rNUpHRGVCbzNiTVNuSmFwd3VTUDlLNTN5UkFvczZvTVdMM3JXNGg0R3VRcw?oc=5",
+   "source": "www.pib.gov.in",
    "region": "International",
    "published": "2026-06-11T07:00:00+00:00",
    "needs": [
-    "health"
+    "food"
    ],
    "places": [
     {
@@ -4127,25 +4177,6 @@
    "stage": "reported"
   },
   {
-   "title": "Google announces AI training programme for teachers and students across India",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOX04zbjJ3UWhnYTBfajc0NVlQVk50Z0V6RGRFVkxxQXJHMlY3S2tTSURKUjFDZW9jYkgtOVBiUVRvYWs3UlM3aHNlbDhkdWZSUXlKYmZDeTNPbENsVk8yQTVyQjhTTzJiVVFzeXl3dWFmc0E0SDBsc2x0QlBRaXlQS0hFc3VzVHBycnZTNlJHLXI1bHBRaDdXWDRUd05XMlkzbmdaOGp0OFJZWXByMUFVc2p2ajg5Tm90NTBCcE1xMlRabl9TTFhPa3BlVVluNHUwVTBZYXRWMWU1aW9pZ1NZMXliVdIB6AFBVV95cUxPY0V6WjlOVlBXVm1oV0gzQ1hkcWF1eDdfbzZOT3pOeTNsUEVGTVVVZW1PMXZ5NjBqbVVpOGhtMUU3MjR1Z1BOMWRrVFY5X3JFR0pxaW9SZ1lVeGhPUWxodjgtcC1ITm82OElzMmZtZGg1cnpvSV9SLVFReTNMOHJCYU5aSjZ0S0tRY01SNzFtMDVVRW1uX2U2Q2EtNWk5ZEdlZ1ozakZ6SUl4SURUSjVWMVJxaTlpWVlicktaUzhhMG1yZlhFN2ZxbDRjd3d0LW95QUlaXzg4eTl3cWlyMnJJcVlHQVBnSERh?oc=5",
-   "source": "India Today",
-   "region": "International",
-   "published": "2026-05-21T07:00:00+00:00",
-   "needs": [
-    "education"
-   ],
-   "places": [
-    {
-     "name": "India",
-     "lon": 78.9,
-     "lat": 21.0,
-     "precision": "country"
-    }
-   ],
-   "stage": "reported"
-  },
-  {
    "title": "Machine learning-enhanced modeling approach for optimally predicting household level food insecurity in Ethiopia during COVID-19 | Scientific Reports",
    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE52VWNqSVpsa2p6Skt0Q3V5S1RIUTVaUWE4SzlvRGtoUS1aSDFvTjF6OEN1WmFVaUYwNXNZYXc0MWlMcUVaTG03d3hXMzlFQnk0SVp5eWZPdnRFcWVtZmZr?oc=5",
    "source": "Nature",
@@ -4159,6 +4190,25 @@
      "name": "Ethiopia",
      "lon": 39.6,
      "lat": 8.6,
+     "precision": "country"
+    }
+   ],
+   "stage": "reported"
+  },
+  {
+   "title": "Google announces AI training programme for teachers and students across India",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOX04zbjJ3UWhnYTBfajc0NVlQVk50Z0V6RGRFVkxxQXJHMlY3S2tTSURKUjFDZW9jYkgtOVBiUVRvYWs3UlM3aHNlbDhkdWZSUXlKYmZDeTNPbENsVk8yQTVyQjhTTzJiVVFzeXl3dWFmc0E0SDBsc2x0QlBRaXlQS0hFc3VzVHBycnZTNlJHLXI1bHBRaDdXWDRUd05XMlkzbmdaOGp0OFJZWXByMUFVc2p2ajg5Tm90NTBCcE1xMlRabl9TTFhPa3BlVVluNHUwVTBZYXRWMWU1aW9pZ1NZMXliVdIB6AFBVV95cUxPY0V6WjlOVlBXVm1oV0gzQ1hkcWF1eDdfbzZOT3pOeTNsUEVGTVVVZW1PMXZ5NjBqbVVpOGhtMUU3MjR1Z1BOMWRrVFY5X3JFR0pxaW9SZ1lVeGhPUWxodjgtcC1ITm82OElzMmZtZGg1cnpvSV9SLVFReTNMOHJCYU5aSjZ0S0tRY01SNzFtMDVVRW1uX2U2Q2EtNWk5ZEdlZ1ozakZ6SUl4SURUSjVWMVJxaTlpWVlicktaUzhhMG1yZlhFN2ZxbDRjd3d0LW95QUlaXzg4eTl3cWlyMnJJcVlHQVBnSERh?oc=5",
+   "source": "India Today",
+   "region": "International",
+   "published": "2026-05-21T07:00:00+00:00",
+   "needs": [
+    "education"
+   ],
+   "places": [
+    {
+     "name": "India",
+     "lon": 78.9,
+     "lat": 21.0,
      "precision": "country"
     }
    ],
@@ -4558,6 +4608,18 @@
    "stage": "reported"
   },
   {
+   "title": "Joseph Stiglitz warns AI’s hunger for internet comments could degrade our ‘information ecosystem’",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOWxOTnNPRFI4dXpzWXl3VDAycy0yeVhBSEdPOXRpU3p2bm1sMFN1WG4xcDI5MjlVeUdvcmxzRTA3aGY5LTF2UUpLZmlxVjZRTXVqMjJ2a2xpTndxTm93R3p0SnBCUjJ1cy11XzM2VER1UmM2UEF1NWZmSGdTekV4NXhyZzRQVnJHX1JnWUZySnpvS0dqOTFHUHlnZDZkcTF4UzdZdkhURDJ6SWRFNGc?oc=5",
+   "source": "Fortune",
+   "region": "International",
+   "published": "2026-03-09T07:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
+   "stage": "critique"
+  },
+  {
    "title": "Digital Agriculture and AI for Climate-Resilient Smallholder Farming in Zimbabwe",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRWpwZHN0M0tlazlBZ1dZdmRBUkdPZVhBMEJ5MVVZNUNBNjNzS3h4aWEwcXdWRDc1bU9kdld5SUNOUnhkaTZqRUZkNEprakJQdHQzRWx0ek5xSUlSSDliSkYwZTFVUFZ3cHdxRzZHcFNVc1FkendTUEtqNDV5eVB1U0xDWHAxQ21WbUVKc3N2NUZmeFFXM0lUMFlNVDF3dHVPb2pZcUVIT0pyT0Fo?oc=5",
    "source": "UNU | United Nations University",
@@ -4587,18 +4649,6 @@
    ],
    "places": [],
    "stage": "reported"
-  },
-  {
-   "title": "Joseph Stiglitz warns AI’s hunger for internet comments could degrade our ‘information ecosystem’",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOWxOTnNPRFI4dXpzWXl3VDAycy0yeVhBSEdPOXRpU3p2bm1sMFN1WG4xcDI5MjlVeUdvcmxzRTA3aGY5LTF2UUpLZmlxVjZRTXVqMjJ2a2xpTndxTm93R3p0SnBCUjJ1cy11XzM2VER1UmM2UEF1NWZmSGdTekV4NXhyZzRQVnJHX1JnWUZySnpvS0dqOTFHUHlnZDZkcTF4UzdZdkhURDJ6SWRFNGc?oc=5",
-   "source": "Fortune",
-   "region": "International",
-   "published": "2026-03-09T07:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
-   "stage": "critique"
   },
   {
    "title": "Big tech ‘leave poor farmers sidelined’ in AI revolution",
@@ -4813,9 +4863,9 @@
    "stage": "reported"
   },
   {
-   "title": "AI in India: The world's 'AI back office' is betting on small language models to bring big impact to smallholder farming",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQb2Z3SHNWcjlZRmhQODhnTmVoUWVvTEs0eE9DbXZvcjM4MnhaN0tLSVpjMzM0LU1Hd0tRZDhncThoaUxoM2EtTU9ZQ1piU2FyWldSMU1QVmlyREFRc3p0YjdnNk5DY29rbEtabnY1cGtYQlZ5LW1BcVNYRUdZZnZIRE9QdFEzT3lycW80LVpqQnBlOVAwZGNjeFRzSmV0Q0YzYUVvRlFvRG5BV19GSl9tWlZldzRJNm5hYWJuZy1meGI5cVRuYXZPbXVVWTZzYXVRcnl6LTZlcng?oc=5",
-   "source": "AgFunderNews",
+   "title": "How Can AI in Agriculture Drive Crop Diversification in India?",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUm9USDBjNVZweVhYNVdoVHgzbk9tU0F4VjkzNG1CMTl5aXV3MHFDLXYzUk5LWFljYl9GNzUyaHFOUC1EYnREWlh3Wk9tT20tYVEwZkRFbllMdW05eFV0dXhobDg5WmxkQkR2VHNuTGM5VGRBMFdFbmNvRm5GTzBldnJ1VlVORTJIZVlPRjg0dXVBaG5jNFhUY19B?oc=5",
+   "source": "CEEW",
    "region": "International",
    "published": "2026-02-17T08:00:00+00:00",
    "needs": [
@@ -4832,9 +4882,9 @@
    "stage": "reported"
   },
   {
-   "title": "How Can AI in Agriculture Drive Crop Diversification in India?",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUm9USDBjNVZweVhYNVdoVHgzbk9tU0F4VjkzNG1CMTl5aXV3MHFDLXYzUk5LWFljYl9GNzUyaHFOUC1EYnREWlh3Wk9tT20tYVEwZkRFbllMdW05eFV0dXhobDg5WmxkQkR2VHNuTGM5VGRBMFdFbmNvRm5GTzBldnJ1VlVORTJIZVlPRjg0dXVBaG5jNFhUY19B?oc=5",
-   "source": "CEEW",
+   "title": "AI in India: The world's 'AI back office' is betting on small language models to bring big impact to smallholder farming",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQb2Z3SHNWcjlZRmhQODhnTmVoUWVvTEs0eE9DbXZvcjM4MnhaN0tLSVpjMzM0LU1Hd0tRZDhncThoaUxoM2EtTU9ZQ1piU2FyWldSMU1QVmlyREFRc3p0YjdnNk5DY29rbEtabnY1cGtYQlZ5LW1BcVNYRUdZZnZIRE9QdFEzT3lycW80LVpqQnBlOVAwZGNjeFRzSmV0Q0YzYUVvRlFvRG5BV19GSl9tWlZldzRJNm5hYWJuZy1meGI5cVRuYXZPbXVVWTZzYXVRcnl6LTZlcng?oc=5",
+   "source": "AgFunderNews",
    "region": "International",
    "published": "2026-02-17T08:00:00+00:00",
    "needs": [
@@ -4989,18 +5039,6 @@
    "stage": "pilot"
   },
   {
-   "title": "$4.98M AI-driven project targets climate-resilient crops for Africa’s smallholder farmers",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSWdZU0RfTWpYWFRSeDIyUU8zNnM1QnJLM2xmbFNfQU5VSHJrVkJVY3VPYVRYMGIzbWJUZURfU0JDYW9Kb3lJZ2FEak1RSGtZR3gtNTRMcE1TQ0E1Ml8zWVZvRUk2SWZlbFQ4eDd6X0NXQU1qUEpHQmNsbVZmdEdYZ1hhQ0FFQjRUSkZGSl82ZHRHRVgySGxGZnFHa29mWkxrUXlleDBnSkg1S2dKVndpOGJoeTRQamNvelYzNg?oc=5",
-   "source": "Farmers Review Africa",
-   "region": "International",
-   "published": "2026-01-30T08:00:00+00:00",
-   "needs": [
-    "food"
-   ],
-   "places": [],
-   "stage": "reported"
-  },
-  {
    "title": "MTN Ghana Partners Thrive and Shine LBG to Advance AI Literacy",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRkswRTVFLUZxblk2Z2JJdzJLaE9UQnBGQWpvTmJnX2Zza0JpbzBJcGQxcDRuUVZ6bTVNS09Pa0VLNTNpaUVaYUwyRUd0R1FLYlV5NmF4OUI2UFl2dUhBa19Wdm1uX2MyRkVRa3Bpd2xQa2g5U0pqa3pDRF9nTXR2MEFRc2ktbm1yWGNraGJiUDRnZlptTDlXRF9nYXdpNHNNTDhv?oc=5",
    "source": "TechAfrica News",
@@ -5017,6 +5055,18 @@
      "precision": "country"
     }
    ],
+   "stage": "reported"
+  },
+  {
+   "title": "$4.98M AI-driven project targets climate-resilient crops for Africa’s smallholder farmers",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSWdZU0RfTWpYWFRSeDIyUU8zNnM1QnJLM2xmbFNfQU5VSHJrVkJVY3VPYVRYMGIzbWJUZURfU0JDYW9Kb3lJZ2FEak1RSGtZR3gtNTRMcE1TQ0E1Ml8zWVZvRUk2SWZlbFQ4eDd6X0NXQU1qUEpHQmNsbVZmdEdYZ1hhQ0FFQjRUSkZGSl82ZHRHRVgySGxGZnFHa29mWkxrUXlleDBnSkg1S2dKVndpOGJoeTRQamNvelYzNg?oc=5",
+   "source": "Farmers Review Africa",
+   "region": "International",
+   "published": "2026-01-30T08:00:00+00:00",
+   "needs": [
+    "food"
+   ],
+   "places": [],
    "stage": "reported"
   },
   {
@@ -5360,7 +5410,7 @@
   },
   {
    "title": "Text mining and machine learning reveal global determinants of food insecurity",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TbUt6ZGg5RnhvWjQ1N25QQkJ1UTk2Vy12ZWRSTXg3S2dkalNORHAtZzlQandxSGF3UWo0WGNpaWxJbjhhcl8wa2RzdjhHZF95bUI5MVg5OHk2SllDb19n?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1WeVAxTndMWDI2LUYtNHpzM2RFazYtcW1EbDFudkxONnY2X1ZqTGIxNnpmSjMyTkhuVWhZWC00d01pUQ?oc=5",
    "source": "Nature",
    "region": "International",
    "published": "2025-10-21T07:00:00+00:00",
@@ -5987,7 +6037,7 @@
    "stage": "reported"
   },
   {
-   "title": "Farmers in India are using AI for agriculture – here's how they could inspire the world",
+   "title": "Farmers in India are using AI for agriculture",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcjlyMUs4a081VDFka2ZEbTNNajJJdDg3c29mRkJnQUc1alVHYk1uaTdEUE9tYVBRbkFQbkhiY3Joc2RoWXk4M1B2SldkZmVKNTBmZV9WZ3g0ZF9JZ2xYMkREaGUwLTloOHhrb1h4WTN4bWZKeDg5NFVUOWZzXzZsdnVjcnFhOHByeW12cWJZSTB2Um9qa0lsOEtpWDE2aU95ZnFGcUJTc21fZnN6?oc=5",
    "source": "World Economic Forum",
    "region": "International",
@@ -6003,7 +6053,7 @@
      "precision": "country"
     }
    ],
-   "stage": "proposed"
+   "stage": "reported"
   },
   {
    "title": "AI for agriculture: How Indian farmers are harnessing emerging technologies to sustainably increase productivity",
